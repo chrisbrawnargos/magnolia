@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="jcr:root" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>rep:root</sv:value>
+  </sv:property>
+  <sv:node sv:name="Magnolia-Travels">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:folder</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>7dff43c1-da60-4e9e-b825-a49ef2d3277f</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:58:07.713+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-03-11T09:23:03.946+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:node sv:name="Mysterious-Vietnam">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>3d676477-eabc-4cbe-88b6-b77aa85a358a</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Experience the mystery of Vietnam, we start in Hanoi and travel south.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Learn about the diverse cultures of Vietnam</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>21</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:1044b3b8-30b1-48fe-8078-832b6cef8fb5</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Hanoi</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:57:18.965+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T09:29:42.437+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Mysterious Vietnam</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Hut-to-Hut-in-the-Swiss-Alps">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>d30b9ca6-e22d-45c5-9456-7538ab7bccf8</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Perched in the most beautiful places in the Swiss Alps are mountain huts where you can stay the night and even get meals. This means a lighter backpack and more comfortable hiking. We&amp;#39;ll kick off our tour with a scenic train ride from Zurich to Kanderstieg.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>There's more to Switzerland than skiing.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>7</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:80d091ae-22ce-4cfc-b302-cb39f25c3d30</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Zurich</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:55:07.254+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T09:34:17.557+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Hut to Hut in the Swiss Alps</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="West-Coast---Highway-101">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>730c8850-d638-4e91-b3fb-4041a0c59ffe</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Get to know the ins and outs of West coast living on El Camono Real (The Royal Road) based on the old trail which linked the Spanish Missions, Pueblos and Presidios. We&amp;#39;ll kick off in Seattle and head south into Oregon and finally to California where we&amp;#39;ll hit the beaches on California Highway 1.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Family travels in USA</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>ed3dcd18-78af-46df-a9e1-bc732479f2e7</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>7</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:d44f783c-91ca-4b48-9533-ea4e147e13e9</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Seattle</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:51:38.319+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T10:30:17.772+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>West Coast - Highway 101</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Inside-New-Delhi">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>3ba5ba55-ac02-4b37-a429-5fc0bb4b383b</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;New Delhi has many interesting monuments and museums, but we won&amp;#39;t be visiting any of them on this tour. We&amp;#39;re going inside New Delhi to the markets and tea shops where locals go. The hidden gems of New Delhi are just around the corner when you know where to look.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Get to know Delhi up close and personal.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>2</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:ad33e9b0-855e-4bac-b35e-3c7e7588465c</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>New Delhi</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:50:20.378+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T10:34:59.512+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Inside New Delhi</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+        <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Family-Rafting-on-the-Nile">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>4412e7ed-b798-46c8-b7f5-3266dbd25def</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Skip the Italian beaches this summer and go for a vacation that your family really will never forget. You will be supplied with provisions including food and an inflatible raft.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>You don't know the meaning of "Famly Adventure" till you've rafted together on the Nile.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>79da73f7-900b-4c91-b58b-3b1355485519</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>21</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:c78fc7ac-1a68-484d-b598-1e7cdd0ff222</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Cairo</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:48:48.905+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T10:38:49.730+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Family Rafting on the Nile</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+        <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Kyoto--In-Nature">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>b475f27e-2929-427b-9517-815118a3b36e</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Join us on a visit to the City of Ten Thousand Shrines. We&amp;#39;ll visit Tō-ji, Ginkaku-ji, Kōzan-ji and their remarkable gardens before venturing into the mountains that surround the city.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Experience the still beauty that permeates and surrounds Kyoto</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>7</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:44689d29-5966-4d41-8fd4-2dc7da783528</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Kyoto</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:46:15.575+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T10:45:27.462+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Kyoto: In Nature</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+        <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Grand-Canyon---the-American-South-West">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>820a075a-8c95-4f00-b0ee-5f3bf339f1ff</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;They don&amp;#39;t call it grand for nothing. The Grand Canyon is just one of the many amazing hilights on this tour. We&amp;#39;ll hit the best monuments from Arches and Canyon Lands to Bryce and Joshua Tree. Every night we&amp;#39;ll stop in a US National Park with all of the facilities and renowned interpretive centers and talks.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Tour the great monuments of america - in an RV Caravan. Roll out!</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>ed3dcd18-78af-46df-a9e1-bc732479f2e7</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>21</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:5843f97c-a825-40af-855b-f02483c6f354</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>San Francisco</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:44:50.491+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T10:49:28.016+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Grand Canyon &amp; the American South-West</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="A-Taste-of-Malaysia">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>a358f3ad-5a03-4f5d-b0ab-cb2219100472</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;We&amp;#39;ll spend the first week sampling Kuala Lumpur&amp;#39;s delicious cosmopoliton restaurants and sights. Then we&amp;#39;ll venture south through the countryside - taking a taste of the countryside before the finale in Singapore.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Get to know Malaysia sites and sounds in a unique way - by its delicious food.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>14</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:78399215-aed5-4518-9cfc-9b39855f4740</sv:value>
+      </sv:property>
+      <sv:property sv:name="isFeatured" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Kuala Lumpur</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:43:24.936+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T10:54:30.495+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>A Taste of Malaysia</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Beach-Break">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>5aae4f58-43c3-4222-8f23-dd2fc863ea21</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;From Athens we&amp;#39;ll transport you to the spectacular Ammouliani island. You&amp;#39;ll stay 6 nights in the Agionissi Resort, with access to the all the beaches.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Take a break and just enjoy the ocean.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>7</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:b84e1b98-8ea0-40c2-93f5-6dc45d8e55da</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Athens</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:comment" sv:type="String">
+        <sv:value>Automatically created version prior deletion</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:41:31.612+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T11:14:16.783+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Beach Break</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+        <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Dolomites-on-Bike">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>5556af16-66f5-445a-9150-bae8d2adcf3a</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Get ready to ride.&lt;/p&gt;
+
+&lt;p&gt;A bus will transport us and our bikes to our kick off point in Belluno. Every day, mountain biking in some of the most amazing landscapes in the world, every night, sampling the local food and wine. And don&amp;#39;t worry about bringing paniers for your clothing - a van will drive with us every day to carry our gear so we can ride light&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Tour the Dolomites by bicycle.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>14</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:e483188e-b01b-4fef-a220-dc68debb8801</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Venice, Italy</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:40:05.754+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T11:24:34.640+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Dolomites on Bike</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Belize-for-Families">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>3dc158ce-fa92-4eab-a060-3f65d467b9ab</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Your family will discover the rainforest, reefs and ruins of Belize.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>See Belize through the eyes of your Children</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>bed2e297-199c-4dc8-90cd-54ad3cb4221b</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>7</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:f90c8094-542d-4037-a4f5-dcd634fd0393</sv:value>
+      </sv:property>
+      <sv:property sv:name="isFeatured" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Belize City</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:38:48.624+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T11:29:50.105+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Belize for Families</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Temples-of-the-Orient">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>45560b07-4600-4aaa-8fc4-30d9ceff5b09</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;From China to Malaysia - you&amp;#39;ll see it all.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Visit the most impressive temples in Asia</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>21</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:0c8c457b-1951-4ef7-9503-84a2afd07c8a</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Beijing</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:35:44.563+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T11:30:40.207+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Temples of the Orient</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+        <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Angkor-and-Phnom-Phen">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>ab81a130-acfd-49c4-9aa7-777f43f98d36</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;Angkor is one of the most important archaelogical sites of the world. It is massive - extending over approximately 400 square kilometers. We&amp;#39;ll spend 4 days exploring its fantastic structures, art and history.&amp;nbsp; Then we&amp;#39;ll visit Phnom Phen, Cambodia&amp;#39;s capital and largest city.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>The ancient temple complex of the Khmer empire will inspire you.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>7</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:9269e62f-cb98-47eb-91ce-db1f09040896</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Siem Reap</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-29T08:34:44.931+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T11:37:23.536+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Angkor and Phnom Phen</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+        <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="The-Long-Trail">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>ae0036c5-c313-4be2-ae7e-6b5f660435f5</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;You&amp;#39;ll bike around mountains, lakes, glaciers, deserts and even volcanos on this epic tour.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Test yourself on this extreme tour</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>bed2e297-199c-4dc8-90cd-54ad3cb4221b</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>21</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:83bdb709-8921-4193-8aa4-4a20d071b5f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="isFeatured" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Santiago, Chile</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-28T18:07:02.144+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T11:42:44.253+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>The Long Trail</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+        <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="Surfin--Safari">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:content</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>8c675cdf-5e11-45b2-8c20-b69d334dc3d4</sv:value>
+      </sv:property>
+      <sv:property sv:name="author" sv:type="String">
+        <sv:value>Magnolia Travels</sv:value>
+      </sv:property>
+      <sv:property sv:name="body" sv:type="String">
+        <sv:value>&lt;p&gt;We&amp;#39;ll sample all the favorite south Sri Lanka breaks from Niwella &amp;amp; Weligama to Plantation point and Coconut point.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, ei per cibo aliquid, dicit denique ne vim. Ne utamur adversarium eum. An usu verear ponderum senserit, ea soleat aliquam intellegat vim. Alia graeci mediocrem his in, sed convenire petentium no. Putent perfecto indoctum has ad, ex sanctus elaboraret usu.&lt;/p&gt;
+
+&lt;p&gt;Vis ex alii vocent. Definiebas definitionem ne sed, an eum perpetua expetenda. Pri zril epicurei scriptorem cu, eu ponderum instructior eam. Ei per hinc putant, his et wisi sanctus inimicus, te epicurei ocurreret vel.&lt;/p&gt;
+
+&lt;p&gt;Impetus prompta adolescens eos cu, vis at justo verterem, et nec mundi assentior. Ad justo facilis docendi vix. Eu ius persius euismod intellegam, idque ullum debet per ea. Ex vel graeci accumsan mediocritatem, et putant fabellas usu.&lt;/p&gt;
+
+&lt;p&gt;Dolores sapientem maiestatis eu usu, habeo vocibus nam et. Debet utinam laudem vim ex, eum solum novum ex. Te etiam inermis concludaturque vix. Ferri elitr accumsan est at, viris voluptatum incorrupte vis no. Epicuri eligendi repudiandae et est, ex mel dolorum imperdiet.&lt;/p&gt;
+
+&lt;p&gt;Ne eos possit adolescens, habeo fabulas labores ut est. Quod denique signiferumque mei ex, at cum mundi principes deterruisset, mel ea agam scripta dissentias. Qui ut facer mucius nominavi, corrumpit hendrerit scripserit an pro, mea antiopam percipitur ea. Quo ei dolorum liberavisse, ut nam fastidii nominavi pericula, id vix quodsi principes. Sed suscipit referrentur id. Vim placerat dissentiet te, maluisset neglegentur an mei.&lt;/p&gt;
+
+&lt;p&gt;Constituto theophrastus duo at, sed cu agam quot oblique, eu pro facilis pericula. Dolore iriure mel et, ad exerci petentium vix. Duo ea latine quaeque, id honestatis dissentiunt nec. Has et possit numquam. Offendit lucilius ex sit, an dicunt possim scriptorem pri, qui harum intellegat id. Alienum dignissim ex sed, integre quaeque qui ei.&lt;/p&gt;
+
+&lt;p&gt;Porro accusam lucilius eu duo, ius an fabulas dolorem, qui eu dicit legendos scribentur. Ut impetus suscipiantur eam, omnis soluta mediocritatem id qui. Te nobis accusamus qui, sea in discere imperdiet patrioque. Ea vim prima quaerendum.&lt;/p&gt;
+
+&lt;p&gt;Odio blandit incorrupte ex per, eu pro reque dissentias. Choro gubergren incorrupte ei pro, ut nec atqui commune, vim in nonumy splendide contentiones. Everti utroque sea ne, nulla oportere instructior est at. Mel ei eleifend philosophia, nibh vero definitionem has no, elit reprehendunt per ei. Placerat sententiae interpretaris cu has, ut clita quando contentiones eum, simul aliquip indoctum vix ex. Tota summo noluisse his ad.&lt;/p&gt;
+
+&lt;p&gt;Cu nec falli solet voluptatum. Ex aliquid lucilius evertitur mea, ex perpetua prodesset vituperata nam, velit noluisse oportere cum id. At vim ferri recteque, purto eros errem et usu, saepe graeci nostrud no eos. No dolor veritus imperdiet sed, et has magna tractatos facilisis. Dolor maiorum delicatissimi qui no, hinc delicatissimi vim ut. Adhuc tollit nec no.&lt;/p&gt;
+
+&lt;p&gt;Tation omittantur ex vel, ne agam oblique detraxit ius. Ne sit labitur consulatu democritum, mei no tation fabulas invidunt. At scaevola contentiones vim. Sea quem copiosae ei. Nisl delicatissimi ius no.&lt;/p&gt;
+</sv:value>
+      </sv:property>
+      <sv:property sv:name="date" sv:type="Date">
+        <sv:value>2015-03-12T20:50:00.000+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="description" sv:type="String">
+        <sv:value>Sri Lanka offers beautiful beaches, a laid back attitude, and most importantly: excellent breaks.</sv:value>
+      </sv:property>
+      <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+        <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+      </sv:property>
+      <sv:property sv:name="duration" sv:type="String">
+        <sv:value>21</sv:value>
+      </sv:property>
+      <sv:property sv:name="img" sv:type="String">
+        <sv:value>jcr:d01deefa-dba9-4708-8cfa-604320720253</sv:value>
+      </sv:property>
+      <sv:property sv:name="isFeatured" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="location" sv:type="String">
+        <sv:value>Galle, Sri Lanka</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-28T18:06:46.536+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-11T11:51:58.555+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="name" sv:type="String">
+        <sv:value>Surfin' Safari</sv:value>
+      </sv:property>
+      <sv:property sv:name="title" sv:type="String">
+        <sv:value>Surf Title</sv:value>
+      </sv:property>
+      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+        <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+        <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+</sv:node>

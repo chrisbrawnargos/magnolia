@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="TourTypes" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:folder</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>bed25be3-378f-4f80-9140-a7302e045732</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:createdBy" sv:type="String">
+    <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:created" sv:type="Date">
+    <sv:value>2015-01-27T15:26:54.468+01:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2015-01-27T15:30:38.874+01:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:node sv:name="active">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:category</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>Lazing about isn’t your idea of a holiday. Whether it’s hiking, biking or parasailing, we have the perfect holiday for you. You can concentrate on the kayaking while we sort out all the boring stuff. </sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Active holidays for active people</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName" sv:type="String">
+      <sv:value>Active</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:b601ef57-a44a-432d-bc9a-bb228890b01d</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="level" sv:type="String">
+      <sv:value>level-1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-27T15:28:15.647+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-02-25T08:24:59.199+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>active</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="beach">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:category</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>Nothing says holidays more than a stretch of glimmering sand, some turquoise waves licking the shore, and maybe a few sloping palm trees. Throw in a cocktail and that’s your beach vacation sorted out. Whether it’s the Mediterranean or the Caribbean that floats your boat, we can make your holiday dreams come true.</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Sand, sand everywhere..</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName" sv:type="String">
+      <sv:value>Beach</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:9471f8d5-389b-43f5-bbe6-8a4ee4a5944c</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="level" sv:type="String">
+      <sv:value>level-1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-27T15:28:27.043+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-02-25T08:25:33.530+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>beach</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="cultural">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:category</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>Holidays are for experiences, for discovering the greatest places in the world. Whether it’s the Great Wall of China or the Egyptian pyramids, you want to know all about them. And have you thought about visiting the ancient temples of Vietnam or the winding alleyways of Jerusalem?  We organize the best local guides and hotels, so you can just soak in all that culture.</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Experiences of a lifetime</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName" sv:type="String">
+      <sv:value>Cultural</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:a792164f-5a2a-4708-b3c8-62b48a578200</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="level" sv:type="String">
+      <sv:value>level-1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-27T15:29:00.891+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-02-25T08:35:31.557+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>cultural</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="ecotourism">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:category</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>Nature is calling you. And there’s nowhere more natural than Africa’s savannah plains or the icy wilderness of Antartica. But what’s even better than getting closer to nature is knowing that when you travel with us, you’re making your own contribution to keeping those untouched parts of earth just as they are.</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Call of the wild</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName" sv:type="String">
+      <sv:value>Ecotourism, Nature &amp; Wildlife</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:2fd89d97-f932-4533-8a30-d70988bde30c</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="level" sv:type="String">
+      <sv:value>level-1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-27T15:29:33.403+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-02-25T08:36:04.047+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>ecotourism</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="family">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:category</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>Holidays can be the best of times but they can also be the worst of times for families! It’s not easy to keep everyone happy, from toddlers to teenages and every age in between. We’ve mastered the art of organizing the perfect family holidays, whether you want to hike through the Alps or visit American theme parks. Leave the planning to experts and enjoy some real family time.
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>The best family holiday ever</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName" sv:type="String">
+      <sv:value>Family</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:acd47d04-5b98-4995-9c3b-cc3c81cd8288</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="level" sv:type="String">
+      <sv:value>level-1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-27T15:29:44.203+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-02-25T08:36:32.537+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>family</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="offPath">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:category</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>You’d rather die than be just another tourist, on a big tour bus, eating tourist menus and taking pictures of the Eiffel Tower. You want to discover something nobody else has, and see things from a local point of view. With us, you can discover the local gems that most travellers never experience.
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Unique holidays that take you off the beaten track
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName" sv:type="String">
+      <sv:value>Off the Beaten Path</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:272f75b9-ed87-4e0b-8bf3-15db217ba897</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="level" sv:type="String">
+      <sv:value>level-1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-27T15:30:14.665+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-02-25T08:36:59.989+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>offPath</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="volunteer">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:category</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>aaa9241a-7c02-4663-9170-215b51e20ef8</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>Whether it’s teaching English in South America or helping to build an orphanage in Thailand, you want to make a difference in someone’s life. If you’re ready to put that time in, we want to help you every step of the way. From finding a worthwhile experience to all the practical arrangements, we can make sure that the real work will only start once you start volunteering. 
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Making a difference</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName" sv:type="String">
+      <sv:value>Volunteer</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:b2c9fd85-86fb-439f-a34b-df9c7b164917</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="level" sv:type="String">
+      <sv:value>level-1</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-27T15:30:38.875+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-02-25T08:37:29.692+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>volunteer</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>
