@@ -16,9 +16,10 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4-SNAPSHOT</magnoliaVersion>
-    <magnoliaUiVersion>5.4-SNAPSHOT</magnoliaUiVersion>
-    <magnoliaDamVersion>2.1-SNAPSHOT</magnoliaDamVersion>
+    <magnoliaVersion>5.4-m6</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m5</magnoliaUiVersion>
+    <magnoliaCEBundleVersion>5.4-alpha</magnoliaCEBundleVersion>
+    <magnoliaDamVersion>2.1-m4</magnoliaDamVersion>
   </properties>
 
   <modules>
@@ -34,7 +35,7 @@
       <dependency>
         <groupId>info.magnolia.bundle</groupId>
         <artifactId>magnolia-bundle-parent</artifactId>
-        <version>${magnoliaVersion}</version>
+        <version>${magnoliaCEBundleVersion}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -73,7 +74,7 @@
       <dependency>
         <groupId>info.magnolia.pages</groupId>
         <artifactId>magnolia-pages-app</artifactId>
-        <version>5.4-SNAPSHOT</version>
+        <version>5.4-m4</version>
       </dependency>
 
       <!-- Deps to reactor (self) -->
@@ -91,23 +92,23 @@
       <dependency>
         <groupId>info.magnolia</groupId>
         <artifactId>magnolia-module-imaging</artifactId>
-        <version>3.2-SNAPSHOT</version>
+        <version>3.2-m2</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.site</groupId>
         <artifactId>magnolia-site</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0-m6</version>
       </dependency>
 
       <dependency>
         <groupId>info.magnolia.resources</groupId>
         <artifactId>magnolia-resources</artifactId>
-        <version>2.4-m3</version>
+        <version>2.4-m5</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.resources</groupId>
         <artifactId>magnolia-resources-app</artifactId>
-        <version>2.4-m3</version>
+        <version>2.4-m5</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia</groupId>
@@ -144,12 +145,12 @@
       <dependency>
         <groupId>info.magnolia.categorization</groupId>
         <artifactId>magnolia-categorization</artifactId>
-        <version>2.4-SNAPSHOT</version>
+        <version>2.4-m4</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.templating</groupId>
         <artifactId>magnolia-templating-essentials-models</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0-m1</version>
       </dependency>
 
       <dependency>
