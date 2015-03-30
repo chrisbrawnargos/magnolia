@@ -12,6 +12,10 @@
   <name>Magnolia Travel Demo Module</name>
   <description>Magnolia module showcasing a demo website</description>
 
+  <properties>
+    <cloverCoverageThreshold>30</cloverCoverageThreshold>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>info.magnolia</groupId>
