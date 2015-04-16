@@ -27,5 +27,9 @@
       <name>site</name>
       <version>1.0/*</version>
     </dependency>
+    <dependency>
+      <name>mte</name>
+      <version>1.0/*</version>
+    </dependency>
   </dependencies>
 </module>

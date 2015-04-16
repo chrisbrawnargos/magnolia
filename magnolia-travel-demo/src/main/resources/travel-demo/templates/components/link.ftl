@@ -1,6 +1,6 @@
 [#-- Shared setup for all components. --]
-[#include "/templates/travel-demo/includes/init.inc.ftl"]
-[#include "/templates/travel-demo/components/macros/image.ftl"]
+[#include "/travel-demo/templates/includes/init.inc.ftl"]
+[#include "/travel-demo/templates/macros/image.ftl"]
 
 [#if divClass?has_content]
     [#assign divClass = content.linkType + " " + divClass]

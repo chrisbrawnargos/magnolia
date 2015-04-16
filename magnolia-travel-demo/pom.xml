@@ -70,6 +70,11 @@
     </dependency>
 
     <dependency>
+      <groupId>info.magnolia.templating</groupId>
+      <artifactId>magnolia-templating-essentials-models</artifactId>
+    </dependency>
+
+    <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
     </dependency>

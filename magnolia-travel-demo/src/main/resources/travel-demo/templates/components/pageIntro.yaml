@@ -1,0 +1,9 @@
+templateScript: /mte/templates/components/textImage.ftl
+dialog: mte:components/textImage.dialog
+modelClass: info.magnolia.templating.models.components.ImageModel
+
+renderType: freemarker
+parameters:
+  divClass: jumbotron
+i18nBasename: info.magnolia.module.travel-demo.messages
+title: components.pageIntro

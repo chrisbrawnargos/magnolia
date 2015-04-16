@@ -689,7 +689,7 @@
                     <sv:value>18d48c3d-16cb-4344-b4ec-1a6f2b07c28f</sv:value>
                   </sv:property>
                   <sv:property sv:name="id" sv:type="String">
-                    <sv:value>travel-demo:components/textImage</sv:value>
+                    <sv:value>mte:components/textImage</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
