@@ -226,15 +226,20 @@ public class TourServices {
         return StringUtils.EMPTY;
     }
 
-    private Node getContentNodeByName(final String name, final String workspace) throws RepositoryException {
-        final String sql = String.format("SELECT * FROM [nt:base] AS content WHERE name(content)='%s'", name);
-        final NodeIterator items = QueryUtil.search(workspace, sql, Query.JCR_SQL2, "mgnl:content");
+    private Node getContentNodeByName(final String pathOrName, final String workspace) throws RepositoryException {
 
-        if (items != null && items.hasNext()) {
-            return items.nextNode();
+        if (pathOrName.startsWith("/")) {
+            return MgnlContext.getJCRSession(workspace).getNode(StringUtils.substringBefore(pathOrName, "?"));
+        } else {
+            final String sql = String.format("SELECT * FROM [nt:base] AS content WHERE name(content)='%s'", pathOrName);
+            final NodeIterator items = QueryUtil.search(workspace, sql, Query.JCR_SQL2, "mgnl:content");
+
+            if (items != null && items.hasNext()) {
+                return items.nextNode();
+            }
         }
 
-        log.warn("Could not find node from workspace [{}] based on slug [{}]", workspace, name);
+        log.warn("Could not find node from workspace [{}] based on slug [{}]", workspace, pathOrName);
         return null;
     }
 

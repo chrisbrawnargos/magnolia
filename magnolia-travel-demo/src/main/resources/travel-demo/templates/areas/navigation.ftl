@@ -1,4 +1,6 @@
 [#-------------- ASSIGNMENTS --------------]
+[#include "/mte/macros/searchForm.ftl"]
+
 [#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/" /]
 [#assign pages = model.rootPages! /]
 [#assign childPages = model.childPages! /]
@@ -6,6 +8,11 @@
 [#assign spaceClass = "navbar-spacer" /]
 [#if childPages?has_content]
     [#assign spaceClass = "navbar-spacer-children"]
+[/#if]
+
+[#assign searchProperty = cmsfn.siteRoot(content).search! /]
+[#if searchProperty?has_content]
+    [#assign searchResultPage = cmsfn.link(cmsfn.nodeByPath(searchProperty)) /]
 [/#if]
 
 [#-------------- RENDERING --------------]
@@ -50,6 +57,8 @@
                 [/#list]
 
                 </ul>
+
+                [@searchForm action=searchResultPage! /]
             </div>
 
             [#if childPages?has_content]
