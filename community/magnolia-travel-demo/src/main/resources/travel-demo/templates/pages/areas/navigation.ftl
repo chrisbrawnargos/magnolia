@@ -1,14 +1,10 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/travel-demo/templates/macros/searchForm.ftl"]
+[#include "/mte/templates/macros/navigation.ftl"]
 
 [#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/" /]
-[#assign pages = model.rootPages! /]
-[#assign childPages = model.childPages! /]
 
 [#assign spaceClass = "navbar-spacer" /]
-[#if childPages?has_content]
-    [#assign spaceClass = "navbar-spacer-children"]
-[/#if]
 
 [#assign searchProperty = cmsfn.siteRoot(content).searchResultPage! /]
 [#if searchProperty?has_content]
@@ -58,31 +54,26 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <div class="navbar-right">
-
-                <ul class="nav navbar-nav">
-                [@cms.area name="tours" /]
-                [@cms.area name="destinations" /]
-
-                [#list pages as page]
-                    <li class="${page.cssClass!}"><a href="${page.link!}">${page.name!}</a></li>
-                [/#list]
-                </ul>
+                [#-- navigation takes content/startNode, startLevel, depth, allOpen? --]
+                [#assign menu = navfn.navigation(cmsfn.siteRoot(content), 1, 1)! /]
+                [#assign menuItems = menu.getItems()! /]
+                [#if menuItems?has_content]
+                    [@renderNavigation menuItems "nav navbar-nav" /]
+                [/#if]
 
                 [#-- Only when the search result page was set should the form be displayed --]
                 [#if searchResultPage?exists]
                     [@searchForm action=searchResultPage! inputName="queryStr" placeholder=i18n['search.placeholder'] /]
                 [/#if]
-
             </div>
         </div>
 
-        [#if childPages?has_content]
+        [#assign menuLevel2 = navfn.navigation(cmsfn.siteRoot(content), 2, 1)! /]
+        [#assign menuItemsLevel2 = menuLevel2.getItems()! /]
+        [#if menuItemsLevel2?has_content]
+            [#assign spaceClass = "navbar-spacer-children"]
             <div id="navbar-secondary" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    [#list childPages as childPage]
-                        <li class="${childPage.cssClass!}"><a href="${childPage.link}">${childPage.name}</a></li>
-                    [/#list]
-                </ul>
+                [@renderNavigation menuItemsLevel2 "nav navbar-nav" /]
             </div>
         [/#if]
 

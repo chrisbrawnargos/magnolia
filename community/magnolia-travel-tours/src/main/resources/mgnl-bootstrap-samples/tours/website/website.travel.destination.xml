@@ -10,7 +10,10 @@
     <sv:value>028a4a92-35df-45a3-b6ff-58381db74eb5</sv:value>
   </sv:property>
   <sv:property sv:name="hideInNav" sv:type="String">
-    <sv:value>true</sv:value>
+    <sv:value>false</sv:value>
+  </sv:property>
+  <sv:property sv:name="navigationClass" sv:type="String">
+    <sv:value>info.magnolia.demo.travel.tours.model.navigation.DestinationNavigationItem</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>

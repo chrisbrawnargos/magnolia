@@ -1,4 +1,5 @@
 [#ftl]
 [#-- @implicitly included --]
-[#-- @ftlvariable name="ctx" type="info.magnolia.context.MgnlContext" --]
-[#-- @ftlvariable name="cmsfn" type="info.magnolia.templating.functions.TemplatingFunctions" --]
+[@ftlvariable name="ctx" type="info.magnolia.context.MgnlContext" /]
+[@ftlvariable name="cmsfn" type="info.magnolia.templating.functions.TemplatingFunctions" /]
+[@ftlvariable name="navfn" type="info.magnolia.templating.functions.NavigationTemplatingFunctions" /]

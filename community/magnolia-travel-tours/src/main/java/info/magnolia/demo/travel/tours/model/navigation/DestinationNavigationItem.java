@@ -33,35 +33,37 @@
  */
 package info.magnolia.demo.travel.tours.model.navigation;
 
+import info.magnolia.cms.core.AggregationState;
 import info.magnolia.demo.travel.tours.ToursModule;
-import info.magnolia.demo.travel.tours.service.Category;
 import info.magnolia.demo.travel.tours.service.TourServices;
-import info.magnolia.rendering.model.RenderingModel;
-import info.magnolia.rendering.template.AreaDefinition;
+import info.magnolia.templating.functions.TemplatingFunctions;
+import info.magnolia.templating.models.navigation.Navigation;
+import info.magnolia.templating.models.navigation.NavigationConfig;
 
-import java.util.List;
-
-import javax.inject.Inject;
+import javax.inject.Provider;
 import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 
 /**
- * Model for creating the navigation bar for the travel demo. Uses Categories for Destination.
+ * A {@link info.magnolia.templating.models.navigation.NavigationItem} dedicated to destinations.
  */
-public class DestinationNavigationAreaModel extends AbstractNavigationAreaModel {
+public class DestinationNavigationItem extends AbstractNavigationItem {
 
-    @Inject
-    public DestinationNavigationAreaModel(Node content, AreaDefinition definition, RenderingModel<?> parent, TourServices tourServices, ToursModule toursModule) {
-        super(content, definition, parent, tourServices, toursModule);
+    public DestinationNavigationItem(Node content, Navigation parent, NavigationConfig navigationConfig,
+                                     TemplatingFunctions templatingFunctions,
+                                     Provider<AggregationState> aggregationStateProvider,
+                                     ToursModule toursModule, TourServices tourServices) throws RepositoryException {
+        super(content, parent, navigationConfig, templatingFunctions, aggregationStateProvider, toursModule, tourServices);
     }
 
     @Override
-    public List<Category> getCategories() {
-        return getCategories(toursModule.getDestinationRootNode(), ToursModule.TEMPLATE_SUB_TYPE_DESTINATION_OVERVIEW);
+    String getCategoryRootNode() {
+        return toursModule.getDestinationRootNode();
     }
 
     @Override
-    public String getTitleI18nKey() {
-        return "navigation.destination.title";
+    String getTemplateSubType() {
+        return ToursModule.TEMPLATE_SUB_TYPE_DESTINATION_OVERVIEW;
     }
 
 }

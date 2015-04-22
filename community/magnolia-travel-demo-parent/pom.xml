@@ -111,7 +111,7 @@
       <dependency>
         <groupId>info.magnolia.templating</groupId>
         <artifactId>magnolia-templating-essentials-models</artifactId>
-        <version>0.5</version>
+        <version>0.6-SNAPSHOT</version>
       </dependency>
 
       <!-- Other dependencies -->
