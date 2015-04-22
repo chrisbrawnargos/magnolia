@@ -1,0 +1,20 @@
+dialog: travel-demo:pages/defaultPageProperties
+class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+
+renderType: site
+type: feature
+subtype: tourDetail
+areas:
+  content:
+    templateScript: /templates/travel-demo/areas/contentContainer.ftl
+    type: list
+    availableComponents:
+        tourDetail:
+          id: tours:components/tourDetail
+        tourDetailRelatedTours:
+          id: tours:components/tourDetailRelatedTours
+    parameters:
+      cssClass: container
+  footer:
+    editable: false
+title: Tour Detail

@@ -1,6 +1,6 @@
 [#macro tourTeaser name description link image]
 
-    [#include "/templates/tours/macros/image.ftl" /]
+    [#include "/tours/templates/macros/image.ftl" /]
 
     [#assign rendition = damfn.getRendition(image, "large-square")! /]
 

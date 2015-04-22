@@ -1,0 +1,22 @@
+dialog: travel-demo:pages/defaultPageProperties
+class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+
+renderType: site
+type: feature
+subtype: destinationCatOverview
+areas:
+  content:
+    templateScript: /templates/travel-demo/areas/contentContainer.ftl
+    type: list
+    availableComponents:
+      tourTypeOverviewHeader:
+        id: tours:components/tourTypeOverviewHeader
+      tourListFeaturedRowByDestination:
+        id: tours:components/tourListFeaturedRowByDestination
+      tourListByDestination:
+        id: tours:components/tourListByDestination
+    parameters:
+      cssClass: container
+  footer:
+    editable: false
+title: Destination Category Overview

@@ -1,4 +1,4 @@
-[#include "/templates/tours/macros/image.ftl" /]
+[#include "/tours/templates/macros/image.ftl" /]
 
 [#assign tours = model.tours]
 

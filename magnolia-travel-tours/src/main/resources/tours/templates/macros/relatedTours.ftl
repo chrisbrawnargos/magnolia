@@ -1,8 +1,8 @@
 [#-- Displays a row of featured tours. --]
 [#macro relatedTours categoryName tours]
 
-    [#include "/templates/tours/macros/image.ftl" /]
-    [#include "/templates/tours/macros/editorAlert.ftl" /]
+    [#include "/tours/templates/macros/image.ftl" /]
+    [#include "/tours/templates/macros/editorAlert.ftl" /]
 
     [#if tours?has_content || cmsfn.editMode]
     <div class="container">

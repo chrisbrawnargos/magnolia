@@ -1,4 +1,4 @@
-[#include "/templates/tours/macros/image.ftl" /]
+[#include "/tours/templates/macros/image.ftl" /]
 
 [#assign category = tfn.categoryByUrl]
 [#assign rendition = damfn.getRendition(category.image, "xlarge-16x9") ]

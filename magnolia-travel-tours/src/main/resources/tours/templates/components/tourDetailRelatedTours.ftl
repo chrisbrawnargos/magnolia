@@ -1,4 +1,4 @@
-[#include "/templates/tours/macros/relatedTours.ftl"]
+[#include "/tours/templates/macros/relatedTours.ftl"]
 
 [#assign relatedCategories = model.relatedCategoriesByParameter]
 

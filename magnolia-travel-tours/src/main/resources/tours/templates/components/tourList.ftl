@@ -1,5 +1,5 @@
-[#include "/templates/tours/macros/tourTeaser.ftl"]
-[#include "/templates/tours/macros/editorAlert.ftl" /]
+[#include "/tours/templates/macros/tourTeaser.ftl"]
+[#include "/tours/templates/macros/editorAlert.ftl" /]
 
 [#assign category = model.categoryByUrl!]
 [#assign tours = model.getToursByCategory(category.identifier)]
@@ -14,7 +14,7 @@
             [#assign link = "tour?tour=" + tour.@name!"NO NAME/NO SLUG"]
             [#assign asset = damfn.getAsset(tour.img)!]
             [@tourTeaser tour.name tour.description link asset /]
-        [/#list] 
+        [/#list]
     </div>
 
     [@editorAlert i18n.get('note.for.editors.assign.category', [category.name!""]) /]

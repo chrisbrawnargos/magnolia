@@ -1,0 +1,28 @@
+form:
+  i18nBasename: info.magnolia.module.travel-tours.messages
+  label: dialogs.components.tourCarousel.label
+  description: dialogs.components.tourCarousel.description
+  tabs:
+    - name: tabMain
+      label: dialogs.components.tourCarousel.tabMain.label
+      fields:
+        - name: tours
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: dialogs.components.tourCarousel.tabMain.tours.label
+          buttonSelectAddLabel: field.link.select.add
+          field:
+            class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+            targetWorkspace: tours
+            appName: tours
+            identifierToPathConverter:
+              class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+            fieldEditable: false
+            label: tours
+            buttonSelectNewLabel: field.link.select.new
+            buttonSelectOtherLabel: field.link.select.another
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

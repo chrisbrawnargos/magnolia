@@ -1,0 +1,8 @@
+templateScript: /tours/templates/components/tourListFeaturedRow.ftl
+modelClass: info.magnolia.demo.travel.tours.model.RelatedToursModel
+class: info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition
+
+renderType: freemarker
+category: tourTypes
+i18nBasename: info.magnolia.module.travel-tours.messages
+title: components.tourListFeaturedRow
