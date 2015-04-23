@@ -314,7 +314,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="templateScript" sv:type="String">
-        <sv:value>/templates/travel-demo/pages/main.ftl</sv:value>
+        <sv:value>/travel-demo/templates/pages/main.ftl</sv:value>
       </sv:property>
       <sv:node sv:name="jsFiles">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -525,7 +525,7 @@
             <sv:value>freemarker</sv:value>
           </sv:property>
           <sv:property sv:name="templateScript" sv:type="String">
-            <sv:value>/templates/travel-demo/areas/navigation.ftl</sv:value>
+            <sv:value>/travel-demo/templates/areas/navigation.ftl</sv:value>
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
             <sv:value>noComponent</sv:value>
@@ -595,7 +595,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="templateScript" sv:type="String">
-            <sv:value>/templates/travel-demo/areas/footer.ftl</sv:value>
+            <sv:value>/travel-demo/templates/areas/footer.ftl</sv:value>
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
             <sv:value>noComponent</sv:value>
@@ -645,7 +645,7 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="templateScript" sv:type="String">
-                <sv:value>/templates/travel-demo/areas/contentContainer.ftl</sv:value>
+                <sv:value>/travel-demo/templates/areas/contentContainer.ftl</sv:value>
               </sv:property>
               <sv:property sv:name="type" sv:type="String">
                 <sv:value>list</sv:value>

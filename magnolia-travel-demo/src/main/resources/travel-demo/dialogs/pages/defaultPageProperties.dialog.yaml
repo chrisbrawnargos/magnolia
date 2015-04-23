@@ -1,0 +1,26 @@
+form:
+  i18nBasename: info.magnolia.module.travel-demo.messages
+  label: dialogs.page.defaultPageProperties.label
+  tabs:
+    - name: tabMain
+      label: dialogs.pages.defaultPageProperties.tabMain.label
+      fields:
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+          label: dialogs.pages.defaultPageProperties.tabMain.title.label
+          description: dialogs.pages.defaultPageProperties.tabMain.title.description
+        - name: hideInNav
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          defaultValue: false
+          i18n: false
+          type: Boolean
+          label: dialogs.pages.defaultPageProperties.tabMain.hideInNav.label
+          description: dialogs.pages.defaultPageProperties.tabMain.hideInNav.description
+          buttonLabel: dialogs.pages.defaultPageProperties.tabMain.hideInNav.buttonLabel
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

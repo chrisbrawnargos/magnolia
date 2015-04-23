@@ -1,0 +1,19 @@
+dialog: travel-demo:pages/defaultPageProperties.dialog
+class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+
+renderType: site
+type: home
+areas:
+  content:
+    templateScript: /mte/areas/list.ftl
+    type: list
+    availableComponents:
+      tourCarousel:
+        id: tours:components/tourCarousel
+      tourTypeTeaserRow:
+        id: tours:components/tourTypeTeaserRow
+      textImage:
+        id: mte:components/textImage
+  footer:
+    editable: true
+title: Travel Main

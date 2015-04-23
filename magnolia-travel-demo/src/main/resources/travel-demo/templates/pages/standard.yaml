@@ -1,0 +1,28 @@
+dialog: travel-demo:pages/defaultPageProperties.dialog
+class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+
+renderType: site
+type: feature
+areas:
+  content:
+    templateScript: /travel-demo/templates/areas/contentContainer.ftl
+    type: list
+    parameters:
+      cssClass: container
+    availableComponents:
+      textImage:
+        id: travel-demo:components/textImage
+      pageIntro:
+        id: travel-demo:components/pageIntro
+      linkList:
+        id: travel-demo:components/linkList
+      teaserDownload:
+        id: travel-demo:components/teaserDownload
+      teaserInternal:
+        id: travel-demo:components/teaserInternal
+      teaserExternal:
+        id: travel-demo:components/teaserExternal
+  footer:
+    editable: false
+title: Travel Standard
+

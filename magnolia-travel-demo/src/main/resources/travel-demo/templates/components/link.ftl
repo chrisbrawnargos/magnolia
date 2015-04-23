@@ -1,5 +1,6 @@
-[#-- Shared setup for all components. --]
-[#include "/travel-demo/templates/includes/init.inc.ftl"]
+[#-- This custom link component can include an image. --]
+[#-------------- ASSIGNMENTS --------------]
+[#include "/mte/templates/includes/init.ftl"]
 [#include "/travel-demo/templates/macros/image.ftl"]
 
 [#if divClass?has_content]
@@ -33,8 +34,7 @@
     [#assign hasImage=true]
 [/#if]
 
-[#-------------- RENDERING  --------------]
-
+[#-------------- RENDERING --------------]
 [#if linkHref?exists || cmsfn.editMode]
     <span class="${divClass!}"${divID}><a href="${linkHref}" ${target!}>
     [#if hasImage]

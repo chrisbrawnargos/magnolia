@@ -1,3 +1,4 @@
+[#-------------- ASSIGNMENTS --------------]
 [#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/" /]
 [#assign pages = model.rootPages! /]
 [#assign childPages = model.childPages! /]
@@ -7,12 +8,13 @@
     [#assign spaceClass = "navbar-spacer-children"]
 [/#if]
 
+[#-------------- RENDERING --------------]
 <div class="navbar-wrapper">
 
     <div id="masthead">
         <span id="masthead-logo">
             <a class="home" href="${homeLink}">
-                <img src="${ctx.contextPath}/.resources/travel-demo/img/magnolia-travels-logo-text.png"/>
+                <img src="${ctx.contextPath}/resources/travel-demo/resources/img/magnolia-travels-logo-text.png"/>
             </a>
             <span class="tagline">${i18n['navigation.tagline']}</span>
         </span>
@@ -33,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a id="nav-logo" class="navbar-brand" href="${homeLink}"><img  id="nav-logo-icon" src="${ctx.contextPath}/.resources/travel-demo/img/magnolia-travels-logo-icon.png"/></a>
+              <a id="nav-logo" class="navbar-brand" href="${homeLink}"><img  id="nav-logo-icon" src="${ctx.contextPath}/resources/travel-demo/resources/img/magnolia-travels-logo-icon.png"/></a>
               <a class="telephone-small visible-xs-inline" href="callto:${i18n['navigation.telephone']}">${i18n['navigation.telephone']}</a>
             </div>
 

@@ -6,7 +6,7 @@ type: feature
 subtype: travelCatOverview
 areas:
   content:
-    templateScript: /templates/travel-demo/areas/contentContainer.ftl
+    templateScript: /travel-demo/templates/areas/contentContainer.ftl
     type: list
     availableComponents:
       tourTypeOverviewHeader:
