@@ -34,6 +34,7 @@
 package info.magnolia.demo.travel.definition;
 
 import info.magnolia.module.resources.Resource;
+import info.magnolia.objectfactory.Components;
 import info.magnolia.rendering.template.TemplateAvailability;
 import info.magnolia.rendering.template.configured.ConfiguredTemplateDefinition;
 
@@ -59,7 +60,7 @@ public class PageTemplateDefinition extends ConfiguredTemplateDefinition {
     }
 
     public PageTemplateDefinition() {
-        super();
+        super(Components.getComponent(TemplateAvailability.class));
     }
 
     public List<Resource> getJsFiles() {
