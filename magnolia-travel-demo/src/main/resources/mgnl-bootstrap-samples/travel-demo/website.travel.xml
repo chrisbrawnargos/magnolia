@@ -145,6 +145,9 @@
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
         </sv:property>
+        <sv:property sv:name="listStyle" sv:type="String">
+          <sv:value>inline</sv:value>
+        </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
           <sv:value>2015-02-25T18:37:21.175+01:00</sv:value>
         </sv:property>
