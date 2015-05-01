@@ -36,6 +36,8 @@ package info.magnolia.demo.travel.setup;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.ArrayDelegateTask;
+import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
+import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.module.inplacetemplating.setup.TemplatesInstallTask;
 import info.magnolia.module.model.Version;
@@ -43,6 +45,7 @@ import info.magnolia.module.resources.ResourceTypes;
 import info.magnolia.module.resources.setup.InstallBinaryResourcesTask;
 import info.magnolia.module.resources.setup.InstallTextResourceTask;
 import info.magnolia.module.resources.setup.InstallTextResourcesTask;
+import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,10 +57,13 @@ import java.util.List;
  */
 public class TemplatingSampleProjectVersionHandler extends DefaultModuleVersionHandler {
 
+    private static final String DEFAULT_URI_NODEPATH = "/modules/ui-admincentral/virtualURIMapping/default";
+    private static final String DEFAULT_URI = "redirect:/travel.html";
+
     private static final String THEME_NAME = "travel-demo-theme";
     private static final String DEFAULT_THEME_PATH_PATTERN = "/%s/%s/.*";
-    private static final String MTE_FTL_PATTERN = "/templates/.*\\.ftl";
 
+    private static final String MTE_FTL_PATTERN = "/templates/.*\\.ftl";
     private static final TemplatesInstallTask TEMPLATES_INSTALL_TASK = new TemplatesInstallTask(MTE_FTL_PATTERN, true);
 
     @Override
@@ -85,6 +91,8 @@ public class TemplatingSampleProjectVersionHandler extends DefaultModuleVersionH
         final List<Task> tasks = new ArrayList<Task>();
         tasks.addAll(super.getExtraInstallTasks(installContext));
         tasks.add(TEMPLATES_INSTALL_TASK);
+        tasks.add(new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
+                new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
         return tasks;
     }
 
