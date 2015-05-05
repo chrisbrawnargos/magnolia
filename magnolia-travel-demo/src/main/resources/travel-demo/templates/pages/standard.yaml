@@ -11,17 +11,17 @@ areas:
       cssClass: container
     availableComponents:
       textImage:
-        id: travel-demo:components/textImage
+        id: mte:components/textImage
       pageIntro:
         id: travel-demo:components/pageIntro
       linkList:
         id: travel-demo:components/linkList
       teaserDownload:
-        id: travel-demo:components/teaserDownload
+        id: mte:components/teaserDownload
       teaserInternal:
-        id: travel-demo:components/teaserInternal
+        id: mte:components/teaserInternal
       teaserExternal:
-        id: travel-demo:components/teaserExternal
+        id: mte:components/teaserExternal
   footer:
     editable: false
 title: Travel Standard
