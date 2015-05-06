@@ -109,6 +109,21 @@ public class TourServices {
     }
 
     /**
+     * Returns a category pojo based on provided jcr identifier..
+     */
+    public Category getCategoryByIdentifier(String identifier) {
+        final String categoryWorkspace = categorizationTemplatingFunctions.getCategorizationRepository();
+
+        Category category = null;
+        final Node categoryNode = templatingFunctions.nodeById(identifier, categoryWorkspace);
+        if (categoryNode != null) {
+            category = marshallCategoryNode(categoryNode);
+        }
+
+        return category;
+    }
+
+    /**
      * Creates a {@link Category} object from a {@link Node}.
      */
     public Category marshallCategoryNode(Node categoryNode) {
@@ -293,7 +308,7 @@ public class TourServices {
      * Create a link to a specific tour.
      */
     public String getTourLink(String tourName) {
-        return String.format("%s/travel/tour?%s=%s", MgnlContext.getContextPath(), TOUR_QUERY_PARAMETER, tourName);
+        return String.format("tour?%s=%s", TOUR_QUERY_PARAMETER, tourName);
     }
 
 }

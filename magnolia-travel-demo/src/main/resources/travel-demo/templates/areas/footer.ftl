@@ -1,5 +1,7 @@
 [#-------------- ASSIGNMENTS --------------]
 [#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/"]
+[#assign site = sitefn.site()!]
+[#assign theme = sitefn.theme(site)!]
 
 [#-------------- RENDERING --------------]
 <!-- FOOTER -->
@@ -24,7 +26,7 @@
             <div class="col-lg-12">
                 <p style="text-align:center;margin-top:40px; margin-bottom:30px;">
                     <a class="home" href="${homeLink}"><img
-                            src="${ctx.contextPath}/resources/travel-demo/resources/img/magnolia-travels-logo-text.png"
+                            src="${ctx.contextPath}/resources/${theme.name}/img/logo-white.png"
                             style="height:40px;"/></a>
                 </p>
 

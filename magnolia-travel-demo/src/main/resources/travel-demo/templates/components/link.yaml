@@ -5,4 +5,4 @@ modelClass: info.magnolia.templating.models.components.LinkModel
 renderType: freemarker
 i18nBasename: info.magnolia.templating.models.messages
 title: components.link.title
-description: components.link.description
+description: components.link.descriptionTEST

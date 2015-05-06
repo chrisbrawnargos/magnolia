@@ -14,6 +14,13 @@ areas:
         id: tours:components/tourTypeTeaserRow
       textImage:
         id: mte:components/textImage
+      teaserInternal:
+        id: mte:components/teaserInternal
+      tourList:
+        id: tours:components/tourList
+        
   footer:
     editable: true
+
+
 title: Travel Main

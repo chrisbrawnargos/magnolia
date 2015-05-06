@@ -1,0 +1,3327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="variants" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:variants</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>935491b5-7cf6-4d4b-8dcb-15866271c292</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:createdBy" sv:type="String">
+    <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2015-04-29T15:40:15.251+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:node sv:name="variant-0">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:page</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>mgnl:variant</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>cca5f0ef-849c-4ca3-9b4f-0d8d50580da1</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:assignedSegments" sv:type="String" sv:multiple="true">
+      <sv:value>segments:7c178722-5347-418f-af81-e95e40ca95d3</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-26T17:17:02.306+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-04-29T15:40:15.268+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-04-29T15:51:25.415+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:template" sv:type="String">
+      <sv:value>travel-demo:pages/main</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:variantTitle" sv:type="String">
+      <sv:value>Americas</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:variationOf" sv:type="WeakReference">
+      <sv:value>b06b82a2-74b0-4994-8015-028c4fd60716</sv:value>
+    </sv:property>
+    <sv:property sv:name="title" sv:type="String">
+      <sv:value>Travel Home</sv:value>
+    </sv:property>
+    <sv:node sv:name="navigation">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>77705a5c-9ec2-4421-849d-48924eb22ef6</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:19:44.940+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-04-29T15:39:09.323+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="tours">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>1c6d95e6-efe1-4caf-8c0f-fde84507050b</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.206+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.206+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="destinations">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>b87cb4b9-abe6-4f1b-b75a-51bd55f14550</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.326+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.326+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>f819410c-09c0-49fb-bc3c-332e6a362d8b</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:25:11.795+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-04-29T15:51:25.415+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="0">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>9b9e3437-38c7-4ab7-ad58-8e1b977cd095</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-24T15:43:35.913+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:51:25.415+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>tours:components/tourCarousel</sv:value>
+        </sv:property>
+        <sv:property sv:name="tours" sv:type="String" sv:multiple="true">
+          <sv:value>820a075a-8c95-4f00-b0ee-5f3bf339f1ff</sv:value>
+          <sv:value>3dc158ce-fa92-4eab-a060-3f65d467b9ab</sv:value>
+          <sv:value>730c8850-d638-4e91-b3fb-4041a0c59ffe</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="00">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>91314748-91c5-4028-b7e1-2c1a2c70712c</sv:value>
+        </sv:property>
+        <sv:property sv:name="body" sv:type="String">
+          <sv:value>Featured this week:</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>tours:components/tourTypeTeaserRow</sv:value>
+        </sv:property>
+        <sv:property sv:name="title" sv:type="String">
+          <sv:value>Featured Tour Types</sv:value>
+        </sv:property>
+        <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+          <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+          <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+          <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="footer">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>d5a964d3-e026-44e3-8442-d26f543a091c</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:25:11.810+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="footer1">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>7af414c3-b4b4-4e6e-9156-337c8a18e94c</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.011+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.011+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>2e5f0bd5-b509-456b-8fb4-4e721421518c</sv:value>
+          </sv:property>
+          <sv:property sv:name="inline" sv:type="Boolean">
+            <sv:value>true</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="listStyle" sv:type="String">
+            <sv:value>inline</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:37:21.175+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:37:21.175+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Follow Us</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>6b74ad95-2308-4d1d-a3af-7a7b5fd069ce</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:37:21.247+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-02-25T18:37:21.247+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>86ef3f4f-137d-4bd7-bf0c-897f9131ece0</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Youtube</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:5b9ee0d9-9ee2-4943-ba91-ff8240065fda</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.youtube.com/user/MagnoliaCMSystem</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:05:45.189+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:05:45.189+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Youtube</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>2344d515-b65e-4369-8c4e-375818f246ba</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Pinterest</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:5c1870bc-d486-4b38-b5ce-287694b23c9c</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.pinterest.com/magnolia_cms/</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:06:19.607+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:06:19.607+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Pinterest</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>e49d73a4-1336-4f09-bb99-2317c79d949c</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Google+</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:52469758-3875-4ac1-b2bb-8deac5c8419b</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://plus.google.com/+MagnoliaCMSPlus</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:06:51.696+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:06:51.696+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Google+</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="02">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>c76d2f6d-45b8-47d5-ab7d-90b4a2323d09</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Twitter</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:f65f38bf-9e8b-482f-b5a9-30049bbf350a</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://twitter.com/magnolia_cms</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:07:18.391+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:07:18.391+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Twitter</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="03">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>33d06282-781e-447a-9582-0e89504254e4</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Facebook</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:d314ca8b-32f2-444a-a82a-858532956882</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.facebook.com/Magnolia</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:07:42.195+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:07:42.195+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Facebook</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="04">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>658c1393-89b0-41ad-947b-b0dc273366f8</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Linkedin</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:942d9647-d54b-4eb7-b8be-abc5ce3fd50f</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.linkedin.com/groups/Magnolia-CMS-2236763/about</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:08:11.404+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:08:11.404+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Linkedin</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer2">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>4260414a-e92e-4ad7-bde4-da60a93e49f3</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.020+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>306d218b-3451-43dc-8963-776ad750dde0</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:27:16.380+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>General</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>1cb5b85f-9904-4a80-9609-fd346659e9fb</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:27:16.571+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>7533251f-288c-472a-91fc-a39f7a43fa9a</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>808ebe4c-72b2-49f1-b9f7-e7db22bce02f</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:29:36.482+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:05:31.521+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>About Magnolia Travels</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>39ca2778-93ba-4b81-b49d-3029462a3f0f</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>53b073cc-ea3a-4e44-bdea-8c8a790b55c5</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:32:33.335+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Contact</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+        <sv:node sv:name="00">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>edb18a72-cc4c-44c1-a3b2-ab4819bef3b7</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:32:45.705+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:32:45.705+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Connect</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>52ee6e01-7b40-42df-a264-fba00ea9fb06</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:32:45.788+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-02-25T18:32:45.788+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>9000a8f3-55b9-40d0-954a-e71928af5529</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:06.318+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:06.318+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Email Sign Up</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>b3566331-5708-474d-8ea7-b19174f2cea7</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:23.703+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:23.703+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Become a Contributor</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>bcc2c947-3677-4ded-9ce9-2bd75a04e236</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:39.713+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:39.713+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Advertise With Us</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer3">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>06d72cce-a26b-40fa-9676-21f0fe14947d</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.027+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>d7b828b2-e36c-4dd2-8a1b-dd8e3deb1a92</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:33:49.396+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Services</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>1f67807d-a3cd-45c3-9d3c-e20c3d4b6100</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:33:49.481+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>20a9eb0d-d440-41d2-9ac0-0a55301c9cc3</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>8f02596c-f6c3-44f4-b7ba-e257ab4ea5a8</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:05.238+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:06:13.681+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>FAQ</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>b0d41cd7-95ac-4bda-a3c1-a52577247a6d</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>f0626ae7-e193-4f96-a094-d19d9c9b855f</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:19.052+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Site Map</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>5554340b-b069-4a7d-abaa-19953b0b6e96</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:31.844+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:34:31.844+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Recommended</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer4">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>efe1ef2f-5595-41af-98b5-a232b71b1086</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.036+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.036+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>f672a264-a8bb-464a-b489-fe412a798e0c</sv:value>
+          </sv:property>
+          <sv:property sv:name="headingLevel" sv:type="String">
+            <sv:value>h5</sv:value>
+          </sv:property>
+          <sv:property sv:name="headline" sv:type="String">
+            <sv:value>Magnolia CMS</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:34:50.575+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:34:50.575+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>mte:components/textImage</sv:value>
+          </sv:property>
+          <sv:property sv:name="text" sv:type="String">
+            <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia CMS.&lt;/p&gt;
+
+&lt;p&gt;Magnolia CMS allows organizations to orchestrate online services, sales and marketing content across all digital channels, maximizing the impact of every touchpoint.&lt;/p&gt;
+</sv:value>
+          </sv:property>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="variant-1">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:page</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>mgnl:variant</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>00fe3d0c-19f0-4081-b862-7b945513c6cf</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:assignedSegments" sv:type="String" sv:multiple="true">
+      <sv:value>segments:f2df3cc8-86f2-4338-879f-27f0cf4c46db</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-26T17:17:02.306+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-04-29T15:49:35.905+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-04-29T15:52:33.826+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:template" sv:type="String">
+      <sv:value>travel-demo:pages/main</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:variantTitle" sv:type="String">
+      <sv:value>Asia / Pacific</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:variationOf" sv:type="WeakReference">
+      <sv:value>b06b82a2-74b0-4994-8015-028c4fd60716</sv:value>
+    </sv:property>
+    <sv:property sv:name="title" sv:type="String">
+      <sv:value>Travel Home</sv:value>
+    </sv:property>
+    <sv:node sv:name="navigation">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>b0b59265-ada9-49f7-a913-e4f425a35944</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:19:44.940+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-04-29T15:39:09.323+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="tours">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>20363f87-3eb9-43ac-8ffe-356c1f0f93e1</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.206+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.206+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="destinations">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>0f8e972f-8f03-490b-854b-73775a4c918b</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.326+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.326+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>04035edc-0635-433f-b524-a39a4040b7fa</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:25:11.795+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-04-29T15:52:33.826+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="0">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>312817c9-a17f-4c4a-bc0e-d5e85edc40f2</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-24T15:43:35.913+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:52:33.826+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>tours:components/tourCarousel</sv:value>
+        </sv:property>
+        <sv:property sv:name="tours" sv:type="String" sv:multiple="true">
+          <sv:value>a358f3ad-5a03-4f5d-b0ab-cb2219100472</sv:value>
+          <sv:value>ab81a130-acfd-49c4-9aa7-777f43f98d36</sv:value>
+          <sv:value>45560b07-4600-4aaa-8fc4-30d9ceff5b09</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="00">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>caaa734e-3b5a-41ca-b0cb-fcde88836521</sv:value>
+        </sv:property>
+        <sv:property sv:name="body" sv:type="String">
+          <sv:value>Featured this week:</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>tours:components/tourTypeTeaserRow</sv:value>
+        </sv:property>
+        <sv:property sv:name="title" sv:type="String">
+          <sv:value>Featured Tour Types</sv:value>
+        </sv:property>
+        <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+          <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+          <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+          <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="footer">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>c4152e2e-b6e2-4833-b4f9-ff895c38a548</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:25:11.810+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="footer1">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>1368bde4-1ee1-455b-90cd-4cab9268c5da</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.011+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.011+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>2cffda5c-6e33-40e3-b8e3-a14acbd4a649</sv:value>
+          </sv:property>
+          <sv:property sv:name="inline" sv:type="Boolean">
+            <sv:value>true</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="listStyle" sv:type="String">
+            <sv:value>inline</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:37:21.175+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:37:21.175+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Follow Us</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>b27298c6-441e-4558-af89-a436efed613e</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:37:21.247+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-02-25T18:37:21.247+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>b94eed52-2a85-48fb-8f8b-b8916dbc668f</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Youtube</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:5b9ee0d9-9ee2-4943-ba91-ff8240065fda</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.youtube.com/user/MagnoliaCMSystem</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:05:45.189+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:05:45.189+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Youtube</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>ccab77be-d29d-41bc-96ba-45bd62ba5d77</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Pinterest</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:5c1870bc-d486-4b38-b5ce-287694b23c9c</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.pinterest.com/magnolia_cms/</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:06:19.607+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:06:19.607+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Pinterest</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>fd18fda5-d4d7-4fb0-b040-e5d0408ca22b</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Google+</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:52469758-3875-4ac1-b2bb-8deac5c8419b</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://plus.google.com/+MagnoliaCMSPlus</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:06:51.696+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:06:51.696+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Google+</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="02">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>476e7614-bae8-4957-9e92-96e1f6ffdea5</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Twitter</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:f65f38bf-9e8b-482f-b5a9-30049bbf350a</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://twitter.com/magnolia_cms</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:07:18.391+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:07:18.391+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Twitter</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="03">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>28141c6c-0787-4366-ac27-b01fc6c54747</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Facebook</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:d314ca8b-32f2-444a-a82a-858532956882</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.facebook.com/Magnolia</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:07:42.195+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:07:42.195+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Facebook</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="04">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>f3d7caa6-93aa-43a3-830e-2aa50962bdf9</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Linkedin</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:942d9647-d54b-4eb7-b8be-abc5ce3fd50f</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.linkedin.com/groups/Magnolia-CMS-2236763/about</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:08:11.404+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:08:11.404+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Linkedin</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer2">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>eda5910a-d1bc-4e00-9e0e-6cb777015cb5</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.020+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>e31ad872-b0f0-4726-ae7c-bdd71a950685</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:27:16.380+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>General</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>46fa0090-8e19-4560-abba-fd8daf3caeb9</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:27:16.571+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>d5cf8ce0-4ae1-4b13-9da2-f1ff9b1eb1f8</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>808ebe4c-72b2-49f1-b9f7-e7db22bce02f</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:29:36.482+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:05:31.521+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>About Magnolia Travels</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>4ec14b01-5a81-408d-9886-b4a654b37483</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>53b073cc-ea3a-4e44-bdea-8c8a790b55c5</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:32:33.335+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Contact</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+        <sv:node sv:name="00">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>faf7158e-462d-4043-aa49-54df7a0a7359</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:32:45.705+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:32:45.705+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Connect</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>3a836b5f-950c-4c0c-8911-622416db440a</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:32:45.788+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-02-25T18:32:45.788+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>d94fb286-2716-4a0b-869a-1c4a9eb9e85e</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:06.318+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:06.318+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Email Sign Up</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>92b2631b-a1ce-4d90-b7a1-d3dfe4c59776</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:23.703+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:23.703+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Become a Contributor</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>2e2ff673-9f6b-4406-a417-34ed02813331</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:39.713+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:39.713+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Advertise With Us</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer3">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>15696300-cbfc-4f79-b6cd-1ee5ba2e2499</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.027+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>032244cc-d008-43df-a366-9f424fa3bab4</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:33:49.396+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Services</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>4cd087bd-6a9d-4948-8e76-10660f2885dd</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:33:49.481+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>ebe5bc5d-0558-4114-813c-6f28699d4d47</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>8f02596c-f6c3-44f4-b7ba-e257ab4ea5a8</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:05.238+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:06:13.681+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>FAQ</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>2b6034a2-acd6-4412-b5b7-24d69b56bd9b</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>f0626ae7-e193-4f96-a094-d19d9c9b855f</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:19.052+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Site Map</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>be328bb9-f656-4f46-a014-0e331a0adc12</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:31.844+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:34:31.844+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Recommended</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer4">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>c1636ada-ffa0-423b-94e1-24929521cb0a</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.036+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.036+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>bcbe49dc-8f66-48f5-b2ed-a80da49adefd</sv:value>
+          </sv:property>
+          <sv:property sv:name="headingLevel" sv:type="String">
+            <sv:value>h5</sv:value>
+          </sv:property>
+          <sv:property sv:name="headline" sv:type="String">
+            <sv:value>Magnolia CMS</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:34:50.575+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:34:50.575+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>mte:components/textImage</sv:value>
+          </sv:property>
+          <sv:property sv:name="text" sv:type="String">
+            <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia CMS.&lt;/p&gt;
+
+&lt;p&gt;Magnolia CMS allows organizations to orchestrate online services, sales and marketing content across all digital channels, maximizing the impact of every touchpoint.&lt;/p&gt;
+</sv:value>
+          </sv:property>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="variant-2">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:page</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>mgnl:variant</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>c1b0aab6-e62b-4006-b67f-3afa3fcdbc01</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:assignedSegments" sv:type="String" sv:multiple="true">
+      <sv:value>segments:6896dff6-1584-4a26-be96-2ca5f5a04ac8</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-26T17:17:02.306+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-04-29T15:52:48.069+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-04-29T15:55:21.703+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:template" sv:type="String">
+      <sv:value>travel-demo:pages/main</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:variantTitle" sv:type="String">
+      <sv:value>Europe, Middle East, Africa</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:variationOf" sv:type="WeakReference">
+      <sv:value>b06b82a2-74b0-4994-8015-028c4fd60716</sv:value>
+    </sv:property>
+    <sv:property sv:name="title" sv:type="String">
+      <sv:value>Travel Home</sv:value>
+    </sv:property>
+    <sv:node sv:name="navigation">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>2b796b2e-9a53-4540-9feb-8d05f53c349a</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:19:44.940+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-04-29T15:39:09.323+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="tours">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>ab1c2ccf-0f81-4b30-92cf-b37085247779</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.206+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.206+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="destinations">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>92d26f13-50ee-4d00-bea6-155d3c5e3e41</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.326+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:39:09.326+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="content">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>a8ee430d-11e4-4233-9548-78ce31e7bfe9</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:25:11.795+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-04-29T15:55:21.703+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="0">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>04b23803-cf8d-4a8f-a4f1-1778a8e726fb</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-24T15:43:35.913+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-04-29T15:55:21.703+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>tours:components/tourCarousel</sv:value>
+        </sv:property>
+        <sv:property sv:name="tours" sv:type="String" sv:multiple="true">
+          <sv:value>5556af16-66f5-445a-9150-bae8d2adcf3a</sv:value>
+          <sv:value>d30b9ca6-e22d-45c5-9456-7538ab7bccf8</sv:value>
+          <sv:value>4412e7ed-b798-46c8-b7f5-3266dbd25def</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="00">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>c057e83c-de5e-4694-a8c4-94409fb15fa5</sv:value>
+        </sv:property>
+        <sv:property sv:name="body" sv:type="String">
+          <sv:value>Featured this week:</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>tours:components/tourTypeTeaserRow</sv:value>
+        </sv:property>
+        <sv:property sv:name="title" sv:type="String">
+          <sv:value>Featured Tour Types</sv:value>
+        </sv:property>
+        <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+          <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+          <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+          <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="footer">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:area</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>ace240ec-1311-488f-8bf0-f2a85b8a5af2</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-01-26T17:25:11.810+01:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:node sv:name="footer1">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>3ec6755c-25be-499d-923d-d098c40d5394</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.011+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.011+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>3710673c-d2c5-4936-bf2a-43fd2dfc87d1</sv:value>
+          </sv:property>
+          <sv:property sv:name="inline" sv:type="Boolean">
+            <sv:value>true</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="listStyle" sv:type="String">
+            <sv:value>inline</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:37:21.175+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:37:21.175+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Follow Us</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>b159dcf4-bcf5-47c5-b24e-98c3e9a8bf7b</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:37:21.247+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-02-25T18:37:21.247+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>36cc1e8a-6970-42f0-854f-0404f29b48dc</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Youtube</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:5b9ee0d9-9ee2-4943-ba91-ff8240065fda</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.youtube.com/user/MagnoliaCMSystem</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:05:45.189+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:05:45.189+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Youtube</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>b7453106-595d-456b-b9fc-6906a6cbaca3</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Pinterest</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:5c1870bc-d486-4b38-b5ce-287694b23c9c</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.pinterest.com/magnolia_cms/</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:06:19.607+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:06:19.607+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Pinterest</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>f6acdf68-bb74-4790-a8a2-c39b7ac970e5</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Google+</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:52469758-3875-4ac1-b2bb-8deac5c8419b</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://plus.google.com/+MagnoliaCMSPlus</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:06:51.696+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:06:51.696+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Google+</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="02">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>b014de56-09f3-476c-843b-a95ab39972b2</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Twitter</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:f65f38bf-9e8b-482f-b5a9-30049bbf350a</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://twitter.com/magnolia_cms</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:07:18.391+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:07:18.391+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Twitter</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="03">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>b8930ab3-8a3f-4a5e-b827-e3ec6b2fcc2b</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Facebook</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:d314ca8b-32f2-444a-a82a-858532956882</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.facebook.com/Magnolia</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:07:42.195+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:07:42.195+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Facebook</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="04">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>5b41e5b9-8206-49b2-befb-ef38001a0476</sv:value>
+              </sv:property>
+              <sv:property sv:name="altText" sv:type="String">
+                <sv:value>Linkedin</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:942d9647-d54b-4eb7-b8be-abc5ce3fd50f</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>https://www.linkedin.com/groups/Magnolia-CMS-2236763/about</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T19:08:11.404+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T19:08:11.404+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Linkedin</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer2">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>41dbb950-ec7a-45cf-80a0-b0f3c8f61ed0</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.020+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>e506ed58-e524-4517-a88d-7ae50594d139</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:27:16.380+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>General</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>1b2b4c9d-ebf5-4ba1-8c70-fa40553f0d8b</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:27:16.571+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>f7314335-267a-4e7f-a77a-fdb1692fb544</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>808ebe4c-72b2-49f1-b9f7-e7db22bce02f</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:29:36.482+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:05:31.521+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>About Magnolia Travels</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>abfbb008-f936-4183-ad60-ddac878d1151</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>53b073cc-ea3a-4e44-bdea-8c8a790b55c5</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:32:33.335+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:05:44.923+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Contact</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+        <sv:node sv:name="00">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>9d6158ae-f5c5-4658-be12-2e662a321f4e</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:32:45.705+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:32:45.705+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Connect</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>92c4dcef-9950-4228-a752-19c33b4a610b</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:32:45.788+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-02-25T18:32:45.788+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>dc1b1a61-1577-4aa9-9af3-5134605b521a</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:06.318+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:06.318+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Email Sign Up</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>a7a15d4f-c91e-46d8-a2f9-58bda6c42715</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:23.703+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:23.703+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Become a Contributor</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>2c955082-8ee6-449f-b230-13cc88f2fb3e</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:33:39.713+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:33:39.713+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Advertise With Us</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer3">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>af3bb3c3-a5c9-4778-a499-bf8c637cbcc0</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.027+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>50eecd18-a9fe-4b69-8018-a6b50f079747</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:33:49.396+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/linkList</sv:value>
+          </sv:property>
+          <sv:property sv:name="subtitle" sv:type="String">
+            <sv:value>Services</sv:value>
+          </sv:property>
+          <sv:node sv:name="linkList">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>611c70b4-2b6a-4fc1-ba01-ce8851a1f0ac</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:created" sv:type="Date">
+              <sv:value>2015-02-25T18:33:49.481+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>559f4ab4-cb70-430e-81e9-5687bd47d9a3</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>8f02596c-f6c3-44f4-b7ba-e257ab4ea5a8</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:05.238+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:06:13.681+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>FAQ</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>f9d24ab1-63e9-40f1-a421-6e3f06e2591e</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>internal</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeinternal" sv:type="String">
+                <sv:value>f0626ae7-e193-4f96-a094-d19d9c9b855f</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:19.052+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-03-30T11:06:29.113+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Site Map</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>c40d91af-1604-4503-85af-817012985649</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkType" sv:type="String">
+                <sv:value>external</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkTypeexternal" sv:type="String">
+                <sv:value>#</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-02-25T18:34:31.844+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-02-25T18:34:31.844+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/link</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Recommended</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="footer4">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>07f826b0-ceb5-4eec-ab25-d87c8f920195</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.036+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-02-25T17:20:06.036+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>130f1e5d-5cc8-4934-9246-df6c811590cd</sv:value>
+          </sv:property>
+          <sv:property sv:name="headingLevel" sv:type="String">
+            <sv:value>h5</sv:value>
+          </sv:property>
+          <sv:property sv:name="headline" sv:type="String">
+            <sv:value>Magnolia CMS</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-02-25T18:34:50.575+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-02-25T18:34:50.575+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>mte:components/textImage</sv:value>
+          </sv:property>
+          <sv:property sv:name="text" sv:type="String">
+            <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia CMS.&lt;/p&gt;
+
+&lt;p&gt;Magnolia CMS allows organizations to orchestrate online services, sales and marketing content across all digital channels, maximizing the impact of every touchpoint.&lt;/p&gt;
+</sv:value>
+          </sv:property>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+</sv:node>

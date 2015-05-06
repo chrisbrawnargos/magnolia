@@ -9,11 +9,13 @@ areas:
     templateScript: /travel-demo/templates/areas/contentContainer.ftl
     type: list
     availableComponents:
+      pageIntro:
+        id: travel-demo:components/pageIntro
       tourTypeOverviewHeader:
         id: tours:components/tourTypeOverviewHeader
       tourListFeaturedRowByDestination:
         id: tours:components/tourListFeaturedRow
-      tourListByDestination:
+      tourList:
         id: tours:components/tourList
     parameters:
       cssClass: container
