@@ -31,8 +31,13 @@
   </scm>
 
   <modules>
-    <module>magnolia-travel-demo-enterprise</module>
+
     <module>magnolia-travel-enterprise-webapp</module>
+    <module>magnolia-travel-demo</module>
+    <module>magnolia-travel-tours</module>
+    <module>magnolia-travel-demo-multisite</module>
+    <module>magnolia-travel-demo-personalization</module>
+    <module>magnolia-travel-demo-marketing-tags</module>
   </modules>
 
   <dependencyManagement>
@@ -96,9 +101,20 @@
         <artifactId>magnolia-travel-tours</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <!-- Deps to reactor (self) - Enterprise -->
       <dependency>
         <groupId>info.magnolia.demo</groupId>
-        <artifactId>magnolia-travel-demo-enterprise</artifactId>
+        <artifactId>magnolia-travel-demo-marketing-tags</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-demo-multisite</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-demo-personalization</artifactId>
         <version>${project.version}</version>
       </dependency>
 

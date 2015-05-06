@@ -16,11 +16,9 @@ package info.magnolia.demo.travel.enterprise.setup;
 
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
-import info.magnolia.module.delta.OrderNodeToFirstPositionTask;
 import info.magnolia.module.delta.PropertyValueDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
-import info.magnolia.personalization.variant.VariantManager;
 import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
@@ -31,7 +29,7 @@ import java.util.List;
  * by registering "deltas" to maintain the module's configuration, or other type of content.
  * If you don't need this, simply remove the reference to this class in the module descriptor xml.
  */
-public class TravelDemoEnterpriseModuleVersionHandler extends DefaultModuleVersionHandler {
+public class TravelDemoMarketingTagsModuleVersionHandler extends DefaultModuleVersionHandler {
 
     protected static final String SITE_AREAS_PROTOTYPE = "/modules/site/config/site/templates/prototype/areas/headerScripts";
 
@@ -40,11 +38,6 @@ public class TravelDemoEnterpriseModuleVersionHandler extends DefaultModuleVersi
         final List<Task> tasks = new ArrayList<Task>();
 
         tasks.addAll(super.getExtraInstallTasks(installContext));
-
-        // personalization
-        // transform travel page into a page with personalization variants.
-        tasks.add(new AddMixinTask("/travel", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN));
-        tasks.add(new OrderNodeToFirstPositionTask("Order travel page variants to first position.", "", RepositoryConstants.WEBSITE, "travel/variants"));
 
         // marketing tags
         // REMOVE - references wrong locations - tasks.add(new ReplaceDefaultSTKAreaScriptsTask());

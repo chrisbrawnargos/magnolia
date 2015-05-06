@@ -37,7 +37,15 @@
     </dependency>
     <dependency>
       <groupId>info.magnolia.demo</groupId>
-      <artifactId>magnolia-travel-demo-enterprise</artifactId>
+      <artifactId>magnolia-travel-demo-multisite</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.demo</groupId>
+      <artifactId>magnolia-travel-demo-personalization</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.demo</groupId>
+      <artifactId>magnolia-travel-demo-marketing-tags</artifactId>
     </dependency>
     
 	<!-- Additional EE modules -->
