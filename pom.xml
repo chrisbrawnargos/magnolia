@@ -16,8 +16,8 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4-m6</magnoliaVersion>
-    <magnoliaUiVersion>5.4-m5</magnoliaUiVersion>
+    <magnoliaVersion>5.4-m8</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m8</magnoliaUiVersion>
     <magnoliaCEBundleVersion>5.4-alpha</magnoliaCEBundleVersion>
     <magnoliaDamVersion>2.1-m4</magnoliaDamVersion>
     <scmTagPrefix>magnolia-demo-projects</scmTagPrefix>
