@@ -36,6 +36,7 @@ package info.magnolia.demo.travel.tours.setup;
 import info.magnolia.demo.travel.tours.TourTemplatingFunctions;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
+import info.magnolia.module.delta.AddRoleToUserTask;
 import info.magnolia.module.delta.OrderNodeBeforeTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.rendering.module.setup.InstallRendererContextAttributeTask;
@@ -64,6 +65,9 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
         tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tourType", "about"));
         tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/destination", "about"));
         tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
+
+        /* Add travel-base role to user anonymous */
+        tasks.add(new AddRoleToUserTask("Adds role 'travel-base' to user 'anonymous'", "anonymous", "travel-base"));
 
         return tasks;
     }
