@@ -36,7 +36,7 @@
     [#list theme.jsFiles as jsFile]
         <script src="${jsFile.link}"></script>
     [/#list]
-    
+
     [#-- Scripts to be rendered in the header. --]
     [@cms.area name="headerScripts"/]
 
