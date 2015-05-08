@@ -37,9 +37,6 @@
         <script src="${jsFile.link}"></script>
     [/#list]
 
-    [#-- Scripts to be rendered in the header. --]
-    [@cms.area name="headerScripts"/]
-
     <!-- TODO, can these come after all of the css -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -49,8 +46,6 @@
     <![endif]-->
 </head>
 <body>
-[#-- Scripts to be rendered at the beginning of the body. --]
-[@cms.area name="bodyBeginScripts"/]
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -68,7 +63,5 @@
         <script src="${jsFile.link}"></script>
     [/#list]
 [/#if]
-[#-- Scripts to be rendered at the end of the body. --]
-[@cms.area name="bodyEndScripts"/]
 </body>
 </html>
