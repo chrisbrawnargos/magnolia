@@ -190,7 +190,7 @@ public class TourServices {
                     tour.setImage(damFunctions.getAsset(tourNode.getProperty(Tour.PROPERTY_NAME_IMAGE).getString()));
                 }
 
-                final String tourLink = getTourLink(tourNode.getName());
+                final String tourLink = getTourLink(tourNode);
                 if (StringUtils.isNotBlank(tourLink)) {
                     tour.setLink(tourLink);
                 }
@@ -292,8 +292,8 @@ public class TourServices {
     /**
      * Create a link to a specific tour.
      */
-    public String getTourLink(String tourName) {
-        return String.format("%s/travel/tour?%s=%s", MgnlContext.getContextPath(), TOUR_QUERY_PARAMETER, tourName);
+    public String getTourLink(Node tourNode) {
+        return templatingFunctions.link(tourNode);
     }
 
 }

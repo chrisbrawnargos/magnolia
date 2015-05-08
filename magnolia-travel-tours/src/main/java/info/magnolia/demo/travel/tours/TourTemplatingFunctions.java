@@ -35,9 +35,11 @@ package info.magnolia.demo.travel.tours;
 
 import info.magnolia.demo.travel.tours.service.Category;
 import info.magnolia.demo.travel.tours.service.TourServices;
+import info.magnolia.jcr.util.ContentMap;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.jcr.Node;
 
 /**
  * Useful functions for templating.
@@ -56,8 +58,12 @@ public class TourTemplatingFunctions {
         return tourServices.getCategoryByUrl();
     }
 
-    public String getTourLink(String tourName) {
-        return tourServices.getTourLink(tourName);
+    public String getTourLink(ContentMap tourContentMap) {
+        return getTourLink(tourContentMap.getJCRNode());
+    }
+
+    public String getTourLink(Node tourNode) {
+        return tourServices.getTourLink(tourNode);
     }
 
 }

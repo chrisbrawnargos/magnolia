@@ -13,7 +13,7 @@
             [#list tours as tour]
                 [#assign name = tour.name!tour.@name /]
                 [#assign description = tour.description!"" /]
-                [#assign tourLink = tfn.getTourLink(tour.@name!"NO-NAME-NO-SLUG") /]
+                [#assign tourLink = tfn.getTourLink(tour) /]
 
                 <div class="col-md-4 product-card">
                     <span class="card-teaser-image clearfix">

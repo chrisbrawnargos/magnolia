@@ -11,7 +11,7 @@
 
     <div class="row">
         [#list tours as tour]
-            [#assign link = "tour?tour=" + tour.@name!"NO NAME/NO SLUG"]
+            [#assign link = tfn.getTourLink(tour)!]
             [#assign asset = damfn.getAsset(tour.img)!]
             [@tourTeaser tour.name tour.description link asset /]
         [/#list]
