@@ -25,9 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class is optional and lets you manager the versions of your module,
- * by registering "deltas" to maintain the module's configuration, or other type of content.
- * If you don't need this, simply remove the reference to this class in the module descriptor xml.
+ * Replace the travel demo prototype script areas templateScript & modelClass with those supporting Marketing Tags.
  */
 public class TravelDemoMarketingTagsModuleVersionHandler extends DefaultModuleVersionHandler {
 
@@ -39,9 +37,7 @@ public class TravelDemoMarketingTagsModuleVersionHandler extends DefaultModuleVe
 
         tasks.addAll(super.getExtraInstallTasks(installContext));
 
-        // marketing tags
-        // REMOVE - references wrong locations - tasks.add(new ReplaceDefaultSTKAreaScriptsTask());
-        tasks.add(new PropertyValueDelegateTask("Replace Travel Demo prototype's headerScripts model with MarketingTags model.", "", RepositoryConstants.CONFIG, SITE_AREAS_PROTOTYPE, "modelClass", "info.magnolia.templating.models.areas.NoOpScriptsAreaModel", true,
+        tasks.add(new PropertyValueDelegateTask("Replace Travel Demo prototype's headerScripts model with MarketingTags model.", "", RepositoryConstants.CONFIG, SITE_AREAS_PROTOTYPE, "modelClass", "info.magnolia.templating.models.areas.PlaceholderAreaModel", true,
                 new SetPropertyTask(RepositoryConstants.CONFIG, SITE_AREAS_PROTOTYPE, "modelClass", "info.magnolia.marketingtags.model.ScriptsAreaModel")));
 
         tasks.add(new PropertyValueDelegateTask("Replace Travel Demo prototype's headerScripts script with MarketingTags script.", "", RepositoryConstants.CONFIG, SITE_AREAS_PROTOTYPE, "templateScript", "/mte/areas/placeholder.ftl", true,

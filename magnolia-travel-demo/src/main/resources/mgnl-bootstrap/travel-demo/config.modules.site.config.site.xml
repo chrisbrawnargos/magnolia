@@ -1110,10 +1110,10 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="modelClass" sv:type="String">
-            <sv:value>info.magnolia.templating.models.areas.NoOpScriptsAreaModel</sv:value>
+            <sv:value>info.magnolia.templating.models.areas.PlaceholderAreaModel</sv:value>
           </sv:property>
           <sv:property sv:name="templateScript" sv:type="String">
-            <sv:value>/mte/areas/placeholder.ftl</sv:value>
+            <sv:value>/mte/templates/areas/placeholder.ftl</sv:value>
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
             <sv:value>noComponent</sv:value>
