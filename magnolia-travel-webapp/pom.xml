@@ -26,6 +26,7 @@
     </dependency>
 
     <!-- Dependencies to project's modules -->
+      
     <dependency>
       <groupId>info.magnolia.demo</groupId>
       <artifactId>magnolia-travel-demo</artifactId>
@@ -34,6 +35,7 @@
       <groupId>info.magnolia.demo</groupId>
       <artifactId>magnolia-travel-tours</artifactId>
     </dependency>
+    
 
     <!-- Other dependencies -->
     <dependency>

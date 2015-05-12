@@ -4,7 +4,7 @@
   <parent>
     <groupId>info.magnolia.maven.poms</groupId>
     <artifactId>magnolia-parent-pom-community</artifactId>
-    <version>31</version>
+    <version>30</version>
   </parent>
   <groupId>info.magnolia.demo</groupId>
   <artifactId>magnolia-travel-demo-parent</artifactId>
@@ -160,7 +160,7 @@
       <dependency>
         <groupId>info.magnolia.templating</groupId>
         <artifactId>magnolia-templating-essentials-models</artifactId>
-        <version>1.0-m4</version>
+        <version>1.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>

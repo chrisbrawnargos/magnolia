@@ -10,7 +10,7 @@ form:
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           label: dialogs.components.tourList.tabMain.title.label
           
-        - name: tourType
+        - name: referenceId
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
           targetWorkspace: category
           targetTreeRootPath: /TourTypes

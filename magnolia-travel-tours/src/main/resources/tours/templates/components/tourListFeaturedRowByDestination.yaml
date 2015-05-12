@@ -1,8 +1,10 @@
-templateScript: /tours/templates/components/tourListFeaturedRow.ftl
-modelClass: info.magnolia.demo.travel.tours.model.RelatedToursModel
-class: info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition
+templateScript: /tours/templates/components/tourList.ftl
+modelClass: info.magnolia.templating.models.components.ContentListModel
 
 renderType: freemarker
-category: destination
+parameters:
+  workspace: tours
+  referenceProperty: destination
+  extraQuery: "isFeatured = 'true'"
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourListFeaturedRowByDestination

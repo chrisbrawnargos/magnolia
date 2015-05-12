@@ -1,14 +1,20 @@
+[#-- Uses ContentListModel --]
+
 [#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/tourTeaser.ftl"]
 [#include "/tours/templates/macros/editorAlert.ftl" /]
 
-[#if content.tourType?has_content]
-    [#assign category = model.getCategoryByIdentifier(content.tourType!)]
+[#-- TODO Change this into a method too. --]
+[#if content.referenceId?has_content]
+    [#assign categoryId = content.referenceId]
+    [#assign category = cmsfn.contentById(categoryId, catfn.getCategorizationRepository())];
 [#else]
-    [#assign category = model.getCategoryByUrl()!]
+    [#assign routeParameter = "category"]
+    [#assign category = contentfn.getContentByParameter(routeParameter, catfn.getCategorizationRepository(), "active")!]
 [/#if]
 
-[#assign tours = model.getToursByCategory(category.identifier)]
+[#assign tours = model.getItemsFancy(def.parameters.referenceProperty, category.@id, "")]
+
 [#assign title = content.title!i18n.get('tour.all.tours', [category.name!""])]
 
 [#-------------- RENDERING --------------]
