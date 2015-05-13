@@ -58,12 +58,22 @@
         <artifactId>magnolia-travel-demo-marketing-tags</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <dependency>
+        <groupId>info.magnolia.eedemo</groupId>
+        <artifactId>magnolia-travel-demo-personalization</artifactId>
+        <version>${project.version}</version>
+      </dependency>
 
       <!--  EE modules -->
       <dependency>
         <groupId>info.magnolia.marketingtags</groupId>
         <artifactId>magnolia-marketing-tags</artifactId>
         <version>1.2-m4</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.personalization</groupId>
+        <artifactId>magnolia-personalization-integration</artifactId>
+        <version>1.2-m7</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

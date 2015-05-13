@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>travel-demo-personalization</name>
+  <displayName>Magnolia Travel Demo Personalization Module</displayName>
+  <versionHandler>info.magnolia.demo.travel.personalization.setup.TravelDemoPersonalizationModuleVersionHandler</versionHandler>
+  <version>${project.version}</version>
+
+  <dependencies>
+    <dependency>
+      <name>travel-demo</name>
+      <version>1.0/*</version>
+    </dependency>
+    <dependency>
+      <name>personalization-integration</name>
+      <version>1.2/*</version>
+    </dependency>
+  </dependencies>
+</module>
