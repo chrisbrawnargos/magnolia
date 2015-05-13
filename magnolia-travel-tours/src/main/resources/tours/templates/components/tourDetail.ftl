@@ -1,12 +1,18 @@
+[#-- Uses ContentModel --]
+
+[#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
 
-[#assign tour = model.tour]
-[#assign asset = damfn.getAsset(tour.img)!]
-[#if asset??]
-    [#assign assetCredit = asset.caption!]
+[#-- TODO Change this into a method too. --]
+[#if content.referenceId?has_content]
+    [#assign tourId = content.referenceId]
+    [#assign tourItem = cmsfn.contentById(tourId, def.parameters.workspace)];
+[#else]
+    [#assign routeParameter = "tour"]
+    [#assign tourItem = contentfn.getContentByParameter(routeParameter, def.parameters.workspace, "Inside-New-Delhi")!]
 [/#if]
-[#assign relatedTourTypes = model.getTourTypes(cmsfn.asJCRNode(tour)) ]
-[#assign relatedDestinations = model.getDestinations(cmsfn.asJCRNode(tour))]
+[#assign resolverConfig = {"tourTypes":"category", "destination":"category", "img":"dam"}] 
+[#assign tour = contentfn.resolveReferences(tourItem, resolverConfig)]
 
 <!-- TourDetail -->
 <div class="container">
@@ -26,7 +32,7 @@
             <div class="description">${tour.description}</div>
 
             <ul class="product-categories list-unstyled">
-            [#list relatedTourTypes as tourType]
+            [#list tour.tourTypes as tourType]
                 <li><a href="${tourType.link!}">${tourType.name!}</a></li>
             [/#list]
             </ul>
@@ -34,9 +40,9 @@
             <div class="duration">${i18n.get('tour.duration', [tour.duration!])}</div>
             <div class="locations">${tour.location!}</div>
 
-            [#list relatedDestinations as destination]
-                [#assign rendition = damfn.getRendition(destination.image, "small-square")!]
-                <a href="${destination.link}">
+            [#list tour.destination as destination]
+                [#assign rendition = damfn.getRendition(destination.img, "small-square")!]
+                <a href="${destination.@link}">
                     <div class="destination-card">
                         [@tourImage rendition "" destination.name "img-circle img-responsive" /]
                         <h3>${destination.name!}</h3>
