@@ -1,20 +1,18 @@
-[#-- Uses ContentListModel --]
 [#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/relatedTours.ftl"]
 
-[#-- TODO Change this into a method too. --]
-[#assign routeParameter = "tour"]
-[#assign tourItem = contentfn.getContentByParameter(routeParameter, def.parameters.workspace, "Inside-New-Delhi")!]
-
+[#-- Uses definition parameters: workspace, requestParameter, requestFallback --]
+[#assign tourItem = model.getContentByParameter()!]
 [#assign tourNode = cmsfn.asJCRNode(tourItem)]
-[#assign categories = cmsfn.asContentMapList(catfn.getCategories(tourNode, "tourTypes"))]
+
+[#assign categoryNodes = catfn.getCategories(tourNode, "tourTypes")]
+[#assign categories = cmsfn.asContentMapList(categoryNodes)]
 
 [#-------------- RENDERING --------------]
 <!-- Tour Detail - Related Tours -->
 [#list categories as category]
 
-    [#--assign tours = model.getRelatedToursByCategory(category.@id) --]
-    [#assign tours = model.getItemsFancy(def.parameters.referenceProperty, category.@id, def.parameters.extraQuery!)]
+    [#assign tours = model.getContentListByReference(category.@id)]
     
     [@relatedTours category.name tours /]
 

@@ -1,4 +1,4 @@
-[#-- Uses ContentListModel --]
+[#-- Render a list of tours. --]
 
 [#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/tourTeaser.ftl"]
@@ -9,13 +9,12 @@
     [#assign categoryId = content.referenceId]
     [#assign category = cmsfn.contentById(categoryId, catfn.getCategorizationRepository())];
 [#else]
-    [#assign routeParameter = "category"]
-    [#assign category = contentfn.getContentByParameter(routeParameter, catfn.getCategorizationRepository(), "active")!]
+    [#assign category = contentfn.getContentByParameter("category", catfn.getCategorizationRepository(), "active")!]
 [/#if]
 
-[#assign tours = model.getItemsFancy(def.parameters.referenceProperty, category.@id, "")]
+[#assign tours = model.getContentListByReference(category.@id)]
 
-[#assign title = content.title!i18n.get('tour.all.tours', [category.name!""])]
+[#assign title = content.title!i18n.get('tour.all.tours', [category.displayName!""])]
 
 [#-------------- RENDERING --------------]
 <!-- Tour List -->

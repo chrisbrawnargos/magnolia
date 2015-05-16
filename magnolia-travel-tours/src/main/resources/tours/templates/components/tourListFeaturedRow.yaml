@@ -1,11 +1,11 @@
 templateScript: /tours/templates/components/tourListFeaturedRow.ftl
-modelClass: info.magnolia.templating.models.components.ContentListModel
+modelClass: info.magnolia.templating.models.components.ContentModel
 
 renderType: freemarker
 parameters:
-  workspace: tours
-  referenceProperty: tourTypes
-  extraQuery: "isFeatured = 'true'"
+  listWorkspace: tours
+  listReferenceProperty: tourTypes
+  listQuery: "isFeatured = 'true'"
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourListFeaturedRow
 

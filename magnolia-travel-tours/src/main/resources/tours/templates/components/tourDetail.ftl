@@ -1,19 +1,12 @@
-[#-- Uses ContentModel --]
-
 [#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
 
-[#-- TODO Change this into a method too. --]
-[#if content.referenceId?has_content]
-    [#assign tourId = content.referenceId]
-    [#assign tourItem = cmsfn.contentById(tourId, def.parameters.workspace)];
-[#else]
-    [#assign routeParameter = "tour"]
-    [#assign tourItem = contentfn.getContentByParameter(routeParameter, def.parameters.workspace, "Inside-New-Delhi")!]
-[/#if]
-[#assign resolverConfig = {"tourTypes":"category", "destination":"category", "img":"dam"}] 
-[#assign tour = contentfn.resolveReferences(tourItem, resolverConfig)]
+[#-- Uses definition parameters: workspace, requestParameter, requestFallback --]
+[#assign tourItem = model.getContentByParameter()!]
+[#assign resolverConfig = def.parameters.resolverConfiguration!] 
+[#assign tour = contentfn.resolveReferences(tourItem, resolverConfig)!]
 
+[#-------------- RENDERING --------------]
 <!-- TourDetail -->
 <div class="container">
 
@@ -33,7 +26,7 @@
 
             <ul class="product-categories list-unstyled">
             [#list tour.tourTypes as tourType]
-                <li><a href="${tourType.link!}">${tourType.name!}</a></li>
+                <li><a href="${tourType.link!}">${tourType.displayName!}</a></li>
             [/#list]
             </ul>
 
@@ -45,7 +38,7 @@
                 <a href="${destination.@link}">
                     <div class="destination-card">
                         [@tourImage rendition "" destination.name "img-circle img-responsive" /]
-                        <h3>${destination.name!}</h3>
+                        <h3>${destination.displayName!}</h3>
                     </div>
                 </a>
             [/#list]

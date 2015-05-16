@@ -1,5 +1,10 @@
 templateScript: /tours/templates/components/tourTypeOverviewHeader.ftl
+modelClass: info.magnolia.templating.models.components.ContentModel
 
 renderType: freemarker
+parameters:
+  workspace: category
+  requestParameter: category
+  requestFallback: active
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourTypeOverviewHeader

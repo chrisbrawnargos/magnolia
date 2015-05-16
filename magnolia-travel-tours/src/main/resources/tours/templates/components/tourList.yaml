@@ -1,22 +1,11 @@
 templateScript: /tours/templates/components/tourList.ftl
 dialog: tours:components/tourList.dialog
-modelClass: info.magnolia.templating.models.components.ContentListModel
+modelClass: info.magnolia.templating.models.components.ContentModel
 
 renderType: freemarker
 parameters:
-  workspace: tours
-  referenceProperty: tourTypes
-  extraQuery: "NOT(isFeatured = 'true')"
+  listWorkspace: tours
+  listReferenceProperty: tourTypes
+  listQuery: "NOT(isFeatured = 'true')"
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourList
-
-#templateScript: /tours/templates/components/tourList.ftl
-#dialog: tours:components/tourList.dialog
-#modelClass: info.magnolia.demo.travel.tours.model.TourListModel
-#class: info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition
-#
-#renderType: freemarker
-#category: tourTypes
-#i18nBasename: info.magnolia.module.travel-tours.messages
-#title: components.tourList
-#
