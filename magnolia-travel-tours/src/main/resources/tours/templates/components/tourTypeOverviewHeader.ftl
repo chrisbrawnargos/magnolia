@@ -2,6 +2,7 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
 
+[#-- Uses definition parameters: workspace, requestParameter, requestFallback --]
 [#assign categoryRaw = model.getContentByParameter()!]
 [#assign resolverConfig = {"img":"dam"}] 
 [#assign category = contentfn.resolveReferences(categoryRaw, resolverConfig)]

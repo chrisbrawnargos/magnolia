@@ -12,6 +12,7 @@
 <!-- Tour Detail - Related Tours -->
 [#list categories as category]
 
+    [#-- Uses definition parameters: listWorkspace, listReferenceProperty, listQuery --]
     [#assign tours = model.getContentListByReference(category.@id)]
     
     [@relatedTours category.name tours /]

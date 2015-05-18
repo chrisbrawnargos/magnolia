@@ -4,8 +4,14 @@ modelClass: info.magnolia.templating.models.components.ContentModel
 
 renderType: freemarker
 parameters:
+  workspace: category
+  dialogProperty: referenceId
+  requestParameter: category
+  requestFallback: active
+  
   listWorkspace: tours
   listReferenceProperty: tourTypes
   listQuery: "NOT(isFeatured = 'true')"
+
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourList

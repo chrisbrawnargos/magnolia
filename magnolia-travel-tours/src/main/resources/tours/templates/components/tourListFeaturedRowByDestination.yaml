@@ -3,8 +3,13 @@ modelClass: info.magnolia.templating.models.components.ContentModel
 
 renderType: freemarker
 parameters:
+  workspace: category
+  requestParameter: category
+  requestFallback: asia
+  
   listWorkspace: tours
   listReferenceProperty: destination
   listQuery: "isFeatured = 'true'"
+  
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourListFeaturedRowByDestination

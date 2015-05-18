@@ -4,14 +4,10 @@
 [#include "/tours/templates/macros/tourTeaser.ftl"]
 [#include "/tours/templates/macros/editorAlert.ftl" /]
 
-[#-- TODO Change this into a method too. --]
-[#if content.referenceId?has_content]
-    [#assign categoryId = content.referenceId]
-    [#assign category = cmsfn.contentById(categoryId, catfn.getCategorizationRepository())];
-[#else]
-    [#assign category = contentfn.getContentByParameter("category", catfn.getCategorizationRepository(), "active")!]
-[/#if]
+[#-- Uses definition parameters: workspace, dialogProperty, requestParameter, requestFallback --]
+[#assign category = model.getContentByCascade()]
 
+[#-- Uses definition parameters: listWorkspace, listReferenceProperty, listQuery --]
 [#assign tours = model.getContentListByReference(category.@id)]
 
 [#assign title = content.title!i18n.get('tour.all.tours', [category.displayName!""])]
@@ -30,6 +26,6 @@
         [/#list]
     </div>
 
-    [@editorAlert i18n.get('note.for.editors.assign.category', [category.name!""]) /]
+    [@editorAlert i18n.get('note.for.editors.assign.category', [(category.name)!""]) /]
 </div>
 
