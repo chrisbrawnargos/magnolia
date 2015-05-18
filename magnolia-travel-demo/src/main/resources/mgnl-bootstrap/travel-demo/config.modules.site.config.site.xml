@@ -982,7 +982,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
-            <sv:value>noComponent</sv:value>
+            <sv:value>list</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
