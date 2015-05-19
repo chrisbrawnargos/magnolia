@@ -71,6 +71,13 @@
         <type>pom</type>
       </dependency>
 
+      <!-- Dependencies to travel-demo enterprise modules -->
+      <dependency>
+        <groupId>info.magnolia.eedemo</groupId>
+        <artifactId>magnolia-travel-demo-marketing-tags</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
       <!--  EE modules -->
       <dependency>
         <groupId>info.magnolia.multisite</groupId>
