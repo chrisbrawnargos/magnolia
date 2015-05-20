@@ -13,7 +13,7 @@
             [#list tours as tour]
                 [#assign name = tour.name!tour.@name /]
                 [#assign description = tour.description!"" /]
-                [#assign tourLink = tfn.getTourLink(tour) /]
+                [#assign tourLink = tourfn.getTourLink(tour)!"#" /]
 
                 <div class="col-md-4 product-card">
                     <span class="card-teaser-image clearfix">
@@ -25,7 +25,7 @@
                         [#if description?has_content]
                             <p><span class="description">${description!}</span></p>
                         [/#if]
-                        <p class="card-button"><a class="btn btn-primary" href="${tourLink!'#'}">${i18n['tour.view']}</a></p>
+                        <p class="card-button"><a class="btn btn-primary" href="${tourLink}">${i18n['tour.view']}</a></p>
                     </div>
                 </div>
             [/#list]

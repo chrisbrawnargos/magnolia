@@ -1,6 +1,6 @@
 [#include "/tours/templates/macros/image.ftl" /]
 
-[#assign category = tfn.categoryByUrl]
+[#assign category = tourfn.categoryByUrl]
 [#assign rendition = damfn.getRendition(category.image, "xlarge-16x9") ]
 [#assign assetCredit = category.image.caption!]
 
