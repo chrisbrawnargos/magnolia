@@ -25,6 +25,7 @@
     <module>enterprise/magnolia-travel-demo-enterprise-parent</module>
     <module>enterprise/magnolia-travel-demo-marketing-tags</module>
     <module>enterprise/magnolia-travel-demo-personalization</module>
+    <module>enterprise/magnolia-travel-demo-multisite</module>
   </modules>
 
   <properties>

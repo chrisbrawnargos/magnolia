@@ -92,8 +92,15 @@ public class TourServices {
      * Tries to determine {@link Category} from passed URL selector (e.g. <code>/page~category_name~.html</code>).
      */
     public Category getCategoryByUrl() {
-        final String categoryWorkspace = categorizationTemplatingFunctions.getCategorizationRepository();
         final String categoryName = StringUtils.defaultIfBlank(SelectorUtil.getSelector(0), "active");
+        return getCategoryByName(categoryName);
+    }
+
+    /**
+     * Returns a {@link Category} object based on path or name of category.
+     */
+    public Category getCategoryByName(String categoryName) {
+        final String categoryWorkspace = categorizationTemplatingFunctions.getCategorizationRepository();
 
         Category category = null;
         try {

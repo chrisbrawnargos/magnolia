@@ -5,8 +5,23 @@
 [#if asset??]
     [#assign assetCredit = asset.caption!]
 [/#if]
-[#assign relatedTourTypes = model.getTourTypes(cmsfn.asJCRNode(tour)) ]
-[#assign relatedDestinations = model.getDestinations(cmsfn.asJCRNode(tour))]
+
+[#if def.parameters.showTourTypes?? && def.parameters.showTourTypes == false]
+    [#assign showTourTypes = false]
+[#else]
+    [#assign showTourTypes = true]
+    [#assign relatedTourTypes = model.getTourTypes(cmsfn.asJCRNode(tour)) ]
+[/#if]
+
+[#if def.parameters.showDestinations?? && def.parameters.showDestinations == false]
+    [#assign showDestinations = false]
+[#else]
+    [#assign showDestinations = true]
+    [#assign relatedDestinations = model.getDestinations(cmsfn.asJCRNode(tour))]
+[/#if]
+
+
+
 
 <!-- TourDetail -->
 <div class="container">
@@ -25,24 +40,28 @@
 
             <div class="description">${tour.description}</div>
 
-            <ul class="product-categories list-unstyled">
-            [#list relatedTourTypes as tourType]
-                <li><a href="${tourType.link!}">${tourType.name!}</a></li>
-            [/#list]
-            </ul>
+            [#if showTourTypes]
+                <ul class="product-categories list-unstyled">
+                [#list relatedTourTypes as tourType]
+                    <li><a href="${tourType.link!}">${tourType.name!}</a></li>
+                [/#list]
+                </ul>
+            [/#if]
 
             <div class="duration">${i18n.get('tour.duration', [tour.duration!])}</div>
             <div class="locations">${tour.location!}</div>
 
-            [#list relatedDestinations as destination]
-                [#assign rendition = damfn.getRendition(destination.image, "small-square")!]
-                <a href="${destination.link}">
-                    <div class="destination-card">
-                        [@tourImage rendition "" destination.name "img-circle img-responsive" /]
-                        <h3>${destination.name!}</h3>
-                    </div>
-                </a>
-            [/#list]
+            [#if showTourTypes]
+                [#list relatedDestinations as destination]
+                    [#assign rendition = damfn.getRendition(destination.image, "small-square")!]
+                    <a href="${destination.link}">
+                        <div class="destination-card">
+                            [@tourImage rendition "" destination.name "img-circle img-responsive" /]
+                            <h3>${destination.name!}</h3>
+                        </div>
+                    </a>
+                [/#list]
+            [/#if]
         </div>
 
         [#assign renditionDetail = damfn.getRendition(tour.img, "large-16x9")!]

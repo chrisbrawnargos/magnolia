@@ -1,13 +1,21 @@
+[#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/tourTeaser.ftl"]
 [#include "/tours/templates/macros/editorAlert.ftl" /]
 
-[#assign category = model.categoryByUrl!]
-[#assign tours = model.getToursByCategory(category.identifier)]
+[#if def.parameters.tourType??]
+    [#assign category = model.getCategoryByName(def.parameters.tourType)]
+[#else]
+    [#assign category = model.getCategoryByUrl()!]
+[/#if]
 
+[#assign tours = model.getToursByCategory(category.identifier)]
+[#assign title = content.title!i18n.get('tour.all.tours', [category.name!""])!]
+
+[#-------------- RENDERING --------------]
 <!-- Tour List -->
 <div class="container">
 
-    <h2>${i18n.get('tour.all.tours', [category.name!""])}</h2>
+    <h2>${title}</h2>
 
     <div class="row">
         [#list tours as tour]

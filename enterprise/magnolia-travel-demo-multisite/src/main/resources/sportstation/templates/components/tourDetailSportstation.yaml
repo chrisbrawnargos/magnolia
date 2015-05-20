@@ -1,0 +1,9 @@
+templateScript: /tours/templates/components/tourDetail.ftl
+modelClass: info.magnolia.demo.travel.tours.model.TourDetailModel
+
+renderType: freemarker
+parameters:
+  showTourTypes: false
+  showDestinations: false
+i18nBasename: info.magnolia.module.sportstation.messages
+title: components.tourDetailSportstation

@@ -63,12 +63,22 @@
         <artifactId>magnolia-travel-demo-personalization</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-demo-multisite</artifactId>
+        <version>${project.version}</version>
+      </dependency>
 
       <!--  EE modules -->
       <dependency>
         <groupId>info.magnolia.marketingtags</groupId>
         <artifactId>magnolia-marketing-tags</artifactId>
         <version>1.2-m4</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.multisite</groupId>
+        <artifactId>magnolia-module-multisite</artifactId>
+        <version>1.2-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.personalization</groupId>

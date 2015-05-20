@@ -1,8 +1,11 @@
 templateScript: /tours/templates/components/tourList.ftl
+dialog: tours:components/tourList.dialog
 modelClass: info.magnolia.demo.travel.tours.model.TourListModel
 class: info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition
 
 renderType: freemarker
 category: tourTypes
+parameters:
+  tourType: active
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourList

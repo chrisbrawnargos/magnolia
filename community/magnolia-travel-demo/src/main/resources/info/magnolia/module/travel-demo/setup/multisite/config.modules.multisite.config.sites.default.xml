@@ -1008,7 +1008,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="name" sv:type="String">
-      <sv:value>travel-demo</sv:value>
+      <sv:value>travel-demo-theme</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>

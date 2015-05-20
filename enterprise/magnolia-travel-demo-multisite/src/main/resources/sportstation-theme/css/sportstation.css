@@ -1,0 +1,583 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    vertical-align: baseline;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.zoomable {
+    cursor: zoom-in;
+}
+
+.jumbotron{
+    margin-top: 20px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* close commented backslash hack */
+
+
+.btn-primary {
+    background-color: #7d1314;
+    border-color: #7d1314;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: #9d001a;
+    border-color: #9d001a;
+    color: #fff;
+}
+
+#page-intro .description {
+    font-size: 1.2em;
+}
+
+.note-for-editors {
+    color: yellow;
+}
+
+
+/* CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 350px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+}
+
+.carousel-caption {
+    z-index: 10;
+    text-align: left;
+    text-shadow: none;
+}
+
+.carousel-caption h1 {
+    display: inline-block;
+    text-align: left;
+
+    padding: 15px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption .description {
+    padding: 5px 0px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+.carousel-caption .category {
+    padding: 10px 15px;
+    background: rgba(232, 30, 12, 0.5);
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+
+.carousel-caption-center {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+
+/* NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #222;
+}
+
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.navbar-inverse {
+    border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ddd;
+}
+
+.navbar-inverse .navbar-toggle {
+    border:none;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #7d1314;
+    color: #fff;
+}
+
+/* let us color the secondary navbar to the edge */
+
+.navbar-wrapper .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+
+#navbar-secondary {
+    background-color: #888;
+}
+
+.navbar-inverse #navbar-secondary .navbar-nav > .active > a,
+.navbar-inverse #navbar-secondary .navbar-nav > .active > a:hover,
+.navbar-inverse #navbar-secondary .navbar-nav > .active > a:focus {
+    background-color: #777;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ccc;
+}
+.navbar-spacer{
+    height: 140px;
+}
+.navbar-spacer-children{
+    height: 210px;
+}
+
+.phone-hours {
+    float: right;
+}
+
+.telephone {
+    display: block;
+    font-size: 1.5em;
+}
+
+a.telephone-small{
+    color: #ddd;
+    font-size: 1.5em;
+    line-height: 50px;
+    margin-left: 35px;
+}
+a.telephone-small:hover{
+    color: #fff;
+    text-decoration:none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: #990609;
+}
+.dropdown-menu{
+    background-color: #990609;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+    background-color: #990609;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-nav{
+    margin: 0px;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+
+
+/* MASTHEAD
+-------------------------------------------------- */
+#masthead {
+    height: 50px;
+    color: white;
+    margin: 20px;
+}
+
+#masthead-logo {
+    float: left;
+}
+
+/* force wrap */
+
+#masthead-logo a:after {
+    content: '\A';
+    white-space: pre;
+}
+
+#masthead-logo .tagline {
+    color: #eee;
+    font-size: 0.8em;
+    padding-left: 85px;
+}
+
+#masthead-logo img {
+    height: 50px;
+}
+
+#nav-logo-icon {
+    height: 30px;
+}
+
+#nav-logo {
+    margin-right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0s, width 0.5s ease-in-out 0s, margin-right 0.5s ease-in-out 0s, padding-right 0.5s ease-in-out 0s, padding-left 0.5s ease-in-out 0s;
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sticky #nav-logo {
+    margin-right: 0px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0s, width 0.5s ease-in-out 0s, margin-right 0.5s ease-in-out 0s, padding-right 0.5s ease-in-out 0s, padding-left 0.5s ease-in-out 0s;
+    width: 75px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+footer {
+    width: 100%;
+    background-color: #000;
+    color: #ccc;
+    margin-top: 100px;
+}
+
+footer p {
+    padding: 0px;
+    margin: 0px;
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h5 {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+footer li,
+footer ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-1 {
+    background-color: #333;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-2 {
+    background-color: #990609;
+    width: 100%;
+    height: 4px;
+}
+
+div.inline ul li,
+ul.social-icons li {
+    display: inline;
+}
+div.inline ul li img,
+ul.social-icons img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.bs-callout + .bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+    background: #f0ad4e;
+}
+
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette{
+    margin-bottom: 40px;
+}
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.featurette-heading {
+    margin-top: 20px;
+}
+
+
+.tour-type-overview{
+    margin-top:20px;
+}
+
+.card-teaser-image img {
+    padding: 0px;
+}
+
+
+
+/* CATEGORY
+-------------------------------------------------- */
+.category {
+    background: rgba(232, 30, 12, 0.7);
+    color: white;
+    padding: 15px;
+    margin: 0px;
+}
+
+.product-categories {
+    margin-top: 10px;
+}
+
+.product-categories li {
+    background: rgba(232, 30, 12, 0.7);
+    padding: 5px 10px;
+    margin: 0px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.product-categories li a {
+    color: white;
+}
+
+
+.category-card {
+    margin-bottom: 20px;
+}
+
+.category-card-content {
+    background: #f3f3f3;
+    color: #666;
+    padding: 15px;
+}
+
+.category-card h3 {
+    background: rgba(232, 30, 12, 0.7);
+    color: white;
+    padding: 15px;
+    margin: 0px;
+}
+
+h1 .category {
+    background: rgba(232, 30, 12, 0.7);
+    color: white;
+    padding-bottom: 20px;
+}
+
+.category-page-introduction {
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #f3f3f3;
+}
+
+
+/* DETAIL
+-------------------------------------------------- */
+
+.product-card {
+    margin-bottom: 20px;
+}
+
+.product-card-content {
+    background: #f3f3f3;
+    color: #666;
+    padding: 15px;
+}
+
+.product-card h3 {
+    background: black;
+    color: white;
+    padding: 15px;
+    margin: 0px;
+}
+
+.product-detail .duration {
+    font-weight: bold;
+}
+
+.product-detail .locations {
+    font-weight: bold;
+}
+
+.view-more-tours {
+    padding-top: 15px;
+    float: right;
+}
+
+.lead-image{
+   position:relative;
+}
+
+.lead-image img {
+    width: 100%;
+}
+
+.image-credit{
+    background:black;
+    color:#ccc;
+    position:absolute;
+    right:0px;
+    display:block;
+    padding:2px 10px;
+    font-size:0.8em;
+    bottom:0px;
+}
+
+.destination-card.large {
+    text-align: center;
+}
+
+.destination-card.large img {
+    width: 256px;
+    height: 256px;
+}
+
+
+/* ABOUT THIS DEMO
+-------------------------------------------------- */
+.book-button {
+    float: right;
+    margin-top: 20px;
+    background-color: darkgreen;
+}
+
+.about-demo-body .dl-horizontal dt {
+    width: 260px;
+}
+
+#behind-the-curtain {
+    padding: 10px;
+}
+
+.about-video-card {
+    font-style: oblique;
+    padding-bottom: 20px;
+}
+

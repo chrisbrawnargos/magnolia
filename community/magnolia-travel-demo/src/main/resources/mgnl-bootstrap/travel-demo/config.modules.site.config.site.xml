@@ -903,13 +903,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-24T13:52:02.701+01:00</sv:value>
+      <sv:value>2015-05-05T10:27:18.700+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="name" sv:type="String">
-      <sv:value>travel-demo</sv:value>
+      <sv:value>travel-demo-theme</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>
