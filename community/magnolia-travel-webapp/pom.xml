@@ -12,8 +12,7 @@
   <name>Magnolia Travel Webapp</name>
 
   <dependencies>
-    <!-- Overlay Magnolia Empty Webapp. Alternatively, use the bundled-webapp or the enterprise-webapp.
-     Dependencies versions are already imported by parent, so no need to replicate here. -->
+    <!-- Overlay of empty-webapp -->
     <dependency>
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-empty-webapp</artifactId>
@@ -35,7 +34,7 @@
       <artifactId>magnolia-travel-tours</artifactId>
     </dependency>
 
-    <!-- Other dependencies -->
+    <!-- Other Magnolia modules that are not part of the empty-webapp -->
     <dependency>
       <groupId>info.magnolia.templating</groupId>
       <artifactId>magnolia-templating-essentials-models</artifactId>
@@ -79,6 +78,10 @@
     <dependency>
       <groupId>info.magnolia.pages</groupId>
       <artifactId>magnolia-pages-app</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-module-mail</artifactId>
     </dependency>
   </dependencies>
 </project>

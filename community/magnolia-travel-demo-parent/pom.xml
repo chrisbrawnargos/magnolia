@@ -20,6 +20,8 @@
     <magnoliaUiVersion>5.4-m9</magnoliaUiVersion>
     <magnoliaCEBundleVersion>5.4-alpha2</magnoliaCEBundleVersion>
     <magnoliaDamVersion>2.1-m5</magnoliaDamVersion>
+    <siteVersion>1.0-SNAPSHOT</siteVersion>
+    <resourcesVersion>2.4-SNAPSHOT</resourcesVersion>
   </properties>
 
   <scm>
@@ -31,8 +33,7 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Importing dependencyManagement of CE bundle. This means you don't have to specify versions of modules you
-      depend on (unless you want a different version than that of the bundle). -->
+      <!-- Importing dependency management section from CE bundle -->
       <dependency>
         <groupId>info.magnolia.bundle</groupId>
         <artifactId>magnolia-bundle-parent</artifactId>
@@ -78,7 +79,7 @@
         <version>5.4-m5</version>
       </dependency>
 
-      <!-- Deps to reactor (self) -->
+      <!-- Dependencies to travel-demo -->
       <dependency>
         <groupId>info.magnolia.demo</groupId>
         <artifactId>magnolia-travel-demo</artifactId>
@@ -90,33 +91,27 @@
         <version>${project.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>info.magnolia</groupId>
-        <artifactId>magnolia-module-imaging</artifactId>
-        <version>3.2-m2</version>
-      </dependency>
+      <!-- Overriding dependencies from CE bundle -->
       <dependency>
         <groupId>info.magnolia.site</groupId>
         <artifactId>magnolia-site</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${siteVersion}</version>
       </dependency>
-
+      <dependency>
+        <groupId>info.magnolia.site</groupId>
+        <artifactId>magnolia-site-app</artifactId>
+        <version>${siteVersion}</version>
+      </dependency>
       <dependency>
         <groupId>info.magnolia.resources</groupId>
         <artifactId>magnolia-resources</artifactId>
-        <version>2.4-m6</version>
+        <version>${resourcesVersion}</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.resources</groupId>
         <artifactId>magnolia-resources-app</artifactId>
-        <version>2.4-m6</version>
+        <version>${resourcesVersion}</version>
       </dependency>
-      <dependency>
-        <groupId>info.magnolia</groupId>
-        <artifactId>magnolia-module-inplace-templating</artifactId>
-        <version>2.4-m1</version>
-      </dependency>
-
       <dependency>
         <groupId>info.magnolia.dam</groupId>
         <artifactId>magnolia-dam-core</artifactId>
@@ -142,7 +137,6 @@
         <artifactId>magnolia-dam-imaging</artifactId>
         <version>${magnoliaDamVersion}</version>
       </dependency>
-
       <dependency>
         <groupId>info.magnolia.categorization</groupId>
         <artifactId>magnolia-categorization</artifactId>
@@ -154,18 +148,12 @@
         <version>1.0-m4</version>
       </dependency>
 
-      <dependency>
-        <groupId>info.magnolia</groupId>
-        <artifactId>magnolia-module-mail</artifactId>
-        <version>5.2.2</version>
-      </dependency>
-
+      <!-- Other dependencies -->
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>3.1</version>
       </dependency>
-
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
