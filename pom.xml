@@ -23,6 +23,8 @@
     <module>community/magnolia-travel-demo</module>
     <module>community/magnolia-travel-tours</module>
     <module>community/magnolia-travel-webapp</module>
+    <module>enterprise/magnolia-travel-demo-enterprise-parent</module>
+    <module>enterprise/magnolia-travel-enterprise-webapp</module>
   </modules>
 
   <properties>

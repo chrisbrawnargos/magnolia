@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>info.magnolia.maven.poms-enterprise</groupId>
+    <artifactId>magnolia-parent-pom-enterprise</artifactId>
+    <version>31</version>
+  </parent>
+  <groupId>info.magnolia.eedemo</groupId>
+  <artifactId>magnolia-travel-demo-enterprise-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>Magnolia Travel Demo Enterprise (parent pom)</name>
+  <inceptionYear>2015</inceptionYear>
+  <description>Magnolia Travel is a demo project showing best practices when working with Magnolia Enterprise.</description>
+
+  <properties>
+    <javaVersion>1.7</javaVersion>
+    <magnoliaVersion>5.4-m8</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m8</magnoliaUiVersion>
+    <magnoliaEEBundleVersion>5.4-SNAPSHOT</magnoliaEEBundleVersion>
+  </properties>
+
+  <scm>
+    <connection>scm:git:http://git.magnolia-cms.com/modules/demo-projects</connection>
+    <developerConnection>scm:git:https://git.magnolia-cms.com/modules/demo-projects</developerConnection>
+    <url>https://git.magnolia-cms.com/gitweb/?p=modules/demo-projects.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Importing dependency management section from EE bundle -->
+      <dependency>
+        <groupId>info.magnolia.eebundle</groupId>
+        <artifactId>magnolia-enterprise-bundle-parent</artifactId>
+        <version>${magnoliaEEBundleVersion}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!-- Importing dependency management section from travel demo -->
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-demo-parent</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- Dependencies to travel-demo community modules -->
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-demo</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-tours</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-webapp</artifactId>
+        <version>${project.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-webapp</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
