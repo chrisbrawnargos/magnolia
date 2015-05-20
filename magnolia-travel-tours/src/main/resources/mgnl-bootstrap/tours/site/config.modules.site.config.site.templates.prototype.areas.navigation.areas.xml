@@ -28,6 +28,9 @@
     <sv:property sv:name="jcr:uuid" sv:type="String">
       <sv:value>6971b6f1-a9ac-4af1-a621-aa3ccf1afe15</sv:value>
     </sv:property>
+    <sv:property sv:name="createAreaNode" sv:type="String">
+      <sv:value>false</sv:value>
+    </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
     </sv:property>
@@ -38,7 +41,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-03-28T17:36:44.232+01:00</sv:value>
+      <sv:value>2015-05-20T08:19:36.650+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>

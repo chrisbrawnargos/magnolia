@@ -57,6 +57,9 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Model for creating the navigation bar for the travel demo.
+ *
+ * Even though this is a model for an area (see {@link AreaDefinition}) the content {@link Node} is the current page as
+ * we have set <code>createAreaNode=false</code> (see {@link info.magnolia.rendering.template.AreaDefinition#getCreateAreaNode()}).
  */
 public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
 
@@ -74,10 +77,9 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
         this.templatingFunctions = templatingFunctions;
     }
 
-    public List<Page> getRootPages() {
+    public List<NavigationItem> getRootPages() {
         try {
-            Node pageNode = templatingFunctions.page(content);
-            Node home = templatingFunctions.findParentWithTemplateType(pageNode, DefaultTemplateTypes.HOME);
+            final Node home = templatingFunctions.findParentWithTemplateType(content, DefaultTemplateTypes.HOME);
             return getChildPages(home);
         } catch (RepositoryException e) {
             log.error("Could not retrieve pages for navigation.", e);
@@ -85,15 +87,14 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
         return Collections.emptyList();
     }
 
-    public List<Page> getChildPages() {
+    public List<NavigationItem> getChildPages() {
         try {
-            Node currentPage = NodeUtil.getNearestAncestorOfType(content, NodeTypes.Page.NAME);
-            int depth = currentPage.getDepth();
+            int depth = content.getDepth();
 
             if (depth == 2) {
-                return getChildPages(currentPage);
+                return getChildPages(content);
             } else if (depth > 2) {
-                Node parent = currentPage;
+                Node parent = content;
                 while (depth > 2) {
                     parent = parent.getParent();
                     depth--;
@@ -106,44 +107,43 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
         return Collections.emptyList();
     }
 
-    private List<Page> getChildPages(Node parent) throws RepositoryException {
-        List<Page> pages = new LinkedList<Page>();
+    private List<NavigationItem> getChildPages(Node parent) throws RepositoryException {
+        final List<NavigationItem> navigationItems = new LinkedList();
 
-        Iterator<Node> it = NodeUtil.getNodes(parent, NodeTypes.Page.NAME).iterator();
-        while (it.hasNext()) {
-            Node pageNode = it.next();
-            boolean hide = PropertyUtil.getBoolean(pageNode, Page.PROPERTY_NAME_HIDE_PAGE, false);
+        final Iterator<Node> nodeIterator = NodeUtil.getNodes(parent, NodeTypes.Page.NAME).iterator();
+        while (nodeIterator.hasNext()) {
+            final Node pageNode = nodeIterator.next();
+            final boolean hide = PropertyUtil.getBoolean(pageNode, NavigationItem.PROPERTY_NAME_HIDE_PAGE, false);
             if (!hide) {
                 try {
-                    Page page = getPage(pageNode);
-                    pages.add(page);
+                    final NavigationItem navigationItem = getNavigationItem(pageNode);
+                    navigationItems.add(navigationItem);
                 } catch (RepositoryException e) {
                     log.error("Could not create page object from node.", e);
                 }
             }
         }
-        return pages;
+        return navigationItems;
     }
 
-    private Page getPage(Node node) throws RepositoryException {
-        Page page = new Page();
-        String title = PropertyUtil.getString(node, Page.PROPERTY_NAME_TITLE, node.getName());
-        page.setName(title);
+    private NavigationItem getNavigationItem(Node node) throws RepositoryException {
+        final NavigationItem navigationItem = new NavigationItem();
+        final String title = PropertyUtil.getString(node, NavigationItem.PROPERTY_NAME_TITLE, node.getName());
+        navigationItem.setName(title);
         if (isActive(node)) {
-            page.setCssClass(CURRENT_ACTIVE_CSS_CLASS);
+            navigationItem.setCssClass(CURRENT_ACTIVE_CSS_CLASS);
         } else if (isChildActive(node)) {
-            page.setCssClass(CHILD_ACTIVE_CSS_CLASS);
+            navigationItem.setCssClass(CHILD_ACTIVE_CSS_CLASS);
         }
-        page.setLink(templatingFunctions.link(node));
-        return page;
+        navigationItem.setLink(templatingFunctions.link(node));
+        return navigationItem;
     }
 
     private boolean isChildActive(Node node) throws RepositoryException {
-        Node currentPage = NodeUtil.getNearestAncestorOfType(content, NodeTypes.Page.NAME);
-        Iterator<Node> it = NodeUtil.collectAllChildren(node, new NodeTypePredicate(NodeTypes.Page.NAME)).iterator();
-        while (it.hasNext()) {
-            Node child = it.next();
-            if (currentPage.getPath().equals(child.getPath())) {
+        final Iterator<Node> nodeIterator = NodeUtil.collectAllChildren(node, new NodeTypePredicate(NodeTypes.Page.NAME)).iterator();
+        while (nodeIterator.hasNext()) {
+            final Node child = nodeIterator.next();
+            if (content.getPath().equals(child.getPath())) {
                 return true;
             }
         }
@@ -151,15 +151,13 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
     }
 
     private boolean isActive(Node pageNode) throws RepositoryException {
-        Node currentPage = NodeUtil.getNearestAncestorOfType(content, NodeTypes.Page.NAME);
-
-        return pageNode.getPath().equals(currentPage.getPath());
+        return pageNode.getPath().equals(content.getPath());
     }
 
     /**
-     * Simple Pojo for page nodes.
+     * Simple Pojo for navigation items.
      */
-    public class Page {
+    public class NavigationItem {
 
         public static final String PROPERTY_NAME_HIDE_PAGE = "hideInNav";
         public static final String PROPERTY_NAME_TITLE = "title";

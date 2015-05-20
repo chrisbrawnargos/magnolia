@@ -204,7 +204,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-03-26T11:03:28.157+01:00</sv:value>
+            <sv:value>2015-05-20T08:18:33.864+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -242,7 +242,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-03-26T11:03:34.355+01:00</sv:value>
+            <sv:value>2015-05-20T08:18:33.871+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -500,6 +500,9 @@
           <sv:property sv:name="jcr:uuid" sv:type="String">
             <sv:value>48cfe898-37c4-47f2-b18c-bebb7ad26401</sv:value>
           </sv:property>
+          <sv:property sv:name="createAreaNode" sv:type="String">
+            <sv:value>false</sv:value>
+          </sv:property>
           <sv:property sv:name="i18nBasename" sv:type="String">
             <sv:value>info.magnolia.module.travel-demo.messages</sv:value>
           </sv:property>
@@ -513,7 +516,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-03-28T17:35:10.097+01:00</sv:value>
+            <sv:value>2015-05-20T08:19:24.080+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
