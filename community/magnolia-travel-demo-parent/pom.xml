@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd ">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>info.magnolia.maven.poms</groupId>
+    <artifactId>magnolia-parent-pom-community</artifactId>
+    <version>31</version>
+  </parent>
+  <groupId>info.magnolia.demo</groupId>
+  <artifactId>magnolia-travel-demo-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>Magnolia Travel Demo (parent pom)</name>
+  <inceptionYear>2015</inceptionYear>
+  <description>Magnolia Travel is a demo project showing best practices when working with Magnolia.</description>
+
+  <properties>
+    <javaVersion>1.7</javaVersion>
+    <magnoliaVersion>5.4-m9</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m9</magnoliaUiVersion>
+    <magnoliaCEBundleVersion>5.4-alpha2</magnoliaCEBundleVersion>
+    <magnoliaDamVersion>2.1-m5</magnoliaDamVersion>
+  </properties>
+
+  <scm>
+    <connection>scm:git:http://git.magnolia-cms.com/modules/demo-projects</connection>
+    <developerConnection>scm:git:https://git.magnolia-cms.com/modules/demo-projects</developerConnection>
+    <url>https://git.magnolia-cms.com/gitweb/?p=modules/demo-projects.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Importing dependencyManagement of CE bundle. This means you don't have to specify versions of modules you
+      depend on (unless you want a different version than that of the bundle). -->
+      <dependency>
+        <groupId>info.magnolia.bundle</groupId>
+        <artifactId>magnolia-bundle-parent</artifactId>
+        <version>${magnoliaCEBundleVersion}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-core</artifactId>
+        <version>${magnoliaVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-jaas</artifactId>
+        <version>${magnoliaVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-rendering</artifactId>
+        <version>${magnoliaVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-templating</artifactId>
+        <version>${magnoliaVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-i18n</artifactId>
+        <version>${magnoliaVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>info.magnolia.ui</groupId>
+        <artifactId>magnolia-ui-admincentral</artifactId>
+        <version>${magnoliaUiVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.pages</groupId>
+        <artifactId>magnolia-pages-app</artifactId>
+        <version>5.4-m5</version>
+      </dependency>
+
+      <!-- Deps to reactor (self) -->
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-demo</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.demo</groupId>
+        <artifactId>magnolia-travel-tours</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-module-imaging</artifactId>
+        <version>3.2-m2</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.site</groupId>
+        <artifactId>magnolia-site</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>info.magnolia.resources</groupId>
+        <artifactId>magnolia-resources</artifactId>
+        <version>2.4-m6</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.resources</groupId>
+        <artifactId>magnolia-resources-app</artifactId>
+        <version>2.4-m6</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-module-inplace-templating</artifactId>
+        <version>2.4-m1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>info.magnolia.dam</groupId>
+        <artifactId>magnolia-dam-core</artifactId>
+        <version>${magnoliaDamVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.dam</groupId>
+        <artifactId>magnolia-dam-templating</artifactId>
+        <version>${magnoliaDamVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.dam</groupId>
+        <artifactId>magnolia-dam-jcr</artifactId>
+        <version>${magnoliaDamVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.dam</groupId>
+        <artifactId>magnolia-dam-api</artifactId>
+        <version>${magnoliaDamVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.dam</groupId>
+        <artifactId>magnolia-dam-imaging</artifactId>
+        <version>${magnoliaDamVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>info.magnolia.categorization</groupId>
+        <artifactId>magnolia-categorization</artifactId>
+        <version>2.4-m7</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.templating</groupId>
+        <artifactId>magnolia-templating-essentials-models</artifactId>
+        <version>1.0-m4</version>
+      </dependency>
+
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-module-mail</artifactId>
+        <version>5.2.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.5</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <!-- For tests -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-core</artifactId>
+        <version>1.3</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-library</artifactId>
+        <version>1.3</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>1.8.5</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-core</artifactId>
+        <version>${magnoliaVersion}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <useManifestOnlyJar>false</useManifestOnlyJar>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

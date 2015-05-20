@@ -5,15 +5,15 @@
     <groupId>info.magnolia.demo</groupId>
     <artifactId>magnolia-travel-demo-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
+    <relativePath>../magnolia-travel-demo-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>magnolia-travel-tours</artifactId>
+  <artifactId>magnolia-travel-demo</artifactId>
   <packaging>jar</packaging>
-  <name>Magnolia Travel Tours Module</name>
-  <description>Magnolia module showcasing a travel-tours website</description>
+  <name>Magnolia Travel Demo Module</name>
+  <description>Magnolia module showcasing a demo website</description>
 
   <properties>
-    <cloverCoverageThreshold>27</cloverCoverageThreshold>
+    <cloverCoverageThreshold>0</cloverCoverageThreshold>
   </properties>
 
   <dependencies>
@@ -35,8 +35,16 @@
     </dependency>
 
     <dependency>
-      <groupId>info.magnolia.ui</groupId>
-      <artifactId>magnolia-ui-admincentral</artifactId>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-module-inplace-templating</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.resources</groupId>
+      <artifactId>magnolia-resources</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.categorization</groupId>
+      <artifactId>magnolia-categorization</artifactId>
     </dependency>
 
     <dependency>
@@ -57,8 +65,13 @@
     </dependency>
 
     <dependency>
-      <groupId>info.magnolia.categorization</groupId>
-      <artifactId>magnolia-categorization</artifactId>
+      <groupId>info.magnolia.site</groupId>
+      <artifactId>magnolia-site</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>info.magnolia.templating</groupId>
+      <artifactId>magnolia-templating-essentials-models</artifactId>
     </dependency>
 
     <dependency>
@@ -67,11 +80,6 @@
     </dependency>
 
     <!-- For tests -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
