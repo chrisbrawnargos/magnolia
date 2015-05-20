@@ -1,5 +1,5 @@
 /**
- * This file Copyright (c) 2011-2015 Magnolia International
+ * This file Copyright (c) 2015 Magnolia International
  * Ltd.  (http://www.magnolia-cms.com). All rights reserved.
  *
  *
@@ -40,7 +40,6 @@ import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.module.inplacetemplating.setup.TemplatesInstallTask;
-import info.magnolia.module.model.Version;
 import info.magnolia.module.resources.ResourceTypes;
 import info.magnolia.module.resources.setup.InstallBinaryResourcesTask;
 import info.magnolia.module.resources.setup.InstallTextResourceTask;
@@ -55,7 +54,7 @@ import java.util.List;
  * by registering "deltas" to maintain the module's configuration, or other type of content.
  * If you don't need this, simply remove the reference to this class in the module descriptor xml.
  */
-public class TemplatingSampleProjectVersionHandler extends DefaultModuleVersionHandler {
+public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler {
 
     private static final String DEFAULT_URI_NODEPATH = "/modules/ui-admincentral/virtualURIMapping/default";
     private static final String DEFAULT_URI = "redirect:/travel.html";
@@ -64,7 +63,6 @@ public class TemplatingSampleProjectVersionHandler extends DefaultModuleVersionH
     private static final String DEFAULT_THEME_PATH_PATTERN = "/%s/%s/.*";
 
     private static final String MTE_FTL_PATTERN = "/templates/.*\\.ftl";
-    private static final TemplatesInstallTask TEMPLATES_INSTALL_TASK = new TemplatesInstallTask(MTE_FTL_PATTERN, true);
 
     @Override
     protected List<Task> getBasicInstallTasks(InstallContext installContext) {
@@ -90,17 +88,9 @@ public class TemplatingSampleProjectVersionHandler extends DefaultModuleVersionH
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
         final List<Task> tasks = new ArrayList<Task>();
         tasks.addAll(super.getExtraInstallTasks(installContext));
-        tasks.add(TEMPLATES_INSTALL_TASK);
+        tasks.add(new TemplatesInstallTask(MTE_FTL_PATTERN, true));
         tasks.add(new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
                 new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
-        return tasks;
-    }
-
-    @Override
-    protected List<Task> getDefaultUpdateTasks(Version forVersion) {
-        final List<Task> tasks = new ArrayList<Task>();
-        tasks.addAll(super.getDefaultUpdateTasks(forVersion));
-        tasks.add(TEMPLATES_INSTALL_TASK);
         return tasks;
     }
 

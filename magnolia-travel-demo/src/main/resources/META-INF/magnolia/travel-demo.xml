@@ -3,7 +3,7 @@
 <module>
   <name>travel-demo</name>
   <displayName>Magnolia Travel Demo Module</displayName>
-  <versionHandler>info.magnolia.demo.travel.setup.TemplatingSampleProjectVersionHandler</versionHandler>
+  <versionHandler>info.magnolia.demo.travel.setup.TravelDemoModuleVersionHandler</versionHandler>
   <version>${project.version}</version>
 
   <dependencies>
