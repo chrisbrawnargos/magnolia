@@ -34,7 +34,6 @@
     <dependency>
       <name>ui-admincentral</name>
       <version>5.4/*</version>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <name>dam</name>
@@ -43,18 +42,21 @@
     <dependency>
       <name>categorization</name>
       <version>2.4/*</version>
+    </dependency>
+    <dependency>
+      <name>multisite</name>
+      <version>1.2/*</version>
       <optional>true</optional>
     </dependency>
   </dependencies>
 
   <repositories>
-      <repository>
-        <name>magnolia</name>
-        <workspaces>
-          <workspace>tours</workspace>
-        </workspaces>
-        <nodeTypeFile>/mgnl-nodetypes/magnolia-tour-nodetypes.xml</nodeTypeFile>
-      </repository>
-    </repositories>
-
+    <repository>
+      <name>magnolia</name>
+      <workspaces>
+        <workspace>tours</workspace>
+      </workspaces>
+      <nodeTypeFile>/mgnl-nodetypes/magnolia-tour-nodetypes.xml</nodeTypeFile>
+    </repository>
+  </repositories>
 </module>
