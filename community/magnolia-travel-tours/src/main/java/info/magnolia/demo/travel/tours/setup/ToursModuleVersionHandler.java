@@ -37,6 +37,7 @@ import info.magnolia.demo.travel.tours.TourTemplatingFunctions;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.AddRoleToUserTask;
+import info.magnolia.module.delta.ModuleDependencyBootstrapTask;
 import info.magnolia.module.delta.OrderNodeBeforeTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.rendering.module.setup.InstallRendererContextAttributeTask;
@@ -68,6 +69,8 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
 
         /* Add travel-base role to user anonymous */
         tasks.add(new AddRoleToUserTask("Adds role 'travel-base' to user 'anonymous'", "anonymous", "travel-base"));
+
+        tasks.add(new ModuleDependencyBootstrapTask("multisite"));
 
         return tasks;
     }

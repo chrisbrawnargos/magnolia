@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sv:node sv:name="site" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sv:node sv:name="default" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>mgnl:contentNode</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:uuid" sv:type="String">
-    <sv:value>dee6153a-0db9-4806-a356-d7ab0bf05e8a</sv:value>
+    <sv:value>1983a4c7-15be-4219-8170-20da174e4475</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
   </sv:property>
+  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+    <sv:value>false</sv:value>
+  </sv:property>
   <sv:property sv:name="mgnl:created" sv:type="Date">
-    <sv:value>2014-12-09T09:19:07.199+01:00</sv:value>
+    <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:createdBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
+  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+    <sv:value>2015-05-21T15:49:54.684+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-02-24T15:37:16.112+01:00</sv:value>
+    <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -26,19 +35,28 @@
       <sv:value>mgnl:contentNode</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>adbb0713-f26b-4a94-889c-773be514e040</sv:value>
+      <sv:value>0f99648e-2485-4814-bec7-7a4bfa3a0a92</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
-      <sv:value>2015-02-24T10:55:26.832+01:00</sv:value>
+      <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-05-21T15:49:54.686+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-24T10:55:45.303+01:00</sv:value>
+      <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -48,19 +66,28 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>b9bf6650-ff00-47d7-b92e-0ca68b54797c</sv:value>
+        <sv:value>0f11f0e9-24c6-403b-8d87-b0198936bc58</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>
       </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>false</sv:value>
+      </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-02-10T15:28:39.841+01:00</sv:value>
+        <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-05-21T15:49:54.687+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-02-24T10:55:48.262+01:00</sv:value>
+        <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -70,7 +97,7 @@
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>d7a87a10-0d67-479c-8fb2-b42cb7979a6c</sv:value>
+          <sv:value>9b1970ef-6af8-49ce-b5ce-cbd513622fd0</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -79,19 +106,19 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-10T16:45:02.015+01:00</sv:value>
+          <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-02-10T16:45:02.018+01:00</sv:value>
+          <sv:value>2015-05-21T15:49:54.688+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-24T10:55:48.262+01:00</sv:value>
+          <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -104,7 +131,7 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>896178ab-ddff-4999-8986-88df5f90dff1</sv:value>
+            <sv:value>fdbff384-5945-425b-9b94-6a9fda80b7c8</sv:value>
           </sv:property>
           <sv:property sv:name="id" sv:type="String">
             <sv:value>travel-demo:pages/home</sv:value>
@@ -116,19 +143,19 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-03-26T11:08:01.188+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-03-26T11:08:01.188+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.688+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-03-26T11:08:18.067+01:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -142,7 +169,7 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>5e71b41c-1c48-478d-af67-0c332b7bc300</sv:value>
+            <sv:value>dc775237-ba72-44c9-a5ef-77e938447cd5</sv:value>
           </sv:property>
           <sv:property sv:name="id" sv:type="String">
             <sv:value>travel-demo:pages/standard</sv:value>
@@ -154,19 +181,19 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-02-10T16:45:02.015+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-02-10T16:45:02.021+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.688+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-02-24T10:55:48.262+01:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -179,7 +206,7 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>f5d282c9-8c03-4806-811b-695c188842bb</sv:value>
+        <sv:value>364214a3-dccd-4f6c-a864-47f4f738a85b</sv:value>
       </sv:property>
       <sv:property sv:name="class" sv:type="String">
         <sv:value>info.magnolia.demo.travel.definition.PageTemplateDefinition</sv:value>
@@ -187,14 +214,23 @@
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>
       </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>false</sv:value>
+      </sv:property>
       <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-02-24T15:37:16.113+01:00</sv:value>
+        <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:createdBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-05-21T15:49:54.689+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-03-28T17:33:53.389+01:00</sv:value>
+        <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -207,7 +243,7 @@
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>e110e417-8483-4c57-b10d-4efbc0d1727e</sv:value>
+          <sv:value>c3a10969-3a87-4aeb-930d-799ffc8e86f9</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -216,19 +252,19 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-24T15:37:25.056+01:00</sv:value>
+          <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-02-24T15:37:25.057+01:00</sv:value>
+          <sv:value>2015-05-21T15:49:54.690+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-25T13:27:52.404+01:00</sv:value>
+          <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -241,7 +277,7 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>e93fe941-23a0-4c74-8d0d-1ef3203d9132</sv:value>
+            <sv:value>7f1cd1ab-64ab-4845-bd9d-380c8c2663ee</sv:value>
           </sv:property>
           <sv:property sv:name="farFutureCaching" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -256,19 +292,19 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-02-24T15:37:25.056+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-02-24T15:37:25.058+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.690+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-02-24T16:23:47.002+01:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -282,7 +318,7 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>ba1cceee-2f3c-4355-93f8-15a8d87e52f2</sv:value>
+            <sv:value>23d38e45-7a8b-4d89-b713-ec7a9d3f177a</sv:value>
           </sv:property>
           <sv:property sv:name="farFutureCaching" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -297,19 +333,19 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-02-24T16:19:24.573+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-02-24T16:19:24.573+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.691+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-02-24T16:19:39.714+01:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -323,7 +359,7 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>fce8c78d-7cf3-40ca-b76a-e335779ad446</sv:value>
+            <sv:value>c495d924-68d3-4da6-bd2a-79cab99015d8</sv:value>
           </sv:property>
           <sv:property sv:name="farFutureCaching" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -338,19 +374,19 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-02-24T16:19:54.026+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-02-24T16:19:54.026+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.691+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-02-24T16:20:23.089+01:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -362,19 +398,28 @@
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>ceaaf125-e6aa-4548-8685-092ab717c762</sv:value>
+          <sv:value>5b31f7ff-3a61-4807-9788-52ed709d8ca9</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
         </sv:property>
+        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+          <sv:value>false</sv:value>
+        </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-25T13:29:50.559+01:00</sv:value>
+          <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
+        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+          <sv:value>2015-05-21T15:49:54.691+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-25T13:29:53.884+01:00</sv:value>
+          <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -384,7 +429,7 @@
             <sv:value>mgnl:contentNode</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>48cfe898-37c4-47f2-b18c-bebb7ad26401</sv:value>
+            <sv:value>27a8f42e-06d4-4213-b2b1-dc85f75677f8</sv:value>
           </sv:property>
           <sv:property sv:name="createAreaNode" sv:type="String">
             <sv:value>false</sv:value>
@@ -395,14 +440,23 @@
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
+          <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+            <sv:value>false</sv:value>
+          </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-01-26T17:18:29.031+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
+          <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+            <sv:value>2015-05-21T15:49:54.692+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-05-20T08:19:24.080+02:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -424,7 +478,7 @@
               <sv:value>mgnl:contentNode</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:uuid" sv:type="String">
-              <sv:value>8008fb26-05d0-4862-bff8-4c2d0781119e</sv:value>
+              <sv:value>b80da21a-b52e-4d58-b186-7d909b586535</sv:value>
             </sv:property>
             <sv:property sv:name="components" sv:type="String">
               <sv:value>all</sv:value>
@@ -435,14 +489,23 @@
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+              <sv:value>false</sv:value>
+            </sv:property>
             <sv:property sv:name="mgnl:created" sv:type="Date">
-              <sv:value>2015-01-27T13:17:39.042+01:00</sv:value>
+              <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:createdBy" sv:type="String">
               <sv:value>superuser</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+              <sv:value>2015-05-21T15:49:54.694+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
             <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-              <sv:value>2015-02-25T13:29:57.824+01:00</sv:value>
+              <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -454,7 +517,7 @@
             <sv:value>mgnl:contentNode</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>40c4b751-8697-48a9-86bd-96fa2efc3f5e</sv:value>
+            <sv:value>711b050c-d6ea-4dd2-88d8-db8e98cec319</sv:value>
           </sv:property>
           <sv:property sv:name="editable" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -466,19 +529,19 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-01-26T17:20:35.239+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-01-26T17:20:35.240+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.698+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-02-25T14:59:41.012+01:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -494,19 +557,28 @@
               <sv:value>mgnl:contentNode</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:uuid" sv:type="String">
-              <sv:value>a301ebd8-4f3a-477e-a556-2e3631657c5d</sv:value>
+              <sv:value>9f2eaa69-e405-4366-afe1-7820daa19e7f</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+              <sv:value>false</sv:value>
+            </sv:property>
             <sv:property sv:name="mgnl:created" sv:type="Date">
-              <sv:value>2015-02-25T12:30:06.544+01:00</sv:value>
+              <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:createdBy" sv:type="String">
               <sv:value>superuser</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+              <sv:value>2015-05-21T15:49:54.698+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
             <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-              <sv:value>2015-02-25T14:00:10.853+01:00</sv:value>
+              <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -516,19 +588,28 @@
                 <sv:value>mgnl:contentNode</sv:value>
               </sv:property>
               <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>5db49007-817f-435b-9068-27ab01446576</sv:value>
+                <sv:value>41589ff1-1ba8-49d0-918c-58ca288eb290</sv:value>
               </sv:property>
               <sv:property sv:name="jcr:createdBy" sv:type="String">
                 <sv:value>admin</sv:value>
               </sv:property>
+              <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                <sv:value>false</sv:value>
+              </sv:property>
               <sv:property sv:name="mgnl:created" sv:type="Date">
-                <sv:value>2015-02-25T12:30:14.546+01:00</sv:value>
+                <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:createdBy" sv:type="String">
                 <sv:value>superuser</sv:value>
               </sv:property>
+              <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                <sv:value>2015-05-21T15:49:54.699+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
               <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                <sv:value>2015-02-25T19:40:34.211+01:00</sv:value>
+                <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -544,7 +625,7 @@
                   <sv:value>mgnl:contentNode</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:uuid" sv:type="String">
-                  <sv:value>70609f06-afcc-47e2-915c-cb7794179cc6</sv:value>
+                  <sv:value>b9bf1044-085e-41a3-a1a2-bea4a2352325</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:createdBy" sv:type="String">
                   <sv:value>admin</sv:value>
@@ -553,19 +634,19 @@
                   <sv:value>false</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:created" sv:type="Date">
-                  <sv:value>2015-01-26T17:20:35.239+01:00</sv:value>
+                  <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:createdBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                  <sv:value>2015-01-26T17:20:35.242+01:00</sv:value>
+                  <sv:value>2015-05-21T15:49:54.700+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                  <sv:value>2015-02-25T13:30:04.354+01:00</sv:value>
+                  <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
@@ -575,7 +656,7 @@
                     <sv:value>mgnl:contentNode</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:uuid" sv:type="String">
-                    <sv:value>18d48c3d-16cb-4344-b4ec-1a6f2b07c28f</sv:value>
+                    <sv:value>65b70b60-54e9-46fa-9f8d-17e5f866124a</sv:value>
                   </sv:property>
                   <sv:property sv:name="id" sv:type="String">
                     <sv:value>mte:components/textImage</sv:value>
@@ -587,19 +668,19 @@
                     <sv:value>false</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:created" sv:type="Date">
-                    <sv:value>2015-01-26T17:20:35.239+01:00</sv:value>
+                    <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:createdBy" sv:type="String">
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                    <sv:value>2015-01-26T17:20:35.243+01:00</sv:value>
+                    <sv:value>2015-05-21T15:49:54.700+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                    <sv:value>2015-02-26T08:30:17.783+01:00</sv:value>
+                    <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
@@ -610,7 +691,7 @@
                     <sv:value>mgnl:contentNode</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:uuid" sv:type="String">
-                    <sv:value>3944ca65-144d-4006-99fd-7d44b465262c</sv:value>
+                    <sv:value>fa1233df-bca2-4fbd-9cb8-76fe006cc96f</sv:value>
                   </sv:property>
                   <sv:property sv:name="id" sv:type="String">
                     <sv:value>travel-demo:components/linkList</sv:value>
@@ -622,19 +703,19 @@
                     <sv:value>false</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:created" sv:type="Date">
-                    <sv:value>2015-02-25T18:22:54.411+01:00</sv:value>
+                    <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:createdBy" sv:type="String">
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                    <sv:value>2015-02-25T18:22:54.412+01:00</sv:value>
+                    <sv:value>2015-05-21T15:49:54.700+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                    <sv:value>2015-02-25T18:23:05.103+01:00</sv:value>
+                    <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
@@ -646,7 +727,7 @@
                   <sv:value>mgnl:contentNode</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:uuid" sv:type="String">
-                  <sv:value>2906812c-7dc0-40c3-ad1b-a45506c21fc9</sv:value>
+                  <sv:value>4c739ad6-a418-46c3-ba34-20a058a8a0b6</sv:value>
                 </sv:property>
                 <sv:property sv:name="cssClass" sv:type="String">
                   <sv:value>col-md-3</sv:value>
@@ -658,19 +739,19 @@
                   <sv:value>false</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:created" sv:type="Date">
-                  <sv:value>2015-02-25T14:31:42.985+01:00</sv:value>
+                  <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:createdBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                  <sv:value>2015-02-25T14:31:42.987+01:00</sv:value>
+                  <sv:value>2015-05-21T15:49:54.701+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                  <sv:value>2015-02-25T14:32:40.577+01:00</sv:value>
+                  <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
@@ -681,7 +762,7 @@
                   <sv:value>mgnl:contentNode</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:uuid" sv:type="String">
-                  <sv:value>f4b28c9d-038d-4dee-90fc-b5d19b0d8dc0</sv:value>
+                  <sv:value>8aef28ee-da61-4ba8-97cf-e1035a83bdd8</sv:value>
                 </sv:property>
                 <sv:property sv:name="components" sv:type="String">
                   <sv:value>all</sv:value>
@@ -696,19 +777,19 @@
                   <sv:value>false</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:created" sv:type="Date">
-                  <sv:value>2015-01-27T13:18:44.638+01:00</sv:value>
+                  <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:createdBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                  <sv:value>2015-01-27T13:18:44.639+01:00</sv:value>
+                  <sv:value>2015-05-21T15:49:54.701+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                  <sv:value>2015-02-25T14:59:23.378+01:00</sv:value>
+                  <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
@@ -720,7 +801,7 @@
                 <sv:value>mgnl:contentNode</sv:value>
               </sv:property>
               <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>51f42e90-6275-46ef-bbb4-1fe9693278fe</sv:value>
+                <sv:value>f3315c1e-db3f-460c-a724-b0ab776c62be</sv:value>
               </sv:property>
               <sv:property sv:name="extends" sv:type="String">
                 <sv:value>../footer1</sv:value>
@@ -728,14 +809,23 @@
               <sv:property sv:name="jcr:createdBy" sv:type="String">
                 <sv:value>admin</sv:value>
               </sv:property>
+              <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                <sv:value>false</sv:value>
+              </sv:property>
               <sv:property sv:name="mgnl:created" sv:type="Date">
-                <sv:value>2015-02-25T14:00:10.854+01:00</sv:value>
+                <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:createdBy" sv:type="String">
                 <sv:value>superuser</sv:value>
               </sv:property>
+              <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                <sv:value>2015-05-21T15:49:54.701+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
               <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                <sv:value>2015-02-25T14:00:25.473+01:00</sv:value>
+                <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -746,7 +836,7 @@
                 <sv:value>mgnl:contentNode</sv:value>
               </sv:property>
               <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>bc1709dd-2661-4a8f-9df6-25176867aaeb</sv:value>
+                <sv:value>23bbe5a2-429e-4b58-8f7d-1d8a0ae4ab80</sv:value>
               </sv:property>
               <sv:property sv:name="extends" sv:type="String">
                 <sv:value>../footer1</sv:value>
@@ -758,19 +848,19 @@
                 <sv:value>false</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:created" sv:type="Date">
-                <sv:value>2015-02-25T14:00:29.093+01:00</sv:value>
+                <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:createdBy" sv:type="String">
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-02-25T14:00:29.095+01:00</sv:value>
+                <sv:value>2015-05-21T15:49:54.702+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                <sv:value>2015-02-25T14:00:29.093+01:00</sv:value>
+                <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -781,7 +871,7 @@
                 <sv:value>mgnl:contentNode</sv:value>
               </sv:property>
               <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>79a6b630-2880-40d9-97d5-9a920d587cde</sv:value>
+                <sv:value>c9395a20-09b7-429a-913c-1ed9f41d6b73</sv:value>
               </sv:property>
               <sv:property sv:name="extends" sv:type="String">
                 <sv:value>../footer1</sv:value>
@@ -793,19 +883,19 @@
                 <sv:value>false</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:created" sv:type="Date">
-                <sv:value>2015-02-25T14:00:31.524+01:00</sv:value>
+                <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:createdBy" sv:type="String">
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-02-25T14:00:31.525+01:00</sv:value>
+                <sv:value>2015-05-21T15:49:54.702+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                <sv:value>2015-02-25T14:00:31.524+01:00</sv:value>
+                <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -817,7 +907,7 @@
               <sv:value>mgnl:contentNode</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:uuid" sv:type="String">
-              <sv:value>80973cba-2b24-4940-bb6e-bf2b88f29452</sv:value>
+              <sv:value>8afab767-7f35-4ce0-a0e2-ec4517248505</sv:value>
             </sv:property>
             <sv:property sv:name="columns" sv:type="Long">
               <sv:value>4</sv:value>
@@ -825,14 +915,23 @@
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+              <sv:value>false</sv:value>
+            </sv:property>
             <sv:property sv:name="mgnl:created" sv:type="Date">
-              <sv:value>2015-02-25T14:02:10.448+01:00</sv:value>
+              <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:createdBy" sv:type="String">
               <sv:value>superuser</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+              <sv:value>2015-05-21T15:49:54.702+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
             <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-              <sv:value>2015-02-25T14:31:39.074+01:00</sv:value>
+              <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -844,7 +943,7 @@
             <sv:value>mgnl:contentNode</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>b38866b9-131a-428e-83af-7de4aa706f53</sv:value>
+            <sv:value>bb88b195-0bc3-4f25-abcd-60cdadf74440</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -853,19 +952,19 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-02-25T13:39:48.482+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-02-25T13:39:48.484+01:00</sv:value>
+            <sv:value>2015-05-21T15:49:54.703+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-02-25T13:40:30.518+01:00</sv:value>
+            <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -882,19 +981,28 @@
       <sv:value>mgnl:contentNode</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>4e4eb710-9683-406e-be40-f92ce95d3913</sv:value>
+      <sv:value>b12920ff-e61a-4e29-89ab-49948ecf845c</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
-      <sv:value>2015-02-24T13:51:45.474+01:00</sv:value>
+      <sv:value>2015-05-21T15:49:54.675+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-05-21T15:49:54.703+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-24T13:52:02.701+01:00</sv:value>
+      <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>

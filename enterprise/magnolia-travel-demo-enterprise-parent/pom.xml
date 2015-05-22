@@ -70,6 +70,25 @@
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
+
+      <!--  EE modules -->
+      <dependency>
+        <groupId>info.magnolia.multisite</groupId>
+        <artifactId>magnolia-module-multisite</artifactId>
+        <version>1.2-SNAPSHOT</version>
+      </dependency>
+
+      <!-- Resources is managed in magnolia-travel-webapp but a milestone dependency was pulled in anyways -->
+      <dependency>
+        <groupId>info.magnolia.resources</groupId>
+        <artifactId>magnolia-resources</artifactId>
+        <version>2.4-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.resources</groupId>
+        <artifactId>magnolia-resources-app</artifactId>
+        <version>2.4-SNAPSHOT</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>

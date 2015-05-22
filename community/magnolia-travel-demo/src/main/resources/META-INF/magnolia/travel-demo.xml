@@ -31,5 +31,10 @@
       <name>mte</name>
       <version>1.0/*</version>
     </dependency>
+    <dependency>
+      <name>multisite</name>
+      <version>1.2/*</version>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
 </module>

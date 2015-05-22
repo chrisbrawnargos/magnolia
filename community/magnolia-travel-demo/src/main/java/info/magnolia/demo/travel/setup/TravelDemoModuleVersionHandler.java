@@ -37,6 +37,7 @@ import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
+import info.magnolia.module.delta.ModuleDependencyBootstrapTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.module.inplacetemplating.setup.TemplatesInstallTask;
@@ -91,6 +92,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
         tasks.add(new TemplatesInstallTask(MTE_FTL_PATTERN, true));
         tasks.add(new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
                 new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
+        tasks.add(new ModuleDependencyBootstrapTask("multisite"));
         return tasks;
     }
 
