@@ -128,7 +128,11 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
 
     private NavigationItem getNavigationItem(Node node) throws RepositoryException {
         final NavigationItem navigationItem = new NavigationItem();
-        final String title = PropertyUtil.getString(node, NavigationItem.PROPERTY_NAME_TITLE, node.getName());
+        String title = PropertyUtil.getString(node, NavigationItem.PROPERTY_NAME_NAVIGATION_TITLE);
+        if (title == null) {
+            title = PropertyUtil.getString(node, NavigationItem.PROPERTY_NAME_TITLE, node.getName());
+        }
+
         navigationItem.setName(title);
         if (isActive(node)) {
             navigationItem.setCssClass(CURRENT_ACTIVE_CSS_CLASS);
@@ -161,6 +165,7 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
 
         public static final String PROPERTY_NAME_HIDE_PAGE = "hideInNav";
         public static final String PROPERTY_NAME_TITLE = "title";
+        public static final String PROPERTY_NAME_NAVIGATION_TITLE = "navigationTitle";
 
         private String name;
         private String link;
