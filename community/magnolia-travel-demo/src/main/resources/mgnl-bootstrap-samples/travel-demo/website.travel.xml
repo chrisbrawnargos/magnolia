@@ -28,7 +28,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:template" sv:type="String">
-    <sv:value>travel-demo:pages/main</sv:value>
+    <sv:value>travel-demo:pages/home</sv:value>
   </sv:property>
   <sv:property sv:name="search" sv:type="String">
     <sv:value>/travel/meta/searchResults</sv:value>
