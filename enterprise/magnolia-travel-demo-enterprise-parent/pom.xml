@@ -16,9 +16,11 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4-m8</magnoliaVersion>
-    <magnoliaUiVersion>5.4-m8</magnoliaUiVersion>
-    <magnoliaEEBundleVersion>5.4-SNAPSHOT</magnoliaEEBundleVersion>
+    <magnoliaVersion>5.4-m10</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m10</magnoliaUiVersion>
+    <magnoliaEEBundleVersion>5.4-alpha2</magnoliaEEBundleVersion>
+    <siteVersion>1.0-m8</siteVersion>
+    <resourcesVersion>2.4-m7</resourcesVersion>
   </properties>
 
   <scm>
@@ -82,19 +84,30 @@
       <dependency>
         <groupId>info.magnolia.multisite</groupId>
         <artifactId>magnolia-module-multisite</artifactId>
-        <version>1.2-SNAPSHOT</version>
+        <version>1.2-m4</version>
       </dependency>
 
       <!-- Resources is managed in magnolia-travel-webapp but a milestone dependency was pulled in anyways -->
       <dependency>
         <groupId>info.magnolia.resources</groupId>
         <artifactId>magnolia-resources</artifactId>
-        <version>2.4-SNAPSHOT</version>
+        <version>${resourcesVersion}</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.resources</groupId>
         <artifactId>magnolia-resources-app</artifactId>
-        <version>2.4-SNAPSHOT</version>
+        <version>${resourcesVersion}</version>
+      </dependency>
+      <!-- Site is managed in magnolia-travel-webapp but a milestone dependency was pulled in anyways -->
+      <dependency>
+        <groupId>info.magnolia.site</groupId>
+        <artifactId>magnolia-site</artifactId>
+        <version>${siteVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.site</groupId>
+        <artifactId>magnolia-site-app</artifactId>
+        <version>${siteVersion}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

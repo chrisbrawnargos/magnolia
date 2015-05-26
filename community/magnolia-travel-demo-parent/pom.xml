@@ -16,12 +16,12 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4-m9</magnoliaVersion>
-    <magnoliaUiVersion>5.4-m9</magnoliaUiVersion>
+    <magnoliaVersion>5.4-m10</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m10</magnoliaUiVersion>
     <magnoliaCEBundleVersion>5.4-alpha2</magnoliaCEBundleVersion>
-    <magnoliaDamVersion>2.1-m5</magnoliaDamVersion>
-    <siteVersion>1.0-SNAPSHOT</siteVersion>
-    <resourcesVersion>2.4-SNAPSHOT</resourcesVersion>
+    <magnoliaDamVersion>2.1-m6</magnoliaDamVersion>
+    <siteVersion>1.0-m8</siteVersion>
+    <resourcesVersion>2.4-m7</resourcesVersion>
   </properties>
 
   <scm>
@@ -76,7 +76,7 @@
       <dependency>
         <groupId>info.magnolia.pages</groupId>
         <artifactId>magnolia-pages-app</artifactId>
-        <version>5.4-m5</version>
+        <version>5.4-m7</version>
       </dependency>
 
       <!-- Dependencies to travel-demo -->
@@ -140,12 +140,12 @@
       <dependency>
         <groupId>info.magnolia.categorization</groupId>
         <artifactId>magnolia-categorization</artifactId>
-        <version>2.4-m7</version>
+        <version>2.4-m8</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.templating</groupId>
         <artifactId>magnolia-templating-essentials-models</artifactId>
-        <version>1.0-m4</version>
+        <version>1.0-m5</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia</groupId>
@@ -211,5 +211,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
