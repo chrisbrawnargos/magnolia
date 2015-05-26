@@ -18,7 +18,6 @@
     <javaVersion>1.7</javaVersion>
     <magnoliaVersion>5.4-m10</magnoliaVersion>
     <magnoliaUiVersion>5.4-m10</magnoliaUiVersion>
-    <magnoliaCEBundleVersion>5.4-alpha2</magnoliaCEBundleVersion>
     <magnoliaDamVersion>2.1-m6</magnoliaDamVersion>
     <siteVersion>1.0-m8</siteVersion>
     <resourcesVersion>2.4-m7</resourcesVersion>
@@ -33,23 +32,9 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Importing dependency management section from CE bundle -->
-      <dependency>
-        <groupId>info.magnolia.bundle</groupId>
-        <artifactId>magnolia-bundle-parent</artifactId>
-        <version>${magnoliaCEBundleVersion}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
       <dependency>
         <groupId>info.magnolia</groupId>
         <artifactId>magnolia-core</artifactId>
-        <version>${magnoliaVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia</groupId>
-        <artifactId>magnolia-jaas</artifactId>
         <version>${magnoliaVersion}</version>
       </dependency>
       <dependency>
@@ -66,17 +51,6 @@
         <groupId>info.magnolia</groupId>
         <artifactId>magnolia-i18n</artifactId>
         <version>${magnoliaVersion}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>info.magnolia.ui</groupId>
-        <artifactId>magnolia-ui-admincentral</artifactId>
-        <version>${magnoliaUiVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia.pages</groupId>
-        <artifactId>magnolia-pages-app</artifactId>
-        <version>5.4-m7</version>
       </dependency>
 
       <!-- Dependencies to travel-demo -->
@@ -98,24 +72,9 @@
         <version>${siteVersion}</version>
       </dependency>
       <dependency>
-        <groupId>info.magnolia.site</groupId>
-        <artifactId>magnolia-site-app</artifactId>
-        <version>${siteVersion}</version>
-      </dependency>
-      <dependency>
         <groupId>info.magnolia.resources</groupId>
         <artifactId>magnolia-resources</artifactId>
         <version>${resourcesVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia.resources</groupId>
-        <artifactId>magnolia-resources-app</artifactId>
-        <version>${resourcesVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia.dam</groupId>
-        <artifactId>magnolia-dam-core</artifactId>
-        <version>${magnoliaDamVersion}</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.dam</groupId>
@@ -138,6 +97,11 @@
         <version>${magnoliaDamVersion}</version>
       </dependency>
       <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-module-inplace-templating</artifactId>
+        <version>2.4-m2</version>
+      </dependency>
+      <dependency>
         <groupId>info.magnolia.categorization</groupId>
         <artifactId>magnolia-categorization</artifactId>
         <version>2.4-m8</version>
@@ -146,11 +110,6 @@
         <groupId>info.magnolia.templating</groupId>
         <artifactId>magnolia-templating-essentials-models</artifactId>
         <version>1.0-m5</version>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia</groupId>
-        <artifactId>magnolia-module-form</artifactId>
-        <version>2.2.12</version>
       </dependency>
 
       <!-- Other dependencies -->

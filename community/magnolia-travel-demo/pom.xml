@@ -29,10 +29,6 @@
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-templating</artifactId>
     </dependency>
-    <dependency>
-      <groupId>info.magnolia</groupId>
-      <artifactId>magnolia-i18n</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>info.magnolia</groupId>
@@ -65,10 +61,6 @@
     <dependency>
       <groupId>info.magnolia.site</groupId>
       <artifactId>magnolia-site</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>info.magnolia.site</groupId>
-      <artifactId>magnolia-site-app</artifactId>
     </dependency>
     <dependency>
       <groupId>info.magnolia.templating</groupId>

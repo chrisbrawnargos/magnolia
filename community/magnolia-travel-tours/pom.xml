@@ -35,11 +35,6 @@
     </dependency>
 
     <dependency>
-      <groupId>info.magnolia.ui</groupId>
-      <artifactId>magnolia-ui-admincentral</artifactId>
-    </dependency>
-
-    <dependency>
       <groupId>info.magnolia.dam</groupId>
       <artifactId>magnolia-dam-templating</artifactId>
     </dependency>

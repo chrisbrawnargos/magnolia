@@ -18,7 +18,6 @@
     <javaVersion>1.7</javaVersion>
     <magnoliaVersion>5.4-m10</magnoliaVersion>
     <magnoliaUiVersion>5.4-m10</magnoliaUiVersion>
-    <magnoliaEEBundleVersion>5.4-alpha2</magnoliaEEBundleVersion>
     <siteVersion>1.0-m8</siteVersion>
     <resourcesVersion>2.4-m7</resourcesVersion>
   </properties>
@@ -32,14 +31,6 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Importing dependency management section from EE bundle -->
-      <dependency>
-        <groupId>info.magnolia.eebundle</groupId>
-        <artifactId>magnolia-enterprise-bundle-parent</artifactId>
-        <version>${magnoliaEEBundleVersion}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
       <!-- Importing dependency management section from travel demo -->
       <dependency>
         <groupId>info.magnolia.demo</groupId>
@@ -60,18 +51,6 @@
         <artifactId>magnolia-travel-tours</artifactId>
         <version>${project.version}</version>
       </dependency>
-      <dependency>
-        <groupId>info.magnolia.demo</groupId>
-        <artifactId>magnolia-travel-webapp</artifactId>
-        <version>${project.version}</version>
-        <type>war</type>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia.demo</groupId>
-        <artifactId>magnolia-travel-webapp</artifactId>
-        <version>${project.version}</version>
-        <type>pom</type>
-      </dependency>
 
       <!-- Dependencies to travel-demo enterprise modules -->
       <dependency>
@@ -82,32 +61,9 @@
 
       <!--  EE modules -->
       <dependency>
-        <groupId>info.magnolia.multisite</groupId>
-        <artifactId>magnolia-module-multisite</artifactId>
+        <groupId>info.magnolia.marketingtags</groupId>
+        <artifactId>magnolia-marketing-tags</artifactId>
         <version>1.2-m4</version>
-      </dependency>
-
-      <!-- Resources is managed in magnolia-travel-webapp but a milestone dependency was pulled in anyways -->
-      <dependency>
-        <groupId>info.magnolia.resources</groupId>
-        <artifactId>magnolia-resources</artifactId>
-        <version>${resourcesVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia.resources</groupId>
-        <artifactId>magnolia-resources-app</artifactId>
-        <version>${resourcesVersion}</version>
-      </dependency>
-      <!-- Site is managed in magnolia-travel-webapp but a milestone dependency was pulled in anyways -->
-      <dependency>
-        <groupId>info.magnolia.site</groupId>
-        <artifactId>magnolia-site</artifactId>
-        <version>${siteVersion}</version>
-      </dependency>
-      <dependency>
-        <groupId>info.magnolia.site</groupId>
-        <artifactId>magnolia-site-app</artifactId>
-        <version>${siteVersion}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
