@@ -63,7 +63,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private static final String THEME_NAME = "travel-demo-theme";
     private static final String DEFAULT_THEME_PATH_PATTERN = "/%s/%s/.*";
 
-    private static final String MTE_FTL_PATTERN = "/templates/.*\\.ftl";
+    private static final String TRAVEL_DEMO_FTL_PATTERN = "/travel-demo/.*\\.ftl";
 
     @Override
     protected List<Task> getBasicInstallTasks(InstallContext installContext) {
@@ -89,7 +89,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
         final List<Task> tasks = new ArrayList<Task>();
         tasks.addAll(super.getExtraInstallTasks(installContext));
-        tasks.add(new TemplatesInstallTask(MTE_FTL_PATTERN, true));
+        tasks.add(new TemplatesInstallTask(TRAVEL_DEMO_FTL_PATTERN, true));
         tasks.add(new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
                 new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
         tasks.add(new ModuleDependencyBootstrapTask("multisite"));
