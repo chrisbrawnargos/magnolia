@@ -1,0 +1,18 @@
+form:
+  i18nBasename: info.magnolia.module.travel-demo.messages
+  label: components.searchResults
+  tabs:
+    - name: tabMain
+      label: components.searchResults.tabMain.label
+      fields:
+        - name: headline
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+          label: components.searchResults.headline.label
+          description: components.searchResults.headline.description
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

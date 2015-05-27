@@ -30,8 +30,8 @@
   <sv:property sv:name="mgnl:template" sv:type="String">
     <sv:value>travel-demo:pages/home</sv:value>
   </sv:property>
-  <sv:property sv:name="search" sv:type="String">
-    <sv:value>/travel/meta/searchResults</sv:value>
+  <sv:property sv:name="searchResultPage" sv:type="String">
+    <sv:value>6df1ebd8-fc9d-4db3-8539-02829c56b9f2</sv:value>
   </sv:property>
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Travel Home</sv:value>
@@ -3568,7 +3568,7 @@
         </sv:node>
       </sv:node>
     </sv:node>
-    <sv:node sv:name="searchResults">
+    <sv:node sv:name="search-results">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:page</sv:value>
       </sv:property>
@@ -3597,13 +3597,13 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-04-22T12:47:29.010+02:00</sv:value>
+        <sv:value>2015-05-28T14:06:15.886+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:template" sv:type="String">
-        <sv:value>travel-demo:pages/standard</sv:value>
+        <sv:value>travel-demo:pages/searchResultPage</sv:value>
       </sv:property>
       <sv:property sv:name="title" sv:type="String">
         <sv:value>Search Results</sv:value>
@@ -3637,20 +3637,20 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-04-22T12:47:29.010+02:00</sv:value>
+          <sv:value>2015-05-28T14:06:15.886+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
-        <sv:node sv:name="0">
+        <sv:node sv:name="singleton">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:component</sv:value>
           </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>c234b63d-e0a2-47a9-adde-a914799e7464</sv:value>
+          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+            <sv:value>mix:lockable</sv:value>
           </sv:property>
-          <sv:property sv:name="headingLevel" sv:type="String">
-            <sv:value>h2</sv:value>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>c6860591-9f9d-44ac-835d-3f07a749c2e9</sv:value>
           </sv:property>
           <sv:property sv:name="headline" sv:type="String">
             <sv:value>Search results</sv:value>
@@ -3659,13 +3659,13 @@
             <sv:value>admin</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-04-22T12:47:29.011+02:00</sv:value>
+            <sv:value>2015-05-28T11:13:47.389+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-04-22T12:47:29.011+02:00</sv:value>
+            <sv:value>2015-05-28T14:06:15.886+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>

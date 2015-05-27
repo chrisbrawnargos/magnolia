@@ -1,4 +1,10 @@
+[#-------------- ASSIGNMENTS --------------]
 [#assign queryStr = ctx.getParameter('queryStr')!?html]
+
+[#-------------- RENDERING --------------]
+[#if content.headline?has_content]
+    <h2>${content.headline}</h2>
+[/#if]
 
 [#if queryStr?has_content]
   [#assign searchResults = searchfn.searchPages(queryStr, '/travel') /]

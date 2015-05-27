@@ -10,9 +10,9 @@
     [#assign spaceClass = "navbar-spacer-children"]
 [/#if]
 
-[#assign searchProperty = cmsfn.siteRoot(content).search! /]
+[#assign searchProperty = cmsfn.siteRoot(content).searchResultPage! /]
 [#if searchProperty?has_content]
-    [#assign searchResultPage = cmsfn.link(cmsfn.nodeByPath(searchProperty)) /]
+    [#assign searchResultPage = cmsfn.link(cmsfn.contentById(searchProperty)) /]
 [/#if]
 
 [#-------------- RENDERING --------------]

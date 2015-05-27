@@ -1,0 +1,23 @@
+dialog: mte:pages/pageProperties.dialog
+class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+
+renderType: site
+type: feature
+areas:
+  content:
+    templateScript: /travel-demo/templates/areas/contentContainerSingle.ftl
+    type: single
+    parameters:
+      cssClass: container
+    autoGeneration:
+      generatorClass: info.magnolia.rendering.generator.CopyGenerator
+      content:
+        singleton:
+          nodeType: mgnl:component
+          templateId: travel-demo:components/searchResults
+          headline: Search results
+  footer:
+    editable: false
+
+title: Travel Search Result Page
+

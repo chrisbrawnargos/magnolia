@@ -1,4 +1,4 @@
-dialog: mte:pages/pageProperties.dialog
+dialog: travel-demo:pages/homePageProperties.dialog
 class: info.magnolia.demo.travel.definition.PageTemplateDefinition
 
 renderType: site
