@@ -1,5 +1,5 @@
 [#-------------- ASSIGNMENTS --------------]
-[#include "/mte/templates/macros/searchForm.ftl"]
+[#include "/travel-demo/templates/macros/searchForm.ftl"]
 
 [#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/" /]
 [#assign pages = model.rootPages! /]
