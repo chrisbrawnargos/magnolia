@@ -1,8 +1,5 @@
 [#-------------- ASSIGNMENTS --------------]
-[#assign cssClass="col-lg-12"]
-[#if def.parameters?? && def.parameters.cssClass??]
-    [#assign cssClass=def.parameters.cssClass]
-[/#if]
+[#assign cssClass=def.parameters.cssClass!"col-lg-12"]
 
 [#-------------- RENDERING --------------]
 <div class="${cssClass}">
