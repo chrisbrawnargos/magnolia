@@ -12,8 +12,8 @@ areas:
     availableComponents:
       textImage:
         id: mte:components/textImage
-      pageIntro:
-        id: travel-demo:components/pageIntro
+      jumbotron:
+        id: travel-demo:components/jumbotron
       linkList:
         id: travel-demo:components/linkList
       teaserDownload:

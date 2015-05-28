@@ -1064,7 +1064,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/pageIntro</sv:value>
+          <sv:value>travel-demo:components/jumbotron</sv:value>
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;We offer amazing tours from every continent on the planet. Get inspired and book your tour with us for a quality experience.&lt;/p&gt;
@@ -1311,7 +1311,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>travel-demo:components/pageIntro</sv:value>
+            <sv:value>travel-demo:components/jumbotron</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;We were founded in 2005 by X and Y as an LLC. Then something happened. Something wonderful...&lt;/p&gt;
@@ -1609,7 +1609,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>travel-demo:components/pageIntro</sv:value>
+              <sv:value>travel-demo:components/jumbotron</sv:value>
             </sv:property>
             <sv:property sv:name="text" sv:type="String">
               <sv:value>&lt;p&gt;&amp;quot;Magnolia Travels&amp;quot; is a ficticious website and company created to demonstrate to you how the Magnolia Content Management System works, and how powerful it is.&lt;/p&gt;
@@ -1867,7 +1867,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>travel-demo:components/pageIntro</sv:value>
+            <sv:value>travel-demo:components/jumbotron</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Magnolia&amp;#39;s brand promise &amp;quot;Yes, we&amp;#39;re open&amp;quot; not only describes our product and our mindset. It also reflects your openness to meet the challenge of a future in which your digital channels becomes the primary source of interaction with your customers.&lt;/p&gt;
@@ -2250,7 +2250,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>travel-demo:components/pageIntro</sv:value>
+            <sv:value>travel-demo:components/jumbotron</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Join our team!&lt;/p&gt;
@@ -2562,7 +2562,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/pageIntro</sv:value>
+          <sv:value>travel-demo:components/jumbotron</sv:value>
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;3, 2, 1, Contact!&lt;/p&gt;
@@ -3418,7 +3418,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>travel-demo:components/pageIntro</sv:value>
+            <sv:value>travel-demo:components/jumbotron</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;A map of the website.&lt;/p&gt;
