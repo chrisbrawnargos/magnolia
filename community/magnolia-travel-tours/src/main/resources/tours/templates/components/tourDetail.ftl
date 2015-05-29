@@ -49,7 +49,7 @@
         [#if renditionDetail?has_content]
             <div class="col-md-8 product-detail">
                 <span class="lead-image clearfix">
-                    [@tourImage renditionDetail assetCredit tour.name "img-responsive zoomable" /]
+                    [@tourImage renditionDetail assetCredit tour.name "img-responsive" /]
                 </span>
             </div>
         [/#if]

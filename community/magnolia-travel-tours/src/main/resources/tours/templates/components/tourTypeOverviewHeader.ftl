@@ -22,7 +22,7 @@
 
     [#if rendition?has_content]
         <span class="lead-image clearfix">
-            [@tourImage rendition assetCredit category.name "img-responsive zoomable" /]
+            [@tourImage rendition assetCredit category.name "img-responsive" /]
         </span>
     [/#if]
 
