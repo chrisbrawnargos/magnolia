@@ -7659,9 +7659,6 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>e30b6cc6-6eb6-49e1-bdd3-381dd93339e4</sv:value>
       </sv:property>
-      <sv:property sv:name="demo-project-base" sv:type="String">
-        <sv:value>demo-project-base</sv:value>
-      </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>
       </sv:property>
