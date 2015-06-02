@@ -61,7 +61,10 @@
 
                 </ul>
 
-                [@searchForm action=searchResultPage! /]
+                [#-- Only when the search result page was set should the form be displayed --]
+                [#if searchResultPage?exists]
+                    [@searchForm action=searchResultPage! /]
+                [/#if]
             </div>
 
             [#if childPages?has_content]
