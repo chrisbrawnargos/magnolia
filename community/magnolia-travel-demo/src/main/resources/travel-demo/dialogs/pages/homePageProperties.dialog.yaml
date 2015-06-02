@@ -37,7 +37,7 @@ form:
         - name: searchResultPage
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
           i18n: false
-          required: true
+          required: false
           label: pages.homePageProperties.searchResultPage.label
           description: pages.homePageProperties.searchResultPage.description
           targetWorkspace: website
