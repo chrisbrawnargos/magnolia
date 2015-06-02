@@ -286,7 +286,7 @@
             <sv:value>admin</sv:value>
           </sv:property>
           <sv:property sv:name="link" sv:type="String">
-            <sv:value>/resources/travel-demo-theme/libs/twitterbootstrap/js/bootstrap.min.js</sv:value>
+            <sv:value>/.resources/travel-demo-theme/libs/twitterbootstrap/js/bootstrap.min.js</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -327,7 +327,7 @@
             <sv:value>admin</sv:value>
           </sv:property>
           <sv:property sv:name="link" sv:type="String">
-            <sv:value>/resources/travel-demo-theme/libs/twitterbootstrap-extras/ie10-viewport-bug-workaround.js</sv:value>
+            <sv:value>/.resources/travel-demo-theme/libs/twitterbootstrap-extras/ie10-viewport-bug-workaround.js</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -368,7 +368,7 @@
             <sv:value>admin</sv:value>
           </sv:property>
           <sv:property sv:name="link" sv:type="String">
-            <sv:value>/resources/travel-demo-theme/js/sticky-menu.js</sv:value>
+            <sv:value>/.resources/travel-demo-theme/js/sticky-menu.js</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
             <sv:value>false</sv:value>

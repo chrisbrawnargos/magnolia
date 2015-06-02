@@ -35,16 +35,10 @@ package info.magnolia.demo.travel.setup;
 
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
-import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
 import info.magnolia.module.delta.ModuleDependencyBootstrapTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
-import info.magnolia.module.inplacetemplating.setup.TemplatesInstallTask;
-import info.magnolia.module.resources.ResourceTypes;
-import info.magnolia.module.resources.setup.InstallBinaryResourcesTask;
-import info.magnolia.module.resources.setup.InstallTextResourceTask;
-import info.magnolia.module.resources.setup.InstallTextResourcesTask;
 import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
@@ -60,36 +54,10 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private static final String DEFAULT_URI_NODEPATH = "/modules/ui-admincentral/virtualURIMapping/default";
     private static final String DEFAULT_URI = "redirect:/travel.html";
 
-    private static final String THEME_NAME = "travel-demo-theme";
-    private static final String DEFAULT_THEME_PATH_PATTERN = "/%s/%s/.*";
-
-    private static final String TRAVEL_DEMO_FTL_PATTERN = "/travel-demo/.*\\.ftl";
-
-    @Override
-    protected List<Task> getBasicInstallTasks(InstallContext installContext) {
-        final List<Task> tasks = new ArrayList<Task>();
-        tasks.addAll(super.getBasicInstallTasks(installContext));
-
-        // Custom tasks that will install our theme
-        tasks.add(new ArrayDelegateTask(String.format("Install '%s' theme", THEME_NAME), String.format("Installs '%s' theme with all its resources", THEME_NAME),
-                new InstallTextResourcesTask("", "", InstallTextResourceTask.DEFAULT_ENCODING, String.format(DEFAULT_THEME_PATH_PATTERN, THEME_NAME, ResourceTypes.CSS_SUFFIX), ResourceTypes.PROCESSED_CSS, true, null, false, false),
-                new InstallTextResourcesTask("", "", InstallTextResourceTask.DEFAULT_ENCODING, String.format(DEFAULT_THEME_PATH_PATTERN, THEME_NAME, ResourceTypes.JS_SUFFIX), ResourceTypes.PROCESSED_JS, true, null, false, false),
-                // Twitter bootstrap
-                new InstallBinaryResourcesTask("", "", String.format(DEFAULT_THEME_PATH_PATTERN, THEME_NAME, "libs/twitterbootstrap/fonts"), false, false),
-                new InstallTextResourcesTask("", "", InstallTextResourceTask.DEFAULT_ENCODING, String.format(DEFAULT_THEME_PATH_PATTERN, THEME_NAME, "libs/twitterbootstrap/" + ResourceTypes.CSS_SUFFIX), ResourceTypes.PROCESSED_CSS, true, null, false, false),
-                new InstallTextResourcesTask("", "", InstallTextResourceTask.DEFAULT_ENCODING, String.format(DEFAULT_THEME_PATH_PATTERN, THEME_NAME, "libs/twitterbootstrap/" + ResourceTypes.JS_SUFFIX), ResourceTypes.PROCESSED_JS, true, null, false, false),
-                // Twitter bootstrap extras
-                new InstallTextResourcesTask("", "", InstallTextResourceTask.DEFAULT_ENCODING, String.format(DEFAULT_THEME_PATH_PATTERN, THEME_NAME, "libs/twitterbootstrap-extras"), ResourceTypes.PROCESSED_JS, true, null, false, false)
-        ));
-
-        return tasks;
-    }
-
     @Override
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
         final List<Task> tasks = new ArrayList<Task>();
         tasks.addAll(super.getExtraInstallTasks(installContext));
-        tasks.add(new TemplatesInstallTask(TRAVEL_DEMO_FTL_PATTERN, true));
         tasks.add(new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
                 new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
         tasks.add(new ModuleDependencyBootstrapTask("multisite"));

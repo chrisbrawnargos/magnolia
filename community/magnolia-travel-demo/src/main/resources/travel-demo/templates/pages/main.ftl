@@ -41,7 +41,7 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script>window.html5 || document.write('<script src="${ctx.contextPath}/resources/travel-demo-theme/js/html5shiv.js"><\/script>')</script>
+    <script>window.html5 || document.write('<script src="${ctx.contextPath}/.resources/travel-demo-theme/js/html5shiv.js"><\/script>')</script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
@@ -55,7 +55,7 @@
 
 [@cms.area name="footer"/]
 
-<script>window.jQuery || document.write('<script src="${ctx.contextPath}/resources/travel-demo-theme/js/jquery-1.10.2.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="${ctx.contextPath}/.resources/travel-demo-theme/js/jquery-1.10.2.min.js"><\/script>')</script>
 
 [#-- We're using the prototype's jsFiles to be rendered at the bottom of the page --]
 [#if def.jsFiles??]

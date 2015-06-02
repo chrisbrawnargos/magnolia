@@ -63,7 +63,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>/resources/sportstation-theme/css/sportstation.css</sv:value>
+        <sv:value>/.resources/sportstation-theme/css/sportstation.css</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>

@@ -26,7 +26,7 @@
             <div class="col-lg-12">
                 <p style="text-align:center;margin-top:40px; margin-bottom:30px;">
                     <a class="home" href="${homeLink}"><img
-                            src="${ctx.contextPath}/resources/${theme.name}/img/logo-white.png"
+                            src="${ctx.contextPath}/.resources/${theme.name}/img/logo-white.png"
                             style="height:40px;"/></a>
                 </p>
 

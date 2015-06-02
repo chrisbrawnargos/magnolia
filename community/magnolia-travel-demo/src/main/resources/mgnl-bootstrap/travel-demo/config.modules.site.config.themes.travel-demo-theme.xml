@@ -60,7 +60,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>/resources/travel-demo-theme/libs/twitterbootstrap/css/bootstrap.min.css</sv:value>
+        <sv:value>/.resources/travel-demo-theme/libs/twitterbootstrap/css/bootstrap.min.css</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>
@@ -104,7 +104,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>/resources/travel-demo-theme/css/travels-magnolia.css</sv:value>
+        <sv:value>/.resources/travel-demo-theme/css/travels-magnolia.css</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>
@@ -347,7 +347,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>/resources/travel-demo-theme/js/modernizr-2.6.2.min.js</sv:value>
+        <sv:value>/.resources/travel-demo-theme/js/modernizr-2.6.2.min.js</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
         <sv:value>false</sv:value>
