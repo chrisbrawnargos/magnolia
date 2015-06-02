@@ -3,7 +3,7 @@
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>rep:root</sv:value>
   </sv:property>
-  <sv:node sv:name="Magnolia-Travels">
+  <sv:node sv:name="magnolia-travels">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:folder</sv:value>
     </sv:property>

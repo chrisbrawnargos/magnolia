@@ -23,7 +23,7 @@
       [/#if]
   </div>
 
-  [#assign searchResults = searchfn.searchContent('tours', queryStr, '/Magnolia-Travels', 'mgnl:content') /]
+  [#assign searchResults = searchfn.searchContent('tours', queryStr, '/magnolia-travels', 'mgnl:content') /]
   [#assign recordsFound = searchResults?size /]
 
   <h3><em>${recordsFound}</em> ${i18n['search.toursFoundFor']} "${queryStr}"</span></h3>
