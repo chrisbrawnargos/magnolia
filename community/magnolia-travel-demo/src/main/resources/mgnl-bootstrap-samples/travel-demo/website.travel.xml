@@ -1500,7 +1500,7 @@
           </sv:property>
         </sv:node>
       </sv:node>
-      <sv:node sv:name="aboutDemo">
+      <sv:node sv:name="about-demo">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:page</sv:value>
         </sv:property>
@@ -3309,7 +3309,7 @@
         </sv:node>
       </sv:node>
     </sv:node>
-    <sv:node sv:name="siteMap">
+    <sv:node sv:name="site-map">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:page</sv:value>
       </sv:property>

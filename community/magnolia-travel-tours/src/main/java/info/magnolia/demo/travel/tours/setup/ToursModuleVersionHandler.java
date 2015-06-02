@@ -61,7 +61,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
         tasks.add(new InstallRendererContextAttributeTask("site", "site", "tourfn", TourTemplatingFunctions.class.getName()));
 
         /* Order bootstrapped pages accordingly */
-        tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tourType", "about"));
+        tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour-type", "about"));
         tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/destination", "about"));
         tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
 
