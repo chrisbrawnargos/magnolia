@@ -17,4 +17,6 @@ areas:
       cssClass: container
   footer:
     editable: false
-title: Tour Detail
+
+i18nBasename: info.magnolia.module.travel-tours.messages
+title: pages.tour

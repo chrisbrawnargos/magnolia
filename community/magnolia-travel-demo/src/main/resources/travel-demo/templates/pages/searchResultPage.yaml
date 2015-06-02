@@ -19,5 +19,6 @@ areas:
   footer:
     editable: false
 
-title: Travel Search Result Page
+i18nBasename: info.magnolia.module.travel-demo.messages
+title: pages.searchResultPage
 

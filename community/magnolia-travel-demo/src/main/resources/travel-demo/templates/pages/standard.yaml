@@ -24,5 +24,7 @@ areas:
         id: mte:components/teaserExternal
   footer:
     editable: false
-title: Travel Standard
+
+i18nBasename: info.magnolia.module.travel-demo.messages
+title: pages.standard
 

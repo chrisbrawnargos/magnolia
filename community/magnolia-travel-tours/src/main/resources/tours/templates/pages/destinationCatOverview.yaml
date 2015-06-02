@@ -19,4 +19,6 @@ areas:
       cssClass: container
   footer:
     editable: false
-title: Destination Category Overview
+
+i18nBasename: info.magnolia.module.travel-tours.messages
+title: pages.destinationCatOverview
