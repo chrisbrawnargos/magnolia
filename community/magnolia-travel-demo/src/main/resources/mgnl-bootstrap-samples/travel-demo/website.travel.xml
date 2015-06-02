@@ -2765,7 +2765,7 @@
       <sv:value>travel-demo:pages/standard</sv:value>
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
-      <sv:value>Container for meta pages.</sv:value>
+      <sv:value>Container for meta pages</sv:value>
     </sv:property>
     <sv:node sv:name="privacy">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
