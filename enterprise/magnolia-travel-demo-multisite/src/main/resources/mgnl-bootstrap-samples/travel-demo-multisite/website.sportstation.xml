@@ -315,7 +315,7 @@
           <sv:value>About SportStation</sv:value>
         </sv:property>
         <sv:property sv:name="headlineLevel" sv:type="String">
-          <sv:value>h2</sv:value>
+          <sv:value>big</sv:value>
         </sv:property>
         <sv:property sv:name="imagePosition" sv:type="String">
           <sv:value>below</sv:value>
