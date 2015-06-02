@@ -31,10 +31,6 @@
     </dependency>
 
     <dependency>
-      <groupId>info.magnolia</groupId>
-      <artifactId>magnolia-module-inplace-templating</artifactId>
-    </dependency>
-    <dependency>
       <groupId>info.magnolia.resources</groupId>
       <artifactId>magnolia-resources</artifactId>
     </dependency>

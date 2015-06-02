@@ -16,10 +16,10 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4-m10</magnoliaVersion>
-    <magnoliaUiVersion>5.4-m10</magnoliaUiVersion>
-    <siteVersion>1.0-m8</siteVersion>
-    <resourcesVersion>2.4-m7</resourcesVersion>
+    <magnoliaVersion>5.4-m11</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m11</magnoliaUiVersion>
+    <siteVersion>1.0-m9</siteVersion>
+    <resourcesVersion>2.4-m9</resourcesVersion>
   </properties>
 
   <scm>
@@ -78,7 +78,7 @@
       <dependency>
         <groupId>info.magnolia.multisite</groupId>
         <artifactId>magnolia-module-multisite</artifactId>
-        <version>1.2-SNAPSHOT</version>
+        <version>1.2-m5</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.personalization</groupId>

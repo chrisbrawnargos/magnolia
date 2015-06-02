@@ -16,11 +16,11 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4-m10</magnoliaVersion>
-    <magnoliaUiVersion>5.4-m10</magnoliaUiVersion>
+    <magnoliaVersion>5.4-m11</magnoliaVersion>
+    <magnoliaUiVersion>5.4-m11</magnoliaUiVersion>
     <magnoliaDamVersion>2.1-m6</magnoliaDamVersion>
-    <siteVersion>1.0-m8</siteVersion>
-    <resourcesVersion>2.4-m7</resourcesVersion>
+    <siteVersion>1.0-m9</siteVersion>
+    <resourcesVersion>2.4-m9</resourcesVersion>
   </properties>
 
   <scm>
@@ -97,11 +97,6 @@
         <version>${magnoliaDamVersion}</version>
       </dependency>
       <dependency>
-        <groupId>info.magnolia</groupId>
-        <artifactId>magnolia-module-inplace-templating</artifactId>
-        <version>2.4-m2</version>
-      </dependency>
-      <dependency>
         <groupId>info.magnolia.categorization</groupId>
         <artifactId>magnolia-categorization</artifactId>
         <version>2.4-m8</version>
@@ -109,7 +104,7 @@
       <dependency>
         <groupId>info.magnolia.templating</groupId>
         <artifactId>magnolia-templating-essentials-models</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0-m6</version>
       </dependency>
 
       <!-- Other dependencies -->
