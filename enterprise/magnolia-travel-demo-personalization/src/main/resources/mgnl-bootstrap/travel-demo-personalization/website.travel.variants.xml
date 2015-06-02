@@ -53,7 +53,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>travel-demo:pages/main</sv:value>
+      <sv:value>travel-demo:pages/home</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:variantTitle" sv:type="String">
       <sv:value>Americas</sv:value>
@@ -1156,7 +1156,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>travel-demo:pages/main</sv:value>
+      <sv:value>travel-demo:pages/home</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:variantTitle" sv:type="String">
       <sv:value>Asia / Pacific</sv:value>
@@ -2259,7 +2259,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>travel-demo:pages/main</sv:value>
+      <sv:value>travel-demo:pages/home</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:variantTitle" sv:type="String">
       <sv:value>Europe, Middle East, Africa</sv:value>
