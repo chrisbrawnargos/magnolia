@@ -10,7 +10,7 @@
     <sv:value>admin</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-04-29T15:40:15.251+02:00</sv:value>
+    <sv:value>2015-06-03T10:50:32.267+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -47,7 +47,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-04-29T15:51:25.415+02:00</sv:value>
+      <sv:value>2015-06-03T10:57:52.898+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -60,6 +60,9 @@
     </sv:property>
     <sv:property sv:name="mgnl:variationOf" sv:type="WeakReference">
       <sv:value>b06b82a2-74b0-4994-8015-028c4fd60716</sv:value>
+    </sv:property>
+    <sv:property sv:name="searchResultPage" sv:type="String">
+      <sv:value>6df1ebd8-fc9d-4db3-8539-02829c56b9f2</sv:value>
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Travel Home</sv:value>
@@ -1150,7 +1153,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-04-29T15:52:33.826+02:00</sv:value>
+      <sv:value>2015-06-03T10:58:08.957+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -1163,6 +1166,9 @@
     </sv:property>
     <sv:property sv:name="mgnl:variationOf" sv:type="WeakReference">
       <sv:value>b06b82a2-74b0-4994-8015-028c4fd60716</sv:value>
+    </sv:property>
+    <sv:property sv:name="searchResultPage" sv:type="String">
+      <sv:value>6df1ebd8-fc9d-4db3-8539-02829c56b9f2</sv:value>
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Travel Home</sv:value>
@@ -2253,7 +2259,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-04-29T15:55:21.703+02:00</sv:value>
+      <sv:value>2015-06-03T10:58:21.905+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -2266,6 +2272,9 @@
     </sv:property>
     <sv:property sv:name="mgnl:variationOf" sv:type="WeakReference">
       <sv:value>b06b82a2-74b0-4994-8015-028c4fd60716</sv:value>
+    </sv:property>
+    <sv:property sv:name="searchResultPage" sv:type="String">
+      <sv:value>6df1ebd8-fc9d-4db3-8539-02829c56b9f2</sv:value>
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Travel Home</sv:value>
