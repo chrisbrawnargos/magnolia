@@ -7,7 +7,7 @@
     <sv:value>e6715db2-8ea9-451b-a8f0-57bd21ed1d54</sv:value>
   </sv:property>
   <sv:property sv:name="activeAuthor" sv:type="Boolean">
-    <sv:value>true</sv:value>
+    <sv:value>false</sv:value>
   </sv:property>
   <sv:property sv:name="content" sv:type="String">
     <sv:value>&lt;a title="Real Time Web Analytics" href="http://clicky.com/100843699"&gt;&lt;img alt="Real Time Web Analytics" src="//static.getclicky.com/media/links/badge.gif" border="0" /&gt;&lt;/a&gt;
@@ -28,7 +28,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-05-13T12:00:15.930+02:00</sv:value>
+    <sv:value>2015-06-03T13:59:25.342+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -81,7 +81,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-05-13T12:00:15.930+02:00</sv:value>
+        <sv:value>2015-06-03T13:59:25.343+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
