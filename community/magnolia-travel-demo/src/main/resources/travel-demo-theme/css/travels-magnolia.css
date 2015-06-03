@@ -566,3 +566,9 @@ h1 .category {
     padding-bottom: 20px;
 }
 
+/* TEASERS
+-------------------------------------------------- */
+
+.teaser h2{
+    font-size:1.5em;
+}
