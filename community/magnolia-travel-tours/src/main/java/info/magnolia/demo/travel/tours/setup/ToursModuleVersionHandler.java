@@ -37,7 +37,9 @@ import info.magnolia.demo.travel.tours.TourTemplatingFunctions;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.AddRoleToUserTask;
-import info.magnolia.module.delta.ModuleDependencyBootstrapTask;
+import info.magnolia.module.delta.ArrayDelegateTask;
+import info.magnolia.module.delta.CopyNodeTask;
+import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.OrderNodeBeforeTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.rendering.module.setup.InstallRendererContextAttributeTask;
@@ -53,7 +55,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
 
     @Override
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
-        final List<Task> tasks = new ArrayList<Task>();
+        final List<Task> tasks = new ArrayList<>();
 
         tasks.addAll(super.getExtraInstallTasks(installContext));
 
@@ -68,7 +70,16 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
         /* Add travel-base role to user anonymous */
         tasks.add(new AddRoleToUserTask("Adds role 'travel-base' to user 'anonymous'", "anonymous", "travel-base"));
 
-        tasks.add(new ModuleDependencyBootstrapTask("multisite"));
+        tasks.add(new IsModuleInstalledOrRegistered("Copy template availability and navigation areas from site definition to multisite module", "multisite",
+                new ArrayDelegateTask("",
+                        new CopyNodeTask("Copy tour template",
+                                "/modules/site/config/site/templates/availability/templates/tour", "/modules/multisite/config/sites/default/templates/availability/templates/tour", false),
+                        new CopyNodeTask("Copy categoryOverview template",
+                                "/modules/site/config/site/templates/availability/templates/categoryOverview", "/modules/multisite/config/sites/default/templates/availability/templates/categoryOverview", false),
+                        new CopyNodeTask("Copy categoryOverview template",
+                                "/modules/site/config/site/templates/availability/templates/destinationCatOverview", "/modules/multisite/config/sites/default/templates/availability/templates/destinationCatOverview", false),
+                        new CopyNodeTask("Copy tours navigation areas",
+                                "/modules/site/config/site/templates/prototype/areas/navigation/areas", "/modules/multisite/config/sites/default/templates/prototype/areas/navigation/areas", false))));
 
         return tasks;
     }

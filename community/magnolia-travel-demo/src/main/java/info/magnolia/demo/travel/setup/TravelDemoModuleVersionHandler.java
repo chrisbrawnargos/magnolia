@@ -35,19 +35,20 @@ package info.magnolia.demo.travel.setup;
 
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
+import info.magnolia.module.delta.CopyNodeTask;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
-import info.magnolia.module.delta.ModuleDependencyBootstrapTask;
+import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
+import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
+import info.magnolia.module.delta.WarnTask;
 import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class is optional and lets you manager the versions of your module,
- * by registering "deltas" to maintain the module's configuration, or other type of content.
- * If you don't need this, simply remove the reference to this class in the module descriptor xml.
+ * {@link DefaultModuleVersionHandler} for travel demo module.
  */
 public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler {
 
@@ -60,7 +61,10 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
         tasks.addAll(super.getExtraInstallTasks(installContext));
         tasks.add(new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
                 new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
-        tasks.add(new ModuleDependencyBootstrapTask("multisite"));
+        tasks.add(new IsModuleInstalledOrRegistered("", "multisite",
+                new NodeExistsDelegateTask("", "/modules/multisite/config/sites/default",
+                        new WarnTask("Warn about already existing site", "Could not copy site definition to multisite module. Check you configuration at /modules/multisite/config/sites. Site 'default' already exists."),
+                        new CopyNodeTask("Copy site definition to multisite", "/modules/site/config/site", "/modules/multisite/config/sites/default", false))));
         return tasks;
     }
 
