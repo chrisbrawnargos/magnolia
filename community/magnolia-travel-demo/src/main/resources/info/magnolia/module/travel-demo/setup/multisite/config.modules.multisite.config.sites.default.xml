@@ -230,7 +230,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-05-21T15:50:15.138+02:00</sv:value>
+        <sv:value>2015-06-03T11:27:09.378+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -933,6 +933,53 @@
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
             <sv:value>list</sv:value>
+          </sv:property>
+        </sv:node>
+        <sv:node sv:name="htmlHeader">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>e49f7a0f-f085-4987-80a0-55850407c594</sv:value>
+          </sv:property>
+          <sv:property sv:name="createAreaNode" sv:type="String">
+            <sv:value>false</sv:value>
+          </sv:property>
+          <sv:property sv:name="i18nBasename" sv:type="String">
+            <sv:value>info.magnolia.module.travel-demo.messages</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+            <sv:value>false</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-06-03T13:19:23.490+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+            <sv:value>2015-06-03T13:19:23.490+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-06-03T13:19:50.912+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="renderType" sv:type="String">
+            <sv:value>freemarker</sv:value>
+          </sv:property>
+          <sv:property sv:name="templateScript" sv:type="String">
+            <sv:value>/travel-demo/templates/areas/htmlHeader.ftl</sv:value>
+          </sv:property>
+          <sv:property sv:name="type" sv:type="String">
+            <sv:value>noComponent</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>

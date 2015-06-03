@@ -1,8 +1,3 @@
-[#-------------- ASSIGNMENTS --------------]
-[#-- Page's model & definition, based on the rendering hierarchy and not the node hierarchy --]
-[#assign site = sitefn.site()!]
-[#assign theme = sitefn.theme(site)!]
-
 [#-------------- RENDERING --------------]
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" xml:lang="${cmsfn.language()}" lang="${cmsfn.language()}"><![endif]-->
@@ -12,38 +7,7 @@
 <head>
     [@cms.page /]
 
-    <title>${content.windowTitle!content.title!}</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <link rel="icon" href="${ctx.contextPath}/.resources/travel-demo/favicon.ico">
-
-    [#list theme.cssFiles as cssFile]
-        [#if cssFile.conditionalComment?has_content]<!--[if ${cssFile.conditionalComment}]>[/#if]
-            <link rel="stylesheet" type="text/css" href="${cssFile.link}" media="${cssFile.media}" />
-        [#if cssFile.conditionalComment?has_content]<![endif]-->[/#if]
-    [/#list]
-    [#if def.cssFiles??]
-        [#list def.cssFiles as cssFile]
-            <link rel="stylesheet" type="text/css" href="${cssFile.link}" media="${cssFile.media}" />
-        [/#list]
-    [/#if]
-
-    [#-- jsFiles from the theme are here --]
-    [#list theme.jsFiles as jsFile]
-        <script src="${jsFile.link}"></script>
-    [/#list]
-
-    <!-- TODO, can these come after all of the css -->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script>window.html5 || document.write('<script src="${ctx.contextPath}/.resources/travel-demo-theme/js/html5shiv.js"><\/script>')</script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    [@cms.area name="htmlHeader"/]
 </head>
 <body>
 <!--[if lt IE 7]>
