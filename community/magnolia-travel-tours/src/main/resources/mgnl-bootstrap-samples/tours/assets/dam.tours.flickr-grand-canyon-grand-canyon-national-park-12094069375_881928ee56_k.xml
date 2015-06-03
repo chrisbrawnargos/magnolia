@@ -7,6 +7,12 @@
   <sv:property sv:name="jcr:uuid" sv:type="String">
     <sv:value>5843f97c-a825-40af-855b-f02483c6f354</sv:value>
   </sv:property>
+  <sv:property sv:name="caption" sv:type="String">
+    <sv:value>Grand Canyon National Park</sv:value>
+  </sv:property>
+  <sv:property sv:name="copyright" sv:type="String">
+    <sv:value>by/2.0</sv:value>
+  </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
   </sv:property>
@@ -17,16 +23,13 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-03-12T16:37:15.908+01:00</sv:value>
+    <sv:value>2015-06-02T16:15:26.582+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="name" sv:type="String">
     <sv:value>flickr-grand-canyon-grand-canyon-national-park-12094069375_881928ee56_k</sv:value>
-  </sv:property>
-  <sv:property sv:name="caption" sv:type="String">
-    <sv:value>Grand Canyon National Park</sv:value>
   </sv:property>
   <sv:node sv:name="jcr:content">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -63,7 +66,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-03-12T16:37:15.908+01:00</sv:value>
+      <sv:value>2015-06-02T16:15:26.583+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>

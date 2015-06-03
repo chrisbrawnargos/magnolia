@@ -1,0 +1,2033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="magnolia-travels" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:folder</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>7dff43c1-da60-4e9e-b825-a49ef2d3277f</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:createdBy" sv:type="String">
+    <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:created" sv:type="Date">
+    <sv:value>2015-01-29T08:58:07.713+01:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2015-06-03T09:14:01.975+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:node sv:name="Vietnam--Tradition-and-Today">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>3d676477-eabc-4cbe-88b6-b77aa85a358a</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Vietnam is one of the world&amp;rsquo;s most exotic and culturally rich destinations. A gem among gems, it offers dazzling diversity for visitors. Yet what most find so fascinating is its capacity for change. This is nowhere more evident than in Ho Chi Minh City. Set on the Saigon river, the capital is the perfect example of progress and tradition living side-by-side. Grand colonial buildings stand alongside modern skyscrapers while Japanese cars share the busy roads with cycle rickshaws.&lt;/p&gt;
+
+&lt;p&gt;We won&amp;rsquo;t just take you to the key sights, but also reveal the hidden stories that explain what makes Vietnam what it is today, and where it&amp;rsquo;s going.&lt;/p&gt;
+
+&lt;p&gt;A two day tour of the Mekong delta (Vietnamese: Đồng bằng S&amp;ocirc;ng Cửu Long &amp;quot;Nine Dragon river delta&amp;quot;) will immerse you in a water-world maze where everything happens on the boats - even local markets which form every day from a raft of vendors boats. We&amp;rsquo;ll continue to the coastal town of Vung Tau in the Phuong district to relax and swim like the locals do.&lt;/p&gt;
+
+&lt;p&gt;While there we&amp;rsquo;ll visit the storied White Palace, the historical old colonial villa of the french governor.&lt;/p&gt;
+
+&lt;p&gt;Along the way, you&amp;rsquo;ll eat some of the finest food you&amp;rsquo;ve ever eaten, and we might even teach you to cook it too.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Discover the culture and everyday treasures of a rising phoenix</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:1044b3b8-30b1-48fe-8078-832b6cef8fb5</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Ho Chi Minh City, Vietnam</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:57:18.965+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:44:42.684+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Vietnam: Tradition and Today</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Hut-to-Hut-in-the-Swiss-Alps">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>d30b9ca6-e22d-45c5-9456-7538ab7bccf8</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Some Swiss people are going to be pretty annoyed with us for revealing their secrets. Hush..don&amp;rsquo;t tell anyone, but there&amp;rsquo;s more to Switzerland than skiing! And we don&amp;rsquo;t mean shopping for watches and staying in fancy hotels.&lt;/p&gt;
+
+&lt;p&gt;No, we&amp;rsquo;re talking about hiking through Switzerland&amp;rsquo;s gorgeous mountains, and staying in the little known mountain huts on the way. Hours of hiking up a remote mountain - and suddenly you come across a cabin perched on a cliff complete with solar electricity and a miniature cable-car to ferry supplies from the valley. These huts are simply furnished, but cosy, clean and comfortable. You&amp;rsquo;ll be served authentic Swiss food, from rosti to raclette to fondu, all washed down with some fine Swiss wine.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s great about the mountain huts is that you can travel light. No need for a tent or even sleeping bag, just a simple silk bag liner will do. This means comfortable and enjoyable hiking.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>There's more to Switzerland than skiing</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:80d091ae-22ce-4cfc-b302-cb39f25c3d30</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Zurich, Switzerland</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:55:07.254+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:57:32.597+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Hut to Hut in the Swiss Alps</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="West-Coast---Highway-101">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>730c8850-d638-4e91-b3fb-4041a0c59ffe</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Imagine walking in the footsteps of the explorers, missionaries, and soldiers who made America what it is today. Discover the famous El Camino Real (The Royal Road) based on the old trail which linked the Spanish Missions, Pueblos and Presidios.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll kick off in Seattle and head south into Oregon and finally to California where we&amp;#39;ll hit the beaches on California Highway 1. The trip will be infused with history and fabulous scenery, but there&amp;rsquo;ll be lots of time for fun, with some great beach activities at the end of the trip.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Family travels in USA</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ed3dcd18-78af-46df-a9e1-bc732479f2e7</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:d44f783c-91ca-4b48-9533-ea4e147e13e9</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Seattle, USA</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:51:38.319+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:57:41.727+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>West Coast - Highway 101</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Inside-New-Delhi">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>3ba5ba55-ac02-4b37-a429-5fc0bb4b383b</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Delhi has many interesting monuments and museums, but &lt;em&gt;we won&amp;#39;t be visiting any of them on this tour&lt;/em&gt;. We&amp;#39;re going inside New Delhi to the markets and tea shops where locals go. The hidden gems of New Delhi are just around the corner when you know where to look.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll take in some local football and cricket matches, and sample the best authentic restaurants with styles covering the palette from north to south. You&amp;rsquo;ll also have the opportunity to try cooking some of the famous North Indian cuisine.&lt;/p&gt;
+
+&lt;p&gt;In the evenings we&amp;rsquo;ll go listen to qawwalis (sufi devotional music) sung at dargah of Nizamuddin Auliya, or maybe catch a bollywood flick. Still awake after a full day? The nightlife beckons with the discos and clubs which have sprouted up all over this vibrant city.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Get to know Delhi up close and personal</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>2</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:ad33e9b0-855e-4bac-b35e-3c7e7588465c</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>New Delhi, India</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:50:20.378+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:57:49.161+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Inside New Delhi</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Kyoto">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>b475f27e-2929-427b-9517-815118a3b36e</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Experience the still beauty that permeates and surrounds Kyoto. Kyoto is famous for many things, including countless &lt;a href="http://www.japan-guide.com/e/e2058.html" style="text-decoration:none;" target="_blank"&gt;&lt;u&gt;temples&lt;/u&gt;&lt;/a&gt;, &lt;a href="http://www.japan-guide.com/e/e2059.html" style="text-decoration:none;" target="_blank"&gt;&lt;u&gt;shrines&lt;/u&gt;&lt;/a&gt; and other fascinating historical buildings.&lt;/p&gt;
+
+&lt;p&gt;Join us on a visit to the City of Ten Thousand Shrines. We&amp;#39;ll visit Tō-ji, Ginkaku-ji, Kōzan-ji and their remarkable gardens before venturing into the mountains that surround the city. You&amp;rsquo;ll enjoy a day spent in green Miyama and a day hiking in Shizuhara. You&amp;rsquo;ll never think about Japan in the same way again.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>The natural side of Japan</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:44689d29-5966-4d41-8fd4-2dc7da783528</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Kyoto, Japan</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:46:15.575+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:57:59.788+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Kyoto</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Grand-Canyon---the-American-South-West">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>820a075a-8c95-4f00-b0ee-5f3bf339f1ff</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;They don&amp;#39;t call it grand for nothing. The Grand Canyon is just one of the many amazing highlights on this tour. We&amp;#39;ll visit the best monuments from Canyonlands to Bryce Canyon and Joshua Tree. Every night we&amp;#39;ll stop in a US National Park with all of the facilities and renowned interpretive centers and talks. This trip will keep your whole family happy!&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Tour the great monuments of america - in an RV Caravan. Roll out!</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ed3dcd18-78af-46df-a9e1-bc732479f2e7</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>21</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:5843f97c-a825-40af-855b-f02483c6f354</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>San Francisco, USA</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:44:50.491+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:58:08.276+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Grand Canyon &amp; the American South-West</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="A-Taste-of-Malaysia">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>a358f3ad-5a03-4f5d-b0ab-cb2219100472</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Get to know amazing Malaysia in a unique way - by learning about and tasting its delicious food. Malaysia isn&amp;rsquo;t just about beautiful beaches, stunning scenery and historic temples. Malaysian cooking has earned a place for itself among other great global cuisines. In this tour, we give you a taste of just what makes it special.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll spend the first week sampling Kuala Lumpur&amp;#39;s delicious cosmopolitan restaurants and sights. Along the way, we also have special cooking courses so you can re-make the magic once you get home. Then we&amp;#39;ll venture south through the countryside - for the traditional cooking of the countryside before the finale in Singapore. We guarantee that the trip will leave you wanting to taste more.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>The trip that will leave a delicious taste on your lips</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:78399215-aed5-4518-9cfc-9b39855f4740</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Kuala Lumpur, Malaysia</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:43:24.936+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:58:18.504+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>A Taste of Malaysia</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Spectacular-Ammouliani-Island">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>5aae4f58-43c3-4222-8f23-dd2fc863ea21</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;You might be one of the last to enjoy the secret of spectacular Ammouliani island in Greece. The only inhabited island of Halkidiki, Ammouliani charms every visitor with its fine golden sand, turquoise sea and rugged rocks. One of the reasons the island has managed to stay hidden so long is its location 120 km from Thessaloniki. It can only be reached by ferry from Tripiti.&lt;/p&gt;
+
+&lt;p&gt;From Athens we will transport you to the island, where you will stay 6 nights at the luxurious Agionissi Resort, with access to the all the beaches. We can guarantee that you won&amp;rsquo;t be able to resist telling the world about this charmed place.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>An island hideaway in Europe</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:0084dfb3-fc4a-4d39-9bfb-43eb5b20bdb7</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Athens, Greece</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value>Automatically created version prior deletion</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:41:31.612+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T23:01:22.137+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Spectacular Ammouliani Island</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Dolomites-on-Bike">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>5556af16-66f5-445a-9150-bae8d2adcf3a</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Pedal your way through Italy&amp;#39;s Dolomite Mountains, reveling in the fabulous ascents, descents, and landscape throughout. &amp;nbsp;The Dolomites are one of the great cycling areas in the Alps, with breath-taking mountain passes and gorgeous valleys, creating a dramatic backdrop for some thrilling rides.&lt;/p&gt;
+
+&lt;p&gt;We organise accommodation along the way and some delicious South Tyrolean food that will give you all the stamina you&amp;rsquo;ll need.&lt;/p&gt;
+
+&lt;p&gt;A bus will transport us and our bikes to our kick off point in Belluno. Every day, you&amp;rsquo;ll have the chance to go mountain biking in some of the most amazing landscapes in the world. And don&amp;#39;t worry about bringing panniers for your clothing - a van will drive with us every day to carry our gear so we can ride light.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Cycle the peaks and valleys of the Italian Alps</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:e483188e-b01b-4fef-a220-dc68debb8801</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Venice, Italy</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:40:05.754+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-02T17:01:03.963+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Dolomites on Bike</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Belize-for-Families">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>3dc158ce-fa92-4eab-a060-3f65d467b9ab</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Located between Mexico and Guatemala in the heart of Central America, Belize&amp;#39;s natural beauty will take your breath away. Our &amp;lsquo;Belize for Families&amp;rsquo; trip will set pulses racing for any active family. A week isn&amp;rsquo;t really enough to discover the rainforest, reefs and ruins of Belize, but we&amp;rsquo;ll certainly try. Your family will have the chance to try out scuba diving on Belize&amp;rsquo;s barrier reef, as well as go caving in the limestone Cayo District.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>See Belize through the eyes of your children</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>bed2e297-199c-4dc8-90cd-54ad3cb4221b</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:f90c8094-542d-4037-a4f5-dcd634fd0393</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Belize City, Belize</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:38:48.624+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:58:42.444+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Belize for Families</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Temples-of-the-Orient">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>45560b07-4600-4aaa-8fc4-30d9ceff5b09</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Nowhere in the world contains so many temples as Asia. It&amp;rsquo;s not surprising, as it was the birthplace for many of the world&amp;rsquo;s religions.&lt;/p&gt;
+
+&lt;p&gt;In this 14-day tour, you&amp;rsquo;ll have the chance to visit some of the most impressive monuments in Asia, and get some real insight into the spirituality of a continent. Magnolia Travels works with local guides who have strong links with the spiritual community and you will have an opportunity to meet, participate and study with those who upkeep the temples and practice their beliefs in the holy places of the Orient.&lt;/p&gt;
+
+&lt;p&gt;In India, you will visit the majestic Jain Temple in Ranakpur, dating back to the 14th century.&lt;/p&gt;
+
+&lt;p&gt;In China, you will visit the Temple of Heaven in Beijing, and join hundreds of people practising meditation in the public gardens. The trip culminates in Cambodia, where Magnolia Travels will take you to see the world-famous Angkor Wat temple complex.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Go deep into the spiritual heart of a continent</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>21</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:9269e62f-cb98-47eb-91ce-db1f09040896</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Beijing, China</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-29T08:35:44.563+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:58:50.589+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Temples of the Orient</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="The-Long-Trail">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>ae0036c5-c313-4be2-ae7e-6b5f660435f5</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;This tour is so tough, you need to pass a medical fitness test to qualify. But seriously, mountain biking in the Andes Mountains is one of the most incredible experiences for anyone who loves adrenaline. Our expert guides will take you on most demanding but rewarding routes - and can offer technical advice and training as needed.&lt;/p&gt;
+
+&lt;p&gt;We won&amp;rsquo;t say we offer tours for beginners, but we definitely cater for different levels, and we&amp;rsquo;re also happy to organize private trips. We provide simple but comforting food and accommodation along the way so you can concentrate on peddling.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not only about biking, as we also organize other events along the route, like canoeing through the rainforest and walking up a waterfall. Don&amp;rsquo;t forget your camera!&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Test yourself on this extreme tour</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>bed2e297-199c-4dc8-90cd-54ad3cb4221b</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>21</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:47811104-60d5-44c8-914c-8ab13cafd0ee</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Santiago, Chile</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-28T18:07:02.144+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T22:26:00.558+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>The Long Trail</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Surfin--Safari">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>8c675cdf-5e11-45b2-8c20-b69d334dc3d4</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Famous for its stunning beaches and turquoise waters, Sri Lanka is a sight to behold. It&amp;rsquo;s also one of the best places to go surfing in the magical Indian Ocean. Known as a year-round surfing destination, the island boasts a number of surf competitions.&lt;/p&gt;
+
+&lt;p&gt;But surfing&amp;rsquo;s not all you can get up to. The island also offers boating, diving and snorkelling for those eager to discover its beautiful coasts. Magnolia Travels can arrange all the activities you like, and even leave you some time to simply lie on the sand and soak up the relaxing atmosphere. Sri Lanka&amp;rsquo;s laid back pace of life and friendly locals make it the ideal place for a getaway.&lt;/p&gt;
+
+&lt;p&gt;Tickle your palate with delicious Sri Lankan food, buy ornate hand made goods, and remember, not everyone&amp;rsquo;s as lucky as you.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="date" sv:type="Date">
+      <sv:value>2015-03-12T20:50:00.000+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Sri Lanka offers beautiful beaches, a laid back attitude, and most importantly: excellent breaks</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>21</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:d01deefa-dba9-4708-8cfa-604320720253</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Galle, Sri Lanka</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-01-28T18:06:46.536+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:59:00.711+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Surfin' Safari</sv:value>
+    </sv:property>
+    <sv:property sv:name="title" sv:type="String">
+      <sv:value>Surf Title</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="The-Trans-Siberian-Railway">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>56df12f0-e463-4467-9956-cebc7522b3a0</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Set out on an epic train journey that goes across one-third of the world, starting in Vladivostok, Russia&amp;rsquo;s biggest port city, &amp;nbsp;and ending in majestic Moscow. The legendary Trans-Siberian Railway goes from the Mongolian steppe to Lake Baikal&amp;rsquo;s remote shores to the snow-capped Ural Mountains, giving you a rare view on Russia&amp;rsquo;s vastly differing landscapes. You&amp;rsquo;ll be able to find out more about Russian history, from the Mongols right through to Tsars and communists, all from the comfort of your luxury train.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>A fascinating tour through Russia.</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>21</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:5d3a5a2c-dec2-4ac6-915f-0a487aaecf7f</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Vladivostok, Russia</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T16:37:54.135+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T08:59:29.484+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>The Trans-Siberian Railway</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="The-Baikal-Experience">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>04aa6c5d-783f-4efb-b3f2-26446a741bc1</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Lake Baikal is one of the biggest and deepest lakes of the world, and the largest reservoir of sweet water in the world. The lake and a collection of nature reserves offer a variety of great outdoor activities from hiking and trekking in the rugged Barguzin valley to kayaking, diving and boat trips. We&amp;rsquo;ll sample all of these activities before relaxing in Tschivirkuiskij Bay with its healing hot spring, and getting to know Siberian culture in Ust-Barguzin.&lt;/p&gt;
+
+&lt;p&gt;But the Baikal offers more to those willing to look a little deeper. Our tour will take us to Olkhon island, a center for shamanistic culture - which is widespread in Siberia. Finally our voyage concludes with a meditative weekend at Ivolginsky Datsan, the first Buddhist spiritual center in Russia, and the residence of the leader of the Russian Lamas. The center and its treasures is now protected by the state as a cultural and religious monument.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Go for the spiritual centers, the amazing nature reserves - and the Omul</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:951fa74b-9309-400e-8959-e86b0c46321b</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Irkutsk, Russia</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T16:47:25.117+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T10:03:01.827+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>The Baikal Experience</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Last-Bike-out-of-Hanoi">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>4d0b919a-99d3-469e-95d9-491f83eaab2c</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;H&amp;agrave; Giang, Vietnam&amp;#39;s northern province, is an enchanting landscape of misty mountains and winding backroads. Roam this far-flung corner of civilization on a trusty Minsk motorcycle, the mule of the mountains. Reliable, simple and ideally suited for harsh mountain roads, the Minsk enjoys a cult following in Vietnam. Like the bike, our weathered guide Quyền is a native of H&amp;agrave; Giang.&lt;/p&gt;
+
+&lt;p&gt;A week-long motorbike roadtrip in North Vietnam is a once-in-a-lifetime experience. Movement takes over the consciousness as you ride through emerald green valleys and past centuries-old rice terraces, into a different state of mind.&lt;/p&gt;
+
+&lt;p&gt;Stark cliffs cut through the gray sky. Pouring rain turns the road into a glorious soup. The bike plows through the cappuccino-colored substance effortlessly on wide knobby tyres. Until it no longer does. A water buffalo watches as you push your bike through the mud. After a day you tend to forget about the weather, focusing instead on staying on the road that seems too narrow for any vehicle. You wonder how the local truck drivers manage to keep keep from falling into the ravine as you struggle to keep even two wheels on the pavement.&lt;/p&gt;
+
+&lt;p&gt;Lunch break at a village market. The chicken you nearly hit on the way in now enriches the steaming bowl of pho. Scents of lemongrass and coriander fill your brain. The smiling host added too much chili but you don&amp;#39;t mind. The pho warms your core, a welcome feeling after the rain. This beautiful backwater of the world gets few visitors and you begin to understand why.&lt;/p&gt;
+
+&lt;p&gt;Accommodation in North Vietnam is affordable and easy to find. Lodging here is all-inclusive in the Buddhist sense: everything you need but nothing you want. Wood fire to keep you dry, peace of mind, good night sleep.&lt;/p&gt;
+
+&lt;p&gt;Magnolia Travels organizes week-long motorcycle tours in H&amp;agrave; Giang six times a year. Book your adventure now.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Roam Vietnam's northern province on a trusty Minsk motorcycle</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:b68b6ff7-f2fb-42b9-910c-fb0aed391a39</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Hanoi, Vietnam</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T16:52:32.642+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T10:07:17.080+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Last Bike out of Hanoi</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="The-other-side-of-Iran">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>2f46b23c-b8d6-40ff-8660-b0f10821911e</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;This fascinating 10 day tour starts in ancient Shiraz, close to the Persian Gulf. You&amp;rsquo;ll find that history is all around you as you visit local markets, mosques and gardens. Visitors are charmed by the warm welcome they receive from Iranians, who are still not used to seeing tourists. It&amp;rsquo;s a great place to pick up Persian rugs or hand-made bedspreads and tablecloths. Just outside Shiraz, you&amp;rsquo;ll have the chance to visit magnificent ruins of Persepolis, an amazing testament to Darius I, who built the city in 518 BC. Your experienced tour guide will give you a real understanding of this architectural wonder.&lt;/p&gt;
+
+&lt;p&gt;Your trip will also include some days in the fascinating city of Isfahan, one of the largest cities in the world. The &lt;a href="http://en.wikipedia.org/wiki/Naghsh-e_Jahan_Square" style="text-decoration:none;" target="_blank"&gt;Naghsh-e Jahan Square&lt;/a&gt; in Isfahan is one of the &lt;a href="http://en.wikipedia.org/wiki/List_of_city_squares_by_size" style="text-decoration:none;" target="_blank"&gt;largest city squares&lt;/a&gt; in the world and is an outstanding example of Iranian and Islamic architecture. It has been designated by UNESCO as a &lt;a href="http://en.wikipedia.org/wiki/World_Heritage_Site" style="text-decoration:none;" target="_blank"&gt;World Heritage Site&lt;/a&gt;.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>The Persian empire then and now</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>79da73f7-900b-4c91-b58b-3b1355485519</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>21</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:f6b154d7-731d-4de9-83be-a526dab5815f</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Tehran, Iran</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T16:59:32.725+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:00:03.752+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>The other side of Iran</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Antarctic-Active-Adventure">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>d1010f83-fe84-4880-bfa7-3892cc839359</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Try out overnight camping, kayak trips, and hiking with snowshoes (with an experienced guide!) through the remote wilderness of the Antarctic. You&amp;rsquo;ll see seals and penguins at a close distance, and majestic icebergs right beside you. We use the smallest expedition boats so we can get you to even the most remote places.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll hit the volcanic mountains of Ross Island and wind up our tour at McMurdo station, Antarctica&amp;rsquo;s largest research base.&lt;/p&gt;
+
+&lt;p&gt;Just wait till you you tell your friends about your summer holiday.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Antarctica: It’s not just for scientists anymore</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ee483660-15cd-490d-b709-884b3f130286</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:00235c15-98bb-43b8-8e96-f4d8e0b622d6</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Ushuia, Argentina</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:08:58.458+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:00:09.618+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Antarctic Active Adventure</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Hawaii-Five-O">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>03053d2b-bfd4-4322-b1ea-5482c7e6d42e</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Hulopo&amp;#39;e Beach on the island of Lana&amp;#39;i, is known as one of the world&amp;#39;s finest beaches. You&amp;rsquo;ll be staying at the luxurious Four Seasons Lana&amp;#39;i at Manele Bay, where your every whim will be catered to. All of the hotel rooms face the beautiful marine preserve, and you&amp;rsquo;ll be able to watch the exotic fish and dolphins.&lt;/p&gt;
+
+&lt;p&gt;But you don&amp;rsquo;t have to just admire them from your balcony. This is the ideal place to go snorkelling and diving, and you&amp;rsquo;ll be able to get up close and personal.&lt;/p&gt;
+
+&lt;p&gt;Hulopo&amp;rsquo;e beach is particularly popular for couples, and has been the location for more than one wedding proposal. Why don&amp;rsquo;t you come and discover what makes it so special?&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Swimming with the dolphins on the world’s finest beach</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ed3dcd18-78af-46df-a9e1-bc732479f2e7</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:5c013c07-c969-4ce8-ae88-6bd156a6351a</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Honolulu, USA</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:12:32.905+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:00:19.814+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Hawaii Five O</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Beach-Paradise-in-Brazil">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>545d5815-a3dd-4b68-a539-c38eb1bba29b</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;When you hear &amp;ldquo;Amazon&amp;rdquo;, you probably think of a deep jungle. Well, this remarkably well hidden beach paradise is right in the middle of it. &amp;nbsp;Alter do Ch&amp;atilde;o lies on Rio Tapaj&amp;oacute;s, a tributary to the mighty Amazon, which is so wide here that you can&amp;rsquo;t even see across to the far shore. &amp;nbsp;There&amp;rsquo;s plenty of nature to explore in the area on foot, but the inlet to the lake is also covered with cosy beach restaurants and bars, perfect for a post swim chill out. &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;No fear of crocodiles here, but there are some sting rays to watch out for. &amp;nbsp;You&amp;rsquo;ll start your adventure on the two-day boat ride from Manaus (capital of the Amazon) to Santar&amp;eacute;m, but be sure to bring your own hammock (and some rope) or just some extra coins for the bar!&lt;/p&gt;
+
+&lt;p&gt;While you&amp;rsquo;re here, you&amp;rsquo;ll discover there&amp;rsquo;s much more to do than hanging out at the glorious beaches. The town lies at the entrance to the Lago Verde lagoon, home to many Amazon animals, and the perfect place to do a canoe trip. We also include tours to the beautiful Floresta Nacional do Tapaj&amp;oacute;s and Rio Arapiuns.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>An Amazonian beach holiday</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>bed2e297-199c-4dc8-90cd-54ad3cb4221b</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:950cc73c-1b12-4f2a-bba7-97ad9d171f5d</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>São Luís, Brasil</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:30:51.658+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:47:33.980+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Beach Paradise in Brazil</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Island-hopping-in-Indonesia">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>ccbe0e73-63ed-43f8-8191-1eef002df302</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Indonesia is probably the greatest place in the world to go on an island hopping, ferry riding, beach lounging adventure. With more than 17,000 islands to choose from, you&amp;rsquo;re not going to run out. Visit Bali and its ancient temples and spend time on some of the more remote islands, where you&amp;rsquo;ll enjoy a relaxed way of life, delicious food and fabulous scenery.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Beautiful beaches and amazing culture</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:06e63c9d-ef7f-42e6-a0a1-fdecf9b7886d</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Jakarta, Indonesia</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:33:28.077+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:00:40.468+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Island hopping in Indonesia</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Dubai-and-Oman">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>5007ccb4-0332-4a20-aef7-bf8155ab9340</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;This unique trip will give you some real insights into life in the Arabian Peninsula, while also allowing you plenty of time to soak up the sun. You&amp;rsquo;ll start your trip in ancient Oman, where life still goes on much the way it did centuries ago. You&amp;rsquo;ll be able to visit Muscat&amp;rsquo;s fascinating souk to haggle for some handmade silver and pots. Then you can take a stroll along the lively harbour and visit some of the city&amp;rsquo;s winding lanes. Round out the day relaxing on a beach chair at the Grand Hyatt, overlooking the Beach of Oman.&lt;/p&gt;
+
+&lt;p&gt;In Dubai, we&amp;rsquo;ll visit some of the city&amp;rsquo;s wonders, like Burj al Khalifa, the tallest building in the world, and Dubai Mall, the biggest shopping mall in the world, with its magnificent aquarium. But after all the sightseeing, there&amp;rsquo;s nothing better than relaxing at the beach at the luxury Atlantis Hotel, located on the Palm Jumeirah, a man-made palm shaped island. Magnolia Travels will make sure this is a holiday you never forget!&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>An unforgettable experience in the Arabian Gulf</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>79da73f7-900b-4c91-b58b-3b1355485519</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:7eeb9a4f-72ef-43f4-a392-5c1916b31e3a</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Muscat, Oman</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:37:18.504+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:00:48.854+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Dubai and Oman</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Jordan-s-Pearls">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>3351f7b2-e67b-4dbd-a6c6-7394eaf86d36</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;This trip will give you a deep insight into the Middle East, allowing you to not only experience its rich and ancient heritage, but also to get a glimpse into daily life. The trip starts by flying into Amman, capital of Jordan. Shortly outside the city, we&amp;rsquo;ll take you to visit the breath-taking UNESCO world heritage site of Petra, an ancient city carved into the red rock by Nabateans. It is one of the world&amp;rsquo;s most important archaeological sites.&lt;/p&gt;
+
+&lt;p&gt;From there, we&amp;rsquo;ll go by road to Jerash, often called the &amp;lsquo;Pompeii of the East&amp;rsquo;. The ancient Roman ruins at Jerash are famous for their remarkable state of preservation.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Seeking the crossroads of civilisations
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>79da73f7-900b-4c91-b58b-3b1355485519</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:2b51aaf3-dc5a-4012-89e5-d3b3dd6c08cb</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Amman, Jordan</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:40:02.004+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T11:10:00.040+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Jordan’s Pearls</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="The-Maya-and-Aztec-Empires">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>27f38aeb-f70e-416b-a8f0-5023433315c6</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;This fabulous 14 day trip will take you through two of the world&amp;rsquo;s most fascinating empires in Mexico and Central America. The trip starts with a visit to UNESCO heritage site Chich&amp;eacute;n Itz&amp;aacute;, recently declared one of the seven new wonders of the world. The ancient Mayan capital is one of the most visited ruins in Mexico, yet still retains a spectacular charm. Your trip will also include visits to Palenque, Teotihuacan and the ruins of Uxmal. You&amp;rsquo;ll be accompanied by expert local guides who will give you unique insights into these amazing civilisations.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>A unique glimpse into ancient civilisations</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>bed2e297-199c-4dc8-90cd-54ad3cb4221b</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:cf9a4aa6-2129-4c14-b69c-48f28f976bef</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Mexico City, Mexico</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:44:40.653+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:01:07.153+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>The Maya and Aztec Empires</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="The-Czech-Republic">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>7545550d-a720-4c25-9d02-ea9228a7aa93</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Despite the fact that the capital city has been caught in the middle of most of Europe&amp;rsquo;s conflicts, it still has the stunning architecture that attracts millions of visitors every year. Prague is the undisputed queen of the region, with its romanesque churches, gothic cathedrals and baroque palaces. The city&amp;rsquo;s beauty is accentuated by the picturesque Vltava river, criss-crossed by thirty bridges, and sees a daily traffic of dozens of steamers, rowboats and pedal boats.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll cover some more recent history too, you will experience the uplifting story of the nonviolent Velvet Revolution (Czech: sametov&amp;aacute; revoluce) of 1989 at the actual sites where the historical events transpired.&lt;/p&gt;
+
+&lt;p&gt;But Prague isn&amp;rsquo;t the only jewel in the Czech Republic.There are a number of stunning&lt;/p&gt;
+
+&lt;p&gt;medieval towns in southern Bohemia while travelers looking for a more authentic experience will relish our visit to Moravia in the east, just as beautiful but not yet as well known. We&amp;rsquo;ll conclude our tour with a visit to the world heritage site Gardens and Castle in the city of Kroměř&amp;iacute;ž. While there, software developers and CMS aficionados won&amp;rsquo;t want to miss the opportunity to visit the Czech subsidiary of Magnolia International.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>A country deep in history and culture</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:c51f88cd-0f4f-4fab-8dd2-84d243450d2c</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Prague, Czech Republic</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:47:29.241+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:48:32.006+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>The Czech Republic</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Fabulous-Costa-Rica">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>98a05433-83fa-4217-955e-7db447648296</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Costa Rica is a dream destination for nature lovers, &amp;nbsp;who will be able to see everything from rare birds to nesting turtles. Natural parks and private reserves cover a quarter of this beautiful country which offers the most highly concentrated biodiversity on the planet. The tour includes a trip to Tortuguero National Park, where you&amp;rsquo;ll get the chance to watch turtles lay their eggs and then watch the baby turtles make their way to the sea. You&amp;rsquo;ll also have the chance to visit Manuel Antonio National Park, a small but breathtaking park where you can observe sloths, monkeys and exotic birds. And don&amp;rsquo;t forget the tropical beaches!&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Heaven for nature lovers</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:f62138ad-3498-4256-a552-6d5dfb958cc6</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>San José, Costa Rica</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:49:40.706+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T10:03:25.406+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Fabulous Costa Rica</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Beautiful-Botswana">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>dd10e502-ae41-46ee-863a-d7c66bb04bc4</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;The Okavango Delta is absolutely one of the most beautiful places in the world. &amp;nbsp;A sprawling wetland half the size of Switzerland, it covers vast amounts of inland southern Africa, and is a host to all of Africa&amp;rsquo;s famed beasts. &amp;nbsp;Despite the prevalence of many dangerous animals, including lions, hippos, elephants, leopards, rhinos and crocodiles, you can still take a tour through it in dug-out canoes called &amp;ldquo;mekoro&amp;rdquo; and camp out in the wilderness. You&amp;rsquo;ll even have the chance to go for a swim in one or two places.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>A tropical delta safari</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>79da73f7-900b-4c91-b58b-3b1355485519</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:fa01a364-0738-4e95-9a99-5f36a5f658c5</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Johannesburg, South Africa</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:53:08.301+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:01:41.342+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Beautiful Botswana</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="North-Sea-Islands">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>a2a00b27-7e39-4230-8c79-3ffc5a678a15</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Off Germany&amp;rsquo;s coast in the North Sea lie the remote, romantic Halligen islands. Here, you&amp;rsquo;ll experience a unique environment and way of life shaped by the tides. Houses here are built on meter high man-made hills called Warften to keep them above the sea-floods - known here as Land Unter. The islands are traced with tiny canals to drain the water after storms. But the locals, some 400 people, have also installed dams to let the silt settle out of the water. They must rely on this to slowly build up the height of the islands. It&amp;rsquo;s like a slow-motion race against erosion and rising oceans. Speaking of slow - you&amp;rsquo;ll have plenty of opportunity to enjoy the island pastimes like the local card game (also called Land Unter), flying kites, or just wandering the wind-buffeted pastures, lightly populated with happy sheep and contented cows.&lt;/p&gt;
+
+&lt;p&gt;Our trip will include walks on the extensive salt coated mudflats of this &lt;a href="http://www.germany.travel/en/towns-cities-culture/unesco-world-heritage/the-wadden-sea.html" style="text-decoration:none;" target="_blank"&gt;&lt;u&gt;World Heritage&lt;/u&gt;&lt;/a&gt; nature reserve, where you&amp;rsquo;ll be able to observe some rare birdlife. We&amp;rsquo;ll discover many other fascinating critters, like ants that have adapted to build special nests that can withstand the periodic flooding. The broken remnants of houses and household goods to be found on the flats are a reminder of the elemental forces which shape the islands, and our tenuous relationship with them.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>At the mercy of the sea</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:7f3cbb8f-a909-47da-b678-543ce6f244b9</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Hamburg, Germany</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T17:55:35.694+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:01:50.005+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>North Sea Islands</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Arctic-Archipelagos">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>5d2eba62-1f3a-4a36-af72-fbe1fdcdd6c1</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Magnolia Travels offers a rare opportunity to make an expedition to Russia&amp;rsquo;s polar regions. Franz Josef Land, one of the coldest and most remote archipelagos in the world. The area is home to the walrus, polar bear, seal, arctic fox and beluga whale.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll sail through the archipelago with regular stops to enjoy the wildlife and savour the majesty of the Arctic. Your experienced guide will be able to tell you about some of the hardships faced by polar explorers throughout the years. The trip will also include some bracing hikes with plenty of time for photo stops. Don&amp;rsquo;t forget your fleece!&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Polar experience of a lifetime</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ee483660-15cd-490d-b709-884b3f130286</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:98d6c33f-ff8f-4869-9e1d-2775d2e63797</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Moscow, Russia</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T18:00:48.549+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:01:58.686+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Arctic Archipelagos</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="The-Big-African-adventure">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>f7e8d2ec-3591-47e8-b873-0b7faa8560fe</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;In this tour, your family will have the chance to visit two of the best game reserves in Africa. Our first stop will be Madikwe Game Reserve, which is well respected as one of the best conservation areas. You&amp;rsquo;ll have the chance to see the Big 5; lions, leopards, elephants, rhinos and buffalos. During your visit you may also have the rare privilege of seeing the highly endangered African Wild Dog. The park offers a number of luxurious lodges as well as community lodges in a malaria-free zone.&lt;/p&gt;
+
+&lt;p&gt;Next, your tour takes you to Ngorongoro Crater, Tanzania, which many say is the best game reserve in the world. The Ngorongoro Crater was once a gigantic volcano, and was probably higher than Mt Kilimanjaro, the highest peak in Africa, before it erupted.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Two game reserves in one week</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>79da73f7-900b-4c91-b58b-3b1355485519</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:8d1e164c-22a2-483e-9b49-f8088599c036</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Johannesburg, South Africa</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T21:59:33.679+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:02:09.032+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>The Big African adventure</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Lapland-for-Families">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>705051cb-c0c3-43b2-b5fa-c571b5d5d2d4</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Enjoy a family winter adventure in Lapland, Sweden where sledding, husky sledding and ice skating are all on the menu. We lend you toboggans for sledding, and there are gentle hills right outside your cabin. For something more adventurous, join our &amp;lsquo;crazy slope&amp;rsquo; days out. Children will love the chance to drive their own sled, and snowballs and snowmen are possible any time of the day. You&amp;rsquo;ll also get the chance to experience the spectacular Northern Lights.&lt;/p&gt;
+
+&lt;p&gt;At Christmas time, children can also join visits to Santa and his famous grotto, going on a unique snowmobile journey to see where Santa manages all his toy operations.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Your own Arctic Circle adventure</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ee483660-15cd-490d-b709-884b3f130286</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:71b9a58b-3c78-41bd-9fe4-17ce0f3b5dd4</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Kittilä, Finland</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T22:02:48.285+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T10:04:17.979+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Lapland for Families</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="France-for-Families">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>3f4e050b-17bc-4ae2-ae50-a114d536168f</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;France is the most popular tourist destination in the world, and it&amp;rsquo;s no surprise. Paris never fails to delight visitors with its magical atmosphere, romantic cruises and breathtaking architecture. Magnolia Travels brings you the magic of France, but takes you away from the usual touristic places to experience real French life too. You&amp;rsquo;ll start your tour with a trip up the Eiffel Tower - you simply have to do it! But then we take you to stay in Provins, a beautiful medieval town only one hour from Paris. We&amp;rsquo;ll take you to some authentic French caf&amp;eacute;s and restaurants, away from the hustle and bustle. There&amp;rsquo;s also an optional day trip to Disneyland Paris for little (and big) kids who can&amp;rsquo;t resist.&lt;/p&gt;
+
+&lt;p&gt;France for families offers many wonderful add on options, including: a week cruising on the Dordogne, horseriding in Normandy, castles and beaches of La Vend&amp;eacute;e.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Discover why its world’s most visited country</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:090eb9c4-b35b-4869-a12f-6ea80292cba4</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Paris, France</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T22:06:34.488+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:02:26.346+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>France for Families</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Wood-Water-Stone">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>4d48dd38-208c-4db3-a033-981735d968fa</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;We&amp;rsquo;ll take you to an expansive world of the raw elements - far from the bustle of the modern world and cares of your daily life. Be prepared, the perspective you gain from this trip may change the way you see the world forever.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll spend five days hiking the Juan de Fuca Marine Trail situated directly on the islands pacific coast. This trail alternates between pebble beaches strewn with driftwood and excursions into the epic old-growth coastal rainforest. Very big, very old trees are the anchor for a forest ecosystem of giant ferns and moss. It&amp;#39;s a sea of green - and everything is alive. Previous participants have reported the sensation of actually walking inside another living being - and research has shown that these rainforests do indeed regulate their own environment - including temperature. You wouldn&amp;#39;t be the first to be reminded of the the works of Tolkien or other &lt;a href="https://www.google.de/search?tbm=isch&amp;amp;q=dagobah" target="_blank"&gt;fantasy worlds&lt;/a&gt;. We&amp;rsquo;ll carry our accommodation strapped to our backs and camp nightly on the beaches with a breathtaking view of the ocean and the rugged Olympic mountains across the straights.&lt;/p&gt;
+
+&lt;p&gt;On day 6 Billy will make his usual dramatic splashdown in his de Havilland DHC-6 Twin Otter seaplane. &amp;nbsp;You&amp;rsquo;ll have an overview of the archipelago on the flight over to Ha&amp;#39;thayim on Cortes island where our kayaks will be waiting. We&amp;rsquo;ll embark for 6 days of sea paddling and camping, threading through the wild islands to the town of Campbell River. We can expect to have some curious seals as paddling companions - and on a few trips we&amp;rsquo;ve been blessed with visits by the local Orca whale pods.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll cushion your culture shock upon returning to civilization with a last weekend together in Victoria, capital of British Columbia. High tea and crumpets anyone?&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Immerse yourself in the rugged wilderness of the Pacific Northwest temperate rainforest and island archipelagos</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ed3dcd18-78af-46df-a9e1-bc732479f2e7</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:b0a55c58-e258-4783-bc81-2613cdfd65be</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Vancouver, Canada</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T22:13:46.223+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-02T22:14:02.002+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Wood Water Stone</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Go-Fly-a-Kite">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>4ecacb84-6712-427b-95f6-306d5f5d18b7</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Mastichari Bay is &lt;strong&gt;kite-surf&lt;/strong&gt; heaven. &lt;em&gt;Week&lt;/em&gt; long classes are available for all skill levels. No wind? No worries. We&amp;rsquo;ll head out for scenic boat tours with snorkeling and cliff jumping for the adventurous. At the end of the day, kick back at the well appointed Mastichari Bay Hotel. The hotel offers a variety of kids programs, so this holiday is suitable for the whole family.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Feel like a kid again - with a kite that is all grown up</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:37157de7-4634-4772-90fd-9fc1566f234b</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Kos, Greece</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T22:20:57.646+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T10:35:38.598+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Go Fly a Kite</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="A-Unique-Basel-Holiday">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>07619f94-d5ee-4b39-b176-db87c899b906</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Magnolia Travels is proud to offer this exclusive vacation offer. Through our network of contacts in the travel industry we can now offer this behind the scenes view of what makes a Basel company tick. You&amp;rsquo;ll get to experience first-hand how the locals live and work.&lt;/p&gt;
+
+&lt;p&gt;How is this all possible? You&amp;rsquo;ll be embedded in the development department at Magnolia International! You&amp;rsquo;ll have tickets to review, commits to squash, maintenance reports to analyze, and of course new features to design and implement. As part of this special tour you&amp;rsquo;ll even get your very own Jira account.&lt;/p&gt;
+
+&lt;p&gt;But this tour includes more than just coding, you&amp;rsquo;ll have a chance to try your hand at documentation and optionally attend the weekly Architecture or UX meeting. The tour is timed to coincide with the Swiss national day - so get ready for some spectacular fireworks. In the afternoons, grab one of the special swim sacks (which both float you &amp;amp; and keep your clothes dry) and go for the classic Basel pastime: a refreshing 2 kilometer &lt;a href="http://www.slrg.ch/de/nw/sektionen/basel/rheinschwimmen/fotos/fotos.html" style="text-decoration:none;" target="_blank"&gt;&lt;u&gt;swim in the Rhein&lt;/u&gt;&lt;/a&gt;. Note: Rheinschwimmen is not advisable at the same time as the national fireworks celebration.&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Live like a local</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>6cc50e28-fb0e-4e49-b3b6-728690a2e861</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>7</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:94696095-3327-4816-8618-e55dfbb6c193</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Basel, Switzerland</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-02T23:23:26.196+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:02:51.382+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>A Unique Basel Holiday</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="Scuba-Diving-in-Bahamas--famed-Tiger-Beach">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:content</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>82cc787a-0bf1-4561-859f-adea4c12ab2f</sv:value>
+    </sv:property>
+    <sv:property sv:name="author" sv:type="String">
+      <sv:value>Magnolia Travels</sv:value>
+    </sv:property>
+    <sv:property sv:name="body" sv:type="String">
+      <sv:value>&lt;p&gt;Our most popular active tour is to the world-famous Tiger Beach in the waters off the Bahamas. This spectacular location is unlike any other in the world. Magnolia Travels guarantees you will have one of the most unique underwater experiences ever. &amp;nbsp;Amidst the crystal blue Bahamian water and powder white sand, you will experience Nurse, Reef, Lemon and Tiger sharks up close and personal. &amp;nbsp;Bring your camera, there is no shortage of great photo or video opportunities on this trip. &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;On this expedition you will have the opportunity to dive face-to-face with our lovely and famous Tiger shark &amp;ldquo;supermodels&amp;rdquo;: &amp;nbsp;Emma, Baby Cakes, Tanya, Begonia &amp;amp; Mini-T. &amp;nbsp;Our &amp;ldquo;supermodels&amp;rdquo; will help you produce some of the world&amp;rsquo;s best shark photography. They love to smile for the camera!&lt;/p&gt;
+
+&lt;p&gt;Of course, no trip to the Bahamas would be complete without diving the dazzling and colorful reefs. &amp;nbsp;Surrounded by an abundance of marine life, both large and small, you will be in awe of the beauty and wonder of this vibrant ecosystem. &amp;nbsp;Caribbean Reef sharks, large groupers, moray eels and numerous fish will compete for your attention as you hover above the multiple species of coral, undulating sea fans, and colorful array of sponges. &amp;nbsp;Start making your memories with us today!&lt;/p&gt;
+</sv:value>
+    </sv:property>
+    <sv:property sv:name="description" sv:type="String">
+      <sv:value>Get photobombed by a Sea Turtle</sv:value>
+    </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>ed3dcd18-78af-46df-a9e1-bc732479f2e7</sv:value>
+    </sv:property>
+    <sv:property sv:name="duration" sv:type="String">
+      <sv:value>14</sv:value>
+    </sv:property>
+    <sv:property sv:name="img" sv:type="String">
+      <sv:value>jcr:795449d2-6c16-402e-9e8a-bbb101fe22bb</sv:value>
+    </sv:property>
+    <sv:property sv:name="isFeatured" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="location" sv:type="String">
+      <sv:value>Miami, USA</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:created" sv:type="Date">
+      <sv:value>2015-06-03T09:14:01.975+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2015-06-03T09:45:44.281+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="name" sv:type="String">
+      <sv:value>Scuba Diving in Bahamas’ famed Tiger Beach</sv:value>
+    </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>
+      <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

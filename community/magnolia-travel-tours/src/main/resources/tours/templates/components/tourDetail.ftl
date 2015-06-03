@@ -1,4 +1,5 @@
 [#include "/tours/templates/macros/image.ftl" /]
+[#include "/tours/templates/macros/sampleTourText.ftl" /]
 
 [#assign tour = model.tour]
 [#assign asset = damfn.getAsset(tour.img)!]
@@ -74,17 +75,30 @@
         [/#if]
     </div>
 
-    [#if tour.body?has_content]
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>${i18n['tour.details']}</h2>
-            </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>${i18n['tour.details']}</h2>
         </div>
+    </div>
 
+    [#if tour.body?has_content]
         <div class="row">
             <div class="col-md-8 ">
                 <span class="body">${tour.body!}</span>
             </div>
         </div>
     [/#if]
+
+    <!-- Additional sample text for the purposes of demonstrating what a full page could look like -->
+    <div class="row">
+        <div class="col-md-8 ">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 ">
+            <span class="body">[@sampleTourText /]</span>
+        </div>
+    </div>
+
 </div>

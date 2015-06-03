@@ -6,6 +6,12 @@
   <sv:property sv:name="jcr:uuid" sv:type="String">
     <sv:value>78399215-aed5-4518-9cfc-9b39855f4740</sv:value>
   </sv:property>
+  <sv:property sv:name="caption" sv:type="String">
+    <sv:value>Shawn Leishman</sv:value>
+  </sv:property>
+  <sv:property sv:name="copyright" sv:type="String">
+    <sv:value>by-sa/2.0</sv:value>
+  </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
   </sv:property>
@@ -16,16 +22,13 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-03-12T16:37:22.456+01:00</sv:value>
+    <sv:value>2015-06-02T16:06:55.877+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="name" sv:type="String">
     <sv:value>flickr-food-jogoya-shawnleishman-2735244208_2c01ae7502_b</sv:value>
-  </sv:property>
-  <sv:property sv:name="caption" sv:type="String">
-    <sv:value>Shawn Leishman</sv:value>
   </sv:property>
   <sv:node sv:name="jcr:content">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -62,7 +65,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-03-12T16:37:22.456+01:00</sv:value>
+      <sv:value>2015-06-02T16:06:55.877+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
