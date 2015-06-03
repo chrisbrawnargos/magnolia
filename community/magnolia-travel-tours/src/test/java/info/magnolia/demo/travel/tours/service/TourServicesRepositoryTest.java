@@ -133,7 +133,7 @@ public class TourServicesRepositoryTest extends RepositoryTestCase {
         tourSession.save(); // Need to save, running a query afterwards
 
         // WHEN
-        final List<ContentMap> categories = tourServices.getRelatedToursByCategory(Tour.PROPERTY_NAME_TOUR_TYPES_CATEGORY, referenceNode.getIdentifier(), true);
+        final List<ContentMap> categories = tourServices.getToursByCategory(Tour.PROPERTY_NAME_TOUR_TYPES_CATEGORY, referenceNode.getIdentifier(), true);
 
         // THEN
         assertThat(categories, hasSize(1));

@@ -70,7 +70,7 @@ public class TourListModel<RD extends TourCategoryTemplateDefinition> extends Re
     }
 
     public List<ContentMap> getToursByCategory(String identifier) {
-        return tourServices.getRelatedToursByCategory(definition.getCategory(), identifier);
+        return tourServices.getToursByCategory(definition.getCategory(), identifier);
     }
 
 }

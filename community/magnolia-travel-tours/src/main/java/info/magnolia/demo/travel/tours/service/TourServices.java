@@ -270,11 +270,11 @@ public class TourServices {
         return categories;
     }
 
-    public List<ContentMap> getRelatedToursByCategory(String categoryPropertyName, String identifier) {
-        return getRelatedToursByCategory(categoryPropertyName, identifier, false);
+    public List<ContentMap> getToursByCategory(String categoryPropertyName, String identifier) {
+        return getToursByCategory(categoryPropertyName, identifier, false);
     }
 
-    public List<ContentMap> getRelatedToursByCategory(String categoryPropertyName, String identifier, boolean featured) {
+    public List<ContentMap> getToursByCategory(String categoryPropertyName, String identifier, boolean featured) {
         final List<ContentMap> tours = new LinkedList<ContentMap>();
 
         try {

@@ -44,6 +44,14 @@ import java.util.List;
 
 import javax.inject.Inject;
 import javax.jcr.Node;
+import javax.jcr.RepositoryException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.common.base.Predicate;
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
 
 /**
  * Model for getting related Tours based on type- and destination-category.
@@ -51,6 +59,8 @@ import javax.jcr.Node;
  * @param <RD> The {@link TourCategoryTemplateDefinition} of the model.
  */
 public class RelatedToursModel<RD extends TourCategoryTemplateDefinition> extends RenderingModelImpl<RD> {
+
+    private static final Logger log = LoggerFactory.getLogger(RelatedToursModel.class);
 
     private final TourServices tourServices;
 
@@ -68,8 +78,33 @@ public class RelatedToursModel<RD extends TourCategoryTemplateDefinition> extend
         return tourServices.getRelatedCategoriesByParameter();
     }
 
+    /**
+     * Filters the current tour from the category.
+     */
     public List<ContentMap> getRelatedToursByCategory(String identifier) {
-        return tourServices.getRelatedToursByCategory(definition.getCategory(), identifier, true);
-    }
+        List<ContentMap> relatedTours = Lists.newArrayList();
+        try {
+            final String currentIdentifier = tourServices.getTourNodeByParameter().getIdentifier();
+            List<ContentMap> tours = tourServices.getToursByCategory(definition.getCategory(), identifier, true);
 
+            relatedTours = Lists.newArrayList(Iterables.filter(tours, new Predicate<ContentMap>() {
+                @Override
+                public boolean apply(ContentMap tourMap) {
+                    boolean apply = true;
+                    try {
+                        String tourIdentifier = tourMap.getJCRNode().getIdentifier();
+                        apply = !currentIdentifier.equals(tourIdentifier);
+                    } catch (RepositoryException e) {
+                        log.error("Could not retrieve identifier from tour content map.", e);
+                    }
+                    return apply;
+                }
+
+            }));
+        } catch (RepositoryException e) {
+            log.error("Could not retrieve identifier for the current tour.", e);
+        }
+
+        return relatedTours;
+    }
 }
