@@ -5,7 +5,5 @@ class: info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefi
 
 renderType: freemarker
 category: tourTypes
-parameters:
-  tourType: active
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourList
