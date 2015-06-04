@@ -1,3 +1,4 @@
+[#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
 [#include "/tours/templates/macros/sampleTourText.ftl" /]
 
@@ -22,8 +23,7 @@
 [/#if]
 
 
-
-
+[#-------------- RENDERING --------------]
 <!-- TourDetail -->
 <div class="container">
 

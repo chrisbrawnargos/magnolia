@@ -1,7 +1,10 @@
+[#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
 
 [#assign tours = model.tours]
 
+
+[#-------------- RENDERING --------------]
 <!-- Tour Carousel -->
 <div id="myCarousel" class="carousel slide">
     <!-- Indicators -->

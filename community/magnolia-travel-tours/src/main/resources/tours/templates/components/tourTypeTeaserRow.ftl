@@ -1,7 +1,10 @@
+[#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
 
 [#assign tours = model.tours]
 
+
+[#-------------- RENDERING --------------]
 <!-- TourType Teaser Row -->
 <div class="container">
     <div class="row">

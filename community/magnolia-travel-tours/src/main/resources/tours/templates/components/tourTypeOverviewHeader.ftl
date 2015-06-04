@@ -1,9 +1,12 @@
+[#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
 
 [#assign category = tourfn.categoryByUrl]
 [#assign rendition = damfn.getRendition(category.image, "xlarge-16x9") ]
 [#assign assetCredit = category.image.caption!]
 
+
+[#-------------- RENDERING --------------]
 <!-- TourType Overview Header -->
 <div class="container tour-type-overview">
 
