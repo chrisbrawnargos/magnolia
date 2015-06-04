@@ -10,7 +10,7 @@
     <sv:value>admin</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-06-03T10:50:32.267+02:00</sv:value>
+    <sv:value>2015-06-04T15:18:25.603+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -1153,7 +1153,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-03T10:58:08.957+02:00</sv:value>
+      <sv:value>2015-06-04T15:22:03.501+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -1259,7 +1259,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-04-29T15:52:33.826+02:00</sv:value>
+        <sv:value>2015-06-04T15:22:03.501+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -1281,7 +1281,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-04-29T15:52:33.826+02:00</sv:value>
+          <sv:value>2015-06-04T15:22:03.501+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -1291,7 +1291,7 @@
         </sv:property>
         <sv:property sv:name="tours" sv:type="String" sv:multiple="true">
           <sv:value>a358f3ad-5a03-4f5d-b0ab-cb2219100472</sv:value>
-          <sv:value>ab81a130-acfd-49c4-9aa7-777f43f98d36</sv:value>
+          <sv:value>b475f27e-2929-427b-9517-815118a3b36e</sv:value>
           <sv:value>45560b07-4600-4aaa-8fc4-30d9ceff5b09</sv:value>
         </sv:property>
       </sv:node>
@@ -2259,7 +2259,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-03T10:58:21.905+02:00</sv:value>
+      <sv:value>2015-06-04T15:23:00.717+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -2365,7 +2365,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-04-29T15:55:21.703+02:00</sv:value>
+        <sv:value>2015-06-04T15:23:00.717+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -2387,7 +2387,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-04-29T15:55:21.703+02:00</sv:value>
+          <sv:value>2015-06-04T15:23:00.717+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -2398,7 +2398,7 @@
         <sv:property sv:name="tours" sv:type="String" sv:multiple="true">
           <sv:value>5556af16-66f5-445a-9150-bae8d2adcf3a</sv:value>
           <sv:value>d30b9ca6-e22d-45c5-9456-7538ab7bccf8</sv:value>
-          <sv:value>4412e7ed-b798-46c8-b7f5-3266dbd25def</sv:value>
+          <sv:value>07619f94-d5ee-4b39-b176-db87c899b906</sv:value>
         </sv:property>
       </sv:node>
       <sv:node sv:name="00">
