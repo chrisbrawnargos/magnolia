@@ -13,7 +13,7 @@
 
 [#-------------- RENDERING --------------]
 <!-- Tour List -->
-<div class="container">
+<div class="container tour-list">
 
     <h2>${title}</h2>
 

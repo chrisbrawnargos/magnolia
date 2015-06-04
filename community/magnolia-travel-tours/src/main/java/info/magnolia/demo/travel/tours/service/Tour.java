@@ -35,6 +35,8 @@ package info.magnolia.demo.travel.tours.service;
 
 import info.magnolia.dam.api.Asset;
 
+import java.util.List;
+
 /**
  * Simple POJO for wrapping a tour node.
  */
@@ -42,15 +44,28 @@ public class Tour {
 
     public static final String PROPERTY_NAME_DISPLAY_NAME = "name";
     public static final String PROPERTY_NAME_DESCRIPTION = "description";
+    public static final String PROPERTY_NAME_BODY = "body";
     public static final String PROPERTY_NAME_IMAGE = "img";
+    public static final String PROPERTY_NAME_LOCATION = "location";
+    public static final String PROPERTY_NAME_DURATION = "duration";
+    public static final String PROPERTY_NAME_AUTHOR = "author";
 
     public static final String PROPERTY_NAME_TOUR_TYPES_CATEGORY = "tourTypes";
     public static final String PROPERTY_NAME_DESTINATION = "destination";
 
     private String name;
     private String description;
+    private String body;
     private String link;
+
+    private String location;
+    private String duration;
+    private String author;
+
     private Asset image;
+
+    private List<Category> tourTypes;
+    private List<Category> destinations;
 
     public String getName() {
         return name;
@@ -83,4 +98,53 @@ public class Tour {
     public void setImage(Asset image) {
         this.image = image;
     }
+
+    public List<Category> getTourTypes() {
+        return tourTypes;
+    }
+
+    public void setTourTypes(List<Category> tourTypes) {
+        this.tourTypes = tourTypes;
+    }
+
+    public List<Category> getDestinations() {
+        return destinations;
+    }
+
+    public void setDestinations(List<Category> destinations) {
+        this.destinations = destinations;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
 }

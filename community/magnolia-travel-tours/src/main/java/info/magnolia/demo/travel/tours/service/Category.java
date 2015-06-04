@@ -51,6 +51,7 @@ public class Category {
     private Asset image;
     private String description;
     private String body;
+    private String nodeName;
 
     public Category() {
     }
@@ -84,6 +85,10 @@ public class Category {
         return body;
     }
 
+    public String getNodeName() {
+        return nodeName;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -106,5 +111,9 @@ public class Category {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public void setNodeName(String nodeName) {
+        this.nodeName = nodeName;
     }
 }

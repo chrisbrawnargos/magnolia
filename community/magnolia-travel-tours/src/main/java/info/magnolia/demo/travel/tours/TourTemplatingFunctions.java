@@ -58,6 +58,46 @@ public class TourTemplatingFunctions {
         return tourServices.getCategoryByUrl();
     }
 
+    /**
+     * Returns the link to a tour type.
+     *
+     * <p>Will use given {@link ContentMap} to find feature page of type
+     * {@link ToursModule#TEMPLATE_SUB_TYPE_TOUR_OVERVIEW} to link to.</p>
+     */
+    public String getTourTypeLink(ContentMap contentMap, String tourTypeName) {
+        return getTourTypeLink(contentMap.getJCRNode(), tourTypeName);
+    }
+
+    /**
+     * Returns the link to a tour type.
+     *
+     * <p>Will use given {@link Node} to find feature page of type
+     * {@link ToursModule#TEMPLATE_SUB_TYPE_TOUR_OVERVIEW} to link to.</p>
+     */
+    public String getTourTypeLink(Node content, String tourTypeName) {
+        return tourServices.getCategoryLink(content, tourTypeName, ToursModule.TEMPLATE_SUB_TYPE_TOUR_OVERVIEW);
+    }
+
+    /**
+     * Returns the link to a tour type.
+     *
+     * <p>Will use given {@link ContentMap} to find feature page of type
+     * {@link ToursModule#TEMPLATE_SUB_TYPE_DESTINATION_OVERVIEW} to link to.</p>
+     */
+    public String getDestinationLink(ContentMap contentMap, String destinationName) {
+        return getDestinationLink(contentMap.getJCRNode(), destinationName);
+    }
+
+    /**
+     * Returns the link to a tour type.
+     *
+     * <p>Will use given {@link Node} to find feature page of type
+     * {@link ToursModule#TEMPLATE_SUB_TYPE_DESTINATION_OVERVIEW} to link to.</p>
+     */
+    public String getDestinationLink(Node content, String destinationName) {
+        return tourServices.getCategoryLink(content, destinationName, ToursModule.TEMPLATE_SUB_TYPE_DESTINATION_OVERVIEW);
+    }
+
     public String getTourLink(ContentMap tourContentMap) {
         return getTourLink(tourContentMap.getJCRNode());
     }

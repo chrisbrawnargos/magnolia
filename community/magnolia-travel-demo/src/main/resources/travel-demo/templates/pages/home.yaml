@@ -5,7 +5,6 @@ renderType: site
 type: home
 areas:
   content:
-    templateScript: /mte/templates/areas/list.ftl
     type: list
     availableComponents:
       tourCarousel:

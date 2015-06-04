@@ -6,15 +6,12 @@ type: feature
 subtype: tourDetail
 areas:
   content:
-    templateScript: /travel-demo/templates/areas/contentContainer.ftl
     type: list
     availableComponents:
         tourDetail:
           id: tours:components/tourDetail
         tourDetailRelatedTours:
           id: tours:components/tourDetailRelatedTours
-    parameters:
-      cssClass: container
   footer:
     editable: false
 

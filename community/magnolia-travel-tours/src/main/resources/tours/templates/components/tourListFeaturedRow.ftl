@@ -9,5 +9,11 @@
     [#assign tours = model.getRelatedToursByCategory(category.identifier)]
     [@relatedTours category.name tours /]
 
-    <hr class="featurette-divider"/>
+    <div class="container category-overview">
+        [#if category.body?has_content]
+            <div class="category-body">
+                ${category.body}
+            </div>
+        [/#if]
+    </div>
 [/#if]

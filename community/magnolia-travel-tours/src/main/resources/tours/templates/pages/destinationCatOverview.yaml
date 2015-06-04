@@ -6,7 +6,6 @@ type: feature
 subtype: destinationCatOverview
 areas:
   content:
-    templateScript: /travel-demo/templates/areas/contentContainer.ftl
     type: list
     availableComponents:
       tourTypeOverviewHeader:
@@ -15,8 +14,6 @@ areas:
         id: tours:components/tourListFeaturedRowByDestination
       tourListByDestination:
         id: tours:components/tourListByDestination
-    parameters:
-      cssClass: container
   footer:
     editable: false
 

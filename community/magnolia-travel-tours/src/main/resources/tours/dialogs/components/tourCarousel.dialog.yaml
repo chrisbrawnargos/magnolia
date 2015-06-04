@@ -20,6 +20,13 @@ form:
             label: tours
             buttonSelectNewLabel: field.link.select.new
             buttonSelectOtherLabel: field.link.select.another
+        - name: showTourTypes
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          defaultValue: true
+          type: Boolean
+          label: dialogs.components.tourCarousel.tabMain.showTourTypes.label
+          description: dialogs.components.tourCarousel.tabMain.description
+          buttonLabel: dialogs.components.tourCarousel.tabMain.button.label
 
 actions:
   commit:

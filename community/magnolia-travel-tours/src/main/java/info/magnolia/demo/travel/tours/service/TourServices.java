@@ -130,6 +130,9 @@ public class TourServices {
 
                 category = new Category(name, categoryNode.getIdentifier());
 
+                // We always require a slug, here using the node name as the name might have a nicer display name
+                category.setNodeName(categoryNode.getName());
+
                 if (categoryNode.hasProperty(Category.PROPERTY_NAME_DESCRIPTION)) {
                     category.setDescription(categoryNode.getProperty(Category.PROPERTY_NAME_DESCRIPTION).getString());
                 }
@@ -183,6 +186,7 @@ public class TourServices {
 
         if (tourNode != null) {
             tour = new Tour();
+
             try {
                 tour.setName(tourNode.getName());
                 if (tourNode.hasProperty(Tour.PROPERTY_NAME_DISPLAY_NAME)) {
@@ -193,8 +197,34 @@ public class TourServices {
                     tour.setDescription(tourNode.getProperty(Tour.PROPERTY_NAME_DESCRIPTION).getString());
                 }
 
+                if (tourNode.hasProperty(Tour.PROPERTY_NAME_BODY)) {
+                    tour.setBody(tourNode.getProperty(Tour.PROPERTY_NAME_BODY).getString());
+                }
+
+                if (tourNode.hasProperty(Tour.PROPERTY_NAME_AUTHOR)) {
+                    tour.setAuthor(tourNode.getProperty(Tour.PROPERTY_NAME_AUTHOR).getString());
+                }
+
+                if (tourNode.hasProperty(Tour.PROPERTY_NAME_DURATION)) {
+                    tour.setDuration(tourNode.getProperty(Tour.PROPERTY_NAME_DURATION).getString());
+                }
+
+                if (tourNode.hasProperty(Tour.PROPERTY_NAME_LOCATION)) {
+                    tour.setLocation(tourNode.getProperty(Tour.PROPERTY_NAME_LOCATION).getString());
+                }
+
                 if (tourNode.hasProperty(Tour.PROPERTY_NAME_IMAGE)) {
                     tour.setImage(damFunctions.getAsset(tourNode.getProperty(Tour.PROPERTY_NAME_IMAGE).getString()));
+                }
+
+                if (tourNode.hasProperty(Tour.PROPERTY_NAME_TOUR_TYPES_CATEGORY)) {
+                    final List<Category> tourTypes = getCategories(tourNode, Tour.PROPERTY_NAME_TOUR_TYPES_CATEGORY);
+                    tour.setTourTypes(tourTypes);
+                }
+
+                if (tourNode.hasProperty(Tour.PROPERTY_NAME_DESTINATION)) {
+                    final List<Category> destinations = getCategories(tourNode, Tour.PROPERTY_NAME_DESTINATION);
+                    tour.setDestinations(destinations);
                 }
 
                 final String tourLink = getTourLink(tourNode);
@@ -207,6 +237,23 @@ public class TourServices {
         }
 
         return tour;
+    }
+
+    /**
+     * Get and marshall all categories of a {@link Node} stored under the given <code>categoryPropertyName</code>.
+     */
+    private List<Category> getCategories(Node node, String categoryPropertyName) {
+        final List<Category> categories = new ArrayList<>();
+
+        final List<Node> destinationNodes = categorizationTemplatingFunctions.getCategories(node, categoryPropertyName);
+        for (Node tourTypeNode : destinationNodes) {
+            final Category category = marshallCategoryNode(tourTypeNode);
+            if (category != null) {
+                categories.add(category);
+            }
+        }
+
+        return categories;
     }
 
     public Node getTourNodeByParameter() throws RepositoryException {
@@ -234,7 +281,6 @@ public class TourServices {
     }
 
     private Node getContentNodeByName(final String pathOrName, final String workspace) throws RepositoryException {
-
         if (pathOrName.startsWith("/")) {
             return MgnlContext.getJCRSession(workspace).getNode(StringUtils.substringBefore(pathOrName, "?"));
         } else {
@@ -275,7 +321,7 @@ public class TourServices {
     }
 
     public List<ContentMap> getToursByCategory(String categoryPropertyName, String identifier, boolean featured) {
-        final List<ContentMap> tours = new LinkedList<ContentMap>();
+        final List<ContentMap> tours = new LinkedList<>();
 
         try {
             final Session session = MgnlContext.getJCRSession(ToursModule.TOURS_REPOSITORY_NAME);

@@ -18,69 +18,57 @@
 [#assign site = sitefn.site()!]
 [#assign theme = sitefn.theme(site)!]
 
+
 [#-------------- RENDERING --------------]
-<div class="navbar-wrapper">
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="clear:both;">
 
-    <div id="masthead">
-        <span id="masthead-logo">
-            <a class="home" href="${homeLink}">
-                <img src="${ctx.contextPath}/.resources/${theme.name}/img/logo-white.png" alt="" />
-            </a>
-            <span class="tagline">${i18n['navigation.tagline']}</span>
-        </span>
-        <div class="phone-hours hidden-xs">
-            <div class="hours">${i18n['navigation.call.to.action']}
-                <a class="telephone" href="callto:${i18n['navigation.telephone']}">${i18n['navigation.telephone']}</a>
-            </div>
-        </div>
-    </div>
+    <div class="container">
 
-    <nav id="sticky-nav" class="navbar navbar-inverse navbar-static-top" role="navigation" style="clear:both;">
-        <div class="container">
-
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">${i18n['navigation.toggle']}</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
-              <a id="nav-logo" class="navbar-brand" href="${homeLink}"><img id="nav-logo-icon" src="${ctx.contextPath}/.resources/${theme.name}/img/logo-icon-white.png" alt="" /></a>
-              <a class="telephone-small visible-xs-inline" href="callto:${i18n['navigation.telephone']}">${i18n['navigation.telephone']}</a>
-              <a class="telephone-small visible-xs-inline" href="callto:${i18n['navigation.telephone']}">${i18n['navigation.telephone']}</a>
-            </div>
+            </button>
+            <a class="navbar-brand" href="${homeLink}">
+                <img src="${ctx.contextPath}/.resources/${theme.name}/img/logo-white.png" alt=""/>
+            </a>
+        </div>
 
-            <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="navbar-right">
+
                 <ul class="nav navbar-nav">
-
                 [@cms.area name="tours" /]
                 [@cms.area name="destinations" /]
 
                 [#list pages as page]
                     <li class="${page.cssClass!}"><a href="${page.link!}">${page.name!}</a></li>
                 [/#list]
-
                 </ul>
 
                 [#-- Only when the search result page was set should the form be displayed --]
                 [#if searchResultPage?exists]
                     [@searchForm action=searchResultPage! /]
                 [/#if]
+
             </div>
-
-            [#if childPages?has_content]
-                <div id="navbar-secondary" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        [#list childPages as childPage]
-                            <li class="${childPage.cssClass!}"><a href="${childPage.link}">${childPage.name}</a></li>
-                        [/#list]
-                    </ul>
-                </div>
-            [/#if]
         </div>
-    </nav>
 
-</div>
+        [#if childPages?has_content]
+            <div id="navbar-secondary" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    [#list childPages as childPage]
+                        <li class="${childPage.cssClass!}"><a href="${childPage.link}">${childPage.name}</a></li>
+                    [/#list]
+                </ul>
+            </div>
+        [/#if]
 
+    </div>
+
+</nav>
 
 <div class="${spaceClass}"></div>

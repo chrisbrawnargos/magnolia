@@ -18,23 +18,28 @@
                 [@cms.area name="footer1"/]
             [/#if]
             </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="footer-last-links">
+                        &copy; 2015 Magnolia Travels, Inc. | <a href="${ctx.contextPath}/travel/meta/privacy">Privacy</a> |
+                        <a href="${ctx.contextPath}/travel/meta/terms">Terms</a> | <a href="${ctx.contextPath}/travel/meta/impressum">Impressum</a>
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p style="text-align:center;margin-top:40px; margin-bottom:30px;">
-                    <a class="home" href="${homeLink}"><img src="${ctx.contextPath}/.resources/${theme.name}/img/logo-white.png" style="height:40px;" alt="" /></a>
-                </p>
-
-                <p style="text-align:center;margin-top:20px; margin-bottom:20px;">
-                    &copy; 2015 Magnolia Travel, Inc. | <a href="${ctx.contextPath}/travel/meta/privacy">Privacy</a> |
-                    <a href="${ctx.contextPath}/travel/meta/terms">Terms</a> | <a
-                        href="${ctx.contextPath}/travel/meta/impressum">Impressum</a>
+                <p class="footer-logo">
+                    <a class="home" href="${homeLink}">
+                        <img src="${ctx.contextPath}/.resources/${theme.name}/img/logo-white.png" alt=""/>
+                    </a>
                 </p>
             </div>
-
         </div>
     </div>
 

@@ -6,10 +6,10 @@
 
 [#-------------- RENDERING --------------]
 <!-- TourType Teaser Row -->
-<div class="container">
+<div class="container category-teaser-row after-lead-image">
     <div class="row">
 
-        <h1>${content.title!}</h1>
+        <h2>${content.title!}</h2>
         <p>${content.body!}</p>
 
         [#list tours as tour]
@@ -22,15 +22,14 @@
                     </span>
                 [/#if]
 
-                <h3><span>${tour.name!}</span></h3>
+                <h3>${tour.name!}</h3>
 
                 <div class="category-card-content">
                     <p>${tour.description!}</p>
-
-                    <p class="card-button">
-                        <a class="btn btn-primary" href="${tour.link!"#"}">${i18n.get('tour.view.named', [tour.name!""])}</a>
-                    </p>
                 </div>
+                <p class="card-button">
+                    <a class="btn btn-primary" href="${tour.link!"#"}">${i18n.get('tour.view.named', [tour.name!""])}</a>
+                </p>
             </div>
         [/#list]
     </div>

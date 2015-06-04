@@ -33,18 +33,11 @@
  */
 package info.magnolia.demo.travel.tours.model;
 
-import info.magnolia.demo.travel.tours.ToursModule;
-import info.magnolia.demo.travel.tours.service.Category;
 import info.magnolia.demo.travel.tours.service.Tour;
 import info.magnolia.demo.travel.tours.service.TourServices;
-import info.magnolia.jcr.util.ContentMap;
-import info.magnolia.module.categorization.functions.CategorizationTemplatingFunctions;
 import info.magnolia.rendering.model.RenderingModel;
 import info.magnolia.rendering.model.RenderingModelImpl;
 import info.magnolia.rendering.template.TemplateDefinition;
-import info.magnolia.templating.functions.TemplatingFunctions;
-
-import java.util.List;
 
 import javax.inject.Inject;
 import javax.jcr.Node;
@@ -60,42 +53,22 @@ public class TourDetailModel extends RenderingModelImpl<TemplateDefinition> {
 
     private static final Logger log = LoggerFactory.getLogger(TourDetailModel.class);
 
-    private final TemplatingFunctions templatingFunctions;
-    private final CategorizationTemplatingFunctions categorizationFunctions;
     private final TourServices tourServices;
 
     @Inject
-    public TourDetailModel(Node content, TemplateDefinition definition, RenderingModel<?> parent,
-                           TemplatingFunctions templatingFunctions, CategorizationTemplatingFunctions categorizationFunctions,
-                           TourServices tourServices) {
+    public TourDetailModel(Node content, TemplateDefinition definition, RenderingModel<?> parent, TourServices tourServices) {
         super(content, definition, parent);
-        this.templatingFunctions = templatingFunctions;
-        this.categorizationFunctions = categorizationFunctions;
         this.tourServices = tourServices;
     }
 
-    public ContentMap getTour() {
+    public Tour getTour() {
         try {
-            Node node = tourServices.getTourNodeByParameter();
-            return templatingFunctions.asContentMap(node);
+            final Node node = tourServices.getTourNodeByParameter();
+            return tourServices.marshallTourNode(node);
         } catch (RepositoryException e) {
             log.error("Could not get tour by tour parameter.", e);
         }
         return null;
-    }
-
-    public List<Category> getDestinations(Node node) {
-        return getCategoriesForNode(node, Tour.PROPERTY_NAME_DESTINATION, ToursModule.TEMPLATE_SUB_TYPE_DESTINATION_OVERVIEW);
-    }
-
-    public List<Category> getTourTypes(Node node) {
-        return getCategoriesForNode(node, Tour.PROPERTY_NAME_TOUR_TYPES_CATEGORY, ToursModule.TEMPLATE_SUB_TYPE_TOUR_OVERVIEW);
-    }
-
-    private List<Category> getCategoriesForNode(Node node, String categoryPropertyName, String featureSubTypeName) {
-        final List<Node> categoryNodes = categorizationFunctions.getCategories(node, categoryPropertyName);
-
-        return tourServices.marshallCategoryNodes(categoryNodes, content, featureSubTypeName);
     }
 
 }

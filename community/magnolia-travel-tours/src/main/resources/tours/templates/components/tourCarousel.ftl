@@ -1,10 +1,15 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/image.ftl" /]
+[#include "/tours/templates/macros/tourTypeIcon.ftl" /]
+
+[#assign site = sitefn.site()!]
+[#assign theme = sitefn.theme(site)!]
 
 [#assign tours = model.tours]
-
+[#assign showTourTypes = content.showTourTypes!true]
 
 [#-------------- RENDERING --------------]
+
 <!-- Tour Carousel -->
 <div id="myCarousel" class="carousel slide">
     <!-- Indicators -->
@@ -33,7 +38,15 @@
             <div class="container">
                 <div class="carousel-caption">
                     <a href="${tour.link!}"><h1>${tour.name!}</h1></a>
-                    <p><span class="description">${tour.description!}</span></p>
+                    [#if showTourTypes]
+                        <div class="category-icons">
+                            [#list tour.tourTypes as tourType]
+                                <div class="category-icon absolute-center-container">
+                                    <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.name theme.name ctx /]</a>
+                                </div>
+                            [/#list]
+                        </div>
+                    [/#if]
                     <a class="btn btn-lg btn-primary" href="${tour.link!}">${i18n['tour.view']}</a>
                 </div>
             </div>
@@ -42,11 +55,11 @@
     </div>
 
     <!-- Carousel Controls -->
-    <a class="left carousel-control" href="#myCarousel"  data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">${i18n['tour.previous']}</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel"  data-slide="next">
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">${i18n['tour.next']}</span>
     </a>
