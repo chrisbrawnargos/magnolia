@@ -270,46 +270,4 @@
       <sv:value>offPath</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="volunteer">
-    <sv:property sv:name="jcr:primaryType" sv:type="Name">
-      <sv:value>mgnl:category</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>aaa9241a-7c02-4663-9170-215b51e20ef8</sv:value>
-    </sv:property>
-    <sv:property sv:name="body" sv:type="String">
-      <sv:value>Whether it’s teaching English in South America or helping to build an orphanage in Thailand, you want to make a difference in someone’s life. If you’re ready to put that time in, we want to help you every step of the way. From finding a worthwhile experience to all the practical arrangements, we can make sure that the real work will only start once you start volunteering. 
-</sv:value>
-    </sv:property>
-    <sv:property sv:name="description" sv:type="String">
-      <sv:value>Making a difference</sv:value>
-    </sv:property>
-    <sv:property sv:name="displayName" sv:type="String">
-      <sv:value>Volunteer</sv:value>
-    </sv:property>
-    <sv:property sv:name="img" sv:type="String">
-      <sv:value>jcr:b2c9fd85-86fb-439f-a34b-df9c7b164917</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:createdBy" sv:type="String">
-      <sv:value>admin</sv:value>
-    </sv:property>
-    <sv:property sv:name="level" sv:type="String">
-      <sv:value>level-1</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:created" sv:type="Date">
-      <sv:value>2015-01-27T15:30:38.875+01:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:createdBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-25T08:37:29.692+01:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="name" sv:type="String">
-      <sv:value>volunteer</sv:value>
-    </sv:property>
-  </sv:node>
 </sv:node>
