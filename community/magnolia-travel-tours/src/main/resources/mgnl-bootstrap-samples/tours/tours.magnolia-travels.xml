@@ -575,6 +575,9 @@
     <sv:property sv:name="name" sv:type="String">
       <sv:value>Belize for Families</sv:value>
     </sv:property>
+    <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
+      <sv:value>17da160b-da66-4e09-9e31-5fd040880f4a</sv:value>
+    </sv:property>
   </sv:node>
   <sv:node sv:name="Temples-of-the-Orient">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
