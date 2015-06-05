@@ -5,13 +5,16 @@
 
 [#-------------- RENDERING --------------]
 <title>${content.windowTitle!content.title!}</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
 
-<link rel="icon" href="${ctx.contextPath}/.resources/travel-demo/favicon.ico">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]-->
+
+<link rel="icon" href="${ctx.contextPath}/.resources/travel-demo/favicon.ico" />
 
 [#list theme.cssFiles as cssFile]
     [#if cssFile.conditionalComment?has_content]<!--[if ${cssFile.conditionalComment}]>[/#if]

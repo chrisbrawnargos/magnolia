@@ -97,7 +97,7 @@
     </div>
     <div class="row">
         <div class="col-md-8 ">
-            <span class="body">[@sampleTourText /]</span>
+            <div class="body">[@sampleTourText /]</div>
         </div>
     </div>
 
