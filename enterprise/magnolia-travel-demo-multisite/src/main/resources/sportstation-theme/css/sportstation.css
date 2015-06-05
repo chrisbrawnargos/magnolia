@@ -2,25 +2,25 @@
 -------------------------------------------------- */
 
 /* Tune the positioning */
-.navbar-header{
-    padding-top:0px;
-    margin-left:0px;
-    margin-right:0px;
-}
-.navbar-brand{
-    padding:5px;
-    height:90px;
+.navbar-header {
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.navbar-toggle{
-    margin-top:25px;
+.navbar-brand {
+    padding: 5px;
+    height: 90px;
+}
+
+.navbar-toggle {
+    margin-top: 25px;
 }
 
 .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
     margin-left: 0px;
     margin-right: 0px;
 }
-
 
 /* Apply SportStation Red */
 .btn-primary {
@@ -37,7 +37,7 @@
 
 #navbar,
 .navbar,
-footer{
+footer {
     background-color: #990609;
 }
 
@@ -45,10 +45,9 @@ footer{
     background-color: #888;
 }
 
-.nav li{
+.nav li {
     background-color: #990609;
 }
-
 
 /* Other */
 
@@ -57,8 +56,8 @@ footer{
     color: #666;
 }
 
-.footer-1{
-    display:none;
+.footer-1 {
+    display: none;
 }
 
 
