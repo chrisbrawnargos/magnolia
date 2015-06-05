@@ -84,7 +84,7 @@
     [#if tour.body?has_content]
         <div class="row">
             <div class="col-md-8 ">
-                <span class="body">${tour.body!}</span>
+                <div class="body">${tour.body!}</div>
             </div>
         </div>
     [/#if]
