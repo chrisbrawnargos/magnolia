@@ -73,6 +73,19 @@ h1 {
     color: yellow;
 }
 
+/* MODAL DIALOG
+-------------------------------------------------- */
+
+.modal-header, 
+.modal-footer{
+    background-color: #eeeeee;
+}
+
+.modal-content{
+    border-radius: 0px;
+}
+
+
 /* CAROUSEL
 -------------------------------------------------- */
 

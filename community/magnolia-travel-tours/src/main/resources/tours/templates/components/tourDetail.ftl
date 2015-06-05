@@ -32,7 +32,7 @@
             <h1>${tour.name}</h1>
         </div>
         <div class="col-sm-1 product-detail">
-            <a class="btn btn-primary btn-lg book-button" href="#">${i18n['tour.book']}</a>
+            <button type="button" class="btn btn-primary btn-lg book-button" data-toggle="modal" data-target=".book-tour-not-implemented">${i18n['tour.book']}</button>
         </div>
     </div>
 
@@ -101,4 +101,22 @@
         </div>
     </div>
 
+</div>
+
+<!-- Book Tour Dialog -->
+<div class="modal fade book-tour-not-implemented">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="${i18n['tour.book.notImplementedDialog.close']}"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">${i18n['tour.book.notImplementedDialog.title']}</h4>
+      </div>
+      <div class="modal-body">
+        <p>${i18n['tour.book.notImplementedDialog.body']}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">${i18n['tour.book.notImplementedDialog.close']}</button>
+      </div>
+    </div>
+  </div>
 </div>
