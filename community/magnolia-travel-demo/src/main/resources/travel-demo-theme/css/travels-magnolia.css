@@ -76,15 +76,14 @@ h1 {
 /* MODAL DIALOG
 -------------------------------------------------- */
 
-.modal-header, 
-.modal-footer{
+.modal-header,
+.modal-footer {
     background-color: #eeeeee;
 }
 
-.modal-content{
+.modal-content {
     border-radius: 0px;
 }
-
 
 /* CAROUSEL
 -------------------------------------------------- */
@@ -582,6 +581,6 @@ h1 .category {
 /* TEASERS
 -------------------------------------------------- */
 
-.teaser h2{
-    font-size:1.5em;
+.teaser h2 {
+    font-size: 1.5em;
 }
