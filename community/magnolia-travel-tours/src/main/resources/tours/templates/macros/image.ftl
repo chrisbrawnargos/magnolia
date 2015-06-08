@@ -1,3 +1,4 @@
+[#-- Macro that renders an image with an optional credit tag --]
 [#macro tourImage assetRendition assetCredit="" altTitle="" cssClass="img-responsive"]
     [#if assetRendition?has_content]
         <img class="${cssClass}" src="${assetRendition.link}" alt="Image: ${altTitle}" />
@@ -11,3 +12,12 @@
         [/#if]
     [/#if]
 [/#macro]
+
+[#-- Function that returns a style attribute with background-image and -size for given asset rendition --]
+[#function backgroundImage assetRendition]
+    [#if assetRendition?exists && assetRendition?has_content]
+        [#return ' style="background-image: url(${assetRendition.link}); background-size: cover;"' /]
+    [#else]
+        [#return "" /]
+    [/#if]
+[/#function]

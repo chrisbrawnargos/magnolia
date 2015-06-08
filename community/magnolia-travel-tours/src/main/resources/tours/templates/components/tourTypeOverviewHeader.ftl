@@ -8,11 +8,7 @@
 
 [#-------------- RENDERING --------------]
 <!-- TourType Overview Header -->
-<div class="category-header">
-    [#if rendition?has_content]
-        [@tourImage rendition assetCredit category.name "product-header-image" /]
-    [/#if]
-
+<div class="category-header"${backgroundImage(rendition)}>
     <div class="lead-caption">
         <h1 class="category">${category.name!}</h1>
 

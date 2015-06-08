@@ -30,11 +30,7 @@
 
 [#-------------- RENDERING --------------]
 <!-- TourDetail -->
-<div class="product-header">
-    [#if renditionDetail?exists]
-        [@tourImage renditionDetail "" tour.name "product-header-image" /]
-    [/#if]
-
+<div class="product-header"${backgroundImage(renditionDetail)}>
     <div class="lead-caption">
         <h1>${tour.name}</h1>
 

@@ -33,8 +33,7 @@
         [#assign assetCredit = tour.image.caption!]
         [#assign rendition = damfn.getRendition(tour.image, "xxlarge")!]
 
-        <div class="item ${activeClass}">
-            [@tourImage rendition assetCredit tour.name "" /]
+        <div class="item ${activeClass}"${backgroundImage(rendition)}>
             <div class="container">
                 <div class="carousel-caption">
                     <a href="${tour.link!}"><h1>${tour.name!}</h1></a>
