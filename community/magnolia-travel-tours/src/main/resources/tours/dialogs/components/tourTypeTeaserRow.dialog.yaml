@@ -20,7 +20,7 @@ form:
           field:
             class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
             targetWorkspace: category
-            targetTreeRootPath: /TourTypes
+            targetTreeRootPath: /tour-types
             appName: categories
             identifierToPathConverter:
               class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
