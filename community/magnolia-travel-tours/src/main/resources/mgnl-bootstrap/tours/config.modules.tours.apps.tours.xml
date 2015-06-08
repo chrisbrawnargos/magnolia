@@ -8191,13 +8191,13 @@
                       <sv:value>superuser</sv:value>
                     </sv:property>
                     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                      <sv:value>2015-02-18T16:20:18.068+01:00</sv:value>
+                      <sv:value>2015-06-08T12:54:05.317+02:00</sv:value>
                     </sv:property>
                     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                       <sv:value>superuser</sv:value>
                     </sv:property>
                     <sv:property sv:name="targetTreeRootPath" sv:type="String">
-                      <sv:value>/TourTypes</sv:value>
+                      <sv:value>/tour-types</sv:value>
                     </sv:property>
                   </sv:node>
                 </sv:node>
@@ -8258,13 +8258,13 @@
                       <sv:value>superuser</sv:value>
                     </sv:property>
                     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                      <sv:value>2015-02-18T16:20:18.068+01:00</sv:value>
+                      <sv:value>2015-06-08T12:54:18.627+02:00</sv:value>
                     </sv:property>
                     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                       <sv:value>superuser</sv:value>
                     </sv:property>
                     <sv:property sv:name="targetTreeRootPath" sv:type="String">
-                      <sv:value>/Destinations</sv:value>
+                      <sv:value>/destinations</sv:value>
                     </sv:property>
                   </sv:node>
                 </sv:node>
