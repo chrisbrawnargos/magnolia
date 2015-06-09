@@ -45,7 +45,7 @@ public class Tour {
     public static final String PROPERTY_NAME_DISPLAY_NAME = "name";
     public static final String PROPERTY_NAME_DESCRIPTION = "description";
     public static final String PROPERTY_NAME_BODY = "body";
-    public static final String PROPERTY_NAME_IMAGE = "img";
+    public static final String PROPERTY_NAME_IMAGE = "image";
     public static final String PROPERTY_NAME_LOCATION = "location";
     public static final String PROPERTY_NAME_DURATION = "duration";
     public static final String PROPERTY_NAME_AUTHOR = "author";

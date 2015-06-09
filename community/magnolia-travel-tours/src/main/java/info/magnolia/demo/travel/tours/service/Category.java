@@ -42,7 +42,7 @@ public class Category {
 
     public static final String PROPERTY_NAME_DISPLAY_NAME = "displayName";
     public static final String PROPERTY_NAME_DESCRIPTION = "description";
-    public static final String PROPERTY_NAME_IMAGE = "img";
+    public static final String PROPERTY_NAME_IMAGE = "image";
     public static final String PROPERTY_NAME_BODY = "body";
 
     private String name;

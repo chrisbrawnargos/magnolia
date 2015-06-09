@@ -37,7 +37,7 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Active</sv:value>
     </sv:property>
-    <sv:property sv:name="img" sv:type="String">
+    <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:b601ef57-a44a-432d-bc9a-bb228890b01d</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -78,7 +78,7 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Beach</sv:value>
     </sv:property>
-    <sv:property sv:name="img" sv:type="String">
+    <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:9471f8d5-389b-43f5-bbe6-8a4ee4a5944c</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -119,7 +119,7 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Cultural</sv:value>
     </sv:property>
-    <sv:property sv:name="img" sv:type="String">
+    <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:a792164f-5a2a-4708-b3c8-62b48a578200</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -160,7 +160,7 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Ecotourism, Nature &amp; Wildlife</sv:value>
     </sv:property>
-    <sv:property sv:name="img" sv:type="String">
+    <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:2fd89d97-f932-4533-8a30-d70988bde30c</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -202,7 +202,7 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Family</sv:value>
     </sv:property>
-    <sv:property sv:name="img" sv:type="String">
+    <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:acd47d04-5b98-4995-9c3b-cc3c81cd8288</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -245,7 +245,7 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Off the Beaten Path</sv:value>
     </sv:property>
-    <sv:property sv:name="img" sv:type="String">
+    <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:272f75b9-ed87-4e0b-8bf3-15db217ba897</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">

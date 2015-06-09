@@ -18,7 +18,7 @@
                 <div class="col-md-4 product-card">
                     <div class="product-card-wrapper">
                         <span class="card-teaser-image clearfix">
-                            [#assign assetRendition = damfn.getRendition(tour.img, "large-16x9") /]
+                            [#assign assetRendition = damfn.getRendition(tour.image, "large-16x9") /]
                             [@tourImage assetRendition "" name /]
                         </span>
                         <h3>${name!}</h3>
