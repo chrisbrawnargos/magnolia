@@ -79,7 +79,7 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
 
     public List<NavigationItem> getRootPages() {
         try {
-            final Node home = templatingFunctions.findParentWithTemplateType(content, DefaultTemplateTypes.HOME);
+            final Node home = templatingFunctions.parentWithTemplateType(content, DefaultTemplateTypes.HOME);
             return getChildPages(home);
         } catch (RepositoryException e) {
             log.error("Could not retrieve pages for navigation.", e);

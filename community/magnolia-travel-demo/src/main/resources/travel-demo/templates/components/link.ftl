@@ -42,8 +42,8 @@
 
 [#if model.isDownload()]
     [#assign asset = model.asset!]
-    [#assign extension = cmsfn.getFileExtension(asset.getFileName())]
-    [#assign linkText =  "${linkText} <em>(" + extension?upper_case + ", " + cmsfn.getDisplayFileSize(asset.fileSize) + ")</em>"]
+    [#assign extension = cmsfn.fileExtension(asset.getFileName())]
+    [#assign linkText =  "${linkText} <em>(" + extension?upper_case + ", " + cmsfn.readableFileSize(asset.fileSize) + ")</em>"]
 [/#if]
 
 [#-- Show resolve error in edit mode for internal/download links --]

@@ -16,7 +16,7 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4-m11</magnoliaVersion>
+    <magnoliaVersion>5.4-SNAPSHOT</magnoliaVersion>
     <magnoliaUiVersion>5.4-m11</magnoliaUiVersion>
     <siteVersion>1.0-m9</siteVersion>
     <resourcesVersion>2.4-m9</resourcesVersion>
