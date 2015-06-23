@@ -2,7 +2,7 @@ form:
   i18nBasename: info.magnolia.module.travel-demo.messages
   label: pages.homePageProperties.label
   tabs:
-    # "inherited" (copied) from "mte/dialogs/pages/pageProperties.dialog.yaml"
+    # "inherited" (copied) from "mte/dialogs/pages/pageProperties.yaml"
     - name: tabMain
       label: pages.pageProperties.tabMain.label
       i18nBasename: info.magnolia.templating.models.messages

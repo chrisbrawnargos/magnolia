@@ -1,5 +1,5 @@
 templateScript: /tours/templates/components/tourCarousel.ftl
-dialog: tours:components/tourCarousel.dialog
+dialog: tours:components/tourCarousel
 modelClass: info.magnolia.demo.travel.tours.model.CarouselModel
 
 renderType: freemarker

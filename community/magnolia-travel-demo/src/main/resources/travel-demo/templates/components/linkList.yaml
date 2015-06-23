@@ -1,5 +1,5 @@
 templateScript: /mte/templates/components/linkList.ftl
-dialog: mte:components/linkList.dialog
+dialog: mte:components/linkList
 
 renderType: freemarker
 areas:

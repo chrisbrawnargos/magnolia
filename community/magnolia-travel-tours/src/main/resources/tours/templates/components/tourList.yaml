@@ -1,5 +1,5 @@
 templateScript: /tours/templates/components/tourList.ftl
-dialog: tours:components/tourList.dialog
+dialog: tours:components/tourList
 modelClass: info.magnolia.demo.travel.tours.model.TourListModel
 class: info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition
 
