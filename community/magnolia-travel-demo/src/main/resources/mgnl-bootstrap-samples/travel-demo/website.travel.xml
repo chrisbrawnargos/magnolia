@@ -42,7 +42,7 @@
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Travel Home</sv:value>
   </sv:property>
-  <sv:node sv:name="content">
+  <sv:node sv:name="main">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:area</sv:value>
     </sv:property>
@@ -1146,7 +1146,7 @@
     <sv:property sv:name="title_de" sv:type="String">
       <sv:value>Über uns</sv:value>
     </sv:property>
-    <sv:node sv:name="content">
+    <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
       </sv:property>
@@ -1567,7 +1567,7 @@
       <sv:property sv:name="title_de" sv:type="String">
         <sv:value>Unser Unternehmen</sv:value>
       </sv:property>
-      <sv:node sv:name="content">
+      <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>
@@ -1921,7 +1921,7 @@
         <sv:property sv:name="title" sv:type="String">
           <sv:value>About This Demo</sv:value>
         </sv:property>
-        <sv:node sv:name="content">
+        <sv:node sv:name="main">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:area</sv:value>
           </sv:property>
@@ -2185,7 +2185,7 @@
       <sv:property sv:name="title_de" sv:type="String">
         <sv:value>Woran wir glauben</sv:value>
       </sv:property>
-      <sv:node sv:name="content">
+      <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>
@@ -2652,7 +2652,7 @@
       <sv:property sv:name="title_de" sv:type="String">
         <sv:value>Karriere</sv:value>
       </sv:property>
-      <sv:node sv:name="content">
+      <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>
@@ -3148,7 +3148,7 @@
         <sv:property sv:name="title_de" sv:type="String">
           <sv:value>Kundenerlebnisvermittler</sv:value>
         </sv:property>
-        <sv:node sv:name="content">
+        <sv:node sv:name="main">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:area</sv:value>
           </sv:property>
@@ -3469,7 +3469,7 @@
         <sv:property sv:name="title_de" sv:type="String">
           <sv:value>Kundenerlebnisteamleiter</sv:value>
         </sv:property>
-        <sv:node sv:name="content">
+        <sv:node sv:name="main">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:area</sv:value>
           </sv:property>
@@ -3852,7 +3852,7 @@ Position based in: Hull, UK (with some travel)&lt;/p&gt;
         <sv:property sv:name="title_de" sv:type="String">
           <sv:value>Marketingmitarbeiter/in</sv:value>
         </sv:property>
-        <sv:node sv:name="content">
+        <sv:node sv:name="main">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:area</sv:value>
           </sv:property>
@@ -4227,7 +4227,7 @@ Standort: Hull, Vereinigtes K&amp;ouml;nigreich&lt;/p&gt;
     <sv:property sv:name="title_de" sv:type="String">
       <sv:value>Kontakt</sv:value>
     </sv:property>
-    <sv:node sv:name="content">
+    <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
       </sv:property>
@@ -4558,7 +4558,7 @@ F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie
       <sv:property sv:name="title_de" sv:type="String">
         <sv:value>Datenschutz &amp; Privatsphäre</sv:value>
       </sv:property>
-      <sv:node sv:name="content">
+      <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>
@@ -4886,7 +4886,7 @@ F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie
       <sv:property sv:name="title_de" sv:type="String">
         <sv:value>Konditionen</sv:value>
       </sv:property>
-      <sv:node sv:name="content">
+      <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>
@@ -5173,7 +5173,7 @@ F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie
       <sv:property sv:name="title" sv:type="String">
         <sv:value>Impressum</sv:value>
       </sv:property>
-      <sv:node sv:name="content">
+      <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>
@@ -5445,7 +5445,7 @@ F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie
       <sv:property sv:name="title_de" sv:type="String">
         <sv:value>Suchresultate</sv:value>
       </sv:property>
-      <sv:node sv:name="content">
+      <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>

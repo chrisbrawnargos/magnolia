@@ -39,7 +39,7 @@
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Sportstation</sv:value>
   </sv:property>
-  <sv:node sv:name="content">
+  <sv:node sv:name="main">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:area</sv:value>
     </sv:property>
@@ -289,7 +289,7 @@
     <sv:property sv:name="title" sv:type="String">
       <sv:value>About SportStation</sv:value>
     </sv:property>
-    <sv:node sv:name="content">
+    <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
       </sv:property>
@@ -526,7 +526,7 @@
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Tour</sv:value>
     </sv:property>
-    <sv:node sv:name="content">
+    <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
       </sv:property>

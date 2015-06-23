@@ -12,7 +12,7 @@ renderType: site
 type: feature
 subtype: tourDetail
 areas:
-  content:
+  main:
     type: list
     availableComponents:
         tourDetailSportstation:

@@ -12,7 +12,7 @@ renderType: site
 type: feature
 subtype: destinationCatOverview
 areas:
-  content:
+  main:
     type: list
     availableComponents:
       tourTypeOverviewHeader:

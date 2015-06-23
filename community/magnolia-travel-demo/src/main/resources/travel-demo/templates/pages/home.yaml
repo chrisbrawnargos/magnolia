@@ -11,7 +11,7 @@ class: info.magnolia.demo.travel.definition.PageTemplateDefinition
 renderType: site
 type: home
 areas:
-  content:
+  main:
     type: list
     availableComponents:
       tourCarousel:

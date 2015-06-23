@@ -33,7 +33,7 @@
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Tour Types</sv:value>
   </sv:property>
-  <sv:node sv:name="content">
+  <sv:node sv:name="main">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:area</sv:value>
     </sv:property>

@@ -20,7 +20,7 @@
 <![endif]-->
 [@cms.area name="navigation"/]
 
-[@cms.area name="content"/]
+[@cms.area name="main"/]
 
 [@cms.area name="footer"/]
 

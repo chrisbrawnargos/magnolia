@@ -11,7 +11,7 @@ class: info.magnolia.demo.travel.definition.PageTemplateDefinition
 renderType: site
 type: feature
 areas:
-  content:
+  main:
     templateScript: /travel-demo/templates/pages/areas/contentContainer.ftl
     type: list
     parameters:
