@@ -41,7 +41,7 @@
                         <div class="category-icons">
                             [#list tour.tourTypes as tourType]
                                 <div class="category-icon absolute-center-container">
-                                    <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.name theme.name ctx /]</a>
+                                    <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.nodeName theme.name ctx /]</a>
                                 </div>
                             [/#list]
                         </div>

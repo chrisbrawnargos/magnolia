@@ -16,7 +16,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
+    <sv:value>2015-06-18T18:00:01.507+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -26,6 +26,9 @@
   </sv:property>
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Which tour type are you?</sv:value>
+  </sv:property>
+  <sv:property sv:name="title_de" sv:type="String">
+    <sv:value>Welcher Reisetyp bist Du?</sv:value>
   </sv:property>
   <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
     <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>

@@ -21,7 +21,7 @@
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
-  <sv:node sv:name="north-america">
+  <sv:node sv:name="northAmerica">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:category</sv:value>
     </sv:property>
@@ -30,6 +30,9 @@
     </sv:property>
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>North America</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName_de" sv:type="String">
+      <sv:value>Nordamerika</sv:value>
     </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:61c6d945-e7aa-4947-98d4-fae2d0d2c9e6</sv:value>
@@ -47,7 +50,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-25T11:00:02.041+01:00</sv:value>
+      <sv:value>2015-06-18T14:56:43.755+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -56,7 +59,7 @@
       <sv:value>northAmerica</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="south-america">
+  <sv:node sv:name="southAmerica">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:category</sv:value>
     </sv:property>
@@ -65,6 +68,9 @@
     </sv:property>
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Central &amp; South America</sv:value>
+    </sv:property>
+    <sv:property sv:name="displayName_de" sv:type="String">
+      <sv:value>Zentral &amp; Südamerika</sv:value>
     </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:db52dd24-7d59-472b-bd53-c75f78849840</sv:value>
@@ -82,7 +88,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-25T11:00:20.033+01:00</sv:value>
+      <sv:value>2015-06-18T14:57:09.972+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -101,6 +107,9 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Europe</sv:value>
     </sv:property>
+    <sv:property sv:name="displayName_de" sv:type="String">
+      <sv:value>Europa</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:7e5e5622-b266-4451-b45b-3fde392d3a54</sv:value>
     </sv:property>
@@ -117,7 +126,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-25T11:00:30.679+01:00</sv:value>
+      <sv:value>2015-06-18T14:57:23.734+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -136,6 +145,9 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Africa &amp; the Middle East</sv:value>
     </sv:property>
+    <sv:property sv:name="displayName_de" sv:type="String">
+      <sv:value>Afrika, Naher &amp; Mittlerer Osten</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:f9cf8c33-6e08-4846-b951-bb2fe13edd77</sv:value>
     </sv:property>
@@ -152,7 +164,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-25T11:00:43.046+01:00</sv:value>
+      <sv:value>2015-06-18T14:57:43.748+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -171,6 +183,9 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Asia &amp; the Pacific</sv:value>
     </sv:property>
+    <sv:property sv:name="displayName_de" sv:type="String">
+      <sv:value>Asien-Pazifik</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:20e4d7f7-3160-4670-9acb-5c87231088dd</sv:value>
     </sv:property>
@@ -187,7 +202,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-25T11:00:57.413+01:00</sv:value>
+      <sv:value>2015-06-18T14:57:59.773+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -206,6 +221,9 @@
     <sv:property sv:name="displayName" sv:type="String">
       <sv:value>Polar</sv:value>
     </sv:property>
+    <sv:property sv:name="displayName_de" sv:type="String">
+      <sv:value>Polargebiete</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:baa86f2d-b1c6-413e-9879-bc2b166f9f1d</sv:value>
     </sv:property>
@@ -222,7 +240,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-02-25T11:01:07.268+01:00</sv:value>
+      <sv:value>2015-06-18T14:58:15.504+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>

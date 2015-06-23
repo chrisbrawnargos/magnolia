@@ -8,10 +8,12 @@ form:
       fields:
         - name: title
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
           label: dialogs.components.tourTypeTeaserRow.tabMain.title.label
         - name: body
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           rows: 8
+          i18n: true
           label: dialogs.components.tourTypeTeaserRow.tabMain.body.label
         - name: tourTypes
           class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition

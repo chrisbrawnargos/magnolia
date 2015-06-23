@@ -7898,6 +7898,9 @@
                   <sv:property sv:name="class" sv:type="String">
                     <sv:value>info.magnolia.ui.form.field.definition.TextFieldDefinition</sv:value>
                   </sv:property>
+                  <sv:property sv:name="i18n" sv:type="String">
+                    <sv:value>true</sv:value>
+                  </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
                   </sv:property>
@@ -7917,7 +7920,7 @@
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                    <sv:value>2015-02-18T16:20:18.068+01:00</sv:value>
+                    <sv:value>2015-06-18T13:24:28.275+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
@@ -7939,6 +7942,9 @@
                   <sv:property sv:name="class" sv:type="String">
                     <sv:value>info.magnolia.ui.form.field.definition.TextFieldDefinition</sv:value>
                   </sv:property>
+                  <sv:property sv:name="i18n" sv:type="String">
+                    <sv:value>true</sv:value>
+                  </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
                   </sv:property>
@@ -7958,7 +7964,7 @@
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                    <sv:value>2015-02-18T16:20:18.068+01:00</sv:value>
+                    <sv:value>2015-06-18T13:24:41.046+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
@@ -8300,7 +8306,7 @@
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                    <sv:value>2015-02-18T16:20:18.068+01:00</sv:value>
+                    <sv:value>2015-06-18T13:25:54.752+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
@@ -8593,6 +8599,9 @@
                   <sv:property sv:name="class" sv:type="String">
                     <sv:value>info.magnolia.ui.form.field.definition.RichTextFieldDefinition</sv:value>
                   </sv:property>
+                  <sv:property sv:name="i18n" sv:type="String">
+                    <sv:value>true</sv:value>
+                  </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
                   </sv:property>
@@ -8612,7 +8621,7 @@
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                    <sv:value>2015-02-18T16:20:18.068+01:00</sv:value>
+                    <sv:value>2015-06-18T13:25:35.339+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
                     <sv:value>superuser</sv:value>

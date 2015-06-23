@@ -26,7 +26,7 @@
 
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+                    aria-expanded="false" aria-controls="navbar" title="${i18n['navigation.toggle']}">
                 <span class="sr-only">${i18n['navigation.toggle']}</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -51,7 +51,7 @@
 
                 [#-- Only when the search result page was set should the form be displayed --]
                 [#if searchResultPage?exists]
-                    [@searchForm action=searchResultPage! /]
+                    [@searchForm action=searchResultPage! inputName="queryStr" placeholder=i18n['search.placeholder'] /]
                 [/#if]
 
             </div>

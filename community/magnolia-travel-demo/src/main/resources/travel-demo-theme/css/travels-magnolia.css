@@ -218,7 +218,7 @@ h2 {
 }
 
 #nav-search {
-    width: 140px;
+    width: 130px;
 }
 
 .navbar-toggle {
@@ -408,6 +408,18 @@ footer li, footer ul {
     text-align: right;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+div.inline{
+    display:inline;
+}
+
+.footer-last-links ul{
+    display:inline;
+}
+
+.footer-last-links  ul  li:before{
+    content:" | ";
 }
 
 div.inline ul li, ul.social-icons li {
@@ -653,7 +665,10 @@ div.inline ul li img, ul.social-icons img {
 .carousel-caption h1, .lead-caption h1 {
     display: inline-block;
     color: white;
-    font-size: 4.5em;
+}
+
+.carousel-caption h1{
+    font-size:3.5em;
 }
 
 .carousel-caption .category-icon {
@@ -836,11 +851,9 @@ h1 .category {
     bottom: 0px;
     padding: 15px;
     margin: 0px;
+    text-align: center;
 }
 
-.product-card .card-button a.btn {
-    float: right;
-}
 
 .product-detail .duration {
     font-weight: bold;

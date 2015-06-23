@@ -118,11 +118,12 @@ public class TourServices {
     /**
      * Creates a {@link Category} object from a {@link Node}.
      */
-    public Category marshallCategoryNode(Node categoryNode) {
+    public Category marshallCategoryNode(Node categoryNodeRaw) {
         Category category = null;
 
-        if (categoryNode != null) {
+        if (categoryNodeRaw != null) {
             try {
+                final Node categoryNode = templatingFunctions.wrapForI18n(categoryNodeRaw);
                 String name = categoryNode.getName();
                 if (categoryNode.hasProperty(Category.PROPERTY_NAME_DISPLAY_NAME)) {
                     name = categoryNode.getProperty(Category.PROPERTY_NAME_DISPLAY_NAME).getString();
@@ -146,7 +147,7 @@ public class TourServices {
                     category.setImage(image);
                 }
             } catch (RepositoryException e) {
-                log.debug("Could not marshall category from node [{}]", categoryNode);
+                log.debug("Could not marshall category from node [{}]", categoryNodeRaw);
             }
         }
 
@@ -181,10 +182,11 @@ public class TourServices {
     /**
      * Creates a {@link Tour} from a {@link Node}.
      */
-    public Tour marshallTourNode(Node tourNode) {
+    public Tour marshallTourNode(Node tourNodeRaw) {
         Tour tour = null;
 
-        if (tourNode != null) {
+        if (tourNodeRaw != null) {
+            final Node tourNode = templatingFunctions.wrapForI18n(tourNodeRaw);
             tour = new Tour();
 
             try {
@@ -232,7 +234,7 @@ public class TourServices {
                     tour.setLink(tourLink);
                 }
             } catch (RepositoryException e) {
-                log.debug("Could not marshall tour from node [{}]", tourNode);
+                log.debug("Could not marshall tour from node [{}]", tourNodeRaw);
             }
         }
 

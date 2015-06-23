@@ -65,7 +65,5 @@
         [#assign assetRendition=damfn.getRendition(content.image, "original")]
         [@image assetRendition content "list-image" true /]
     [#else]
-        ${linkText}
-    [/#if]
-</a></span>
+        ${linkText}[/#if]</a></span>
 [/#if]

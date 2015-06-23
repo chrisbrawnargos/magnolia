@@ -21,10 +21,10 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="footer-last-links">
-                        &copy; 2015 Magnolia Travels, Inc. | <a href="${ctx.contextPath}/travel/meta/privacy">Privacy</a> |
-                        <a href="${ctx.contextPath}/travel/meta/terms">Terms</a> | <a href="${ctx.contextPath}/travel/meta/impressum">Impressum</a>
-                    </p>
+                    <div class="footer-last-links">
+                        &copy; 2015 Magnolia Travels, Inc. 
+                        [@cms.area name="lastLinks"/]
+                    </div>
                 </div>
             </div>
 
