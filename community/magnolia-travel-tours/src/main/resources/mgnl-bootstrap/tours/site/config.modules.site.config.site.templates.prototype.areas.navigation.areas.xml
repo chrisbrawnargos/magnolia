@@ -53,7 +53,7 @@
       <sv:value>freemarker</sv:value>
     </sv:property>
     <sv:property sv:name="templateScript" sv:type="String">
-      <sv:value>/tours/templates/areas/categoryArea.ftl</sv:value>
+      <sv:value>/tours/templates/pages/areas/categoryArea.ftl</sv:value>
     </sv:property>
     <sv:property sv:name="type" sv:type="String">
       <sv:value>noComponent</sv:value>

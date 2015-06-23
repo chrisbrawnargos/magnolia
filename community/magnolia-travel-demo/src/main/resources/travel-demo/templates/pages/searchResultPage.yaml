@@ -12,7 +12,7 @@ renderType: site
 type: feature
 areas:
   content:
-    templateScript: /travel-demo/templates/areas/contentContainerSingle.ftl
+    templateScript: /travel-demo/templates/pages/areas/contentContainerSingle.ftl
     type: single
     parameters:
       cssClass: container

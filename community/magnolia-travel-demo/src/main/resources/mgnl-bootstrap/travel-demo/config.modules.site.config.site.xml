@@ -452,7 +452,7 @@
             <sv:value>freemarker</sv:value>
           </sv:property>
           <sv:property sv:name="templateScript" sv:type="String">
-            <sv:value>/travel-demo/templates/areas/navigation.ftl</sv:value>
+            <sv:value>/travel-demo/templates/pages/areas/navigation.ftl</sv:value>
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
             <sv:value>noComponent</sv:value>
@@ -493,7 +493,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="templateScript" sv:type="String">
-            <sv:value>/travel-demo/templates/areas/footer.ftl</sv:value>
+            <sv:value>/travel-demo/templates/pages/areas/footer.ftl</sv:value>
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
             <sv:value>noComponent</sv:value>
@@ -543,7 +543,7 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="templateScript" sv:type="String">
-                <sv:value>/travel-demo/templates/areas/contentContainer.ftl</sv:value>
+                <sv:value>/travel-demo/templates/pages/areas/contentContainer.ftl</sv:value>
               </sv:property>
               <sv:property sv:name="type" sv:type="String">
                 <sv:value>list</sv:value>
@@ -1064,7 +1064,7 @@
             <sv:value>freemarker</sv:value>
           </sv:property>
           <sv:property sv:name="templateScript" sv:type="String">
-            <sv:value>/travel-demo/templates/areas/htmlHeader.ftl</sv:value>
+            <sv:value>/travel-demo/templates/pages/areas/htmlHeader.ftl</sv:value>
           </sv:property>
           <sv:property sv:name="type" sv:type="String">
             <sv:value>noComponent</sv:value>
