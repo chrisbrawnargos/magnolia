@@ -33,7 +33,7 @@
  */
 package info.magnolia.demo.travel.definition;
 
-import info.magnolia.module.resources.Resource;
+import info.magnolia.module.site.ResourceDefinition;
 import info.magnolia.objectfactory.Components;
 import info.magnolia.rendering.template.TemplateAvailability;
 import info.magnolia.rendering.template.configured.ConfiguredTemplateDefinition;
@@ -52,7 +52,7 @@ public class PageTemplateDefinition extends ConfiguredTemplateDefinition {
      * Using the <code>jsFiles</code> of this {@link info.magnolia.rendering.template.configured.ConfiguredTemplateDefinition}
      * to be rendered at the bottom of the page.
      */
-    private List<Resource> jsFiles = new ArrayList<Resource>();
+    private List<ResourceDefinition> jsFiles = new ArrayList<>();
 
     @Inject
     public PageTemplateDefinition(TemplateAvailability templateAvailability) {
@@ -63,11 +63,11 @@ public class PageTemplateDefinition extends ConfiguredTemplateDefinition {
         super(Components.getComponent(TemplateAvailability.class));
     }
 
-    public List<Resource> getJsFiles() {
+    public List<ResourceDefinition> getJsFiles() {
         return jsFiles;
     }
 
-    public void setJsFiles(List<Resource> jsFiles) {
+    public void setJsFiles(List<ResourceDefinition> jsFiles) {
         this.jsFiles = jsFiles;
     }
 
