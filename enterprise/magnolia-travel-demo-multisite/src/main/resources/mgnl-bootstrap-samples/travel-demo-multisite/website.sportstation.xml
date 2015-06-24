@@ -9,11 +9,17 @@
   <sv:property sv:name="jcr:uuid" sv:type="String">
     <sv:value>5f26a93e-9d21-4231-9e60-c8edbb0d339d</sv:value>
   </sv:property>
+  <sv:property sv:name="description" sv:type="String">
+    <sv:value>Magnolia Travels is a demonstration project for Magnolia CMS. Browse the site to get an overview of Magnolia CMS features, and learn how to edit the content online. Or download the project and dig into the sources to learn the key templating features of Magnolia CMS.</sv:value>
+  </sv:property>
   <sv:property sv:name="hideInNav" sv:type="Boolean">
     <sv:value>false</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="keywords" sv:type="String">
+    <sv:value>Magnolia CMS, Open Source CMS, Content management, Demonstration project, Demo project, Demo, Online demo, Website builder</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:created" sv:type="Date">
     <sv:value>2015-05-04T15:52:31.972+02:00</sv:value>

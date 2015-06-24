@@ -30,6 +30,23 @@ form:
           label: pages.pageProperties.hideInNav.label
           description: pages.pageProperties.hideInNav.description
           buttonLabel: pages.pageProperties.hideInNav.buttonLabel
+    # "inherited" (copied) from "mte/dialogs/pages/pageProperties.yaml"
+    - name: tabMeta
+      label: pages.pageProperties.tabMeta.label
+      i18nBasename: info.magnolia.templating.models.messages
+      fields:
+        - name: keywords
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+          label: pages.pageProperties.keywords.label
+          description: pages.pageProperties.keywords.description
+          rows: 3
+        - name: description
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+          label: pages.pageProperties.description.label
+          description: pages.pageProperties.description.description
+          rows: 5
     # travel-home-page (search) specific properties
     - name: tabSearch
       label: pages.homePageProperties.tabSearch.label
