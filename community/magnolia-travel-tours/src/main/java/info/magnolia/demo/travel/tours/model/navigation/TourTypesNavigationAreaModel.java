@@ -36,7 +36,6 @@ package info.magnolia.demo.travel.tours.model.navigation;
 import info.magnolia.demo.travel.tours.ToursModule;
 import info.magnolia.demo.travel.tours.service.Category;
 import info.magnolia.demo.travel.tours.service.TourServices;
-import info.magnolia.i18nsystem.SimpleTranslator;
 import info.magnolia.rendering.model.RenderingModel;
 import info.magnolia.rendering.template.AreaDefinition;
 
@@ -50,13 +49,9 @@ import javax.jcr.Node;
  */
 public class TourTypesNavigationAreaModel extends AbstractNavigationAreaModel {
 
-    private final SimpleTranslator simpleTranslator;
-
     @Inject
-    public TourTypesNavigationAreaModel(Node content, AreaDefinition definition, RenderingModel<?> parent, TourServices tourServices, ToursModule toursModule, SimpleTranslator simpleTranslator) {
+    public TourTypesNavigationAreaModel(Node content, AreaDefinition definition, RenderingModel<?> parent, TourServices tourServices, ToursModule toursModule) {
         super(content, definition, parent, tourServices, toursModule);
-
-        this.simpleTranslator = simpleTranslator;
     }
 
     @Override
@@ -65,8 +60,8 @@ public class TourTypesNavigationAreaModel extends AbstractNavigationAreaModel {
     }
 
     @Override
-    public String getTitle() {
-        return simpleTranslator.translate("navigation.tour.types.title");
+    public String getTitleI18nKey() {
+        return "navigation.tourTypes.title";
     }
 
 }

@@ -74,7 +74,10 @@ public abstract class AbstractNavigationAreaModel extends RenderingModelImpl<Are
 
     public abstract List<Category> getCategories();
 
-    public abstract String getTitle();
+    /**
+     * @return The i18n key for the i18n property file.
+     */
+    public abstract String getTitleI18nKey();
 
     /**
      * Gets all child categories of the passed parent node. Used to retrieve all categories under e.g. 'Destinations'

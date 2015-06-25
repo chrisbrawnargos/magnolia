@@ -10,6 +10,6 @@
 [/#macro]
 
 [#assign categories = model.categories /]
-[#assign title = model.title /]
+[#assign title = i18n[model.titleI18nKey] /]
 
 [@categoryNavigation categories title /]
