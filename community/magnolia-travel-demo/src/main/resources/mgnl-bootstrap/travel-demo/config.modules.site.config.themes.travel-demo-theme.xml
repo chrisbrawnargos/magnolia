@@ -53,7 +53,7 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>65c3b0bf-7329-4ebd-b8c5-606ba70ecd0f</sv:value>
       </sv:property>
-      <sv:property sv:name="fingerPrint" sv:type="Boolean">
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -97,7 +97,7 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>2f54bf62-1f2e-43e2-9386-fca96224de93</sv:value>
       </sv:property>
-      <sv:property sv:name="fingerPrint" sv:type="Boolean">
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -141,7 +141,7 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>59c1cb25-33e2-421c-9db9-2405466830d0</sv:value>
       </sv:property>
-      <sv:property sv:name="fingerPrint" sv:type="Boolean">
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -185,7 +185,7 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>3a39afec-c146-43c5-a08f-0f14dbbff53f</sv:value>
       </sv:property>
-      <sv:property sv:name="fingerPrint" sv:type="Boolean">
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -229,7 +229,7 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>3c9426e0-da74-435f-94d1-aa2352928560</sv:value>
       </sv:property>
-      <sv:property sv:name="fingerPrint" sv:type="Boolean">
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -273,7 +273,7 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>e07e95e6-ed31-4643-a1d7-6faa7c2d73b7</sv:value>
       </sv:property>
-      <sv:property sv:name="fingerPrint" sv:type="Boolean">
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -340,7 +340,7 @@
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>7714aefc-1701-4a2e-bdd9-a91bbeb1887b</sv:value>
       </sv:property>
-      <sv:property sv:name="fingerPrint" sv:type="Boolean">
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
