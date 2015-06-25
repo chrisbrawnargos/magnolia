@@ -29,6 +29,8 @@ areas:
         id: mte:components/teaserInternal
       teaserExternal:
         id: mte:components/teaserExternal
+      html:
+        id: mte:components/html
   footer:
     editable: false
 
