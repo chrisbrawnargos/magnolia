@@ -17,9 +17,9 @@
   <properties>
     <javaVersion>1.7</javaVersion>
     <magnoliaVersion>5.4-SNAPSHOT</magnoliaVersion>
-    <magnoliaUiVersion>5.4-m11</magnoliaUiVersion>
-    <siteVersion>1.0-m9</siteVersion>
-    <resourcesVersion>2.4-m9</resourcesVersion>
+    <magnoliaUiVersion>5.4-SNAPSHOT</magnoliaUiVersion>
+    <siteVersion>1.0-SNAPSHOT</siteVersion>
+    <resourcesVersion>2.4-SNAPSHOT</resourcesVersion>
   </properties>
 
   <scm>
@@ -73,17 +73,17 @@
       <dependency>
         <groupId>info.magnolia.marketingtags</groupId>
         <artifactId>magnolia-marketing-tags</artifactId>
-        <version>1.2-m4</version>
+        <version>1.2-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.multisite</groupId>
         <artifactId>magnolia-module-multisite</artifactId>
-        <version>1.2-m5</version>
+        <version>1.2-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>info.magnolia.personalization</groupId>
         <artifactId>magnolia-personalization-integration</artifactId>
-        <version>1.2-m7</version>
+        <version>1.2-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
