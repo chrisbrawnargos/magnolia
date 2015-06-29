@@ -6,6 +6,9 @@
   <sv:property sv:name="jcr:uuid" sv:type="String">
     <sv:value>102cdb83-8d1f-4a58-9e69-d2d485f2df9b</sv:value>
   </sv:property>
+  <sv:property sv:name="description" sv:type="String">
+    <sv:value>A group usually combines more roles together.</sv:value>
+  </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
   </sv:property>
@@ -16,13 +19,13 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-06-29T11:24:23.134+02:00</sv:value>
+    <sv:value>2015-06-29T12:49:21.330+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="title" sv:type="String">
-    <sv:value>A sample travel editor group</sv:value>
+    <sv:value>A sample travel editor group for travel-demo</sv:value>
   </sv:property>
   <sv:node sv:name="groups">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -61,19 +64,19 @@
       <sv:value>96d0d092-3716-4597-ae0c-b9931bad7cac</sv:value>
     </sv:property>
     <sv:property sv:name="0" sv:type="String">
-      <sv:value>3beee275-a34c-4406-b52e-4bf8cc6ea8c8</sv:value>
+      <sv:value>65412bcd-3ac3-429f-a3e7-fbaa6f2ce7cb</sv:value>
     </sv:property>
     <sv:property sv:name="1" sv:type="String">
-      <sv:value>8cdcf8d0-0ed7-41ff-8e2f-51f0b8b94175</sv:value>
+      <sv:value>3beee275-a34c-4406-b52e-4bf8cc6ea8c8</sv:value>
     </sv:property>
     <sv:property sv:name="2" sv:type="String">
-      <sv:value>4fd7ab63-7fff-4a27-b16a-ef727cc6a75d</sv:value>
+      <sv:value>8cdcf8d0-0ed7-41ff-8e2f-51f0b8b94175</sv:value>
     </sv:property>
     <sv:property sv:name="3" sv:type="String">
-      <sv:value>3061da39-9837-45fc-a7ee-0fb695399949</sv:value>
+      <sv:value>4fd7ab63-7fff-4a27-b16a-ef727cc6a75d</sv:value>
     </sv:property>
     <sv:property sv:name="4" sv:type="String">
-      <sv:value>65412bcd-3ac3-429f-a3e7-fbaa6f2ce7cb</sv:value>
+      <sv:value>3061da39-9837-45fc-a7ee-0fb695399949</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
@@ -85,7 +88,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-29T11:24:23.136+02:00</sv:value>
+      <sv:value>2015-06-29T12:49:21.331+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>

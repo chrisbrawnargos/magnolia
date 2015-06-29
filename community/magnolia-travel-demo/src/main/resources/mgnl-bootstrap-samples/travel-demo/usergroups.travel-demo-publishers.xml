@@ -28,7 +28,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-06-29T10:41:06.999+02:00</sv:value>
+    <sv:value>2015-06-29T12:49:57.825+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -82,7 +82,7 @@
       <sv:value>7b3ab412-fada-47d3-b405-0b8a6ef3b2c9</sv:value>
     </sv:property>
     <sv:property sv:name="0" sv:type="String">
-      <sv:value>65412bcd-3ac3-429f-a3e7-fbaa6f2ce7cb</sv:value>
+      <sv:value>3beee275-a34c-4406-b52e-4bf8cc6ea8c8</sv:value>
     </sv:property>
     <sv:property sv:name="1" sv:type="String">
       <sv:value>4fd7ab63-7fff-4a27-b16a-ef727cc6a75d</sv:value>
@@ -94,7 +94,7 @@
       <sv:value>3061da39-9837-45fc-a7ee-0fb695399949</sv:value>
     </sv:property>
     <sv:property sv:name="4" sv:type="String">
-      <sv:value>3beee275-a34c-4406-b52e-4bf8cc6ea8c8</sv:value>
+      <sv:value>8cdcf8d0-0ed7-41ff-8e2f-51f0b8b94175</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
@@ -115,7 +115,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-29T10:41:07.002+02:00</sv:value>
+      <sv:value>2015-06-29T12:49:57.827+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
