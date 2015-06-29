@@ -67,8 +67,8 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
         tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/destination", "about"));
         tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
 
-        /* Add travel-base role to user anonymous */
-        tasks.add(new AddRoleToUserTask("Adds role 'travel-base' to user 'anonymous'", "anonymous", "travel-base"));
+        /* Add travel-demo-base role to user anonymous */
+        tasks.add(new AddRoleToUserTask("Adds role 'travel-demo-base' to user 'anonymous'", "anonymous", "travel-demo-base"));
 
         tasks.add(new IsModuleInstalledOrRegistered("Copy template availability and navigation areas from site definition to multisite module", "multisite",
                 new ArrayDelegateTask("",

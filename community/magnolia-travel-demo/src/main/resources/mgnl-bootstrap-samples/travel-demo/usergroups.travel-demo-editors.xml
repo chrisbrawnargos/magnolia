@@ -28,7 +28,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-06-25T12:04:52.103+02:00</sv:value>
+    <sv:value>2015-06-29T10:40:57.184+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -82,22 +82,25 @@
       <sv:value>31ff00eb-9163-4506-8af2-7278f6109434</sv:value>
     </sv:property>
     <sv:property sv:name="0" sv:type="String">
-      <sv:value>3061da39-9837-45fc-a7ee-0fb695399949</sv:value>
-    </sv:property>
-    <sv:property sv:name="1" sv:type="String">
       <sv:value>65412bcd-3ac3-429f-a3e7-fbaa6f2ce7cb</sv:value>
     </sv:property>
-    <sv:property sv:name="2" sv:type="String">
-      <sv:value>97e8de2b-dba5-4553-8fde-65b7b7f28a97</sv:value>
-    </sv:property>
-    <sv:property sv:name="3" sv:type="String">
+    <sv:property sv:name="1" sv:type="String">
       <sv:value>a106b4cf-d205-418c-acf3-27263612f5a4</sv:value>
     </sv:property>
-    <sv:property sv:name="4" sv:type="String">
+    <sv:property sv:name="2" sv:type="String">
       <sv:value>d548503f-074f-4443-b64c-c28f1059c698</sv:value>
     </sv:property>
-    <sv:property sv:name="5" sv:type="String">
+    <sv:property sv:name="3" sv:type="String">
+      <sv:value>97e8de2b-dba5-4553-8fde-65b7b7f28a97</sv:value>
+    </sv:property>
+    <sv:property sv:name="4" sv:type="String">
       <sv:value>4fd7ab63-7fff-4a27-b16a-ef727cc6a75d</sv:value>
+    </sv:property>
+    <sv:property sv:name="5" sv:type="String">
+      <sv:value>3061da39-9837-45fc-a7ee-0fb695399949</sv:value>
+    </sv:property>
+    <sv:property sv:name="6" sv:type="String">
+      <sv:value>3beee275-a34c-4406-b52e-4bf8cc6ea8c8</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
@@ -118,7 +121,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-25T12:04:52.107+02:00</sv:value>
+      <sv:value>2015-06-29T10:40:57.188+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
