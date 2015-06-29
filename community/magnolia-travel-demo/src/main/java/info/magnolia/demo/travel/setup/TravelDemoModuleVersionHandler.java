@@ -65,7 +65,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 new NodeExistsDelegateTask("", "/modules/multisite/config/sites/default",
                         new WarnTask("Warn about already existing site", "Could not copy site definition to multisite module. Check you configuration at /modules/multisite/config/sites. Site 'default' already exists."),
                         new CopyNodeTask("Copy site definition to multisite", "/modules/site/config/site", "/modules/multisite/config/sites/default", false))));
-        tasks.add(new SetupDemoRolesTask());
+        tasks.add(new SetupDemoRolesAndGroupsTask());
         return tasks;
     }
 

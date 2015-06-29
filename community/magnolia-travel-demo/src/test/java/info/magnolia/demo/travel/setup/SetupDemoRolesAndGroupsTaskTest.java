@@ -33,9 +33,9 @@
  */
 package info.magnolia.demo.travel.setup;
 
-import static info.magnolia.demo.travel.setup.SetupDemoRolesTask.*;
+import static info.magnolia.demo.travel.setup.SetupDemoRolesAndGroupsTask.*;
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.*;
@@ -52,8 +52,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class SetupDemoRolesTaskTest {
+public class SetupDemoRolesAndGroupsTaskTest {
 
+    private static final String MODULES = "/modules/";
     private Session session;
     private InstallContext ctx;
     private HierarchyManager hm;
@@ -68,12 +69,27 @@ public class SetupDemoRolesTaskTest {
     }
 
     @Test
-    public void demoRolesCanActivatePages() throws Exception {
+    public void demoPublisherCanActivatePagesOnCEInstance() throws Exception {
         // GIVEN
         NodeUtil.createPath(session.getRootNode(), PAGES_ACTIVATE_ACCESS_ROLES, NodeTypes.ContentNode.NAME);
 
         // WHEN
-        new SetupDemoRolesTask().execute(ctx);
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
+
+        // THEN
+        assertThat(session.getNode(PAGES_ACTIVATE_ACCESS_ROLES), not(hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE)));
+        assertThat(session.getNode(PAGES_ACTIVATE_ACCESS_ROLES), hasProperty(TRAVEL_DEMO_PUBLISHER_ROLE, TRAVEL_DEMO_PUBLISHER_ROLE));
+    }
+
+    @Test
+    public void demoEditorCanActivatePagesOnEEInstance() throws Exception {
+        // GIVEN
+        NodeUtil.createPath(session.getRootNode(), PAGES_ACTIVATE_ACCESS_ROLES, NodeTypes.ContentNode.NAME);
+        when(ctx.isModuleRegistered(eq(ENTERPRISE_MODULE))).thenReturn(true);
+        when(hm.isExist(eq(MODULES + ENTERPRISE_MODULE))).thenReturn(true);
+
+        // WHEN
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
 
         // THEN
         assertThat(session.getNode(PAGES_ACTIVATE_ACCESS_ROLES), hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE));
@@ -86,7 +102,7 @@ public class SetupDemoRolesTaskTest {
         NodeUtil.createPath(session.getRootNode(), DAM_ACTIVATE_ACCESS_ROLES, NodeTypes.ContentNode.NAME);
 
         // WHEN
-        new SetupDemoRolesTask().execute(ctx);
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
 
         // THEN
         assertThat(session.getNode(DAM_ACTIVATE_ACCESS_ROLES), hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE));
@@ -94,12 +110,12 @@ public class SetupDemoRolesTaskTest {
     }
 
     @Test
-    public void demoRolesCanAccessDam() throws Exception {
+    public void demoRolesCanAccessDamApp() throws Exception {
         // GIVEN
         NodeUtil.createPath(session.getRootNode(), DAM_PERMISSIONS_ROLES, NodeTypes.ContentNode.NAME);
 
         // WHEN
-        new SetupDemoRolesTask().execute(ctx);
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
 
         // THEN
         assertThat(session.getNode(DAM_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE));
@@ -111,7 +127,7 @@ public class SetupDemoRolesTaskTest {
         // GIVEN
 
         // WHEN
-        new SetupDemoRolesTask().execute(ctx);
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
 
         // THEN
         assertThat(session.nodeExists(PAGES_ACTIVATE_ACCESS_ROLES), is(true));
@@ -119,30 +135,29 @@ public class SetupDemoRolesTaskTest {
     }
 
     @Test
-    public void travelDemoPublisherCanAccessWorkflowItems() throws Exception {
+    public void demoPublisherCanAccessWorkflowItems() throws Exception {
         // GIVEN
         NodeUtil.createPath(session.getRootNode(), WORKFLOW_JBPM_PUBLISH_GROUPS, NodeTypes.ContentNode.NAME);
-        when(ctx.isModuleRegistered(eq("workflow-jbpm"))).thenReturn(true);
-        when(hm.isExist(eq("/modules/workflow-jbpm/"))).thenReturn(true);
+        when(ctx.isModuleRegistered(eq(WORKFLOW_JBPM_MODULE))).thenReturn(true);
+        when(hm.isExist(eq(MODULES + WORKFLOW_JBPM_MODULE))).thenReturn(true);
 
         // WHEN
-        new SetupDemoRolesTask().execute(ctx);
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
 
         // THEN
         assertThat(session.getNode(WORKFLOW_JBPM_PUBLISH_GROUPS), hasProperty(TRAVEL_DEMO_PUBLISHERS_GROUP, TRAVEL_DEMO_PUBLISHERS_GROUP));
     }
 
     @Test
-    public void doNotAddRoleForWorkflowIfWorkflowJbpmIsNotInstalled() throws Exception {
+    public void doNotAddDemoPublishersGroupToWorkflowIfWorkflowJbpmIsNotInstalled() throws Exception {
         // GIVEN
-        when(ctx.isModuleRegistered(eq("workflow-jbpm"))).thenReturn(false);
-        when(hm.isExist(eq("/modules/workflow-jbpm/"))).thenReturn(false);
+        when(ctx.isModuleRegistered(eq(WORKFLOW_JBPM_MODULE))).thenReturn(false);
+        when(hm.isExist(eq(MODULES + WORKFLOW_JBPM_MODULE))).thenReturn(false);
 
         // WHEN
-        new SetupDemoRolesTask().execute(ctx);
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
 
         // THEN
         assertThat(session.propertyExists(WORKFLOW_JBPM_PUBLISH_GROUPS + "/" + TRAVEL_DEMO_PUBLISHERS_GROUP), is(false));
     }
-
 }
