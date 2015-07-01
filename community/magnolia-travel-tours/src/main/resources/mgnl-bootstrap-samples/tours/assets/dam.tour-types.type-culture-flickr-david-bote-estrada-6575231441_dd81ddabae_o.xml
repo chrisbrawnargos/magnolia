@@ -7,13 +7,25 @@
   <sv:property sv:name="jcr:uuid" sv:type="String">
     <sv:value>a792164f-5a2a-4708-b3c8-62b48a578200</sv:value>
   </sv:property>
+  <sv:property sv:name="caption" sv:type="String">
+    <sv:value>David Bote Estrada</sv:value>
+  </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+    <sv:value>true</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:created" sv:type="Date">
     <sv:value>2015-02-25T08:35:26.500+01:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+    <sv:value>2015-07-01T10:48:00.922+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -24,9 +36,6 @@
   </sv:property>
   <sv:property sv:name="name" sv:type="String">
     <sv:value>type-culture-flickr-david-bote-estrada-6575231441_dd81ddabae_o.jpg</sv:value>
-  </sv:property>
-  <sv:property sv:name="caption" sv:type="String">
-    <sv:value>David Bote Estrada</sv:value>
   </sv:property>
   <sv:node sv:name="jcr:content">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">

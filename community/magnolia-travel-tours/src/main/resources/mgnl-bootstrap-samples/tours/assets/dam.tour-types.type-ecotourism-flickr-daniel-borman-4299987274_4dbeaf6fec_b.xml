@@ -7,13 +7,25 @@
   <sv:property sv:name="jcr:uuid" sv:type="String">
     <sv:value>2fd89d97-f932-4533-8a30-d70988bde30c</sv:value>
   </sv:property>
+  <sv:property sv:name="caption" sv:type="String">
+    <sv:value>Daniel Borman</sv:value>
+  </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+    <sv:value>true</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:created" sv:type="Date">
     <sv:value>2015-02-25T08:22:33.360+01:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+    <sv:value>2015-07-01T10:48:01.082+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -24,9 +36,6 @@
   </sv:property>
   <sv:property sv:name="name" sv:type="String">
     <sv:value>type-ecotourism-flickr-daniel-borman-4299987274_4dbeaf6fec_b.jpg</sv:value>
-  </sv:property>
-  <sv:property sv:name="caption" sv:type="String">
-    <sv:value>Daniel Borman</sv:value>
   </sv:property>
   <sv:node sv:name="jcr:content">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
