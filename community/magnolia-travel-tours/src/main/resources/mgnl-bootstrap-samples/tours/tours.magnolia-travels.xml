@@ -9,10 +9,22 @@
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
   </sv:property>
+  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+    <sv:value>true</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:comment" sv:type="String">
+    <sv:value/>
+  </sv:property>
   <sv:property sv:name="mgnl:created" sv:type="Date">
     <sv:value>2015-01-29T08:58:07.713+01:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:createdBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+    <sv:value>2015-07-01T10:48:45.449+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -76,10 +88,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Ho Chi Minh City, Vietnam</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:57:18.965+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:48:49.702+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -146,10 +170,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Zurich, Switzerland</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:55:07.254+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:48:52.327+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -213,10 +249,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Seattle, USA</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:51:38.319+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:48:56.517+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -282,10 +330,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>New Delhi, India</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:50:20.378+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:03.882+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -348,10 +408,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Kyoto, Japan</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:46:15.575+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:17.131+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -410,10 +482,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>San Francisco, USA</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:44:50.491+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:20.765+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -479,10 +563,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Kuala Lumpur, Malaysia</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:43:24.936+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:23.426+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -547,13 +643,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Athens, Greece</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
     <sv:property sv:name="mgnl:comment" sv:type="String">
-      <sv:value>Automatically created version prior deletion</sv:value>
+      <sv:value/>
     </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:41:31.612+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:26.575+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -620,10 +725,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Venice, Italy</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:40:05.754+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:29.621+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -684,10 +801,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Belize City, Belize</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:38:48.624+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:32.186+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -757,10 +886,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Beijing, China</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-29T08:35:44.563+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:34.920+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -830,10 +971,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Santiago, Chile</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-28T18:07:02.144+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:37.793+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -906,10 +1059,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Galle, Sri Lanka</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-01-28T18:06:46.536+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:40.674+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -971,10 +1136,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Vladivostok, Russia</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T16:37:54.135+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:43.390+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1041,10 +1218,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Irkutsk, Russia</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T16:47:25.117+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:12.399+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1126,10 +1315,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Hanoi, Vietnam</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T16:52:32.642+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:05.272+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1191,10 +1392,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Tehran, Iran</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T16:59:32.725+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:50:02.470+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1260,10 +1473,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Ushuia, Argentina</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:08:58.458+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:59.929+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1330,10 +1555,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Honolulu, USA</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:12:32.905+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:57.247+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1402,10 +1639,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>São Luís, Brasil</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:30:51.658+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:54.693+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1463,10 +1712,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Jakarta, Indonesia</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:33:28.077+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:51.675+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1529,10 +1790,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Muscat, Oman</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:37:18.504+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:49.071+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1598,10 +1871,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Amman, Jordan</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:40:02.004+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:45.951+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1659,10 +1944,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Mexico City, Mexico</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:44:40.653+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:42.991+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1734,10 +2031,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Prague, Czech Republic</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:47:29.241+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:40.230+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1795,10 +2104,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>San José, Costa Rica</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:49:40.706+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:37.602+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1856,10 +2177,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Johannesburg, South Africa</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:53:08.301+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:34.593+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1921,10 +2254,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Hamburg, Germany</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T17:55:35.694+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:31.813+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -1987,10 +2332,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Moscow, Russia</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T18:00:48.549+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:28.893+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -2056,10 +2413,22 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Johannesburg, South Africa</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T21:59:33.679+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:24.968+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -2125,10 +2494,22 @@ At Christmas time, children can also join visits to Santa and his famous grotto,
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Kittilä, Finland</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T22:02:48.285+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:22.357+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -2191,10 +2572,22 @@ At Christmas time, children can also join visits to Santa and his famous grotto,
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Paris, France</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T22:06:34.488+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:19.716+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -2264,10 +2657,22 @@ Wir verbringen 5 Tage mit Wandern auf dem Juan de Fuca Marine-Trail, der direkt 
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Vancouver, Canada</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T22:13:46.223+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:17.049+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -2329,10 +2734,22 @@ Wir verbringen 5 Tage mit Wandern auf dem Juan de Fuca Marine-Trail, der direkt 
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Kos, Greece</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T22:20:57.646+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:14.607+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -2403,10 +2820,22 @@ Aber da ist noch mehr als Programmieren: Du erh&amp;auml;ltst die Gelegenheit, g
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Basel, Switzerland</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-02T23:23:26.196+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:11.686+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -2475,10 +2904,22 @@ Aber da ist noch mehr als Programmieren: Du erh&amp;auml;ltst die Gelegenheit, g
     <sv:property sv:name="location" sv:type="String">
       <sv:value>Miami, USA</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:comment" sv:type="String">
+      <sv:value/>
+    </sv:property>
     <sv:property sv:name="mgnl:created" sv:type="Date">
       <sv:value>2015-06-03T09:14:01.975+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:createdBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-07-01T10:49:08.908+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
