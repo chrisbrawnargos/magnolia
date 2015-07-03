@@ -8,8 +8,8 @@
 
   <dependencies>
     <dependency>
-      <name>travel-demo</name>
-      <version>1.0/*</version>
+      <name>tours</name>
+      <version>0.5/*</version>
     </dependency>
     <dependency>
       <name>personalization-integration</name>
