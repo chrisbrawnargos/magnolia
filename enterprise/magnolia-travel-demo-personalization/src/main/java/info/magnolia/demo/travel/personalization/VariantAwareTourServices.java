@@ -55,10 +55,11 @@ public class VariantAwareTourServices extends TourServices {
     @Override
     public String getCategoryLink(Node content, String categoryName, String featureSubType) {
         try {
+            Node page = content;
             if (variantManager.isVariant(content)) {
-                content = NodeUtil.getNearestAncestorOfType(NodeUtil.deepUnwrap(content, PersonalizationNodeWrapper.class), NodeTypes.Page.NAME);
+                page = NodeUtil.getNearestAncestorOfType(NodeUtil.deepUnwrap(content, PersonalizationNodeWrapper.class), NodeTypes.Page.NAME);
             }
-            return super.getCategoryLink(content, categoryName, featureSubType);
+            return super.getCategoryLink(page, categoryName, featureSubType);
 
         } catch (Exception e) {
             log.warn("Failed to determine whether node is variant.", featureSubType, e);
