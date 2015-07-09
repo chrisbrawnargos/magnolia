@@ -148,7 +148,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>http://fonts.googleapis.com/css?family=Droid+Sans%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
+        <sv:value>https://fonts.googleapis.com/css?family=Droid+Sans%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>
@@ -192,7 +192,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>http://fonts.googleapis.com/css?family=Droid+Serif%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
+        <sv:value>https://fonts.googleapis.com/css?family=Droid+Serif%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>
@@ -236,7 +236,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>http://fonts.googleapis.com/css?family=Open+Sans%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
+        <sv:value>https://fonts.googleapis.com/css?family=Open+Sans%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>
@@ -280,7 +280,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>http://fonts.googleapis.com/css?family=Roboto+Condensed%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
+        <sv:value>https://fonts.googleapis.com/css?family=Roboto+Condensed%3A100%2C300%2Cn%2Ci%2Cb%2Cbi&amp;#038;subset=latin&amp;#038;ver=3.9.3</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>
