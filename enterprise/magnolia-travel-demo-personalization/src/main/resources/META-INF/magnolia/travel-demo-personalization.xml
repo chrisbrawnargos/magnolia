@@ -18,7 +18,7 @@
   <dependencies>
     <dependency>
       <name>tours</name>
-      <version>0.5/*</version>
+      <version>0.5.1/*</version>
     </dependency>
     <dependency>
       <name>personalization-integration</name>
