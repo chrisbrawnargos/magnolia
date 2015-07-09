@@ -55,9 +55,9 @@ public class VariantAwareTourServices extends TourServices {
     @Override
     public String getCategoryLink(Node content, String categoryName, String featureSubType) {
         try {
-            Node page = content;
-            if (variantManager.isVariant(content)) {
-                page = NodeUtil.getNearestAncestorOfType(NodeUtil.deepUnwrap(content, PersonalizationNodeWrapper.class), NodeTypes.Page.NAME);
+            Node page = templatingFunctions.page(content);
+            if (variantManager.isVariant(page)) {
+                page = NodeUtil.getNearestAncestorOfType(NodeUtil.deepUnwrap(page, PersonalizationNodeWrapper.class), NodeTypes.Page.NAME);
             }
             return super.getCategoryLink(page, categoryName, featureSubType);
 
