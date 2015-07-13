@@ -6,15 +6,6 @@
   <versionHandler>info.magnolia.demo.travel.personalization.setup.TravelDemoPersonalizationModuleVersionHandler</versionHandler>
   <version>${project.version}</version>
 
-  <components>
-    <id>main</id>
-    <component>
-      <type>info.magnolia.demo.travel.tours.service.TourServices</type>
-      <implementation>info.magnolia.demo.travel.personalization.VariantAwareTourServices</implementation>
-      <scope>singleton</scope>
-    </component>
-  </components>
-
   <dependencies>
     <dependency>
       <name>tours</name>

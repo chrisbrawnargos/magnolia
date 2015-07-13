@@ -74,7 +74,7 @@ public class TourServices {
 
     private final ToursModule toursModule;
     private final TemplateTypeHelper templateTypeHelper;
-    protected final TemplatingFunctions templatingFunctions;
+    private final TemplatingFunctions templatingFunctions;
     private final CategorizationTemplatingFunctions categorizationTemplatingFunctions;
     private final DamTemplatingFunctions damFunctions;
 
