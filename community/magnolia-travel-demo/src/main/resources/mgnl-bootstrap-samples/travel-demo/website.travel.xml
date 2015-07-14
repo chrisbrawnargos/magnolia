@@ -6068,7 +6068,7 @@ F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:template" sv:type="String">
-        <sv:value>travel-demo:pages/standard</sv:value>
+        <sv:value>travel-demo:pages/aboutDemo</sv:value>
       </sv:property>
       <sv:property sv:name="title" sv:type="String">
         <sv:value>About this demo</sv:value>

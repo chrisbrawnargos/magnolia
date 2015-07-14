@@ -18,9 +18,7 @@
 [#assign site = sitefn.site()!]
 [#assign theme = sitefn.theme(site)!]
 
-[#if site.name!="sportstation"]
-    [#assign aboutPage=cmsfn.link(cmsfn.nodeByPath("/travel/meta/about-demo"))]
-[/#if]
+[#assign aboutPage=model.aboutDemoLink!]
 
 [#-------------- RENDERING --------------]
 <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="clear:both;">

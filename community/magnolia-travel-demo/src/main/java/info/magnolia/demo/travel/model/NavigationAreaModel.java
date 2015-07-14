@@ -67,6 +67,7 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
 
     private static final String CURRENT_ACTIVE_CSS_CLASS = "active";
     private static final String CHILD_ACTIVE_CSS_CLASS = "child-active";
+    private static final String DEMO_ABOUT_TEMPLATE_SUBTYPE = "demo-about";
 
     private final TemplatingFunctions templatingFunctions;
 
@@ -105,6 +106,20 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
             log.error("Could not retrieve pages for navigation.", e);
         }
         return Collections.emptyList();
+    }
+
+    public String getAboutDemoLink() {
+        Node siteRoot = templatingFunctions.siteRoot(content);
+        String link = null;
+        try {
+            List<Node> nodes = templatingFunctions.contentListByTemplateType(siteRoot, DefaultTemplateTypes.FEATURE, DEMO_ABOUT_TEMPLATE_SUBTYPE);
+            if (nodes.size() > 0) {
+                link = templatingFunctions.link(nodes.get(0));
+            }
+        } catch (RepositoryException e) {
+            log.error("Could not get the '{}' page.", DEMO_ABOUT_TEMPLATE_SUBTYPE, e);
+        }
+        return link;
     }
 
     private List<NavigationItem> getChildPages(Node parent) throws RepositoryException {
