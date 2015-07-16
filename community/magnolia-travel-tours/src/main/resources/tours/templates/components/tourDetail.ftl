@@ -3,9 +3,6 @@
 [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 [#include "/tours/templates/macros/sampleTourText.ftl" /]
 
-[#assign site = sitefn.site()!]
-[#assign theme = sitefn.theme(site)!]
-
 [#assign tour = model.tour]
 [#assign asset = tour.image!]
 [#if asset?exists]
@@ -38,7 +35,7 @@
             <div class="category-icons">
                 [#list relatedTourTypes as tourType]
                     <div class="category-icon absolute-center-container">
-                        <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.nodeName theme.name ctx /]</a>
+                        <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.icon tourType.name /]</a>
                     </div>
                 [/#list]
             </div>
@@ -56,7 +53,7 @@
                 [#list relatedDestinations as destination]
                     [#assign rendition = damfn.getRendition(destination.image, "small-square")!]
                     <a href="${tourfn.getDestinationLink(content, destination.nodeName)!'#'}">
-                        [@tourImage rendition "" destination.name "img-circle img-responsive" /]
+                        [@tourTypeIcon destination.icon destination.name /]
                     </a>
                 [/#list]
             [/#if]
@@ -82,7 +79,7 @@
                     <div class="category-icons">
                         [#list relatedTourTypes as tourType]
                             <div class="category-icon absolute-center-container">
-                                <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.nodeName theme.name ctx /]</a>
+                                <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.icon tourType.name /]</a>
                             </div>
                         [/#list]
                     </div>

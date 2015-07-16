@@ -2,9 +2,6 @@
 [#include "/tours/templates/macros/image.ftl" /]
 [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
-[#assign site = sitefn.site()!]
-[#assign theme = sitefn.theme(site)!]
-
 [#assign tours = model.tours]
 [#assign showTourTypes = content.showTourTypes!true]
 
@@ -32,6 +29,7 @@
         [/#if]
         [#assign assetCredit = tour.image.caption!]
         [#assign rendition = damfn.getRendition(tour.image, "xxlarge")!]
+        [#assign iconRendition = damfn.getRendition(tour.icon)!]
 
         <div class="item ${activeClass}"${backgroundImage(rendition)}>
             <div class="container">
@@ -41,7 +39,7 @@
                         <div class="category-icons">
                             [#list tour.tourTypes as tourType]
                                 <div class="category-icon absolute-center-container">
-                                    <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.nodeName theme.name ctx /]</a>
+                                    <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.icon tourType.name /]</a>
                                 </div>
                             [/#list]
                         </div>

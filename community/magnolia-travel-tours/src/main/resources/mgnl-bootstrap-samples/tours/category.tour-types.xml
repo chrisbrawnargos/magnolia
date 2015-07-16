@@ -19,7 +19,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-    <sv:value>2015-07-01T10:50:59.252+02:00</sv:value>
+    <sv:value>2015-07-16T13:55:58.066+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -55,6 +55,9 @@
     <sv:property sv:name="displayName_de" sv:type="String">
       <sv:value>Aktiv</sv:value>
     </sv:property>
+    <sv:property sv:name="icon" sv:type="String">
+      <sv:value>jcr:57ad1ee6-87a5-4fb7-ac8c-16f6fdf35d28</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:b601ef57-a44a-432d-bc9a-bb228890b01d</sv:value>
     </sv:property>
@@ -74,13 +77,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:51:02.323+02:00</sv:value>
+      <sv:value>2015-07-16T13:55:58.159+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-18T14:59:03.905+02:00</sv:value>
+      <sv:value>2015-07-16T13:48:24.360+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -114,6 +117,9 @@
     <sv:property sv:name="displayName_de" sv:type="String">
       <sv:value>Strand</sv:value>
     </sv:property>
+    <sv:property sv:name="icon" sv:type="String">
+      <sv:value>jcr:e236c74c-6b35-4467-b322-933419ecfd87</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:9471f8d5-389b-43f5-bbe6-8a4ee4a5944c</sv:value>
     </sv:property>
@@ -133,13 +139,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:51:04.895+02:00</sv:value>
+      <sv:value>2015-07-16T13:55:58.143+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-18T14:59:45.604+02:00</sv:value>
+      <sv:value>2015-07-16T13:53:05.216+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -173,6 +179,9 @@
     <sv:property sv:name="displayName_de" sv:type="String">
       <sv:value>Kultur</sv:value>
     </sv:property>
+    <sv:property sv:name="icon" sv:type="String">
+      <sv:value>jcr:58c420b6-fa30-4578-8af0-c062ba51e5fb</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:a792164f-5a2a-4708-b3c8-62b48a578200</sv:value>
     </sv:property>
@@ -192,13 +201,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:51:08.166+02:00</sv:value>
+      <sv:value>2015-07-16T13:55:58.128+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-18T15:00:17.839+02:00</sv:value>
+      <sv:value>2015-07-16T13:53:20.693+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -232,6 +241,9 @@
     <sv:property sv:name="displayName_de" sv:type="String">
       <sv:value>Ökotourismus, Pflanzen- und Tierwelt</sv:value>
     </sv:property>
+    <sv:property sv:name="icon" sv:type="String">
+      <sv:value>jcr:8ad908e7-2ab7-4fe2-b1ed-e6eb3f68f3b0</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:2fd89d97-f932-4533-8a30-d70988bde30c</sv:value>
     </sv:property>
@@ -251,13 +263,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:51:11.062+02:00</sv:value>
+      <sv:value>2015-07-16T13:55:58.114+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-18T15:00:59.126+02:00</sv:value>
+      <sv:value>2015-07-16T13:53:32.401+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -292,6 +304,9 @@
     <sv:property sv:name="displayName_de" sv:type="String">
       <sv:value>Familie</sv:value>
     </sv:property>
+    <sv:property sv:name="icon" sv:type="String">
+      <sv:value>jcr:1d52d31d-8cc2-4ade-a4cf-c0d6699423ad</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:acd47d04-5b98-4995-9c3b-cc3c81cd8288</sv:value>
     </sv:property>
@@ -311,13 +326,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:51:13.664+02:00</sv:value>
+      <sv:value>2015-07-16T13:55:58.099+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-18T15:01:33.584+02:00</sv:value>
+      <sv:value>2015-07-16T13:53:44.724+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -353,6 +368,9 @@
     <sv:property sv:name="displayName_de" sv:type="String">
       <sv:value>Abseits der Trampelpfade</sv:value>
     </sv:property>
+    <sv:property sv:name="icon" sv:type="String">
+      <sv:value>jcr:6d5d576a-79f9-48d9-b141-6682f2eef585</sv:value>
+    </sv:property>
     <sv:property sv:name="image" sv:type="String">
       <sv:value>jcr:272f75b9-ed87-4e0b-8bf3-15db217ba897</sv:value>
     </sv:property>
@@ -372,13 +390,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:51:16.068+02:00</sv:value>
+      <sv:value>2015-07-16T13:55:58.085+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-18T15:04:48.792+02:00</sv:value>
+      <sv:value>2015-07-16T13:53:56.235+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>

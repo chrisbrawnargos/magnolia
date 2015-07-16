@@ -587,6 +587,16 @@ div.inline ul li img, ul.social-icons img {
     margin-left: -50px;
 }
 
+@media ( min-width: 768px) {
+    /* Bump up size of product-location content */
+    .product-location {
+        width: 80px;
+        margin-left: -40px;
+    }
+}
+
+
+
 .product-property {
     float: left;
     padding: 10px;

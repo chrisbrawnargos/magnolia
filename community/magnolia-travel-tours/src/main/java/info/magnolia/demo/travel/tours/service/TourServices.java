@@ -146,6 +146,11 @@ public class TourServices {
                     Asset image = damFunctions.getAsset(categoryNode.getProperty(Category.PROPERTY_NAME_IMAGE).getString());
                     category.setImage(image);
                 }
+
+                if (categoryNode.hasProperty(Category.PROPERTY_NAME_ICON)) {
+                    Asset icon = damFunctions.getAsset(categoryNode.getProperty(Category.PROPERTY_NAME_ICON).getString());
+                    category.setIcon(icon);
+                }
             } catch (RepositoryException e) {
                 log.debug("Could not marshall category from node [{}]", categoryNodeRaw);
             }
