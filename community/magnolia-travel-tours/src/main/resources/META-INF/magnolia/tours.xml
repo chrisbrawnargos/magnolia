@@ -29,7 +29,7 @@
     </dependency>
     <dependency>
       <name>travel-demo</name>
-      <version>${project.version}/*</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <name>ui-admincentral</name>
