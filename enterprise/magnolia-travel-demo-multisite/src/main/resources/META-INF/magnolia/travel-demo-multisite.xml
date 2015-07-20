@@ -12,7 +12,7 @@
     </dependency>
     <dependency>
       <name>multisite</name>
-      <version>1.2/*</version>
+      <version>1.2.1/*</version>
     </dependency>
   </dependencies>
 </module>

@@ -26,6 +26,23 @@
     <div class="container">
         [#if aboutPage?has_content]<div id="about-link"><a href="${aboutPage}">${i18n['navigation.aboutDemo']}</a></div>[/#if]
 
+        [#assign localizedLinks = cmsfn.localizedLinks()!]
+        [#if localizedLinks?has_content]
+            [#assign languages = localizedLinks?keys]
+            <div id="language-link">
+                <ul>
+                    [#list languages as lang]
+                        [#assign current = cmsfn.isCurrentLocale(lang)]
+                        <li>[@compress single_line=true]
+                            [#-- Current locale should not be linked --]
+                            [#-- This look ugly but is the only way to prevent white spaces from interfering --]
+                            [#if !current]<a href="${localizedLinks[lang]!'#'}" title="${model.getLocale(lang).getDisplayName()!lang!}">[#else]<span>[/#if]${model.getLocale(lang).getDisplayLanguage()!lang?upper_case!}[#if !current]</a>[#else]</span>[/#if]
+                        [/@compress]</li>
+                    [/#list]
+                </ul>
+            </div>
+        [/#if]
+
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                     aria-expanded="false" aria-controls="navbar" title="${i18n['navigation.toggle']}">
@@ -68,8 +85,6 @@
                 </ul>
             </div>
         [/#if]
-        
-        
 
     </div>
 

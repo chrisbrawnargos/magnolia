@@ -9,11 +9,11 @@
   <dependencies>
     <dependency>
       <name>core</name>
-      <version>5.4/*</version>
+      <version>5.4.1/*</version>
     </dependency>
     <dependency>
       <name>rendering</name>
-      <version>5.4/*</version>
+      <version>5.4.1/*</version>
     </dependency>
     <dependency>
       <name>dam-jcr</name>
@@ -25,7 +25,7 @@
     </dependency>
     <dependency>
       <name>site</name>
-      <version>1.0/*</version>
+      <version>1.0.1/*</version>
     </dependency>
     <dependency>
       <name>mte</name>
@@ -33,7 +33,7 @@
     </dependency>
     <dependency>
       <name>multisite</name>
-      <version>1.2/*</version>
+      <version>1.2.1/*</version>
       <optional>true</optional>
     </dependency>
     <dependency>

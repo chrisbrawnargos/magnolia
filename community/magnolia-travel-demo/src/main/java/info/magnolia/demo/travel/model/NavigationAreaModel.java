@@ -47,11 +47,13 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 
 import javax.inject.Inject;
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 
+import org.apache.commons.lang3.LocaleUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -171,6 +173,10 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
 
     private boolean isActive(Node pageNode) throws RepositoryException {
         return pageNode.getPath().equals(content.getPath());
+    }
+
+    public Locale getLocale(String language) {
+        return LocaleUtils.toLocale(language);
     }
 
     /**

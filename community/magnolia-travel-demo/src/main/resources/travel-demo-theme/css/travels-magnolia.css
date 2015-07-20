@@ -306,7 +306,6 @@ a.telephone-small:hover {
     font-size: 0.8em;
     text-transform: uppercase;
     background: #ef6155;
-    
 }
 
 #about-link:before {
@@ -323,6 +322,31 @@ a.telephone-small:hover {
 
 #about-link a{
   color:white;
+}
+
+#language-link {
+    position: absolute;
+    right: 200px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.8em;
+    float: right;
+    z-index: 1;
+}
+#language-link ul {
+    margin: 0;
+    padding: 0;
+}
+#language-link ul li {
+    display: inline;
+    list-style: none;
+}
+#language-link,
+#language-link a {
+    color: black;
+}
+#language-link a {
+    font-weight: bold;
 }
 
 /* MASTHEAD
