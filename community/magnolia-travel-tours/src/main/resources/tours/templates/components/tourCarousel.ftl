@@ -29,7 +29,6 @@
         [/#if]
         [#assign assetCredit = tour.image.caption!]
         [#assign rendition = damfn.getRendition(tour.image, "xxlarge")!]
-        [#assign iconRendition = damfn.getRendition(tour.icon)!]
 
         <div class="item ${activeClass}"${backgroundImage(rendition)}>
             <div class="container">

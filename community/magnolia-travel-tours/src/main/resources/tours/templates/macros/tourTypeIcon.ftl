@@ -1,4 +1,3 @@
 [#macro tourTypeIcon icon tourTypeName]
-    [#assign iconRendition = damfn.getRendition(icon,"")!]
-    <img class="img-responsive absolute-center" src="${iconRendition.link}" alt="${tourTypeName!}" title="${tourTypeName!}">
+    <img class="img-responsive absolute-center" src="${icon.link!}" alt="${tourTypeName!}" title="${tourTypeName!}">
 [/#macro]
