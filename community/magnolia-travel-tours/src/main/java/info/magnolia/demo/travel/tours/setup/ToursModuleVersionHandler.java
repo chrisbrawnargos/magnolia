@@ -73,13 +73,13 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
         tasks.add(new IsModuleInstalledOrRegistered("Copy template availability and navigation areas from site definition to multisite module", "multisite",
                 new ArrayDelegateTask("",
                         new CopyNodeTask("Copy tour template",
-                                "/modules/site/config/site/templates/availability/templates/tour", "/modules/multisite/config/sites/default/templates/availability/templates/tour", false),
+                                "/modules/travel-demo/config/travel/templates/availability/templates/tour", "/modules/multisite/config/sites/travel/templates/availability/templates/tour", false),
                         new CopyNodeTask("Copy categoryOverview template",
-                                "/modules/site/config/site/templates/availability/templates/categoryOverview", "/modules/multisite/config/sites/default/templates/availability/templates/categoryOverview", false),
+                                "/modules/travel-demo/config/travel/templates/availability/templates/categoryOverview", "/modules/multisite/config/sites/travel/templates/availability/templates/categoryOverview", false),
                         new CopyNodeTask("Copy categoryOverview template",
-                                "/modules/site/config/site/templates/availability/templates/destinationCatOverview", "/modules/multisite/config/sites/default/templates/availability/templates/destinationCatOverview", false),
+                                "/modules/travel-demo/config/travel/templates/availability/templates/destinationCatOverview", "/modules/multisite/config/sites/travel/templates/availability/templates/destinationCatOverview", false),
                         new CopyNodeTask("Copy tours navigation areas",
-                                "/modules/site/config/site/templates/prototype/areas/navigation/areas", "/modules/multisite/config/sites/default/templates/prototype/areas/navigation/areas", false))));
+                                "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/areas", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/areas", false))));
 
         return tasks;
     }

@@ -3,6 +3,7 @@
 <module>
   <name>travel-demo-multisite</name>
   <displayName>Magnolia Travel Demo Module - Multisite</displayName>
+  <versionHandler>info.magnolia.demo.travel.multisite.setup.TravelDemoMultiSiteModuleVersionHandler</versionHandler>
   <version>${project.version}</version>
 
   <dependencies>

@@ -7,7 +7,7 @@
     <sv:value>19317b44-4ad6-4160-829c-63e2a26859fa</sv:value>
   </sv:property>
   <sv:property sv:name="extends" sv:type="String">
-    <sv:value>../default</sv:value>
+    <sv:value>../travel</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>

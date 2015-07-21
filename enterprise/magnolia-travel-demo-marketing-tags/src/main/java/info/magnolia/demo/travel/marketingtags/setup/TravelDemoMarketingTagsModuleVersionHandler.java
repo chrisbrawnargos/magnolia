@@ -30,7 +30,7 @@ import java.util.List;
  */
 public class TravelDemoMarketingTagsModuleVersionHandler extends DefaultModuleVersionHandler {
 
-    protected static final String MULTISITE_PROTOTYPE = "/modules/multisite/config/sites/default/templates/prototype";
+    protected static final String MULTISITE_PROTOTYPE = "/modules/multisite/config/sites/travel/templates/prototype";
     protected static final String DEFAULT_MAIN_LOCATION = "/travel-demo/templates/pages/main.ftl";
 
     @Override
