@@ -1,3 +1,3 @@
-[#macro tourTypeIcon icon tourTypeName]
-    <img class="img-responsive absolute-center" src="${icon.link!}" alt="${tourTypeName!}" title="${tourTypeName!}">
+[#macro tourTypeIcon icon tourTypeName class]
+    <img class="${class!}" src="${icon.link!}" alt="${tourTypeName!}" title="${tourTypeName!}">
 [/#macro]

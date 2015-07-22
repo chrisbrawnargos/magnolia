@@ -39,11 +39,10 @@ import static org.hamcrest.core.IsNot.not;
 import static org.mockito.Mockito.*;
 
 import info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition;
+import info.magnolia.demo.travel.tours.service.Tour;
 import info.magnolia.demo.travel.tours.service.TourServices;
-import info.magnolia.jcr.util.ContentMap;
 import info.magnolia.rendering.model.RenderingModel;
 import info.magnolia.test.MgnlTestCase;
-import info.magnolia.test.mock.jcr.MockNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,17 +74,23 @@ public class RelatedToursModelTest extends MgnlTestCase {
     @Test
     public void testFilterCurrentTour() throws Exception {
         // GIVEN
-        final ContentMap currentTour = new ContentMap(new MockNode());
-        final ContentMap someTour1 = new ContentMap(new MockNode());
-        final ContentMap someTour2 = new ContentMap(new MockNode());
+        final Node currentTourNode = mock(Node.class);
+        final Tour currentTour = new Tour();
+        final Tour someTour1 = new Tour();
+        final Tour someTour2 = new Tour();
 
         String identifier = "bla-124-124sd";
         String categoryName = "some-category";
 
-        when(templateDefinition.getCategory()).thenReturn(categoryName);
-        when(tourServices.getTourNodeByParameter()).thenReturn(currentTour.getJCRNode());
+        currentTour.setIdentifier(identifier);
+        someTour1.setIdentifier(identifier + "-1");
+        someTour2.setIdentifier(identifier + "-2");
 
-        ArrayList<ContentMap> tours = new ArrayList<ContentMap>() {{
+        when(currentTourNode.getIdentifier()).thenReturn(identifier);
+        when(templateDefinition.getCategory()).thenReturn(categoryName);
+        when(tourServices.getTourNodeByParameter()).thenReturn(currentTourNode);
+
+        List<Tour> tours = new ArrayList<Tour>() {{
             add(0, currentTour);
             add(1, someTour1);
             add(1, someTour2);
@@ -93,12 +98,12 @@ public class RelatedToursModelTest extends MgnlTestCase {
         when(tourServices.getToursByCategory(categoryName, identifier, true)).thenReturn(tours);
 
         // WHEN
-        List<ContentMap> relatedTours = model.getRelatedToursByCategory(identifier);
+        List<Tour> relatedTours = model.getRelatedToursByCategory(identifier);
 
         // THEN
         assertThat(relatedTours, not(hasItem(currentTour)));
         assertThat(relatedTours, hasItem(someTour1));
         assertThat(relatedTours, hasItem(someTour2));
-
     }
+
 }

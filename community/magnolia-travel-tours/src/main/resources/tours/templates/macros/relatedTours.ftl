@@ -3,35 +3,46 @@
 
     [#include "/tours/templates/macros/image.ftl" /]
     [#include "/tours/templates/macros/editorAlert.ftl" /]
+    [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
     [#if tours?has_content || cmsfn.editMode]
     <div class="container after-category-header">
 
-    [#-- get(key, args[]) requires the second parameter to be a sequence --]
+        [#-- get(key, args[]) requires the second parameter to be a sequence --]
         <h2>${i18n.get('tour.featured', [categoryName])}</h2>
-        <div class="row">
+        <div class="row featured-card-row">
             [#list tours as tour]
                 [#assign name = tour.name!tour.@name /]
                 [#assign description = tour.description!"" /]
-                [#assign tourLink = tourfn.getTourLink(tour)!"#" /]
+                [#assign tourLink = tour.link /]
+                [#assign rendition = damfn.getRendition(tour.image, "large-16x9") /]
 
-                <div class="col-md-4 product-card">
-                    <div class="product-card-wrapper">
-                        <span class="card-teaser-image clearfix">
-                            [#assign assetRendition = damfn.getRendition(tour.image, "large-16x9") /]
-                            [@tourImage assetRendition "" name /]
-                        </span>
+                <a class="featured-card-anchor" href="${tourLink!}">
+                    <div class="col-md-4 featured-card card"${backgroundImage(rendition)}>
+                        <div class="featured-card-shader"></div>
+                        <div class="featured-blaze"></div>
+
+                        <div class="featured-blaze-text">${i18n['tour.featured.card']}</div>
+
                         <h3>${name!}</h3>
-                        <div class="product-card-content">
+                        <div class="category-icons">
+                            [#list tour.tourTypes as tourType]
+                                <div class="category-icon">
+                                    [@tourTypeIcon tourType.icon tourType.name "" /]
+                                </div>
+                            [/#list]
+                        </div>
+
+                        <div class="featured-card-content" >
                             [#if description?has_content]
                                 <p><span class="description">${description!}</span></p>
                             [/#if]
                         </div>
-                        <p class="card-button clearfix">
-                            <a class="btn btn-primary" href="${tourLink}">${i18n['tour.view']}</a>
-                        </p>
+                        <div class="card-button">
+                            <div class="btn btn-primary" >${i18n['tour.view']}</div>
+                        </div>
                     </div>
-                </div>
+                </a>
             [/#list]
         </div>
 

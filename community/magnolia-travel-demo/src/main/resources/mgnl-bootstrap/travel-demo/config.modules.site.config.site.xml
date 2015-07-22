@@ -353,7 +353,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
         </sv:node>
-        <sv:node sv:name="sticky-menu">
+        <sv:node sv:name="viewport-units-buggyfill">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:contentNode</sv:value>
           </sv:property>
@@ -361,7 +361,7 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>fce8c78d-7cf3-40ca-b76a-e335779ad446</sv:value>
+            <sv:value>dd53e39c-0bcf-46f9-bb38-c4a06c805c74</sv:value>
           </sv:property>
           <sv:property sv:name="addFingerPrint" sv:type="Boolean">
             <sv:value>true</sv:value>
@@ -370,25 +370,25 @@
             <sv:value>admin</sv:value>
           </sv:property>
           <sv:property sv:name="link" sv:type="String">
-            <sv:value>/.resources/travel-demo-theme/js/sticky-menu.js</sv:value>
+            <sv:value>/.resources/travel-demo-theme/js/viewport-units-buggyfill.js</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-02-24T16:19:54.026+01:00</sv:value>
+            <sv:value>2015-07-21T11:28:59.496+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-02-24T16:19:54.026+01:00</sv:value>
+            <sv:value>2015-07-21T11:28:59.496+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-02-24T16:20:23.089+01:00</sv:value>
+            <sv:value>2015-07-21T11:29:40.211+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
             <sv:value>superuser</sv:value>

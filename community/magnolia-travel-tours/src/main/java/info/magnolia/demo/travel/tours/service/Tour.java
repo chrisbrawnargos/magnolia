@@ -61,6 +61,7 @@ public class Tour {
     private String location;
     private String duration;
     private String author;
+    private String identifier;
 
     private Asset image;
 
@@ -145,6 +146,14 @@ public class Tour {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getIdentifier() {
+        return identifier;
+    }
+
+    public void setIdentifier(String identifier) {
+        this.identifier = identifier;
     }
 
 }

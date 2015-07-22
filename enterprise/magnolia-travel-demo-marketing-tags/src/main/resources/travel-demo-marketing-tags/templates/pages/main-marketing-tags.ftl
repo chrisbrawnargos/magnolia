@@ -34,5 +34,8 @@
 [/#if]
 [#-- Scripts to be rendered at the end of the body. --]
 [@cms.area name="bodyEndScripts"/]
+
+<script>window.viewportUnitsBuggyfill.init();</script>
+
 </body>
 </html>

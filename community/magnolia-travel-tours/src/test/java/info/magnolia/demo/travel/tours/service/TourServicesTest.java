@@ -43,6 +43,7 @@ import info.magnolia.cms.beans.config.URI2RepositoryMapping;
 import info.magnolia.cms.core.AggregationState;
 import info.magnolia.cms.i18n.DefaultI18nContentSupport;
 import info.magnolia.cms.i18n.I18nContentSupport;
+import info.magnolia.cms.i18n.LocaleDefinition;
 import info.magnolia.context.MgnlContext;
 import info.magnolia.dam.api.Asset;
 import info.magnolia.dam.templating.functions.DamTemplatingFunctions;
@@ -57,6 +58,8 @@ import info.magnolia.templating.functions.TemplatingFunctions;
 import info.magnolia.test.ComponentsTestUtil;
 import info.magnolia.test.mock.MockWebContext;
 import info.magnolia.test.mock.jcr.MockSession;
+
+import java.util.Locale;
 
 import javax.inject.Provider;
 import javax.jcr.Node;
@@ -79,13 +82,22 @@ public class TourServicesTest {
     private MockSession sessionTours;
     private DamTemplatingFunctions damTemplatingFunctions;
     private TourServices tourServices;
+    private AggregationState aggregationState;
+    private DefaultI18nContentSupport defaultI18nContentSupport;
 
     @Before
     public void setUp() {
         session = new MockSession(RepositoryConstants.WEBSITE);
         sessionTours = new MockSession(ToursModule.TOURS_REPOSITORY_NAME);
 
-        final AggregationState aggregationState = new AggregationState();
+        aggregationState = new AggregationState();
+        aggregationState.setLocale(Locale.ENGLISH);
+
+        defaultI18nContentSupport = new DefaultI18nContentSupport();
+        defaultI18nContentSupport.setEnabled(true);
+        defaultI18nContentSupport.setDefaultLocale(Locale.ENGLISH);
+        defaultI18nContentSupport.addLocale(LocaleDefinition.make("en", "", true));
+        defaultI18nContentSupport.addLocale(LocaleDefinition.make("de", "", true));
 
         context = new MockWebContext();
         context.setContextPath(CONTEXT_PATH);
@@ -98,7 +110,7 @@ public class TourServicesTest {
         final LinkTransformerManager linkTransformerManager = new LinkTransformerManager();
         linkTransformerManager.setAddContextPathToBrowserLinks(true);
         ComponentsTestUtil.setInstance(LinkTransformerManager.class, linkTransformerManager);
-        ComponentsTestUtil.setImplementation(I18nContentSupport.class, DefaultI18nContentSupport.class);
+        ComponentsTestUtil.setInstance(I18nContentSupport.class, defaultI18nContentSupport);
 
         final URI2RepositoryMapping tourMapping = new URI2RepositoryMapping(URI_PREFIX, ToursModule.TOURS_REPOSITORY_NAME, "");
         final URI2RepositoryManager uri2RepositoryManager = new URI2RepositoryManager();
@@ -148,6 +160,24 @@ public class TourServicesTest {
         assertThat(category.getBody(), is("bodyText"));
         assertThat(category.getDescription(), is("description"));
         assertThat(category.getImage(), is(asset));
+        assertThat(category.getIdentifier(), is(node.getIdentifier()));
+    }
+
+    @Test
+    public void marshallCategoryNodeI18nized() throws Exception {
+        // GIVEN
+        final Locale locale = Locale.FRENCH;
+        aggregationState.setLocale(locale);
+
+        final Node node = NodeUtil.createPath(session.getRootNode(), "test-node", NodeTypes.ContentNode.NAME);
+        node.setProperty(Category.PROPERTY_NAME_DESCRIPTION, "description");
+        node.setProperty(Category.PROPERTY_NAME_DESCRIPTION + "_" + locale.toString(), "description_FR");
+
+        // WHEN
+        final Category category = tourServices.marshallCategoryNode(node);
+
+        // THEN
+        assertThat(category.getDescription(), is("description_FR"));
     }
 
     @Test
@@ -169,6 +199,24 @@ public class TourServicesTest {
         assertThat(tour.getName(), is("tourDisplayName"));
         assertThat(tour.getDescription(), is("description"));
         assertThat(tour.getImage(), is(asset));
+        assertThat(tour.getIdentifier(), is(node.getIdentifier()));
+    }
+
+    @Test
+    public void marshallTourNodeI18nized() throws Exception {
+        // GIVEN
+        final Locale locale = Locale.GERMAN;
+        aggregationState.setLocale(locale);
+
+        final Node node = NodeUtil.createPath(session.getRootNode(), "test-node", NodeTypes.ContentNode.NAME);
+        node.setProperty(Tour.PROPERTY_NAME_DESCRIPTION, "description");
+        node.setProperty(Tour.PROPERTY_NAME_DESCRIPTION + "_" + locale.toString(), "description_DE");
+
+        // WHEN
+        final Tour tour = tourServices.marshallTourNode(node);
+
+        // THEN
+        assertThat(tour.getDescription(), is("description_DE"));
     }
 
     @Test

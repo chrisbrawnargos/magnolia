@@ -1,36 +1,30 @@
 [#-------------- ASSIGNMENTS --------------]
-[#include "/tours/templates/macros/image.ftl" /]
+[#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
-[#assign tours = model.tours]
+[#assign tourTypes = model.tours]
 
 
 [#-------------- RENDERING --------------]
 <!-- TourType Teaser Row -->
-<div class="container category-teaser-row after-lead-image">
+<div class="container category-card-row after-lead-image">
     <div class="row">
 
         <h2>${content.title!}</h2>
         <p>${content.body!}</p>
 
-        [#list tours as tour]
-            [#assign rendition = damfn.getRendition(tour.image, "large-16x9")!]
-
-            <div class="col-md-4 category-card">
-                [#if rendition?has_content]
-                    <span class="card-teaser-image clearfix">
-                        [@tourImage rendition "" tour.name /]
-                    </span>
-                [/#if]
-
-                <h3>${tour.name!}</h3>
-
-                <div class="category-card-content">
-                    <p>${tour.description!}</p>
+        [#list tourTypes as tourType]
+            <a class="category-card-anchor" href="${tourType.link!'#'}">
+                <div class="col-md-4 category-card">
+                    <div class="category-icon absolute-center-container">
+                        [@tourTypeIcon tourType.icon tourType.name "absolute-center" /]
+                    </div>
+                    <h3>${tourType.name!}</h3>
+                    <div class="category-card-content">
+                        <p>${tourType.description!}</p>
+                    </div>
                 </div>
-                <p class="card-button">
-                    <a class="btn btn-primary" href="${tour.link!"#"}">${i18n.get('tour.view.named', [tour.name!""])}</a>
-                </p>
-            </div>
+            </a>
         [/#list]
+
     </div>
 </div>

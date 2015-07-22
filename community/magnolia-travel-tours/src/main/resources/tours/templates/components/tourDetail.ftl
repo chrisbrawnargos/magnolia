@@ -27,39 +27,45 @@
 
 [#-------------- RENDERING --------------]
 <!-- TourDetail -->
-<div class="product-header"${backgroundImage(renditionDetail)}>
-    <div class="lead-caption">
-        <h1>${tour.name}</h1>
+<div class="product-header">
+    <div class="navbar-spacer"></div>
+    <div class="header-wrapper" ${backgroundImage(renditionDetail)}>
+        <div class="lead-caption">
+            <h1>${tour.name}</h1>
 
-        [#if showTourTypes]
-            <div class="category-icons">
-                [#list relatedTourTypes as tourType]
-                    <div class="category-icon absolute-center-container">
-                        <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.icon tourType.name /]</a>
-                    </div>
-                [/#list]
-            </div>
-        [/#if]
+            [#if showTourTypes]
+                <div class="category-icons">
+                    [#list relatedTourTypes as tourType]
+                        <div class="category-icon absolute-center-container">
+                            <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">
+                                [@tourTypeIcon tourType.icon tourType.name "absolute-center" /]
+                            </a>
+                        </div>
+                    [/#list]
+                </div>
+            [/#if]
+        </div>
     </div>
 </div>
 
-
-<div class="container after-product-header after-product-header-2">
+<div class="product-header-spacer"></div>
+<div class="container after-product-header">
 
     <div class="row product-info product-summary">
 
             <div class="product-location">
             [#if showDestinations]
                 [#list relatedDestinations as destination]
-                    [#assign rendition = damfn.getRendition(destination.image, "small-square")!]
-                    <a href="${tourfn.getDestinationLink(content, destination.nodeName)!'#'}">
-                        [@tourTypeIcon destination.icon destination.name /]
-                    </a>
+                    <div class="category-icon absolute-center-container">
+                        <a href="${tourfn.getDestinationLink(content, destination.nodeName)!'#'}">
+                            [@tourTypeIcon destination.icon destination.name "absolute-center" /]
+                        </a>
+                    </div>
                 [/#list]
             [/#if]
             </div>
 
-        <div class="col-xs-10 col-xs-push-1">
+        <div class="product-properties col-xs-10 col-xs-push-1">
             <div class="product-property">
                 <div class="property-label">${i18n.get('tour.property.startCity')}</div>
                 <div class="property-value">${tour.location!}</div>
@@ -78,9 +84,10 @@
                 <div class="property-value product-categories">
                     <div class="category-icons">
                         [#list relatedTourTypes as tourType]
-                            <div class="category-icon absolute-center-container">
-                                <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.icon tourType.name /]</a>
-                            </div>
+                            <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">
+                                <div class="category-icon absolute-center-container">
+                                    [@tourTypeIcon tourType.icon tourType.name  "absolute-center" /]
+                                </div></a>
                         [/#list]
                     </div>
                 </div>
@@ -95,7 +102,7 @@
     </div>
 
     <div class="row product-info">
-        <div class="col-xs-10 col-xs-push-1">
+        <div class="col-xs-10 col-xs-push-1 product-property">
             <p class="summary">${tour.description}</p>
 
             [#if tour.body?has_content]
@@ -106,7 +113,7 @@
 
     <!-- Additional sample text for the purposes of demonstrating what a full page could look like -->
     <div class="row product-info">
-        <div class="col-xs-10 col-xs-push-1">
+        <div class="col-xs-10 col-xs-push-1 product-property">
             <hr style="margin-top:0px;"/>
             <div class="body">[@sampleTourText /]</div>
         </div>

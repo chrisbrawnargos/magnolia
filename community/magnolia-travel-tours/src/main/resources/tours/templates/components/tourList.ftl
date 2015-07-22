@@ -19,12 +19,9 @@
 
     <div class="row">
         [#list tours as tour]
-            [#assign link = tourfn.getTourLink(tour)!"#"]
-            [#assign asset = damfn.getAsset(tour.image)!]
-            [@tourTeaser tour.name tour.description link asset /]
+            [@tourTeaser tour /]
         [/#list]
     </div>
 
     [@editorAlert i18n.get('note.for.editors.assign.category', [category.name!""]) /]
 </div>
-

@@ -27,5 +27,8 @@
         <script src="${jsFile.link}"></script>
     [/#list]
 [/#if]
+
+<script>window.viewportUnitsBuggyfill.init();</script>
+
 </body>
 </html>

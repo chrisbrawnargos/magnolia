@@ -40,7 +40,8 @@ import info.magnolia.context.MgnlContext;
 import info.magnolia.dam.api.Asset;
 import info.magnolia.dam.templating.functions.DamTemplatingFunctions;
 import info.magnolia.demo.travel.tours.ToursModule;
-import info.magnolia.jcr.util.ContentMap;
+import info.magnolia.jcr.util.NodeUtil;
+import info.magnolia.jcr.wrapper.I18nNodeWrapper;
 import info.magnolia.module.categorization.functions.CategorizationTemplatingFunctions;
 import info.magnolia.rendering.template.type.DefaultTemplateTypes;
 import info.magnolia.rendering.template.type.TemplateTypeHelper;
@@ -123,7 +124,8 @@ public class TourServices {
 
         if (categoryNodeRaw != null) {
             try {
-                final Node categoryNode = templatingFunctions.wrapForI18n(categoryNodeRaw);
+                final Node categoryNode = wrapForI18n(categoryNodeRaw);
+
                 String name = categoryNode.getName();
                 if (categoryNode.hasProperty(Category.PROPERTY_NAME_DISPLAY_NAME)) {
                     name = categoryNode.getProperty(Category.PROPERTY_NAME_DISPLAY_NAME).getString();
@@ -184,6 +186,10 @@ public class TourServices {
         return categories;
     }
 
+    private Node wrapForI18n(Node node) {
+        return NodeUtil.isWrappedWith(node, I18nNodeWrapper.class) ? node : templatingFunctions.wrapForI18n(node);
+    }
+
     /**
      * Creates a {@link Tour} from a {@link Node}.
      */
@@ -191,10 +197,13 @@ public class TourServices {
         Tour tour = null;
 
         if (tourNodeRaw != null) {
-            final Node tourNode = templatingFunctions.wrapForI18n(tourNodeRaw);
+            final Node tourNode = wrapForI18n(tourNodeRaw);
+
             tour = new Tour();
 
             try {
+                tour.setIdentifier(tourNode.getIdentifier());
+
                 tour.setName(tourNode.getName());
                 if (tourNode.hasProperty(Tour.PROPERTY_NAME_DISPLAY_NAME)) {
                     tour.setName(tourNode.getProperty(Tour.PROPERTY_NAME_DISPLAY_NAME).getString());
@@ -323,12 +332,12 @@ public class TourServices {
         return categories;
     }
 
-    public List<ContentMap> getToursByCategory(String categoryPropertyName, String identifier) {
+    public List<Tour> getToursByCategory(String categoryPropertyName, String identifier) {
         return getToursByCategory(categoryPropertyName, identifier, false);
     }
 
-    public List<ContentMap> getToursByCategory(String categoryPropertyName, String identifier, boolean featured) {
-        final List<ContentMap> tours = new LinkedList<>();
+    public List<Tour> getToursByCategory(String categoryPropertyName, String identifier, boolean featured) {
+        final List<Tour> tours = new LinkedList<>();
 
         try {
             final Session session = MgnlContext.getJCRSession(ToursModule.TOURS_REPOSITORY_NAME);
@@ -339,7 +348,8 @@ public class TourServices {
 
             final List<Node> tourNodes = templateTypeHelper.getContentListByTemplateIds(session.getRootNode(), null, Integer.MAX_VALUE, query, null);
             for (Node tourNode : tourNodes) {
-                tours.add(templatingFunctions.asContentMap(tourNode));
+                final Tour tour = marshallTourNode(tourNode);
+                tours.add(tour);
             }
 
         } catch (RepositoryException e) {

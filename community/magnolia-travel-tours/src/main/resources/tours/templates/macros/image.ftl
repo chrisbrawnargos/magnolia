@@ -16,7 +16,7 @@
 [#-- Function that returns a style attribute with background-image and -size for given asset rendition --]
 [#function backgroundImage assetRendition]
     [#if assetRendition?exists && assetRendition?has_content]
-        [#return ' style="background-image: url(${assetRendition.link}); background-size: cover;"' /]
+        [#return ' style="background-image: url(${assetRendition.link}); background-size: cover; background-position:center;"' /]
     [#else]
         [#return "" /]
     [/#if]

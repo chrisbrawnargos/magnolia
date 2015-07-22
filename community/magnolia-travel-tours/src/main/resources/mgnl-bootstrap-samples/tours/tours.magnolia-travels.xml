@@ -116,7 +116,7 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
       <sv:value>Vietnam: Tradition and Today</sv:value>
     </sv:property>
     <sv:property sv:name="name_de" sv:type="String">
-      <sv:value>Abwechslungsreiches Vietnam</sv:value>
+      <sv:value>Vielfältiges Vietnam</sv:value>
     </sv:property>
     <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
       <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
@@ -1164,7 +1164,7 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
       <sv:value>The Trans-Siberian Railway</sv:value>
     </sv:property>
     <sv:property sv:name="name_de" sv:type="String">
-      <sv:value>Die Transsibirische Eisenbahn</sv:value>
+      <sv:value>Die Trans-Sibirische Eisenbahn</sv:value>
     </sv:property>
     <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
       <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
@@ -1501,7 +1501,7 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
       <sv:value>Antarctic Active Adventure</sv:value>
     </sv:property>
     <sv:property sv:name="name_de" sv:type="String">
-      <sv:value>Aktivabenteuer in der Antarktis</sv:value>
+      <sv:value>Aktiv Abenteuer in der Antarktis</sv:value>
     </sv:property>
     <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
       <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
@@ -1667,7 +1667,7 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
       <sv:value>Beach Paradise in Brazil</sv:value>
     </sv:property>
     <sv:property sv:name="name_de" sv:type="String">
-      <sv:value>Strandparadies in Brasilien</sv:value>
+      <sv:value>Strand Paradies in Brasilien</sv:value>
     </sv:property>
     <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
       <sv:value>082c340c-b062-4b15-86b8-96dd9deff680</sv:value>
@@ -2089,6 +2089,9 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
     <sv:property sv:name="description_de" sv:type="String">
       <sv:value>Ein Himmelreich für Naturliebhaber</sv:value>
     </sv:property>
+    <sv:property sv:name="destination" sv:type="String" sv:multiple="true">
+      <sv:value>bed2e297-199c-4dc8-90cd-54ad3cb4221b</sv:value>
+    </sv:property>
     <sv:property sv:name="duration" sv:type="String">
       <sv:value>7</sv:value>
     </sv:property>
@@ -2117,13 +2120,13 @@ W&amp;auml;hrend wir dort sind, besuchen wir den ber&amp;uuml;hmten Wei&amp;szli
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:49:37.602+02:00</sv:value>
+      <sv:value>2015-07-24T16:15:52.939+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-06-18T13:57:03.772+02:00</sv:value>
+      <sv:value>2015-07-24T16:15:03.836+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -2929,10 +2932,10 @@ Aber da ist noch mehr als Programmieren: Du erh&amp;auml;ltst die Gelegenheit, g
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="name" sv:type="String">
-      <sv:value>Scuba Diving in Bahamas’ famed Tiger Beach</sv:value>
+      <sv:value>Scuba Diving at Tiger Beach</sv:value>
     </sv:property>
     <sv:property sv:name="name_de" sv:type="String">
-      <sv:value>Scuba Diving am berühmten Tiger Beach der Bahamas</sv:value>
+      <sv:value>Tauchen am Tiger Beach</sv:value>
     </sv:property>
     <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
       <sv:value>d2245867-ecaa-4b4e-8743-e0c939be68b7</sv:value>

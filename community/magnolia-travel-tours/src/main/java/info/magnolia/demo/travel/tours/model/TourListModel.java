@@ -35,8 +35,8 @@ package info.magnolia.demo.travel.tours.model;
 
 import info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition;
 import info.magnolia.demo.travel.tours.service.Category;
+import info.magnolia.demo.travel.tours.service.Tour;
 import info.magnolia.demo.travel.tours.service.TourServices;
-import info.magnolia.jcr.util.ContentMap;
 import info.magnolia.rendering.model.RenderingModel;
 import info.magnolia.rendering.model.RenderingModelImpl;
 
@@ -69,7 +69,7 @@ public class TourListModel<RD extends TourCategoryTemplateDefinition> extends Re
         return tourServices.getCategoryByName(categoryName);
     }
 
-    public List<ContentMap> getToursByCategory(String identifier) {
+    public List<Tour> getToursByCategory(String identifier) {
         return tourServices.getToursByCategory(definition.getCategory(), identifier);
     }
 

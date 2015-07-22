@@ -44,7 +44,6 @@ import info.magnolia.cms.i18n.I18nContentSupport;
 import info.magnolia.context.MgnlContext;
 import info.magnolia.dam.templating.functions.DamTemplatingFunctions;
 import info.magnolia.demo.travel.tours.ToursModule;
-import info.magnolia.jcr.util.ContentMap;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.module.categorization.functions.CategorizationTemplatingFunctions;
@@ -133,11 +132,11 @@ public class TourServicesRepositoryTest extends RepositoryTestCase {
         tourSession.save(); // Need to save, running a query afterwards
 
         // WHEN
-        final List<ContentMap> categories = tourServices.getToursByCategory(Tour.PROPERTY_NAME_TOUR_TYPES_CATEGORY, referenceNode.getIdentifier(), true);
+        final List<Tour> tours = tourServices.getToursByCategory(Tour.PROPERTY_NAME_TOUR_TYPES_CATEGORY, referenceNode.getIdentifier(), true);
 
         // THEN
-        assertThat(categories, hasSize(1));
-        assertThat(categories.get(0).getJCRNode().getIdentifier(), is(node.getIdentifier()));
+        assertThat(tours, hasSize(1));
+        assertThat(tours.get(0).getIdentifier(), is(node.getIdentifier()));
     }
 
 }

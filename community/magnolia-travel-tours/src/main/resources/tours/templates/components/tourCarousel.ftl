@@ -32,19 +32,21 @@
 
         <div class="item ${activeClass}"${backgroundImage(rendition)}>
             <div class="container">
-                <div class="carousel-caption">
-                    <a href="${tour.link!}"><h1>${tour.name!}</h1></a>
-                    [#if showTourTypes]
-                        <div class="category-icons">
-                            [#list tour.tourTypes as tourType]
-                                <div class="category-icon absolute-center-container">
-                                    <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">[@tourTypeIcon tourType.icon tourType.name /]</a>
-                                </div>
-                            [/#list]
-                        </div>
-                    [/#if]
-                    <a class="btn btn-lg btn-primary" href="${tour.link!}">${i18n['tour.view']}</a>
-                </div>
+                <a class="carousel-link" href="${tour.link!}">
+                    <div class="carousel-caption">
+                        <h1>${tour.name!}</h1>
+                        [#if showTourTypes]
+                            <div class="category-icons">
+                                [#list tour.tourTypes as tourType]
+                                    <div class="category-icon absolute-center-container">
+                                        [@tourTypeIcon tourType.icon tourType.name "" /]
+                                    </div>
+                                [/#list]
+                            </div>
+                        [/#if]
+                        <div class="btn btn-lg btn-primary" href="${tour.link!}">${i18n['tour.view']}</div>
+                    </div>
+                </a>
             </div>
         </div>
     [/#list]

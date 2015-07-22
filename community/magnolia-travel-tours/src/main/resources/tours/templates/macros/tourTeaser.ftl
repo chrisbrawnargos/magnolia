@@ -1,19 +1,29 @@
-[#macro tourTeaser name description link image]
+[#macro tourTeaser tour]
 
     [#include "/tours/templates/macros/image.ftl" /]
+    [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
-    [#assign rendition = damfn.getRendition(image, "large-square")! /]
+    [#assign rendition = damfn.getRendition(tour.image, "large-16x9")! /]
 
     <!-- Tour Teaser -->
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">${name}</h2>
-            <p class="lead">${description}</p>
-            <p class="card-button"><a class="btn btn-primary" href="${link!'#'}">${i18n['tour.view']}</a></p>
-        </div>
-        <div class="col-md-5">
-            [@tourImage rendition "" name "featurette-image img-responsive" /]
-        </div>
+    <div class="col-md-6 tour-card card" >
+        <div class="tour-card-background"${backgroundImage(rendition)}></div>
+        <a class="tour-card-anchor" href="${tour.link!}">
+            <div class="tour-card-content-shader"></div>
+            <div class="tour-card-content">
+                <h3>${tour.name!}</h3>
+                <div class="category-icons">
+                    [#list tour.tourTypes as tourType]
+                        <div class="category-icon absolute-center-container">
+                            [@tourTypeIcon tourType.icon tourType.name "" /]
+                        </div>
+                    [/#list]
+                </div>
+                <div class="card-button">
+                    <div class="btn btn-primary"}">${i18n['tour.view']}</div>
+                </div>
+            </div>
+        </a>
     </div>
 
 [/#macro]

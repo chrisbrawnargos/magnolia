@@ -17,6 +17,16 @@
     margin-top: 25px;
 }
 
+@media ( max-width: 767px) {
+    .navbar-toggle {
+        margin-top: 10px;
+    }
+
+    .navbar-brand {
+        height: 40px;
+    }
+}
+
 .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
     margin-left: 0px;
     margin-right: 0px;
@@ -26,12 +36,14 @@
 .btn-primary {
     background-color: #7d1314;
     border-color: #7d1314;
+    box-shadow: 0 0 0 1px #7d1314;
     color: #fff;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background-color: #9d001a;
     border-color: #9d001a;
+    box-shadow: 0 0 0 1px #9d001a;
     color: #fff;
 }
 
@@ -49,6 +61,31 @@ footer {
     background-color: #990609;
 }
 
+/* Navbar links - Color */
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    box-shadow: inset 0 -3px 0 0 #000;
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li.active > a:hover,
+.navbar-nav > li.active > a:focus {
+    box-shadow: inset 0 -3px 0 0 #000;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    box-shadow: inset 0 -3px 0 0 #000;
+}
+
 /* Other */
 
 .jumbotron {
@@ -56,8 +93,11 @@ footer {
     color: #666;
 }
 
+/* CSS can be a simple way to customize a site in a multi-site environment. */
 .footer-1 {
     display: none;
 }
 
-
+.tour-card .category-icons {
+    display: none;
+}

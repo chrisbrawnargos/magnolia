@@ -35,8 +35,8 @@ package info.magnolia.demo.travel.tours.model;
 
 import info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefinition;
 import info.magnolia.demo.travel.tours.service.Category;
+import info.magnolia.demo.travel.tours.service.Tour;
 import info.magnolia.demo.travel.tours.service.TourServices;
-import info.magnolia.jcr.util.ContentMap;
 import info.magnolia.rendering.model.RenderingModel;
 import info.magnolia.rendering.model.RenderingModelImpl;
 
@@ -81,25 +81,18 @@ public class RelatedToursModel<RD extends TourCategoryTemplateDefinition> extend
     /**
      * Filters the current tour from the category.
      */
-    public List<ContentMap> getRelatedToursByCategory(String identifier) {
-        List<ContentMap> relatedTours = Lists.newArrayList();
+    public List<Tour> getRelatedToursByCategory(String identifier) {
+        List<Tour> relatedTours = Lists.newArrayList();
+
         try {
             final String currentIdentifier = tourServices.getTourNodeByParameter().getIdentifier();
-            List<ContentMap> tours = tourServices.getToursByCategory(definition.getCategory(), identifier, true);
+            List<Tour> tours = tourServices.getToursByCategory(definition.getCategory(), identifier, true);
 
-            relatedTours = Lists.newArrayList(Iterables.filter(tours, new Predicate<ContentMap>() {
+            relatedTours = Lists.newArrayList(Iterables.filter(tours, new Predicate<Tour>() {
                 @Override
-                public boolean apply(ContentMap tourMap) {
-                    boolean apply = true;
-                    try {
-                        String tourIdentifier = tourMap.getJCRNode().getIdentifier();
-                        apply = !currentIdentifier.equals(tourIdentifier);
-                    } catch (RepositoryException e) {
-                        log.error("Could not retrieve identifier from tour content map.", e);
-                    }
-                    return apply;
+                public boolean apply(Tour tour) {
+                    return !currentIdentifier.equals(tour.getIdentifier());
                 }
-
             }));
         } catch (RepositoryException e) {
             log.error("Could not retrieve identifier for the current tour.", e);

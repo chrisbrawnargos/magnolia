@@ -31,11 +31,11 @@
             [#assign languages = localizedLinks?keys]
             <div id="language-link">
                 <ul>
+                    [#-- Current locale should not be linked. --]
+                    [#-- Use "compress" to put "li" and "a" on one line to prevent white spaces from interfering with layout. --]
                     [#list languages as lang]
                         [#assign current = cmsfn.isCurrentLocale(lang)]
-                        <li>[@compress single_line=true]
-                            [#-- Current locale should not be linked --]
-                            [#-- This look ugly but is the only way to prevent white spaces from interfering --]
+                        <li[#if current] class="active"[/#if]>[@compress single_line=true]
                             [#if !current]<a href="${localizedLinks[lang]!'#'}" title="${model.getLocale(lang).getDisplayName()!lang!}">[#else]<span>[/#if]${model.getLocale(lang).getDisplayLanguage()!lang?upper_case!}[#if !current]</a>[#else]</span>[/#if]
                         [/@compress]</li>
                     [/#list]
