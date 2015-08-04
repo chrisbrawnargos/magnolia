@@ -45,6 +45,15 @@
   <sv:property sv:name="pswd" sv:type="String">
     <sv:value>$2a$12$7vns/khhZ4/BT2y4WVLZVuWrGFLX1o6KYOewD/h.jA8U8ypwC20g.</sv:value>
   </sv:property>
+  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+    <sv:value>true</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+    <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+  </sv:property>
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Tina (Tour editor, travel-demo)</sv:value>
   </sv:property>
@@ -66,6 +75,15 @@
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
       <sv:value>2015-06-25T11:57:04.262+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -94,6 +112,15 @@
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
         <sv:value>/admin/tina</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>8</sv:value>
@@ -124,6 +151,15 @@
       <sv:property sv:name="path" sv:type="String">
         <sv:value>/admin/tina/email</sv:value>
       </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+      </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
       </sv:property>
@@ -152,6 +188,15 @@
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
         <sv:value>/admin/tina/language</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -182,6 +227,15 @@
       <sv:property sv:name="path" sv:type="String">
         <sv:value>/admin/tina/lastaccess</sv:value>
       </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+      </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
       </sv:property>
@@ -210,6 +264,15 @@
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
         <sv:value>/admin/tina/pswd</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -240,6 +303,15 @@
       <sv:property sv:name="path" sv:type="String">
         <sv:value>/admin/tina/title</sv:value>
       </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+      </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
       </sv:property>
@@ -258,6 +330,15 @@
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
       <sv:value>2015-06-25T11:57:04.262+02:00</sv:value>
     </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+    </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
@@ -271,6 +352,15 @@
     </sv:property>
     <sv:property sv:name="0" sv:type="String">
       <sv:value>102cdb83-8d1f-4a58-9e69-d2d485f2df9b</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
