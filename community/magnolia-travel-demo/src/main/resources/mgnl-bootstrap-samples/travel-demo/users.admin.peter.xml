@@ -52,7 +52,7 @@
     <sv:value>true</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-    <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+    <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Peter (Publisher, travel-demo)</sv:value>
@@ -83,7 +83,7 @@
       <sv:value>true</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+      <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -120,7 +120,7 @@
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+        <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>8</sv:value>
@@ -158,7 +158,7 @@
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+        <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -196,7 +196,7 @@
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+        <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -234,7 +234,7 @@
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+        <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -272,7 +272,7 @@
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+        <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -310,7 +310,7 @@
         <sv:value>true</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+        <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -334,7 +334,7 @@
       <sv:value>true</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-06-30T12:45:53.247+02:00</sv:value>
+      <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>

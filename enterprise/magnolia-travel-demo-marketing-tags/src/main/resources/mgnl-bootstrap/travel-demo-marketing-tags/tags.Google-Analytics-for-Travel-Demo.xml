@@ -42,6 +42,15 @@ ga('send', 'pageview');
   <sv:property sv:name="name" sv:type="String">
     <sv:value>Google Analytics for Travel Demo</sv:value>
   </sv:property>
+  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+    <sv:value>superuser</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+    <sv:value>true</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+    <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
+  </sv:property>
   <sv:property sv:name="placeToPut" sv:type="String">
     <sv:value>bodyEndScripts</sv:value>
   </sv:property>
@@ -63,6 +72,15 @@ ga('send', 'pageview');
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
       <sv:value>2015-07-28T10:17:45.286+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+      <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -91,6 +109,15 @@ ga('send', 'pageview');
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-08-06T10:04:07.551+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
         <sv:value>/</sv:value>
