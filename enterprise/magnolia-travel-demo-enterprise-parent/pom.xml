@@ -29,6 +29,13 @@
     <tag>HEAD</tag>
   </scm>
 
+  <distributionManagement>
+    <site>
+      <id>${distribSiteId}</id>
+      <url>${distribSiteRoot}/travel-demo/${project.version}</url>
+    </site>
+  </distributionManagement>
+
   <dependencyManagement>
     <dependencies>
       <!-- Importing dependency management section from travel demo -->

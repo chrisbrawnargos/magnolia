@@ -30,6 +30,13 @@
     <tag>HEAD</tag>
   </scm>
 
+  <distributionManagement>
+    <site>
+      <id>${distribSiteId}</id>
+      <url>${distribSiteRoot}/modules/travel-demo/${project.version}</url>
+    </site>
+  </distributionManagement>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
