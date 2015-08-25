@@ -112,8 +112,7 @@ public abstract class AbstractNavigationItem extends DefaultNavigationItem {
                 items.add(new DefaultNavigationItem(categoryNode, this, navigationConfig, templatingFunctions, aggregationStateProvider) {
                     @Override
                     public String getLink() {
-                        final Node node = getJCRNode();
-                        return tourServices.getCategoryLink(node, NodeUtil.getName(node), getTemplateSubType());
+                        return tourServices.getCategoryLink(getParentPageNode(), NodeUtil.getName(getJCRNode()), getTemplateSubType());
                     }
 
                     @Override
@@ -147,6 +146,13 @@ public abstract class AbstractNavigationItem extends DefaultNavigationItem {
         final Node categoryRoot = session.getRootNode().getNode(getCategoryRootNode());
 
         return NodeUtil.getNodes(categoryRoot, new NodeTypePredicate(CategorizationNodeTypes.Category.NAME)).iterator();
+    }
+
+    /**
+     * Returns the parent's page node (required in order to access the page node in inner sub items).
+     */
+    private Node getParentPageNode() {
+        return this.getJCRNode();
     }
 
 }
