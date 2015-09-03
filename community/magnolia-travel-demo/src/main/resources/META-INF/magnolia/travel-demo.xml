@@ -24,6 +24,10 @@
       <version>2.1/*</version>
     </dependency>
     <dependency>
+      <name>form</name>
+      <version>2.3.1/*</version>
+    </dependency>
+    <dependency>
       <name>site</name>
       <version>1.0.1/*</version>
     </dependency>

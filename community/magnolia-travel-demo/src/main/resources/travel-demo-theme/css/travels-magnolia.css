@@ -1271,3 +1271,140 @@ max-width: 500px) {
 .search-result .list-group-item-text {
     margin: 20px;
 }
+
+/* Form
+-------------------------------------------------- */
+.form h1 {
+    text-align: left;
+    font-size: 2em;
+}
+
+.form .text.error h1,
+.form .text.error li {
+    color: #ec1549;
+}
+
+.form .text.error li {
+    list-style-type: none;
+}
+
+.form .text.error ul {
+    padding-left: 0px;
+}
+
+.form #formErrorsDisplay h1 {
+    text-align: left;
+    font-size: 1.3em;
+    color: #ec1549;
+    text-transform: none;
+}
+
+.form #formErrorsDisplay a {
+    color: #ec1549;
+}
+
+.form #formErrorsDisplay ul {
+    padding-left: 40px;
+}
+
+.form #formErrorsDisplay li {
+    list-style-type: disc;
+}
+
+.form h2 {
+    text-align: left;
+    font-size: 1.1em;
+    text-transform: none;
+    margin: 10px 0px;
+}
+
+.form-wrapper {
+    max-width: 600px;
+}
+
+.form-wrapper p.required {
+    text-align: right;
+}
+
+.form-wrapper p.required span,
+.form-wrapper dfn {
+    color: #ec1549;
+    font-weight: bold;
+}
+
+.form-wrapper .error label {
+    color: #ec1549;
+}
+
+.form-wrapper .error em {
+    display: none;
+}
+
+.form-row {
+    padding-bottom: 10px;
+}
+
+.form-row label,
+.form-row label span {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.form-row span {
+    font-weight: 80;
+    font-size: 11px;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+    width: 100%;
+    display: block;
+}
+
+.form-row textarea {
+    height: 250px;
+    border: 1px solid #ccc;
+}
+
+.form-row fieldset input {
+    width: auto;
+    display: inline;
+}
+
+.form-row fieldset.mod .form-item {
+    float: left;
+    clear: none;
+    margin-right: 10px;
+    width: auto;
+}
+
+.button-wrapper {
+    text-align: right;
+}
+
+.button-wrapper input {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: #ef6155;
+    border-color: #eac2bf;
+    box-shadow: 0 0 0 1px #ef6155;
+    color: #fff;
+}
+
+.button-wrapper input:hover {
+    background-color: #000;
+    border-color: #000;
+    box-shadow: 0 0 0 1px #000;
+    color: #fff;
+}

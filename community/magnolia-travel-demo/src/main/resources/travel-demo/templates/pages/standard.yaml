@@ -31,6 +31,8 @@ areas:
         id: mte:components/teaserExternal
       html:
         id: mte:components/html
+      form:
+        id: form:components/form
   footer:
     editable: false
 

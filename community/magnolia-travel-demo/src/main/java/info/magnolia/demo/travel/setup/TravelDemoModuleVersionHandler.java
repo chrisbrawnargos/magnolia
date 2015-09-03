@@ -40,9 +40,11 @@ import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
 import info.magnolia.module.delta.CopyNodeTask;
 import info.magnolia.module.delta.CreateNodeTask;
+import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
+import info.magnolia.module.delta.PartialBootstrapTask;
 import info.magnolia.module.delta.PropertyExistsDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
@@ -58,6 +60,12 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
 
     private static final String DEFAULT_URI_NODEPATH = "/modules/ui-admincentral/virtualURIMapping/default";
     private static final String DEFAULT_URI = "redirect:/travel.html";
+
+    public TravelDemoModuleVersionHandler () {
+        register(DeltaBuilder.update("0.7", "")
+            .addTask(new PartialBootstrapTask("Re-Bootstrap publish messageView", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", "/travel/contact/main/01"))
+        );
+    }
 
     @Override
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
