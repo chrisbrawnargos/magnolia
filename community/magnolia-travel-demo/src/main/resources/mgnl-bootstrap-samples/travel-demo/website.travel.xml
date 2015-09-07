@@ -4707,10 +4707,19 @@ Message: ${message}</sv:value>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
         </sv:property>
+        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+          <sv:value>true</sv:value>
+        </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
           <sv:value>2015-09-03T09:36:33.087+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+          <sv:value>2015-09-07T15:55:47.100+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4747,10 +4756,19 @@ Message: ${message}</sv:value>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
+          <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+            <sv:value>true</sv:value>
+          </sv:property>
           <sv:property sv:name="mgnl:created" sv:type="Date">
             <sv:value>2015-09-03T09:36:33.253+02:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+            <sv:value>2015-09-07T15:55:47.101+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4769,10 +4787,19 @@ Message: ${message}</sv:value>
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+              <sv:value>true</sv:value>
+            </sv:property>
             <sv:property sv:name="mgnl:created" sv:type="Date">
               <sv:value>2015-09-03T09:37:09.255+02:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:createdBy" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+              <sv:value>2015-09-07T15:55:47.101+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4797,10 +4824,19 @@ Message: ${message}</sv:value>
               <sv:property sv:name="jcr:createdBy" sv:type="String">
                 <sv:value>admin</sv:value>
               </sv:property>
+              <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                <sv:value>true</sv:value>
+              </sv:property>
               <sv:property sv:name="mgnl:created" sv:type="Date">
                 <sv:value>2015-09-03T09:37:09.416+02:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                <sv:value>2015-09-07T15:55:47.102+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4825,10 +4861,19 @@ Message: ${message}</sv:value>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
                   <sv:value>true</sv:value>
                 </sv:property>
+                <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                  <sv:value>true</sv:value>
+                </sv:property>
                 <sv:property sv:name="mgnl:created" sv:type="Date">
                   <sv:value>2015-09-03T09:37:47.300+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                  <sv:value>2015-09-07T15:55:47.102+02:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4866,10 +4911,19 @@ Message: ${message}</sv:value>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
                   <sv:value>false</sv:value>
                 </sv:property>
+                <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                  <sv:value>true</sv:value>
+                </sv:property>
                 <sv:property sv:name="mgnl:created" sv:type="Date">
                   <sv:value>2015-09-03T09:39:20.636+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                  <sv:value>2015-09-07T15:55:47.103+02:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4907,10 +4961,19 @@ Message: ${message}</sv:value>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
                   <sv:value>true</sv:value>
                 </sv:property>
+                <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                  <sv:value>true</sv:value>
+                </sv:property>
                 <sv:property sv:name="mgnl:created" sv:type="Date">
                   <sv:value>2015-09-03T09:40:11.327+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                  <sv:value>2015-09-07T15:55:47.103+02:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4942,10 +5005,19 @@ Message: ${message}</sv:value>
                 <sv:property sv:name="jcr:createdBy" sv:type="String">
                   <sv:value>admin</sv:value>
                 </sv:property>
+                <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                  <sv:value>true</sv:value>
+                </sv:property>
                 <sv:property sv:name="mgnl:created" sv:type="Date">
                   <sv:value>2015-09-03T10:02:32.319+02:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                  <sv:value>2015-09-07T15:55:47.104+02:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                   <sv:value>superuser</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
@@ -4970,10 +5042,19 @@ Message: ${message}</sv:value>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
                   </sv:property>
+                  <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                    <sv:value>true</sv:value>
+                  </sv:property>
                   <sv:property sv:name="mgnl:created" sv:type="Date">
                     <sv:value>2015-09-03T10:02:32.456+02:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                    <sv:value>superuser</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                    <sv:value>2015-09-07T15:55:47.104+02:00</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                     <sv:value>superuser</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
