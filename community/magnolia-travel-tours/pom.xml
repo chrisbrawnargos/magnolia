@@ -33,6 +33,10 @@
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-i18n</artifactId>
     </dependency>
+    <dependency>
+      <groupId>info.magnolia.demo</groupId>
+      <artifactId>magnolia-travel-demo</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>info.magnolia.dam</groupId>

@@ -37,21 +37,24 @@ import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.ArrayDelegateTask;
+import info.magnolia.module.delta.BootstrapSingleModuleResource;
+import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
-import info.magnolia.module.delta.CopyNodeTask;
 import info.magnolia.module.delta.CreateNodeTask;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
+import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
-import info.magnolia.module.delta.PartialBootstrapTask;
-import info.magnolia.module.delta.PropertyExistsDelegateTask;
+import info.magnolia.module.delta.RemoveNodeTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.jcr.ImportUUIDBehavior;
 
 /**
  * {@link DefaultModuleVersionHandler} for travel demo module.
@@ -61,30 +64,42 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private static final String DEFAULT_URI_NODEPATH = "/modules/ui-admincentral/virtualURIMapping/default";
     private static final String DEFAULT_URI = "redirect:/travel.html";
 
-    public TravelDemoModuleVersionHandler () {
-        register(DeltaBuilder.update("0.7", "")
-            .addTask(new PartialBootstrapTask("Re-Bootstrap publish messageView", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", "/travel/contact/main/01"))
+    private final Task setupTravelSiteAsActiveSite = new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
+            new CheckAndModifyPropertyValueTask("/modules/site/config/site", "extends", "/modules/standard-templating-kit/config/site", "/modules/travel-demo/config/travel"),
+            new ArrayDelegateTask("",
+                    new CreateNodeTask("", "/modules/site/config", "site", NodeTypes.ContentNode.NAME),
+                    new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel"),
+                    new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null, new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI))
+            ));
+
+    private final Task copySiteToMultiSiteAndMakeItFallback = new CopySiteToMultiSiteAndMakeItFallback();
+
+    public TravelDemoModuleVersionHandler() {
+        register(DeltaBuilder.update("0.8", "")
+                .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
+                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
+                .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REMOVE_EXISTING))
+                .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_THROW))
+                .addTask(new BootstrapSingleModuleResource("config.modules.site.config.themes.travel-demo-theme.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
+                .addTask(setupTravelSiteAsActiveSite)
+                .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
+                        new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
+                                new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
+                                        new IsModuleInstalledOrRegistered("", "tours", (Task) null, new ArrayDelegateTask("", "",
+                                                new RemoveNodeTask("Remove old site definition", "/modules/multisite/config/sites/default"),
+                                                copySiteToMultiSiteAndMakeItFallback)),
+                                        copySiteToMultiSiteAndMakeItFallback))))
         );
     }
 
     @Override
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
-        final List<Task> tasks = new ArrayList<Task>();
+        final List<Task> tasks = new ArrayList<>();
         tasks.addAll(super.getExtraInstallTasks(installContext));
-        tasks.add(new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
-                new CheckAndModifyPropertyValueTask("/modules/site/config/site", "extends", "/modules/standard-templating-kit/config/site", "/modules/travel-demo/config/travel"),
-                new ArrayDelegateTask("",
-                        new CreateNodeTask("", "/modules/site/config", "site", NodeTypes.ContentNode.NAME),
-                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel"),
-                        new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null, new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI))
-                )));
+        tasks.add(setupTravelSiteAsActiveSite);
         tasks.add(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
                 new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
-                        new ArrayDelegateTask("", "",
-                                new CopyNodeTask("Copy site definition to multisite", "/modules/travel-demo/config/travel", "/modules/multisite/config/sites/travel", false),
-                                new PropertyExistsDelegateTask("Set travel demo as fallback site if possible", "/modules/multisite/config/sites/fallback", "extends",
-                                        new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/fallback", "extends", "../default", "../travel"),
-                                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/fallback", "extends", "../travel"))))));
+                        copySiteToMultiSiteAndMakeItFallback)));
         tasks.add(new SetupDemoRolesAndGroupsTask());
         return tasks;
     }

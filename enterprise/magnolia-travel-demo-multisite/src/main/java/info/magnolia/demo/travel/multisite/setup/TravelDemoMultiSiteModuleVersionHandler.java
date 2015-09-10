@@ -21,6 +21,9 @@ import info.magnolia.jcr.nodebuilder.task.NodeBuilderTask;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
+import info.magnolia.module.delta.ArrayDelegateTask;
+import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
+import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.repository.RepositoryConstants;
@@ -29,11 +32,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Version handler.
+ * Default {@link info.magnolia.module.ModuleVersionHandler} for travel-demo multi site example.
  */
 public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersionHandler {
 
-    private Task mappingAndDomainConfigurationTask = new NodeBuilderTask("", "", ErrorHandling.strict, RepositoryConstants.CONFIG, "/modules/multisite/config/sites",
+    private Task mappingAndDomainConfigurationTask = new NodeBuilderTask("Add mapping and domain configuration to travel site definition in multisite", "", ErrorHandling.strict, RepositoryConstants.CONFIG, "/modules/multisite/config/sites",
             getNode("travel").then(
                     addNode("mappings", NodeTypes.ContentNode.NAME).then(
                             addNode("website", NodeTypes.ContentNode.NAME).then(
@@ -49,10 +52,20 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
                     )
             ));
 
+    public TravelDemoMultiSiteModuleVersionHandler() {
+        register(DeltaBuilder.update("0.8", "")
+                .addTask(new NodeExistsDelegateTask("Update travel-related sites (travel & sportstation)", "/modules/multisite/config/sites/travel",
+                        new ArrayDelegateTask("", "",
+                                new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/sportstation", "extends", "../default", "../travel"),
+                                mappingAndDomainConfigurationTask)))
+        );
+    }
+
     @Override
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
-        List<Task> tasks = new ArrayList<>(super.getExtraInstallTasks(installContext));
-        tasks.add(new NodeExistsDelegateTask("", "/modules/multisite/config/sites/travel", mappingAndDomainConfigurationTask));
+        final List<Task> tasks = new ArrayList<>();
+        tasks.addAll(super.getExtraInstallTasks(installContext));
+        tasks.add(new NodeExistsDelegateTask("Add mapping and domain configuration to travel site definition in multisite", "/modules/multisite/config/sites/travel", mappingAndDomainConfigurationTask));
         return tasks;
     }
 

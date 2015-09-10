@@ -33,14 +33,22 @@
  */
 package info.magnolia.demo.travel.tours.setup;
 
+import info.magnolia.demo.travel.setup.CopySiteToMultiSiteAndMakeItFallback;
+import info.magnolia.demo.travel.setup.FolderBootstrapTask;
 import info.magnolia.demo.travel.tours.TourTemplatingFunctions;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.AddRoleToUserTask;
 import info.magnolia.module.delta.ArrayDelegateTask;
+import info.magnolia.module.delta.BootstrapSingleModuleResource;
+import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.CopyNodeTask;
+import info.magnolia.module.delta.DeltaBuilder;
+import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
+import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.OrderNodeBeforeTask;
+import info.magnolia.module.delta.RemoveNodeTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.rendering.module.setup.InstallRendererContextAttributeTask;
 import info.magnolia.repository.RepositoryConstants;
@@ -48,10 +56,35 @@ import info.magnolia.repository.RepositoryConstants;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.jcr.ImportUUIDBehavior;
+
 /**
  * {@link DefaultModuleVersionHandler} of the {@link info.magnolia.demo.travel.tours.ToursModule}.
  */
 public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
+
+    public ToursModuleVersionHandler() {
+        // Reinstall all relevant contents
+        register(DeltaBuilder.update("0.8", "")
+                .addTask(new FolderBootstrapTask("/mgnl-bootstrap/tours/travel-demo/"))
+                .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
+                        new ArrayDelegateTask("",
+                                new FolderBootstrapTask("/mgnl-bootstrap-samples/tours/website/"),
+                                new ArrayDelegateTask("Re-Bootstrap category content for travel tours", "Re-bootstrap category content to account for all changes",
+                                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/tours/category.destinations.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
+                                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/tours/category.tour-types.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)),
+                                new BootstrapSingleResource("Re bootstrap tours content", "", "/mgnl-bootstrap-samples/tours/tours.magnolia-travels.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
+                                new FolderBootstrapTask("/mgnl-bootstrap-samples/tours/assets/"))))
+                .addTask(new BootstrapSingleModuleResource("config.modules.tours.apps.tourCategories.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
+                .addTask(new BootstrapSingleModuleResource("config.modules.tours.apps.tours.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
+                .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
+                        new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
+                                new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
+                                        new ArrayDelegateTask("", "",
+                                                new RemoveNodeTask("Remove old site definition", "/modules/multisite/config/sites/default"),
+                                                new CopySiteToMultiSiteAndMakeItFallback(true))))))
+        );
+    }
 
     @Override
     protected List<Task> getExtraInstallTasks(InstallContext installContext) {
