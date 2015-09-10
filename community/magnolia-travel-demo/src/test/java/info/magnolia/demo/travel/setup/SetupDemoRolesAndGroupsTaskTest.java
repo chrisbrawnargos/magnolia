@@ -44,6 +44,7 @@ import info.magnolia.cms.core.HierarchyManager;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.module.InstallContext;
+import info.magnolia.repository.RepositoryConstants;
 import info.magnolia.test.mock.jcr.MockSession;
 
 import javax.jcr.Session;
@@ -52,6 +53,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 
+/**
+ * Tests for {@link SetupDemoRolesAndGroupsTask}.
+ */
 public class SetupDemoRolesAndGroupsTaskTest {
 
     private static final String MODULES = "/modules/";
@@ -61,11 +65,11 @@ public class SetupDemoRolesAndGroupsTaskTest {
 
     @Before
     public void setUp() throws Exception {
-        session = new MockSession("config");
+        session = new MockSession(RepositoryConstants.CONFIG);
         ctx = mock(InstallContext.class);
         hm = mock(HierarchyManager.class);
-        when(ctx.getJCRSession(eq("config"))).thenReturn(session);
-        when(ctx.getHierarchyManager(eq("config"))).thenReturn(hm);
+        when(ctx.getJCRSession(eq(RepositoryConstants.CONFIG))).thenReturn(session);
+        when(ctx.getHierarchyManager(eq(RepositoryConstants.CONFIG))).thenReturn(hm);
     }
 
     @Test
