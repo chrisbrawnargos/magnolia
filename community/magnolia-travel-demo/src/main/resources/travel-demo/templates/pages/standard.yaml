@@ -18,17 +18,17 @@ areas:
       cssClass: container
     availableComponents:
       textImage:
-        id: mte:components/textImage
+        id: travel-demo:components/textImage
       jumbotron:
         id: travel-demo:components/jumbotron
       linkList:
         id: travel-demo:components/linkList
       teaserDownload:
-        id: mte:components/teaserDownload
+        id: travel-demo:components/teaserDownload
       teaserInternal:
-        id: mte:components/teaserInternal
+        id: travel-demo:components/teaserInternal
       teaserExternal:
-        id: mte:components/teaserExternal
+        id: travel-demo:components/teaserExternal
       html:
         id: mte:components/html
       form:

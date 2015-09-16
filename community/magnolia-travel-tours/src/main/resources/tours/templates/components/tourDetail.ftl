@@ -7,7 +7,7 @@
 [#assign asset = tour.image!]
 [#if asset?exists]
     [#assign assetCredit = asset.caption!]
-    [#assign renditionDetail = damfn.getRendition(asset, "xxlarge")!]
+    [#assign renditionDetail = damfn.getRendition(asset, "1920")!]
 [/#if]
 
 [#if def.parameters.showTourTypes?? && def.parameters.showTourTypes == false]

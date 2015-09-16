@@ -2,7 +2,7 @@
 [#include "/tours/templates/macros/image.ftl" /]
 
 [#assign category = tourfn.categoryByUrl]
-[#assign rendition = damfn.getRendition(category.image, "xxlarge") ]
+[#assign rendition = damfn.getRendition(category.image, "1920") ]
 [#assign assetCredit = category.image.caption!]
 
 [#-------------- RENDERING --------------]

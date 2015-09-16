@@ -4,7 +4,7 @@
     <sv:value>mgnl:contentNode</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:uuid" sv:type="String">
-    <sv:value>e467c344-4b91-49cc-a1d0-f38758f2630b</sv:value>
+    <sv:value>4ac3e971-16fc-4196-a67b-563ac9f02d40</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
@@ -26,7 +26,7 @@
       <sv:value>mgnl:contentNode</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>734b27cb-94cf-492f-a170-b065605850cd</sv:value>
+      <sv:value>d5ebff86-77c6-4d54-a6b8-ea5d432f3a03</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
@@ -51,7 +51,7 @@
         <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>65c3b0bf-7329-4ebd-b8c5-606ba70ecd0f</sv:value>
+        <sv:value>e24bd97f-2f3f-44fc-867f-58c26d97dd91</sv:value>
       </sv:property>
       <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
@@ -95,7 +95,7 @@
         <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>2f54bf62-1f2e-43e2-9386-fca96224de93</sv:value>
+        <sv:value>7f403934-6683-47eb-ae73-29a5bd8599ce</sv:value>
       </sv:property>
       <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
@@ -139,7 +139,7 @@
         <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>e07e95e6-ed31-4643-a1d7-6faa7c2d73b7</sv:value>
+        <sv:value>7b7422d2-53b3-4612-a901-1e4722c87187</sv:value>
       </sv:property>
       <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
@@ -181,7 +181,7 @@
       <sv:value>mgnl:contentNode</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>5eae366f-185c-4b53-a0c7-71ffc4562217</sv:value>
+      <sv:value>c1da9a6f-3c83-4332-aa0f-26af9a6b3a5d</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
@@ -198,7 +198,7 @@
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
-    <sv:node sv:name="modernizr">
+    <sv:node sv:name="respimage">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
@@ -206,7 +206,7 @@
         <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>7714aefc-1701-4a2e-bdd9-a91bbeb1887b</sv:value>
+        <sv:value>6abfdd10-3d4d-40e2-87bc-aefdf8891422</sv:value>
       </sv:property>
       <sv:property sv:name="addFingerPrint" sv:type="Boolean">
         <sv:value>true</sv:value>
@@ -215,7 +215,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>/.resources/travel-demo-theme/js/modernizr-2.6.2.min.js</sv:value>
+        <sv:value>/.resources/travel-demo-theme/js/respimage.min.js</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
         <sv:value>false</sv:value>
@@ -233,7 +233,89 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-05-05T10:18:21.056+02:00</sv:value>
+        <sv:value>2015-10-05T15:35:17.710+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="lazysizes">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+        <sv:value>mix:lockable</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>0f8501cf-7a0d-46a8-95b2-493200f8b63f</sv:value>
+      </sv:property>
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="link" sv:type="String">
+        <sv:value>/.resources/travel-demo-theme/js/lazysizes.min.js</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>false</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-10-05T15:31:19.056+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-10-05T15:31:19.057+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-10-05T15:35:12.565+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="modernizr">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+        <sv:value>mix:lockable</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>662a0324-412b-4356-97da-6874a6c5cab9</sv:value>
+      </sv:property>
+      <sv:property sv:name="addFingerPrint" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="link" sv:type="String">
+        <sv:value>/.resources/travel-demo-theme/js/modernizr-2.6.2.min.js</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+        <sv:value>false</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:created" sv:type="Date">
+        <sv:value>2015-10-05T15:31:58.148+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:createdBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+        <sv:value>2015-10-05T15:31:58.149+02:00</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2015-10-05T15:35:06.597+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -245,7 +327,7 @@
       <sv:value>mgnl:contentNode</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>24adcc61-a9be-4f29-8bba-e198479998e0</sv:value>
+      <sv:value>d78ff4d9-b69b-4428-9a07-ffeea11da9f3</sv:value>
     </sv:property>
     <sv:property sv:name="class" sv:type="String">
       <sv:value>info.magnolia.templating.imaging.VariationAwareImagingSupport</sv:value>
@@ -260,7 +342,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-05-05T10:18:21.056+02:00</sv:value>
+      <sv:value>2015-09-10T11:40:22.270+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -270,7 +352,7 @@
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>b7954656-dc4d-4905-a9b2-05553232a110</sv:value>
+        <sv:value>9e44971c-6894-40b6-93cf-ebe0c2d288a3</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -296,12 +378,12 @@
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
-      <sv:node sv:name="xxlarge">
+      <sv:node sv:name="1920">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>60e77aa0-c4e2-484f-a5bf-e9669cae8a50</sv:value>
+          <sv:value>6efcab88-1428-4d46-af61-d26cffcd816e</sv:value>
         </sv:property>
         <sv:property sv:name="class" sv:type="String">
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
@@ -313,19 +395,19 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.851+01:00</sv:value>
+          <sv:value>2015-09-08T16:31:44.727+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.854+01:00</sv:value>
+          <sv:value>2015-09-08T16:31:44.729+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-05-05T10:18:21.056+02:00</sv:value>
+          <sv:value>2015-09-16T10:26:19.236+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -334,18 +416,15 @@
           <sv:value>1920</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="xlarge-16x9">
+      <sv:node sv:name="1366">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>f0ab5f9f-d266-4807-85cb-9d6fff40c35f</sv:value>
+          <sv:value>a72e2925-7419-4ef0-b4f8-11ca29a177d8</sv:value>
         </sv:property>
         <sv:property sv:name="class" sv:type="String">
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
-        </sv:property>
-        <sv:property sv:name="height" sv:type="String">
-          <sv:value>641</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -354,39 +433,36 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-03-19T16:46:09.152+01:00</sv:value>
+          <sv:value>2015-09-08T16:33:00.334+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-03-19T16:46:09.152+01:00</sv:value>
+          <sv:value>2015-09-08T16:33:00.335+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-05-05T10:18:21.056+02:00</sv:value>
+          <sv:value>2015-09-16T10:29:15.185+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="width" sv:type="String">
-          <sv:value>1140</sv:value>
+          <sv:value>1366</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="large-16x9">
+      <sv:node sv:name="960">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>af97aa44-2054-4b94-976e-589f77c4196e</sv:value>
+          <sv:value>3ca16928-4782-429b-bcf3-ac6eb1f012d7</sv:value>
         </sv:property>
         <sv:property sv:name="class" sv:type="String">
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
-        </sv:property>
-        <sv:property sv:name="height" sv:type="String">
-          <sv:value>410</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -395,39 +471,36 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.851+01:00</sv:value>
+          <sv:value>2015-09-08T16:33:11.621+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.854+01:00</sv:value>
+          <sv:value>2015-09-08T16:33:11.621+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-05-05T10:18:21.056+02:00</sv:value>
+          <sv:value>2015-09-16T10:27:01.173+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="width" sv:type="String">
-          <sv:value>730</sv:value>
+          <sv:value>960</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="large-square">
+      <sv:node sv:name="480">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>c2da45a4-d960-47a7-805f-befac705678e</sv:value>
+          <sv:value>12b1a51c-5ea3-4e28-93c2-818ae6f6aa5a</sv:value>
         </sv:property>
         <sv:property sv:name="class" sv:type="String">
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
-        </sv:property>
-        <sv:property sv:name="height" sv:type="String">
-          <sv:value>700</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -436,39 +509,36 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.851+01:00</sv:value>
+          <sv:value>2015-09-08T16:33:20.293+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.854+01:00</sv:value>
+          <sv:value>2015-09-08T16:33:20.294+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-05-05T10:18:21.056+02:00</sv:value>
+          <sv:value>2015-09-16T10:27:31.672+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="width" sv:type="String">
-          <sv:value>700</sv:value>
+          <sv:value>480</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="small-square">
+      <sv:node sv:name="320">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>505e0880-6f50-4cf6-ab28-19da78ba541d</sv:value>
+          <sv:value>0940ab43-fd4b-4739-b9ed-c4a3a8a6c774</sv:value>
         </sv:property>
         <sv:property sv:name="class" sv:type="String">
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
-        </sv:property>
-        <sv:property sv:name="height" sv:type="String">
-          <sv:value>150</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -477,25 +547,63 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.851+01:00</sv:value>
+          <sv:value>2015-09-09T13:27:23.328+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:createdBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-03-05T14:23:07.854+01:00</sv:value>
+          <sv:value>2015-09-09T13:27:23.328+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-05-05T10:18:21.056+02:00</sv:value>
+          <sv:value>2015-09-16T10:28:18.111+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="width" sv:type="String">
-          <sv:value>150</sv:value>
+          <sv:value>320</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="240">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>5f16c9e9-d11e-46a7-855c-f71f5a4e819a</sv:value>
+        </sv:property>
+        <sv:property sv:name="class" sv:type="String">
+          <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+          <sv:value>false</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-09-16T10:28:26.821+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+          <sv:value>2015-09-16T10:28:26.823+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-09-16T10:28:45.498+02:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="width" sv:type="String">
+          <sv:value>240</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>

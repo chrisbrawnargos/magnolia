@@ -1,0 +1,13 @@
+templateScript: /travel-demo/templates/components/teaser.ftl
+dialog: mte:components/teaserInternal
+modelClass: info.magnolia.templating.models.components.TeaserInternalModel
+
+renderType: freemarker
+parameters:
+  divClass: teaser
+  divIDPrefix: teaser
+  headlineLevel: h2
+i18nBasename: info.magnolia.templating.models.messages
+title: components.teaserInternal.label
+description: components.teaserInternal.description
+
