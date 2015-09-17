@@ -35,6 +35,7 @@ package info.magnolia.demo.travel.tours.setup;
 
 import info.magnolia.demo.travel.setup.CopySiteToMultiSiteAndMakeItFallback;
 import info.magnolia.demo.travel.setup.FolderBootstrapTask;
+import info.magnolia.demo.travel.setup.RemoveTravelDemoSiteFromMultiSite;
 import info.magnolia.demo.travel.tours.TourTemplatingFunctions;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
@@ -48,7 +49,6 @@ import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.OrderNodeBeforeTask;
-import info.magnolia.module.delta.RemoveNodeTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.rendering.module.setup.InstallRendererContextAttributeTask;
 import info.magnolia.repository.RepositoryConstants;
@@ -81,7 +81,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                         new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                                 new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
                                         new ArrayDelegateTask("", "",
-                                                new RemoveNodeTask("Remove old site definition", "/modules/multisite/config/sites/default"),
+                                                new RemoveTravelDemoSiteFromMultiSite(),
                                                 new CopySiteToMultiSiteAndMakeItFallback(true))))))
         );
     }

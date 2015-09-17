@@ -46,7 +46,6 @@ import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
 import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
-import info.magnolia.module.delta.RemoveNodeTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.repository.RepositoryConstants;
@@ -86,7 +85,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                         new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                                 new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
                                         new IsModuleInstalledOrRegistered("", "tours", (Task) null, new ArrayDelegateTask("", "",
-                                                new RemoveNodeTask("Remove old site definition", "/modules/multisite/config/sites/default"),
+                                                new RemoveTravelDemoSiteFromMultiSite(),
                                                 copySiteToMultiSiteAndMakeItFallback)),
                                         copySiteToMultiSiteAndMakeItFallback))))
         );
