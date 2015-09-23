@@ -7,7 +7,7 @@
     <sv:value>7b4a6f32-a3a4-4264-b4e0-e096afd4453c</sv:value>
   </sv:property>
   <sv:property sv:name="activeAuthor" sv:type="Boolean">
-    <sv:value>false</sv:value>
+    <sv:value>true</sv:value>
   </sv:property>
   <sv:property sv:name="content" sv:type="String">
     <sv:value>&lt;!-- Google Analytics --&gt;
