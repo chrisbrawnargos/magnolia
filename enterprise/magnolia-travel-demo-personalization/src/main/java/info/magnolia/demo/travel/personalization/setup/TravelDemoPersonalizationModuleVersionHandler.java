@@ -14,8 +14,10 @@
  */
 package info.magnolia.demo.travel.personalization.setup;
 
+import info.magnolia.cms.security.Permission;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
+import info.magnolia.module.delta.AddPermissionTask;
 import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsInstallSamplesTask;
@@ -38,6 +40,7 @@ public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModule
         register(DeltaBuilder.update("0.8", "")
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website variants for travel pages", "Re-bootstrap website variants to account for all changes",
                         new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.variants.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
+                .addTask(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true))
         );
     }
 
@@ -50,6 +53,7 @@ public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModule
         // Add variant mixin to travel page - so that adminCentral gives it the proper behaviour.
         tasks.add(new AddMixinTask("/travel", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN));
         tasks.add(new OrderNodeToFirstPositionTask("Order travel page variants to first position.", "", RepositoryConstants.WEBSITE, "travel/variants"));
+        tasks.add(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true));
 
         return tasks;
     }
