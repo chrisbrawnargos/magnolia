@@ -71,7 +71,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                     new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null, new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI))
             ));
 
-    private final Task copySiteToMultiSiteAndMakeItFallback = new NodeExistsDelegateTask("Check wether travel node in multisite does not exist.", "/modules/multisite/config/sites/travel", null, new CopySiteToMultiSiteAndMakeItFallback());
+    private final Task copySiteToMultiSiteAndMakeItFallback = new NodeExistsDelegateTask("Check whether travel node in multisite does not exist.", "/modules/multisite/config/sites/travel", null, new CopySiteToMultiSiteAndMakeItFallback());
 
     public TravelDemoModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
