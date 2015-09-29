@@ -87,7 +87,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                         new IsModuleInstalledOrRegistered("", "tours", (Task) null, new ArrayDelegateTask("", "",
                                                 new RemoveTravelDemoSiteFromMultiSite(),
                                                 copySiteToMultiSiteAndMakeItFallback)),
-                                        copySiteToMultiSiteAndMakeItFallback))))
+                                        new NodeExistsDelegateTask("Check whether travel node in multisite does not exist.", "/modules/multisite/config/sites/travel", null, copySiteToMultiSiteAndMakeItFallback)))))
         );
     }
 
