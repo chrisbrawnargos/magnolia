@@ -7809,6 +7809,12 @@
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
+      <sv:property sv:name="travel-demo-editor" sv:type="String">
+        <sv:value>travel-demo-editor</sv:value>
+      </sv:property>
+      <sv:property sv:name="travel-demo-publisher" sv:type="String">
+        <sv:value>travel-demo-publisher</sv:value>
+      </sv:property>
     </sv:node>
   </sv:node>
 </sv:node>

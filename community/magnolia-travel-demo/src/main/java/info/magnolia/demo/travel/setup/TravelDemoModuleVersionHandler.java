@@ -40,6 +40,7 @@ import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.BootstrapSingleModuleResource;
 import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
+import info.magnolia.module.delta.CreateNodePathTask;
 import info.magnolia.module.delta.CreateNodeTask;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
@@ -93,7 +94,14 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                                 new RemoveTravelDemoSiteFromMultiSite(),
                                                 copySiteToMultiSiteAndMakeItFallback)),
                                         new NodeExistsDelegateTask("Check whether travel node in multisite does not exist.", "/modules/multisite/config/sites/travel", null, copySiteToMultiSiteAndMakeItFallback)))))
-        );
+                .addTask(new NodeExistsDelegateTask("Configure permissions for access to Pages app", "/modules/pages/apps/pages",
+                        new ArrayDelegateTask("Configure permissions for access to Pages app",
+                                new CreateNodePathTask("", "", RepositoryConstants.CONFIG, "/modules/pages/apps/pages/permissions/roles", NodeTypes.ContentNode.NAME),
+                                new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE),
+                                new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
+                .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES,
+                        new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE))));
+
     }
 
     @Override

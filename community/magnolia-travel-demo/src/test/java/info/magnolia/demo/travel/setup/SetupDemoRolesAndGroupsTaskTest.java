@@ -124,6 +124,20 @@ public class SetupDemoRolesAndGroupsTaskTest {
         // THEN
         assertThat(session.getNode(DAM_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE));
         assertThat(session.getNode(DAM_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_PUBLISHER_ROLE, TRAVEL_DEMO_PUBLISHER_ROLE));
+        assertThat(session.getNode(DAM_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_TOUR_EDITOR_ROLE, TRAVEL_DEMO_TOUR_EDITOR_ROLE));
+    }
+
+    @Test
+    public void demoRolesCanAccessPagesApp() throws Exception {
+        // GIVEN
+        NodeUtil.createPath(session.getRootNode(), PAGES_PERMISSIONS_ROLES, NodeTypes.ContentNode.NAME);
+
+        // WHEN
+        new SetupDemoRolesAndGroupsTask().execute(ctx);
+
+        // THEN
+        assertThat(session.getNode(PAGES_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE));
+        assertThat(session.getNode(PAGES_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_PUBLISHER_ROLE, TRAVEL_DEMO_PUBLISHER_ROLE));
     }
 
     @Test

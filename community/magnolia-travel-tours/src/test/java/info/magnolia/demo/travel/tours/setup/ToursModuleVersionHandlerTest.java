@@ -31,11 +31,10 @@
  * intact.
  *
  */
-package info.magnolia.demo.travel.setup;
+package info.magnolia.demo.travel.tours.setup;
 
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 import info.magnolia.context.MgnlContext;
 import info.magnolia.module.ModuleVersionHandler;
@@ -43,7 +42,7 @@ import info.magnolia.module.ModuleVersionHandlerTestCase;
 import info.magnolia.module.model.Version;
 import info.magnolia.repository.RepositoryConstants;
 
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.jcr.Session;
@@ -52,42 +51,35 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Test class for {@link info.magnolia.demo.travel.setup.TravelDemoModuleVersionHandler}.
+ * Test class for {@link info.magnolia.demo.travel.tours.setup.ToursModuleVersionHandler}.
  */
-public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTestCase {
+public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase {
 
     private Session session;
 
     @Override
     protected String getModuleDescriptorPath() {
-        return "/META-INF/magnolia/travel-demo.xml";
+        return "/META-INF/magnolia/tours.xml";
     }
 
     @Override
     protected ModuleVersionHandler newModuleVersionHandlerForTests() {
-        return new TravelDemoModuleVersionHandler();
+        return new ToursModuleVersionHandler();
     }
 
     @Override
     protected List<String> getModuleDescriptorPathsForTests() {
-        return Collections.singletonList("/META-INF/magnolia/core.xml");
+        return Arrays.asList("/META-INF/magnolia/core.xml");
     }
 
-    /**
-     * When finding the default site in site module (doesn't have any sub nodes nor properties), the demo should add
-     * and set the extends property pointing to the STK site.
-     */
-    @Test
-    public void updateTo08CreatesExtendsPropertyInSiteNodeWhenNodeIsEmpty() throws Exception {
-        // GIVEN
-        setupConfigNode("/modules/site/config/site");
+    @Override
+    protected String[] getExtraWorkspaces() {
+        return new String[]{RepositoryConstants.WEBSITE, "tours", "category", "dam"};
+    }
 
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
-
-        // THEN
-        assertTrue(session.propertyExists("/modules/site/config/site/extends"));
-        assertThat(session.getProperty("/modules/site/config/site/extends").getString(), is("/modules/travel-demo/config/travel"));
+    @Override
+    protected String getExtraNodeTypes() {
+        return "/mgnl-nodetypes/test-tour-nodetypes.xml";
     }
 
     @Override
@@ -98,28 +90,15 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     @Test
-    public void demoRolesCanAccessPagesApp() throws Exception {
+    public void demoRolesCanAccessTourCategoriesApp() throws Exception {
         // GIVEN
-        setupConfigNode("/modules/pages/apps/pages");
+        setupConfigNode("/modules/tours/apps/tourCategories/permissions/roles");
 
         // WHEN
         executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
 
         // THEN
-        assertThat(session.getNode(SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES), hasProperty(SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE));
-        assertThat(session.getNode(SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES), hasProperty(SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE));
+        assertThat(session.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-editor", "travel-demo-editor"));
+        assertThat(session.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-publisher", "travel-demo-publisher"));
     }
-
-    @Test
-    public void demoRoleCanAccessDamApp() throws Exception {
-        // GIVEN
-        setupConfigNode(SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES);
-
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
-
-        // THEN
-        assertThat(session.getNode(SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES), hasProperty(SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE));
-    }
-
 }

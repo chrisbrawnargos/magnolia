@@ -48,9 +48,11 @@ public class SetupDemoRolesAndGroupsTask extends ArrayDelegateTask {
 
     protected static final String TRAVEL_DEMO_PUBLISHER_ROLE = "travel-demo-publisher";
     protected static final String TRAVEL_DEMO_EDITOR_ROLE = "travel-demo-editor";
+    protected static final String TRAVEL_DEMO_TOUR_EDITOR_ROLE = "travel-demo-tour-editor";
     protected static final String TRAVEL_DEMO_PUBLISHERS_GROUP = "travel-demo-publishers";
     protected static final String PAGES_ACTIVATE_ACCESS_ROLES = "/modules/pages/apps/pages/subApps/browser/actions/activate/availability/access/roles";
     protected static final String DAM_ACTIVATE_ACCESS_ROLES = "/modules/dam-app/apps/assets/subApps/browser/actions/activate/availability/access/roles";
+    protected static final String PAGES_PERMISSIONS_ROLES = "/modules/pages/apps/pages/permissions/roles";
     protected static final String DAM_PERMISSIONS_ROLES = "/modules/dam-app/apps/assets/permissions/roles";
     protected static final String WORKFLOW_JBPM_PUBLISH_GROUPS = "/modules/workflow-jbpm/tasks/publish/groups";
     protected static final String ENTERPRISE_MODULE = "enterprise";
@@ -59,8 +61,12 @@ public class SetupDemoRolesAndGroupsTask extends ArrayDelegateTask {
     public SetupDemoRolesAndGroupsTask() {
         super("Set permissions for the travel-demo-editor(s) and travel-demo-publisher(s) roles and groups");
 
+        addTask(new AddDemoTravelPermissionTask(PAGES_PERMISSIONS_ROLES, TRAVEL_DEMO_EDITOR_ROLE));
+        addTask(new AddDemoTravelPermissionTask(PAGES_PERMISSIONS_ROLES, TRAVEL_DEMO_PUBLISHER_ROLE));
+
         addTask(new AddDemoTravelPermissionTask(DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_EDITOR_ROLE));
         addTask(new AddDemoTravelPermissionTask(DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_PUBLISHER_ROLE));
+        addTask(new AddDemoTravelPermissionTask(DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE));
 
         addTask(new AddDemoTravelPermissionTask(PAGES_ACTIVATE_ACCESS_ROLES, TRAVEL_DEMO_PUBLISHER_ROLE));
         addTask(new IsModuleInstalledOrRegistered("If on EE, give editors publishing rights on website", ENTERPRISE_MODULE, new AddDemoTravelPermissionTask(PAGES_ACTIVATE_ACCESS_ROLES, TRAVEL_DEMO_EDITOR_ROLE)));
