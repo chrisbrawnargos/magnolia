@@ -46,8 +46,10 @@ import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
 import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
+import info.magnolia.module.delta.PropertyExistsDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
+import info.magnolia.module.site.setup.DefaultSiteExistsDelegateTask;
 import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
@@ -64,7 +66,10 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private static final String DEFAULT_URI = "redirect:/travel.html";
 
     private final Task setupTravelSiteAsActiveSite = new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
-            new CheckAndModifyPropertyValueTask("/modules/site/config/site", "extends", "/modules/standard-templating-kit/config/site", "/modules/travel-demo/config/travel"),
+            new PropertyExistsDelegateTask("Check extends property and update or create it", "/modules/site/config/site", "extends",
+                    new CheckAndModifyPropertyValueTask("/modules/site/config/site", "extends", "/modules/standard-templating-kit/config/site", "/modules/travel-demo/config/travel"),
+                    new DefaultSiteExistsDelegateTask("", "",
+                            new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel"))),
             new ArrayDelegateTask("",
                     new CreateNodeTask("", "/modules/site/config", "site", NodeTypes.ContentNode.NAME),
                     new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel"),
