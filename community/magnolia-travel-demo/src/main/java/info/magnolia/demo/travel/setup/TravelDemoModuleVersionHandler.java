@@ -48,6 +48,7 @@ import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.PropertyExistsDelegateTask;
+import info.magnolia.module.delta.PropertyValueDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.module.site.setup.DefaultSiteExistsDelegateTask;
@@ -66,6 +67,10 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private static final String DEFAULT_URI_NODEPATH = "/modules/ui-admincentral/virtualURIMapping/default";
     private static final String DEFAULT_URI = "redirect:/travel.html";
 
+    private final Task setDefaultUriOnPublicInstance = new PropertyValueDelegateTask("Set default URI to home travel page, when current site is travel site", "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel", false,
+            new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
+                    new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
+
     private final Task setupTravelSiteAsActiveSite = new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
             new PropertyExistsDelegateTask("Check extends property and update or create it", "/modules/site/config/site", "extends",
                     new CheckAndModifyPropertyValueTask("/modules/site/config/site", "extends", "/modules/standard-templating-kit/config/site", "/modules/travel-demo/config/travel"),
@@ -73,8 +78,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                             new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel"))),
             new ArrayDelegateTask("",
                     new CreateNodeTask("", "/modules/site/config", "site", NodeTypes.ContentNode.NAME),
-                    new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel"),
-                    new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null, new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI))
+                    new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/site", "extends", "/modules/travel-demo/config/travel")
             ));
 
     private final Task copySiteToMultiSiteAndMakeItFallback = new CopySiteToMultiSiteAndMakeItFallback();
@@ -87,6 +91,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_THROW))
                 .addTask(new BootstrapSingleModuleResource("config.modules.site.config.themes.travel-demo-theme.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(setupTravelSiteAsActiveSite)
+                .addTask(setDefaultUriOnPublicInstance)
                 .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
                         new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                                 new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
@@ -101,7 +106,6 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
                 .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES,
                         new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE))));
-
     }
 
     @Override
@@ -109,6 +113,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
         final List<Task> tasks = new ArrayList<>();
         tasks.addAll(super.getExtraInstallTasks(installContext));
         tasks.add(setupTravelSiteAsActiveSite);
+        tasks.add(setDefaultUriOnPublicInstance);
         tasks.add(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
                 new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                         copySiteToMultiSiteAndMakeItFallback)));
