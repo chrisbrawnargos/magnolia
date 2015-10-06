@@ -15,7 +15,7 @@
                 [#assign name = tour.name!tour.@name /]
                 [#assign description = tour.description!"" /]
                 [#assign tourLink = tour.link /]
-                [#assign rendition = damfn.getRendition(tour.image, "large-16x9") /]
+                [#assign rendition = damfn.getRendition(tour.image, "960") /]
 
                 <a class="featured-card-anchor" href="${tourLink!}">
                     <div class="col-md-4 featured-card card"${backgroundImage(rendition)}>

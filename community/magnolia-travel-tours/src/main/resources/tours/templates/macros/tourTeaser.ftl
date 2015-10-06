@@ -3,7 +3,7 @@
     [#include "/tours/templates/macros/image.ftl" /]
     [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
-    [#assign rendition = damfn.getRendition(tour.image, "large-16x9")! /]
+    [#assign rendition = damfn.getRendition(tour.image, "960")! /]
 
     <!-- Tour Teaser -->
     <div class="col-md-6 tour-card card" >
