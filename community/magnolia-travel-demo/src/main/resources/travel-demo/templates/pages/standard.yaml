@@ -29,6 +29,8 @@ areas:
         id: travel-demo:components/teaserInternal
       teaserExternal:
         id: travel-demo:components/teaserExternal
+      carousel:
+        id: travel-demo:components/carousel
       html:
         id: mte:components/html
       form:

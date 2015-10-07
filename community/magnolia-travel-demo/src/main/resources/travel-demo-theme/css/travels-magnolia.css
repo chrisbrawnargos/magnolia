@@ -892,6 +892,10 @@ h1.category {
     background: white;
 }
 
+.slick-prev:before, .slick-next:before {
+    color: gray ! important;
+}
+
 /* CARD
 -------------------------------------------------- */
 .card {

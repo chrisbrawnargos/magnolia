@@ -1,0 +1,43 @@
+form:
+  i18nBasename: info.magnolia.module.travel-demo.messages
+  tabs:
+    - name: tabMain
+      fields:
+        - name: id
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          type: String
+          required: true
+        - name: dots
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: String
+          defaultValue: true
+        - name: arrows
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: String
+          defaultValue: true
+        - name: fade
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: String
+          defaultValue: false
+        - name: variableWidth
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: String
+          defaultValue: false
+        - name: slidesToShow
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          type: String
+          defaultValue: 1
+        - name: autoplay
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: String
+          defaultValue: false
+        - name: autoplaySeconds
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          type: String
+          defaultValue: 5
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
