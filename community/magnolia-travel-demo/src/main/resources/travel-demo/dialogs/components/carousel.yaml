@@ -35,6 +35,11 @@ form:
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           type: String
           defaultValue: 5
+    - name: tabAdvanced
+      fields:
+        - name: slickConfig
+          class: info.magnolia.ui.form.field.definition.CodeFieldDefinition
+          language: json
 
 actions:
   commit:
