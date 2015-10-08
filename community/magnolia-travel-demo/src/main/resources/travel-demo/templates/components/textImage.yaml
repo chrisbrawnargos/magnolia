@@ -1,5 +1,5 @@
 templateScript: /travel-demo/templates/components/textImage.ftl
-dialog: mte:components/textImage
+dialog: travel-demo:components/textImage
 modelClass: info.magnolia.templating.models.components.ImageModel
 
 renderType: freemarker

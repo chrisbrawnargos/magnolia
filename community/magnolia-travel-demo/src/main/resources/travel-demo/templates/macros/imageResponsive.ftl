@@ -53,6 +53,7 @@
 
 [#-- Macro to render a responsive image with the variations configured in the theme. --]
 [#macro responsiveImageTravel asset  alt="" title="" cssClass="" additional=""]
+  [#if !(content.fixedHeight!false)]
     [#assign srcs = [
     {"name":"240", "width":"240"},
     {"name":"320", "width":"320"},
@@ -64,6 +65,19 @@
     [#assign fallback="240"]
 
     [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
+  [#else]
+        [#assign srcs = [
+        {"name":"240x160", "width":"240", "height":"160"},
+        {"name":"320x240", "width":"320", "height":"240"},
+        {"name":"480x320", "width":"480", "height":"320"},
+        {"name":"960x540", "width":"960", "height":"540"},
+        {"name":"1366x768","width":"1366", "height":"768"},
+        {"name":"1920x1200", "width":"1920", "height":"1200"}]]
+
+        [#assign fallback="240x160"]
+
+        [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
+  [/#if]
 [/#macro]
 
 [#-- Macro to render responsive image using lazysizes javascript library.
@@ -77,7 +91,7 @@
         [#list srcs as src]
             [#assign rendition = damfn.getRendition(asset, src.name)!]
             [#if rendition?exists && rendition?has_content]
-                ${rendition.link} ${src.width}w,
+                ${rendition.link} ${src.width}w,[#if src.height?has_content] ${src.height}h,[/#if]
             [/#if]
         [/#list]
         "

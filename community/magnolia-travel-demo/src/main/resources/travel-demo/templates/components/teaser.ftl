@@ -57,10 +57,8 @@
             [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
             [#assign imageClass = "content-image-below"]
             [#assign imageHtml][@imageResponsive model.image content imageClass false def.parameters /][/#assign]
-            <a href="${model.teaserLink}"${linkTarget!}${imageHtml}
+            <a href="${model.teaserLink}"${linkTarget!}>${imageHtml}</a>
         [/#if]
-
-    [#--[#if imageLink?has_content]<a href="${model.teaserLink}"${linkTarget!}><img src="${imageLink}" alt="${imageTitle!title!}" /></a>[/#if]        --]
         [#if model.teaserText?has_content]<p>${model.teaserText}</p>[/#if]
 
     [/#if]

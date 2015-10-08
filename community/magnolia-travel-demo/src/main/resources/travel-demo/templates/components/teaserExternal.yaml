@@ -1,5 +1,5 @@
 templateScript: /travel-demo/templates/components/teaser.ftl
-dialog: mte:components/teaserExternal
+dialog: travel-demo:components/teaserExternal
 modelClass: info.magnolia.templating.models.components.TeaserExternalModel
 
 renderType: freemarker

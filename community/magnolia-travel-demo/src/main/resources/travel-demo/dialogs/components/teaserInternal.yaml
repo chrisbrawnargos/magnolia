@@ -1,0 +1,67 @@
+form:
+  i18nBasename: info.magnolia.templating.models.messages
+  label: components.teaserInternal.label
+  description: components.teaserInternal.description
+  tabs:
+    - name: tabMain
+      label: components.teaserInternal.tabMain.label
+      fields:
+        - name: link
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: website
+          appName: pages
+          required: true
+          type: String
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+          label: components.teaserInternal.link.label
+          description: components.teaserInternal.link.description
+        - name: highlight
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          defaultValue: false
+          type: Boolean
+          label: generic.fields.highlight.label
+          description: generic.fields.highlight.description
+          buttonLabel: generic.fields.highlight.button.label
+        - name: hideTeaserImage
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          defaultValue: false
+          type: Boolean
+          label: components.teaserInternal.hideTeaserImage.label
+          description: components.teaserInternal.hideTeaserImage.description
+          buttonLabel: components.teaserInternal.hideTeaserImage.buttonLabel
+    - name: tabTeaserOverwrite
+      label: components.teaserInternal.tabTeaserOverwrite.label
+      fields:
+        - name: teaserTitle
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+          label: components.teaserInternal.teaserTitle.label
+          description: components.teaserInternal.teaserTitle.description
+        - name: teaserAbstract
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          rows: 5
+          i18n: true
+          label: components.teaserInternal.teaserAbstract.label
+          description: components.teaserInternal.teaserAbstract.description
+        - name: image
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+          i18nBasename: info.magnolia.templating.models.messages
+          label: generic.fields.image.label
+          description: generic.fields.image.description
+        - name: fixedHeight
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: Boolean
+          defaultValue: false
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
