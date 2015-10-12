@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sv:node sv:name="travel" xmlns:sv="http://www.jcp.org/jcr/sv/1.0">
+<sv:node sv:name="travel" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>mgnl:page</sv:value>
   </sv:property>
@@ -37,7 +37,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-10-08T08:29:59.400+02:00</sv:value>
+    <sv:value>2015-07-01T10:36:26.589+02:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -85,92 +85,6 @@
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
-    <sv:node sv:name="0">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:component</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>9b13970f-6b1b-451e-83fc-36cfde37f78e</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-02-24T15:43:35.913+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:52.643+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-03-19T18:05:36.600+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:template" sv:type="String">
-        <sv:value>tours:components/tourCarousel</sv:value>
-      </sv:property>
-      <sv:property sv:name="tours" sv:type="String" sv:multiple="true">
-        <sv:value>d30b9ca6-e22d-45c5-9456-7538ab7bccf8</sv:value>
-        <sv:value>a358f3ad-5a03-4f5d-b0ab-cb2219100472</sv:value>
-        <sv:value>730c8850-d638-4e91-b3fb-4041a0c59ffe</sv:value>
-      </sv:property>
-    </sv:node>
-    <sv:node sv:name="00">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:component</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>2bf3e57c-11b5-497e-806b-0e06dacffded</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-02-12T17:45:09.155+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:52.643+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-06-18T18:00:01.507+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:template" sv:type="String">
-        <sv:value>tours:components/tourTypeTeaserRow</sv:value>
-      </sv:property>
-      <sv:property sv:name="title" sv:type="String">
-        <sv:value>Which tour type are you?</sv:value>
-      </sv:property>
-      <sv:property sv:name="title_de" sv:type="String">
-        <sv:value>Welcher Reisetyp bist Du?</sv:value>
-      </sv:property>
-      <sv:property sv:name="tourTypes" sv:type="String" sv:multiple="true">
-        <sv:value>eaf9a648-fae1-48ae-a293-69bed874f159</sv:value>
-        <sv:value>e007e401-1bf8-4658-8293-b9c743784264</sv:value>
-        <sv:value>415025c6-e4b5-4506-9384-34f428a52104</sv:value>
-      </sv:property>
-    </sv:node>
   </sv:node>
   <sv:node sv:name="footer">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1063,18 +977,18 @@
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia, the digital business platform with a&amp;nbsp; CMS at its core.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://www.magnolia-cms.com/" target="_blank"&gt;Learn more&lt;/a&gt;&lt;/p&gt;
-</sv:value>
+            &lt;p&gt;&lt;a href="https://www.magnolia-cms.com/" target="_blank"&gt;Learn more&lt;/a&gt;&lt;/p&gt;
+          </sv:value>
         </sv:property>
         <sv:property sv:name="text_de" sv:type="String">
           <sv:value>&lt;p&gt;Dieser Website dient als Beispielprojekt f&amp;uuml;r Magnolia, der Digital Business Plattform mit einem CMS als Kern.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://magnolia-cms.com" target="_blank"&gt;Mehr erfahren&lt;/a&gt;&lt;/p&gt;
-</sv:value>
+            &lt;p&gt;&lt;a href="http://magnolia-cms.com" target="_blank"&gt;Mehr erfahren&lt;/a&gt;&lt;/p&gt;
+          </sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -1310,1153 +1224,6 @@
       </sv:node>
     </sv:node>
   </sv:node>
-  <sv:node sv:name="tour-type">
-    <sv:property sv:name="jcr:primaryType" sv:type="Name">
-      <sv:value>mgnl:page</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-      <sv:value>mix:lockable</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>05872876-073e-40a3-a3c5-0d0a18c1d43d</sv:value>
-    </sv:property>
-    <sv:property sv:name="hideInNav" sv:type="String">
-      <sv:value>true</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:createdBy" sv:type="String">
-      <sv:value>admin</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-      <sv:value>true</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:created" sv:type="Date">
-      <sv:value>2015-01-27T13:21:08.859+01:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:createdBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:43:54.258+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-10-05T13:10:55.510+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>tours:pages/categoryOverview</sv:value>
-    </sv:property>
-    <sv:property sv:name="title" sv:type="String">
-      <sv:value>Tour Types</sv:value>
-    </sv:property>
-    <sv:node sv:name="main">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>65f66aac-c0aa-42b4-b6a9-1f749a6429b0</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-01-27T13:21:12.019+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:54.259+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-01-27T13:21:12.019+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="0">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>e4519798-0df3-4b79-92b9-5686b2c3c17b</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-01-28T16:47:31.831+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.259+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-01-28T16:47:31.831+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourTypeOverviewHeader</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="01">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>3193937f-8216-4dfc-a5db-16e0ef9f9c00</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-01-29T22:24:50.086+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.259+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-01-29T22:24:50.086+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourListFeaturedRow</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="00">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>a835f66f-6d45-41f6-8e6e-8163a1ef79a8</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-01-29T16:46:43.704+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.259+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-01-29T16:46:43.704+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourList</sv:value>
-        </sv:property>
-      </sv:node>
-    </sv:node>
-    <sv:node sv:name="footer">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>12f26132-0381-465f-8d13-155cc3bb4669</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-02-26T16:14:31.940+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:54.259+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-06-18T17:22:48.868+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="footer1">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>7af2d089-e07d-48f3-aa27-12710370a9a1</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:31.955+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.259+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:31.955+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer2">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>bef2cd3e-ac68-4ad7-ae31-8b791e2729e0</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:31.990+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.260+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:31.990+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer3">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>7bb4b74d-2e42-43c0-948a-3fea95ca4d5e</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:32.016+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.260+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:32.016+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer4">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>4c1103b5-01eb-4056-b999-6bc67a97b0de</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:32.035+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.260+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:32.035+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="lastLinks">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>984b4a74-ea75-4676-88df-3b9e4330826c</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-06-18T17:22:48.872+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:54.260+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-06-18T17:22:48.872+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-    </sv:node>
-  </sv:node>
-  <sv:node sv:name="destination">
-    <sv:property sv:name="jcr:primaryType" sv:type="Name">
-      <sv:value>mgnl:page</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-      <sv:value>mix:lockable</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>028a4a92-35df-45a3-b6ff-58381db74eb5</sv:value>
-    </sv:property>
-    <sv:property sv:name="hideInNav" sv:type="String">
-      <sv:value>true</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:createdBy" sv:type="String">
-      <sv:value>admin</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-      <sv:value>true</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:created" sv:type="Date">
-      <sv:value>2015-02-02T21:43:54.656+01:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:createdBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:43:53.956+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-10-05T13:10:55.510+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>tours:pages/destinationCatOverview</sv:value>
-    </sv:property>
-    <sv:property sv:name="title" sv:type="String">
-      <sv:value>Destinations</sv:value>
-    </sv:property>
-    <sv:node sv:name="main">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>59a5dcd9-fd89-47d6-9959-dbebda5357fc</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-02-02T21:43:54.656+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:53.957+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-02-02T21:43:54.656+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="0">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>43a25cb8-d957-4851-993f-69a9714f80bf</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-02T21:43:54.656+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.957+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-02T21:43:54.656+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourTypeOverviewHeader</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="00">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>56b79e05-b307-479a-9111-6c1048760930</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-03T09:35:31.414+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.957+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-03T09:35:31.414+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourListFeaturedRowByDestination</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="01">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>2b6982cc-28a3-451f-98f5-2841184243a3</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-03T09:35:55.510+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.957+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-03T09:35:55.510+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourListByDestination</sv:value>
-        </sv:property>
-      </sv:node>
-    </sv:node>
-    <sv:node sv:name="footer">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>bef9a000-1856-46e2-b661-3b4b2630f819</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-02-26T16:17:09.589+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:53.957+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-06-18T17:05:45.814+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="footer1">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>8010f256-4efc-4d41-922f-ed452e22c338</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.598+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.958+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.598+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer2">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>bc4944fe-ff15-4114-bdc5-cdd3d500b750</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.612+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.958+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.612+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer3">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>9408fae5-089f-4bb3-a2ce-5ed8a91d0c0b</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.623+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.958+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.623+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer4">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>dc97d59a-b07a-42d6-a9fd-01f06d8739c4</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.634+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.958+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:17:09.634+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="lastLinks">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>ed5001c8-620b-4c13-9d09-d6b201658322</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-06-18T17:05:45.817+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.958+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-06-18T17:05:45.817+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-    </sv:node>
-  </sv:node>
-  <sv:node sv:name="tour">
-    <sv:property sv:name="jcr:primaryType" sv:type="Name">
-      <sv:value>mgnl:page</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-      <sv:value>mix:lockable</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>af4cd608-2dda-4535-a5e0-703ef92fd45a</sv:value>
-    </sv:property>
-    <sv:property sv:name="hideInNav" sv:type="String">
-      <sv:value>true</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:createdBy" sv:type="String">
-      <sv:value>admin</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-      <sv:value>true</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:created" sv:type="Date">
-      <sv:value>2015-01-31T20:48:17.516+01:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:createdBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-07-01T10:43:53.679+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-10-05T13:10:55.511+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>tours:pages/tour</sv:value>
-    </sv:property>
-    <sv:property sv:name="title" sv:type="String">
-      <sv:value>Tour detail</sv:value>
-    </sv:property>
-    <sv:node sv:name="main">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>a2c3a74e-3663-439b-9ff6-69d0c4a3155a</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-01-31T20:48:28.133+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:53.679+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-01-31T20:48:28.133+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="0">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>db704e7b-1649-40c7-b288-cdc6853ed7c4</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-01-31T20:48:35.191+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.680+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-01-31T20:48:35.191+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourDetail</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="00">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>d8e72991-428d-49ce-afc9-2ddd1e96b6d2</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-02T17:18:45.018+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.680+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-02T17:18:45.018+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>tours:components/tourDetailRelatedTours</sv:value>
-        </sv:property>
-      </sv:node>
-    </sv:node>
-    <sv:node sv:name="footer">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>250741f9-baea-41b2-99dc-1f8c01a4097a</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-        <sv:value>true</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-01-31T20:48:28.153+01:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-07-01T10:43:53.680+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-06-18T17:10:44.661+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="footer1">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>268ae6d0-001a-4ab7-8d9f-4a81dc847945</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.390+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.681+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.390+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer2">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>cee73322-f259-4186-84dc-45a4f6aaac5a</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.421+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.681+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.421+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer3">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>caeacf50-0490-46f5-92d0-b33266226bba</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.450+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.681+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.450+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer4">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>6b13dba1-e588-4ab3-98ac-c350e1e56a76</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.467+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.681+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-02-26T16:14:41.467+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="lastLinks">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>e06c7d6b-ad31-4305-93a3-aa46313aa7e7</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-06-18T17:10:44.666+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-07-01T10:43:53.681+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-06-18T17:10:44.666+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-    </sv:node>
-  </sv:node>
   <sv:node sv:name="about">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:page</sv:value>
@@ -2489,7 +1256,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-10-08T14:57:09.794+02:00</sv:value>
+      <sv:value>2015-06-19T11:35:09.097+02:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -2586,14 +1353,14 @@
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;We are a full service, independent travel agency.&lt;/p&gt;
 
-&lt;p&gt;We offer unique tours from every continent on the planet. Get inspired and book your tour with us for an experience you&amp;rsquo;ll always remember.&lt;/p&gt;
-</sv:value>
+            &lt;p&gt;We offer unique tours from every continent on the planet. Get inspired and book your tour with us for an experience you&amp;rsquo;ll always remember.&lt;/p&gt;
+          </sv:value>
         </sv:property>
         <sv:property sv:name="text_de" sv:type="String">
           <sv:value>&lt;p&gt;Wir sind eine unabh&amp;auml;ngige Reiseagentur mit Rundumservice.&lt;/p&gt;
 
-&lt;p&gt;Wir bieten einzigartige Reisen f&amp;uuml;r jeden Kontinent der Erde an. Lassen Sie sich inspirieren und buchen Sie Ihre Reise bei uns, um Erfahrungen zu machen, die Ihnen f&amp;uuml;r immer in Erinnerung bleiben werden.&lt;/p&gt;
-</sv:value>
+            &lt;p&gt;Wir bieten einzigartige Reisen f&amp;uuml;r jeden Kontinent der Erde an. Lassen Sie sich inspirieren und buchen Sie Ihre Reise bei uns, um Erfahrungen zu machen, die Ihnen f&amp;uuml;r immer in Erinnerung bleiben werden.&lt;/p&gt;
+          </sv:value>
         </sv:property>
       </sv:node>
       <sv:node sv:name="03">
@@ -3114,11 +1881,11 @@
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;In 2006, Jack Finlay and Maria Stone decided to go on the holiday of a lifetime.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Im Jahr 2006 entschieden sich Jack Finlay und Maria Stone daf&amp;uuml;r, den Urlaub Ihres Lebens zu machen.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="01">
@@ -3164,20 +1931,20 @@
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Jack and Maria wanted to take some time out of their busy schedules and really experience something amazing. But the more they looked, the more difficult it was to find what they wanted. They didn&amp;rsquo;t have the time or energy to scour the Internet to put all the elements of their trip together. At the same time they didn&amp;rsquo;t want to be stuck on a package tour, and they certainly didn&amp;rsquo;t want to contribute to ruining areas of natural beauty.&lt;/p&gt;
 
-&lt;p&gt;Talking to friends and colleagues, they realized that they weren&amp;rsquo;t alone. There were thousands of people out there who wanted a special holiday, but didn&amp;rsquo;t have the time to do it all themselves. Jack and Maria set up Magnolia Travels with the idea of offering customers &lt;strong&gt;&amp;ldquo;more than just holidays, unforgettable experiences.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;Talking to friends and colleagues, they realized that they weren&amp;rsquo;t alone. There were thousands of people out there who wanted a special holiday, but didn&amp;rsquo;t have the time to do it all themselves. Jack and Maria set up Magnolia Travels with the idea of offering customers &lt;strong&gt;&amp;ldquo;more than just holidays, unforgettable experiences.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Since then, Magnolia Travels has captured the imagination of people around the world, and now has offices in 11 countries. However our website is still our biggest point of contact with our customers, making it easy for people to get inspired and book their holiday of a lifetime quickly and easily.&lt;/p&gt;
+              &lt;p&gt;Since then, Magnolia Travels has captured the imagination of people around the world, and now has offices in 11 countries. However our website is still our biggest point of contact with our customers, making it easy for people to get inspired and book their holiday of a lifetime quickly and easily.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</sv:value>
+              &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Sie wollten sich eine Auszeit von ihrem stressigen Alltag nehmen, um etwas wirklich Gro&amp;szlig;artiges zu erleben. Aber je mehr sie sich umsahen, desto schwieriger wurde es, genau das zu finden, was sie sich vorstellten. Sie hatten weder die Zeit noch die Energie das Internet nach all dem zu durchsuchen, um genau die Reise zusammenzustellen, die ihnen vorschwebte. Dabei wollten sie jedoch auch nicht an eine Pauschalreise gebunden sein und sie wollten auch auf keinen Fall dazu beitragen, Gegenden mit atemberaubender Landschaft zu zerst&amp;ouml;ren.&lt;/p&gt;
 
-&lt;p&gt;Anschlie&amp;szlig;end sprachen sie mit ihren Freunden und Kollegen und kamen zu dem Schluss, dass sie nicht die Einzigen waren, denen es so erging. Es gab tausende Menschen, die sich ebenso einen au&amp;szlig;ergew&amp;ouml;hnlichen Urlaub w&amp;uuml;nschten, aber einfach keine Zeit fanden diesen alleine zu organisieren. Daher gr&amp;uuml;ndeten Jack und Maria das Unternehmen Magnolia Travels mit dem Gedanken im Hinterkopf den Kunden und Kundinnen &amp;ldquo;&lt;strong&gt;mehr als einfach nur einen Urlaub, sondern unvergessliche Erlebnisse zu erm&amp;ouml;glichen.&lt;/strong&gt;&amp;rdquo;&lt;/p&gt;
+              &lt;p&gt;Anschlie&amp;szlig;end sprachen sie mit ihren Freunden und Kollegen und kamen zu dem Schluss, dass sie nicht die Einzigen waren, denen es so erging. Es gab tausende Menschen, die sich ebenso einen au&amp;szlig;ergew&amp;ouml;hnlichen Urlaub w&amp;uuml;nschten, aber einfach keine Zeit fanden diesen alleine zu organisieren. Daher gr&amp;uuml;ndeten Jack und Maria das Unternehmen Magnolia Travels mit dem Gedanken im Hinterkopf den Kunden und Kundinnen &amp;ldquo;&lt;strong&gt;mehr als einfach nur einen Urlaub, sondern unvergessliche Erlebnisse zu erm&amp;ouml;glichen.&lt;/strong&gt;&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;Seither setzt Magnolia Travels die Vorstellungen der Menschen weltweit um und hat bereits Reiseb&amp;uuml;ros in 11 L&amp;auml;ndern. Hierbei ist unsere Webseite immer noch die zentrale Anlaufstelle f&amp;uuml;r unsere Kunden und Kundinnen, die es ihnen leicht macht, sich inspirieren zu lassen und den Urlaub ihres Lebens schnell und unkompliziert zu buchen.&lt;/p&gt;
-</sv:value>
+              &lt;p&gt;Seither setzt Magnolia Travels die Vorstellungen der Menschen weltweit um und hat bereits Reiseb&amp;uuml;ros in 11 L&amp;auml;ndern. Hierbei ist unsere Webseite immer noch die zentrale Anlaufstelle f&amp;uuml;r unsere Kunden und Kundinnen, die es ihnen leicht macht, sich inspirieren zu lassen und den Urlaub ihres Lebens schnell und unkompliziert zu buchen.&lt;/p&gt;
+            </sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -3520,11 +2287,11 @@
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;The core values that guide our company, and ensure you have a wonderful tour.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Unsere zentralen Werte, von denen alle T&amp;auml;tigkeiten unseres Unternehmens bestimmt sind, und durch die wundervolle Rundreisen garantiert werden.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="0">
@@ -3575,11 +2342,11 @@
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Magnolia Travels was created to provide people with unforgettable experiences rather than just holidays. We don&amp;rsquo;t sell package tours in busy resorts, and we don&amp;rsquo;t believe in selling the same holiday to everyone.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Magnolia Travels wurde gegr&amp;uuml;ndet, um den Menschen unvergessliche Erlebnisse anstatt eines einfachen Urlaubs zu erm&amp;ouml;glichen. Wir bieten keine Pauschalreisen in &amp;uuml;berlaufenen Resorts an und wir halten nichts davon, jedem dieselben Ferien zu verkaufen.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="01">
@@ -3630,11 +2397,11 @@
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;That&amp;rsquo;s why we want to get to know you before we give you advice. We change our tours on-the-fly to match people&amp;rsquo;s unique nature and interests. And don&amp;rsquo;t worry if you can&amp;rsquo;t find a tour that suits you on our website. We&amp;rsquo;re ready to do the research for you to craft a personalized tour exactly where and when you like. That&amp;rsquo;s what we&amp;rsquo;re all about. So give us a call!&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Deswegen m&amp;ouml;chten wir Sie kennenlernen, bevor wird Sie beraten. Wir &amp;auml;ndern unsere Reisen im Handumdrehen, um diese an die Pers&amp;ouml;nlichkeit und Interessen unserer Kunden und Kundinnen anzupassen. Und seien Sie unbesorgt, falls Ihnen keine der auf der Webseite angebotenen Reisen zusagt. Wir recherchieren gerne f&amp;uuml;r Sie, um Ihnen exakt die Tour anzubieten, die Sie sich vorstellen, denn genau darum geht es bei uns. Also rufen Sie uns einfach an!&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="02">
@@ -3685,11 +2452,11 @@
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Part of our mission is to give back to the areas that we visit. We do this by working with the local tour guides, sharing tips and soliciting suggestions. We conduct a yearly &amp;lsquo;check-in&amp;rsquo; in the more sensitive travel communities to ensure our impact is positive, and adjust our tours when necessary. We always arrange accommodation in socially &amp;amp; environmentally friendly hotels and guesthouses. Because we don&amp;rsquo;t believe that our &amp;lsquo;experience of a lifetime&amp;rsquo; should harm places of beauty.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Ein Teil unseres Leitbilds besteht darin, den Regionen etwas zur&amp;uuml;ckzugeben, in die unsere Reisen f&amp;uuml;hren. Das erreichen wir mit ortsans&amp;auml;ssigen Reisef&amp;uuml;hrern und Reisef&amp;uuml;hrerinnen, Gedankenaustausch und Einbeziehen von Vorschl&amp;auml;gen. Wir f&amp;uuml;hren j&amp;auml;hrliche &amp;Uuml;berpr&amp;uuml;fungen durch, anhand derer wir herausfinden, ob wir ausschlie&amp;szlig;lich positiven Einfluss aus&amp;uuml;ben und passen unsere Reisen wenn n&amp;ouml;tig an. Wir bieten grunds&amp;auml;tzlich nur Unterkunftsm&amp;ouml;glichkeiten in umweltfreundlichen Hotels und Pensionen an, in denen auch Wert auf die soziale Komponente gelegt wird. Weil wir davon &amp;uuml;berzeugt sind, dass unsere &amp;bdquo;einmaligen Erfahrungen&amp;ldquo; wundersch&amp;ouml;nen Orten nicht schaden sollten.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -3936,7 +2703,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-10-08T15:02:06.633+02:00</sv:value>
+        <sv:value>2015-06-19T11:23:57.430+02:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -3979,7 +2746,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T15:02:06.633+02:00</sv:value>
+          <sv:value>2015-06-18T11:14:31.888+02:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -4032,11 +2799,11 @@
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;If you have a passion for helping people, then we&amp;rsquo;re interested in you.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Wenn Sie Menschen leidenschaftlich gerne behilflich sind, dann passen Sie genau in unser Unternehmen.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="01">
@@ -4082,25 +2849,25 @@
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Experience in tourism or in travel agencies is a big plus, but not essential. However, it is important to have have spent some years in customer facing industries, as well as a passion for creating experiences.&lt;/p&gt;
 
-&lt;p&gt;When we find the right people, we don&amp;rsquo;t want to lose them. That means that we&amp;rsquo;re ready to invest in building your career and in making sure that you have the training to develop. We&amp;rsquo;re also ready to promote you and give you opportunities to spend time in our overseas offices.&lt;/p&gt;
+              &lt;p&gt;When we find the right people, we don&amp;rsquo;t want to lose them. That means that we&amp;rsquo;re ready to invest in building your career and in making sure that you have the training to develop. We&amp;rsquo;re also ready to promote you and give you opportunities to spend time in our overseas offices.&lt;/p&gt;
 
-&lt;p&gt;Our UK office is based in Hull, where we have over 20 employees. The office is in a modern purpose-built building overlooking the beautiful Hull river, with access to lots of amenities nearby. We also have a small terrace where we enjoy after-work drinks on Fridays, and often on other days too!&lt;/p&gt;
+              &lt;p&gt;Our UK office is based in Hull, where we have over 20 employees. The office is in a modern purpose-built building overlooking the beautiful Hull river, with access to lots of amenities nearby. We also have a small terrace where we enjoy after-work drinks on Fridays, and often on other days too!&lt;/p&gt;
 
-&lt;p&gt;Magnolia Travels also has offices in the US, Dubai, Hong Kong and across Europe.&lt;/p&gt;
-</sv:value>
+              &lt;p&gt;Magnolia Travels also has offices in the US, Dubai, Hong Kong and across Europe.&lt;/p&gt;
+            </sv:value>
           </sv:property>
           <sv:property sv:name="text_de" sv:type="String">
             <sv:value>&lt;p&gt;Erfahrung im Bereich Tourismus oder Reiseorganisation ist ein gro&amp;szlig;er Pluspunkt, aber nicht zwingend n&amp;ouml;tig. Jedoch sollten Sie bereits einige Jahre im Kontakt mit Kunden verbracht haben und eine Leidenschaft daf&amp;uuml;r haben Erlebnisse zu gestalten.&lt;/p&gt;
 
-&lt;p&gt;Wenn wir die richtigen Menschen f&amp;uuml;r unser Unternehmen gefunden haben, m&amp;ouml;chten wir sie sehr ungern wieder gehen lassen. Das bedeutet, dass wir gerne bereit sind in Ihre Karriere zu investieren und Ihnen die Weiterbildung erm&amp;ouml;glichen, die Sie dabei unterst&amp;uuml;tzt sich weiterzuentwickeln. Wir m&amp;ouml;chten sie auch f&amp;ouml;rdern und es Ihnen erm&amp;ouml;glichen Zeit in unseren ausl&amp;auml;ndischen B&amp;uuml;ros zu verbringen.&lt;/p&gt;
+              &lt;p&gt;Wenn wir die richtigen Menschen f&amp;uuml;r unser Unternehmen gefunden haben, m&amp;ouml;chten wir sie sehr ungern wieder gehen lassen. Das bedeutet, dass wir gerne bereit sind in Ihre Karriere zu investieren und Ihnen die Weiterbildung erm&amp;ouml;glichen, die Sie dabei unterst&amp;uuml;tzt sich weiterzuentwickeln. Wir m&amp;ouml;chten sie auch f&amp;ouml;rdern und es Ihnen erm&amp;ouml;glichen Zeit in unseren ausl&amp;auml;ndischen B&amp;uuml;ros zu verbringen.&lt;/p&gt;
 
-&lt;p&gt;Unser B&amp;uuml;ro im Vereinigen K&amp;ouml;nigreich befindet sich in Hull, in dem mehr als 20 Mitarbeiter und Mitarbeiterinnen t&amp;auml;tig sind. Das B&amp;uuml;ro liegt in einem modernen, f&amp;uuml;r diesen Zweck erbauten Geb&amp;auml;ude mit Ausblick auf den wundersch&amp;ouml;nen Fluss Hull. In der N&amp;auml;he gibt es zahlreiche Annehmlichkeiten. Au&amp;szlig;erdem haben wir eine kleine Terrasse, auf der wir gerne freitags &amp;ndash; und auch an anderen Tagen &amp;ndash; den Abend bei gem&amp;uuml;tlichen Getr&amp;auml;nken ausklingen lassen!&lt;/p&gt;
+              &lt;p&gt;Unser B&amp;uuml;ro im Vereinigen K&amp;ouml;nigreich befindet sich in Hull, in dem mehr als 20 Mitarbeiter und Mitarbeiterinnen t&amp;auml;tig sind. Das B&amp;uuml;ro liegt in einem modernen, f&amp;uuml;r diesen Zweck erbauten Geb&amp;auml;ude mit Ausblick auf den wundersch&amp;ouml;nen Fluss Hull. In der N&amp;auml;he gibt es zahlreiche Annehmlichkeiten. Au&amp;szlig;erdem haben wir eine kleine Terrasse, auf der wir gerne freitags &amp;ndash; und auch an anderen Tagen &amp;ndash; den Abend bei gem&amp;uuml;tlichen Getr&amp;auml;nken ausklingen lassen!&lt;/p&gt;
 
-&lt;p&gt;Magnolia Travels verf&amp;uuml;gt &amp;uuml;ber B&amp;uuml;ros in den USA, in Dubai, Hongkong und verschiedenen europ&amp;auml;ischen L&amp;auml;ndern.&lt;/p&gt;
-</sv:value>
+              &lt;p&gt;Magnolia Travels verf&amp;uuml;gt &amp;uuml;ber B&amp;uuml;ros in den USA, in Dubai, Hongkong und verschiedenen europ&amp;auml;ischen L&amp;auml;ndern.&lt;/p&gt;
+            </sv:value>
           </sv:property>
         </sv:node>
-        q        <sv:node sv:name="04">
+        <sv:node sv:name="04">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:component</sv:value>
           </sv:property>
@@ -4619,56 +3386,56 @@
             <sv:property sv:name="text" sv:type="String">
               <sv:value>&lt;p&gt;You love dealing with people and making them happy. You have at least five years experience dealing directly with customers, not necessarily in the tourism industry (but it sure helps!) You should also have the initiative and enthusiasm to find wonderful experiences for customers.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;p&gt;At least five years in customer experience&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Qualification in tourism or customer service related area&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Strong initiative and research capabilities&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Native English speaker, multilingual skills preferred&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Strong organizational skills&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Experience in Word, Powerpoint, Excel or Mac equivalents&lt;/p&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
+                &lt;ul&gt;
+                &lt;li&gt;
+                &lt;p&gt;At least five years in customer experience&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Qualification in tourism or customer service related area&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Strong initiative and research capabilities&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Native English speaker, multilingual skills preferred&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Strong organizational skills&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Experience in Word, Powerpoint, Excel or Mac equivalents&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;/ul&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Position based in: Hull, UK&lt;/p&gt;
-</sv:value>
+                &lt;p&gt;Position based in: Hull, UK&lt;/p&gt;
+              </sv:value>
             </sv:property>
             <sv:property sv:name="text_de" sv:type="String">
               <sv:value>&lt;p&gt;Sie arbeiten gerne mit Menschen und deren Wohlbefinden liegt Ihnen am Herzen. Sie haben mindestens f&amp;uuml;nf Jahre Erfahrung im direkten Kundenkontakt, jedoch nicht zwingend in der Tourismusbranche (was jedoch hilfreich w&amp;auml;re!). Dar&amp;uuml;ber hinaus sollten Sie die Eigeninitiative und Begeisterung mitbringen, um wunderbare Erlebnisse f&amp;uuml;r die Kunden und Kundinnen zu gestalten.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Anforderungen&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Anforderungen&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-    &lt;li&gt;Mindestens f&amp;uuml;nf Jahre Erfahrung im Kundenkontakt&lt;/li&gt;
-    &lt;li&gt;Ausbildung im Bereich Tourismus oder Kundendienst&lt;/li&gt;
-    &lt;li&gt;Starke Eigeninitiative und Recherchef&amp;auml;higkeiten&lt;/li&gt;
-    &lt;li&gt;Englischer Muttersprachler, Mehrsprachigkeit von Vorteil&lt;/li&gt;
-    &lt;li&gt;Ausgepr&amp;auml;gtes Organisationstalent&lt;/li&gt;
-    &lt;li&gt;Erfahrungen im Umgang mit Word, PowerPoint, Excel oder den entsprechenden Mac-Programmen&lt;/li&gt;
-&lt;/ul&gt;
+                &lt;ul&gt;
+                &lt;li&gt;Mindestens f&amp;uuml;nf Jahre Erfahrung im Kundenkontakt&lt;/li&gt;
+                &lt;li&gt;Ausbildung im Bereich Tourismus oder Kundendienst&lt;/li&gt;
+                &lt;li&gt;Starke Eigeninitiative und Recherchef&amp;auml;higkeiten&lt;/li&gt;
+                &lt;li&gt;Englischer Muttersprachler, Mehrsprachigkeit von Vorteil&lt;/li&gt;
+                &lt;li&gt;Ausgepr&amp;auml;gtes Organisationstalent&lt;/li&gt;
+                &lt;li&gt;Erfahrungen im Umgang mit Word, PowerPoint, Excel oder den entsprechenden Mac-Programmen&lt;/li&gt;
+                &lt;/ul&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Standort: Hull, Vereinigtes K&amp;ouml;nigreich&lt;/p&gt;
-</sv:value>
+                &lt;p&gt;Standort: Hull, Vereinigtes K&amp;ouml;nigreich&lt;/p&gt;
+              </sv:value>
             </sv:property>
           </sv:node>
         </sv:node>
@@ -5012,55 +3779,55 @@
             <sv:property sv:name="text" sv:type="String">
               <sv:value>&lt;p&gt;You have more than 10 years experience in customer service, including at least five years in tourism. You have a passion for giving customers what they need. Your experience should include at least five years at managerial level. Because Magnolia Travels is growing, we need people who are ready to take on added responsibilities as their roles expand. You will be responsible for managing a team of 10 customer experience agents, but this may grow. Your role will involve occasional travel to check locations and visit international offices.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;p&gt;More than 10 years in customer experience, including 5+ years in tourism.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;At least 5 years at managerial level&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Qualification in tourism or customer service related area&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Proven ability to get the best out of people in a team&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Experience in managing people remotely&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Native English speaker, multilingual skills preferred&lt;/p&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
+                &lt;ul&gt;
+                &lt;li&gt;
+                &lt;p&gt;More than 10 years in customer experience, including 5+ years in tourism.&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;At least 5 years at managerial level&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Qualification in tourism or customer service related area&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Proven ability to get the best out of people in a team&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Experience in managing people remotely&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Native English speaker, multilingual skills preferred&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;
-Position based in: Hull, UK (with some travel)&lt;/p&gt;
-</sv:value>
+                &lt;p&gt;&lt;br /&gt;
+                Position based in: Hull, UK (with some travel)&lt;/p&gt;
+              </sv:value>
             </sv:property>
             <sv:property sv:name="text_de" sv:type="String">
               <sv:value>&lt;p&gt;Sie verf&amp;uuml;gen &amp;uuml;ber mehr als 10 Jahre Erfahrung im Kundendienst, davon mindestens f&amp;uuml;nf Jahre in der Tourismusbranche. Sie setzen sich leidenschaftlich daf&amp;uuml;r ein, dem Kunden oder der Kundin zu geben was er oder sie sich w&amp;uuml;nscht. Zus&amp;auml;tzlich sollten Sie zumindest f&amp;uuml;nf Jahre Erfahrung in einer F&amp;uuml;hrungsposition mitbringen. Da Magnolia Travels stetig w&amp;auml;chst, sollten Sie bereit sein zus&amp;auml;tzliche Verantwortung zu &amp;uuml;bernehmen, da sich der T&amp;auml;tigkeitsbereich st&amp;auml;ndig erweitert. Sie werden f&amp;uuml;r die Leitung eines Teams bestehend aus 10 Kundenerlebnisvermittlern und -vermittlerinnen verantwortlich sein, wobei dieses auch noch vergr&amp;ouml;&amp;szlig;ert werden kann. In Ihrer Position m&amp;uuml;ssen Sie au&amp;szlig;erdem mobil sein, da Sie die Reiseorte und internationalen B&amp;uuml;ros gelegentlich besuchen m&amp;uuml;ssen.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Anforderungen&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Anforderungen&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-    &lt;li&gt;Mehr als 10 Jahre Erfahrung im Kundendienst, davon 5+ im Tourismusbereich&lt;/li&gt;
-    &lt;li&gt;Mindestens 5 Jahre in einer F&amp;uuml;hrungsposition&lt;/li&gt;
-    &lt;li&gt;Ausbildung in der Tourismusbranche oder im Kundendienst&lt;/li&gt;
-    &lt;li&gt;Erwiesene Bef&amp;auml;higung daf&amp;uuml;r das Beste aus den Teammitgliedern zu holen&lt;/li&gt;
-    &lt;li&gt;Erfahrung damit Menschen anzuleiten, die sich nicht in der N&amp;auml;he befinden&lt;/li&gt;
-    &lt;li&gt;Englischer Muttersprachler, Mehrsprachigkeit von Vorteil&lt;/li&gt;
-&lt;/ul&gt;
+                &lt;ul&gt;
+                &lt;li&gt;Mehr als 10 Jahre Erfahrung im Kundendienst, davon 5+ im Tourismusbereich&lt;/li&gt;
+                &lt;li&gt;Mindestens 5 Jahre in einer F&amp;uuml;hrungsposition&lt;/li&gt;
+                &lt;li&gt;Ausbildung in der Tourismusbranche oder im Kundendienst&lt;/li&gt;
+                &lt;li&gt;Erwiesene Bef&amp;auml;higung daf&amp;uuml;r das Beste aus den Teammitgliedern zu holen&lt;/li&gt;
+                &lt;li&gt;Erfahrung damit Menschen anzuleiten, die sich nicht in der N&amp;auml;he befinden&lt;/li&gt;
+                &lt;li&gt;Englischer Muttersprachler, Mehrsprachigkeit von Vorteil&lt;/li&gt;
+                &lt;/ul&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Standort: Hull, Vereinigtes K&amp;ouml;nigreich (inklusive einiger Reisen)&lt;/p&gt;
-</sv:value>
+                &lt;p&gt;Standort: Hull, Vereinigtes K&amp;ouml;nigreich (inklusive einiger Reisen)&lt;/p&gt;
+              </sv:value>
             </sv:property>
           </sv:node>
         </sv:node>
@@ -5404,54 +4171,54 @@ Position based in: Hull, UK (with some travel)&lt;/p&gt;
             <sv:property sv:name="text" sv:type="String">
               <sv:value>&lt;p&gt;Magnolia Travels is growing fast, but we know that there are still lots of opportunities we can take advantage of. We want a marketing associate with a hands-on approach to social media, events and marketing automation. You&amp;rsquo;ll also be responsible for developing and translating our website to attract more customers globally.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;p&gt;Graduate or post-graduate diploma/degree in marketing&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Proven experience with marketing campaigns in business to consumer settings, preferably in tourism-related industries&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Strong expertise in creating and leading social media campaigns&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Proven ability to launch and create content for websites&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Hands-on knowledge of a range of marketing tools, including RedEye, Hootsuite, Google Analytics, Photoshop etc.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;p&gt;Experience with a CMS - preferably Magnolia CMS.&lt;/p&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
+                &lt;ul&gt;
+                &lt;li&gt;
+                &lt;p&gt;Graduate or post-graduate diploma/degree in marketing&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Proven experience with marketing campaigns in business to consumer settings, preferably in tourism-related industries&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Strong expertise in creating and leading social media campaigns&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Proven ability to launch and create content for websites&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Hands-on knowledge of a range of marketing tools, including RedEye, Hootsuite, Google Analytics, Photoshop etc.&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;p&gt;Experience with a CMS - preferably Magnolia CMS.&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;
-Position based in: Hull, UK&lt;/p&gt;
-</sv:value>
+                &lt;p&gt;&lt;br /&gt;
+                Position based in: Hull, UK&lt;/p&gt;
+              </sv:value>
             </sv:property>
             <sv:property sv:name="text_de" sv:type="String">
               <sv:value>&lt;p&gt;Magnolia Travels w&amp;auml;chst stetig, aber wir wissen, dass es immer noch einige M&amp;ouml;glichkeiten gibt, die wir noch nicht ergriffen haben. Wir brauchen einen Marketingmitarbeiter oder eine Marketingmitarbeiterin, der/die die Dinge in den Bereichen soziale Medien, Veranstaltungen und Marketingautomatisierung gerne anpackt und diese praktisch umsetzt. Zu Ihren Verantwortungsbereichen z&amp;auml;hlen au&amp;szlig;erdem die Entwicklung und &amp;Uuml;bersetzung unserer Webseite, damit Kunden weltweit angesprochen werden k&amp;ouml;nnen.&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Anforderungen&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Anforderungen&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-    &lt;li&gt;Diplom/Master oder Doktorat im Bereich Marketing&lt;/li&gt;
-    &lt;li&gt;Erwiesene Bef&amp;auml;higung zur Umsetzung von Marketingkampagnen; mit dem Tourismus verbundene Branchen werden bevorzugt&lt;/li&gt;
-    &lt;li&gt;Umfangreiches Fachwissen im Bereich Erstellung und Anleitung von Kampagnen im Bereich der sozialen Medien&lt;/li&gt;
-    &lt;li&gt;Erwiesene Bef&amp;auml;higung in der Erstellung und Umsetzung von Webseiteninhalten&lt;/li&gt;
-    &lt;li&gt;Praktische Erfahrung mit verschiedenen Marketingwerkzeugen wie RedEye, Hootsuite, Google Analytics, Photoshop, etc.&lt;/li&gt;
-    &lt;li&gt;Erfahrung mit einem CMS &amp;ndash; m&amp;ouml;glichst mit dem Magnolia CMS.&lt;/li&gt;
-&lt;/ul&gt;
+                &lt;ul&gt;
+                &lt;li&gt;Diplom/Master oder Doktorat im Bereich Marketing&lt;/li&gt;
+                &lt;li&gt;Erwiesene Bef&amp;auml;higung zur Umsetzung von Marketingkampagnen; mit dem Tourismus verbundene Branchen werden bevorzugt&lt;/li&gt;
+                &lt;li&gt;Umfangreiches Fachwissen im Bereich Erstellung und Anleitung von Kampagnen im Bereich der sozialen Medien&lt;/li&gt;
+                &lt;li&gt;Erwiesene Bef&amp;auml;higung in der Erstellung und Umsetzung von Webseiteninhalten&lt;/li&gt;
+                &lt;li&gt;Praktische Erfahrung mit verschiedenen Marketingwerkzeugen wie RedEye, Hootsuite, Google Analytics, Photoshop, etc.&lt;/li&gt;
+                &lt;li&gt;Erfahrung mit einem CMS &amp;ndash; m&amp;ouml;glichst mit dem Magnolia CMS.&lt;/li&gt;
+                &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;
-Standort: Hull, Vereinigtes K&amp;ouml;nigreich&lt;/p&gt;
-</sv:value>
+                &lt;p&gt;&lt;br /&gt;
+                Standort: Hull, Vereinigtes K&amp;ouml;nigreich&lt;/p&gt;
+              </sv:value>
             </sv:property>
           </sv:node>
         </sv:node>
@@ -5796,11 +4563,11 @@ Standort: Hull, Vereinigtes K&amp;ouml;nigreich&lt;/p&gt;
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;Contact us any time to get a fast, helpful response.&lt;/p&gt;
-</sv:value>
+          </sv:value>
         </sv:property>
         <sv:property sv:name="text_de" sv:type="String">
           <sv:value>&lt;p&gt;Setzen Sie sich jederzeit mit uns in Verbindung, um eine schnelle, hilfreiche Antwort zu erhalten.&lt;/p&gt;
-</sv:value>
+          </sv:value>
         </sv:property>
       </sv:node>
       <sv:node sv:name="00">
@@ -5846,30 +4613,30 @@ Standort: Hull, Vereinigtes K&amp;ouml;nigreich&lt;/p&gt;
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;Do you have a question about one of our tours? Would you like to customize a tour - or looking for a trip you just can&amp;rsquo;t find on our website?&lt;/p&gt;
 
-&lt;p&gt;Do you have a question about how our tours work, about a booking you&amp;rsquo;ve placed or about payment? Or are you on your trip now and have a question or need support?&lt;/p&gt;
+            &lt;p&gt;Do you have a question about how our tours work, about a booking you&amp;rsquo;ve placed or about payment? Or are you on your trip now and have a question or need support?&lt;/p&gt;
 
-&lt;p&gt;Or do you have a media or press query?&lt;/p&gt;
+            &lt;p&gt;Or do you have a media or press query?&lt;/p&gt;
 
-&lt;p&gt;For any of these concerns please contact us via the most convenient method below. We are available for you 24/7.&lt;/p&gt;
+            &lt;p&gt;For any of these concerns please contact us via the most convenient method below. We are available for you 24/7.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;All inquiries&lt;/strong&gt;&lt;br /&gt;
-&lt;a href="mailto:contact@magnolia-travels-example.com" style="text-decoration:none;"&gt;contact@magnolia-travels-example.com&lt;/a&gt;&lt;br /&gt;
-&lt;a href="tel:+1 800 123 4567"&gt;+1 800 123 4567&lt;/a&gt;&lt;/p&gt;
-</sv:value>
+            &lt;p&gt;&lt;strong&gt;All inquiries&lt;/strong&gt;&lt;br /&gt;
+            &lt;a href="mailto:contact@magnolia-travels-example.com" style="text-decoration:none;"&gt;contact@magnolia-travels-example.com&lt;/a&gt;&lt;br /&gt;
+            &lt;a href="tel:+1 800 123 4567"&gt;+1 800 123 4567&lt;/a&gt;&lt;/p&gt;
+          </sv:value>
         </sv:property>
         <sv:property sv:name="text_de" sv:type="String">
           <sv:value>&lt;p&gt;Haben Sie Fragen zu einer unserer Reisen? M&amp;ouml;chten Sie eine der Reisen auf Ihre pers&amp;ouml;nlichen Bed&amp;uuml;rfnisse zuschneiden lassen &amp;ndash; oder sind Sie auf der Suche nach einer Reise, die Sie auf unserer Webseite nicht gefunden haben?&lt;/p&gt;
 
-&lt;p&gt;Haben Sie eine Frage dazu, wie unsere Reisen durchgef&amp;uuml;hrt werden, zu Ihrer Buchung oder den Zahlungsmodalit&amp;auml;ten? Oder befinden Sie sich gerade auf einer der Reisen und haben eine Frage dazu oder ben&amp;ouml;tigen Unterst&amp;uuml;tzung?&lt;br /&gt;
-&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br /&gt;
-Oder haben Sie eine Medien- oder Presseanfrage?&lt;br /&gt;
-&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br /&gt;
-F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie geeignetste Art, wie Sie sie unten sehen, erreichen. Wir stehen Ihnen rund um die Uhr zur Verf&amp;uuml;gung.&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br /&gt;
-&lt;strong&gt;Alle Anfragen&lt;/strong&gt;&lt;br /&gt;
-&lt;a href="mailto:contact@magnolia-travels-example.com"&gt;contact@magnolia-travels-example.com&lt;/a&gt;&lt;br /&gt;
-&lt;a href="tel:+1 800 123 4567"&gt;+1 800 123 4567&lt;/a&gt;&lt;/p&gt;
-</sv:value>
+            &lt;p&gt;Haben Sie eine Frage dazu, wie unsere Reisen durchgef&amp;uuml;hrt werden, zu Ihrer Buchung oder den Zahlungsmodalit&amp;auml;ten? Oder befinden Sie sich gerade auf einer der Reisen und haben eine Frage dazu oder ben&amp;ouml;tigen Unterst&amp;uuml;tzung?&lt;br /&gt;
+            &amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br /&gt;
+            Oder haben Sie eine Medien- oder Presseanfrage?&lt;br /&gt;
+            &amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br /&gt;
+            F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie geeignetste Art, wie Sie sie unten sehen, erreichen. Wir stehen Ihnen rund um die Uhr zur Verf&amp;uuml;gung.&lt;br /&gt;
+            &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br /&gt;
+            &lt;strong&gt;Alle Anfragen&lt;/strong&gt;&lt;br /&gt;
+            &lt;a href="mailto:contact@magnolia-travels-example.com"&gt;contact@magnolia-travels-example.com&lt;/a&gt;&lt;br /&gt;
+            &lt;a href="tel:+1 800 123 4567"&gt;+1 800 123 4567&lt;/a&gt;&lt;/p&gt;
+          </sv:value>
         </sv:property>
       </sv:node>
       <sv:node sv:name="01">
@@ -5887,13 +4654,13 @@ F&amp;uuml;r all diese Anfragen k&amp;ouml;nnen Sie uns auf die f&amp;uuml;r Sie
         </sv:property>
         <sv:property sv:name="confirmContentTypetext" sv:type="String">
           <sv:value>We have received a message sent from ${email} through our contact form.
-For your convenience, the message is repeated below.
+            For your convenience, the message is repeated below.
 
-Thank you for contacting us!
-- John
+            Thank you for contacting us!
+            - John
 
----- your message ----
-${message}</sv:value>
+            ---- your message ----
+            ${message}</sv:value>
         </sv:property>
         <sv:property sv:name="confirmMailFrom" sv:type="String">
           <sv:value>contact@magnolia-travels-example.com</sv:value>
@@ -5922,11 +4689,11 @@ ${message}</sv:value>
         <sv:property sv:name="contentTypetext" sv:type="String">
           <sv:value>Message:
 
-Email: ${email}
+            Email: ${email}
 
-Subject: ${subject}
+            Subject: ${subject}
 
-Message: ${message}</sv:value>
+            Message: ${message}</sv:value>
         </sv:property>
         <sv:property sv:name="displayStepNavigation" sv:type="Boolean">
           <sv:value>false</sv:value>
@@ -6676,7 +5443,7 @@ Message: ${message}</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="00">
@@ -6721,7 +5488,7 @@ Message: ${message}</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="01">
@@ -6766,7 +5533,7 @@ Message: ${message}</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Mum's the word.&lt;/p&gt;
-</sv:value>
+            </sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -7107,40 +5874,40 @@ Message: ${message}</sv:value>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Lorem ipsum dolor sit amet, illum legendos duo te. Te vix novum tibique torquatos, ignota constituam honestatis ad est. Cu his stet legere delicatissimi, cu blandit interesset comprehensam per. His ea purto etiam, eam cu epicuri conceptam.&lt;/p&gt;
 
-&lt;p&gt;Elit inermis tractatos ius at, quo sale ullum ex, volumus consulatu liberavisse sea at. Ex magna scaevola eam. Quem legere vivendo no sea, noluisse imperdiet disputando eos te. Et nam meis veritus, cu vix corpora aliquando. Eam postea splendide ad, te has odio idque quaerendum, singulis aliquando moderatius ea mei.&lt;/p&gt;
+              &lt;p&gt;Elit inermis tractatos ius at, quo sale ullum ex, volumus consulatu liberavisse sea at. Ex magna scaevola eam. Quem legere vivendo no sea, noluisse imperdiet disputando eos te. Et nam meis veritus, cu vix corpora aliquando. Eam postea splendide ad, te has odio idque quaerendum, singulis aliquando moderatius ea mei.&lt;/p&gt;
 
-&lt;p&gt;Eum dicit euripidis te. In sed mutat menandri euripidis. Eam id posse referrentur. An vis alii laudem, sea at justo atomorum eloquentiam. Elitr eirmod adipisci eum ex. An sea simul corrumpit referrentur.&lt;/p&gt;
+              &lt;p&gt;Eum dicit euripidis te. In sed mutat menandri euripidis. Eam id posse referrentur. An vis alii laudem, sea at justo atomorum eloquentiam. Elitr eirmod adipisci eum ex. An sea simul corrumpit referrentur.&lt;/p&gt;
 
-&lt;p&gt;Mel magna autem ei, no usu virtute assentior, est et iisque verterem. Vix et agam falli sanctus, graeci pertinacia an eam. Mel eu impetus facilisis. Has ut vitae dictas volumus, munere blandit incorrupte vix ex. Libris officiis vix ad, vocibus fierent maiestatis et eam.&lt;/p&gt;
+              &lt;p&gt;Mel magna autem ei, no usu virtute assentior, est et iisque verterem. Vix et agam falli sanctus, graeci pertinacia an eam. Mel eu impetus facilisis. Has ut vitae dictas volumus, munere blandit incorrupte vix ex. Libris officiis vix ad, vocibus fierent maiestatis et eam.&lt;/p&gt;
 
-&lt;p&gt;Reque simul partiendo nam te, sed ei alii eruditi. Diam nullam probatus te sea. Ut per sumo meis invidunt, eligendi menandri persequeris ne sea. Nec tibique gloriatur ut, quot tation cu per. Ne vidisse viderer oportere pri, eam in feugiat fabulas suscipit, per adhuc elaboraret eu. Omnesque patrioque interpretaris sed an, vix cu convenire gloriatur. Et malorum epicuri ancillae eum, labores similique mea at, at iracundia interesset mei.&lt;/p&gt;
+              &lt;p&gt;Reque simul partiendo nam te, sed ei alii eruditi. Diam nullam probatus te sea. Ut per sumo meis invidunt, eligendi menandri persequeris ne sea. Nec tibique gloriatur ut, quot tation cu per. Ne vidisse viderer oportere pri, eam in feugiat fabulas suscipit, per adhuc elaboraret eu. Omnesque patrioque interpretaris sed an, vix cu convenire gloriatur. Et malorum epicuri ancillae eum, labores similique mea at, at iracundia interesset mei.&lt;/p&gt;
 
-&lt;p&gt;In quidam adipiscing mea, ea sit equidem offendit mediocritatem. Nec nobis dictas fabellas ne, commodo nostrud vituperatoribus ut mel, et dicat mandamus instructior eos. Elit scripta efficiantur ea est, at euismod definiebas eos. Denique prodesset ea mel. Te sit vide invenire consequat, in facer nominati consetetur sed, cum dicunt scaevola at.&lt;/p&gt;
+              &lt;p&gt;In quidam adipiscing mea, ea sit equidem offendit mediocritatem. Nec nobis dictas fabellas ne, commodo nostrud vituperatoribus ut mel, et dicat mandamus instructior eos. Elit scripta efficiantur ea est, at euismod definiebas eos. Denique prodesset ea mel. Te sit vide invenire consequat, in facer nominati consetetur sed, cum dicunt scaevola at.&lt;/p&gt;
 
-&lt;p&gt;Ei nibh intellegebat usu, sed ea prima recteque expetendis. Et sit iusto officiis, te sed oportere recteque. Ne stet graece imperdiet eam. Mea an virtute appetere abhorreant, in cum quando putent dolorem, ut prompta labores his. Cum ei debet salutandi omittantur, habeo bonorum nominati mea at. Quot etiam honestatis cum ne, cu perpetua pericula vel.&lt;/p&gt;
+              &lt;p&gt;Ei nibh intellegebat usu, sed ea prima recteque expetendis. Et sit iusto officiis, te sed oportere recteque. Ne stet graece imperdiet eam. Mea an virtute appetere abhorreant, in cum quando putent dolorem, ut prompta labores his. Cum ei debet salutandi omittantur, habeo bonorum nominati mea at. Quot etiam honestatis cum ne, cu perpetua pericula vel.&lt;/p&gt;
 
-&lt;p&gt;Saperet moderatius efficiantur eu nam, te purto debet simul duo. Ex saepe impetus officiis his, cum perpetua repudiare eu. Sit falli error ne. Duo ea duis altera iriure, ius semper impedit reprehendunt ad, sapientem constituto cum id. Eos luptatum praesent ad, ei habemus salutatus usu.&lt;/p&gt;
+              &lt;p&gt;Saperet moderatius efficiantur eu nam, te purto debet simul duo. Ex saepe impetus officiis his, cum perpetua repudiare eu. Sit falli error ne. Duo ea duis altera iriure, ius semper impedit reprehendunt ad, sapientem constituto cum id. Eos luptatum praesent ad, ei habemus salutatus usu.&lt;/p&gt;
 
-&lt;p&gt;Sumo facete eam no, erroribus expetendis et usu. Ad tale graeco mel. Eu mei facilis ocurreret aliquando, ne conceptam rationibus duo. Cu porro elitr suscipit sed, in corrumpit assueverit mel. Pri te nibh mundi, cu sed justo oblique partiendo. Pri sanctus blandit ponderum et, vel eius docendi consequuntur ad.&lt;/p&gt;
+              &lt;p&gt;Sumo facete eam no, erroribus expetendis et usu. Ad tale graeco mel. Eu mei facilis ocurreret aliquando, ne conceptam rationibus duo. Cu porro elitr suscipit sed, in corrumpit assueverit mel. Pri te nibh mundi, cu sed justo oblique partiendo. Pri sanctus blandit ponderum et, vel eius docendi consequuntur ad.&lt;/p&gt;
 
-&lt;p&gt;Elit habemus ea est. An eum zril repudiare. Nec numquam minimum salutatus ea. Et pro lorem impedit, qui an fugit recteque. Duo et modo decore partiendo, illum minimum legendos ex eos, wisi liberavisse vix in.&lt;/p&gt;
+              &lt;p&gt;Elit habemus ea est. An eum zril repudiare. Nec numquam minimum salutatus ea. Et pro lorem impedit, qui an fugit recteque. Duo et modo decore partiendo, illum minimum legendos ex eos, wisi liberavisse vix in.&lt;/p&gt;
 
-&lt;p&gt;Per bonorum vivendum suscipiantur ne, te libris voluptua sadipscing eam. Nostro inermis lobortis ius ad, usu principes iracundia ea. Ut solum nominati liberavisse per, an quo agam liber feugait. Mea te latine iudicabit, ei vim nibh salutatus.&lt;/p&gt;
+              &lt;p&gt;Per bonorum vivendum suscipiantur ne, te libris voluptua sadipscing eam. Nostro inermis lobortis ius ad, usu principes iracundia ea. Ut solum nominati liberavisse per, an quo agam liber feugait. Mea te latine iudicabit, ei vim nibh salutatus.&lt;/p&gt;
 
-&lt;p&gt;Justo regione ex mei. Cum at odio scripta, sit ne vitae delectus intellegat. Usu nullam definiebas in, vix euismod omittantur ut, per elitr semper detraxit ne. Vis id veritus expetendis consequuntur, option epicurei an mel.&lt;/p&gt;
+              &lt;p&gt;Justo regione ex mei. Cum at odio scripta, sit ne vitae delectus intellegat. Usu nullam definiebas in, vix euismod omittantur ut, per elitr semper detraxit ne. Vis id veritus expetendis consequuntur, option epicurei an mel.&lt;/p&gt;
 
-&lt;p&gt;Eos harum aliquip no. Solet verear cum ut, dolore vulputate intellegebat eum ea, ei mei errem legimus. Est inani movet pericula ei, eu vim dolore doming recteque. Oportere dissentiet nec eu.&lt;/p&gt;
+              &lt;p&gt;Eos harum aliquip no. Solet verear cum ut, dolore vulputate intellegebat eum ea, ei mei errem legimus. Est inani movet pericula ei, eu vim dolore doming recteque. Oportere dissentiet nec eu.&lt;/p&gt;
 
-&lt;p&gt;Elit habemus ea est. An eum zril repudiare. Nec numquam minimum salutatus ea. Et pro lorem impedit, qui an fugit recteque. Duo et modo decore partiendo, illum minimum legendos ex eos, wisi liberavisse vix in.&lt;/p&gt;
+              &lt;p&gt;Elit habemus ea est. An eum zril repudiare. Nec numquam minimum salutatus ea. Et pro lorem impedit, qui an fugit recteque. Duo et modo decore partiendo, illum minimum legendos ex eos, wisi liberavisse vix in.&lt;/p&gt;
 
-&lt;p&gt;Per bonorum vivendum suscipiantur ne, te libris voluptua sadipscing eam. Nostro inermis lobortis ius ad, usu principes iracundia ea. Ut solum nominati liberavisse per, an quo agam liber feugait. Mea te latine iudicabit, ei vim nibh salutatus.&lt;/p&gt;
+              &lt;p&gt;Per bonorum vivendum suscipiantur ne, te libris voluptua sadipscing eam. Nostro inermis lobortis ius ad, usu principes iracundia ea. Ut solum nominati liberavisse per, an quo agam liber feugait. Mea te latine iudicabit, ei vim nibh salutatus.&lt;/p&gt;
 
-&lt;p&gt;Justo regione ex mei. Cum at odio scripta, sit ne vitae delectus intellegat. Usu nullam definiebas in, vix euismod omittantur ut, per elitr semper detraxit ne. Vis id veritus expetendis consequuntur, option epicurei an mel.&lt;/p&gt;
+              &lt;p&gt;Justo regione ex mei. Cum at odio scripta, sit ne vitae delectus intellegat. Usu nullam definiebas in, vix euismod omittantur ut, per elitr semper detraxit ne. Vis id veritus expetendis consequuntur, option epicurei an mel.&lt;/p&gt;
 
-&lt;p&gt;Eos harum aliquip no. Solet verear cum ut, dolore vulputate intellegebat eum ea, ei mei errem legimus. Est inani movet pericula ei, eu vim dolore doming recteque. Oportere dissentiet nec eu.&lt;/p&gt;
+              &lt;p&gt;Eos harum aliquip no. Solet verear cum ut, dolore vulputate intellegebat eum ea, ei mei errem legimus. Est inani movet pericula ei, eu vim dolore doming recteque. Oportere dissentiet nec eu.&lt;/p&gt;
 
-&lt;p&gt;Eu etiam officiis mei, fabellas argumentum mea et, ea eum aperiam sententiae. Sit putant dicunt electram eu. Sea cu illud omittam. Ne iuvaret atomorum eam, veri solum ne mel. Legal mumbo jumbo.&lt;/p&gt;
-</sv:value>
+              &lt;p&gt;Eu etiam officiis mei, fabellas argumentum mea et, ea eum aperiam sententiae. Sit putant dicunt electram eu. Sea cu illud omittam. Ne iuvaret atomorum eam, veri solum ne mel. Legal mumbo jumbo.&lt;/p&gt;
+            </sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -7475,10 +6242,10 @@ Message: ${message}</sv:value>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Developed by Magnolia International Ltd.&lt;/p&gt;
 
-&lt;p&gt;Makes use of Twitter Bootstrap CSS framework, Google Web Fonts, MapGlyphs, and many quality Creative Commons licensed images discovered on unsplash and flickr.&lt;/p&gt;
+              &lt;p&gt;Makes use of Twitter Bootstrap CSS framework, Google Web Fonts, MapGlyphs, and many quality Creative Commons licensed images discovered on unsplash and flickr.&lt;/p&gt;
 
-&lt;p&gt;Our thanks to all of the people who have shared their work and creative inspiration in the spirit of Open Source on the wonderful wide web.&lt;/p&gt;
-</sv:value>
+              &lt;p&gt;Our thanks to all of the people who have shared their work and creative inspiration in the spirit of Open Source on the wonderful wide web.&lt;/p&gt;
+            </sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -7826,64 +6593,64 @@ Message: ${message}</sv:value>
           </sv:property>
           <sv:property sv:name="editHTML" sv:type="String">
             <sv:value>&lt;div class="modal-body about-demo-body"&gt;
-    This project demonstrates the key features of Magnolia CMS.
-    &lt;br/&gt;
-    &lt;em&gt;Use it to get an overview of Magnolia and edit some website content. Developers can download the project and take a look under the hood.&lt;/em&gt;
+              This project demonstrates the key features of Magnolia CMS.
+              &lt;br/&gt;
+              &lt;em&gt;Use it to get an overview of Magnolia and edit some website content. Developers can download the project and take a look under the hood.&lt;/em&gt;
 
 
-    &lt;div class="row" style="padding-top:10px;"&gt;
-        &lt;div class="col-md-6" &gt;
+              &lt;div class="row" style="padding-top:10px;"&gt;
+              &lt;div class="col-md-6" &gt;
 
-            &lt;h3&gt;Scenario&lt;/h3&gt;
+              &lt;h3&gt;Scenario&lt;/h3&gt;
 
-            &lt;strong&gt;Magnolia Travels&lt;/strong&gt; is an imaginary company that we invented to provide a more realistic demo project.&lt;br/&gt;
-            It sells package tours. But as you browse the website imagine that the &lt;em&gt;tours&lt;/em&gt; could be replaced with whatever 
-            products, information, departments, or ________s that are important in &lt;em&gt;your organization&lt;/em&gt;. 
-            
-            &lt;h3&gt;Content Management&lt;/h3&gt;
-            
-            Content is managed in &lt;em&gt;AdminCentral&lt;/em&gt;, our web-based admin interface.&lt;br/&gt;
-            This project shows how you can use custom &lt;em&gt;apps&lt;/em&gt; to manage your content.&lt;br/&gt;
-            &lt;Strong&gt;Pages App&lt;/Strong&gt; Every project contains a hierarchy (or &lt;em&gt;tree&lt;/em&gt;) of website pages. 
-            In particular, check out the tree of pages under the &lt;em&gt;About&lt;/em&gt; page.&lt;br/&gt;
-            &lt;Strong&gt;Tours App&lt;/Strong&gt; A custom app to manage the tours themselves.&lt;br/&gt;
-            &lt;Strong&gt;Tour Categories App&lt;/Strong&gt; A custom app used to manage the "Destinations" and "TourType" categories.&lt;br/&gt; 
-            &lt;br/&gt;
-            &lt;dl class="dl"&gt;
-                &lt;dt&gt;&lt;a href="http://documentation.magnolia-cms.com/display/DOCS/Demo" target="_blank"&gt;Learn More&lt;/a&gt;&lt;/dt&gt;
-            &lt;/dl&gt;
-        &lt;/div&gt;
+              &lt;strong&gt;Magnolia Travels&lt;/strong&gt; is an imaginary company that we invented to provide a more realistic demo project.&lt;br/&gt;
+              It sells package tours. But as you browse the website imagine that the &lt;em&gt;tours&lt;/em&gt; could be replaced with whatever
+              products, information, departments, or ________s that are important in &lt;em&gt;your organization&lt;/em&gt;.
 
-        &lt;div class="col-md-6" &gt;
-            &lt;h3&gt;Download Project&lt;/h3&gt;
+              &lt;h3&gt;Content Management&lt;/h3&gt;
 
-            &lt;div style="text-align:center"&gt;&lt;a href="http://documentation.magnolia-cms.com/display/DOCS/Demo" target="_blank" class="btn btn-primary"&gt;Download Demo Project Sources&lt;/a&gt;&lt;/div&gt;
-           
-            &lt;h3&gt;Learning &amp; Evaluation Resources&lt;/h3&gt;
-            &lt;dl class="dl"&gt;
-                &lt;dt&gt;&lt;a href="http://documentation.magnolia-cms.com/display/DOCS/Hello+Magnolia" target="_blank"&gt;Hello Magnolia&lt;/a&gt;&lt;/dt&gt;
-                &lt;dd&gt;Learn Magnolia templating in 1 hour.&lt;/dd&gt;
-            &lt;/dl&gt;
+              Content is managed in &lt;em&gt;AdminCentral&lt;/em&gt;, our web-based admin interface.&lt;br/&gt;
+              This project shows how you can use custom &lt;em&gt;apps&lt;/em&gt; to manage your content.&lt;br/&gt;
+              &lt;Strong&gt;Pages App&lt;/Strong&gt; Every project contains a hierarchy (or &lt;em&gt;tree&lt;/em&gt;) of website pages.
+              In particular, check out the tree of pages under the &lt;em&gt;About&lt;/em&gt; page.&lt;br/&gt;
+              &lt;Strong&gt;Tours App&lt;/Strong&gt; A custom app to manage the tours themselves.&lt;br/&gt;
+              &lt;Strong&gt;Tour Categories App&lt;/Strong&gt; A custom app used to manage the "Destinations" and "TourType" categories.&lt;br/&gt;
+              &lt;br/&gt;
+              &lt;dl class="dl"&gt;
+              &lt;dt&gt;&lt;a href="http://documentation.magnolia-cms.com/display/DOCS/Demo" target="_blank"&gt;Learn More&lt;/a&gt;&lt;/dt&gt;
+              &lt;/dl&gt;
+              &lt;/div&gt;
 
-            &lt;dl class="dl"&gt;
-                &lt;dt&gt;&lt;a href="http://www.magnolia-cms.com" target="_blank"&gt;A Demo just for You&lt;/a&gt;&lt;/dt&gt;
-                &lt;dd&gt;The best way to learn how Magnolia can help your organization is to contact our Sales Team.&lt;/dd&gt;
-            &lt;/dl&gt;
+              &lt;div class="col-md-6" &gt;
+              &lt;h3&gt;Download Project&lt;/h3&gt;
 
-            &lt;dl class="dl"&gt;
-                &lt;dt&gt;&lt;a href="http://academy.magnolia-cms.com" target="_blank"&gt;Magnolia Academy&lt;/a&gt;&lt;/dt&gt;
-                &lt;dd&gt;Learn Magnolia, step by step.&lt;/dd&gt;
-            &lt;/dl&gt;
-            &lt;dl class="dl"&gt;
-                &lt;dt&gt;&lt;a href="http://documentation.magnolia-cms.com" target="_blank"&gt;Magnolia Documentation&lt;/a&gt;&lt;/dt&gt;
-                &lt;dd&gt;Complete product documentation.&lt;/dd&gt;
-            &lt;/dl&gt;
+              &lt;div style="text-align:center"&gt;&lt;a href="http://documentation.magnolia-cms.com/display/DOCS/Demo" target="_blank" class="btn btn-primary"&gt;Download Demo Project Sources&lt;/a&gt;&lt;/div&gt;
 
-        &lt;/div&gt;
+              &lt;h3&gt;Learning &amp; Evaluation Resources&lt;/h3&gt;
+              &lt;dl class="dl"&gt;
+              &lt;dt&gt;&lt;a href="http://documentation.magnolia-cms.com/display/DOCS/Hello+Magnolia" target="_blank"&gt;Hello Magnolia&lt;/a&gt;&lt;/dt&gt;
+              &lt;dd&gt;Learn Magnolia templating in 1 hour.&lt;/dd&gt;
+              &lt;/dl&gt;
 
-    &lt;/div&gt;
+              &lt;dl class="dl"&gt;
+              &lt;dt&gt;&lt;a href="http://www.magnolia-cms.com" target="_blank"&gt;A Demo just for You&lt;/a&gt;&lt;/dt&gt;
+              &lt;dd&gt;The best way to learn how Magnolia can help your organization is to contact our Sales Team.&lt;/dd&gt;
+              &lt;/dl&gt;
 
-&lt;/div&gt;</sv:value>
+              &lt;dl class="dl"&gt;
+              &lt;dt&gt;&lt;a href="http://academy.magnolia-cms.com" target="_blank"&gt;Magnolia Academy&lt;/a&gt;&lt;/dt&gt;
+              &lt;dd&gt;Learn Magnolia, step by step.&lt;/dd&gt;
+              &lt;/dl&gt;
+              &lt;dl class="dl"&gt;
+              &lt;dt&gt;&lt;a href="http://documentation.magnolia-cms.com" target="_blank"&gt;Magnolia Documentation&lt;/a&gt;&lt;/dt&gt;
+              &lt;dd&gt;Complete product documentation.&lt;/dd&gt;
+              &lt;/dl&gt;
+
+              &lt;/div&gt;
+
+              &lt;/div&gt;
+
+              &lt;/div&gt;</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -8459,372 +7226,6 @@ Message: ${message}</sv:value>
             <sv:value>superuser</sv:value>
           </sv:property>
         </sv:node>
-      </sv:node>
-    </sv:node>
-  </sv:node>
-  <sv:node sv:name="test">
-    <sv:property sv:name="jcr:primaryType" sv:type="Name">
-      <sv:value>mgnl:page</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-      <sv:value>mix:lockable</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>44ce81fd-91fe-4a40-bbcd-5addd92cf3c7</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:createdBy" sv:type="String">
-      <sv:value>admin</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:created" sv:type="Date">
-      <sv:value>2015-10-08T12:52:26.532+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:createdBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-10-08T13:45:49.017+02:00</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-      <sv:value>superuser</sv:value>
-    </sv:property>
-    <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>travel-demo:pages/standard</sv:value>
-    </sv:property>
-    <sv:node sv:name="main">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>a021dbd6-dc2f-4f7b-a8c2-b8ff755826f9</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-10-08T12:52:31.565+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-10-08T13:45:49.017+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="0">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>39f4f015-bf87-423d-9fe4-0e9aaa78bcdd</sv:value>
-        </sv:property>
-        <sv:property sv:name="fixedHeight" sv:type="Boolean">
-          <sv:value>false</sv:value>
-        </sv:property>
-        <sv:property sv:name="headlineLevel" sv:type="String">
-          <sv:value>small</sv:value>
-        </sv:property>
-        <sv:property sv:name="image" sv:type="String">
-          <sv:value>jcr:795449d2-6c16-402e-9e8a-bbb101fe22bb</sv:value>
-        </sv:property>
-        <sv:property sv:name="imagePosition" sv:type="String">
-          <sv:value>below</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T12:53:13.089+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T13:07:09.839+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/textImage</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="00">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>50cdc304-f7da-4842-afa2-85f6e8e7844e</sv:value>
-        </sv:property>
-        <sv:property sv:name="fixedHeight" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="highlight" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="image" sv:type="String">
-          <sv:value>jcr:21f33ddf-10b0-430b-b09d-f311921c86d4</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="link" sv:type="String">
-          <sv:value>jcr:a1918662-8cbe-4346-ac5a-1b24a9950e2b</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T12:59:26.745+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T13:40:57.950+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/teaserDownload</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="01">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>d99ccc2e-3930-4b20-8ffb-01a33e614abf</sv:value>
-        </sv:property>
-        <sv:property sv:name="fixedHeight" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="highlight" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="image" sv:type="String">
-          <sv:value>jcr:52469758-3875-4ac1-b2bb-8deac5c8419b</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="link" sv:type="String">
-          <sv:value>dwae</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T13:00:39.389+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T13:42:57.945+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/teaserExternal</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="02">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>5a07f390-b636-4706-a433-80a1f72d51d7</sv:value>
-        </sv:property>
-        <sv:property sv:name="fixedHeight" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="hideTeaserImage" sv:type="Boolean">
-          <sv:value>false</sv:value>
-        </sv:property>
-        <sv:property sv:name="highlight" sv:type="Boolean">
-          <sv:value>false</sv:value>
-        </sv:property>
-        <sv:property sv:name="image" sv:type="String">
-          <sv:value>jcr:db52dd24-7d59-472b-bd53-c75f78849840</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="link" sv:type="String">
-          <sv:value>babb5315-f417-4083-9cf1-714bb304742f</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T13:08:01.600+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T13:45:49.017+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/teaserInternal</sv:value>
-        </sv:property>
-      </sv:node>
-    </sv:node>
-    <sv:node sv:name="footer">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>5b5fed0e-75dc-4d24-a313-d3c349d1511b</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:created" sv:type="Date">
-        <sv:value>2015-10-08T12:52:31.591+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:createdBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-10-08T12:52:31.810+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-        <sv:value>superuser</sv:value>
-      </sv:property>
-      <sv:node sv:name="footer1">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>eda5f5d6-8e16-44de-8e9a-0f076817b688</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.624+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.624+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer2">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>b661653a-1420-4f9f-9d15-659b9cbe861f</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.685+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.685+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer3">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>5366fe89-f8a3-44d1-b3b8-7609ca2a4576</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.728+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.728+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="footer4">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>6fff786e-e5a9-4e5c-bba3-70dd925d8542</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.774+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.774+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="lastLinks">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>67895ea8-843b-4d01-9d19-326ad48ef2fc</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.811+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T12:52:31.811+02:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
       </sv:node>
     </sv:node>
   </sv:node>
