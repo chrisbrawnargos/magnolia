@@ -1418,11 +1418,11 @@ max-width: 500px) {
 -------------------------------------------------- */
 
 .teaser img{
-    max-width:100%;
+    width:100%;
 }
 
 .text-image-section img{
-    max-width:100%;
+    width:100%;
 }
 
 .content-image-wrapper{

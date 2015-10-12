@@ -2874,9 +2874,6 @@
           <sv:property sv:name="jcr:uuid" sv:type="String">
             <sv:value>6adda0fd-0d6f-4c2f-bc0d-58124d35f3f3</sv:value>
           </sv:property>
-          <sv:property sv:name="Id" sv:type="String">
-            <sv:value>test</sv:value>
-          </sv:property>
           <sv:property sv:name="arrows" sv:type="String">
             <sv:value>false</sv:value>
           </sv:property>
@@ -2893,7 +2890,7 @@
             <sv:value>false</sv:value>
           </sv:property>
           <sv:property sv:name="id" sv:type="String">
-            <sv:value>test</sv:value>
+            <sv:value>carousel</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -2912,10 +2909,6 @@
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
             <sv:value>travel-demo:components/carousel</sv:value>
-          </sv:property>
-          <sv:property sv:name="slickConfig" sv:type="String">
-            <sv:value>dots: true,
-              arrows: false, fade: false, variableWidth: false, slidesToShow: 2, autoplay: false, autoplaySeconds: 1</sv:value>
           </sv:property>
           <sv:property sv:name="slidesToShow" sv:type="String">
             <sv:value>2</sv:value>
