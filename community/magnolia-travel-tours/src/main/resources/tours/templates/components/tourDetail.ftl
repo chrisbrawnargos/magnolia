@@ -87,7 +87,8 @@
                             <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">
                                 <div class="category-icon absolute-center-container">
                                     [@tourTypeIcon tourType.icon tourType.name  "absolute-center" /]
-                                </div></a>
+                                </div>
+                            </a>
                         [/#list]
                     </div>
                 </div>
