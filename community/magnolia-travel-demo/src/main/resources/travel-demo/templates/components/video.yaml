@@ -1,0 +1,7 @@
+templateScript: /travel-demo/templates/components/video.ftl
+dialog: travel-demo:components/video
+
+renderType: freemarker
+i18nBasename: info.magnolia.module.travel-demo.messages
+title: components.video
+description: components.video.description
