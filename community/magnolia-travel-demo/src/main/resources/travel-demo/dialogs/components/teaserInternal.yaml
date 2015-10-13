@@ -1,5 +1,5 @@
 form:
-  i18nBasename: info.magnolia.templating.models.messages
+  i18nBasename: info.magnolia.module.travel-demo.messages
   label: components.teaserInternal.label
   description: components.teaserInternal.description
   tabs:
@@ -59,6 +59,8 @@ form:
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           type: Boolean
           defaultValue: false
+          label: components.image.tabImage.fixedHeight.label
+          buttonLabel: components.image.tabImage.fixedHeight.buttonLabel
 
 actions:
   commit:
