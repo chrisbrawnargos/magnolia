@@ -71,7 +71,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
             new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
                     new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
 
-    private final Task setupTravelSiteAsActiveSite = new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
+        private final Task setupTravelSiteAsActiveSite = new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
             new PropertyExistsDelegateTask("Check extends property and update or create it", "/modules/site/config/site", "extends",
                     new CheckAndModifyPropertyValueTask("/modules/site/config/site", "extends", "/modules/standard-templating-kit/config/site", "/modules/travel-demo/config/travel"),
                     new DefaultSiteExistsDelegateTask("", "",
@@ -82,6 +82,9 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
             ));
 
     private final Task copySiteToMultiSiteAndMakeItFallback = new CopySiteToMultiSiteAndMakeItFallback();
+
+    private final Task setupAccessDefinitionToUseRoleBaseVoter = new SetupAccessDefinitionToUseRoleBaseVoter("Deny access permissions to apps", "Deny access permissions to Contacts app, Web Dev group, Set Up group for travel-demo-admincentral role",
+            "travel-demo-admincentral", true, "/modules/contacts/apps/contacts", "/modules/ui-admincentral/config/appLauncherLayout/groups/stk", "/modules/ui-admincentral/config/appLauncherLayout/groups/manage");
 
     public TravelDemoModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
@@ -105,7 +108,9 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
                 .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES,
-                        new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE))));
+                        new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE)))
+                .addTask(setupAccessDefinitionToUseRoleBaseVoter)
+        );
     }
 
     @Override
@@ -118,6 +123,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                         copySiteToMultiSiteAndMakeItFallback)));
         tasks.add(new SetupDemoRolesAndGroupsTask());
+        tasks.add(setupAccessDefinitionToUseRoleBaseVoter);
         return tasks;
     }
 
