@@ -1,13 +1,14 @@
 [#macro tourTeaser tour]
 
-    [#include "/tours/templates/macros/image.ftl" /]
+    [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
     [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
-
-    [#assign rendition = damfn.getRendition(tour.image, "960")! /]
+    [#assign imageHtml][@responsiveImageTravel tour.image "" "" "tour-card-image" "" /][/#assign]
 
     <!-- Tour Teaser -->
     <div class="col-md-6 tour-card card" >
-        <div class="tour-card-background"${backgroundImage(rendition)}></div>
+        <div class="tour-card-background">
+        ${imageHtml}
+        </div>
         <a class="tour-card-anchor" href="${tour.link!}">
             <div class="tour-card-content-shader"></div>
             <div class="tour-card-content">

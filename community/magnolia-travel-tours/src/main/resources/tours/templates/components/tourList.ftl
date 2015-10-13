@@ -25,3 +25,7 @@
 
     [@editorAlert i18n.get('note.for.editors.assign.category', [category.name!""]) /]
 </div>
+
+<script>
+    jQuery(".tour-card-image").objectFitCoverSimple();
+</script>

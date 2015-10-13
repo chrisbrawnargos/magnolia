@@ -53,7 +53,7 @@
 
 [#-- Macro to render a responsive image with the variations configured in the theme. --]
 [#macro responsiveImageTravel asset  alt="" title="" cssClass="" additional=""]
-  [#if !(content.fixedHeight!false)]
+  [#if !(content.fixedHeight!true)]
     [#assign srcs = [
     {"name":"240", "width":"240"},
     {"name":"320", "width":"320"},

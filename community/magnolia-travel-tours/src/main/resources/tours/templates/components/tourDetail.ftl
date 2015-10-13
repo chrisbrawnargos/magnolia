@@ -1,5 +1,5 @@
 [#-------------- ASSIGNMENTS --------------]
-[#include "/tours/templates/macros/image.ftl" /]
+[#include "/travel-demo/templates/macros/imageResponsive.ftl"]
 [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 [#include "/tours/templates/macros/sampleTourText.ftl" /]
 
@@ -7,7 +7,7 @@
 [#assign asset = tour.image!]
 [#if asset?exists]
     [#assign assetCredit = asset.caption!]
-    [#assign renditionDetail = damfn.getRendition(asset, "1920")!]
+    [#assign imageHtml][@responsiveImageTravel asset "" "" "header-image" "" /][/#assign]
 [/#if]
 
 [#if def.parameters.showTourTypes?? && def.parameters.showTourTypes == false]
@@ -29,7 +29,8 @@
 <!-- TourDetail -->
 <div class="product-header">
     <div class="navbar-spacer"></div>
-    <div class="header-wrapper" ${backgroundImage(renditionDetail)}>
+    <div class="header-wrapper">
+        ${imageHtml}
         <div class="lead-caption">
             <h1>${tour.name}</h1>
 
@@ -47,6 +48,10 @@
         </div>
     </div>
 </div>
+
+<script>
+    jQuery(".header-image").objectFitCoverSimple();
+</script>
 
 <div class="product-header-spacer"></div>
 <div class="container after-product-header">
@@ -87,8 +92,7 @@
                             <a href="${tourfn.getTourTypeLink(content, tourType.nodeName)!'#'}">
                                 <div class="category-icon absolute-center-container">
                                     [@tourTypeIcon tourType.icon tourType.name  "absolute-center" /]
-                                </div>
-                            </a>
+                                </div></a>
                         [/#list]
                     </div>
                 </div>

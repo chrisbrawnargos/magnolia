@@ -1,7 +1,7 @@
 [#-- Displays a row of featured tours. --]
 [#macro relatedTours categoryName tours]
 
-    [#include "/tours/templates/macros/image.ftl" /]
+    [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
     [#include "/tours/templates/macros/editorAlert.ftl" /]
     [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
@@ -15,10 +15,11 @@
                 [#assign name = tour.name!tour.@name /]
                 [#assign description = tour.description!"" /]
                 [#assign tourLink = tour.link /]
-                [#assign rendition = damfn.getRendition(tour.image, "960") /]
+                [#assign imageHtml][@responsiveImageTravel tour.image "" "" "header-image" "" /][/#assign]
 
                 <a class="featured-card-anchor" href="${tourLink!}">
-                    <div class="col-md-4 featured-card card"${backgroundImage(rendition)}>
+                    <div class="col-md-4 featured-card card">
+                        ${imageHtml}
                         <div class="featured-card-shader"></div>
                         <div class="featured-blaze"></div>
 
@@ -52,3 +53,7 @@
     [/#if]
 
 [/#macro]
+
+<script>
+    jQuery(".header-image").objectFitCoverSimple();
+</script>

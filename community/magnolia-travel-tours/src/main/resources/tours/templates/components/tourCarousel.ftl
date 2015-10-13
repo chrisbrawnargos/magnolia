@@ -1,5 +1,5 @@
 [#-------------- ASSIGNMENTS --------------]
-[#include "/tours/templates/macros/image.ftl" /]
+[#include "/travel-demo/templates/macros/imageResponsive.ftl"]
 [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
 [#assign tours = model.tours]
@@ -27,10 +27,9 @@
         [#if tour_index == 0 ]
             [#assign activeClass="active"]
         [/#if]
-        [#assign assetCredit = tour.image.caption!]
-        [#assign rendition = damfn.getRendition(tour.image, "1920")!]
 
-        <div class="item ${activeClass}"${backgroundImage(rendition)}>
+        <div class="item ${activeClass}">
+            [@responsiveImageTravel tour.image "" "" "tour-card-image" "" /]
             <div class="container">
                 <a class="carousel-link" href="${tour.link!}">
                     <div class="carousel-caption">
