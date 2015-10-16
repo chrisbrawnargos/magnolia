@@ -1428,3 +1428,7 @@ max-width: 500px) {
 .content-image-wrapper{
     position: relative;
 }
+
+#mgnlhp {
+    display: none;
+}
