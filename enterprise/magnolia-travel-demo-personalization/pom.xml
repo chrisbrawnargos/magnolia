@@ -34,6 +34,11 @@
       <groupId>info.magnolia.personalization</groupId>
       <artifactId>magnolia-personalization-integration</artifactId>
     </dependency>
+    
+     <dependency>
+       <groupId>info.magnolia.demo</groupId>
+       <artifactId>magnolia-travel-demo</artifactId>
+     </dependency>
 
     <!-- For tests -->
     <dependency>
