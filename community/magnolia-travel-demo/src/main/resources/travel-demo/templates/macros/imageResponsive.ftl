@@ -91,7 +91,7 @@
         [#list srcs as src]
             [#assign rendition = damfn.getRendition(asset, src.name)!]
             [#if rendition?exists && rendition?has_content]
-                ${rendition.link} ${src.width}w
+                ${rendition.link} ${src.width}w,
             [/#if]
         [/#list]
         "
