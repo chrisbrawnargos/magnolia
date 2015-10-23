@@ -14,13 +14,16 @@
  */
 package info.magnolia.demo.travel.personalization.setup;
 
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 
 import info.magnolia.cms.security.MgnlRoleManager;
 import info.magnolia.cms.security.SecuritySupport;
 import info.magnolia.cms.security.SecuritySupportImpl;
 import info.magnolia.context.MgnlContext;
+import info.magnolia.jcr.util.NodeTypes;
+import info.magnolia.jcr.util.NodeTypes.Activatable;
+import info.magnolia.jcr.util.PropertyUtil;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
@@ -48,6 +51,7 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     private MgnlRoleManager roleManager;
     private final String travelDemoAdminCentralRoleName = "travel-demo-admincentral";
     private Session userRolesSession;
+    private Session websiteSession;
     private Node travelDemoAdminCentralRoleNode;
 
     @Override
@@ -93,6 +97,7 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
         roleManager.createRole("superuser");
         roleManager.createRole(this.travelDemoAdminCentralRoleName);
         this.userRolesSession = MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES);
+        this.websiteSession = MgnlContext.getJCRSession(RepositoryConstants.WEBSITE);
         this.travelDemoAdminCentralRoleNode = userRolesSession.getNode("/" + this.travelDemoAdminCentralRoleName);
     }
 
@@ -117,5 +122,43 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
 
         // THEN
         assertThat("We expect that " + this.travelDemoAdminCentralRoleName + " has personas ACLs", this.travelDemoAdminCentralRoleNode.hasNode("acl_personas"), is(true));
+    }
+
+    @Test
+    public void testUpdateTo08SetsPagesAsPublished() throws Exception {
+        // GIVEN
+        Node travel = websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
+        Node variants = websiteSession.getRootNode().addNode("travel/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
+        PropertyUtil.setProperty(travel, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        PropertyUtil.setProperty(variants, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
+
+        // THEN
+        int activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel"));
+        assertThat("We expect that /travel node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
+
+        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/variants"));
+        assertThat("We expect that /travel/variants node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
+    }
+
+    @Test
+    public void testCleanInstallSetsPagesAsPublished() throws Exception {
+        // GIVEN
+        Node travel = websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
+        Node variants = websiteSession.getRootNode().addNode("travel/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
+        PropertyUtil.setProperty(travel, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        PropertyUtil.setProperty(variants, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
+
+        // THEN
+        int activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel"));
+        assertThat("We expect that /travel node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
+
+        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/variants"));
+        assertThat("We expect that /travel/variants node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
     }
 }
