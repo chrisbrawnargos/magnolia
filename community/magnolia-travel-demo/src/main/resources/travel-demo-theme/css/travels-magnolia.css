@@ -1452,3 +1452,34 @@ max-width: 500px) {
 #mgnlhp {
     display: none;
 }
+/* VIDEO
+-------------------------------------------------- */
+.video-container {
+    margin-bottom: 25px;
+}
+
+.video-container span.video-caption {
+    float: left;
+}
+.video-container span.video-credit {
+    float: right;
+}
+
+/*
+ A trick to scale an embedded video (e.g. youtube, vimeo, etc.) to fit any browser or tablet/mobile device for responsive design. See http://coolestguidesontheplanet.com/videodrome/youtube/
+*/
+.embedded-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.embedded-video-container iframe, .embedded-video-container object,
+    .embedded-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
