@@ -89,23 +89,6 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         return Collections.singletonList("/META-INF/magnolia/core.xml");
     }
 
-    /**
-     * When finding the default site in site module (doesn't have any sub nodes nor properties), the demo should add
-     * and set the extends property pointing to the STK site.
-     */
-    @Test
-    public void updateTo08CreatesExtendsPropertyInSiteNodeWhenNodeIsEmpty() throws Exception {
-        // GIVEN
-        setupConfigNode("/modules/site/config/site");
-
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
-
-        // THEN
-        assertTrue(session.propertyExists("/modules/site/config/site/extends"));
-        assertThat(session.getProperty("/modules/site/config/site/extends").getString(), is("/modules/travel-demo/config/travel"));
-    }
-
     @Override
     protected String[] getExtraWorkspaces() {
         return new String[]{"dam"};
@@ -130,6 +113,23 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         setupConfigNode(CONTACTS_APPS_CONTACTS_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH);
+    }
+
+    /**
+     * When finding the default site in site module (doesn't have any sub nodes nor properties), the demo should add
+     * and set the extends property pointing to the STK site.
+     */
+    @Test
+    public void updateTo08CreatesExtendsPropertyInSiteNodeWhenNodeIsEmpty() throws Exception {
+        // GIVEN
+        setupConfigNode("/modules/site/config/site");
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
+
+        // THEN
+        assertTrue(session.propertyExists("/modules/site/config/site/extends"));
+        assertThat(session.getProperty("/modules/site/config/site/extends").getString(), is("/modules/travel-demo/config/travel"));
     }
 
     @Test
