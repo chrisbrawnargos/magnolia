@@ -1,0 +1,69 @@
+form:
+  i18nBasename: info.magnolia.module.travel-demo.messages
+  description: components.social.description
+  tabs:
+    - name: tabMain
+      fields:
+        - name: size
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          options:
+            - name: 16
+              label: travel-demo.components.social.tabMain.size.16
+              value: 16
+            - name: 24
+              label: travel-demo.components.social.tabMain.size.24
+              value: 24
+            - name: 32
+              label: travel-demo.components.social.tabMain.size.32
+              value: 32
+              selected: true
+            - name: 48
+              label: travel-demo.components.social.tabMain.size.48
+              value: 48
+        - name: floating
+          class: info.magnolia.ui.form.field.definition.OptionGroupFieldDefinition
+          sortOptions: false
+          options: &yesno # named reference for these yes/no options
+            - name: yes
+              label: travel-demo.components.social.tabMain.yes
+              value: true
+            - name: no
+              label: travel-demo.components.social.tabMain.no
+              selected: true
+              value: false
+        - name: vertical
+          class: info.magnolia.ui.form.field.definition.OptionGroupFieldDefinition
+          sortOptions: false
+          options: *yesno # reference to above yes/no option
+        - name: rounded
+          class: info.magnolia.ui.form.field.definition.OptionGroupFieldDefinition
+          sortOptions: false
+          options: *yesno # reference to above yes/no option
+        - name: services
+          class: info.magnolia.ui.form.field.definition.OptionGroupFieldDefinition
+          multiselect: true
+          options:
+            - name: facebook
+              label: Facebook
+              selected: true
+            - name: twitter
+              label: Twitter
+              selected: true
+            - name: google_plus
+              label: Google+
+              selected: true
+            - name: pinterest
+              label: Pinterest
+            - name: linkedin
+              label: LinkedIn
+            - name: email
+              label: Email
+            - name: reddit
+              label: Reddit
+            - name: stumbleupon
+              label: StumbleUpon
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

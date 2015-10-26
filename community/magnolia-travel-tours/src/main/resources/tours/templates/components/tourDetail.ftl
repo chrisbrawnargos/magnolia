@@ -113,6 +113,7 @@
             [#if tour.body?has_content]
                 <div class="body">${tour.body!}</div>
             [/#if]
+            [@cms.area name="summary"/]
         </div>
     </div>
 

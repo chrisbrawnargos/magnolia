@@ -31,13 +31,13 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-    <sv:value>2015-10-25T10:17:30.710+01:00</sv:value>
+    <sv:value>2015-10-27T16:59:09.980+01:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-10-25T10:17:09.872+01:00</sv:value>
+    <sv:value>2015-10-27T16:58:23.431+01:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -74,13 +74,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-10-25T10:17:30.710+01:00</sv:value>
+      <sv:value>2015-10-27T16:59:09.980+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-10-25T10:17:09.872+01:00</sv:value>
+      <sv:value>2015-10-27T16:58:23.431+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -109,7 +109,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-      <sv:value>2015-10-25T10:17:30.710+01:00</sv:value>
+      <sv:value>2015-10-27T16:59:09.980+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
       <sv:value>superuser</sv:value>
@@ -143,7 +143,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-10-25T10:17:30.710+01:00</sv:value>
+        <sv:value>2015-10-27T16:59:09.981+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -180,7 +180,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+          <sv:value>2015-10-27T16:59:09.981+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -223,7 +223,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+            <sv:value>2015-10-27T16:59:09.981+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -266,7 +266,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.982+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -316,7 +316,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.982+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -366,7 +366,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.982+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -416,7 +416,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.982+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -466,7 +466,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.982+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -516,7 +516,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.711+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.982+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -560,7 +560,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-10-25T10:17:30.712+01:00</sv:value>
+        <sv:value>2015-10-27T16:59:09.983+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -594,7 +594,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-10-25T10:17:30.712+01:00</sv:value>
+          <sv:value>2015-10-27T16:59:09.983+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -637,7 +637,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:30.712+01:00</sv:value>
+            <sv:value>2015-10-27T16:59:09.983+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -674,7 +674,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.712+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.983+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -721,7 +721,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.712+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -762,7 +762,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-10-25T10:17:30.712+01:00</sv:value>
+        <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -796,7 +796,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-10-25T10:17:30.712+01:00</sv:value>
+          <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -839,7 +839,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+            <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -876,7 +876,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -917,7 +917,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+        <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -960,7 +960,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+          <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -1015,7 +1015,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+        <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -1049,7 +1049,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+          <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -1086,7 +1086,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+            <sv:value>2015-10-27T16:59:09.984+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -1123,7 +1123,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.713+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.985+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -1164,7 +1164,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.714+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.985+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -1205,7 +1205,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:30.714+01:00</sv:value>
+              <sv:value>2015-10-27T16:59:09.985+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -2759,13 +2759,13 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-        <sv:value>2015-10-25T10:17:31.143+01:00</sv:value>
+        <sv:value>2015-10-27T16:57:48.110+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-        <sv:value>2015-10-08T14:51:28.236+02:00</sv:value>
+        <sv:value>2015-10-27T16:46:50.119+01:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
@@ -2802,13 +2802,13 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-10-25T10:17:31.143+01:00</sv:value>
+          <sv:value>2015-10-27T16:57:48.110+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-10-08T14:51:28.236+02:00</sv:value>
+          <sv:value>2015-10-27T16:46:50.119+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -2845,7 +2845,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.144+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.111+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -2894,7 +2894,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.144+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.111+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -2967,7 +2967,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.144+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.111+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3010,7 +3010,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-              <sv:value>2015-10-25T10:17:31.146+01:00</sv:value>
+              <sv:value>2015-10-27T16:57:48.111+01:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
               <sv:value>superuser</sv:value>
@@ -3059,7 +3059,7 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-10-25T10:17:31.147+01:00</sv:value>
+                <sv:value>2015-10-27T16:57:48.112+01:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -3109,7 +3109,7 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-10-25T10:17:31.147+01:00</sv:value>
+                <sv:value>2015-10-27T16:57:48.112+01:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -3162,7 +3162,7 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-10-25T10:17:31.148+01:00</sv:value>
+                <sv:value>2015-10-27T16:57:48.112+01:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -3212,7 +3212,7 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-10-25T10:17:31.148+01:00</sv:value>
+                <sv:value>2015-10-27T16:57:48.112+01:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -3262,7 +3262,7 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-10-25T10:17:31.149+01:00</sv:value>
+                <sv:value>2015-10-27T16:57:48.112+01:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
                 <sv:value>superuser</sv:value>
@@ -3278,6 +3278,58 @@
               </sv:property>
             </sv:node>
           </sv:node>
+        </sv:node>
+        <sv:node sv:name="06">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>94c2e3ad-7e0c-4d18-9db1-dd6300645c4a</sv:value>
+          </sv:property>
+          <sv:property sv:name="floating" sv:type="String">
+            <sv:value>false</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+            <sv:value>true</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:created" sv:type="Date">
+            <sv:value>2015-10-27T16:46:41.652+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:createdBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+            <sv:value>2015-10-27T16:57:48.113+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2015-10-27T16:46:50.119+01:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:template" sv:type="String">
+            <sv:value>travel-demo:components/social</sv:value>
+          </sv:property>
+          <sv:property sv:name="rounded" sv:type="String">
+            <sv:value>false</sv:value>
+          </sv:property>
+          <sv:property sv:name="services" sv:type="String" sv:multiple="true">
+            <sv:value>twitter</sv:value>
+            <sv:value>facebook</sv:value>
+            <sv:value>google_plus</sv:value>
+          </sv:property>
+          <sv:property sv:name="size" sv:type="String">
+            <sv:value>32</sv:value>
+          </sv:property>
+          <sv:property sv:name="vertical" sv:type="String">
+            <sv:value>false</sv:value>
+          </sv:property>
         </sv:node>
         <sv:node sv:name="04">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -3311,7 +3363,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.149+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.114+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3355,7 +3407,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.114+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3399,7 +3451,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.114+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3443,7 +3495,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.115+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3482,7 +3534,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+          <sv:value>2015-10-27T16:57:48.115+01:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
           <sv:value>superuser</sv:value>
@@ -3516,7 +3568,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.115+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3551,7 +3603,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.116+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3586,7 +3638,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.116+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3621,7 +3673,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.116+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
@@ -3656,7 +3708,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-10-25T10:17:31.150+01:00</sv:value>
+            <sv:value>2015-10-27T16:57:48.116+01:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
             <sv:value>superuser</sv:value>
