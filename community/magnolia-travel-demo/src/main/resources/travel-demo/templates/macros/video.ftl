@@ -16,16 +16,19 @@
             [#assign videoSrc = video.link]
 
             [#-- Video caption / credit; Falls back to asset's properties --]
-            [#if !(videoCaption?has_content)]
+            [#if !videoCaption?has_content]
                 [#assign videoCaption =video.caption!videoTitle!]
             [/#if]
 
-            [#if !(videoCredit?has_content)]
-                [#assign videoCredit = videoCredit!video.copyright!]
+            [#if !videoCredit?has_content]
+                [#assign videoCredit = video.copyright!]
             [/#if]
 
             [#if content.assetposter?has_content]
-                [#assign poster = "poster='${damfn.getAsset(content.assetposter).link}'"]
+                [#assign assetPoster = damfn.getAsset(content.assetposter)!]
+                [#if assetPoster?has_content]
+                    [#assign poster = "poster='${assetPoster.link}'"]
+                [/#if]
             [/#if]
 
             [#if content.assetpreload?has_content]
