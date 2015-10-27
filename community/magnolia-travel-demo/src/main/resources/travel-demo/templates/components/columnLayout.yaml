@@ -1,0 +1,34 @@
+templateScript: /travel-demo/templates/components/columnLayout.ftl
+dialog: travel-demo:components/columnLayout
+
+renderType: freemarker
+i18nBasename: info.magnolia.module.travel-demo.messages
+title: components.columnLayout
+description: components.columnLayout.description
+areas:
+  column1: &column1
+    type: list
+    availableComponents:
+      textImage:
+        id: travel-demo:components/textImage
+      jumbotron:
+        id: travel-demo:components/jumbotron
+      linkList:
+        id: travel-demo:components/linkList
+      teaserDownload:
+        id: travel-demo:components/teaserDownload
+      teaserInternal:
+        id: travel-demo:components/teaserInternal
+      teaserExternal:
+        id: travel-demo:components/teaserExternal
+      carousel:
+        id: travel-demo:components/carousel
+      video:
+        id: travel-demo:components/video
+      html:
+        id: mte:components/html
+      form:
+        id: form:components/form
+  column2: *column1
+  column3: *column1
+  column4: *column1
