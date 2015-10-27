@@ -146,18 +146,6 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     @Test
-    public void demoRoleCanAccessDamApp() throws Exception {
-        // GIVEN
-        setupConfigNode(SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES);
-
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
-
-        // THEN
-        assertThat(session.getNode(SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES), hasProperty(SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE));
-    }
-
-    @Test
     public void denyAccessPermissionsAfterCleanInstall() throws Exception {
         // GIVEN
 

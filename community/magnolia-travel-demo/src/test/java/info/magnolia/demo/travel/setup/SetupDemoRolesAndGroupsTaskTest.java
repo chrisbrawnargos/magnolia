@@ -124,7 +124,6 @@ public class SetupDemoRolesAndGroupsTaskTest {
         // THEN
         assertThat(session.getNode(DAM_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE));
         assertThat(session.getNode(DAM_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_PUBLISHER_ROLE, TRAVEL_DEMO_PUBLISHER_ROLE));
-        assertThat(session.getNode(DAM_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_TOUR_EDITOR_ROLE, TRAVEL_DEMO_TOUR_EDITOR_ROLE));
     }
 
     @Test
