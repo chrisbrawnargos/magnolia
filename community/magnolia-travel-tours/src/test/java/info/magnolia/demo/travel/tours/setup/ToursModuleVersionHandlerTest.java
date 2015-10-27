@@ -101,4 +101,17 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
         assertThat(session.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-editor", "travel-demo-editor"));
         assertThat(session.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-publisher", "travel-demo-publisher"));
     }
+
+    @Test
+    public void demoRoleCanAccessDamApp() throws Exception {
+        // GIVEN
+        setupConfigNode(ToursModuleVersionHandler.DAM_PERMISSIONS_ROLES);
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
+
+        // THEN
+        assertThat(session.getNode(ToursModuleVersionHandler.DAM_PERMISSIONS_ROLES), hasProperty(ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE, ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE));
+    }
+    
 }

@@ -109,8 +109,6 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                 new CreateNodePathTask("", "", RepositoryConstants.CONFIG, "/modules/pages/apps/pages/permissions/roles", NodeTypes.ContentNode.NAME),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
-                .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES,
-                        new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.DAM_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_TOUR_EDITOR_ROLE)))
                 .addTask(setupAccessDefinitionToUseRoleBaseVoter)
         );
     }

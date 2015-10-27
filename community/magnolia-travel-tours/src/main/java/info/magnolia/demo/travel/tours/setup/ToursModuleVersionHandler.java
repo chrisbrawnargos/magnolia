@@ -33,6 +33,7 @@
  */
 package info.magnolia.demo.travel.tours.setup;
 
+import info.magnolia.demo.travel.setup.AddDemoTravelPermissionTask;
 import info.magnolia.demo.travel.setup.CopySiteToMultiSiteAndMakeItFallback;
 import info.magnolia.demo.travel.setup.FolderBootstrapTask;
 import info.magnolia.demo.travel.setup.RemoveTravelDemoSiteFromMultiSite;
@@ -49,6 +50,7 @@ import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.OrderNodeBeforeTask;
+import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.rendering.module.setup.InstallRendererContextAttributeTask;
 import info.magnolia.repository.RepositoryConstants;
@@ -62,6 +64,9 @@ import javax.jcr.ImportUUIDBehavior;
  * {@link DefaultModuleVersionHandler} of the {@link info.magnolia.demo.travel.tours.ToursModule}.
  */
 public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
+
+    protected static final String TRAVEL_DEMO_TOUR_EDITOR_ROLE = "travel-demo-tour-editor";
+    protected static final String DAM_PERMISSIONS_ROLES = "/modules/dam-app/apps/assets/permissions/roles";
 
     public ToursModuleVersionHandler() {
         // Reinstall all relevant contents
@@ -83,6 +88,8 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                                         new ArrayDelegateTask("", "",
                                                 new RemoveTravelDemoSiteFromMultiSite(),
                                                 new CopySiteToMultiSiteAndMakeItFallback(true))))))
+                .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", DAM_PERMISSIONS_ROLES,
+                        new SetPropertyTask(RepositoryConstants.CONFIG, DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE, TRAVEL_DEMO_TOUR_EDITOR_ROLE)))
         );
     }
 
@@ -102,6 +109,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
 
         /* Add travel-demo-base role to user anonymous */
         tasks.add(new AddRoleToUserTask("Adds role 'travel-demo-base' to user 'anonymous'", "anonymous", "travel-demo-base"));
+        tasks.add(new AddDemoTravelPermissionTask(DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE));
 
         tasks.add(new IsModuleInstalledOrRegistered("Copy template availability and navigation areas from site definition to multisite module", "multisite",
                 new ArrayDelegateTask("",

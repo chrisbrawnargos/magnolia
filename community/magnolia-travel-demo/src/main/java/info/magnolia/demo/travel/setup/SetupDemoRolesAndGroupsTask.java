@@ -33,13 +33,9 @@
  */
 package info.magnolia.demo.travel.setup;
 
-import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.module.delta.ArrayDelegateTask;
-import info.magnolia.module.delta.CreateNodePathTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NewPropertyTask;
-import info.magnolia.module.delta.SetPropertyTask;
-import info.magnolia.repository.RepositoryConstants;
 
 /**
  * Gives basic permissions to the roles and groups defined by this project.
@@ -48,7 +44,7 @@ public class SetupDemoRolesAndGroupsTask extends ArrayDelegateTask {
 
     protected static final String TRAVEL_DEMO_PUBLISHER_ROLE = "travel-demo-publisher";
     protected static final String TRAVEL_DEMO_EDITOR_ROLE = "travel-demo-editor";
-    protected static final String TRAVEL_DEMO_TOUR_EDITOR_ROLE = "travel-demo-tour-editor";
+
     protected static final String TRAVEL_DEMO_PUBLISHERS_GROUP = "travel-demo-publishers";
     protected static final String PAGES_ACTIVATE_ACCESS_ROLES = "/modules/pages/apps/pages/subApps/browser/actions/activate/availability/access/roles";
     protected static final String DAM_ACTIVATE_ACCESS_ROLES = "/modules/dam-app/apps/assets/subApps/browser/actions/activate/availability/access/roles";
@@ -66,7 +62,6 @@ public class SetupDemoRolesAndGroupsTask extends ArrayDelegateTask {
 
         addTask(new AddDemoTravelPermissionTask(DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_EDITOR_ROLE));
         addTask(new AddDemoTravelPermissionTask(DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_PUBLISHER_ROLE));
-        addTask(new AddDemoTravelPermissionTask(DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE));
 
         addTask(new AddDemoTravelPermissionTask(PAGES_ACTIVATE_ACCESS_ROLES, TRAVEL_DEMO_PUBLISHER_ROLE));
         addTask(new IsModuleInstalledOrRegistered("If on EE, give editors publishing rights on website", ENTERPRISE_MODULE, new AddDemoTravelPermissionTask(PAGES_ACTIVATE_ACCESS_ROLES, TRAVEL_DEMO_EDITOR_ROLE)));
@@ -75,17 +70,5 @@ public class SetupDemoRolesAndGroupsTask extends ArrayDelegateTask {
         addTask(new AddDemoTravelPermissionTask(DAM_ACTIVATE_ACCESS_ROLES, TRAVEL_DEMO_EDITOR_ROLE));
 
         addTask(new IsModuleInstalledOrRegistered("If workflow-jbpm module is installed, add workflow permissions for " + TRAVEL_DEMO_PUBLISHERS_GROUP, WORKFLOW_JBPM_MODULE, new NewPropertyTask("", WORKFLOW_JBPM_PUBLISH_GROUPS, TRAVEL_DEMO_PUBLISHERS_GROUP, TRAVEL_DEMO_PUBLISHERS_GROUP)));
-    }
-
-    /**
-     * Sets permissions for the demo travel.
-     */
-    protected class AddDemoTravelPermissionTask extends ArrayDelegateTask {
-
-        public AddDemoTravelPermissionTask(String path, String role) {
-            super("Give [" + role + "] permissions to " + path);
-            addTask(new CreateNodePathTask("", "", RepositoryConstants.CONFIG, path, NodeTypes.ContentNode.NAME));
-            addTask(new SetPropertyTask(RepositoryConstants.CONFIG, path, role, role));
-        }
     }
 }
