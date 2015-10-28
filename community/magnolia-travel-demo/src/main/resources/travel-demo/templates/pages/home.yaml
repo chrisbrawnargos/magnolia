@@ -24,6 +24,8 @@ areas:
         id: mte:components/teaserInternal
       tourList:
         id: tours:components/tourList
+      columnLayout:
+        id: travel-demo:components/columnLayout
 
   footer:
     editable: true
