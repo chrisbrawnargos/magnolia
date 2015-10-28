@@ -2,7 +2,7 @@
 [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
 
 [#assign category = tourfn.categoryByUrl]
-[#assign imageHtml][@responsiveImageTravel category.image "" "" "header-image" "" /][/#assign]
+[#assign imageHtml][@responsiveImageTravel category.image "" "" "header-image" "data-ratio='1.33'" /][/#assign]
 [#assign assetCredit = category.image.caption!]
 
 [#-------------- RENDERING --------------]

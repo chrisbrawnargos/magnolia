@@ -7,7 +7,7 @@
 [#assign asset = tour.image!]
 [#if asset?exists]
     [#assign assetCredit = asset.caption!]
-    [#assign imageHtml][@responsiveImageTravel asset "" "" "header-image" "" /][/#assign]
+    [#assign imageHtml][@responsiveImageTravel asset "" "" "header-image" "data-ratio='1.33'" /][/#assign]
 [/#if]
 
 [#if def.parameters.showTourTypes?? && def.parameters.showTourTypes == false]
