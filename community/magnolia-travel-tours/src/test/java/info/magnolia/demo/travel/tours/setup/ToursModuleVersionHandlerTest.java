@@ -41,14 +41,11 @@ import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeTypes.Activatable;
 import info.magnolia.jcr.util.PropertyUtil;
-import info.magnolia.module.InstallContext;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
-import info.magnolia.module.delta.Task;
 import info.magnolia.module.model.Version;
 import info.magnolia.repository.RepositoryConstants;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -72,13 +69,7 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
 
     @Override
     protected ModuleVersionHandler newModuleVersionHandlerForTests() {
-        return new ToursModuleVersionHandler() {
-            @Override
-            protected List<Task> getBasicInstallTasks(InstallContext installContext) {
-                final List<Task> basicInstallTasks = new ArrayList<Task>();
-                return basicInstallTasks;
-            }
-        };
+        return new ToursModuleVersionHandler();
     }
 
     @Override
@@ -100,8 +91,11 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
     @Before
     public void setUp() throws Exception {
         super.setUp();
+
         configSession = MgnlContext.getJCRSession(RepositoryConstants.CONFIG);
         websiteSession = MgnlContext.getJCRSession(RepositoryConstants.WEBSITE);
+
+        addSupportForSetupModuleRepositoriesTask(null);
     }
 
     @Test

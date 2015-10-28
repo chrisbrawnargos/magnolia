@@ -117,4 +117,5 @@ public class TravelDemoMarketingTagsModuleVersionHandlerTest extends ModuleVersi
         assertThat(session.getNode("/modules/multisite/config/sites/travel/templates/prototype/areas/headerScripts"), hasProperty("modelClass", ScriptsAreaModel.class.getName()));
         assertThat(session.getNode(TravelDemoMarketingTagsModuleVersionHandler.MULTISITE_PROTOTYPE), hasProperty("templateScript", "/travel-demo-marketing-tags/templates/pages/main-marketing-tags.ftl"));
     }
+
 }
