@@ -735,7 +735,6 @@ h1.category {
 .property-label {
     font-size: 0.8em;
     color: #999;
-    text-transform: lowercase;
 }
 
 .property-value {
