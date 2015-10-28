@@ -1488,6 +1488,8 @@ max-width: 500px) {
 -------------------------------------------------- */
 .social-sharing {
   margin-bottom: 35px;
+  /* decrease add2any value when widget is floating or it might cover navigation menu e.g. on small devices */
+  z-index: 1000 !important;
 }
 /*
  Make addtoany sharing icons squared (by default they're rounded) https://www.addtoany.com/buttons/customize/square_icons
