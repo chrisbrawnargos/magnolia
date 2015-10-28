@@ -37,6 +37,7 @@ import info.magnolia.demo.travel.setup.AddDemoTravelPermissionTask;
 import info.magnolia.demo.travel.setup.CopySiteToMultiSiteAndMakeItFallback;
 import info.magnolia.demo.travel.setup.FolderBootstrapTask;
 import info.magnolia.demo.travel.setup.RemoveTravelDemoSiteFromMultiSite;
+import info.magnolia.demo.travel.setup.SetPageAsPublishedTask;
 import info.magnolia.demo.travel.tours.TourTemplatingFunctions;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
@@ -90,6 +91,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                                                 new CopySiteToMultiSiteAndMakeItFallback(true))))))
                 .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", DAM_PERMISSIONS_ROLES,
                         new SetPropertyTask(RepositoryConstants.CONFIG, DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE, TRAVEL_DEMO_TOUR_EDITOR_ROLE)))
+                .addTask(new SetPageAsPublishedTask("/travel", true))
         );
     }
 
@@ -121,7 +123,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                                 "/modules/travel-demo/config/travel/templates/availability/templates/destinationCatOverview", "/modules/multisite/config/sites/travel/templates/availability/templates/destinationCatOverview", false),
                         new CopyNodeTask("Copy tours navigation areas",
                                 "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/areas", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/areas", false))));
-
+        tasks.add(new SetPageAsPublishedTask("/travel", true));
         return tasks;
     }
 

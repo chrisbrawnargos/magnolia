@@ -34,14 +34,21 @@
 package info.magnolia.demo.travel.tours.setup;
 
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
 import info.magnolia.context.MgnlContext;
+import info.magnolia.jcr.util.NodeTypes;
+import info.magnolia.jcr.util.NodeTypes.Activatable;
+import info.magnolia.jcr.util.PropertyUtil;
+import info.magnolia.module.InstallContext;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
+import info.magnolia.module.delta.Task;
 import info.magnolia.module.model.Version;
 import info.magnolia.repository.RepositoryConstants;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -55,7 +62,8 @@ import org.junit.Test;
  */
 public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase {
 
-    private Session session;
+    private Session configSession;
+    private Session websiteSession;
 
     @Override
     protected String getModuleDescriptorPath() {
@@ -64,7 +72,13 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
 
     @Override
     protected ModuleVersionHandler newModuleVersionHandlerForTests() {
-        return new ToursModuleVersionHandler();
+        return new ToursModuleVersionHandler() {
+            @Override
+            protected List<Task> getBasicInstallTasks(InstallContext installContext) {
+                final List<Task> basicInstallTasks = new ArrayList<Task>();
+                return basicInstallTasks;
+            }
+        };
     }
 
     @Override
@@ -86,7 +100,8 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
     @Before
     public void setUp() throws Exception {
         super.setUp();
-        session = MgnlContext.getJCRSession(RepositoryConstants.CONFIG);
+        configSession = MgnlContext.getJCRSession(RepositoryConstants.CONFIG);
+        websiteSession = MgnlContext.getJCRSession(RepositoryConstants.WEBSITE);
     }
 
     @Test
@@ -98,8 +113,49 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
         executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
 
         // THEN
-        assertThat(session.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-editor", "travel-demo-editor"));
-        assertThat(session.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-publisher", "travel-demo-publisher"));
+        assertThat(configSession.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-editor", "travel-demo-editor"));
+        assertThat(configSession.getNode("/modules/tours/apps/tourCategories/permissions/roles"), hasProperty("travel-demo-publisher", "travel-demo-publisher"));
+    }
+
+    @Test
+    public void updateTo08SetsPagesAsPublished() throws Exception {
+        // GIVEN
+        websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/foo", NodeTypes.Page.NAME);
+        PropertyUtil.setProperty(websiteSession.getNode("/travel/foo"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
+
+        // THEN
+        int activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/foo"));
+        assertThat("We expect that /travel/foo is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
+    }
+
+    @Test
+    public void cleanInstallSetsPagesAsPublished() throws Exception {
+        // GIVEN
+        websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/about", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/tour-type", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/destination", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/tour", NodeTypes.Page.NAME);
+        PropertyUtil.setProperty(websiteSession.getNode("/travel/tour-type"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        PropertyUtil.setProperty(websiteSession.getNode("/travel/destination"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        PropertyUtil.setProperty(websiteSession.getNode("/travel/tour"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
+
+        // THEN
+        int activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/tour-type"));
+        assertThat("We expect that /travel/tour-type node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
+
+        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/destination"));
+        assertThat("We expect that /travel/destination node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
+
+        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/tour"));
+        assertThat("We expect that /travel/tour node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
     }
 
     @Test
@@ -111,7 +167,7 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
         executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
 
         // THEN
-        assertThat(session.getNode(ToursModuleVersionHandler.DAM_PERMISSIONS_ROLES), hasProperty(ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE, ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE));
+        assertThat(configSession.getNode(ToursModuleVersionHandler.DAM_PERMISSIONS_ROLES), hasProperty(ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE, ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE));
     }
-    
+
 }
