@@ -33,6 +33,8 @@ areas:
         id: travel-demo:components/carousel
       video:
         id: travel-demo:components/video
+      social:
+        id: travel-demo:components/social
       html:
         id: mte:components/html
       form:

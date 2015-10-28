@@ -1,0 +1,7 @@
+templateScript: /travel-demo/templates/components/social.ftl
+dialog: travel-demo:components/social
+
+renderType: freemarker
+i18nBasename: info.magnolia.module.travel-demo.messages
+title: components.social
+description: components.social.description

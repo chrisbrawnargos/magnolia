@@ -4,3 +4,9 @@ modelClass: info.magnolia.demo.travel.tours.model.TourDetailModel
 renderType: freemarker
 i18nBasename: info.magnolia.module.travel-tours.messages
 title: components.tourDetail
+areas:
+  summary:
+    type: single
+    availableComponents:
+      social:
+        id: travel-demo:components/social

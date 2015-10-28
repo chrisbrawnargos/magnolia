@@ -21,6 +21,8 @@ areas:
         id: tours:components/tourListFeaturedRow
       tourListByDestination:
         id: tours:components/tourList
+      social:
+        id: travel-demo:components/social
   footer:
     editable: false
 
