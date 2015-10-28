@@ -3045,7 +3045,7 @@
             <sv:value>6adda0fd-0d6f-4c2f-bc0d-58124d35f3f3</sv:value>
           </sv:property>
           <sv:property sv:name="arrows" sv:type="String">
-            <sv:value>false</sv:value>
+            <sv:value>true</sv:value>
           </sv:property>
           <sv:property sv:name="autoplay" sv:type="String">
             <sv:value>false</sv:value>
@@ -3134,66 +3134,13 @@
                 <sv:value>mgnl:component</sv:value>
               </sv:property>
               <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>d0b15b05-d21c-4ba4-88d6-14cb73ed2a50</sv:value>
-              </sv:property>
-              <sv:property sv:name="Resize" sv:type="String">
-                <sv:value>height</sv:value>
-              </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
-                <sv:value>true</sv:value>
-              </sv:property>
-              <sv:property sv:name="headline" sv:type="String">
-                <sv:value>Dubai</sv:value>
-              </sv:property>
-              <sv:property sv:name="headlineLevel" sv:type="String">
-                <sv:value>small</sv:value>
-              </sv:property>
-              <sv:property sv:name="image" sv:type="String">
-                <sv:value>jcr:7eeb9a4f-72ef-43f4-a392-5c1916b31e3a</sv:value>
-              </sv:property>
-              <sv:property sv:name="imagePosition" sv:type="String">
-                <sv:value>below</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:createdBy" sv:type="String">
-                <sv:value>admin</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-                <sv:value>true</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:created" sv:type="Date">
-                <sv:value>2015-10-07T14:16:06.495+02:00</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:createdBy" sv:type="String">
-                <sv:value>superuser</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-                <sv:value>2015-10-27T16:57:48.112+01:00</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-                <sv:value>superuser</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-                <sv:value>2015-10-08T12:50:50.058+02:00</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-                <sv:value>superuser</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:template" sv:type="String">
-                <sv:value>travel-demo:components/textImage</sv:value>
-              </sv:property>
-            </sv:node>
-            <sv:node sv:name="0">
-              <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                <sv:value>mgnl:component</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:uuid" sv:type="String">
                 <sv:value>af4d9a77-ef14-45b5-a6c8-f55253cb4632</sv:value>
               </sv:property>
               <sv:property sv:name="fixedHeight" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
-                <sv:value>Grand canyon</sv:value>
+                <sv:value>USA</sv:value>
               </sv:property>
               <sv:property sv:name="headlineLevel" sv:type="String">
                 <sv:value>small</sv:value>
@@ -3232,6 +3179,62 @@
                 <sv:value>travel-demo:components/textImage</sv:value>
               </sv:property>
             </sv:node>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>d0b15b05-d21c-4ba4-88d6-14cb73ed2a50</sv:value>
+              </sv:property>
+              <sv:property sv:name="Resize" sv:type="String">
+                <sv:value>height</sv:value>
+              </sv:property>
+              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+                <sv:value>true</sv:value>
+              </sv:property>
+              <sv:property sv:name="headline" sv:type="String">
+                <sv:value>United Arab Emirates</sv:value>
+              </sv:property>
+              <sv:property sv:name="headline_de" sv:type="String">
+                <sv:value>Vereinigte Arabische Emirate</sv:value>
+              </sv:property>
+              <sv:property sv:name="headlineLevel" sv:type="String">
+                <sv:value>small</sv:value>
+              </sv:property>
+              <sv:property sv:name="image" sv:type="String">
+                <sv:value>jcr:7eeb9a4f-72ef-43f4-a392-5c1916b31e3a</sv:value>
+              </sv:property>
+              <sv:property sv:name="imagePosition" sv:type="String">
+                <sv:value>below</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+                <sv:value>true</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:created" sv:type="Date">
+                <sv:value>2015-10-07T14:16:06.495+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:createdBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+                <sv:value>2015-10-27T16:57:48.112+01:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2015-10-08T12:50:50.058+02:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>travel-demo:components/textImage</sv:value>
+              </sv:property>
+            </sv:node>
             <sv:node sv:name="01">
               <sv:property sv:name="jcr:primaryType" sv:type="Name">
                 <sv:value>mgnl:component</sv:value>
@@ -3246,7 +3249,7 @@
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
-                <sv:value>Indonesia</sv:value>
+                <sv:value>Hong Kong</sv:value>
               </sv:property>
               <sv:property sv:name="headlineLevel" sv:type="String">
                 <sv:value>small</sv:value>
@@ -3296,7 +3299,10 @@
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
-                <sv:value>Charles bridge</sv:value>
+                <sv:value>Czech Republic</sv:value>
+              </sv:property>
+              <sv:property sv:name="headline_de" sv:type="String">
+                <sv:value>Tschechien</sv:value>
               </sv:property>
               <sv:property sv:name="headlineLevel" sv:type="String">
                 <sv:value>small</sv:value>
@@ -3346,7 +3352,10 @@
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
-                <sv:value>Swiss trails</sv:value>
+                <sv:value>Switzerland</sv:value>
+              </sv:property>
+              <sv:property sv:name="headline_de" sv:type="String">
+                <sv:value>Schweiz</sv:value>
               </sv:property>
               <sv:property sv:name="headlineLevel" sv:type="String">
                 <sv:value>small</sv:value>

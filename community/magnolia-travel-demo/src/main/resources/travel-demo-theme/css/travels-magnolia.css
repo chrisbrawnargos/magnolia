@@ -1206,6 +1206,17 @@ max-width: 500px) {
     bottom: 0px;
 }
 
+.image-caption {
+    background: black;
+    color: #ccc;
+    position: absolute;
+    left: 0px;
+    display: block;
+    padding: 2px 10px;
+    font-size: 0.8em;
+    bottom: 0px;
+}
+
 .product-categories {
     margin-top: 5px;
 }
@@ -1452,6 +1463,8 @@ max-width: 500px) {
 #mgnlhp {
     display: none;
 }
+
+
 /* VIDEO
 -------------------------------------------------- */
 .video-container {
@@ -1484,6 +1497,7 @@ max-width: 500px) {
     height: 100%;
 }
 
+
 /* SOCIAL SHARING
 -------------------------------------------------- */
 .social-sharing {
@@ -1496,3 +1510,28 @@ max-width: 500px) {
 */
 .square-icons .a2a_svg, .square-icons .a2a_count { border-radius: 0 !important; }
 .square-icons .a2a_menu, square-icons .a2a_menu_find_container { border-radius: 0 !important; }
+
+
+/* CAROUSEL
+-------------------------------------------------- */
+.slick-dots li button::before {
+    font-size: 20px !important;
+}
+
+.component-carousel {
+    margin-top: 25px;
+    margin-bottom: 70px !important;
+}
+
+.component-carousel .text-section {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slick-prev {
+    left: -15px !important;
+}
+
+.slick-next {
+    right: -15px !important;
+}
