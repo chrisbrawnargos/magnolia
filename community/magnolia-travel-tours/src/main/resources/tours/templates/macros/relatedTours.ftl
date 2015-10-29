@@ -2,7 +2,7 @@
 [#macro relatedTours categoryName tours]
 
     [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
-    [#include "/tours/templates/macros/editorAlert.ftl" /]
+    [#include "/travel-demo/templates/macros/editorAlert.ftl" /]
     [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
 
     [#if tours?has_content || cmsfn.editMode]
