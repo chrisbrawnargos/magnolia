@@ -37,7 +37,8 @@
         <div class="${divWrapperClass}">
         [/#if]
 
-        [@responsiveImageTravel image.asset imageAlt imageTitle imgClass additional /]
+        [#assign constrainAspectRatio = (content.constrainAspectRatio!false)]
+        [@responsiveImageTravel image.asset imageAlt imageTitle imgClass "" constrainAspectRatio /]
 
         [#if imageCaption?has_content || imageCredit?has_content]
             [#if imageCaption?has_content]
@@ -53,28 +54,29 @@
 
 
 [#-- Macro to render a responsive image with the variations configured in the theme. --]
-[#macro responsiveImageTravel asset  alt="" title="" cssClass="" additional=""]
-  [#if !(content.fixedHeight!true)  ]
-    [#assign srcs = [
-    {"name":"480", "width":"480"},
-    {"name":"960", "width":"960"},
-    {"name":"1366","width":"1366"},
-    {"name":"1600","width":"1600"}]]
+[#macro responsiveImageTravel asset  alt="" title="" cssClass="" additional="" constrainAspectRatio=false]
 
-    [#assign fallback="960"]
-
-    [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
-  [#else]
+    [#if constrainAspectRatio ]
         [#assign srcs = [
-        {"name":"480x360", "width":"480"},
-        {"name":"960x720", "width":"960"},
-        {"name":"1366x1024","width":"1366"},
-        {"name":"1600x1200", "width":"1600"}]]
+            {"name":"480x360", "width":"480"},
+            {"name":"960x720", "width":"960"},
+            {"name":"1366x1024","width":"1366"},
+            {"name":"1600x1200", "width":"1600"}]]
 
         [#assign fallback="960x720"]
 
         [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
-  [/#if]
+    [#else]
+        [#assign srcs = [
+            {"name":"480", "width":"480"},
+            {"name":"960", "width":"960"},
+            {"name":"1366","width":"1366"},
+            {"name":"1600","width":"1600"}]]
+
+        [#assign fallback="960"]
+
+        [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
+    [/#if]
 [/#macro]
 
 [#-- Macro to render responsive image using lazysizes javascript library.

@@ -3136,7 +3136,7 @@
               <sv:property sv:name="jcr:uuid" sv:type="String">
                 <sv:value>af4d9a77-ef14-45b5-a6c8-f55253cb4632</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3189,7 +3189,7 @@
               <sv:property sv:name="Resize" sv:type="String">
                 <sv:value>height</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3245,7 +3245,7 @@
               <sv:property sv:name="Resize" sv:type="String">
                 <sv:value>height</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3295,7 +3295,7 @@
               <sv:property sv:name="jcr:uuid" sv:type="String">
                 <sv:value>aa3e9744-d376-408e-8a6d-7d7003dfcb80</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3348,7 +3348,7 @@
               <sv:property sv:name="jcr:uuid" sv:type="String">
                 <sv:value>b0ef4d74-21ab-44f1-b186-89d677dc940f</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">

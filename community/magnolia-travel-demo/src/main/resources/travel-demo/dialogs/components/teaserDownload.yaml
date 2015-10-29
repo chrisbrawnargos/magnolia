@@ -34,12 +34,12 @@ form:
           i18nBasename: info.magnolia.templating.models.messages
           label: generic.fields.image.label
           description: generic.fields.image.description
-        - name: fixedHeight
+        - name: constrainAspectRatio
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           type: Boolean
           defaultValue: false
-          label: components.image.tabImage.fixedHeight.label
-          buttonLabel: components.image.tabImage.fixedHeight.buttonLabel
+          label: components.tabImage.constrainAspectRatio.label
+          buttonLabel: components.tabImage.constrainAspectRatio.buttonLabel
         - name: highlight
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           defaultValue: false

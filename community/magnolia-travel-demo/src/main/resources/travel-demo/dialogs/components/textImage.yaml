@@ -56,12 +56,12 @@ form:
               value: below
           label: components.textImage.imagePosition.label
           description: components.textImage.imagePosition.description
-        - name: fixedHeight
+        - name: constrainAspectRatio
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           type: Boolean
           defaultValue: false
-          label: components.image.tabImage.fixedHeight.label
-          buttonLabel: components.image.tabImage.fixedHeight.buttonLabel
+          label: components.tabImage.constrainAspectRatio.label
+          buttonLabel: components.tabImage.constrainAspectRatio.buttonLabel
         - name: imageAltText
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true

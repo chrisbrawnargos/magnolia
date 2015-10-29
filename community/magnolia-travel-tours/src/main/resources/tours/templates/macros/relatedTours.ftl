@@ -15,7 +15,7 @@
                 [#assign name = tour.name!tour.@name /]
                 [#assign description = tour.description!"" /]
                 [#assign tourLink = tour.link /]
-                [#assign imageHtml][@responsiveImageTravel tour.image "" "" "featured-image" "data-ratio='1.33'" /][/#assign]
+                [#assign imageHtml][@responsiveImageTravel tour.image "" "" "featured-image" "data-ratio='1.33'" true /][/#assign]
 
                 <a class="featured-card-anchor" href="${tourLink!}">
                     <div class="col-md-4 featured-card card">
