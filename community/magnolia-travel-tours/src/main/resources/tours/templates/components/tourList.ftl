@@ -1,6 +1,6 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/tours/templates/macros/tourTeaser.ftl"]
-[#include "/tours/templates/macros/editorAlert.ftl" /]
+[#include "/travel-demo/templates/macros/editorAlert.ftl" /]
 
 [#if def.parameters.tourType??]
     [#assign category = model.getCategoryByName(def.parameters.tourType)]

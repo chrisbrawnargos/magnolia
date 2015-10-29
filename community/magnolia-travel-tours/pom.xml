@@ -33,11 +33,14 @@
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-i18n</artifactId>
     </dependency>
+
+    <!-- Dependencies to travel-demo -->
     <dependency>
       <groupId>info.magnolia.demo</groupId>
       <artifactId>magnolia-travel-demo</artifactId>
     </dependency>
 
+    <!-- Other dependencies -->
     <dependency>
       <groupId>info.magnolia.dam</groupId>
       <artifactId>magnolia-dam-templating</artifactId>
