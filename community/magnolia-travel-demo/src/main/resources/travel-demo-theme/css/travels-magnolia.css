@@ -1479,6 +1479,7 @@ max-width: 500px) {
 -------------------------------------------------- */
 .video-container {
     margin-bottom: 25px;
+    background-color: #000000;
 }
 
 .video-container span.video-caption {
