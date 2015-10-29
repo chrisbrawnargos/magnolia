@@ -1616,7 +1616,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/teaserInternal</sv:value>
+              <sv:value>travel-demo:components/teaserInternal</sv:value>
             </sv:property>
           </sv:node>
           <sv:node sv:name="01">
@@ -1660,7 +1660,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/teaserInternal</sv:value>
+              <sv:value>travel-demo:components/teaserInternal</sv:value>
             </sv:property>
           </sv:node>
           <sv:node sv:name="02">
@@ -1704,7 +1704,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/teaserInternal</sv:value>
+              <sv:value>travel-demo:components/teaserInternal</sv:value>
             </sv:property>
           </sv:node>
         </sv:node>
@@ -3536,7 +3536,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/teaserInternal</sv:value>
+            <sv:value>travel-demo:components/teaserInternal</sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="02">
@@ -3580,7 +3580,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/teaserInternal</sv:value>
+            <sv:value>travel-demo:components/teaserInternal</sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="03">
@@ -3624,7 +3624,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/teaserInternal</sv:value>
+            <sv:value>travel-demo:components/teaserInternal</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
