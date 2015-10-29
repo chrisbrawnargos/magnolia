@@ -18,21 +18,19 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 
 import info.magnolia.cms.security.MgnlRoleManager;
+import info.magnolia.cms.security.RoleManager;
 import info.magnolia.cms.security.SecuritySupport;
 import info.magnolia.cms.security.SecuritySupportImpl;
 import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeTypes.Activatable;
 import info.magnolia.jcr.util.PropertyUtil;
-import info.magnolia.module.InstallContext;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
-import info.magnolia.module.delta.Task;
 import info.magnolia.module.model.Version;
+import info.magnolia.objectfactory.Components;
 import info.magnolia.repository.RepositoryConstants;
-import info.magnolia.test.ComponentsTestUtil;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,9 +45,8 @@ import org.junit.Test;
  */
 public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVersionHandlerTestCase {
 
-    private SecuritySupportImpl securitySupport;
-    private MgnlRoleManager roleManager;
     private final String travelDemoAdminCentralRoleName = "travel-demo-admincentral";
+
     private Session userRolesSession;
     private Session websiteSession;
     private Node travelDemoAdminCentralRoleNode;
@@ -76,13 +73,7 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
 
     @Override
     protected ModuleVersionHandler newModuleVersionHandlerForTests() {
-        return new TravelDemoPersonalizationModuleVersionHandler() {
-            @Override
-            protected List<Task> getBasicInstallTasks(InstallContext installContext) {
-                final List<Task> basicInstallTasks = new ArrayList<Task>();
-                return basicInstallTasks;
-            }
-        };
+        return new TravelDemoPersonalizationModuleVersionHandler();
     }
 
     @Override
@@ -90,12 +81,16 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     public void setUp() throws Exception {
         super.setUp();
 
-        this.securitySupport = new SecuritySupportImpl();
-        this.roleManager = new MgnlRoleManager();
-        this.securitySupport.setRoleManager(roleManager);
-        ComponentsTestUtil.setInstance(SecuritySupport.class, securitySupport);
+        addSupportForSetupModuleRepositoriesTask(null);
+
+        // Override role manager from info.magnolia.module.ModuleVersionHandlerTestCase.addSupportForSetupModuleRepositoriesTask()
+        // which is simply a mock
+        final RoleManager roleManager = new MgnlRoleManager();
+        ((SecuritySupportImpl) Components.getComponent(SecuritySupport.class)).setRoleManager(roleManager);
+
         roleManager.createRole("superuser");
         roleManager.createRole(this.travelDemoAdminCentralRoleName);
+
         this.userRolesSession = MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES);
         this.websiteSession = MgnlContext.getJCRSession(RepositoryConstants.WEBSITE);
         this.travelDemoAdminCentralRoleNode = userRolesSession.getNode("/" + this.travelDemoAdminCentralRoleName);
@@ -161,4 +156,5 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
         activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/variants"));
         assertThat("We expect that /travel/variants node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
     }
+
 }
