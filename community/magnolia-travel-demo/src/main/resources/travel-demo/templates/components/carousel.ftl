@@ -1,5 +1,8 @@
 [#-------------- ASSIGNMENTS --------------]
+[#include "/travel-demo/templates/macros/editorAlert.ftl" /]
+
 [#assign slideShowId = content.id!"slideshow"]
+[#assign cssClass = "component-carousel"]
 
 [#-------------- RENDERING --------------]
 
@@ -24,8 +27,13 @@
         });
     });
 </script>
+[#else]
+    [#-- When in edit mode we use a 6x6 grid to simplify working with the carousel items --]
+    [#-- Thus we have to add the class 'row' --]
+    [#assign cssClass = "${cssClass} row"]
+    [@editorAlert i18n['note.for.editors.carousel'] /]
 [/#if]
 
-<div id="${slideShowId}" class="component-carousel">
+<div id="${slideShowId}" class="${cssClass}">
     [@cms.area name="carouselItems" /]
 </div><!-- carousel end -->
