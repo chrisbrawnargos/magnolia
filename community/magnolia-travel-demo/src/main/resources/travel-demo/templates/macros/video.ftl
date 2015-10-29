@@ -36,13 +36,18 @@
             [/#if]
 
             [#-------------- RENDERING  --------------]
-            [#-- Using width 100% and no height so that video scales responsively --]
-            <video ${content.scale?boolean?string("width='100%'", '')} ${content.assetautoplay?string('autoplay','')} ${content.assetloop?string('loop','')} ${content.assetmuted?string('muted','')} ${content.assetcontrols?string('controls','')} ${preload!} ${poster!}>
+            [#if content.scale?boolean]
+            <div class="scalable-video">
+            [/#if]
+            <video ${content.assetautoplay?string('autoplay','')} ${content.assetloop?string('loop','')} ${content.assetmuted?string('muted','')} ${content.assetcontrols?string('controls','')} ${preload!} ${poster!}>
                 <source src=${videoSrc} type=${assetType}>
             </video>
+            [#if content.scale?boolean]
+            </div>
+            [/#if]
         [#else]
             [#if content.scale?boolean]
-            <div class="embedded-video-container">
+            <div class="scalable-video">
               ${cmsfn.decode(content).embed}
             </div>
             [#else]
