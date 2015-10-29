@@ -1195,7 +1195,7 @@ max-width: 500px) {
     width: 100%;
 }
 
-.image-credit {
+.image-credit, .video-credit {
     background: black;
     color: #ccc;
     position: absolute;
@@ -1206,7 +1206,7 @@ max-width: 500px) {
     bottom: 0px;
 }
 
-.image-caption {
+.image-caption, .video-caption {
     background: black;
     color: #ccc;
     position: absolute;
@@ -1472,9 +1472,11 @@ max-width: 500px) {
 }
 
 .video-container span.video-caption {
+    position:relative;
     float: left;
 }
 .video-container span.video-credit {
+    position:relative;
     float: right;
 }
 
