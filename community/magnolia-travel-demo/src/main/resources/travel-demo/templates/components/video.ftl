@@ -16,6 +16,6 @@
 
 [#-------------- RENDERING PART --------------]
 [#-- Rendering: video item --]
-<div ${divID!} class="${divClass}">
+<div ${divID!} class="${divClass} clearfix">
      ${videoHtml}
 </div><!-- end ${divClass} -->

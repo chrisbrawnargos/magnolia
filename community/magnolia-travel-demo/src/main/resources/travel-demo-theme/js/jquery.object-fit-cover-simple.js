@@ -78,12 +78,15 @@
     }
 
     function resizeItem(item) {
-        if ((item.parent.width() / item.parent.height()) < item.ratio) {
+        var pwidth = item.parent.width();
+        var pheight = item.parent.height();
+
+        if ((pwidth / pheight) < item.ratio) {
             // cover
             item.elem.css('width', 'auto');
             item.elem.css('height', '100%');
             // center
-            var myLeft = ( item.ratio * item.parent.height() - item.parent.width() ) / -2;
+            var myLeft = ( item.ratio * pheight - pwidth ) / -2;
             item.elem.css('left', myLeft);
             item.elem.css('top', '0');
 
@@ -92,7 +95,7 @@
             item.elem.css('width', '100%');
             item.elem.css('height', 'auto');
             // center
-            var myTop = ( (1 / item.ratio) * item.parent.width() - item.parent.height() ) / -2;
+            var myTop = ( (1 / item.ratio) * pwidth - pheight ) / -2;
             item.elem.css('left', '0');
             item.elem.css('top', myTop);
 

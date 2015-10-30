@@ -1062,7 +1062,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia, the digital business platform with a&amp;nbsp; CMS at its core.&lt;/p&gt;
@@ -2348,7 +2348,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia, the digital business platform with a&amp;nbsp; CMS at its core.&lt;/p&gt;
@@ -3634,7 +3634,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia, the digital business platform with a&amp;nbsp; CMS at its core.&lt;/p&gt;

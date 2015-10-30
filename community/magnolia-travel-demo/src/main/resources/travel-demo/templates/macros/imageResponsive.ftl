@@ -37,7 +37,8 @@
         <div class="${divWrapperClass}">
         [/#if]
 
-        [@responsiveImageTravel image.asset imageAlt imageTitle imgClass additional /]
+        [#assign constrainAspectRatio = (content.constrainAspectRatio!false)]
+        [@responsiveImageTravel image.asset imageAlt imageTitle imgClass "" constrainAspectRatio /]
 
         [#if imageCaption?has_content || imageCredit?has_content]
             [#if imageCaption?has_content]
@@ -51,42 +52,43 @@
     [/#if]
 [/#macro]
 
+
 [#-- Macro to render a responsive image with the variations configured in the theme. --]
-[#macro responsiveImageTravel asset  alt="" title="" cssClass="" additional=""]
-  [#if !(content.fixedHeight!true)]
-    [#assign srcs = [
-    {"name":"240", "width":"240"},
-    {"name":"320", "width":"320"},
-    {"name":"480", "width":"480"},
-    {"name":"960", "width":"960"},
-    {"name":"1366","width":"1366"},
-    {"name":"1920","width":"1920"}]]
+[#macro responsiveImageTravel asset  alt="" title="" cssClass="" additional="" constrainAspectRatio=false]
 
-    [#assign fallback="240"]
-
-    [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
-  [#else]
+    [#if constrainAspectRatio ]
         [#assign srcs = [
-        {"name":"240x160", "width":"240", "height":"160"},
-        {"name":"320x240", "width":"320", "height":"240"},
-        {"name":"480x320", "width":"480", "height":"320"},
-        {"name":"960x540", "width":"960", "height":"540"},
-        {"name":"1366x768","width":"1366", "height":"768"},
-        {"name":"1920x1200", "width":"1920", "height":"1200"}]]
+            {"name":"480x360", "width":"480"},
+            {"name":"960x720", "width":"960"},
+            {"name":"1366x1024","width":"1366"},
+            {"name":"1600x1200", "width":"1600"}]]
 
-        [#assign fallback="240x160"]
+        [#assign fallback="960x720"]
 
         [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
-  [/#if]
+    [#else]
+        [#assign srcs = [
+            {"name":"480", "width":"480"},
+            {"name":"960", "width":"960"},
+            {"name":"1366","width":"1366"},
+            {"name":"1600","width":"1600"}]]
+
+        [#assign fallback="960"]
+
+        [@responsiveImageLazySizes asset alt title cssClass srcs fallback additional /]
+    [/#if]
 [/#macro]
 
 [#-- Macro to render responsive image using lazysizes javascript library.
         Use data-srcset attribute to only load the size of image that the current image width requires --]
-[#macro responsiveImageLazySizes asset  alt="" title="" cssClass="" srcs="" fallbackName="" sizes="" additional="" ]
+[#macro responsiveImageLazySizes asset  alt="" title="" cssClass="" srcs="" fallbackName="" additional="" ]
     [#if asset?exists]
         [#assign cssClass = cssClass + " lazyload"]
         [#assign rendition = damfn.getRendition(asset, fallbackName)!]
-    <img data-sizes="auto" class="${cssClass} lazyload lazysizes" src="${rendition.link}" alt="${alt}" title="${title}"
+    <noscript>
+        <img class="${cssClass}" src="${rendition.link}" alt="${alt}" title="${title}" ${additional} />
+    </noscript>
+    <img data-sizes="auto" class="${cssClass} lazyload" ${additional} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="${alt}" title="${title}"
          data-srcset="
         [#list srcs as src]
             [#assign rendition = damfn.getRendition(asset, src.name)!]
@@ -94,8 +96,6 @@
                 ${rendition.link} ${src.width}w,
             [/#if]
         [/#list]
-        "
-
-    ${additional} />
+        " />
     [/#if]
 [/#macro]

@@ -15,7 +15,7 @@
                 [#assign name = tour.name!tour.@name /]
                 [#assign description = tour.description!"" /]
                 [#assign tourLink = tour.link /]
-                [#assign imageHtml][@responsiveImageTravel tour.image "" "" "header-image" "" /][/#assign]
+                [#assign imageHtml][@responsiveImageTravel tour.image "" "" "featured-image" "data-ratio='1.33'" true /][/#assign]
 
                 <a class="featured-card-anchor" href="${tourLink!}">
                     <div class="col-md-4 featured-card card">
@@ -50,10 +50,10 @@
         [@editorAlert i18n.get('note.for.editors.featured', [categoryName!""]) /]
 
     </div>
+
+    <script>
+        jQuery(".featured-image").objectFitCoverSimple();
+    </script>
     [/#if]
 
 [/#macro]
-
-<script>
-    jQuery(".header-image").objectFitCoverSimple();
-</script>

@@ -636,7 +636,7 @@
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
-      <sv:node sv:name="1920">
+      <sv:node sv:name="1600">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
@@ -671,7 +671,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="width" sv:type="String">
-          <sv:value>1920</sv:value>
+          <sv:value>1600</sv:value>
         </sv:property>
       </sv:node>
       <sv:node sv:name="1366">
@@ -864,7 +864,7 @@
           <sv:value>240</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="1920x1200">
+      <sv:node sv:name="1600x1200">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
@@ -902,10 +902,10 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="width" sv:type="String">
-          <sv:value>1920</sv:value>
+          <sv:value>1600</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="1366x768">
+      <sv:node sv:name="1366x1024">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
@@ -916,7 +916,7 @@
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
         </sv:property>
         <sv:property sv:name="height" sv:type="String">
-          <sv:value>768</sv:value>
+          <sv:value>1024</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -946,7 +946,7 @@
           <sv:value>1366</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="960x540">
+      <sv:node sv:name="960x720">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
@@ -957,7 +957,7 @@
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
         </sv:property>
         <sv:property sv:name="height" sv:type="String">
-          <sv:value>540</sv:value>
+          <sv:value>720</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -987,7 +987,7 @@
           <sv:value>960</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="480x320">
+      <sv:node sv:name="480x360">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
@@ -998,7 +998,7 @@
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
         </sv:property>
         <sv:property sv:name="height" sv:type="String">
-          <sv:value>320</sv:value>
+          <sv:value>360</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -1069,7 +1069,7 @@
           <sv:value>320</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="240x160">
+      <sv:node sv:name="240x180">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:contentNode</sv:value>
         </sv:property>
@@ -1080,7 +1080,7 @@
           <sv:value>info.magnolia.templating.imaging.variation.SimpleResizeVariation</sv:value>
         </sv:property>
         <sv:property sv:name="height" sv:type="String">
-          <sv:value>160</sv:value>
+          <sv:value>180</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>

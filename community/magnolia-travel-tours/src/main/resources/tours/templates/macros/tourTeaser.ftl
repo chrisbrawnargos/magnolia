@@ -2,7 +2,7 @@
 
     [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
     [#include "/tours/templates/macros/tourTypeIcon.ftl" /]
-    [#assign imageHtml][@responsiveImageTravel tour.image "" "" "tour-card-image" "" /][/#assign]
+    [#assign imageHtml][@responsiveImageTravel tour.image "" "" "tour-card-image" "data-ratio='1.33'" true /][/#assign]
 
     <!-- Tour Teaser -->
     <div class="col-md-6 tour-card card" >

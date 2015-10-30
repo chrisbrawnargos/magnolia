@@ -972,7 +972,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>mte:components/textImage</sv:value>
+          <sv:value>travel-demo:components/textImage</sv:value>
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia, the digital business platform with a&amp;nbsp; CMS at its core.&lt;/p&gt;
@@ -1572,7 +1572,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/textImage</sv:value>
+              <sv:value>travel-demo:components/textImage</sv:value>
             </sv:property>
           </sv:node>
           <sv:node sv:name="0">
@@ -1616,7 +1616,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/teaserInternal</sv:value>
+              <sv:value>travel-demo:components/teaserInternal</sv:value>
             </sv:property>
           </sv:node>
           <sv:node sv:name="01">
@@ -1660,7 +1660,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/teaserInternal</sv:value>
+              <sv:value>travel-demo:components/teaserInternal</sv:value>
             </sv:property>
           </sv:node>
           <sv:node sv:name="02">
@@ -1704,7 +1704,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/teaserInternal</sv:value>
+              <sv:value>travel-demo:components/teaserInternal</sv:value>
             </sv:property>
           </sv:node>
         </sv:node>
@@ -2096,7 +2096,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Jack and Maria wanted to take some time out of their busy schedules and really experience something amazing. But the more they looked, the more difficult it was to find what they wanted. They didn&amp;rsquo;t have the time or energy to scour the Internet to put all the elements of their trip together. At the same time they didn&amp;rsquo;t want to be stuck on a package tour, and they certainly didn&amp;rsquo;t want to contribute to ruining areas of natural beauty.&lt;/p&gt;
@@ -2508,7 +2508,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Magnolia Travels was created to provide people with unforgettable experiences rather than just holidays. We don&amp;rsquo;t sell package tours in busy resorts, and we don&amp;rsquo;t believe in selling the same holiday to everyone.&lt;/p&gt;
@@ -2563,7 +2563,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;That&amp;rsquo;s why we want to get to know you before we give you advice. We change our tours on-the-fly to match people&amp;rsquo;s unique nature and interests. And don&amp;rsquo;t worry if you can&amp;rsquo;t find a tour that suits you on our website. We&amp;rsquo;re ready to do the research for you to craft a personalized tour exactly where and when you like. That&amp;rsquo;s what we&amp;rsquo;re all about. So give us a call!&lt;/p&gt;
@@ -2618,7 +2618,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Part of our mission is to give back to the areas that we visit. We do this by working with the local tour guides, sharing tips and soliciting suggestions. We conduct a yearly &amp;lsquo;check-in&amp;rsquo; in the more sensitive travel communities to ensure our impact is positive, and adjust our tours when necessary. We always arrange accommodation in socially &amp;amp; environmentally friendly hotels and guesthouses. Because we don&amp;rsquo;t believe that our &amp;lsquo;experience of a lifetime&amp;rsquo; should harm places of beauty.&lt;/p&gt;
@@ -3014,7 +3014,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Experience in tourism or in travel agencies is a big plus, but not essential. However, it is important to have have spent some years in customer facing industries, as well as a passion for creating experiences.&lt;/p&gt;
@@ -3136,7 +3136,7 @@
               <sv:property sv:name="jcr:uuid" sv:type="String">
                 <sv:value>af4d9a77-ef14-45b5-a6c8-f55253cb4632</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3189,7 +3189,7 @@
               <sv:property sv:name="Resize" sv:type="String">
                 <sv:value>height</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3245,7 +3245,7 @@
               <sv:property sv:name="Resize" sv:type="String">
                 <sv:value>height</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3295,7 +3295,7 @@
               <sv:property sv:name="jcr:uuid" sv:type="String">
                 <sv:value>aa3e9744-d376-408e-8a6d-7d7003dfcb80</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3348,7 +3348,7 @@
               <sv:property sv:name="jcr:uuid" sv:type="String">
                 <sv:value>b0ef4d74-21ab-44f1-b186-89d677dc940f</sv:value>
               </sv:property>
-              <sv:property sv:name="fixedHeight" sv:type="Boolean">
+              <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
                 <sv:value>true</sv:value>
               </sv:property>
               <sv:property sv:name="headline" sv:type="String">
@@ -3492,7 +3492,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="0">
@@ -3536,7 +3536,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/teaserInternal</sv:value>
+            <sv:value>travel-demo:components/teaserInternal</sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="02">
@@ -3580,7 +3580,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/teaserInternal</sv:value>
+            <sv:value>travel-demo:components/teaserInternal</sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="03">
@@ -3624,7 +3624,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/teaserInternal</sv:value>
+            <sv:value>travel-demo:components/teaserInternal</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -3962,7 +3962,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/textImage</sv:value>
+              <sv:value>travel-demo:components/textImage</sv:value>
             </sv:property>
             <sv:property sv:name="text" sv:type="String">
               <sv:value>&lt;p&gt;You love dealing with people and making them happy. You have at least five years experience dealing directly with customers, not necessarily in the tourism industry (but it sure helps!) You should also have the initiative and enthusiasm to find wonderful experiences for customers.&lt;/p&gt;
@@ -4355,7 +4355,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/textImage</sv:value>
+              <sv:value>travel-demo:components/textImage</sv:value>
             </sv:property>
             <sv:property sv:name="text" sv:type="String">
               <sv:value>&lt;p&gt;You have more than 10 years experience in customer service, including at least five years in tourism. You have a passion for giving customers what they need. Your experience should include at least five years at managerial level. Because Magnolia Travels is growing, we need people who are ready to take on added responsibilities as their roles expand. You will be responsible for managing a team of 10 customer experience agents, but this may grow. Your role will involve occasional travel to check locations and visit international offices.&lt;/p&gt;
@@ -4747,7 +4747,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>mte:components/textImage</sv:value>
+              <sv:value>travel-demo:components/textImage</sv:value>
             </sv:property>
             <sv:property sv:name="text" sv:type="String">
               <sv:value>&lt;p&gt;Magnolia Travels is growing fast, but we know that there are still lots of opportunities we can take advantage of. We want a marketing associate with a hands-on approach to social media, events and marketing automation. You&amp;rsquo;ll also be responsible for developing and translating our website to attract more customers globally.&lt;/p&gt;
@@ -5189,7 +5189,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>mte:components/textImage</sv:value>
+          <sv:value>travel-demo:components/textImage</sv:value>
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
           <sv:value>&lt;p&gt;Do you have a question about one of our tours? Would you like to customize a tour - or looking for a trip you just can&amp;rsquo;t find on our website?&lt;/p&gt;
@@ -6020,7 +6020,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p&gt;
@@ -6065,7 +6065,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
@@ -6110,7 +6110,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Mum's the word.&lt;/p&gt;
@@ -6450,7 +6450,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Lorem ipsum dolor sit amet, illum legendos duo te. Te vix novum tibique torquatos, ignota constituam honestatis ad est. Cu his stet legere delicatissimi, cu blandit interesset comprehensam per. His ea purto etiam, eam cu epicuri conceptam.&lt;/p&gt;
@@ -6818,7 +6818,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>mte:components/textImage</sv:value>
+            <sv:value>travel-demo:components/textImage</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
             <sv:value>&lt;p&gt;Developed by Magnolia International Ltd.&lt;/p&gt;

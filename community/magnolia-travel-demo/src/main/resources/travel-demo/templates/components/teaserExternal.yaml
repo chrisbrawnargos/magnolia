@@ -10,6 +10,3 @@ parameters:
 i18nBasename: info.magnolia.templating.models.messages
 title: components.teaserExternal.label
 description: components.teaserExternal.description
-
-
-
