@@ -25,6 +25,8 @@
                 autoplaySeconds: ${content.autoplaySeconds!"5"}
             [/#if]
         });
+        // Add lazypreload to all lazy images in carousel
+        $("#" + "${slideShowId} img.lazyload").addClass("lazypreload");
     });
 </script>
 [#else]
