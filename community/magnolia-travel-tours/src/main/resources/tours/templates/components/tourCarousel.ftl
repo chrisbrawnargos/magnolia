@@ -42,7 +42,7 @@
                                 [/#list]
                             </div>
                         [/#if]
-                        <a class="btn btn-lg btn-primary" href="${tour.link!}">${i18n['tour.view']}</a>
+                        <button class="btn btn-lg btn-primary">${i18n['tour.view']}</button>
                     </div>
                 </a>
             </div>
