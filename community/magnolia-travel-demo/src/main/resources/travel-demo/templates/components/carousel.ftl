@@ -22,7 +22,9 @@
                 variableWidth: ${content.variableWidth!"false"},
                 slidesToShow: ${content.slidesToShow!"2"},
                 autoplay: ${content.autoplay!"false"},
-                autoplaySeconds: ${content.autoplaySeconds!"5"}
+                autoplaySeconds: ${content.autoplaySeconds!"5"},
+                nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
+                prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
             [/#if]
         });
         // Add lazypreload to all lazy images in carousel
