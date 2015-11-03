@@ -1,7 +1,7 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/travel-demo/templates/macros/editorAlert.ftl" /]
 
-[#assign slideShowId = content.id!"slideshow"]
+[#assign slideShowId = content.id!"carousel-${content.@id}"]
 [#assign cssClass = "component-carousel"]
 
 [#-------------- RENDERING --------------]
