@@ -894,8 +894,11 @@ h1.category {
     background: white;
 }
 
+.slick-prev, .slick-next,
 .slick-prev:before, .slick-next:before {
-    color: gray ! important;
+    color: white !important;
+    font-size: 30px;
+    opacity: 0.75;
 }
 
 /* CARD
@@ -1546,10 +1549,23 @@ max-width: 500px) {
     overflow: hidden;
 }
 
+.slick-prev,
+.slick-next {
+    height: 100%;
+    width: 85px;
+    z-index: 1024; /* required in order for the buttons to be 'in front' */
+    text-align: center;
+}
+
 .slick-prev {
     left: -15px !important;
 }
 
 .slick-next {
     right: -15px !important;
+}
+
+.slick-next::before,
+.slick-prev::before {
+    content: "";
 }

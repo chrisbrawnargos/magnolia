@@ -1,7 +1,7 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/travel-demo/templates/macros/editorAlert.ftl" /]
 
-[#assign slideShowId = content.id!"slideshow"]
+[#assign slideShowId = content.id!"carousel-${content.@id}"]
 [#assign cssClass = "component-carousel"]
 
 [#-------------- RENDERING --------------]
@@ -22,9 +22,13 @@
                 variableWidth: ${content.variableWidth!"false"},
                 slidesToShow: ${content.slidesToShow!"2"},
                 autoplay: ${content.autoplay!"false"},
-                autoplaySeconds: ${content.autoplaySeconds!"5"}
+                autoplaySeconds: ${content.autoplaySeconds!"5"},
+                nextArrow: '<button type="button" class="slick-next"><span class="glyphicon glyphicon-chevron-right"></span></button>',
+                prevArrow: '<button type="button" class="slick-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>'
             [/#if]
         });
+        // Add lazypreload to all lazy images in carousel
+        $("#" + "${slideShowId} img.lazyload").addClass("lazypreload");
     });
 </script>
 [#else]

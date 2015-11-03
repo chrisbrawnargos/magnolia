@@ -6,7 +6,6 @@ form:
         - name: id
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           type: String
-          required: true
         - name: dots
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           type: String
