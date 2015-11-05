@@ -14,19 +14,14 @@
  */
 package info.magnolia.demo.travel.multisite.setup;
 
-import static info.magnolia.jcr.nodebuilder.Ops.*;
-
-import info.magnolia.jcr.nodebuilder.task.ErrorHandling;
-import info.magnolia.jcr.nodebuilder.task.NodeBuilderTask;
-import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.ArrayDelegateTask;
+import info.magnolia.module.delta.BootstrapConditionally;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.Task;
-import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,21 +31,9 @@ import java.util.List;
  */
 public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersionHandler {
 
-    private Task mappingAndDomainConfigurationTask = new NodeBuilderTask("Add mapping and domain configuration to travel site definition in multisite", "", ErrorHandling.strict, RepositoryConstants.CONFIG, "/modules/multisite/config/sites",
-            getNode("travel").then(
-                    addNode("mappings", NodeTypes.ContentNode.NAME).then(
-                            addNode("website", NodeTypes.ContentNode.NAME).then(
-                                    addProperty("URIPrefix", ""),
-                                    addProperty("handlePrefix", "/travel"),
-                                    addProperty("repository", "website")
-                            )
-                    ),
-                    addNode("domains", NodeTypes.ContentNode.NAME).then(
-                            addNode("travel-demo", NodeTypes.ContentNode.NAME).then(
-                                    addProperty("name", "travel-demo.magnolia-cms.com")
-                            )
-                    )
-            ));
+    private final Task mappingAndDomainConfigurationTask = new ArrayDelegateTask("Add domain and mapping configuration to travel site definition in multisite", "",
+            new BootstrapConditionally("Add domain configuration to travel site definition in multisite", "/info/magnolia/demo/travel/multisite/setup/config.modules.multisite.config.sites.travel.domains.xml"),
+            new BootstrapConditionally("Add mapping configuration to travel site definition in multisite", "/info/magnolia/demo/travel/multisite/setup/config.modules.multisite.config.sites.travel.mappings.xml"));
 
     public TravelDemoMultiSiteModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
