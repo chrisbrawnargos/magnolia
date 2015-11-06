@@ -16,10 +16,10 @@
 
   <properties>
     <javaVersion>1.7</javaVersion>
-    <magnoliaVersion>5.4.3-SNAPSHOT</magnoliaVersion>
+    <magnoliaVersion>5.4.3</magnoliaVersion>
     <magnoliaUiVersion>5.4.1</magnoliaUiVersion>
     <magnoliaDamVersion>2.1</magnoliaDamVersion>
-    <siteVersion>1.0.3-SNAPSHOT</siteVersion>
+    <siteVersion>1.0.3</siteVersion>
     <resourcesVersion>2.4</resourcesVersion>
   </properties>
 
