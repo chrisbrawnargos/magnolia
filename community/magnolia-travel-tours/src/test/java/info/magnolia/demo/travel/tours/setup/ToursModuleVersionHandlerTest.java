@@ -35,11 +35,13 @@ package info.magnolia.demo.travel.tours.setup;
 
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
 
 import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeTypes.Activatable;
+import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.jcr.util.PropertyUtil;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
@@ -49,10 +51,16 @@ import info.magnolia.repository.RepositoryConstants;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import com.google.common.base.Function;
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Lists;
 
 /**
  * Test class for {@link info.magnolia.demo.travel.tours.setup.ToursModuleVersionHandler}.
@@ -101,6 +109,7 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
     @Test
     public void demoRolesCanAccessTourCategoriesApp() throws Exception {
         // GIVEN
+        setupBootstrapPages();
         setupConfigNode("/modules/tours/apps/tourCategories/permissions/roles");
 
         // WHEN
@@ -114,7 +123,7 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
     @Test
     public void updateTo08SetsPagesAsPublished() throws Exception {
         // GIVEN
-        websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
+        setupBootstrapPages();
         websiteSession.getRootNode().addNode("travel/foo", NodeTypes.Page.NAME);
         PropertyUtil.setProperty(websiteSession.getNode("/travel/foo"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
 
@@ -129,11 +138,7 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
     @Test
     public void cleanInstallSetsPagesAsPublished() throws Exception {
         // GIVEN
-        websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
-        websiteSession.getRootNode().addNode("travel/about", NodeTypes.Page.NAME);
-        websiteSession.getRootNode().addNode("travel/tour-type", NodeTypes.Page.NAME);
-        websiteSession.getRootNode().addNode("travel/destination", NodeTypes.Page.NAME);
-        websiteSession.getRootNode().addNode("travel/tour", NodeTypes.Page.NAME);
+        setupBootstrapPages();
         PropertyUtil.setProperty(websiteSession.getNode("/travel/tour-type"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
         PropertyUtil.setProperty(websiteSession.getNode("/travel/destination"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
         PropertyUtil.setProperty(websiteSession.getNode("/travel/tour"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
@@ -155,6 +160,7 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
     @Test
     public void demoRoleCanAccessDamApp() throws Exception {
         // GIVEN
+        setupBootstrapPages();
         setupConfigNode(ToursModuleVersionHandler.DAM_PERMISSIONS_ROLES);
 
         // WHEN
@@ -162,6 +168,47 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
 
         // THEN
         assertThat(configSession.getNode(ToursModuleVersionHandler.DAM_PERMISSIONS_ROLES), hasProperty(ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE, ToursModuleVersionHandler.TRAVEL_DEMO_TOUR_EDITOR_ROLE));
+    }
+
+    @Test
+    public void updateFrom08AlsoReordersPages() throws Exception {
+        // GIVEN
+        setupBootstrapPages();
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8"));
+
+        // THEN
+        final Node travelPages = websiteSession.getNode("/travel");
+        final List<Node> pageNames = Lists.newArrayList(NodeUtil.getNodes(travelPages, NodeTypes.Page.NAME));
+        assertThat(Collections2.transform(pageNames, new ToNodeName()), contains(
+                "tour-type",
+                "destination",
+                "tour",
+                "about"
+        ));
+    }
+
+    private void setupBootstrapPages() throws RepositoryException {
+        websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/about", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/tour-type", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/destination", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/tour", NodeTypes.Page.NAME);
+    }
+
+    /**
+     * This function is used to extract node name of a given node.
+     */
+    private static class ToNodeName implements Function<Node, String> {
+        @Override
+        public String apply(Node node) {
+            try {
+                return node.getName();
+            } catch (RepositoryException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
 }
