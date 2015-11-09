@@ -111,6 +111,10 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
                 .addTask(setupAccessDefinitionToUseRoleBaseVoter)
         );
+        register(DeltaBuilder.update("0.8.1", "")
+                .addTask(new NodeExistsDelegateTask("Serve add2any js over https", "Serves add2any javascript over https to prevent mixed content issue in pages served over https.",
+                        RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany",
+                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js"))));
     }
 
     @Override
