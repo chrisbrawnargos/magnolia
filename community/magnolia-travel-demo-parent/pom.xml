@@ -24,9 +24,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:http://git.magnolia-cms.com/modules/demo-projects</connection>
-    <developerConnection>scm:git:https://git.magnolia-cms.com/modules/demo-projects</developerConnection>
-    <url>https://git.magnolia-cms.com/gitweb/?p=modules/demo-projects.git</url>
+    <connection>scm:git:ssh://git@git.magnolia-cms.com/MODULES/demo-projects</connection>
+    <developerConnection>scm:git:ssh://git@git.magnolia-cms.com/MODULES/demo-projects</developerConnection>
+    <url>https://git.magnolia-cms.com/projects/MODULES/repos/demo-projects</url>
     <tag>HEAD</tag>
   </scm>
 
