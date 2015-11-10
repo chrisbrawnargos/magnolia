@@ -69,6 +69,11 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
     protected static final String TRAVEL_DEMO_TOUR_EDITOR_ROLE = "travel-demo-tour-editor";
     protected static final String DAM_PERMISSIONS_ROLES = "/modules/dam-app/apps/assets/permissions/roles";
 
+    private final Task orderPageNodes = new ArrayDelegateTask("Order travel pages before the 'about' page", "",
+            new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour-type", "about"),
+            new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/destination", "about"),
+            new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
+
     public ToursModuleVersionHandler() {
         // Reinstall all relevant contents
         register(DeltaBuilder.update("0.8", "")
@@ -93,6 +98,10 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                         new SetPropertyTask(RepositoryConstants.CONFIG, DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE, TRAVEL_DEMO_TOUR_EDITOR_ROLE)))
                 .addTask(new SetPageAsPublishedTask("/travel", true))
         );
+
+        register(DeltaBuilder.update("0.8.1", "")
+                .addTask(orderPageNodes)
+        );
     }
 
     @Override
@@ -105,9 +114,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
         tasks.add(new InstallRendererContextAttributeTask("site", "site", "tourfn", TourTemplatingFunctions.class.getName()));
 
         /* Order bootstrapped pages accordingly */
-        tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour-type", "about"));
-        tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/destination", "about"));
-        tasks.add(new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
+        tasks.add(orderPageNodes);
 
         /* Add travel-demo-base role to user anonymous */
         tasks.add(new AddRoleToUserTask("Adds role 'travel-demo-base' to user 'anonymous'", "anonymous", "travel-demo-base"));

@@ -15,6 +15,7 @@
 package info.magnolia.demo.travel.personalization.setup;
 
 import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
 
 import info.magnolia.cms.security.MgnlRoleManager;
@@ -24,6 +25,7 @@ import info.magnolia.cms.security.SecuritySupportImpl;
 import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeTypes.Activatable;
+import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.jcr.util.PropertyUtil;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
@@ -35,10 +37,15 @@ import java.util.Arrays;
 import java.util.List;
 
 import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import com.google.common.base.Function;
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Lists;
 
 /**
  * Tests for {@link TravelDemoPersonalizationModuleVersionHandler}.
@@ -155,6 +162,39 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
 
         activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/variants"));
         assertThat("We expect that /travel/variants node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
+    }
+
+    @Test
+    public void updateFrom08AlsoReordersVariantsAtTheTop() throws Exception {
+        // GIVEN
+        websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/variants", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/about", NodeTypes.Page.NAME);
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8"));
+
+        // THEN
+        final Node travelPages = websiteSession.getNode("/travel");
+        final List<Node> pageNames = Lists.newArrayList(NodeUtil.getNodes(travelPages));
+        assertThat(Collections2.transform(pageNames, new ToNodeName()), contains(
+                "variants",
+                "about"
+        ));
+    }
+
+    /**
+     * This function is used to extract node name of a given node.
+     */
+    private static class ToNodeName implements Function<Node, String> {
+        @Override
+        public String apply(Node node) {
+            try {
+                return node.getName();
+            } catch (RepositoryException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
 }

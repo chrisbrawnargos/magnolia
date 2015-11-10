@@ -37,12 +37,18 @@ import javax.jcr.ImportUUIDBehavior;
  */
 public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModuleVersionHandler {
 
+    private final Task orderVariantNodeToFirstPosition = new OrderNodeToFirstPositionTask("Order travel page variants to first position.", "", RepositoryConstants.WEBSITE, "travel/variants");
+
     public TravelDemoPersonalizationModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website variants for travel pages", "Re-bootstrap website variants to account for all changes",
                         new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.variants.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
                 .addTask(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true))
                 .addTask(new SetPageAsPublishedTask("/travel", true))
+        );
+
+        register(DeltaBuilder.update("0.8.1", "")
+                .addTask(orderVariantNodeToFirstPosition)
         );
     }
 
@@ -54,7 +60,7 @@ public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModule
 
         // Add variant mixin to travel page - so that adminCentral gives it the proper behaviour.
         tasks.add(new AddMixinTask("/travel", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN));
-        tasks.add(new OrderNodeToFirstPositionTask("Order travel page variants to first position.", "", RepositoryConstants.WEBSITE, "travel/variants"));
+        tasks.add(orderVariantNodeToFirstPosition);
         tasks.add(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true));
         tasks.add(new SetPageAsPublishedTask("/travel", true));
 
