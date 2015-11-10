@@ -171,6 +171,18 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, true);
     }
 
+    @Test
+    public void updateTo081ServesAdd2AnyExternalJsOverHttps() throws Exception {
+        // GIVEN
+        setupConfigProperty("/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "http://static.addtoany.com/menu/page.js");
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8"));
+
+        // THEN
+        assertThat(session.getNode("/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany"), hasProperty("link", "https://static.addtoany.com/menu/page.js"));
+    }
+
     private void assertThatAccessPermissionsAreConfigured(String path, String role, boolean not) throws RepositoryException {
 
         assertThat(session.getNode(path.concat(PERMISSIONS_NODE_PATH)), hasProperty("class", VoterBasedConfiguredAccessDefinition.class.getName()));
