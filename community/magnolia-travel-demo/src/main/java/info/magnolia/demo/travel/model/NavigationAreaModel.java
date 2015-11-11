@@ -33,6 +33,8 @@
  */
 package info.magnolia.demo.travel.model;
 
+import info.magnolia.demo.travel.definition.NavigationAreaDefinition;
+import info.magnolia.demo.travel.user.UserLinksResolver;
 import info.magnolia.jcr.predicate.NodeTypePredicate;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeUtil;
@@ -70,6 +72,8 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
     private static final String CURRENT_ACTIVE_CSS_CLASS = "active";
     private static final String CHILD_ACTIVE_CSS_CLASS = "child-active";
     private static final String DEMO_ABOUT_TEMPLATE_SUBTYPE = "demo-about";
+
+    private UserLinksResolver userLinksResolver;
 
     private final TemplatingFunctions templatingFunctions;
 
@@ -110,6 +114,8 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
         return Collections.emptyList();
     }
 
+
+
     public String getAboutDemoLink() {
         Node siteRoot = templatingFunctions.siteRoot(content);
         String link = null;
@@ -122,6 +128,55 @@ public class NavigationAreaModel extends RenderingModelImpl<AreaDefinition> {
             log.error("Could not get the '{}' page.", DEMO_ABOUT_TEMPLATE_SUBTYPE, e);
         }
         return link;
+    }
+
+    public String getUsername() throws RepositoryException {
+        if (this.getUserLinksResolver() != null) {
+            return this.getUserLinksResolver().getUsername();
+        }
+        return null;
+    }
+
+    public String getLogoutLink() throws RepositoryException {
+        if (this.getUserLinksResolver() != null) {
+            return this.getUserLinksResolver().getLogoutLink();
+        }
+        return null;
+    }
+
+    public String getLoginPageLink() throws RepositoryException {
+        if (this.getUserLinksResolver() != null) {
+            return this.getUserLinksResolver().getLoginPageLink();
+        }
+        return null;
+    }
+
+    public String getRegistrationPageLink() throws RepositoryException {
+        if (this.getUserLinksResolver() != null) {
+            return this.getUserLinksResolver().getRegistrationPageLink();
+        }
+        return null;
+    }
+
+    public String getProfilePageLink() throws RepositoryException {
+        if (this.getUserLinksResolver() != null) {
+            return this.getUserLinksResolver().getProfilePageLink();
+        }
+        return null;
+    }
+
+    private UserLinksResolver getUserLinksResolver() throws RepositoryException {
+        if (userLinksResolver == null) {
+            if (this.getDefinition() instanceof NavigationAreaDefinition) {
+                for (UserLinksResolver userLinksResolver : ((NavigationAreaDefinition) this.getDefinition()).getUserLinksResolvers()) {
+                    if (userLinksResolver.useForCurrentPage()) {
+                        this.userLinksResolver = userLinksResolver;
+                        break;
+                    }
+                }
+            }
+        }
+        return userLinksResolver;
     }
 
     private List<NavigationItem> getChildPages(Node parent) throws RepositoryException {

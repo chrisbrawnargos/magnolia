@@ -1,5 +1,6 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/travel-demo/templates/macros/searchForm.ftl"]
+[#include "/travel-demo/templates/macros/userLinks.ftl"]
 
 [#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/" /]
 [#assign pages = model.rootPages! /]
@@ -25,6 +26,8 @@
 
     <div class="container">
         [#if aboutPage?has_content]<div id="about-link"><a href="${aboutPage}">${i18n['navigation.aboutDemo']}</a></div>[/#if]
+
+        [@userLinks model.username!"" model.logoutLink!"" model.loginPageLink!"" model.profilePageLink!"" model.registrationPageLink!"" /]
 
         [#assign localizedLinks = cmsfn.localizedLinks()!]
         [#if localizedLinks?has_content]

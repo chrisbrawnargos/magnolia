@@ -404,6 +404,37 @@ h2 {
     content: "";
 }
 
+#user-links,
+#user-links a {
+    color: #777;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#user-links a::after {
+    content: " |";
+}
+
+#user-links a:last-child::after {
+    content: "";
+}
+
+#user-links a:hover {
+    color: #000;
+    text-effect: none;
+}
+
+#user-links {
+    position: absolute;
+    right: 288px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.8em;
+    float: right;
+    z-index: 1;
+    cursor: default;
+}
+
 @media ( max-width: 767px) {
     #about-link {
         display: none;
