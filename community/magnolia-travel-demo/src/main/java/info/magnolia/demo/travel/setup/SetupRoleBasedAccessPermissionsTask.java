@@ -41,29 +41,32 @@ import info.magnolia.module.delta.AbstractRepositoryTask;
 import info.magnolia.module.delta.TaskExecutionException;
 import info.magnolia.voting.voters.RoleBaseVoter;
 
+import java.util.List;
+
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
- * Task that sets access definition with role base voter.
- */
-public class SetupAccessDefinitionToUseRoleBaseVoter extends AbstractRepositoryTask {
+import com.google.common.collect.Lists;
 
-    private static final String PERMISSIONS_NODE_PATH = "/permissions";
-    private static final String PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH = PERMISSIONS_NODE_PATH.concat("/voters/deniedRoles");
-    private static final String PERMISSIONS_VOTERS_DENIED_ROLES_ROLES_NODE_PATH = PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH.concat("/roles");
+/**
+ * Task that sets access definition with role based voter.
+ */
+public class SetupRoleBasedAccessPermissionsTask extends AbstractRepositoryTask {
+
+    public static final String PERMISSIONS_NODE_PATH = "/permissions";
+    public static final String VOTERS_DENIED_ROLES = PERMISSIONS_NODE_PATH + "/voters/deniedRoles";
+    public static final String VOTERS_ALLOWED_ROLES = PERMISSIONS_NODE_PATH + "/voters/allowedRoles";
 
     private String[] paths;
-    private String role;
-    private boolean not;
+    private List<String> roles = Lists.newArrayList();
+    private boolean allow;
 
-    public SetupAccessDefinitionToUseRoleBaseVoter(String name, String description, String role, boolean not, String... paths) {
-
+    public SetupRoleBasedAccessPermissionsTask(String name, String description, List<String> roles, boolean allow, String... paths) {
         super(name, description);
-        this.role = role;
-        this.not = not;
+        this.roles = roles;
+        this.allow = allow;
         this.paths = paths;
     }
 
@@ -73,17 +76,29 @@ public class SetupAccessDefinitionToUseRoleBaseVoter extends AbstractRepositoryT
         Node config = installContext.getConfigJCRSession().getRootNode();
 
         for (String path : paths) {
-
             String relPath = StringUtils.removeStart(path, "/");
-
-            if (config.hasNode(relPath) && !config.hasNode(relPath.concat(PERMISSIONS_NODE_PATH))) {
-
-                NodeUtil.createPath(config, relPath.concat(PERMISSIONS_VOTERS_DENIED_ROLES_ROLES_NODE_PATH), NodeTypes.ContentNode.NAME);
-                config.getNode(relPath.concat(PERMISSIONS_NODE_PATH)).setProperty("class", VoterBasedConfiguredAccessDefinition.class.getName());
-                config.getNode(relPath.concat(PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH)).setProperty("class", RoleBaseVoter.class.getName());
-                config.getNode(relPath.concat(PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH)).setProperty("not", Boolean.valueOf(not).toString());
-                config.getNode(relPath.concat(PERMISSIONS_VOTERS_DENIED_ROLES_ROLES_NODE_PATH)).setProperty(role, role);
+            if (config.hasNode(relPath)) {
+                createRoleBasedPermissionsConfig(config, relPath);
             }
+        }
+    }
+
+    private void createRoleBasedPermissionsConfig(Node config, String relPath) throws RepositoryException {
+        Node rolePermissions = null;
+
+        if (allow) {
+            rolePermissions = NodeUtil.createPath(config, relPath.concat(VOTERS_ALLOWED_ROLES), NodeTypes.ContentNode.NAME);
+        } else {
+            rolePermissions = NodeUtil.createPath(config, relPath.concat(VOTERS_DENIED_ROLES), NodeTypes.ContentNode.NAME);
+            rolePermissions.setProperty("not", "true");
+        }
+
+        config.getNode(relPath.concat(PERMISSIONS_NODE_PATH)).setProperty("class", VoterBasedConfiguredAccessDefinition.class.getName());
+        rolePermissions.setProperty("class", RoleBaseVoter.class.getName());
+        Node rolesNode = rolePermissions.addNode("roles", NodeTypes.ContentNode.NAME);
+
+        for (String role : roles) {
+            rolesNode.setProperty(role, role);
         }
     }
 }
