@@ -42,17 +42,18 @@ import info.magnolia.module.delta.NewPropertyTask;
  */
 public class SetupDemoRolesAndGroupsTask extends ArrayDelegateTask {
 
-    protected static final String TRAVEL_DEMO_PUBLISHER_ROLE = "travel-demo-publisher";
-    protected static final String TRAVEL_DEMO_EDITOR_ROLE = "travel-demo-editor";
+    public static final String TRAVEL_DEMO_PUBLISHER_ROLE = "travel-demo-publisher";
+    public static final String TRAVEL_DEMO_EDITOR_ROLE = "travel-demo-editor";
+    public static final String TRAVEL_DEMO_ADMINCENTRAL_ROLE = "travel-demo-admincentral";
 
-    protected static final String TRAVEL_DEMO_PUBLISHERS_GROUP = "travel-demo-publishers";
-    protected static final String PAGES_ACTIVATE_ACCESS_ROLES = "/modules/pages/apps/pages/subApps/browser/actions/activate/availability/access/roles";
-    protected static final String DAM_ACTIVATE_ACCESS_ROLES = "/modules/dam-app/apps/assets/subApps/browser/actions/activate/availability/access/roles";
-    protected static final String PAGES_PERMISSIONS_ROLES = "/modules/pages/apps/pages/permissions/roles";
-    protected static final String DAM_PERMISSIONS_ROLES = "/modules/dam-app/apps/assets/permissions/roles";
-    protected static final String WORKFLOW_JBPM_PUBLISH_GROUPS = "/modules/workflow-jbpm/tasks/publish/groups";
-    protected static final String ENTERPRISE_MODULE = "enterprise";
-    protected static final String WORKFLOW_JBPM_MODULE = "workflow-jbpm";
+    public static final String TRAVEL_DEMO_PUBLISHERS_GROUP = "travel-demo-publishers";
+    public static final String PAGES_ACTIVATE_ACCESS_ROLES = "/modules/pages/apps/pages/subApps/browser/actions/activate/availability/access/roles";
+    public static final String DAM_ACTIVATE_ACCESS_ROLES = "/modules/dam-app/apps/assets/subApps/browser/actions/activate/availability/access/roles";
+    public static final String PAGES_PERMISSIONS_ROLES = "/modules/pages/apps/pages/permissions/roles";
+    public static final String DAM_PERMISSIONS_ROLES = "/modules/dam-app/apps/assets/permissions/roles";
+    public static final String WORKFLOW_JBPM_PUBLISH_GROUPS = "/modules/workflow-jbpm/tasks/publish/groups";
+    public static final String ENTERPRISE_MODULE = "enterprise";
+    public static final String WORKFLOW_JBPM_MODULE = "workflow-jbpm";
 
     public SetupDemoRolesAndGroupsTask() {
         super("Set permissions for the travel-demo-editor(s) and travel-demo-publisher(s) roles and groups");
