@@ -263,7 +263,7 @@ h2 {
 }
 
 #nav-search {
-    width: 130px;
+    width: 95px
 }
 
 .navbar-toggle {
@@ -442,7 +442,12 @@ h2 {
 
     #language-link {
         right: 60px;
-        top: 14px;
+        top: 5px;
+    }
+
+    #user-links {
+        right: 60px;
+        top: 26px;
     }
 
     .navbar-brand img {

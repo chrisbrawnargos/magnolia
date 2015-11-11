@@ -16,7 +16,7 @@
     <sv:value>admin</sv:value>
   </sv:property>
   <sv:property sv:name="location" sv:type="String">
-    <sv:value>/travel/members-area.html</sv:value>
+    <sv:value>/travel/members/login.html</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
     <sv:value>false</sv:value>
@@ -34,7 +34,7 @@
     <sv:value>superuser</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-    <sv:value>2015-11-11T14:20:46.872+01:00</sv:value>
+    <sv:value>2015-11-30T11:36:45.415+01:00</sv:value>
   </sv:property>
   <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
     <sv:value>superuser</sv:value>
@@ -71,13 +71,13 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-      <sv:value>2015-11-12T09:16:52.317+01:00</sv:value>
+      <sv:value>2015-11-30T11:41:04.575+01:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="patternString" sv:type="String">
-      <sv:value>/travel/members-area/(profileUpdate|protected)*</sv:value>
+      <sv:value>(*|travel)/members/(profile-update|protected)*</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>

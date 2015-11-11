@@ -66,6 +66,10 @@
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-module-form</artifactId>
     </dependency>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-module-public-user-registration</artifactId>
+    </dependency>
 
     <!-- Other dependencies -->
     <dependency>

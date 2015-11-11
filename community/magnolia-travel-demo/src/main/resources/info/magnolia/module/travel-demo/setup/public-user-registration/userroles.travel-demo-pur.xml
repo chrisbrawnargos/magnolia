@@ -493,7 +493,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>/travel/members-area/protected*</sv:value>
+        <sv:value>/travel/members/protected*</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -531,7 +531,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>&lt;travel&gt;/members-area/protected*</sv:value>
+        <sv:value>&lt;travel&gt;/members/protected*</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -560,7 +560,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>/travel/members-area/profileUpdate*</sv:value>
+        <sv:value>/travel/members/profile-update*</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>
@@ -589,7 +589,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="path" sv:type="String">
-        <sv:value>&lt;travel&gt;/members-area/profileUpdate*</sv:value>
+        <sv:value>&lt;travel&gt;/members/profile-update*</sv:value>
       </sv:property>
       <sv:property sv:name="permissions" sv:type="Long">
         <sv:value>63</sv:value>

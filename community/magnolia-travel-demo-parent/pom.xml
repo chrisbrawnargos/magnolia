@@ -120,6 +120,13 @@
         <version>2.3.1</version>
       </dependency>
 
+      <!-- This brings PUR to demo webapps -->
+      <dependency>
+        <groupId>info.magnolia</groupId>
+        <artifactId>magnolia-module-public-user-registration</artifactId>
+        <version>2.5.1-SNAPSHOT</version>
+      </dependency>
+
       <!-- Other dependencies -->
       <dependency>
         <groupId>org.apache.commons</groupId>
