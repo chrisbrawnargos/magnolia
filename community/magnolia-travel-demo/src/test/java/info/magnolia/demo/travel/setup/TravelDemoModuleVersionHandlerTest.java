@@ -33,6 +33,8 @@
  */
 package info.magnolia.demo.travel.setup;
 
+import static info.magnolia.demo.travel.setup.SetupDemoRolesAndGroupsTask.*;
+import static info.magnolia.demo.travel.setup.SetupRoleBasedAccessPermissionsTask.*;
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
@@ -64,10 +66,9 @@ import org.junit.Test;
  */
 public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTestCase {
 
-    private static final String PERMISSIONS_NODE_PATH = "/permissions";
-    private static final String PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH = PERMISSIONS_NODE_PATH.concat("/voters/deniedRoles");
-    private static final String PERMISSIONS_VOTERS_DENIED_ROLES_ROLES_NODE_PATH = PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH.concat("/roles");
-    private static final String TRAVEL_DEMO_ADMINCENTRAL_ROLE = "travel-demo-admincentral";
+    private static final String UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH = "/modules/ui-admincentral/config/appLauncherLayout/groups/target";
+    private static final String PERMISSIONS_VOTERS_DENIED_ROLES_ROLES_NODE_PATH = VOTERS_DENIED_ROLES.concat("/roles");
+    private static final String PERMISSIONS_VOTERS_ALLOWED_ROLES_ROLES_NODE_PATH = VOTERS_ALLOWED_ROLES.concat("/roles");
     private static final String CONTACTS_APPS_CONTACTS_NODE_PATH = "/modules/contacts/apps/contacts";
     private static final String UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH = "/modules/ui-admincentral/config/appLauncherLayout/groups/stk";
     private static final String UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH = "/modules/ui-admincentral/config/appLauncherLayout/groups/manage";
@@ -113,6 +114,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         setupConfigNode(CONTACTS_APPS_CONTACTS_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH);
+        setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH);
     }
 
     /**
@@ -153,9 +155,13 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
 
         // THEN
-        assertThatAccessPermissionsAreConfigured(CONTACTS_APPS_CONTACTS_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, true);
-        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, true);
-        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, true);
+        assertThatAccessPermissionsAreConfigured(CONTACTS_APPS_CONTACTS_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, false);
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, false);
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, false);
+
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH, TRAVEL_DEMO_EDITOR_ROLE, true);
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH, TRAVEL_DEMO_PUBLISHER_ROLE, true);
+
     }
 
     @Test
@@ -166,9 +172,21 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
 
         // THEN
-        assertThatAccessPermissionsAreConfigured(CONTACTS_APPS_CONTACTS_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, true);
-        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, true);
-        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, true);
+        assertThatAccessPermissionsAreConfigured(CONTACTS_APPS_CONTACTS_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, false);
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, false);
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH, TRAVEL_DEMO_ADMINCENTRAL_ROLE, false);
+    }
+
+    @Test
+    public void updateTo081SetsUpAccessToTargetAppGroup() throws Exception {
+        // GIVEN
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8"));
+
+        // THEN
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH, TRAVEL_DEMO_EDITOR_ROLE, true);
+        assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH, TRAVEL_DEMO_PUBLISHER_ROLE, true);
     }
 
     @Test
@@ -183,12 +201,17 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         assertThat(session.getNode("/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany"), hasProperty("link", "https://static.addtoany.com/menu/page.js"));
     }
 
-    private void assertThatAccessPermissionsAreConfigured(String path, String role, boolean not) throws RepositoryException {
-
+    private void assertThatAccessPermissionsAreConfigured(String path, String role, boolean allow) throws RepositoryException {
         assertThat(session.getNode(path.concat(PERMISSIONS_NODE_PATH)), hasProperty("class", VoterBasedConfiguredAccessDefinition.class.getName()));
-        assertThat(session.getNode(path.concat(PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH)), hasProperty("class", RoleBaseVoter.class.getName()));
-        assertThat(session.getNode(path.concat(PERMISSIONS_VOTERS_DENIED_ROLES_NODE_PATH)), hasProperty("not", Boolean.valueOf(not).toString()));
-        assertThat(session.getNode(path.concat(PERMISSIONS_VOTERS_DENIED_ROLES_ROLES_NODE_PATH)), hasProperty(role, role));
+
+        if (allow) {
+            assertThat(session.getNode(path.concat(VOTERS_ALLOWED_ROLES)), hasProperty("class", RoleBaseVoter.class.getName()));
+            assertThat(session.getNode(path.concat(PERMISSIONS_VOTERS_ALLOWED_ROLES_ROLES_NODE_PATH)), hasProperty(role, role));
+        } else {
+            assertThat(session.getNode(path.concat(VOTERS_DENIED_ROLES)), hasProperty("class", RoleBaseVoter.class.getName()));
+            assertThat(session.getNode(path.concat(VOTERS_DENIED_ROLES)), hasProperty("not", "true"));
+            assertThat(session.getNode(path.concat(PERMISSIONS_VOTERS_DENIED_ROLES_ROLES_NODE_PATH)), hasProperty(role, role));
+        }
     }
 
 }

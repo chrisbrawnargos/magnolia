@@ -47,24 +47,28 @@ import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import com.google.common.collect.Lists;
+import com.google.common.base.Preconditions;
 
 /**
  * Task that sets access definition with role based voter.
  */
 public class SetupRoleBasedAccessPermissionsTask extends AbstractRepositoryTask {
+    private static final Logger log = LoggerFactory.getLogger(SetupRoleBasedAccessPermissionsTask.class);
 
     public static final String PERMISSIONS_NODE_PATH = "/permissions";
     public static final String VOTERS_DENIED_ROLES = PERMISSIONS_NODE_PATH + "/voters/deniedRoles";
     public static final String VOTERS_ALLOWED_ROLES = PERMISSIONS_NODE_PATH + "/voters/allowedRoles";
 
     private String[] paths;
-    private List<String> roles = Lists.newArrayList();
+    private List<String> roles;
     private boolean allow;
 
     public SetupRoleBasedAccessPermissionsTask(String name, String description, List<String> roles, boolean allow, String... paths) {
         super(name, description);
+        Preconditions.checkNotNull(roles);
         this.roles = roles;
         this.allow = allow;
         this.paths = paths;
@@ -79,12 +83,14 @@ public class SetupRoleBasedAccessPermissionsTask extends AbstractRepositoryTask 
             String relPath = StringUtils.removeStart(path, "/");
             if (config.hasNode(relPath)) {
                 createRoleBasedPermissionsConfig(config, relPath);
+            } else {
+                log.warn("Path [{}] could not be found. No role permissions were set for it.", relPath);
             }
         }
     }
 
     private void createRoleBasedPermissionsConfig(Node config, String relPath) throws RepositoryException {
-        Node rolePermissions = null;
+        Node rolePermissions;
 
         if (allow) {
             rolePermissions = NodeUtil.createPath(config, relPath.concat(VOTERS_ALLOWED_ROLES), NodeTypes.ContentNode.NAME);
@@ -95,7 +101,7 @@ public class SetupRoleBasedAccessPermissionsTask extends AbstractRepositoryTask 
 
         config.getNode(relPath.concat(PERMISSIONS_NODE_PATH)).setProperty("class", VoterBasedConfiguredAccessDefinition.class.getName());
         rolePermissions.setProperty("class", RoleBaseVoter.class.getName());
-        Node rolesNode = rolePermissions.addNode("roles", NodeTypes.ContentNode.NAME);
+        Node rolesNode = NodeUtil.createPath(rolePermissions, "roles", NodeTypes.ContentNode.NAME);
 
         for (String role : roles) {
             rolesNode.setProperty(role, role);
