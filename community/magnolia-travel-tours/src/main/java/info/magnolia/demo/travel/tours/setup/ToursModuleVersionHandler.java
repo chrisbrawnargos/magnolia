@@ -96,11 +96,11 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                                                 new CopySiteToMultiSiteAndMakeItFallback(true))))))
                 .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", DAM_PERMISSIONS_ROLES,
                         new SetPropertyTask(RepositoryConstants.CONFIG, DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE, TRAVEL_DEMO_TOUR_EDITOR_ROLE)))
-                .addTask(new SetPageAsPublishedTask("/travel", true))
         );
 
         register(DeltaBuilder.update("0.8.1", "")
                 .addTask(orderPageNodes)
+                .addTask(new SetPageAsPublishedTask("/travel", true))
         );
     }
 
