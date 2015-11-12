@@ -36,7 +36,9 @@ areas:
       html:
         id: mtk:components/html
       form:
-        id: form:components/form
+        id: travel-demo:components/form
+      formStep:
+        id: form:components/formStep
   footer:
     editable: false
 

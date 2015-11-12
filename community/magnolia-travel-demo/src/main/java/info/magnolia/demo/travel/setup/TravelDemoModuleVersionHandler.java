@@ -51,6 +51,7 @@ import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
 import info.magnolia.module.delta.NewPropertyTask;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
+import info.magnolia.module.delta.PartialBootstrapTask;
 import info.magnolia.module.delta.PropertyExistsDelegateTask;
 import info.magnolia.module.delta.PropertyValueDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
@@ -145,7 +146,11 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                 new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers", true),
                                 new CopyPropertyTask("", RepositoryConstants.CONFIG, "/modules/travel-demo/config/travel/templates/prototype/areas/navigation", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation", "class", false),
                                 new IsModuleInstalledOrRegistered("", "public-user-registration",
-                                        new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)))))
+                                        new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)
+                                )
+                        )
+                ))
+                .addTask(new PartialBootstrapTask("Bootstrap multiStep form demo.", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", "travel/book-tour"))
         );
     }
 

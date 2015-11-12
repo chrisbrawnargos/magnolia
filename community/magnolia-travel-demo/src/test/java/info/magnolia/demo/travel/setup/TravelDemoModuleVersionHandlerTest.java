@@ -86,6 +86,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     private static final String UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH = "/modules/ui-admincentral/config/appLauncherLayout/groups/manage";
 
     private Session session;
+    private Session website;
 
     @Override
     protected String getModuleDescriptorPath() {
@@ -128,6 +129,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         NodeTypes.Activatable.update(userRolesRoot.getNode(UserManager.ANONYMOUS_USER), UserManager.SYSTEM_USER, true);
 
         session = MgnlContext.getJCRSession(RepositoryConstants.CONFIG);
+        website = MgnlContext.getJCRSession(RepositoryConstants.WEBSITE);
         setupConfigNode(CONTACTS_APPS_CONTACTS_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH);
@@ -262,6 +264,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         // THEN
         assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
         assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
+        assertThat(website.getRootNode(), hasNode("travel/book-tour"));
         this.checkIfEverythingIsActivated();
         this.assertNoMessages(ctx);
     }
@@ -290,9 +293,9 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     private void checkPurSamplesAreInstalled(Node clientCallbacks) throws RepositoryException {
-        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getRootNode(), hasNode("travel/" + InstallPurSamplesTask.PUR_SAMPLE_ROOT_PAGE_NAME));
-        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getRootNode(), hasNode(InstallPurSamplesTask.PASSWORD_CHANGE_PAGE_PATH));
-        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getNode("/travel/" + InstallPurSamplesTask.PUR_SAMPLE_ROOT_PAGE_NAME), allOf(
+        assertThat(website.getRootNode(), hasNode("travel/" + InstallPurSamplesTask.PUR_SAMPLE_ROOT_PAGE_NAME));
+        assertThat(website.getRootNode(), hasNode(InstallPurSamplesTask.PASSWORD_CHANGE_PAGE_PATH));
+        assertThat(website.getNode("/travel/" + InstallPurSamplesTask.PUR_SAMPLE_ROOT_PAGE_NAME), allOf(
                 hasNode(InstallPurSamplesTask.PROTECTED_PAGES_NAMES.get(0)),
                 hasNode(InstallPurSamplesTask.PROTECTED_PAGES_NAMES.get(1))
         ));

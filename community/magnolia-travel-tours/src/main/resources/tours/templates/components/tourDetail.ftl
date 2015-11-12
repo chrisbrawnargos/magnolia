@@ -102,7 +102,11 @@
         </div>
 
         <div class="product-action">
-            <button type="button" class="btn btn-primary btn-lg book-button" data-toggle="modal" data-target=".book-tour-not-implemented">${i18n['tour.book']}</button>
+        [#assign bookNode = cmsfn.contentByPath("/travel/book-tour")]
+            <form action="${cmsfn.link(bookNode)}">
+                <input type="hidden" name="location" value="${tour.location!}">
+                <input class="btn btn-primary btn-lg book-button" type="submit" value="${i18n['tour.book']}">
+            </form>
         </div>
     </div>
 
