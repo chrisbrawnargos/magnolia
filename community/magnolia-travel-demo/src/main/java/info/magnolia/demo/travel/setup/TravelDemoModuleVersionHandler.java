@@ -59,6 +59,8 @@ import java.util.List;
 
 import javax.jcr.ImportUUIDBehavior;
 
+import com.google.common.collect.Lists;
+
 /**
  * {@link DefaultModuleVersionHandler} for travel demo module.
  */
@@ -83,8 +85,11 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
 
     private final Task copySiteToMultiSiteAndMakeItFallback = new CopySiteToMultiSiteAndMakeItFallback();
 
-    private final Task setupAccessDefinitionToUseRoleBaseVoter = new SetupAccessDefinitionToUseRoleBaseVoter("Deny access permissions to apps", "Deny access permissions to Contacts app, Web Dev group, Set Up group for travel-demo-admincentral role",
-            "travel-demo-admincentral", true, "/modules/contacts/apps/contacts", "/modules/ui-admincentral/config/appLauncherLayout/groups/stk", "/modules/ui-admincentral/config/appLauncherLayout/groups/manage");
+    private final Task setupAccessPermissionsForDemoUsers = new SetupRoleBasedAccessPermissionsTask("Deny access permissions to apps", "Deny access permissions to Contacts app, Web Dev group, Set Up group for travel-demo-admincentral role",
+            Lists.newArrayList("travel-demo-admincentral"), false, "/modules/contacts/apps/contacts", "/modules/ui-admincentral/config/appLauncherLayout/groups/stk", "/modules/ui-admincentral/config/appLauncherLayout/groups/manage");
+
+    private final Task setupTargetAppGroupAccessPermissions = new SetupRoleBasedAccessPermissionsTask("Allow access to Target app group", "Allow access to Target app group only to travel-demo-editor and travel-demo-publisher roles",
+            Lists.newArrayList("travel-demo-editor", "travel-demo-publisher"), true, "/modules/ui-admincentral/config/appLauncherLayout/groups/target");
 
     public TravelDemoModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
@@ -109,12 +114,13 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                 new CreateNodePathTask("", "", RepositoryConstants.CONFIG, "/modules/pages/apps/pages/permissions/roles", NodeTypes.ContentNode.NAME),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
-                .addTask(setupAccessDefinitionToUseRoleBaseVoter)
+                .addTask(setupAccessPermissionsForDemoUsers)
         );
         register(DeltaBuilder.update("0.8.1", "")
                 .addTask(new NodeExistsDelegateTask("Serve add2any js over https", "Serves add2any javascript over https to prevent mixed content issue in pages served over https.",
                         RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany",
-                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js"))));
+                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js")))
+                .addTask(setupTargetAppGroupAccessPermissions));
     }
 
     @Override
@@ -127,7 +133,8 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                         copySiteToMultiSiteAndMakeItFallback)));
         tasks.add(new SetupDemoRolesAndGroupsTask());
-        tasks.add(setupAccessDefinitionToUseRoleBaseVoter);
+        tasks.add(setupAccessPermissionsForDemoUsers);
+        tasks.add(setupTargetAppGroupAccessPermissions);
         return tasks;
     }
 
