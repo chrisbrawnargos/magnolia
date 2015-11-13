@@ -61,9 +61,7 @@ import javax.jcr.Session;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Test class for {@link info.magnolia.demo.travel.setup.TravelDemoModuleVersionHandler}.
- */
+
 public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTestCase {
 
     private static final String UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH = "/modules/ui-admincentral/config/appLauncherLayout/groups/target";
@@ -122,7 +120,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
      * and set the extends property pointing to the STK site.
      */
     @Test
-    public void updateTo08CreatesExtendsPropertyInSiteNodeWhenNodeIsEmpty() throws Exception {
+    public void updateFrom07CreatesExtendsPropertyInSiteNodeWhenNodeIsEmpty() throws Exception {
         // GIVEN
         setupConfigNode("/modules/site/config/site");
 
@@ -135,7 +133,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     @Test
-    public void demoRolesCanAccessPagesApp() throws Exception {
+    public void updateFrom07AllowsDemoRolesAccessToPagesApp() throws Exception {
         // GIVEN
         setupConfigNode("/modules/pages/apps/pages");
 
@@ -143,12 +141,12 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
 
         // THEN
-        assertThat(session.getNode(SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES), hasProperty(SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE));
-        assertThat(session.getNode(SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES), hasProperty(SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE));
+        assertThat(session.getNode(PAGES_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_EDITOR_ROLE, TRAVEL_DEMO_EDITOR_ROLE));
+        assertThat(session.getNode(PAGES_PERMISSIONS_ROLES), hasProperty(TRAVEL_DEMO_PUBLISHER_ROLE, TRAVEL_DEMO_PUBLISHER_ROLE));
     }
 
     @Test
-    public void denyAccessPermissionsAfterCleanInstall() throws Exception {
+    public void setAccessPermissionsAfterCleanInstall() throws Exception {
         // GIVEN
 
         // WHEN
@@ -165,7 +163,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     @Test
-    public void denyAccessPermissionsAfterUpdate() throws Exception {
+    public void updateFrom07SetsAccessPermissions() throws Exception {
         // GIVEN
 
         // WHEN
@@ -178,7 +176,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     @Test
-    public void updateTo081SetsUpAccessToTargetAppGroup() throws Exception {
+    public void updateFrom08SetsUpAccessToTargetAppGroup() throws Exception {
         // GIVEN
 
         // WHEN
@@ -190,7 +188,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     @Test
-    public void updateTo081ServesAdd2AnyExternalJsOverHttps() throws Exception {
+    public void updateFrom08ServesAdd2AnyExternalJsOverHttps() throws Exception {
         // GIVEN
         setupConfigProperty("/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "http://static.addtoany.com/menu/page.js");
 
