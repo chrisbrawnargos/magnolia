@@ -33,12 +33,16 @@
  */
 package info.magnolia.demo.travel.setup;
 
+import info.magnolia.cms.security.UserManager;
+import info.magnolia.demo.travel.definition.NavigationAreaDefinition;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
+import info.magnolia.module.delta.AddURIPermissionTask;
 import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.BootstrapSingleModuleResource;
 import info.magnolia.module.delta.BootstrapSingleResource;
+import info.magnolia.module.delta.ChangeNodeTypeTask;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
 import info.magnolia.module.delta.CreateNodePathTask;
 import info.magnolia.module.delta.CreateNodeTask;
@@ -46,7 +50,10 @@ import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
 import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
+import info.magnolia.module.delta.ModuleDependencyBootstrapTask;
+import info.magnolia.module.delta.NewPropertyTask;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
+import info.magnolia.module.delta.OrderNodeBeforeTask;
 import info.magnolia.module.delta.PropertyExistsDelegateTask;
 import info.magnolia.module.delta.PropertyValueDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
@@ -91,6 +98,19 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private final Task setupTargetAppGroupAccessPermissions = new SetupRoleBasedAccessPermissionsTask("Allow access to Target app group", "Allow access to Target app group only to travel-demo-editor and travel-demo-publisher roles",
             Lists.newArrayList("travel-demo-editor", "travel-demo-publisher"), true, "/modules/ui-admincentral/config/appLauncherLayout/groups/target");
 
+    private Task installPurSamples = new ArrayDelegateTask("Install PUR samples if public-user-registration module is installed",
+            new ModuleDependencyBootstrapTask("public-user-registration"),
+            new IsModuleInstalledOrRegistered("", "public-user-registration", new ArrayDelegateTask("",
+                    new ChangeNodeTypeTask("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers", RepositoryConstants.CONFIG, NodeTypes.ContentNode.NAME),
+                    new NewPropertyTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/", "class", NavigationAreaDefinition.class.getName()),
+                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "travel/members-area/protected*", AddURIPermissionTask.DENY),
+                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "travel/members-area/profileUpdate*", AddURIPermissionTask.DENY),
+                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "<travel>/members-area/protected*", AddURIPermissionTask.DENY),
+                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "<travel>/members-area/profileUpdate", AddURIPermissionTask.DENY),
+                    new OrderNodeBeforeTask("/server/filters/securityCallback/clientCallbacks/travel-demo-pur", "form")
+            ))
+    );
+
     public TravelDemoModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
@@ -120,7 +140,11 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 .addTask(new NodeExistsDelegateTask("Serve add2any js over https", "Serves add2any javascript over https to prevent mixed content issue in pages served over https.",
                         RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany",
                         new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js")))
-                .addTask(setupTargetAppGroupAccessPermissions));
+                .addTask(setupTargetAppGroupAccessPermissions)
+        );
+        register(DeltaBuilder.update("0.8.2", "")
+                .addTask(installPurSamples)
+        );
     }
 
     @Override
@@ -129,6 +153,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
         tasks.addAll(super.getExtraInstallTasks(installContext));
         tasks.add(setupTravelSiteAsActiveSite);
         tasks.add(setDefaultUriOnPublicInstance);
+        tasks.add(installPurSamples);
         tasks.add(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
                 new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                         copySiteToMultiSiteAndMakeItFallback)));

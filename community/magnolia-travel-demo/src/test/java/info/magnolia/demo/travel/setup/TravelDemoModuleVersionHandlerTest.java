@@ -35,16 +35,24 @@ package info.magnolia.demo.travel.setup;
 
 import static info.magnolia.demo.travel.setup.SetupDemoRolesAndGroupsTask.*;
 import static info.magnolia.demo.travel.setup.SetupRoleBasedAccessPermissionsTask.*;
-import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
+import static info.magnolia.test.hamcrest.NodeMatchers.*;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.*;
 
 import info.magnolia.cms.security.MgnlRoleManager;
 import info.magnolia.cms.security.RoleManager;
 import info.magnolia.cms.security.SecuritySupport;
 import info.magnolia.cms.security.SecuritySupportImpl;
+import info.magnolia.cms.security.UserManager;
 import info.magnolia.cms.security.operations.VoterBasedConfiguredAccessDefinition;
+import info.magnolia.cms.util.QueryUtil;
 import info.magnolia.context.MgnlContext;
+import info.magnolia.dam.jcr.DamConstants;
+import info.magnolia.demo.travel.definition.NavigationAreaDefinition;
+import info.magnolia.jcr.util.NodeTypes;
+import info.magnolia.jcr.util.NodeUtil;
+import info.magnolia.module.InstallContext;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
 import info.magnolia.module.model.Version;
@@ -55,6 +63,8 @@ import info.magnolia.voting.voters.RoleBaseVoter;
 import java.util.Collections;
 import java.util.List;
 
+import javax.jcr.Node;
+import javax.jcr.NodeIterator;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
@@ -107,12 +117,23 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         RoleManager roleManager = new MgnlRoleManager();
         securitySupport.setRoleManager(roleManager);
         ComponentsTestUtil.setInstance(SecuritySupport.class, securitySupport);
-        roleManager.createRole("superuser");
+        roleManager.createRole(UserManager.SYSTEM_USER);
+        roleManager.createRole(UserManager.ANONYMOUS_USER);
+        Node userRolesRoot = MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getRootNode();
+        NodeTypes.Activatable.update(userRolesRoot.getNode(UserManager.SYSTEM_USER), UserManager.SYSTEM_USER, true);
+        NodeTypes.Activatable.update(userRolesRoot.getNode(UserManager.ANONYMOUS_USER), UserManager.SYSTEM_USER, true);
+
         session = MgnlContext.getJCRSession(RepositoryConstants.CONFIG);
         setupConfigNode(CONTACTS_APPS_CONTACTS_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH);
+    }
+
+    @Override
+    protected void setupNode(String workspace, String path) throws RepositoryException {
+        super.setupNode(workspace, path);
+        NodeTypes.Activatable.update(session.getNode(path), UserManager.SYSTEM_USER, true);
     }
 
     /**
@@ -199,7 +220,73 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         assertThat(session.getNode("/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany"), hasProperty("link", "https://static.addtoany.com/menu/page.js"));
     }
 
+    @Test
+    public void testUpgradeFrom08InstallsPurSamples() throws Exception {
+        // GIVEN
+        setupConfigNode("/modules/public-user-registration");
+        Node clientCallbacks = NodeUtil.createPath(session.getRootNode(), "server/filters/securityCallback/clientCallbacks/", NodeTypes.ContentNode.NAME);
+        clientCallbacks.addNode("form", NodeTypes.ContentNode.NAME);
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8.1"));
+
+        // THEN
+        this.checkPurSamplesAreInstalled(clientCallbacks);
+        this.checkIfEverythingIsActivated();
+        this.assertNoMessages(ctx);
+    }
+
+    @Test
+    public void testCleanInstall() throws Exception {
+        // GIVEN
+        setupConfigNode("/modules/public-user-registration");
+        setupConfigNode("/modules/multisite/config/sites/fallback");
+        setupConfigProperty("/server", "admin", "true");
+        Node clientCallbacks = NodeUtil.createPath(session.getRootNode(), "server/filters/securityCallback/clientCallbacks/", NodeTypes.ContentNode.NAME);
+        clientCallbacks.addNode("form", NodeTypes.ContentNode.NAME);
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
+
+        // THEN
+        this.checkPurSamplesAreInstalled(clientCallbacks);
+        assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
+        this.checkIfEverythingIsActivated();
+        this.assertNoMessages(ctx);
+    }
+
+    private void checkPurSamplesAreInstalled(Node clientCallbacks) throws RepositoryException {
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getRootNode(), hasNode("travel/members-area"));
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getRootNode(), hasNode("travel-demo-pur"));
+        assertThat(MgnlContext.getJCRSession(DamConstants.WORKSPACE).getRootNode(), hasNode("travel-demo/img/gate-hernan-pinera.jpg"));
+        assertThat(clientCallbacks, hasNode("travel-demo-pur"));
+        assertThat(clientCallbacks.getNodes().nextNode().getName(), equalTo("travel-demo-pur"));
+        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
+        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
+        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/").getPrimaryNodeType().getName(), equalTo(NodeTypes.ContentNode.NAME));
+    }
+
+    private void checkIfEverythingIsActivated() throws RepositoryException {
+        //this.checkAllNodesInWorkspaceAreActivated(RepositoryConstants.CONFIG, "/", NodeTypes.Content.NAME); TODO config is not activated
+        this.checkAllNodesInWorkspaceAreActivated(RepositoryConstants.WEBSITE, "/", NodeTypes.Page.NAME);
+        this.checkAllNodesInWorkspaceAreActivated(RepositoryConstants.USER_ROLES, "/", NodeTypes.Role.NAME);
+        this.checkAllNodesInWorkspaceAreActivated(RepositoryConstants.USER_GROUPS, "/", NodeTypes.Group.NAME);
+        this.checkAllNodesInWorkspaceAreActivated(RepositoryConstants.USERS, "/", NodeTypes.User.NAME);
+        this.checkAllNodesInWorkspaceAreActivated(DamConstants.WORKSPACE, "/", "mgnl:asset");
+    }
+
+    private void checkAllNodesInWorkspaceAreActivated(String workspace, String path, String nodetype) throws RepositoryException {
+        NodeIterator iterator = QueryUtil.search(workspace, String.format("select * from [%s] WHERE ISDESCENDANTNODE(['%s'])", nodetype, path));
+        while (iterator.hasNext()) {
+            Node node = iterator.nextNode();
+            if (!NodeTypes.Activatable.isActivated(node)) {
+                fail(node + " is not activated!");
+            }
+        }
+    }
+
     private void assertThatAccessPermissionsAreConfigured(String path, String role, boolean allow) throws RepositoryException {
+
         assertThat(session.getNode(path.concat(PERMISSIONS_NODE_PATH)), hasProperty("class", VoterBasedConfiguredAccessDefinition.class.getName()));
 
         if (allow) {

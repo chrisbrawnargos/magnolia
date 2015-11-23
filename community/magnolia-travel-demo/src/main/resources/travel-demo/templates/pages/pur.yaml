@@ -1,0 +1,26 @@
+dialog: mte:pages/pageProperties
+class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+renderType: site
+type: feature
+i18nBasename: info.magnolia.module.publicuserregistration.messages
+title: menu.security.usersPublic
+
+areas:
+  main:
+    templateScript: /travel-demo/templates/pages/areas/contentContainer.ftl
+    parameters:
+      cssClass: container
+    type: list
+    availableComponents:
+        login:
+          id: public-user-registration:components/login
+        registration:
+          id: public-user-registration:components/registration
+        userUpdate:
+          id: public-user-registration:components/userUpdate
+        forgottenPassword:
+          id: public-user-registration:components/forgottenPassword
+        passwordChange:
+          id: public-user-registration:components/passwordChange
+        enableUser:
+          id: public-user-registration:components/enableUser
