@@ -142,7 +142,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                         new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js")))
                 .addTask(setupTargetAppGroupAccessPermissions)
         );
-        register(DeltaBuilder.update("0.8.2", "")
+        register(DeltaBuilder.update("0.9", "")
                 .addTask(installPurSamples)
         );
     }
