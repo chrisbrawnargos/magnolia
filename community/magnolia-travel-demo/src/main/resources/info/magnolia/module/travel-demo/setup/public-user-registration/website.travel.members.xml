@@ -588,6 +588,9 @@
     <sv:property sv:name="mgnl:template" sv:type="String">
       <sv:value>travel-demo:pages/pur</sv:value>
     </sv:property>
+    <sv:property sv:name="title" sv:type="String">
+      <sv:value>Member Content</sv:value>
+    </sv:property>
     <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
@@ -633,7 +636,7 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="headline" sv:type="String">
-          <sv:value>Logged in</sv:value>
+          <sv:value>Member Content</sv:value>
         </sv:property>
         <sv:property sv:name="headlineLevel" sv:type="String">
           <sv:value>big</sv:value>
@@ -680,7 +683,7 @@
           <sv:value>false</sv:value>
         </sv:property>
         <sv:property sv:name="headline" sv:type="String">
-          <sv:value>Stay tuned for a new collection of spanish tours. Members will be elligable for a 10% early booking discount!</sv:value>
+          <sv:value>Exclusive news for members</sv:value>
         </sv:property>
         <sv:property sv:name="headlineLevel" sv:type="String">
           <sv:value>small</sv:value>
@@ -689,7 +692,7 @@
           <sv:value>jcr:24bb3d56-cd92-4f07-ab1e-e7760a117807</sv:value>
         </sv:property>
         <sv:property sv:name="imageCredit" sv:type="String">
-          <sv:value>Hernán Piñera</sv:value>
+          <sv:value>by-sa/2.0</sv:value>
         </sv:property>
         <sv:property sv:name="imagePosition" sv:type="String">
           <sv:value>below</sv:value>
@@ -720,6 +723,10 @@
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
           <sv:value>travel-demo:components/textImage</sv:value>
+        </sv:property>
+        <sv:property sv:name="text" sv:type="String">
+          <sv:value>&lt;p&gt;Stay tuned for a new collection of spanish tours. Members will be elligable for a 10% early booking discount!&lt;/p&gt;
+</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -978,7 +985,7 @@
       <sv:value>travel-demo:pages/pur</sv:value>
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
-      <sv:value>Login</sv:value>
+      <sv:value>Log in</sv:value>
     </sv:property>
     <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1014,6 +1021,53 @@
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
+      <sv:node sv:name="00">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:component</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>de325c43-f55a-4034-ab74-6f03702ede78</sv:value>
+        </sv:property>
+        <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
+          <sv:value>false</sv:value>
+        </sv:property>
+        <sv:property sv:name="headline" sv:type="String">
+          <sv:value>Log in</sv:value>
+        </sv:property>
+        <sv:property sv:name="headlineLevel" sv:type="String">
+          <sv:value>big</sv:value>
+        </sv:property>
+        <sv:property sv:name="imagePosition" sv:type="String">
+          <sv:value>below</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+          <sv:value>true</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:created" sv:type="Date">
+          <sv:value>2015-11-26T15:00:20.367+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:createdBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+          <sv:value>2015-11-25T12:27:35.271+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2015-11-26T15:00:35.989+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>travel-demo:components/textImage</sv:value>
+        </sv:property>
+      </sv:node>
       <sv:node sv:name="0">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:component</sv:value>
@@ -1061,10 +1115,10 @@
           <sv:value>570e7191-5158-499e-9173-d0a88a6b203f</sv:value>
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
-          <sv:value>Login to access your exclusive Magnolia Travels content, tips and discounts.</sv:value>
+          <sv:value>Log in to access your exclusive Magnolia Travels content, tips and discounts.</sv:value>
         </sv:property>
         <sv:property sv:name="title" sv:type="String">
-          <sv:value>Login</sv:value>
+          <sv:value>Log in</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -1323,7 +1377,7 @@
       <sv:value>travel-demo:pages/pur</sv:value>
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
-      <sv:value>Registration</sv:value>
+      <sv:value>Register</sv:value>
     </sv:property>
     <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1386,7 +1440,7 @@
 Members get access to exclusive Magnolia Travels content, tips and discounts.</sv:value>
         </sv:property>
         <sv:property sv:name="formTitle" sv:type="String">
-          <sv:value>Registration</sv:value>
+          <sv:value>Register</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -2207,53 +2261,6 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
-        <sv:node sv:name="00">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:component</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>9862d254-180f-4d3b-82b0-71d8b3b00486</sv:value>
-          </sv:property>
-          <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
-            <sv:value>false</sv:value>
-          </sv:property>
-          <sv:property sv:name="headline" sv:type="String">
-            <sv:value>Confirm your member registration</sv:value>
-          </sv:property>
-          <sv:property sv:name="headlineLevel" sv:type="String">
-            <sv:value>medium</sv:value>
-          </sv:property>
-          <sv:property sv:name="imagePosition" sv:type="String">
-            <sv:value>below</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-            <sv:value>true</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-11-25T11:47:31.117+01:00</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:createdBy" sv:type="String">
-            <sv:value>superuser</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-11-25T12:27:35.221+01:00</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-            <sv:value>superuser</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-11-25T11:48:19.024+01:00</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-            <sv:value>superuser</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>travel-demo:components/textImage</sv:value>
-          </sv:property>
-        </sv:node>
         <sv:node sv:name="0">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:component</sv:value>
@@ -2275,6 +2282,9 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
           </sv:property>
           <sv:property sv:name="displayStepNavigation" sv:type="Boolean">
             <sv:value>false</sv:value>
+          </sv:property>
+          <sv:property sv:name="formTitle" sv:type="String">
+            <sv:value>Confirm your member registration</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -2822,53 +2832,6 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
-      <sv:node sv:name="00">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>6d89c776-2efa-4fff-8f1b-e0cc0cc14df7</sv:value>
-        </sv:property>
-        <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
-          <sv:value>false</sv:value>
-        </sv:property>
-        <sv:property sv:name="headline" sv:type="String">
-          <sv:value>Update your member profile</sv:value>
-        </sv:property>
-        <sv:property sv:name="headlineLevel" sv:type="String">
-          <sv:value>medium</sv:value>
-        </sv:property>
-        <sv:property sv:name="imagePosition" sv:type="String">
-          <sv:value>below</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-11-25T11:45:49.953+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-11-25T12:27:35.083+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-11-25T11:45:54.090+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/textImage</sv:value>
-        </sv:property>
-      </sv:node>
       <sv:node sv:name="0">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:component</sv:value>
@@ -2890,6 +2853,9 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
         </sv:property>
         <sv:property sv:name="displayStepNavigation" sv:type="Boolean">
           <sv:value>false</sv:value>
+        </sv:property>
+        <sv:property sv:name="formTitle" sv:type="String">
+          <sv:value>Update your member profile</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -3587,53 +3553,6 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
       <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
         <sv:value>superuser</sv:value>
       </sv:property>
-      <sv:node sv:name="00">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:component</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>2d0aefd3-724b-4a34-a2d3-8a94604a7bf9</sv:value>
-        </sv:property>
-        <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
-          <sv:value>false</sv:value>
-        </sv:property>
-        <sv:property sv:name="headline" sv:type="String">
-          <sv:value>Recover your password</sv:value>
-        </sv:property>
-        <sv:property sv:name="headlineLevel" sv:type="String">
-          <sv:value>medium</sv:value>
-        </sv:property>
-        <sv:property sv:name="imagePosition" sv:type="String">
-          <sv:value>below</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-          <sv:value>true</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:created" sv:type="Date">
-          <sv:value>2015-11-25T11:44:20.798+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:createdBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-          <sv:value>2015-11-25T12:27:34.957+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-          <sv:value>2015-11-25T11:44:58.471+01:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>travel-demo:components/textImage</sv:value>
-        </sv:property>
-      </sv:node>
       <sv:node sv:name="0">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:component</sv:value>
@@ -3655,6 +3574,9 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
         </sv:property>
         <sv:property sv:name="displayStepNavigation" sv:type="Boolean">
           <sv:value>false</sv:value>
+        </sv:property>
+        <sv:property sv:name="formTitle" sv:type="String">
+          <sv:value>Recover your password</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -4286,53 +4208,6 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
         <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
           <sv:value>superuser</sv:value>
         </sv:property>
-        <sv:node sv:name="00">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:component</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>75e4920f-b235-48fd-a52f-17b2bf575608</sv:value>
-          </sv:property>
-          <sv:property sv:name="constrainAspectRatio" sv:type="Boolean">
-            <sv:value>false</sv:value>
-          </sv:property>
-          <sv:property sv:name="headline" sv:type="String">
-            <sv:value>Select your new password</sv:value>
-          </sv:property>
-          <sv:property sv:name="headlineLevel" sv:type="String">
-            <sv:value>medium</sv:value>
-          </sv:property>
-          <sv:property sv:name="imagePosition" sv:type="String">
-            <sv:value>below</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
-            <sv:value>true</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:created" sv:type="Date">
-            <sv:value>2015-11-25T11:46:19.585+01:00</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:createdBy" sv:type="String">
-            <sv:value>superuser</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastActivated" sv:type="Date">
-            <sv:value>2015-11-25T12:27:35.018+01:00</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
-            <sv:value>superuser</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
-            <sv:value>2015-11-25T11:46:23.625+01:00</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
-            <sv:value>superuser</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>travel-demo:components/textImage</sv:value>
-          </sv:property>
-        </sv:node>
         <sv:node sv:name="0">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:component</sv:value>
@@ -4354,6 +4229,9 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
           </sv:property>
           <sv:property sv:name="displayStepNavigation" sv:type="Boolean">
             <sv:value>false</sv:value>
+          </sv:property>
+          <sv:property sv:name="formTitle" sv:type="String">
+            <sv:value>Select your new password</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
