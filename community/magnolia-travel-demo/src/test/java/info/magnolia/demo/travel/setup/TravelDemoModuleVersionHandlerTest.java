@@ -36,8 +36,12 @@ package info.magnolia.demo.travel.setup;
 import static info.magnolia.demo.travel.setup.SetupDemoRolesAndGroupsTask.*;
 import static info.magnolia.demo.travel.setup.SetupRoleBasedAccessPermissionsTask.*;
 import static info.magnolia.test.hamcrest.NodeMatchers.*;
+import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.collection.IsIn.isIn;
 import static org.junit.Assert.*;
 
 import info.magnolia.cms.security.MgnlRoleManager;
@@ -221,9 +225,13 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
     }
 
     @Test
-    public void testUpgradeFrom08InstallsPurSamples() throws Exception {
+    public void testUpgradeFrom081InstallsPurSamples() throws Exception {
         // GIVEN
+        setupConfigProperty("/server", "admin", "false");
         setupConfigNode("/modules/public-user-registration");
+        setupConfigNode("/modules/multisite/config/sites/travel/templates/prototype/areas/navigation");
+        setupConfigNode("/modules/multisite/config/sites/travel/templates/availability/templates");
+
         Node clientCallbacks = NodeUtil.createPath(session.getRootNode(), "server/filters/securityCallback/clientCallbacks/", NodeTypes.ContentNode.NAME);
         clientCallbacks.addNode("form", NodeTypes.ContentNode.NAME);
 
@@ -231,7 +239,26 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8.1"));
 
         // THEN
+        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
+        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
+        assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
+        assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/availability/templates/pur"));
+
         this.checkPurSamplesAreInstalled(clientCallbacks);
+        this.checkIfEverythingIsActivated();
+        this.assertNoMessages(ctx);
+    }
+
+    @Test
+    public void testUpgradeFrom081PurNotInstalled() throws Exception {
+        // GIVEN
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8.1"));
+
+        // THEN
+        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
+        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
         this.checkIfEverythingIsActivated();
         this.assertNoMessages(ctx);
     }
@@ -241,7 +268,8 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         // GIVEN
         setupConfigNode("/modules/public-user-registration");
         setupConfigNode("/modules/multisite/config/sites/fallback");
-        setupConfigProperty("/server", "admin", "true");
+        setupConfigNode("/modules/ui-admincentral/virtualURIMapping/default");
+        setupConfigProperty("/server", "admin", "false");
         Node clientCallbacks = NodeUtil.createPath(session.getRootNode(), "server/filters/securityCallback/clientCallbacks/", NodeTypes.ContentNode.NAME);
         clientCallbacks.addNode("form", NodeTypes.ContentNode.NAME);
 
@@ -249,21 +277,52 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
 
         // THEN
-        this.checkPurSamplesAreInstalled(clientCallbacks);
+        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
+        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
         assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
+        assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/availability/templates/pur"));
+
+        this.checkPurSamplesAreInstalled(clientCallbacks);
         this.checkIfEverythingIsActivated();
         this.assertNoMessages(ctx);
     }
 
     private void checkPurSamplesAreInstalled(Node clientCallbacks) throws RepositoryException {
-        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getRootNode(), hasNode("travel/members-area"));
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getRootNode(), hasNode("travel/" + InstallPurSamplesTask.PUR_SAMPLE_ROOT_PAGE_NAME));
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getRootNode(), hasNode(InstallPurSamplesTask.PASSWORD_CHANGE_PAGE_PATH));
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.WEBSITE).getNode("/travel/" + InstallPurSamplesTask.PUR_SAMPLE_ROOT_PAGE_NAME), allOf(
+                hasNode(InstallPurSamplesTask.PROTECTED_PAGES_NAMES.get(0)),
+                hasNode(InstallPurSamplesTask.PROTECTED_PAGES_NAMES.get(1))
+        ));
+
         assertThat(MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getRootNode(), hasNode("travel-demo-pur"));
         assertThat(MgnlContext.getJCRSession(DamConstants.WORKSPACE).getRootNode(), hasNode("travel-demo/img/gate-hernan-pinera.jpg"));
-        assertThat(clientCallbacks, hasNode("travel-demo-pur"));
-        assertThat(clientCallbacks.getNodes().nextNode().getName(), equalTo("travel-demo-pur"));
-        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
+
+        assertThat(clientCallbacks, hasNode("travel-demo-pur/originalUrlPattern"));
+        Node callback = clientCallbacks.getNodes().nextNode();
+        assertThat(callback.getName(), equalTo("travel-demo-pur"));
+        assertThat(callback.getNode("originalUrlPattern"), hasProperty("patternString", "(*|travel)/members/(profile-update|protected)*"));
+        assertThat(callback.getNode("originalUrlPattern").getProperty("patternString").getString(), allOf(
+                containsString(InstallPurSamplesTask.PUR_SAMPLE_ROOT_PAGE_NAME),
+                containsString(InstallPurSamplesTask.PROTECTED_PAGES_NAMES.get(0)),
+                containsString(InstallPurSamplesTask.PROTECTED_PAGES_NAMES.get(1))
+        ));
+
         assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
+        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/availability/templates/pur"));
         assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/").getPrimaryNodeType().getName(), equalTo(NodeTypes.ContentNode.NAME));
+        assertThat(session.getNode("/modules/public-user-registration/config/configurations/travel/passwordRetrievalStrategy"), hasProperty("targetPagePath", "/" + InstallPurSamplesTask.PASSWORD_CHANGE_PAGE_PATH));
+
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getRootNode(), hasNode(UserManager.ANONYMOUS_USER + "/acl_uri"));
+        NodeIterator permissions = MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getNode("/" + UserManager.ANONYMOUS_USER + "/acl_uri").getNodes();
+        while (permissions.hasNext()) {
+            assertThat(permissions.nextNode().getProperty("path").getString(), isIn(InstallPurSamplesTask.PROTECTED_PAGES_PATHS));
+        }
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getRootNode(), hasNode("travel-demo-pur" + "/acl_uri"));
+        permissions = MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getNode("/travel-demo-pur/acl_uri").getNodes();
+        while (permissions.hasNext()) {
+            assertThat(permissions.nextNode().getProperty("path").getString(), isIn(InstallPurSamplesTask.PROTECTED_PAGES_PATHS));
+        }
     }
 
     private void checkIfEverythingIsActivated() throws RepositoryException {

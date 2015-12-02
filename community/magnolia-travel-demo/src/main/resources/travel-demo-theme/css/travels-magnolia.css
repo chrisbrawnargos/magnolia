@@ -263,7 +263,7 @@ h2 {
 }
 
 #nav-search {
-    width: 130px;
+    width: 95px
 }
 
 .navbar-toggle {
@@ -442,7 +442,12 @@ h2 {
 
     #language-link {
         right: 60px;
-        top: 14px;
+        top: 5px;
+    }
+
+    #user-links {
+        right: 60px;
+        top: 26px;
     }
 
     .navbar-brand img {
@@ -1444,7 +1449,6 @@ max-width: 500px) {
 
 .button-wrapper input {
     border: 1px solid transparent;
-    border-radius: 4px;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -1466,6 +1470,10 @@ max-width: 500px) {
     border-color: #000;
     box-shadow: 0 0 0 1px #000;
     color: #fff;
+}
+
+.loginError {
+    color: red;
 }
 
 /* IMAGES

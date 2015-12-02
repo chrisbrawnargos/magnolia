@@ -33,27 +33,23 @@
  */
 package info.magnolia.demo.travel.setup;
 
-import info.magnolia.cms.security.UserManager;
 import info.magnolia.demo.travel.definition.NavigationAreaDefinition;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
-import info.magnolia.module.delta.AddURIPermissionTask;
 import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.BootstrapSingleModuleResource;
 import info.magnolia.module.delta.BootstrapSingleResource;
-import info.magnolia.module.delta.ChangeNodeTypeTask;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
+import info.magnolia.module.delta.CopyNodeTask;
 import info.magnolia.module.delta.CreateNodePathTask;
 import info.magnolia.module.delta.CreateNodeTask;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsAuthorInstanceDelegateTask;
 import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.IsModuleInstalledOrRegistered;
-import info.magnolia.module.delta.ModuleDependencyBootstrapTask;
 import info.magnolia.module.delta.NewPropertyTask;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
-import info.magnolia.module.delta.OrderNodeBeforeTask;
 import info.magnolia.module.delta.PropertyExistsDelegateTask;
 import info.magnolia.module.delta.PropertyValueDelegateTask;
 import info.magnolia.module.delta.SetPropertyTask;
@@ -80,7 +76,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
             new IsAuthorInstanceDelegateTask("Set default URI to home page", String.format("Sets default URI to point to '%s'", DEFAULT_URI), null,
                     new SetPropertyTask(RepositoryConstants.CONFIG, DEFAULT_URI_NODEPATH, "toURI", DEFAULT_URI)));
 
-        private final Task setupTravelSiteAsActiveSite = new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
+    private final Task setupTravelSiteAsActiveSite = new NodeExistsDelegateTask("Set travel demo as an active site", "/modules/site/config/site",
             new PropertyExistsDelegateTask("Check extends property and update or create it", "/modules/site/config/site", "extends",
                     new CheckAndModifyPropertyValueTask("/modules/site/config/site", "extends", "/modules/standard-templating-kit/config/site", "/modules/travel-demo/config/travel"),
                     new DefaultSiteExistsDelegateTask("", "",
@@ -98,18 +94,11 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private final Task setupTargetAppGroupAccessPermissions = new SetupRoleBasedAccessPermissionsTask("Allow access to Target app group", "Allow access to Target app group only to travel-demo-editor and travel-demo-publisher roles",
             Lists.newArrayList("travel-demo-editor", "travel-demo-publisher"), true, "/modules/ui-admincentral/config/appLauncherLayout/groups/target");
 
-    private Task installPurSamples = new ArrayDelegateTask("Install PUR samples if public-user-registration module is installed",
-            new ModuleDependencyBootstrapTask("public-user-registration"),
-            new IsModuleInstalledOrRegistered("", "public-user-registration", new ArrayDelegateTask("",
-                    new ChangeNodeTypeTask("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers", RepositoryConstants.CONFIG, NodeTypes.ContentNode.NAME),
-                    new NewPropertyTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/", "class", NavigationAreaDefinition.class.getName()),
-                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "travel/members-area/protected*", AddURIPermissionTask.DENY),
-                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "travel/members-area/profileUpdate*", AddURIPermissionTask.DENY),
-                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "<travel>/members-area/protected*", AddURIPermissionTask.DENY),
-                    new AddURIPermissionTask("", UserManager.ANONYMOUS_USER, "<travel>/members-area/profileUpdate", AddURIPermissionTask.DENY),
-                    new OrderNodeBeforeTask("/server/filters/securityCallback/clientCallbacks/travel-demo-pur", "form")
-            ))
+    private final Task updateNavigationAreaDefinition = new ArrayDelegateTask("Update navigation area definition",
+            new CreateNodePathTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers", NodeTypes.ContentNode.NAME),
+            new NewPropertyTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/", "class", NavigationAreaDefinition.class.getName())
     );
+    private final InstallPurSamplesTask installPurSamples = new InstallPurSamplesTask();
 
     public TravelDemoModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
@@ -143,8 +132,16 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 .addTask(setupTargetAppGroupAccessPermissions)
         );
         register(DeltaBuilder.update("0.9", "")
+                .addTask(updateNavigationAreaDefinition)
                 .addTask(installPurSamples)
-        );
+                .addTask(new IsModuleInstalledOrRegistered("Copy changes in site definition to multisite if multisite is installed", "multisite",
+                        new ArrayDelegateTask("",
+                                new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation", true),
+                                new IsModuleInstalledOrRegistered("", "public-user-registration",
+                                        new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)
+                                )
+                        )
+                )));
     }
 
     @Override
@@ -153,7 +150,10 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
         tasks.addAll(super.getExtraInstallTasks(installContext));
         tasks.add(setupTravelSiteAsActiveSite);
         tasks.add(setDefaultUriOnPublicInstance);
+
+        tasks.add(updateNavigationAreaDefinition);
         tasks.add(installPurSamples);
+
         tasks.add(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
                 new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
                         copySiteToMultiSiteAndMakeItFallback)));

@@ -76,7 +76,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="targetPagePath" sv:type="String">
-      <sv:value>/travel/members-area/forgottenPassword/passwordChange</sv:value>
+      <sv:value>/travel/members/forgotten-password/password-change</sv:value>
     </sv:property>
   </sv:node>
   <sv:node sv:name="defaultRoles">

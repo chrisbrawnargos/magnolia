@@ -24,3 +24,5 @@ areas:
           id: public-user-registration:components/passwordChange
         enableUser:
           id: public-user-registration:components/enableUser
+        textImage:
+           id: travel-demo:components/textImage
