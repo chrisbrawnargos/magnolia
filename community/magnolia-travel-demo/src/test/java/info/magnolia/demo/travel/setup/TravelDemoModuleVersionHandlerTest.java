@@ -241,6 +241,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         // THEN
         assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
         assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
+        assertThat(session.getNode("/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
         assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
         assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/availability/templates/pur"));
 
