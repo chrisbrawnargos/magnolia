@@ -42,6 +42,7 @@ import info.magnolia.module.delta.BootstrapSingleModuleResource;
 import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
 import info.magnolia.module.delta.CopyNodeTask;
+import info.magnolia.module.delta.CopyPropertyTask;
 import info.magnolia.module.delta.CreateNodePathTask;
 import info.magnolia.module.delta.CreateNodeTask;
 import info.magnolia.module.delta.DeltaBuilder;
@@ -136,7 +137,8 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 .addTask(installPurSamples)
                 .addTask(new IsModuleInstalledOrRegistered("Copy changes in site definition to multisite if multisite is installed", "multisite",
                         new ArrayDelegateTask("",
-                                new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation", true),
+                                new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers", true),
+                                new CopyPropertyTask("", RepositoryConstants.CONFIG, "/modules/travel-demo/config/travel/templates/prototype/areas/navigation", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation", "class", false),
                                 new IsModuleInstalledOrRegistered("", "public-user-registration",
                                         new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)
                                 )
