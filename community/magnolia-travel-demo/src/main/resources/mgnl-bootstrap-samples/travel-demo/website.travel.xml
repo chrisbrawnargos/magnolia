@@ -1591,10 +1591,10 @@
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
-            <sv:property sv:name="link" sv:type="String">
+            <sv:property sv:name="linkType" sv:type="String">
               <sv:value>page</sv:value>
             </sv:property>
-            <sv:property sv:name="linkpage" sv:type="String">
+            <sv:property sv:name="linkTypepage" sv:type="String">
               <sv:value>8fa4a73f-51c3-40ac-b698-715595216186</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -1638,10 +1638,10 @@
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
-            <sv:property sv:name="link" sv:type="String">
+            <sv:property sv:name="linkType" sv:type="String">
               <sv:value>page</sv:value>
             </sv:property>
-            <sv:property sv:name="linkpage" sv:type="String">
+            <sv:property sv:name="linkTypepage" sv:type="String">
               <sv:value>f28c5cec-3567-485e-a8db-196339aa82b5</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -1685,10 +1685,10 @@
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
-            <sv:property sv:name="link" sv:type="String">
+            <sv:property sv:name="linkType" sv:type="String">
               <sv:value>page</sv:value>
             </sv:property>
-            <sv:property sv:name="linkpage" sv:type="String">
+            <sv:property sv:name="linkTypepage" sv:type="String">
               <sv:value>30058d95-f1c8-4b0a-b0ad-34b710e7c367</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3517,10 +3517,10 @@
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="link" sv:type="String">
+          <sv:property sv:name="linkType" sv:type="String">
             <sv:value>page</sv:value>
           </sv:property>
-          <sv:property sv:name="linkpage" sv:type="String">
+          <sv:property sv:name="linkTypepage" sv:type="String">
             <sv:value>1f8af166-258f-4351-a543-3d0fc8bb00c0</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3564,10 +3564,10 @@
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="link" sv:type="String">
+          <sv:property sv:name="linkType" sv:type="String">
             <sv:value>page</sv:value>
           </sv:property>
-          <sv:property sv:name="linkpage" sv:type="String">
+          <sv:property sv:name="linkTypepage" sv:type="String">
             <sv:value>c8e6902a-499a-44d7-9de9-45fd93d60a6b</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3611,10 +3611,10 @@
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="link" sv:type="String">
+          <sv:property sv:name="linkType" sv:type="String">
             <sv:value>page</sv:value>
           </sv:property>
-          <sv:property sv:name="linkpage" sv:type="String">
+          <sv:property sv:name="linkTypepage" sv:type="String">
             <sv:value>f19c60f2-3049-4883-a170-4bf65e3abb91</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">

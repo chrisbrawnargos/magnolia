@@ -4,56 +4,7 @@ form:
     - name: tabMain
       label: components.teaser.tabMain.label
       fields:
-        - name: link
-          class: info.magnolia.ui.form.field.definition.SwitchableFieldDefinition
-          required: true
-          selectionType: radio
-          layout: vertical
-          type: String
-          i18n: true
-          label: components.teaser.link.label
-          options:
-            - name: page
-              label: components.teaserPage.label
-              selected: true
-              value: page
-            - name: external
-              label: components.teaserExternal.label
-              selected: false
-              value: external
-            - name: download
-              label: components.teaserDownload.label
-              selected: false
-              value: download
-          fields:
-            - name: page
-              class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
-              targetWorkspace: website
-              appName: pages
-              identifierToPathConverter:
-                class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
-              type: String
-              required: true
-              label: components.link.linkType.fields.internal.label
-              description: components.link.linkType.fields.internal.description
-            - name: external
-              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
-              type: String
-              required: true
-              label: components.link.linkType.fields.external.label
-              description: components.link.linkType.fields.external.description
-            - name: download
-              class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
-              targetWorkspace: dam
-              appName: assets
-              identifierToPathConverter:
-                class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
-              contentPreviewDefinition:
-                contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
-              type: String
-              required: true
-              label: components.link.linkType.fields.download.label
-              description: components.link.linkType.fields.download.description
+        - !include /mtk/dialogs/components/linkSwitchableField.yaml
         - name: teaserTitle
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true

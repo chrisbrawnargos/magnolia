@@ -24,14 +24,14 @@
     [/#if]
 [/#if]
 
-[#assign teaserLink = content.link!]
+[#assign teaserLinkType = content.linkType!]
 
 [#-------------- TEASER SPECIFIC LOGIC --------------]
-[#if teaserLink == "page"]
+[#if teaserLinkType == "page"]
     [#include "/mtk/templates/includes/pageTeaser.ftl"]
-[#elseif teaserLink == "external"]
+[#elseif teaserLinkType == "external"]
     [#include "/mtk/templates/includes/externalTeaser.ftl"]
-[#elseif teaserLink == "download"]
+[#elseif teaserLinkType == "download"]
     [#include "/mtk/templates/includes/downloadTeaser.ftl"]
 [#else]
     [#assign resolveError = true]
