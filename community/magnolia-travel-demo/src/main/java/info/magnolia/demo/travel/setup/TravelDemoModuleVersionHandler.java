@@ -132,6 +132,8 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                         new ArrayDelegateTask("",
                                 new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
                                 new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/dam.travel-demo.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))))
+                // We re-bootstrap twice because a simple (and single) re-bootstrap (using ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING) would NOT
+                // "move" an existing site definition (which might actually exist from a previous version) in the site module
                 .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REMOVE_EXISTING))
                 .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_THROW))
 
