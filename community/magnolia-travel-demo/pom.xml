@@ -63,6 +63,10 @@
       <artifactId>magnolia-templating-essentials-models</artifactId>
     </dependency>
     <dependency>
+      <groupId>info.magnolia.templating</groupId>
+      <artifactId>magnolia-templating-kit</artifactId>
+    </dependency>
+    <dependency>
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-module-form</artifactId>
     </dependency>
