@@ -1,66 +1,65 @@
-[#-------------- INCLUDE AND ASSIGN PART --------------]
-[#include "/mte/templates/includes/init.ftl"]
+[#-------------- DEFAULT INCLUDE AND ASSIGN PART --------------]
+[#include "/mtk/templates/includes/init.ftl"]
 
-[#if model.isHighlighted()]
+[#assign contentHighlight = content.highlight!false]
+[#if contentHighlight]
     [#assign divClass = "${divClass} highlight"]
 [/#if]
 
-[#assign hideTeaserImage = model.isHideTeaserImage()]
+[#assign hideTeaserImage = content.hideTeaserImage!false]
 [#if hideTeaserImage]
     [#assign divClass = "${divClass} no-img"]
 [/#if]
 
-[#if model.isTargetBlank()]
-    [#assign linkTarget = " target=\"_blank\""]
-[/#if]
+[#assign title = content.teaserTitle!]
+[#assign abstract = content.teaserAbstract!]
+[#assign resolveError = false]
+[#assign linkTarget = ""]
 
 [#-- Set the imageLink / divClass when image should be displayed --]
-[#if !hideTeaserImage]
-    [#assign imageLink = (model.image!).link!]
-
+[#if !hideTeaserImage && content.image?has_content]
+    [#assign imageLink = damfn.getRendition(content.image, "original").link]
     [#if !imageLink?has_content]
         [#assign divClass = "${divClass} no-img"]
     [/#if]
 [/#if]
 
-[#assign resolveError = !model.teaserLink?has_content]
+[#assign teaserLink = content.link!]
 
-[#-- We want special handling for download teaser title: add filesize and filetype --]
-[#-- But we do not want that HTML to the title of the image --]
-[#assign title =  model.teaserTitle!]
-[#if model.asset??]
-    [#if model.asset?has_content]
-        [#assign extension = cmsfn.fileExtension(model.asset.fileName)]
-        [#assign imageTitle = title][#-- Using title without html below for the image --]
-        [#assign title =  "${title} <em>(" + extension?upper_case + ", " + cmsfn.readableFileSize(model.asset.fileSize) + ")</em>"]
-    [#else]
-        [#assign resolveError = true]
-    [/#if]
+[#-------------- TEASER SPECIFIC LOGIC --------------]
+[#if teaserLink == "page"]
+    [#include "/mtk/templates/includes/pageTeaser.ftl"]
+[#elseif teaserLink == "external"]
+    [#include "/mtk/templates/includes/externalTeaser.ftl"]
+[#elseif teaserLink == "download"]
+    [#include "/mtk/templates/includes/downloadTeaser.ftl"]
+[#else]
+    [#assign resolveError = true]
 [/#if]
 
 [#if resolveError && cmsfn.editMode]
     [#assign divClass = "${divClass} note-for-editor"]
 [/#if]
 
-
 [#-------------- RENDERING PART --------------]
 <div class="${divClass}"${divID}>
 
-    [#if cmsfn.editMode && resolveError]
+[#if cmsfn.editMode && resolveError]
 
-        <${headlineLevel}>${i18n['reference.resolveError']}</${headlineLevel}>
+    <${headlineLevel}>${i18n["reference.resolveError"]}</${headlineLevel}>
 
-    [#else]
+[#else]
 
-        <${headlineLevel}><a href="${model.teaserLink!}"${linkTarget!}>${title!}</a></${headlineLevel}>
-        [#if imageLink?has_content]
-            [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
-            [#assign imageClass = "content-image-below"]
-            [#assign imageHtml][@imageResponsive model.image content imageClass false def.parameters /][/#assign]
-            <a href="${model.teaserLink}"${linkTarget!}>${imageHtml}</a>
-        [/#if]
-        [#if model.teaserText?has_content]<p>${model.teaserText}</p>[/#if]
+    <${headlineLevel}><a href="${link!}" ${linkTarget!}>${title!}</a></${headlineLevel}>
+    [#if imageLink?has_content]
+        [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
+        [#assign imageClass = "content-image-below"]
+        [#assign imageHtml][@imageResponsive imageLink content imageClass false def.parameters /][/#assign]
 
+        <a href="${link}"${linkTarget!}>${imageHtml}</a>
     [/#if]
+    [#if abstract?has_content]<p>${abstract}</p>[/#if]
+
+[/#if]
 
 </div><!-- end ${divClass} -->

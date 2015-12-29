@@ -1,28 +1,28 @@
 form:
-  i18nBasename: info.magnolia.templating.models.messages
-  label: components.link.title
+  label: components.teaser.title
   tabs:
-    - name: tabLink
-      label: components.link.tabLink.label
+    - name: tabMain
+      label: components.teaser.tabMain.label
       fields:
-        - name: linkType
+        - name: link
           class: info.magnolia.ui.form.field.definition.SwitchableFieldDefinition
           required: true
-          selectionType: select
+          selectionType: radio
+          layout: vertical
           type: String
           i18n: true
-          label: components.link.linkType.label
+          label: components.teaser.link.label
           options:
             - name: page
-              label: components.link.linkType.options.internal.label
+              label: components.teaserPage.label
               selected: true
               value: page
             - name: external
-              label: components.link.linkType.options.external.label
+              label: components.teaserExternal.label
               selected: false
               value: external
             - name: download
-              label: components.link.linkType.options.download.label
+              label: components.teaserDownload.label
               selected: false
               value: download
           fields:
@@ -33,13 +33,13 @@ form:
               identifierToPathConverter:
                 class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
               type: String
-              required: false
+              required: true
               label: components.link.linkType.fields.internal.label
               description: components.link.linkType.fields.internal.description
             - name: external
               class: info.magnolia.ui.form.field.definition.TextFieldDefinition
               type: String
-              required: false
+              required: true
               label: components.link.linkType.fields.external.label
               description: components.link.linkType.fields.external.description
             - name: download
@@ -51,18 +51,20 @@ form:
               contentPreviewDefinition:
                 contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
               type: String
-              required: false
+              required: true
               label: components.link.linkType.fields.download.label
               description: components.link.linkType.fields.download.description
-
-        - name: title
+        - name: teaserTitle
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.link.title.label
-          description: components.link.title.description
-    - name: tabImage
-      label: generic.fields.image.label
-      fields:
+          label: components.teaser.teaserTitle.label
+          description: components.teaser.teaserTitle.description
+        - name: teaserAbstract
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          rows: 5
+          i18n: true
+          label: components.teaser.teaserAbstract.label
+          description: components.teaser.teaserAbstract.description
         - name: image
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
           targetWorkspace: dam
@@ -73,6 +75,26 @@ form:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
           label: generic.fields.image.label
           description: generic.fields.image.description
+        - name: hideTeaserImage
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          defaultValue: false
+          type: Boolean
+          label: components.teaser.hideTeaserImage.label
+          description: components.teaser.hideTeaserImage.description
+          buttonLabel: components.teaser.hideTeaserImage.buttonLabel
+        - name: highlight
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          defaultValue: false
+          type: Boolean
+          label: generic.fields.highlight.label
+          description: generic.fields.highlight.description
+          buttonLabel: generic.fields.highlight.button.label
+        - name: constrainAspectRatio
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: Boolean
+          defaultValue: false
+          label: components.tabImage.constrainAspectRatio.label
+          buttonLabel: components.tabImage.constrainAspectRatio.buttonLabel  
 
 actions:
   commit:

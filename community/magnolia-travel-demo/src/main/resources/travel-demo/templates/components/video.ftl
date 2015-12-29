@@ -1,5 +1,5 @@
 [#-------------- INCLUDE AND ASSIGN PART --------------]
-[#include "/mte/templates/includes/init.ftl"]
+[#include "/mtk/templates/includes/init.ftl"]
 
 [#-- CSS default --]
 [#if !divClass?has_content]
