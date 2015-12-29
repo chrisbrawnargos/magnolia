@@ -11,6 +11,5 @@ areas:
     availableComponents:
       link:
         id: travel-demo:components/link
-i18nBasename: info.magnolia.templating.models.messages
 title: components.linkList.title
 description: components.linkList.description

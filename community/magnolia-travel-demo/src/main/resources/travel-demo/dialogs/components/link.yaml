@@ -1,5 +1,4 @@
 form:
-  i18nBasename: info.magnolia.templating.models.messages
   label: components.link.title
   tabs:
     - name: tabLink

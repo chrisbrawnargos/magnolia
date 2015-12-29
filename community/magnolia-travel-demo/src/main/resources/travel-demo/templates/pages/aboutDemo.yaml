@@ -31,5 +31,4 @@ areas:
   footer:
     editable: false
 
-i18nBasename: info.magnolia.module.travel-demo.messages
 title: pages.demo-about
