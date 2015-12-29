@@ -1,5 +1,5 @@
 [#-------------- INCLUDE AND ASSIGN PART --------------]
-[#include "/mte/templates/includes/init.ftl"]
+[#include "/mtk/templates/includes/init.ftl"]
 [#-- Image --]
 [#-- Basic positioning of an image below or above the text --]
 [#assign imagePosition = content.imagePosition!"below"]
@@ -12,13 +12,14 @@
 [#-- Image css classes --]
 [#assign hasImage = false]
 [#assign imageHtml = ""]
-[#if model.image?exists]
+
+[#if content.image?has_content]
     [#assign hasImage = true]
     [#assign divClass = "${divClass} text-image-section"]
     [#assign imageClass = "content-image-${imagePosition}"]
-
+    [#assign rendition = damfn.getRendition(content.image, "original")]
     [#include "/travel-demo/templates/macros/imageResponsive.ftl"]
-    [#assign imageHtml][@imageResponsive model.image content imageClass false def.parameters /][/#assign]
+    [#assign imageHtml][@imageResponsive rendition content imageClass false def.parameters /][/#assign]
 [/#if]
 
 

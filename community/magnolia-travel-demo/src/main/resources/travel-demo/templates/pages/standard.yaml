@@ -23,12 +23,8 @@ areas:
         id: travel-demo:components/jumbotron
       linkList:
         id: travel-demo:components/linkList
-      teaserDownload:
-        id: travel-demo:components/teaserDownload
-      teaserInternal:
-        id: travel-demo:components/teaserInternal
-      teaserExternal:
-        id: travel-demo:components/teaserExternal
+      teaser:
+        id: travel-demo:components/teaser
       carousel:
         id: travel-demo:components/carousel
       video:
@@ -38,7 +34,7 @@ areas:
       columnLayout:
         id: travel-demo:components/columnLayout
       html:
-        id: mte:components/html
+        id: mtk:components/html
       form:
         id: form:components/form
   footer:

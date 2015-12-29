@@ -1,27 +1,22 @@
 form:
-  i18nBasename: info.magnolia.module.travel-demo.messages
-  label: components.teaserExternal.label
-  description: components.teaserExternal.description
+  label: components.teaser.label
+  i18nBasename: info.magnolia.templatingkit.messages
   tabs:
     - name: tabMain
-      label: components.teaserExternal.tabMain.label
+      label: components.teaser.tabMain.label
       fields:
-        - name: link
-          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
-          required: true
-          label: components.teaserExternal.link.label
-          description: components.teaserExternal.link.description
+        - !include /mtk/dialogs/components/linkSwitchableField.yaml
         - name: teaserTitle
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.teaserExternal.teaserTitle.label
-          description: components.teaserExternal.teaserTitle.description
+          label: components.teaser.teaserTitle.label
+          description: components.teaser.teaserTitle.description
         - name: teaserAbstract
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           rows: 5
           i18n: true
-          label: components.teaserExternal.teaserAbstract.label
-          description: components.teaserExternal.teaserAbstract.description
+          label: components.teaser.teaserAbstract.label
+          description: components.teaser.teaserAbstract.description
         - name: image
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
           targetWorkspace: dam
@@ -30,15 +25,15 @@ form:
             class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
           contentPreviewDefinition:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
-          i18nBasename: info.magnolia.templating.models.messages
           label: generic.fields.image.label
           description: generic.fields.image.description
-        - name: constrainAspectRatio
+        - name: hideTeaserImage
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
-          type: Boolean
           defaultValue: false
-          label: components.tabImage.constrainAspectRatio.label
-          buttonLabel: components.tabImage.constrainAspectRatio.buttonLabel
+          type: Boolean
+          label: components.teaser.hideTeaserImage.label
+          description: components.teaser.hideTeaserImage.description
+          buttonLabel: components.teaser.hideTeaserImage.buttonLabel
         - name: highlight
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           defaultValue: false
@@ -46,6 +41,13 @@ form:
           label: generic.fields.highlight.label
           description: generic.fields.highlight.description
           buttonLabel: generic.fields.highlight.button.label
+        - name: constrainAspectRatio
+          i18nBasename: info.magnolia.module.travel-demo.messages
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: Boolean
+          defaultValue: false
+          label: components.tabImage.constrainAspectRatio.label
+          buttonLabel: components.tabImage.constrainAspectRatio.buttonLabel
 
 actions:
   commit:

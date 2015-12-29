@@ -19,9 +19,9 @@ areas:
       tourTypeTeaserRow:
         id: tours:components/tourTypeTeaserRow
       textImage:
-        id: mte:components/textImage
-      teaserInternal:
-        id: mte:components/teaserInternal
+        id: mtk:components/textImage
+      teaser:
+        id: travel-demo:components/teaser
       tourList:
         id: tours:components/tourList
       columnLayout:
