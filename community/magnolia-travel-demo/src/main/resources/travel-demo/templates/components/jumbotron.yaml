@@ -1,6 +1,5 @@
-templateScript: /mte/templates/components/textImage.ftl
-dialog: mte:components/textImage
-modelClass: info.magnolia.templating.models.components.ImageModel
+templateScript: /mtk/templates/components/textImage.ftl
+dialog: mtk:components/textImage
 
 renderType: freemarker
 parameters:

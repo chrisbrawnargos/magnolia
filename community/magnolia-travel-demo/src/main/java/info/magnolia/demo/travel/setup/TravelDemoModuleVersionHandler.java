@@ -103,12 +103,6 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
 
     public TravelDemoModuleVersionHandler() {
         register(DeltaBuilder.update("0.8", "")
-                .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
-                        new ArrayDelegateTask("",
-                                new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
-                                new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/dam.travel-demo.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))))
-                .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REMOVE_EXISTING))
-                .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_THROW))
                 .addTask(new BootstrapSingleModuleResource("config.modules.site.config.themes.travel-demo-theme.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(setupTravelSiteAsActiveSite)
                 .addTask(setDefaultUriOnPublicInstance)
@@ -133,16 +127,25 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 .addTask(setupTargetAppGroupAccessPermissions)
         );
         register(DeltaBuilder.update("0.9", "")
+                // re-bootstrap changed content and configuration
+                .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
+                        new ArrayDelegateTask("",
+                                new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
+                                new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/dam.travel-demo.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))))
+                // We re-bootstrap twice because a simple (and single) re-bootstrap (using ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING) would NOT
+                // "move" an existing site definition (which might actually exist from a previous version) in the site module
+                .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REMOVE_EXISTING))
+                .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_THROW))
+
                 .addTask(updateNavigationAreaDefinition)
                 .addTask(installPurSamples)
+
                 .addTask(new IsModuleInstalledOrRegistered("Copy changes in site definition to multisite if multisite is installed", "multisite",
                         new ArrayDelegateTask("",
                                 new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers", true),
                                 new CopyPropertyTask("", RepositoryConstants.CONFIG, "/modules/travel-demo/config/travel/templates/prototype/areas/navigation", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation", "class", false),
                                 new IsModuleInstalledOrRegistered("", "public-user-registration",
-                                        new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)
-                                )
-                        )
+                                        new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)))
                 )));
     }
 

@@ -1,8 +1,7 @@
 templateScript: /travel-demo/templates/components/textImage.ftl
 dialog: travel-demo:components/textImage
-modelClass: info.magnolia.templating.models.components.ImageModel
 
 renderType: freemarker
-i18nBasename: info.magnolia.templating.models.messages
+i18nBasename: info.magnolia.templatingkit.messages
 title: components.textImage.label
 description: components.textImage.description

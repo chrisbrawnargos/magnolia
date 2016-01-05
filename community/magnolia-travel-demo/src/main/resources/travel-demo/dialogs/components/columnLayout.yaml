@@ -1,5 +1,6 @@
 form:
   i18nBasename: info.magnolia.module.travel-demo.messages
+  label: components.columnLayout
   description: components.columnLayout.description
   tabs:
     - name: tabMain

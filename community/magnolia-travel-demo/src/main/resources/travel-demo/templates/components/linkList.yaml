@@ -1,16 +1,16 @@
-templateScript: /mte/templates/components/linkList.ftl
-dialog: mte:components/linkList
+templateScript: /mtk/templates/components/linkList.ftl
+dialog: mtk:components/linkList
 
 renderType: freemarker
 areas:
   linkList:
-    templateScript: /mte/templates/components/linkListArea.ftl
+    templateScript: /mtk/templates/components/linkListArea.ftl
     type: list
     title: components.linkList.areas.title
     description: components.linkList.areas.description
     availableComponents:
       link:
         id: travel-demo:components/link
-i18nBasename: info.magnolia.templating.models.messages
+i18nBasename: info.magnolia.templatingkit.messages
 title: components.linkList.title
 description: components.linkList.description

@@ -12,9 +12,5 @@ areas:
     availableComponents:
       textImage:
         id: travel-demo:components/textImage
-      teaserDownload:
-        id: travel-demo:components/teaserDownload
-      teaserInternal:
-        id: travel-demo:components/teaserInternal
-      teaserExternal:
-        id: travel-demo:components/teaserExternal
+      teaser:
+        id: travel-demo:components/teaser
