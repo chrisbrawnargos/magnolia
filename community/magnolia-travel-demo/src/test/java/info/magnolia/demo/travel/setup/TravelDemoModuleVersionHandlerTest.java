@@ -132,6 +132,8 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_STK_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH);
+        setupConfigNode("/modules/ui-admincentral/virtualURIMapping/default");
+        setupConfigProperty("/server", "admin", "true");
     }
 
     @Override
@@ -269,7 +271,6 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         // GIVEN
         setupConfigNode("/modules/public-user-registration");
         setupConfigNode("/modules/multisite/config/sites/fallback");
-        setupConfigNode("/modules/ui-admincentral/virtualURIMapping/default");
         setupConfigProperty("/server", "admin", "false");
         Node clientCallbacks = NodeUtil.createPath(session.getRootNode(), "server/filters/securityCallback/clientCallbacks/", NodeTypes.ContentNode.NAME);
         clientCallbacks.addNode("form", NodeTypes.ContentNode.NAME);

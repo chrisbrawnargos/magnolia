@@ -36,7 +36,7 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
             new BootstrapConditionally("Add mapping configuration to travel site definition in multisite", "/info/magnolia/demo/travel/multisite/setup/config.modules.multisite.config.sites.travel.mappings.xml"));
 
     public TravelDemoMultiSiteModuleVersionHandler() {
-        register(DeltaBuilder.update("0.8", "")
+        register(DeltaBuilder.update("0.9", "")
                 .addTask(new NodeExistsDelegateTask("Update travel-related sites (travel & sportstation)", "/modules/multisite/config/sites/travel",
                         new ArrayDelegateTask("", "",
                                 new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/sportstation", "extends", "../default", "../travel"),

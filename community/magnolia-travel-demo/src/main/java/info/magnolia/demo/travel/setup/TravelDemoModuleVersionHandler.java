@@ -102,32 +102,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private final InstallPurSamplesTask installPurSamples = new InstallPurSamplesTask();
 
     public TravelDemoModuleVersionHandler() {
-        register(DeltaBuilder.update("0.8", "")
-                .addTask(new BootstrapSingleModuleResource("config.modules.site.config.themes.travel-demo-theme.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
-                .addTask(setupTravelSiteAsActiveSite)
-                .addTask(setDefaultUriOnPublicInstance)
-                .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
-                        new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
-                                new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
-                                        new IsModuleInstalledOrRegistered("", "tours", (Task) null, new ArrayDelegateTask("", "",
-                                                new RemoveTravelDemoSiteFromMultiSite(),
-                                                copySiteToMultiSiteAndMakeItFallback)),
-                                        new NodeExistsDelegateTask("Check whether travel node in multisite does not exist.", "/modules/multisite/config/sites/travel", null, copySiteToMultiSiteAndMakeItFallback)))))
-                .addTask(new NodeExistsDelegateTask("Configure permissions for access to Pages app", "/modules/pages/apps/pages",
-                        new ArrayDelegateTask("Configure permissions for access to Pages app",
-                                new CreateNodePathTask("", "", RepositoryConstants.CONFIG, "/modules/pages/apps/pages/permissions/roles", NodeTypes.ContentNode.NAME),
-                                new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE),
-                                new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
-                .addTask(setupAccessPermissionsForDemoUsers)
-        );
-        register(DeltaBuilder.update("0.8.1", "")
-                .addTask(new NodeExistsDelegateTask("Serve add2any js over https", "Serves add2any javascript over https to prevent mixed content issue in pages served over https.",
-                        RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany",
-                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js")))
-                .addTask(setupTargetAppGroupAccessPermissions)
-        );
         register(DeltaBuilder.update("0.9", "")
-                // re-bootstrap changed content and configuration
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
                         new ArrayDelegateTask("",
                                 new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
@@ -136,17 +111,42 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 // "move" an existing site definition (which might actually exist from a previous version) in the site module
                 .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REMOVE_EXISTING))
                 .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_THROW))
+                .addTask(new BootstrapSingleModuleResource("config.modules.site.config.themes.travel-demo-theme.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
+
+                .addTask(setupTravelSiteAsActiveSite)
+                .addTask(setDefaultUriOnPublicInstance)
 
                 .addTask(updateNavigationAreaDefinition)
                 .addTask(installPurSamples)
+
+                .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
+                        new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
+                                new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
+                                        new ArrayDelegateTask("", "",
+                                                new RemoveTravelDemoSiteFromMultiSite(),
+                                                copySiteToMultiSiteAndMakeItFallback),
+                                        new NodeExistsDelegateTask("Check whether travel node in multisite does not exist.", "/modules/multisite/config/sites/travel", null, copySiteToMultiSiteAndMakeItFallback)))))
+
+                .addTask(new NodeExistsDelegateTask("Configure permissions for access to Pages app", "/modules/pages/apps/pages",
+                        new ArrayDelegateTask("Configure permissions for access to Pages app",
+                                new CreateNodePathTask("", "", RepositoryConstants.CONFIG, "/modules/pages/apps/pages/permissions/roles", NodeTypes.ContentNode.NAME),
+                                new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE),
+                                new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
+                .addTask(setupAccessPermissionsForDemoUsers)
+
+                .addTask(new NodeExistsDelegateTask("Serve add2any js over https", "Serves add2any javascript over https to prevent mixed content issue in pages served over https.",
+                        RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany",
+                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js")))
+
+                .addTask(setupTargetAppGroupAccessPermissions)
 
                 .addTask(new IsModuleInstalledOrRegistered("Copy changes in site definition to multisite if multisite is installed", "multisite",
                         new ArrayDelegateTask("",
                                 new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers", true),
                                 new CopyPropertyTask("", RepositoryConstants.CONFIG, "/modules/travel-demo/config/travel/templates/prototype/areas/navigation", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation", "class", false),
                                 new IsModuleInstalledOrRegistered("", "public-user-registration",
-                                        new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)))
-                )));
+                                        new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)))))
+        );
     }
 
     @Override
