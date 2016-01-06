@@ -36,7 +36,6 @@ package info.magnolia.demo.travel.tours.setup;
 import info.magnolia.demo.travel.setup.AddDemoTravelPermissionTask;
 import info.magnolia.demo.travel.setup.CopySiteToMultiSiteAndMakeItFallback;
 import info.magnolia.demo.travel.setup.FolderBootstrapTask;
-import info.magnolia.demo.travel.setup.RemoveTravelDemoSiteFromMultiSite;
 import info.magnolia.demo.travel.setup.SetPageAsPublishedTask;
 import info.magnolia.demo.travel.tours.TourTemplatingFunctions;
 import info.magnolia.module.DefaultModuleVersionHandler;
@@ -75,8 +74,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
             new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
 
     public ToursModuleVersionHandler() {
-        // Reinstall all relevant contents
-        register(DeltaBuilder.update("0.8", "")
+        register(DeltaBuilder.update("0.9", "")
                 .addTask(new FolderBootstrapTask("/mgnl-bootstrap/tours/travel-demo/"))
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
                         new ArrayDelegateTask("",
@@ -90,15 +88,10 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                 .addTask(new BootstrapSingleModuleResource("config.modules.tours.apps.tours.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
                         new NodeExistsDelegateTask("Check whether multisite can be enabled for travel demo", "/modules/travel-demo/config/travel",
-                                new NodeExistsDelegateTask("Check whether travel demo was already copied in a previous version", "/modules/multisite/config/sites/default",
-                                        new ArrayDelegateTask("", "",
-                                                new RemoveTravelDemoSiteFromMultiSite(),
-                                                new CopySiteToMultiSiteAndMakeItFallback(true))))))
+                                new CopySiteToMultiSiteAndMakeItFallback(true))))
                 .addTask(new NodeExistsDelegateTask("Add permission for access to Dam app", DAM_PERMISSIONS_ROLES,
                         new SetPropertyTask(RepositoryConstants.CONFIG, DAM_PERMISSIONS_ROLES, TRAVEL_DEMO_TOUR_EDITOR_ROLE, TRAVEL_DEMO_TOUR_EDITOR_ROLE)))
-        );
 
-        register(DeltaBuilder.update("0.8.1", "")
                 .addTask(orderPageNodes)
                 .addTask(new SetPageAsPublishedTask("/travel", true))
         );

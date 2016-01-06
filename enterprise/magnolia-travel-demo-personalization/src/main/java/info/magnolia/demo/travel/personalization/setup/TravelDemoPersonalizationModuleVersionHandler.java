@@ -40,13 +40,11 @@ public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModule
     private final Task orderVariantNodeToFirstPosition = new OrderNodeToFirstPositionTask("Order travel page variants to first position.", "", RepositoryConstants.WEBSITE, "travel/variants");
 
     public TravelDemoPersonalizationModuleVersionHandler() {
-        register(DeltaBuilder.update("0.8", "")
+        register(DeltaBuilder.update("0.9", "")
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website variants for travel pages", "Re-bootstrap website variants to account for all changes",
                         new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.variants.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
                 .addTask(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true))
-        );
 
-        register(DeltaBuilder.update("0.8.1", "")
                 .addTask(orderVariantNodeToFirstPosition)
                 .addTask(new SetPageAsPublishedTask("/travel", true))
         );
