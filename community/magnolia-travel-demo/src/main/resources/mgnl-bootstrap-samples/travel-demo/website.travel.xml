@@ -1583,7 +1583,7 @@
               <sv:value>a674e6ae-015c-4526-8b4b-96580eb7cc4f</sv:value>
             </sv:property>
             <sv:property sv:name="hideTeaserImage" sv:type="Boolean">
-              <sv:value>false</sv:value>
+              <sv:value>true</sv:value>
             </sv:property>
             <sv:property sv:name="highlight" sv:type="Boolean">
               <sv:value>false</sv:value>
@@ -1630,7 +1630,7 @@
               <sv:value>afd8b752-1ab9-4665-b794-86d0845b70b9</sv:value>
             </sv:property>
             <sv:property sv:name="hideTeaserImage" sv:type="Boolean">
-              <sv:value>false</sv:value>
+              <sv:value>true</sv:value>
             </sv:property>
             <sv:property sv:name="highlight" sv:type="Boolean">
               <sv:value>false</sv:value>
@@ -1677,7 +1677,7 @@
               <sv:value>9b453dbe-1c04-4406-ad66-667d279c83ed</sv:value>
             </sv:property>
             <sv:property sv:name="hideTeaserImage" sv:type="Boolean">
-              <sv:value>false</sv:value>
+              <sv:value>true</sv:value>
             </sv:property>
             <sv:property sv:name="highlight" sv:type="Boolean">
               <sv:value>false</sv:value>
@@ -3509,7 +3509,7 @@
             <sv:value>2ed8b07d-d537-4a08-ab6f-276d61e2814e</sv:value>
           </sv:property>
           <sv:property sv:name="hideTeaserImage" sv:type="Boolean">
-            <sv:value>false</sv:value>
+            <sv:value>true</sv:value>
           </sv:property>
           <sv:property sv:name="highlight" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -3556,7 +3556,7 @@
             <sv:value>a6a83362-de0b-434f-b3be-2c1264707b48</sv:value>
           </sv:property>
           <sv:property sv:name="hideTeaserImage" sv:type="Boolean">
-            <sv:value>false</sv:value>
+            <sv:value>true</sv:value>
           </sv:property>
           <sv:property sv:name="highlight" sv:type="Boolean">
             <sv:value>false</sv:value>
@@ -3603,7 +3603,7 @@
             <sv:value>ba898308-b005-40a2-b476-e5eadde6819f</sv:value>
           </sv:property>
           <sv:property sv:name="hideTeaserImage" sv:type="Boolean">
-            <sv:value>false</sv:value>
+            <sv:value>true</sv:value>
           </sv:property>
           <sv:property sv:name="highlight" sv:type="Boolean">
             <sv:value>false</sv:value>

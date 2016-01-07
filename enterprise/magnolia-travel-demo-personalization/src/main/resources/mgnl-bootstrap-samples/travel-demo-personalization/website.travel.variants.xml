@@ -758,9 +758,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>808ebe4c-72b2-49f1-b9f7-e7db22bce02f</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -805,9 +805,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>53b073cc-ea3a-4e44-bdea-8c8a790b55c5</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -954,9 +954,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>c1e9ac13-60c1-430a-8ee3-6c70078bf403</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -1192,9 +1192,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>cd96f78d-1d5c-4f6b-b00d-765d0d59f6da</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -1233,9 +1233,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>1efdad2d-7cba-48a0-8310-f6c96d2ccfea</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -1274,9 +1274,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>84078519-eeb3-4dd3-a12b-8257e8290bcc</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -2043,9 +2043,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>808ebe4c-72b2-49f1-b9f7-e7db22bce02f</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -2090,9 +2090,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>53b073cc-ea3a-4e44-bdea-8c8a790b55c5</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -2239,9 +2239,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>c1e9ac13-60c1-430a-8ee3-6c70078bf403</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -2478,9 +2478,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>cd96f78d-1d5c-4f6b-b00d-765d0d59f6da</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -2519,9 +2519,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>1efdad2d-7cba-48a0-8310-f6c96d2ccfea</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -2560,9 +2560,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>84078519-eeb3-4dd3-a12b-8257e8290bcc</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3329,9 +3329,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>808ebe4c-72b2-49f1-b9f7-e7db22bce02f</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3376,9 +3376,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>53b073cc-ea3a-4e44-bdea-8c8a790b55c5</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3525,9 +3525,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>c1e9ac13-60c1-430a-8ee3-6c70078bf403</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3764,9 +3764,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>cd96f78d-1d5c-4f6b-b00d-765d0d59f6da</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3805,9 +3805,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>1efdad2d-7cba-48a0-8310-f6c96d2ccfea</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
@@ -3846,9 +3846,9 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="linkType" sv:type="String">
-                <sv:value>internal</sv:value>
+                <sv:value>page</sv:value>
               </sv:property>
-              <sv:property sv:name="linkTypeinternal" sv:type="String">
+              <sv:property sv:name="linkTypepage" sv:type="String">
                 <sv:value>84078519-eeb3-4dd3-a12b-8257e8290bcc</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
