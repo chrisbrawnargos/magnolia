@@ -1,6 +1,16 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/mtk/templates/includes/init.ftl"]
 
+[#assign title = content.teaserTitle!]
+[#assign linkType = content.linkType!]
+[#assign resolveError = false]
+[#assign linkTarget = ""]
+[#assign abstract = content.teaserAbstract!]
+
+[#if linkType?has_content]
+    [#assign divClass = "${linkType} ${divClass}"]
+[/#if]
+
 [#assign contentHighlight = content.highlight!false]
 [#if contentHighlight]
     [#assign divClass = "${divClass} highlight"]
@@ -11,35 +21,34 @@
     [#assign divClass = "${divClass} no-img"]
 [/#if]
 
-[#assign title = content.teaserTitle!]
-[#assign abstract = content.teaserAbstract!]
-[#assign resolveError = false]
-[#assign linkTarget = ""]
-
-[#-- Set the image / divClass when image should be displayed --]
+[#-- Set the imageLink / divClass when image should be displayed --]
 [#if !hideTeaserImage && content.image?has_content]
-    [#assign image = damfn.getRendition(content.image, "original")!]
+    [#assign image = damfn.getRendition(content.image, "original")]
     [#if !image?has_content]
         [#assign divClass = "${divClass} no-img"]
     [/#if]
 [/#if]
 
-[#assign teaserLinkType = content.linkType!]
 
-
-[#-------------- TEASER SPECIFIC LOGIC --------------]
-[#if teaserLinkType?has_content]
-    [#include "/mtk/templates/includes/teaser${teaserLinkType?cap_first}.ftl"]
-[#else]
-    [#assign resolveError = true]
+[#-------------- ASSIGNMENTS FOR EACH TYPE --------------]
+[#if linkType=="page"]
+    [#include "/mtk/templates/includes/teaserPage.ftl"]
+[#elseif linkType=="external"]
+    [#include "/mtk/templates/includes/teaserExternal.ftl"]
+[#elseif linkType=="download"]
+    [#include "/mtk/templates/includes/teaserDownload.ftl"]
 [/#if]
 
 [#if resolveError && cmsfn.editMode]
     [#assign divClass = "${divClass} note-for-editor"]
 [/#if]
 
+[#if image?has_content && image.title?has_content]
+    [#assign imageTitle = image.title!]
+[/#if]
 
-[#-------------- RENDERING PART --------------]
+
+[#-------------- RENDERING --------------]
 <div class="${divClass}"${divID}>
 
 [#if cmsfn.editMode && resolveError]

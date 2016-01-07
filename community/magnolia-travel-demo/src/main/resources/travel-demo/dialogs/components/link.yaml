@@ -1,6 +1,6 @@
 form:
   i18nBasename: info.magnolia.templatingkit.messages
-  label: components.link.title
+  label: components.link.label
   tabs:
     - name: tabLink
       label: components.link.tabLink.label
