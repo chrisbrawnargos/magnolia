@@ -1,6 +1,7 @@
 form:
-  label: components.teaser.label
   i18nBasename: info.magnolia.templatingkit.messages
+  label: components.teaser.label
+  description: components.teaser.description
   tabs:
     - name: tabMain
       label: components.teaser.tabMain.label
@@ -25,8 +26,8 @@ form:
             class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
           contentPreviewDefinition:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
-          label: generic.fields.image.label
-          description: generic.fields.image.description
+          label: components.teaser.image.label
+          description: components.teaser.image.description
         - name: hideTeaserImage
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           defaultValue: false
