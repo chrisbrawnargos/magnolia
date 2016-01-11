@@ -1,5 +1,6 @@
 form:
   i18nBasename: info.magnolia.module.travel-demo.messages
+  label: components.video
   description: components.video.description
   tabs:
     - name: tabMain
