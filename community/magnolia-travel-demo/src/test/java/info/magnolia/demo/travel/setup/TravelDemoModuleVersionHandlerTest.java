@@ -317,6 +317,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/availability/templates/pur"));
         assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/").getPrimaryNodeType().getName(), equalTo(NodeTypes.ContentNode.NAME));
         assertThat(session.getNode("/modules/public-user-registration/config/configurations/travel/passwordRetrievalStrategy"), hasProperty("targetPagePath", "/" + InstallPurSamplesTask.PASSWORD_CHANGE_PAGE_PATH));
+        assertThat(session.getNode("/modules/public-user-registration/config/configurations/travel/defaultGroups"), hasProperty("pur", "travel-demo-pur"));
 
         assertThat(MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getRootNode(), hasNode(UserManager.ANONYMOUS_USER + "/acl_uri"));
         NodeIterator permissions = MgnlContext.getJCRSession(RepositoryConstants.USER_ROLES).getNode("/" + UserManager.ANONYMOUS_USER + "/acl_uri").getNodes();
@@ -328,6 +329,8 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         while (permissions.hasNext()) {
             assertThat(permissions.nextNode().getProperty("path").getString(), isIn(InstallPurSamplesTask.PROTECTED_PAGES_PATHS));
         }
+
+        assertThat(MgnlContext.getJCRSession(RepositoryConstants.USER_GROUPS).getRootNode(), hasNode("travel-demo-pur"));
     }
 
     private void checkIfEverythingIsActivated() throws RepositoryException {
