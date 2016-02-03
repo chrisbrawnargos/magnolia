@@ -1,7 +1,4 @@
 templateScript: /tours/templates/components/tourCarousel.ftl
 dialog: tours:components/tourCarousel
 modelClass: info.magnolia.demo.travel.tours.model.CarouselModel
-
 renderType: freemarker
-i18nBasename: info.magnolia.module.travel-tours.messages
-title: components.tourCarousel

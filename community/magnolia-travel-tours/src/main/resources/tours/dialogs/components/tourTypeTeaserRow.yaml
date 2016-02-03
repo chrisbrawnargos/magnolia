@@ -1,23 +1,16 @@
 form:
-  i18nBasename: info.magnolia.module.travel-tours.messages
-  label: dialogs.components.tourTypeTeaserRow.label
-  description: dialogs.components.tourTypeTeaserRow.description
   tabs:
     - name: tabMain
-      label: dialogs.components.tourTypeTeaserRow.tabMain.label
       fields:
         - name: title
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: dialogs.components.tourTypeTeaserRow.tabMain.title.label
         - name: body
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           rows: 8
           i18n: true
-          label: dialogs.components.tourTypeTeaserRow.tabMain.body.label
         - name: tourTypes
           class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
-          label: dialogs.components.tourTypeTeaserRow.tabMain.tourTypes.label
           buttonSelectAddLabel: field.link.select.add
           field:
             class: info.magnolia.ui.form.field.definition.LinkFieldDefinition

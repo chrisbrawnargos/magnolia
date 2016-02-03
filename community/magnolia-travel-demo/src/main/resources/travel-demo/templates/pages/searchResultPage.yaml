@@ -25,6 +25,3 @@ areas:
           headline: Search results
   footer:
     editable: false
-
-i18nBasename: info.magnolia.module.travel-demo.messages
-title: pages.searchResultPage

@@ -6,12 +6,6 @@ areas:
   linkList:
     templateScript: /mtk/templates/components/linkListArea.ftl
     type: list
-    title: components.linkList.areas.label
-    description: components.linkList.areas.description
     availableComponents:
       link:
         id: travel-demo:components/link
-
-i18nBasename: info.magnolia.templatingkit.messages
-title: components.linkList.label
-description: components.linkList.description

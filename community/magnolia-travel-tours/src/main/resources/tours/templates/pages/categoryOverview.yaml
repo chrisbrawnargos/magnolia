@@ -25,6 +25,3 @@ areas:
         id: travel-demo:components/social
   footer:
     editable: false
-
-i18nBasename: info.magnolia.module.travel-tours.messages
-title: pages.categoryOverview

@@ -5,7 +5,7 @@
 # This might be replaced with the template from 'travel-demo-marketing-tags':
 # templateScript: /travel-demo-marketing-tags/templates/pages/main-marketing-tags.ftl
 
-dialog: travel-demo:pages/homePageProperties
+dialog: travel-demo:pages/pageProperties
 class: info.magnolia.templating.definition.PageTemplateDefinition
 
 renderType: site
@@ -29,6 +29,3 @@ areas:
 
   footer:
     editable: true
-
-i18nBasename: info.magnolia.module.travel-demo.messages
-title: pages.home

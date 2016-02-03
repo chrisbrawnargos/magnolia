@@ -1,19 +1,12 @@
 form:
-  i18nBasename: info.magnolia.templatingkit.messages
-  label: components.link.label
-  description: components.link.description
   tabs:
     - name: tabLink
-      label: components.link.tabLink.label
       fields:
         - !include /mtk/dialogs/components/linkSwitchableField.yaml
         - name: title
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.link.title.label
-          description: components.link.title.description
     - name: tabImage
-      label: generic.fields.image.label
       fields:
         - name: image
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
@@ -23,8 +16,6 @@ form:
             class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
           contentPreviewDefinition:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
-          label: generic.fields.image.label
-          description: generic.fields.image.description
 
 actions:
   commit:

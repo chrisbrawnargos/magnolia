@@ -2,9 +2,6 @@ templateScript: /travel-demo/templates/components/columnLayout.ftl
 dialog: travel-demo:components/columnLayout
 
 renderType: freemarker
-i18nBasename: info.magnolia.module.travel-demo.messages
-title: components.columnLayout
-description: components.columnLayout.description
 areas:
   column1: &column1
     type: list

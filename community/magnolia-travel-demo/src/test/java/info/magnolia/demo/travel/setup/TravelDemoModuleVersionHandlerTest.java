@@ -39,8 +39,7 @@ import static info.magnolia.test.hamcrest.NodeMatchers.*;
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.allOf;
-import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.*;
 import static org.hamcrest.collection.IsIn.isIn;
 import static org.junit.Assert.*;
 
@@ -266,6 +265,19 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
         assertThat(website.getRootNode(), hasNode("travel/book-tour"));
         this.checkIfEverythingIsActivated();
+        this.assertNoMessages(ctx);
+    }
+
+    @Test
+    public void testUpgradeFrom010() throws Exception {
+        // GIVEN
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.10"));
+
+        // THEN
+        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation"), not(hasProperty("i18nBasename")));
+        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/htmlHeader"), not(hasProperty("i18nBasename")));
         this.assertNoMessages(ctx);
     }
 

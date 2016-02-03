@@ -4,5 +4,3 @@ class: info.magnolia.demo.travel.tours.model.definition.TourCategoryTemplateDefi
 
 renderType: freemarker
 category: destination
-i18nBasename: info.magnolia.module.travel-tours.messages
-title: components.tourListByDestination

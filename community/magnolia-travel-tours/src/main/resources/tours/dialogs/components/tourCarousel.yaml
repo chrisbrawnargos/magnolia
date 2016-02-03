@@ -1,14 +1,9 @@
 form:
-  i18nBasename: info.magnolia.module.travel-tours.messages
-  label: dialogs.components.tourCarousel.label
-  description: dialogs.components.tourCarousel.description
   tabs:
     - name: tabMain
-      label: dialogs.components.tourCarousel.tabMain.label
       fields:
         - name: tours
           class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
-          label: dialogs.components.tourCarousel.tabMain.tours.label
           buttonSelectAddLabel: field.link.select.add
           field:
             class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
@@ -24,9 +19,6 @@ form:
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           defaultValue: true
           type: Boolean
-          label: dialogs.components.tourCarousel.tabMain.showTourTypes.label
-          description: dialogs.components.tourCarousel.tabMain.description
-          buttonLabel: dialogs.components.tourCarousel.tabMain.button.label
 
 actions:
   commit:

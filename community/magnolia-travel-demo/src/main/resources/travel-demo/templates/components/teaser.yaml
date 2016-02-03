@@ -6,7 +6,3 @@ parameters:
   divClass: teaser
   divIDPrefix: teaser
   headlineLevel: h2
-
-i18nBasename: info.magnolia.templatingkit.messages
-title: components.teaser.label
-description: components.teaser.description

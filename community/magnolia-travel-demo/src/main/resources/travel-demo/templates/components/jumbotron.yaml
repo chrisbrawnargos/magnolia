@@ -5,5 +5,3 @@ renderType: freemarker
 parameters:
   divClass: jumbotron
   headlineLevel: h2
-i18nBasename: info.magnolia.module.travel-demo.messages
-title: components.jumbotron

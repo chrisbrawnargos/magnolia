@@ -1,9 +1,7 @@
 templateScript: /tours/templates/components/tourDetail.ftl
 modelClass: info.magnolia.demo.travel.tours.model.TourDetailModel
-
 renderType: freemarker
-i18nBasename: info.magnolia.module.travel-tours.messages
-title: components.tourDetail
+
 areas:
   summary:
     type: single

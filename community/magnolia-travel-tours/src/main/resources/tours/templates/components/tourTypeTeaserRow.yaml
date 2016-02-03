@@ -3,5 +3,3 @@ dialog: tours:components/tourTypeTeaserRow
 modelClass: info.magnolia.demo.travel.tours.model.TourTeaserModel
 
 renderType: freemarker
-i18nBasename: info.magnolia.module.travel-tours.messages
-title: components.tourTypeTeaserRow

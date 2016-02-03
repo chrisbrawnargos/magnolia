@@ -1,38 +1,24 @@
 form:
-  i18nBasename: info.magnolia.module.travel-demo.messages
-  label: components.textImage.label
-  description: components.textImage.description
   tabs:
     - name: tabText
-      label: components.textImage.tabText.label
       fields:
         - name: headlineLevel
           class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
           options:
             - name: big
-              label: components.textImage.headlineLevel.options.big
               value: big
             - name: medium
-              label: components.textImage.headlineLevel.options.medium
               value: medium
             - name: small
-              label: components.textImage.headlineLevel.options.small
               value: small
               selected: true
-          label: components.textImage.headlineLevel.label
-          description: components.textImage.headlineLevel.description
         - name: headline
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.textImage.headline.label
-          description: components.textImage.headline.description
         - name: text
           class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
           i18n: true
-          label: components.textImage.text.label
-          description: components.textImage.text.description
     - name: tabImage
-      label: components.textImage.tabImage.label
       fields:
         - name: image
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
@@ -42,46 +28,30 @@ form:
             class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
           contentPreviewDefinition:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
-          label: generic.fields.image.label
-          description: generic.fields.image.description
         - name: imagePosition
           class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
           options:
             - name: above
-              label: components.textImage.imagePosition.options.above
               value: above
             - name: below
-              label: components.textImage.imagePosition.options.below
               selected: true
               value: below
-          label: components.textImage.imagePosition.label
-          description: components.textImage.imagePosition.description
         - name: constrainAspectRatio
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           type: Boolean
           defaultValue: false
-          label: components.tabImage.constrainAspectRatio.label
-          buttonLabel: components.tabImage.constrainAspectRatio.buttonLabel
         - name: imageAltText
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.textImage.imageAltText.label
-          description: components.textImage.imageAltText.description
         - name: imageTitle
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.textImage.imageTitle.label
-          description: components.textImage.imageTitle.description
         - name: imageCaption
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.textImage.imageCaption.label
-          description: components.textImage.imageCaption.description
         - name: imageCredit
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.textImage.imageCredit.label
-          description: components.textImage.imageCredit.description
 
 actions:
   commit:
