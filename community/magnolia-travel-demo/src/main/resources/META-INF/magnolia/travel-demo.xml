@@ -33,11 +33,11 @@
     </dependency>
     <dependency>
       <name>mte</name>
-      <version>0.8/*</version>
+      <version>0.9/*</version>
     </dependency>
     <dependency>
       <name>mtk</name>
-      <version>0.8/*</version>
+      <version>0.9/*</version>
     </dependency>
     <dependency>
       <name>multisite</name>

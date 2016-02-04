@@ -1,5 +1,5 @@
 dialog: mte:pages/pageProperties
-class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+class: info.magnolia.templating.definition.PageTemplateDefinition
 renderType: site
 type: feature
 i18nBasename: info.magnolia.module.publicuserregistration.messages

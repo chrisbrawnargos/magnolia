@@ -6,7 +6,7 @@
 # templateScript: /travel-demo-marketing-tags/templates/pages/main-marketing-tags.ftl
 
 dialog: travel-demo:pages/homePageProperties
-class: info.magnolia.demo.travel.definition.PageTemplateDefinition
+class: info.magnolia.templating.definition.PageTemplateDefinition
 
 renderType: site
 type: home
