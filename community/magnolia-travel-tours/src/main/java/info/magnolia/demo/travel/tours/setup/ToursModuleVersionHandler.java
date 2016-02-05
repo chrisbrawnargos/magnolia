@@ -104,7 +104,6 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
         tasks.addAll(super.getExtraInstallTasks(installContext));
 
         tasks.add(new InstallRendererContextAttributeTask("rendering", "freemarker", "tourfn", TourTemplatingFunctions.class.getName()));
-        tasks.add(new InstallRendererContextAttributeTask("site", "site", "tourfn", TourTemplatingFunctions.class.getName()));
 
         /* Order bootstrapped pages accordingly */
         tasks.add(orderPageNodes);
