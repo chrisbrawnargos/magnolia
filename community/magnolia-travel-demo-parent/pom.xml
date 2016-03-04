@@ -19,9 +19,9 @@
     <magnoliaVersion>5.4.3</magnoliaVersion>
     <magnoliaUiVersion>5.4.1</magnoliaUiVersion>
     <magnoliaDamVersion>2.1</magnoliaDamVersion>
-    <siteVersion>1.0.5-SNAPSHOT</siteVersion>
+    <siteVersion>1.0.5</siteVersion>
     <resourcesVersion>2.4</resourcesVersion>
-    <mteVersion>0.9-SNAPSHOT</mteVersion>
+    <mteVersion>0.9</mteVersion>
   </properties>
 
   <scm>
