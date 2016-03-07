@@ -1484,7 +1484,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>travel-demo:components/video</sv:value>
+              <sv:value>mtk:components/video</sv:value>
             </sv:property>
             <sv:property sv:name="scale" sv:type="String">
               <sv:value>true</sv:value>

@@ -28,7 +28,7 @@ areas:
       carousel:
         id: travel-demo:components/carousel
       video:
-        id: travel-demo:components/video
+        id: mtk:components/video
       social:
         id: travel-demo:components/social
       columnLayout:

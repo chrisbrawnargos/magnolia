@@ -20,7 +20,7 @@ areas:
       carousel:
         id: travel-demo:components/carousel
       video:
-        id: travel-demo:components/video
+        id: mtk:components/video
       html:
         id: mtk:components/html
       form:
