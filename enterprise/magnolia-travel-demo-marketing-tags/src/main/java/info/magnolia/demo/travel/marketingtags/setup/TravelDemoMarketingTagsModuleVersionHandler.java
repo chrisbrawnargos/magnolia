@@ -56,7 +56,7 @@ public class TravelDemoMarketingTagsModuleVersionHandler extends DefaultModuleVe
 
     public TravelDemoMarketingTagsModuleVersionHandler() {
         // We re-bootstrap every config/content item upon update
-        register(DeltaBuilder.update("0.10", "")
+        register(DeltaBuilder.update("0.11", "")
                 .addTask(bootstrapAndUpdateMultiSiteDefinition)
                 .addTask(new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-marketing-tags/tags.Clicky-for-Travel-Demo.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-marketing-tags/tags.Google-Analytics-for-Travel-Demo.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
