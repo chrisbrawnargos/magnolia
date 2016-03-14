@@ -263,7 +263,7 @@
         <sv:value>superuser</sv:value>
       </sv:property>
     </sv:node>
-    <sv:node sv:name="mtk-styles">
+    <sv:node sv:name="video">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:contentNode</sv:value>
       </sv:property>
@@ -280,7 +280,7 @@
         <sv:value>admin</sv:value>
       </sv:property>
       <sv:property sv:name="link" sv:type="String">
-        <sv:value>/.resources/mtk/css/styles.css</sv:value>
+        <sv:value>/.resources/mtk/css/video.css</sv:value>
       </sv:property>
       <sv:property sv:name="media" sv:type="String">
         <sv:value>all</sv:value>
