@@ -1,7 +1,4 @@
 form:
-  i18nBasename: info.magnolia.module.travel-demo.messages
-  label: components.columnLayout
-  description: components.columnLayout.description
   tabs:
     - name: tabMain
       fields:
@@ -9,34 +6,24 @@ form:
           class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
           options:
             - name: 6x6
-              label: travel-demo.components.columnLayout.tabMain.scale.6x6
               value: 6x6
             - name: 8x4
-              label: travel-demo.components.columnLayout.tabMain.scale.8x4
               value: 8x4
             - name: 4x8
-              label: travel-demo.components.columnLayout.tabMain.scale.4x8
               value: 4x8
             - name: 9x3
-              label: travel-demo.components.columnLayout.tabMain.scale.9x3
               value: 9x3
             - name: 3x9
-              label: travel-demo.components.columnLayout.tabMain.scale.3x9
               value: 3x9
             - name: 4x4x4
-              label: travel-demo.components.columnLayout.tabMain.scale.4x4x4
               value: 4x4x4
             - name: 6x3x3
-              label: travel-demo.components.columnLayout.tabMain.scale.6x3x3
               value: 6x3x3
             - name: 3x6x3
-              label: travel-demo.components.columnLayout.tabMain.scale.3x6x3
               value: 3x6x3
             - name: 3x3x6
-              label: travel-demo.components.columnLayout.tabMain.scale.3x3x6
               value: 3x3x6
             - name: 3x3x3x3
-              label: travel-demo.components.columnLayout.tabMain.scale.3x3x3x3
               value: 3x3x3x3
 
 actions:

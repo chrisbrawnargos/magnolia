@@ -427,9 +427,6 @@
           <sv:property sv:name="createAreaNode" sv:type="String">
             <sv:value>false</sv:value>
           </sv:property>
-          <sv:property sv:name="i18nBasename" sv:type="String">
-            <sv:value>info.magnolia.module.travel-demo.messages</sv:value>
-          </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
@@ -1055,9 +1052,6 @@
           </sv:property>
           <sv:property sv:name="createAreaNode" sv:type="String">
             <sv:value>false</sv:value>
-          </sv:property>
-          <sv:property sv:name="i18nBasename" sv:type="String">
-            <sv:value>info.magnolia.module.travel-demo.messages</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>

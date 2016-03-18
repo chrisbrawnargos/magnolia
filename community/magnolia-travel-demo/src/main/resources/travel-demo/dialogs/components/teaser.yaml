@@ -1,23 +1,15 @@
 form:
-  i18nBasename: info.magnolia.templatingkit.messages
-  label: components.teaser.label
-  description: components.teaser.description
   tabs:
     - name: tabMain
-      label: components.teaser.tabMain.label
       fields:
         - !include /mtk/dialogs/components/linkSwitchableField.yaml
         - name: teaserTitle
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           i18n: true
-          label: components.teaser.teaserTitle.label
-          description: components.teaser.teaserTitle.description
         - name: teaserAbstract
           class: info.magnolia.ui.form.field.definition.TextFieldDefinition
           rows: 5
           i18n: true
-          label: components.teaser.teaserAbstract.label
-          description: components.teaser.teaserAbstract.description
         - name: image
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
           targetWorkspace: dam
@@ -26,29 +18,18 @@ form:
             class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
           contentPreviewDefinition:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
-          label: components.teaser.image.label
-          description: components.teaser.image.description
         - name: hideTeaserImage
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           defaultValue: false
           type: Boolean
-          label: components.teaser.hideTeaserImage.label
-          description: components.teaser.hideTeaserImage.description
-          buttonLabel: components.teaser.hideTeaserImage.buttonLabel
         - name: highlight
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           defaultValue: false
           type: Boolean
-          label: generic.fields.highlight.label
-          description: generic.fields.highlight.description
-          buttonLabel: generic.fields.highlight.button.label
         - name: constrainAspectRatio
-          i18nBasename: info.magnolia.module.travel-demo.messages
           class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
           type: Boolean
           defaultValue: false
-          label: components.tabImage.constrainAspectRatio.label
-          buttonLabel: components.tabImage.constrainAspectRatio.buttonLabel
 
 actions:
   commit:

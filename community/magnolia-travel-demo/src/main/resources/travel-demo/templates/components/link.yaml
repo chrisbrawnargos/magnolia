@@ -2,6 +2,3 @@ templateScript: /travel-demo/templates/components/link.ftl
 dialog: travel-demo:components/link
 
 renderType: freemarker
-i18nBasename: info.magnolia.templatingkit.messages
-title: components.link.label
-description: components.link.description

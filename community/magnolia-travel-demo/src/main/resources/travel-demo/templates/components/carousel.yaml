@@ -2,8 +2,6 @@ templateScript: /travel-demo/templates/components/carousel.ftl
 dialog: travel-demo:components/carousel
 
 renderType: freemarker
-i18nBasename: info.magnolia.module.travel-demo.messages
-title: components.carousel
 
 areas:
   carouselItems:

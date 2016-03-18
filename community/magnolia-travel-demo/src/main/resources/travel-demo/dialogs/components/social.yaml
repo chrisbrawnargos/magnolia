@@ -1,7 +1,4 @@
 form:
-  i18nBasename: info.magnolia.module.travel-demo.messages
-  label: components.social
-  description: components.social.description
   tabs:
     - name: tabMain
       fields:
@@ -9,27 +6,21 @@ form:
           class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
           options:
             - name: 16
-              label: travel-demo.components.social.tabMain.size.16
               value: 16
             - name: 24
-              label: travel-demo.components.social.tabMain.size.24
               value: 24
             - name: 32
-              label: travel-demo.components.social.tabMain.size.32
               value: 32
               selected: true
             - name: 48
-              label: travel-demo.components.social.tabMain.size.48
               value: 48
         - name: floating
           class: info.magnolia.ui.form.field.definition.OptionGroupFieldDefinition
           sortOptions: false
           options: &yesno # named reference for these yes/no options
             - name: yes
-              label: travel-demo.components.social.tabMain.yes
               value: true
             - name: no
-              label: travel-demo.components.social.tabMain.no
               selected: true
               value: false
         - name: vertical

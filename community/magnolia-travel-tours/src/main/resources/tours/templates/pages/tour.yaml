@@ -21,6 +21,3 @@ areas:
           id: tours:components/tourDetailRelatedTours
   footer:
     editable: false
-
-i18nBasename: info.magnolia.module.travel-tours.messages
-title: pages.tour

@@ -1,5 +1,3 @@
-i18nBasename: info.magnolia.module.travel-demo.messages
 renderType: freemarker
 templateScript: /travel-demo/templates/components/searchResults.ftl
-title: components.searchResults
 dialog: travel-demo:components/searchResults

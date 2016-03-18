@@ -1,6 +1,4 @@
 form:
-  i18nBasename: info.magnolia.module.travel-demo.messages
-  label: components.carousel
   tabs:
     - name: tabMain
       fields:
