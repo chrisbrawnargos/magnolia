@@ -1233,7 +1233,7 @@ max-width: 500px) {
     width: 100%;
 }
 
-.image-credit, .video-credit {
+.image-credit {
     background: black;
     color: #ccc;
     position: absolute;
@@ -1244,7 +1244,7 @@ max-width: 500px) {
     bottom: 0px;
 }
 
-.image-caption, .video-caption {
+.image-caption {
     background: black;
     color: #ccc;
     position: absolute;
