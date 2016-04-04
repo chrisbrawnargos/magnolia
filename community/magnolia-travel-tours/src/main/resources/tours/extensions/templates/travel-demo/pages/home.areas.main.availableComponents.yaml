@@ -1,0 +1,6 @@
+tourCarousel:
+  id: tours:components/tourCarousel
+tourTypeTeaserRow:
+  id: tours:components/tourTypeTeaserRow
+tourList:
+  id: tours:components/tourList

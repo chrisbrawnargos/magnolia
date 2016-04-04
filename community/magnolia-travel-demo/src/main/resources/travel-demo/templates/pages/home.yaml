@@ -14,18 +14,11 @@ areas:
   main:
     type: list
     availableComponents:
-      tourCarousel:
-        id: tours:components/tourCarousel
-      tourTypeTeaserRow:
-        id: tours:components/tourTypeTeaserRow
       textImage:
         id: mtk:components/textImage
       teaser:
         id: travel-demo:components/teaser
-      tourList:
-        id: tours:components/tourList
       columnLayout:
         id: travel-demo:components/columnLayout
-
   footer:
     editable: true
