@@ -33,7 +33,7 @@
  */
 package info.magnolia.demo.travel.tours.setup;
 
-import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
+import static info.magnolia.test.hamcrest.NodeMatchers.*;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
@@ -186,6 +186,26 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
                 "destination",
                 "tour",
                 "about"
+        ));
+    }
+
+    @Test
+    public void explicitlyBootstrappedCareersMain05NodeOrdered() throws Exception {
+        // GIVEN
+        Node careersMain = NodeUtil.createPath(websiteSession.getRootNode(), "/travel/about/careers/main", NodeTypes.Component.NAME, true);
+        careersMain.addNode("01", NodeTypes.Component.NAME);
+        careersMain.addNode("06", NodeTypes.Component.NAME);
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.11"));
+
+        // THEN
+        assertThat(careersMain, hasNode("05"));
+        List<Node> careerNodeList = Lists.newArrayList(careersMain.getNodes());
+        assertThat(Collections2.transform(careerNodeList, new ToNodeName()), contains(
+                "01",
+                "05",
+                "06"
         ));
     }
 

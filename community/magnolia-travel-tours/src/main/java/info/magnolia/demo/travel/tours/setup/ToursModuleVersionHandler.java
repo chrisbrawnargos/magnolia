@@ -74,7 +74,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
             new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
 
     public ToursModuleVersionHandler() {
-        register(DeltaBuilder.update("0.11", "")
+        register(DeltaBuilder.update("0.12", "")
                 .addTask(new FolderBootstrapTask("/mgnl-bootstrap/tours/travel-demo/"))
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
                         new ArrayDelegateTask("",
@@ -83,7 +83,8 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/tours/category.destinations.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
                                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/tours/category.tour-types.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)),
                                 new BootstrapSingleResource("Re bootstrap tours content", "", "/mgnl-bootstrap-samples/tours/tours.magnolia-travels.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
-                                new FolderBootstrapTask("/mgnl-bootstrap-samples/tours/assets/"))))
+                                new FolderBootstrapTask("/mgnl-bootstrap-samples/tours/assets/"),
+                                new NodeExistsDelegateTask("", "", RepositoryConstants.WEBSITE, "/travel/about/careers/main/06", new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/about/careers/main/05", "06")))))
                 .addTask(new BootstrapSingleModuleResource("config.modules.tours.apps.tourCategories.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(new BootstrapSingleModuleResource("config.modules.tours.apps.tours.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
