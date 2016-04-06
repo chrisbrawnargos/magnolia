@@ -33,7 +33,7 @@
  */
 package info.magnolia.demo.travel.tours.setup;
 
-import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
+import static info.magnolia.test.hamcrest.NodeMatchers.*;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
@@ -189,12 +189,54 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
         ));
     }
 
+    @Test
+    public void explicitlyBootstrappedCareersMain05NodeOrderedFreshInstall() throws Exception {
+        // GIVEN
+        setupBootstrapPages();
+        Node careersMain = NodeUtil.createPath(websiteSession.getRootNode(), "/travel/about/careers/main", NodeTypes.Component.NAME, true);
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
+
+        // THEN
+        assertThat(careersMain, hasNode("05"));
+        List<Node> careerNodeList = Lists.newArrayList(careersMain.getNodes());
+        assertThat(Collections2.transform(careerNodeList, new ToNodeName()), contains(
+                "01",
+                "05",
+                "06"
+        ));
+    }
+
+    @Test
+    public void explicitlyBootstrappedCareersMain05NodeOrdered() throws Exception {
+        // GIVEN
+        setupBootstrapPages();
+        Node careersMain = NodeUtil.createPath(websiteSession.getRootNode(), "/travel/about/careers/main", NodeTypes.Component.NAME, true);
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.10"));
+
+        // THEN
+        assertThat(careersMain, hasNode("05"));
+        List<Node> careerNodeList = Lists.newArrayList(careersMain.getNodes());
+        assertThat(Collections2.transform(careerNodeList, new ToNodeName()), contains(
+                "01",
+                "05",
+                "06"
+        ));
+    }
+
     private void setupBootstrapPages() throws RepositoryException {
         websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
         websiteSession.getRootNode().addNode("travel/about", NodeTypes.Page.NAME);
         websiteSession.getRootNode().addNode("travel/tour-type", NodeTypes.Page.NAME);
         websiteSession.getRootNode().addNode("travel/destination", NodeTypes.Page.NAME);
         websiteSession.getRootNode().addNode("travel/tour", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/about/careers", NodeTypes.Page.NAME);
+        websiteSession.getRootNode().addNode("travel/about/careers/main", NodeTypes.Area.NAME);
+        websiteSession.getRootNode().addNode("travel/about/careers/main/01", NodeTypes.Component.NAME);
+        websiteSession.getRootNode().addNode("travel/about/careers/main/06", NodeTypes.Component.NAME);
     }
 
     /**

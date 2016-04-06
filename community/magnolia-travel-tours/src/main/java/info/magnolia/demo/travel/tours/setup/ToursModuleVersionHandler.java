@@ -83,7 +83,8 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/tours/category.destinations.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
                                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/tours/category.tour-types.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)),
                                 new BootstrapSingleResource("Re bootstrap tours content", "", "/mgnl-bootstrap-samples/tours/tours.magnolia-travels.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
-                                new FolderBootstrapTask("/mgnl-bootstrap-samples/tours/assets/"))))
+                                new FolderBootstrapTask("/mgnl-bootstrap-samples/tours/assets/"),
+                                new OrderNodeBeforeTask("Order careers zeroFive node before zeroFix", "", RepositoryConstants.WEBSITE, "/travel/about/careers/main/05", "06"))))
                 .addTask(new BootstrapSingleModuleResource("config.modules.tours.apps.tourCategories.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(new BootstrapSingleModuleResource("config.modules.tours.apps.tours.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(new IsModuleInstalledOrRegistered("Enable travel site in multisite configuration", "multisite",
@@ -107,6 +108,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
 
         /* Order bootstrapped pages accordingly */
         tasks.add(orderPageNodes);
+        tasks.add(new OrderNodeBeforeTask("Order careers zeroFive node before zeroFix", "", RepositoryConstants.WEBSITE, "/travel/about/careers/main/05", "06"));
 
         /* Add travel-demo-base role to user anonymous */
         tasks.add(new AddRoleToUserTask("Adds role 'travel-demo-base' to user 'anonymous'", "anonymous", "travel-demo-base"));
