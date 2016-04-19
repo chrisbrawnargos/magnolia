@@ -130,7 +130,7 @@ public class TourServicesTest {
 
         damTemplatingFunctions = mock(DamTemplatingFunctions.class);
 
-        tourServices = new TourServices(toursModule, templateTypeHelper, templatingFunctions, categorizationTemplatingFunctions, damTemplatingFunctions);
+        tourServices = new TourServices(toursModule, templateTypeHelper, templatingFunctions, categorizationTemplatingFunctions, damTemplatingFunctions, linkTransformerManager);
     }
 
     @After
@@ -230,6 +230,24 @@ public class TourServicesTest {
 
         // THEN
         assertThat(tourLink, is(CONTEXT_PATH + URI_PREFIX + pathToTour));
+    }
+
+    @Test
+    public void marshallTourNodeResolvesLinksInBody() throws Exception {
+        // GIVEN
+        final String pathToTour = "/path/to/test-tour";
+        final String pathToLinkedPage = "/tours/somepage";
+
+        final Node node = NodeUtil.createPath(sessionTours.getRootNode(), pathToTour, NodeTypes.ContentNode.NAME);
+        final Node linkNode = NodeUtil.createPath(session.getRootNode(), pathToLinkedPage, NodeTypes.ContentNode.NAME);
+
+        node.setProperty(Tour.PROPERTY_NAME_BODY, String.format("${link:{uuid:{%s},repository:{website},path:{%s}}}", linkNode.getIdentifier(), pathToLinkedPage));
+
+        // WHEN
+        final Tour tour = tourServices.marshallTourNode(node);
+
+        // THEN
+        assertThat(tour.getBody(), is(CONTEXT_PATH + pathToLinkedPage));
     }
 
 }
