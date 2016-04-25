@@ -46,6 +46,7 @@ import info.magnolia.dam.templating.functions.DamTemplatingFunctions;
 import info.magnolia.demo.travel.tours.ToursModule;
 import info.magnolia.jcr.util.NodeTypes;
 import info.magnolia.jcr.util.NodeUtil;
+import info.magnolia.link.LinkTransformerManager;
 import info.magnolia.module.categorization.functions.CategorizationTemplatingFunctions;
 import info.magnolia.rendering.template.registry.TemplateDefinitionRegistry;
 import info.magnolia.rendering.template.type.TemplateTypeHelper;
@@ -94,7 +95,7 @@ public class TourServicesRepositoryTest extends RepositoryTestCase {
         };
         final TemplatingFunctions templatingFunctions = new TemplatingFunctions(aggregationStateProvider, templateTypeHelper);
 
-        tourServices = new TourServices(toursModule, templateTypeHelper, templatingFunctions, mock(CategorizationTemplatingFunctions.class), mock(DamTemplatingFunctions.class));
+        tourServices = new TourServices(toursModule, templateTypeHelper, templatingFunctions, mock(CategorizationTemplatingFunctions.class), mock(DamTemplatingFunctions.class), new LinkTransformerManager());
 
         ComponentsTestUtil.setImplementation(I18nContentSupport.class, DefaultI18nContentSupport.class);
     }

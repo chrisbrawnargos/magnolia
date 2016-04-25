@@ -42,6 +42,9 @@ import info.magnolia.dam.templating.functions.DamTemplatingFunctions;
 import info.magnolia.demo.travel.tours.ToursModule;
 import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.jcr.wrapper.I18nNodeWrapper;
+import info.magnolia.link.LinkException;
+import info.magnolia.link.LinkTransformerManager;
+import info.magnolia.link.LinkUtil;
 import info.magnolia.module.categorization.functions.CategorizationTemplatingFunctions;
 import info.magnolia.rendering.template.type.DefaultTemplateTypes;
 import info.magnolia.rendering.template.type.TemplateTypeHelper;
@@ -55,6 +58,7 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 import javax.jcr.Node;
 import javax.jcr.NodeIterator;
+import javax.jcr.Property;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 import javax.jcr.query.Query;
@@ -78,15 +82,17 @@ public class TourServices {
     private final TemplatingFunctions templatingFunctions;
     private final CategorizationTemplatingFunctions categorizationTemplatingFunctions;
     private final DamTemplatingFunctions damFunctions;
+    private final LinkTransformerManager linkTransformerManager;
 
     @Inject
     public TourServices(ToursModule toursModule, TemplateTypeHelper templateTypeHelper, TemplatingFunctions templatingFunctions,
-                        CategorizationTemplatingFunctions categorizationTemplatingFunctions, DamTemplatingFunctions damFunctions) {
+            CategorizationTemplatingFunctions categorizationTemplatingFunctions, DamTemplatingFunctions damFunctions, LinkTransformerManager linkTransformerManager) {
         this.toursModule = toursModule;
         this.templateTypeHelper = templateTypeHelper;
         this.templatingFunctions = templatingFunctions;
         this.categorizationTemplatingFunctions = categorizationTemplatingFunctions;
         this.damFunctions = damFunctions;
+        this.linkTransformerManager = linkTransformerManager;
     }
 
     /**
@@ -214,8 +220,19 @@ public class TourServices {
                 }
 
                 if (tourNode.hasProperty(Tour.PROPERTY_NAME_BODY)) {
-                    tour.setBody(tourNode.getProperty(Tour.PROPERTY_NAME_BODY).getString());
-                }
+                    Property body = tourNode.getProperty(Tour.PROPERTY_NAME_BODY);
+                    if (LinkUtil.UUID_PATTERN.matcher(body.getString()).find()) {
+                        try {
+                            String bodyWithResolvedLinks = LinkUtil.convertLinksFromUUIDPattern(body.getString(),
+                                    linkTransformerManager.getBrowserLink(tourNode.getPath()));
+                            tour.setBody(bodyWithResolvedLinks);
+                        } catch (LinkException e) {
+                            log.warn("Failed to parse links with from {}", body.getName(), e);
+                        }
+                    } else {
+                        tour.setBody(body.getString());
+                    }
+                 }
 
                 if (tourNode.hasProperty(Tour.PROPERTY_NAME_AUTHOR)) {
                     tour.setAuthor(tourNode.getProperty(Tour.PROPERTY_NAME_AUTHOR).getString());
