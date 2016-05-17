@@ -49,16 +49,13 @@ import javax.jcr.Node;
 
 import org.junit.Test;
 
-/**
- * Tests for {@link NavigationAreaModel}.
- */
 public class NavigationAreaModelTest {
+
+    private final NavigationAreaModel navigationAreaModel = new NavigationAreaModel(mock(Node.class), mock(AreaDefinition.class), mock(RenderingModel.class), mock(TemplatingFunctions.class));
 
     @Test
     public void makeSureReturnedLocalesTakeCountryIntoAccount() {
         // GIVEN
-        NavigationAreaModel navigationAreaModel = new NavigationAreaModel(mock(Node.class), mock(AreaDefinition.class), mock(RenderingModel.class), mock(TemplatingFunctions.class));
-
         // WHEN
         // THEN
         assertThat(navigationAreaModel.getLocale("de").getLanguage(), is("de"));
@@ -70,8 +67,6 @@ public class NavigationAreaModelTest {
     @Test
     public void whenNoHomeTemplateIsFoundNoNPEIsThrown() {
         // GIVEN
-        final NavigationAreaModel navigationAreaModel = new NavigationAreaModel(mock(Node.class), mock(AreaDefinition.class), mock(RenderingModel.class), mock(TemplatingFunctions.class));
-
         // WHEN
         // THEN
         assertThat(new Execution() {
