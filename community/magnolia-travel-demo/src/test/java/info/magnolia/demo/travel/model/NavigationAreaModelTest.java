@@ -33,6 +33,7 @@
  */
 package info.magnolia.demo.travel.model;
 
+import static info.magnolia.test.hamcrest.ExecutionMatcher.throwsNothing;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
@@ -40,6 +41,9 @@ import static org.mockito.Mockito.mock;
 import info.magnolia.rendering.model.RenderingModel;
 import info.magnolia.rendering.template.AreaDefinition;
 import info.magnolia.templating.functions.TemplatingFunctions;
+import info.magnolia.test.hamcrest.Execution;
+
+import java.util.List;
 
 import javax.jcr.Node;
 
@@ -61,6 +65,23 @@ public class NavigationAreaModelTest {
         assertThat(navigationAreaModel.getLocale("de").getCountry(), isEmptyString());
         assertThat(navigationAreaModel.getLocale("de_CH").getLanguage(), is("de"));
         assertThat(navigationAreaModel.getLocale("de_CH").getCountry(), is("CH"));
+    }
+
+    @Test
+    public void whenNoHomeTemplateIsFoundNoNPEIsThrown() {
+        // GIVEN
+        final NavigationAreaModel navigationAreaModel = new NavigationAreaModel(mock(Node.class), mock(AreaDefinition.class), mock(RenderingModel.class), mock(TemplatingFunctions.class));
+
+        // WHEN
+        // THEN
+        assertThat(new Execution() {
+            @Override
+            public void evaluate() throws Exception {
+                final List<NavigationAreaModel.NavigationItem> result = navigationAreaModel.getRootPages();
+
+                assertThat("We expect an empty list", result, hasSize(0));
+            }
+        }, throwsNothing());
     }
 
 }
