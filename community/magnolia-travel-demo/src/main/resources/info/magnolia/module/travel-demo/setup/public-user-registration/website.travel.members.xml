@@ -1895,7 +1895,7 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                   <sv:value>admin</sv:value>
                 </sv:property>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
-                  <sv:value>false</sv:value>
+                  <sv:value>true</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
                   <sv:value>true</sv:value>
