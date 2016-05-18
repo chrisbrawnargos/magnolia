@@ -975,7 +975,7 @@
           <sv:value>travel-demo:components/textImage</sv:value>
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
-          <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia, the digital business platform with a&amp;nbsp; CMS at its core.&lt;/p&gt;
+          <sv:value>&lt;p&gt;This website is a demonstration project for Magnolia, the digital business platform with a CMS at its core.&lt;/p&gt;
 
             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
