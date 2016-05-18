@@ -10346,7 +10346,7 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
                   <sv:value>admin</sv:value>
                 </sv:property>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
-                  <sv:value>false</sv:value>
+                  <sv:value>true</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
                   <sv:value>true</sv:value>
@@ -10373,7 +10373,7 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
                   <sv:value>form:components/formNumber</sv:value>
                 </sv:property>
                 <sv:property sv:name="min" sv:type="String">
-                  <sv:value>0</sv:value>
+                  <sv:value>1</sv:value>
                 </sv:property>
                 <sv:property sv:name="readonly" sv:type="Boolean">
                   <sv:value>false</sv:value>
