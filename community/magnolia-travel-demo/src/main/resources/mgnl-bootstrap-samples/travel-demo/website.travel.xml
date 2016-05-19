@@ -7578,6 +7578,9 @@
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Book your tour</sv:value>
     </sv:property>
+    <sv:property sv:name="title_de" sv:type="String">
+      <sv:value>Buchen Sie Ihre Tour</sv:value>
+    </sv:property>
     <sv:node sv:name="meal">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:page</sv:value>
@@ -7623,6 +7626,9 @@
       </sv:property>
       <sv:property sv:name="title" sv:type="String">
         <sv:value>Meal</sv:value>
+      </sv:property>
+      <sv:property sv:name="title_de" sv:type="String">
+        <sv:value>Menü</sv:value>
       </sv:property>
       <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -7670,6 +7676,9 @@
           </sv:property>
           <sv:property sv:name="formTitle" sv:type="String">
             <sv:value>Meal</sv:value>
+          </sv:property>
+          <sv:property sv:name="formTitle_de" sv:type="String">
+            <sv:value>Menü</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -7811,7 +7820,7 @@
                     <sv:value>mealOptions</sv:value>
                   </sv:property>
                   <sv:property sv:name="default" sv:type="String">
-                    <sv:value>No Special Requirements</sv:value>
+                    <sv:value>none</sv:value>
                   </sv:property>
                   <sv:property sv:name="horizontal" sv:type="Boolean">
                     <sv:value>false</sv:value>
@@ -7820,12 +7829,20 @@
                     <sv:value>admin</sv:value>
                   </sv:property>
                   <sv:property sv:name="labels" sv:type="String">
-                    <sv:value>Gluten Free
-Halal
-Kosher
-Vegan
-Vegetarian
-No Special Requirements</sv:value>
+                    <sv:value>Gluten Free:gluten-free
+Halal:halal
+Kosher:kosher
+Vegan:vegan
+Vegetarian:vegeterian
+No Special Requirements:none</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="labels_de" sv:type="String">
+                    <sv:value>Gluten Frei:gluten-free
+Halal:halal
+Kosher:kosher
+Vegan:vegan
+Vegetarier:vegeterian
+Keine spezielle Bedürfnisse:none</sv:value>
                   </sv:property>
                   <sv:property sv:name="mandatory" sv:type="Boolean">
                     <sv:value>false</sv:value>
@@ -7859,6 +7876,9 @@ No Special Requirements</sv:value>
                   </sv:property>
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>Meal Options</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Menü Optionen</sv:value>
                   </sv:property>
                   <sv:property sv:name="type" sv:type="String">
                     <sv:value>radio</sv:value>
@@ -7925,6 +7945,9 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>Additional Meal Notes</sv:value>
                   </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Zusätzliche Informationen zum Menü</sv:value>
+                  </sv:property>
                 </sv:node>
                 <sv:node sv:name="0">
                   <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -7936,8 +7959,14 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="backButtonText" sv:type="String">
                     <sv:value>Previous step</sv:value>
                   </sv:property>
+                  <sv:property sv:name="backButtonText_de" sv:type="String">
+                    <sv:value>Vorheriger Schritt</sv:value>
+                  </sv:property>
                   <sv:property sv:name="buttonText" sv:type="String">
                     <sv:value>Next step</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="buttonText_de" sv:type="String">
+                    <sv:value>Nächster Schritt</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
@@ -8264,6 +8293,9 @@ No Special Requirements</sv:value>
       <sv:property sv:name="title" sv:type="String">
         <sv:value>Personal details</sv:value>
       </sv:property>
+      <sv:property sv:name="title_de" sv:type="String">
+        <sv:value>Persönliche Angaben</sv:value>
+      </sv:property>
       <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
@@ -8310,6 +8342,9 @@ No Special Requirements</sv:value>
           </sv:property>
           <sv:property sv:name="formTitle" sv:type="String">
             <sv:value>Personal details</sv:value>
+          </sv:property>
+          <sv:property sv:name="formTitle_de" sv:type="String">
+            <sv:value>Persönliche Angaben</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -8408,6 +8443,9 @@ No Special Requirements</sv:value>
               </sv:property>
               <sv:property sv:name="title" sv:type="String">
                 <sv:value>Personal information</sv:value>
+              </sv:property>
+              <sv:property sv:name="title_de" sv:type="String">
+                <sv:value>Persönliche Angaben</sv:value>
               </sv:property>
               <sv:node sv:name="fields">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -8560,6 +8598,9 @@ No Special Requirements</sv:value>
                       <sv:property sv:name="title" sv:type="String">
                         <sv:value>Title</sv:value>
                       </sv:property>
+                      <sv:property sv:name="title_de" sv:type="String">
+                        <sv:value>Titel</sv:value>
+                      </sv:property>
                     </sv:node>
                     <sv:node sv:name="00">
                       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -8607,6 +8648,9 @@ No Special Requirements</sv:value>
                       <sv:property sv:name="title" sv:type="String">
                         <sv:value>First name</sv:value>
                       </sv:property>
+                      <sv:property sv:name="title_de" sv:type="String">
+                        <sv:value>Vorname</sv:value>
+                      </sv:property>
                     </sv:node>
                     <sv:node sv:name="01">
                       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -8653,6 +8697,9 @@ No Special Requirements</sv:value>
                       </sv:property>
                       <sv:property sv:name="title" sv:type="String">
                         <sv:value>Last Name</sv:value>
+                      </sv:property>
+                      <sv:property sv:name="title_de" sv:type="String">
+                        <sv:value>Nachname</sv:value>
                       </sv:property>
                     </sv:node>
                   </sv:node>
@@ -8718,6 +8765,9 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>Email</sv:value>
                   </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Email</sv:value>
+                  </sv:property>
                   <sv:property sv:name="validation" sv:type="String" sv:multiple="true">
                     <sv:value>email</sv:value>
                   </sv:property>
@@ -8780,6 +8830,9 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>Phone</sv:value>
                   </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Telefonnummer</sv:value>
+                  </sv:property>
                 </sv:node>
               </sv:node>
             </sv:node>
@@ -8819,6 +8872,9 @@ No Special Requirements</sv:value>
               </sv:property>
               <sv:property sv:name="title" sv:type="String">
                 <sv:value>Mailing Address</sv:value>
+              </sv:property>
+              <sv:property sv:name="title_de" sv:type="String">
+                <sv:value>Postanschrift</sv:value>
               </sv:property>
               <sv:node sv:name="fields">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -8971,6 +9027,9 @@ No Special Requirements</sv:value>
                       <sv:property sv:name="title" sv:type="String">
                         <sv:value>City</sv:value>
                       </sv:property>
+                      <sv:property sv:name="title_de" sv:type="String">
+                        <sv:value>Stadt</sv:value>
+                      </sv:property>
                     </sv:node>
                     <sv:node sv:name="00">
                       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -9017,6 +9076,9 @@ No Special Requirements</sv:value>
                       </sv:property>
                       <sv:property sv:name="title" sv:type="String">
                         <sv:value>Postal or Zip</sv:value>
+                      </sv:property>
+                      <sv:property sv:name="title_de" sv:type="String">
+                        <sv:value>PLZ</sv:value>
                       </sv:property>
                     </sv:node>
                   </sv:node>
@@ -9138,6 +9200,9 @@ No Special Requirements</sv:value>
                       <sv:property sv:name="title" sv:type="String">
                         <sv:value>Country</sv:value>
                       </sv:property>
+                      <sv:property sv:name="title_de" sv:type="String">
+                        <sv:value>Land</sv:value>
+                      </sv:property>
                     </sv:node>
                     <sv:node sv:name="00">
                       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -9185,6 +9250,9 @@ No Special Requirements</sv:value>
                       <sv:property sv:name="title" sv:type="String">
                         <sv:value>Province</sv:value>
                       </sv:property>
+                      <sv:property sv:name="title_de" sv:type="String">
+                        <sv:value>Bundesland/Kanton</sv:value>
+                      </sv:property>
                     </sv:node>
                   </sv:node>
                 </sv:node>
@@ -9198,8 +9266,14 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="backButtonText" sv:type="String">
                     <sv:value>Previous step</sv:value>
                   </sv:property>
+                  <sv:property sv:name="backButtonText_de" sv:type="String">
+                    <sv:value>Vorheriger Schritt</sv:value>
+                  </sv:property>
                   <sv:property sv:name="buttonText" sv:type="String">
                     <sv:value>Next step</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="buttonText_de" sv:type="String">
+                    <sv:value>Nächster Schritt</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
@@ -9526,6 +9600,9 @@ No Special Requirements</sv:value>
       <sv:property sv:name="title" sv:type="String">
         <sv:value>Review</sv:value>
       </sv:property>
+      <sv:property sv:name="title_de" sv:type="String">
+        <sv:value>Überprüfung</sv:value>
+      </sv:property>
       <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
@@ -9572,6 +9649,9 @@ No Special Requirements</sv:value>
           </sv:property>
           <sv:property sv:name="formTitle" sv:type="String">
             <sv:value>Review</sv:value>
+          </sv:property>
+          <sv:property sv:name="formTitle_de" sv:type="String">
+            <sv:value>Überprüfung</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -9671,6 +9751,9 @@ No Special Requirements</sv:value>
               <sv:property sv:name="title" sv:type="String">
                 <sv:value>Confirm</sv:value>
               </sv:property>
+              <sv:property sv:name="title_de" sv:type="String">
+                <sv:value>Bestätigung</sv:value>
+              </sv:property>
               <sv:node sv:name="fields">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
                   <sv:value>mgnl:area</sv:value>
@@ -9745,6 +9828,9 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>Photograph for use on our Travellers card.</sv:value>
                   </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Photo zur Verwendung auf unserer Travellers Karte.</sv:value>
+                  </sv:property>
                   <sv:property sv:name="type" sv:type="String">
                     <sv:value>attachment</sv:value>
                   </sv:property>
@@ -9789,6 +9875,9 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>Summary</sv:value>
                   </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Zusammenfassung</sv:value>
+                  </sv:property>
                 </sv:node>
                 <sv:node sv:name="00">
                   <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -9800,8 +9889,14 @@ No Special Requirements</sv:value>
                   <sv:property sv:name="backButtonText" sv:type="String">
                     <sv:value>Previous step</sv:value>
                   </sv:property>
+                  <sv:property sv:name="backButtonText_de" sv:type="String">
+                    <sv:value>Vorheriger Schritt</sv:value>
+                  </sv:property>
                   <sv:property sv:name="buttonText" sv:type="String">
                     <sv:value>Confirm Booking</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="buttonText_de" sv:type="String">
+                    <sv:value>Buchung bestätigen</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
@@ -10167,11 +10262,17 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
         <sv:property sv:name="errorTitle" sv:type="String">
           <sv:value>There is a problem with your booking</sv:value>
         </sv:property>
+        <sv:property sv:name="errorTitle_de" sv:type="String">
+          <sv:value>Es ist ein Problem mit Ihrer Buchung aufgetreten</sv:value>
+        </sv:property>
         <sv:property sv:name="formName" sv:type="String">
           <sv:value>book</sv:value>
         </sv:property>
         <sv:property sv:name="formTitle" sv:type="String">
-          <sv:value>BOOK YOUR TOUR</sv:value>
+          <sv:value>Book your tour</sv:value>
+        </sv:property>
+        <sv:property sv:name="formTitle_de" sv:type="String">
+          <sv:value>Buchen Sie Ihre Tour</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -10209,8 +10310,14 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
         <sv:property sv:name="successMessage" sv:type="String">
           <sv:value>Email with details was sent to provided email address.</sv:value>
         </sv:property>
+        <sv:property sv:name="successMessage_de" sv:type="String">
+          <sv:value>Eine E-Mail mit Details wurde an die angegebene Adresse verschickt.</sv:value>
+        </sv:property>
         <sv:property sv:name="successTitle" sv:type="String">
           <sv:value>Your tour is booked</sv:value>
+        </sv:property>
+        <sv:property sv:name="successTitle_de" sv:type="String">
+          <sv:value>Ihre Tour wurde gebucht</sv:value>
         </sv:property>
         <sv:property sv:name="trackMail" sv:type="Boolean">
           <sv:value>false</sv:value>
@@ -10285,6 +10392,9 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
             </sv:property>
             <sv:property sv:name="title" sv:type="String">
               <sv:value>Number of Travellers</sv:value>
+            </sv:property>
+            <sv:property sv:name="title_de" sv:type="String">
+              <sv:value>Anzahl Reisende</sv:value>
             </sv:property>
             <sv:node sv:name="fields">
               <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -10384,6 +10494,9 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Adults (18+)</sv:value>
                 </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Erwachsene (18+)</sv:value>
+                </sv:property>
                 <sv:property sv:name="validation" sv:type="String" sv:multiple="true">
                   <sv:value>number</sv:value>
                 </sv:property>
@@ -10451,6 +10564,9 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
                 </sv:property>
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Youth (10-18)</sv:value>
+                </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Jugendliche (10-18)</sv:value>
                 </sv:property>
                 <sv:property sv:name="validation" sv:type="String" sv:multiple="true">
                   <sv:value>number</sv:value>
@@ -10539,6 +10655,9 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
             <sv:property sv:name="title" sv:type="String">
               <sv:value>Trip Options</sv:value>
             </sv:property>
+            <sv:property sv:name="title_de" sv:type="String">
+              <sv:value>Trip Optionen</sv:value>
+            </sv:property>
             <sv:node sv:name="fields">
               <sv:property sv:name="jcr:primaryType" sv:type="Name">
                 <sv:value>mgnl:area</sv:value>
@@ -10590,9 +10709,14 @@ Additional meal notes: ${additionalMealNotes!}</sv:value>
                   <sv:value>admin</sv:value>
                 </sv:property>
                 <sv:property sv:name="labels" sv:type="String">
-                  <sv:value>$39 Airport Pickup
-$99 Carbon Offset
-$299 Support local community social, environmental, small business, emergency relief.</sv:value>
+                  <sv:value>$39 Airport Pickup:pickup
+$99 Carbon Offset:co2
+$299 Support local community social, environmental, small business, emergency relief.:support</sv:value>
+                </sv:property>
+                <sv:property sv:name="labels_de" sv:type="String">
+                  <sv:value>$39 Abholung am Flughafen:pickup
+$99 CO2 Reduktion:co2
+$299 Unterstützung von lokalen, sozialen Einrichtungen, Umwelt, kleinen Unternehmen und Nothilfe.:support</sv:value>
                 </sv:property>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
                   <sv:value>false</sv:value>
@@ -10642,7 +10766,7 @@ $299 Support local community social, environmental, small business, emergency re
                   <sv:value>meal</sv:value>
                 </sv:property>
                 <sv:property sv:name="default" sv:type="String">
-                  <sv:value>No</sv:value>
+                  <sv:value>no</sv:value>
                 </sv:property>
                 <sv:property sv:name="horizontal" sv:type="Boolean">
                   <sv:value>false</sv:value>
@@ -10651,8 +10775,12 @@ $299 Support local community social, environmental, small business, emergency re
                   <sv:value>admin</sv:value>
                 </sv:property>
                 <sv:property sv:name="labels" sv:type="String">
-                  <sv:value>Yes
-No</sv:value>
+                  <sv:value>Yes:yes
+No:no</sv:value>
+                </sv:property>
+                <sv:property sv:name="labels_de" sv:type="String">
+                  <sv:value>Ja:yes
+Nein:no</sv:value>
                 </sv:property>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
                   <sv:value>false</sv:value>
@@ -10687,6 +10815,9 @@ No</sv:value>
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Do you have special meal requirements?</sv:value>
                 </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Haben Sie spezielle Menü-Bedürfnisse?</sv:value>
+                </sv:property>
                 <sv:property sv:name="type" sv:type="String">
                   <sv:value>select</sv:value>
                 </sv:property>
@@ -10700,6 +10831,9 @@ No</sv:value>
                 </sv:property>
                 <sv:property sv:name="buttonText" sv:type="String">
                   <sv:value>Next step</sv:value>
+                </sv:property>
+                <sv:property sv:name="buttonText_de" sv:type="String">
+                  <sv:value>Nächster Schritt</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:createdBy" sv:type="String">
                   <sv:value>admin</sv:value>
