@@ -48,6 +48,9 @@
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Members</sv:value>
   </sv:property>
+  <sv:property sv:name="title_de" sv:type="String">
+    <sv:value>Mitglieder</sv:value>
+  </sv:property>
   <sv:node sv:name="footer">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:area</sv:value>
@@ -608,6 +611,9 @@
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Member Content</sv:value>
+    </sv:property>
+    <sv:property sv:name="title_de" sv:type="String">
+      <sv:value>Inhalt für Mitglieder</sv:value>
     </sv:property>
     <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1679,6 +1685,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Username</sv:value>
                 </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Benutzername</sv:value>
+                </sv:property>
               </sv:node>
               <sv:node sv:name="00">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1740,6 +1749,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 </sv:property>
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Password</sv:value>
+                </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Passwort</sv:value>
                 </sv:property>
                 <sv:property sv:name="validation" sv:type="String" sv:multiple="true">
                   <sv:value>password</sv:value>
@@ -1806,6 +1818,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Password confirmation</sv:value>
                 </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Passwortbestätigung</sv:value>
+                </sv:property>
               </sv:node>
               <sv:node sv:name="04">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1867,6 +1882,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 </sv:property>
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Full name</sv:value>
+                </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Vor- und Nachname</sv:value>
                 </sv:property>
               </sv:node>
               <sv:node sv:name="02">
@@ -1943,6 +1961,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 </sv:property>
                 <sv:property sv:name="buttonText" sv:type="String">
                   <sv:value>Register</sv:value>
+                </sv:property>
+                <sv:property sv:name="buttonText_de" sv:type="String">
+                  <sv:value>Registrieren</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:createdBy" sv:type="String">
                   <sv:value>admin</sv:value>
@@ -2324,6 +2345,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
           <sv:property sv:name="formTitle" sv:type="String">
             <sv:value>Confirm your member registration</sv:value>
           </sv:property>
+          <sv:property sv:name="formTitle_de" sv:type="String">
+            <sv:value>Bestätigen Sie Ihre Benutzerregistrierung</sv:value>
+          </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
@@ -2509,6 +2533,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                   </sv:property>
                   <sv:property sv:name="buttonText" sv:type="String">
                     <sv:value>Confirm registration</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="buttonText_de" sv:type="String">
+                    <sv:value>Registrierung bestätigen</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
@@ -2836,6 +2863,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Profile update</sv:value>
     </sv:property>
+    <sv:property sv:name="title_de" sv:type="String">
+      <sv:value>Profil aktualisieren</sv:value>
+    </sv:property>
     <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
@@ -2894,6 +2924,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
         </sv:property>
         <sv:property sv:name="formTitle" sv:type="String">
           <sv:value>Update your member profile</sv:value>
+        </sv:property>
+        <sv:property sv:name="formTitle_de" sv:type="String">
+          <sv:value>Aktualisierung Ihres Benutzerprofils</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -3094,6 +3127,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Name</sv:value>
                 </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Benutzername</sv:value>
+                </sv:property>
               </sv:node>
               <sv:node sv:name="04">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -3155,6 +3191,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 </sv:property>
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>Full name</sv:value>
+                </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Vor- und Nachname</sv:value>
                 </sv:property>
               </sv:node>
               <sv:node sv:name="02">
@@ -3231,6 +3270,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 </sv:property>
                 <sv:property sv:name="buttonText" sv:type="String">
                   <sv:value>Update profile</sv:value>
+                </sv:property>
+                <sv:property sv:name="buttonText_de" sv:type="String">
+                  <sv:value>Profil aktualisieren</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:createdBy" sv:type="String">
                   <sv:value>admin</sv:value>
@@ -3557,6 +3599,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Forgotten password</sv:value>
     </sv:property>
+    <sv:property sv:name="title_de" sv:type="String">
+      <sv:value>Passwort vergessen</sv:value>
+    </sv:property>
     <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
@@ -3615,6 +3660,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
         </sv:property>
         <sv:property sv:name="formTitle" sv:type="String">
           <sv:value>Recover your password</sv:value>
+        </sv:property>
+        <sv:property sv:name="formTitle_de" sv:type="String">
+          <sv:value>Passwort zurücksetzen</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -3818,6 +3866,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 <sv:property sv:name="title" sv:type="String">
                   <sv:value>User name</sv:value>
                 </sv:property>
+                <sv:property sv:name="title_de" sv:type="String">
+                  <sv:value>Benutzername</sv:value>
+                </sv:property>
               </sv:node>
               <sv:node sv:name="00">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -3890,6 +3941,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                 </sv:property>
                 <sv:property sv:name="buttonText" sv:type="String">
                   <sv:value>Submit</sv:value>
+                </sv:property>
+                <sv:property sv:name="buttonText_de" sv:type="String">
+                  <sv:value>Abschicken</sv:value>
                 </sv:property>
                 <sv:property sv:name="jcr:createdBy" sv:type="String">
                   <sv:value>admin</sv:value>
@@ -4212,6 +4266,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
       <sv:property sv:name="title" sv:type="String">
         <sv:value>Change password</sv:value>
       </sv:property>
+      <sv:property sv:name="title_de" sv:type="String">
+        <sv:value>Passwort ändern</sv:value>
+      </sv:property>
       <sv:node sv:name="main">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
@@ -4270,6 +4327,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
           </sv:property>
           <sv:property sv:name="formTitle" sv:type="String">
             <sv:value>Select your new password</sv:value>
+          </sv:property>
+          <sv:property sv:name="formTitle_de" sv:type="String">
+            <sv:value>Wählen Sie Ihr neues Passwort</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -4476,6 +4536,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>New password</sv:value>
                   </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Neues Passwort</sv:value>
+                  </sv:property>
                   <sv:property sv:name="validation" sv:type="String" sv:multiple="true">
                     <sv:value>password</sv:value>
                   </sv:property>
@@ -4541,6 +4604,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                   <sv:property sv:name="title" sv:type="String">
                     <sv:value>New password confirmation</sv:value>
                   </sv:property>
+                  <sv:property sv:name="title_de" sv:type="String">
+                    <sv:value>Passwortbestätigung</sv:value>
+                  </sv:property>
                 </sv:node>
                 <sv:node sv:name="01">
                   <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -4548,6 +4614,9 @@ Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Ra
                   </sv:property>
                   <sv:property sv:name="jcr:uuid" sv:type="String">
                     <sv:value>291a9583-c7dc-489a-9d99-62fbc47ee03f</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="buttonText_de" sv:type="String">
+                    <sv:value>Abschicken</sv:value>
                   </sv:property>
                   <sv:property sv:name="jcr:createdBy" sv:type="String">
                     <sv:value>admin</sv:value>
