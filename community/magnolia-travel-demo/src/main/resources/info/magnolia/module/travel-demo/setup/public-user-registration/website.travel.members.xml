@@ -305,6 +305,9 @@
       <sv:property sv:name="headlineLevel" sv:type="String">
         <sv:value>small</sv:value>
       </sv:property>
+      <sv:property sv:name="headline_de" sv:type="String">
+        <sv:value>Mitglieder</sv:value>
+      </sv:property>
       <sv:property sv:name="imagePosition" sv:type="String">
         <sv:value>below</sv:value>
       </sv:property>
@@ -459,8 +462,14 @@
           <sv:property sv:name="teaserAbstract" sv:type="String">
             <sv:value>Already a member? Access your exclusive member content.</sv:value>
           </sv:property>
+          <sv:property sv:name="teaserAbstract_de" sv:type="String">
+            <sv:value>Schon Mitglied? Hier geht es zu exklusivem Content für Mitglieder.</sv:value>
+          </sv:property>
           <sv:property sv:name="teaserTitle" sv:type="String">
             <sv:value>Access Member Content</sv:value>
+          </sv:property>
+          <sv:property sv:name="teaserTitle_de" sv:type="String">
+            <sv:value>Zugang zu Content für Mitglieder</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -549,6 +558,9 @@
           </sv:property>
           <sv:property sv:name="teaserAbstract" sv:type="String">
             <sv:value>No membership? No problem. Register for your free membership today.</sv:value>
+          </sv:property>
+          <sv:property sv:name="teaserAbstract_de" sv:type="String">
+            <sv:value>Kein Mitglied? Kein Problem. Registrieren sie sich heute.</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -647,6 +659,9 @@
         <sv:property sv:name="headlineLevel" sv:type="String">
           <sv:value>big</sv:value>
         </sv:property>
+        <sv:property sv:name="headline_de" sv:type="String">
+          <sv:value>Inhalt für Mitglieder</sv:value>
+        </sv:property>
         <sv:property sv:name="imagePosition" sv:type="String">
           <sv:value>below</sv:value>
         </sv:property>
@@ -694,6 +709,9 @@
         <sv:property sv:name="headlineLevel" sv:type="String">
           <sv:value>small</sv:value>
         </sv:property>
+        <sv:property sv:name="headline_de" sv:type="String">
+          <sv:value>Exclusive Nachrichten für Mitglieder</sv:value>
+        </sv:property>
         <sv:property sv:name="image" sv:type="String">
           <sv:value>jcr:24bb3d56-cd92-4f07-ab1e-e7760a117807</sv:value>
         </sv:property>
@@ -731,7 +749,11 @@
           <sv:value>travel-demo:components/textImage</sv:value>
         </sv:property>
         <sv:property sv:name="text" sv:type="String">
-          <sv:value>&lt;p&gt;Stay tuned for a new collection of spanish tours. Members will be elligable for a 10% early booking discount!&lt;/p&gt;
+          <sv:value>&lt;p&gt;Stay tuned for a new collection of spanish tours. Members will be eligible for a 10% early booking discount!&lt;/p&gt;
+</sv:value>
+        </sv:property>
+        <sv:property sv:name="text_de" sv:type="String">
+          <sv:value>&lt;p&gt;Bleiben Sie dran f&amp;uuml;r neue Touren in Spanien. Mitglieder erhalten einen 10% Rabatt f&amp;uuml;r fr&amp;uuml;hzeitiges Buchen!&lt;/p&gt;
 </sv:value>
         </sv:property>
       </sv:node>
@@ -1385,6 +1407,9 @@
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Register</sv:value>
     </sv:property>
+    <sv:property sv:name="title_de" sv:type="String">
+      <sv:value>Registrierung</sv:value>
+    </sv:property>
     <sv:node sv:name="main">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
@@ -1445,8 +1470,15 @@
           <sv:value>Sign up for your free Magnolia Travels membership.
 Members get access to exclusive Magnolia Travels content, tips and discounts.</sv:value>
         </sv:property>
+        <sv:property sv:name="formText_de" sv:type="String">
+          <sv:value>Melden Sie sich für Ihre kostenlose Mitgliedschaft bei Magnolia Travels an.
+Mitglieder erhalten Zugang zu exklusiven Magnolia Travels Inhalten, Tipps und Rabatte.</sv:value>
+        </sv:property>
         <sv:property sv:name="formTitle" sv:type="String">
           <sv:value>Register</sv:value>
+        </sv:property>
+        <sv:property sv:name="formTitle_de" sv:type="String">
+          <sv:value>Registrierung</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -1863,7 +1895,7 @@ Members get access to exclusive Magnolia Travels content, tips and discounts.</s
                   <sv:value>admin</sv:value>
                 </sv:property>
                 <sv:property sv:name="mandatory" sv:type="Boolean">
-                  <sv:value>false</sv:value>
+                  <sv:value>true</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
                   <sv:value>true</sv:value>
