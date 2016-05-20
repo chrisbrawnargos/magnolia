@@ -30,6 +30,10 @@
     [/#list]
 [/#if]
 
+[#if cmsfn.editMode]
+<link rel="stylesheet" type="text/css" href="${ctx.contextPath}/.resources/travel-demo-theme/css/travels-magnolia-author.css" media="all" />
+[/#if]
+
 [#-- jsFiles from the theme are here --]
 [#list theme.jsFiles as jsFile]
 <script src="${jsFile.link}"></script>

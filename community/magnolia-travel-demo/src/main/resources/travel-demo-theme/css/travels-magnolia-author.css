@@ -1,0 +1,12 @@
+/** For nicer editing experience in pages app, make navigation relative **/
+nav {
+    position: relative !important;
+}
+
+.navbar-spacer-children {
+    height: 60px;
+}
+
+.navbar-spacer {
+    height: 0px;
+}
