@@ -9,11 +9,11 @@
   <dependencies>
     <dependency>
       <name>core</name>
-      <version>5.4.3/*</version>
+      <version>5.4.7/*</version>
     </dependency>
     <dependency>
       <name>rendering</name>
-      <version>5.4.1/*</version>
+      <version>5.4.7/*</version>
     </dependency>
     <dependency>
       <name>dam-jcr</name>
