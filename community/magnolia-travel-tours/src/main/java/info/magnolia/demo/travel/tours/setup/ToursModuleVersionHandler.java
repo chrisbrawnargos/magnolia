@@ -121,9 +121,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
                         new CopyNodeTask("Copy categoryOverview template",
                                 "/modules/travel-demo/config/travel/templates/availability/templates/categoryOverview", "/modules/multisite/config/sites/travel/templates/availability/templates/categoryOverview", false),
                         new CopyNodeTask("Copy categoryOverview template",
-                                "/modules/travel-demo/config/travel/templates/availability/templates/destinationCatOverview", "/modules/multisite/config/sites/travel/templates/availability/templates/destinationCatOverview", false),
-                        new CopyNodeTask("Copy tours navigation areas",
-                                "/modules/travel-demo/config/travel/templates/prototype/areas/navigation/areas", "/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/areas", false))));
+                                "/modules/travel-demo/config/travel/templates/availability/templates/destinationCatOverview", "/modules/multisite/config/sites/travel/templates/availability/templates/destinationCatOverview", false))));
         tasks.add(new SetPageAsPublishedTask("/travel", true));
         return tasks;
     }

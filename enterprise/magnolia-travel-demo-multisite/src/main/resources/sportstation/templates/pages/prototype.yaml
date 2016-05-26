@@ -1,0 +1,5 @@
+# We include the default prototype from the travel-demo.
+# We are only including the un-decorated prototype (navigation areas for tour are not included), we do not have to do
+# disable those areas anymore (like it was previously done in config).
+# For the record: the marketing-tags template is not set for this site, as we are decorating the travel prototype only.
+!include /travel-demo/templates/pages/prototype.yaml

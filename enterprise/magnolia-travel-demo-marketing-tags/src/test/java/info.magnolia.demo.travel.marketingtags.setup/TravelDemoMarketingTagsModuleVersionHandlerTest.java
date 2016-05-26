@@ -14,21 +14,18 @@
  */
 package info.magnolia.demo.travel.marketingtags.setup;
 
-import static info.magnolia.test.hamcrest.NodeMatchers.*;
+import static info.magnolia.test.hamcrest.NodeMatchers.hasNode;
 import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertThat;
 
 import info.magnolia.context.MgnlContext;
-import info.magnolia.marketingtags.model.ScriptsAreaModel;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
-import info.magnolia.module.model.Version;
 import info.magnolia.repository.RepositoryConstants;
 
 import java.util.Arrays;
 import java.util.List;
 
-import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 import org.junit.Before;
@@ -75,33 +72,7 @@ public class TravelDemoMarketingTagsModuleVersionHandlerTest extends ModuleVersi
     }
 
     @Test
-    public void areasAreBootstrapedAfterCleanInstallIfMultisiteModuleIsInstalled() throws Exception {
-        // GIVEN
-        setupConfigNode(TravelDemoMarketingTagsModuleVersionHandler.MULTISITE_PROTOTYPE);
-        session.getNode(TravelDemoMarketingTagsModuleVersionHandler.MULTISITE_PROTOTYPE).setProperty("templateScript", TravelDemoMarketingTagsModuleVersionHandler.DEFAULT_MAIN_LOCATION);
-
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
-
-        // THEN
-        assertThatAreasAreBootstraped();
-    }
-
-    @Test
-    public void areasAreBootstrapedAfterUpdateIfMultisiteModuleIsInstalled() throws Exception {
-        // GIVEN
-        setupConfigNode(TravelDemoMarketingTagsModuleVersionHandler.MULTISITE_PROTOTYPE);
-        session.getNode(TravelDemoMarketingTagsModuleVersionHandler.MULTISITE_PROTOTYPE).setProperty("templateScript", TravelDemoMarketingTagsModuleVersionHandler.DEFAULT_MAIN_LOCATION);
-
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
-
-        // THEN
-        assertThatAreasAreBootstraped();
-    }
-
-    @Test
-    public void areasAreNotBootstrapedAfterCleanInstallIfMultisiteModuleIsNotInstalled() throws Exception {
+    public void areasAreNotBootstrappedAfterCleanInstallIfMultisiteModuleIsNotInstalled() throws Exception {
         // GIVEN
 
         // WHEN
@@ -109,13 +80,6 @@ public class TravelDemoMarketingTagsModuleVersionHandlerTest extends ModuleVersi
 
         // THEN
         assertThat(session.getNode("/modules"), not(hasNode("multisite")));
-    }
-
-    private void assertThatAreasAreBootstraped() throws RepositoryException {
-        assertThat(session.getNode("/modules/multisite/config/sites/travel/templates/prototype/areas/bodyBeginScripts"), hasProperty("extends", "../headerScripts"));
-        assertThat(session.getNode("/modules/multisite/config/sites/travel/templates/prototype/areas/bodyEndScripts"), hasProperty("extends", "../headerScripts"));
-        assertThat(session.getNode("/modules/multisite/config/sites/travel/templates/prototype/areas/headerScripts"), hasProperty("modelClass", ScriptsAreaModel.class.getName()));
-        assertThat(session.getNode(TravelDemoMarketingTagsModuleVersionHandler.MULTISITE_PROTOTYPE), hasProperty("templateScript", "/travel-demo-marketing-tags/templates/pages/main-marketing-tags.ftl"));
     }
 
 }
