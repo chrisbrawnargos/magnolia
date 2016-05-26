@@ -59,9 +59,9 @@ public class InstallPurSamplesTask extends ArrayDelegateTask {
 
     protected static final List<String> PROTECTED_PAGES_PATHS = Arrays.asList(
             "/travel/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/" + PROTECTED_PAGES_NAMES.get(0) + "*",
-            "/travel/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/"  + PROTECTED_PAGES_NAMES.get(1) +  "*",
-            "<travel>/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/"  + PROTECTED_PAGES_NAMES.get(0) +  "*",
-            "<travel>/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/"  + PROTECTED_PAGES_NAMES.get(1) + "*"
+            "/travel/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/" + PROTECTED_PAGES_NAMES.get(1) + "*",
+            "<travel>/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/" + PROTECTED_PAGES_NAMES.get(0) + "*",
+            "<travel>/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/" + PROTECTED_PAGES_NAMES.get(1) + "*"
     );
 
     protected static final String PASSWORD_CHANGE_PAGE_PATH = "travel/" + PUR_SAMPLE_ROOT_PAGE_NAME + "/forgotten-password/password-change";
