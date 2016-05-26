@@ -6,12 +6,11 @@
 # templateScript: /travel-demo-marketing-tags/templates/pages/main-marketing-tags.ftl
 
 dialog: mte:pages/pageProperties
-class: info.magnolia.templating.definition.PageTemplateDefinition
+class: info.magnolia.module.site.templates.PrototypeTemplateDefinition
 
 templateScript: /travel-demo/templates/pages/main.ftl
 renderType: site
 type: feature
-visible: false
 
 jsFiles:
   - link: /.resources/travel-demo-theme/libs/twitterbootstrap/js/bootstrap.min.js
