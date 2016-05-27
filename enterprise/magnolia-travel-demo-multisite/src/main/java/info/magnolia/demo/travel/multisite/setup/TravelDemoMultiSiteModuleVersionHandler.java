@@ -21,7 +21,10 @@ import info.magnolia.module.delta.BootstrapConditionally;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
+import info.magnolia.module.delta.RemoveNodeTask;
+import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
+import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +44,10 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
                         new ArrayDelegateTask("", "",
                                 new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/sportstation", "extends", "../default", "../travel"),
                                 mappingAndDomainConfigurationTask)))
+                .addTask(new NodeExistsDelegateTask("Remove any existing prototype from sportstation", "/modules/multisite/config/sites/sportstation/templates/prototype",
+                        new ArrayDelegateTask("",
+                                new RemoveNodeTask("", "/modules/multisite/config/sites/sportstation/templates/prototype"),
+                                new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates", "prototypeId", "sportstation:pages/prototype"))))
         );
     }
 

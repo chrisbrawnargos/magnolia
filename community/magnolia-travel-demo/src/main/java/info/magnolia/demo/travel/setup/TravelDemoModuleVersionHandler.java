@@ -136,8 +136,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 .addTask(new IsModuleInstalledOrRegistered("Copy changes in site definition to multisite if multisite is installed", "multisite",
                         new IsModuleInstalledOrRegistered("", "public-user-registration",
                                 new CopyNodeTask("", "/modules/travel-demo/config/travel/templates/availability/templates/pur", "/modules/multisite/config/sites/travel/templates/availability/templates/pur", false)
-                        )
-                ))
+                        )))
                 .addTask(new PartialBootstrapTask("Bootstrap multiStep form demo.", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", "travel/book-tour"))
         );
     }
