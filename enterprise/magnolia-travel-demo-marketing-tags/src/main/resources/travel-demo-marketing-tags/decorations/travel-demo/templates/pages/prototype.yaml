@@ -1,0 +1,10 @@
+templateScript: /travel-demo-marketing-tags/templates/pages/main-marketing-tags.ftl
+
+areas:
+  headerScripts: &headerScriptsConfig
+    createAreaNode: false
+    modelClass: info.magnolia.marketingtags.model.ScriptsAreaModel
+    templateScript: /templates/scriptsArea.ftl
+    type: noComponent
+  bodyEndScripts: *headerScriptsConfig
+  bodyBeginScripts: *headerScriptsConfig

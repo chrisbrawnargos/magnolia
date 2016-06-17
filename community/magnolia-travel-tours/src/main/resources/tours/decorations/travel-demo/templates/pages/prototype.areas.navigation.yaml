@@ -1,0 +1,13 @@
+areas:
+  tours:
+    createAreaNode: false
+    modelClass: info.magnolia.demo.travel.tours.model.navigation.TourTypesNavigationAreaModel
+    renderType: freemarker
+    templateScript: /tours/templates/pages/areas/categoryArea.ftl
+    type: noComponent
+  destinations:
+    createAreaNode: false
+    modelClass: info.magnolia.demo.travel.tours.model.navigation.DestinationNavigationAreaModel
+    renderType: freemarker
+    templateScript: /tours/templates/pages/areas/categoryArea.ftl
+    type: noComponent

@@ -39,7 +39,8 @@ import static info.magnolia.test.hamcrest.NodeMatchers.*;
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.collection.IsIn.isIn;
 import static org.junit.Assert.*;
 
@@ -52,9 +53,7 @@ import info.magnolia.cms.security.operations.VoterBasedConfiguredAccessDefinitio
 import info.magnolia.cms.util.QueryUtil;
 import info.magnolia.context.MgnlContext;
 import info.magnolia.dam.jcr.DamConstants;
-import info.magnolia.demo.travel.definition.NavigationAreaDefinition;
 import info.magnolia.jcr.util.NodeTypes;
-import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
@@ -135,6 +134,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH);
         setupConfigNode("/modules/ui-admincentral/virtualURIMapping/default");
         setupConfigProperty("/server", "admin", "true");
+        setupConfigNode("/server/filters/securityCallback/clientCallbacks/form");
     }
 
     @Override
@@ -232,23 +232,15 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         // GIVEN
         setupConfigProperty("/server", "admin", "false");
         setupConfigNode("/modules/public-user-registration");
-        setupConfigNode("/modules/multisite/config/sites/travel/templates/prototype/areas/navigation");
         setupConfigNode("/modules/multisite/config/sites/travel/templates/availability/templates");
-
-        Node clientCallbacks = NodeUtil.createPath(session.getRootNode(), "server/filters/securityCallback/clientCallbacks/", NodeTypes.ContentNode.NAME);
-        clientCallbacks.addNode("form", NodeTypes.ContentNode.NAME);
 
         // WHEN
         final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8.1"));
 
         // THEN
-        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
-        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
-        assertThat(session.getNode("/modules/multisite/config/sites/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
-        assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
         assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/availability/templates/pur"));
 
-        this.checkPurSamplesAreInstalled(clientCallbacks);
+        this.checkPurSamplesAreInstalled(session.getNode("/server/filters/securityCallback/clientCallbacks"));
         this.checkIfEverythingIsActivated();
         this.assertNoMessages(ctx);
     }
@@ -261,23 +253,8 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8.1"));
 
         // THEN
-        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
-        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
         assertThat(website.getRootNode(), hasNode("travel/book-tour"));
         this.checkIfEverythingIsActivated();
-        this.assertNoMessages(ctx);
-    }
-
-    @Test
-    public void testUpgradeFrom010() throws Exception {
-        // GIVEN
-
-        // WHEN
-        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.10"));
-
-        // THEN
-        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation"), not(hasProperty("i18nBasename")));
-        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/htmlHeader"), not(hasProperty("i18nBasename")));
         this.assertNoMessages(ctx);
     }
 
@@ -287,19 +264,14 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         setupConfigNode("/modules/public-user-registration");
         setupConfigNode("/modules/multisite/config/sites/fallback");
         setupConfigProperty("/server", "admin", "false");
-        Node clientCallbacks = NodeUtil.createPath(session.getRootNode(), "server/filters/securityCallback/clientCallbacks/", NodeTypes.ContentNode.NAME);
-        clientCallbacks.addNode("form", NodeTypes.ContentNode.NAME);
 
         // WHEN
         final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
 
         // THEN
-        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/"), hasProperty("class", NavigationAreaDefinition.class.getName()));
-        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/"));
-        assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
         assertThat(session.getRootNode(), hasNode("modules/multisite/config/sites/travel/templates/availability/templates/pur"));
 
-        this.checkPurSamplesAreInstalled(clientCallbacks);
+        this.checkPurSamplesAreInstalled(session.getNode("/server/filters/securityCallback/clientCallbacks"));
         this.checkIfEverythingIsActivated();
         this.assertNoMessages(ctx);
     }
@@ -325,9 +297,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
                 containsString(InstallPurSamplesTask.PROTECTED_PAGES_NAMES.get(1))
         ));
 
-        assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/public-user-registration"));
         assertThat(session.getRootNode(), hasNode("modules/travel-demo/config/travel/templates/availability/templates/pur"));
-        assertThat(session.getNode("/modules/travel-demo/config/travel/templates/prototype/areas/navigation/userLinksResolvers/").getPrimaryNodeType().getName(), equalTo(NodeTypes.ContentNode.NAME));
         assertThat(session.getNode("/modules/public-user-registration/config/configurations/travel/passwordRetrievalStrategy"), hasProperty("targetPagePath", "/" + InstallPurSamplesTask.PASSWORD_CHANGE_PAGE_PATH));
         assertThat(session.getNode("/modules/public-user-registration/config/configurations/travel/defaultGroups"), hasProperty("pur", "travel-demo-pur"));
 

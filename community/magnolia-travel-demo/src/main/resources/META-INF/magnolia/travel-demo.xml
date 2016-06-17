@@ -52,7 +52,6 @@
     <dependency>
       <name>public-user-registration</name>
       <version>2.5.1/*</version>
-      <optional>true</optional>
     </dependency>
 
     <!-- travel-demo-pur group contains roles from these modules:  -->
