@@ -40,6 +40,8 @@
 
   <dependencyManagement>
     <dependencies>
+
+      <!-- Import dependency management from main project -->
       <dependency>
         <groupId>info.magnolia</groupId>
         <artifactId>magnolia-project</artifactId>
