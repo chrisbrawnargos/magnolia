@@ -22,7 +22,8 @@ import info.magnolia.module.delta.AddPermissionTask;
 import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsInstallSamplesTask;
-import info.magnolia.module.delta.OrderNodeToFirstPositionTask;
+import info.magnolia.module.delta.NodeExistsDelegateTask;
+import info.magnolia.module.delta.RemoveNodeTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.personalization.variant.VariantManager;
 import info.magnolia.repository.RepositoryConstants;
@@ -36,16 +37,18 @@ import javax.jcr.ImportUUIDBehavior;
  * {@link DefaultModuleVersionHandler} for travel-demo personalization module.
  */
 public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModuleVersionHandler {
-
-    private final Task orderVariantNodeToFirstPosition = new OrderNodeToFirstPositionTask("Order travel page variants to first position.", "", RepositoryConstants.WEBSITE, "travel/variants");
+    // Add variant mixin to travel/contact page - so that adminCentral gives it the proper behaviour.
+    private static final Task addMixinToTravelContact = new AddMixinTask("/travel/contact", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN);
 
     public TravelDemoPersonalizationModuleVersionHandler() {
         register(DeltaBuilder.update("0.14", "")
-                .addTask(new IsInstallSamplesTask("Re-Bootstrap website variants for travel pages", "Re-bootstrap website variants to account for all changes",
-                        new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.variants.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
+                .addTask(new NodeExistsDelegateTask("Remove variants from home page", "Removes variants from home page. Variants have now moved to contacts page",  RepositoryConstants.WEBSITE, "/travel/variants", new RemoveNodeTask("", "",  RepositoryConstants.WEBSITE, "/travel/variants")))
+                .addTask(new IsInstallSamplesTask("Re-Bootstrap website variants for contact pages", "Re-bootstrap website variants to account for all changes",
+                        new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.contact.variants.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
                 .addTask(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true))
+                .addTask(new RemoveMixinTask("/travel", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN))
 
-                .addTask(orderVariantNodeToFirstPosition)
+                .addTask(addMixinToTravelContact)
                 .addTask(new SetPageAsPublishedTask("/travel", true))
         );
     }
@@ -56,9 +59,8 @@ public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModule
 
         tasks.addAll(super.getExtraInstallTasks(installContext));
 
-        // Add variant mixin to travel page - so that adminCentral gives it the proper behaviour.
-        tasks.add(new AddMixinTask("/travel", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN));
-        tasks.add(orderVariantNodeToFirstPosition);
+        // Add variant mixin to travel/contact page - so that adminCentral gives it the proper behaviour.
+        tasks.add(addMixinToTravelContact);
         tasks.add(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true));
         tasks.add(new SetPageAsPublishedTask("/travel", true));
 
