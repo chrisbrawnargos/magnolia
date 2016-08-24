@@ -106,7 +106,7 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     }
 
     @Test
-    public void testUpdateTo08NewPermissionsForTravelDemoAdminCentral() throws Exception {
+    public void updateFrom07AddsNewPermissionsForTravelDemoAdminCentral() throws Exception {
         // GIVEN
 
         // WHEN
@@ -117,7 +117,7 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     }
 
     @Test
-    public void cleanInstallNewPermissionsForTravelDemoAdminCentral() throws Exception {
+    public void cleanInstallAddsNewPermissionsForTravelDemoAdminCentral() throws Exception {
         // GIVEN
         setupNode(RepositoryConstants.WEBSITE, "/travel/contact/variants");
 
@@ -162,7 +162,7 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     }
 
     @Test
-    public void testCleanInstallSetsPagesAsPublished() throws Exception {
+    public void cleanInstallSetsPagesAsPublished() throws Exception {
         // GIVEN
         Node variants = NodeUtil.createPath(websiteSession.getRootNode(), "travel/contact/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
         PropertyUtil.setProperty(websiteSession.getNode("/travel"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
