@@ -12,6 +12,10 @@
   <name>Magnolia Travel Demo Multisite Module</name>
   <description>Augments the Travel Demo with an example of the Multisite feature.</description>
 
+  <properties>
+    <cloverCoverageThreshold>98</cloverCoverageThreshold>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>info.magnolia</groupId>

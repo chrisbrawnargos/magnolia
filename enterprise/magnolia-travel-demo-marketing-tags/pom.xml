@@ -12,6 +12,10 @@
   <name>Magnolia Travel Demo Marketing Tags Module</name>
   <description>Augments the Travel Demo with an example of the marketing tags feature.</description>
 
+  <properties>
+    <cloverCoverageThreshold>98</cloverCoverageThreshold>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>info.magnolia</groupId>
