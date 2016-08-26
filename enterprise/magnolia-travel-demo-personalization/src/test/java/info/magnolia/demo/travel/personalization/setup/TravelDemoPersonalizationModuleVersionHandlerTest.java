@@ -14,6 +14,7 @@
  */
 package info.magnolia.demo.travel.personalization.setup;
 
+import static info.magnolia.demo.travel.personalization.setup.RemoveMixinTaskTest.hasMixin;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
@@ -31,6 +32,7 @@ import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
 import info.magnolia.module.model.Version;
 import info.magnolia.objectfactory.Components;
+import info.magnolia.personalization.variant.VariantManager;
 import info.magnolia.repository.RepositoryConstants;
 
 import java.util.Arrays;
@@ -104,7 +106,7 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     }
 
     @Test
-    public void testUpdateTo08NewPermissionsForTravelDemoAdminCentral() throws Exception {
+    public void updateFrom07AddsNewPermissionsForTravelDemoAdminCentral() throws Exception {
         // GIVEN
 
         // WHEN
@@ -115,9 +117,9 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     }
 
     @Test
-    public void testCleanInstallNewPermissionsForTravelDemoAdminCentral() throws Exception {
+    public void cleanInstallAddsNewPermissionsForTravelDemoAdminCentral() throws Exception {
         // GIVEN
-        setupNode(RepositoryConstants.WEBSITE, "/travel/variants");
+        setupNode(RepositoryConstants.WEBSITE, "/travel/contact/variants");
 
         // WHEN
         executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
@@ -127,30 +129,44 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
     }
 
     @Test
-    public void testUpdateTo08SetsPagesAsPublished() throws Exception {
+    public void updateFrom013AddsVariantMixinToTravelContactPage() throws Exception {
         // GIVEN
-        Node travel = websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
-        Node variants = websiteSession.getRootNode().addNode("travel/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
-        PropertyUtil.setProperty(travel, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        NodeUtil.createPath(websiteSession.getRootNode(), "travel/contact/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.13"));
+
+        // THEN
+        boolean hasMixin = hasMixin(websiteSession.getNode("/travel/contact"), VariantManager.HAS_VARIANT_MIXIN);
+        assertThat("We expect that /travel/contact node has mgnl:hasVariants mixin", hasMixin, is(true));
+    }
+
+
+    @Test
+    public void updateFrom013SetsPagesAsPublished() throws Exception {
+        // GIVEN
+        Node variants = NodeUtil.createPath(websiteSession.getRootNode(), "travel/contact/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
+        PropertyUtil.setProperty(websiteSession.getNode("/travel"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        PropertyUtil.setProperty(websiteSession.getNode("/travel/contact"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
         PropertyUtil.setProperty(variants, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
 
         // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.13"));
 
         // THEN
         int activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel"));
         assertThat("We expect that /travel node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
 
-        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/variants"));
+        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/contact/variants"));
         assertThat("We expect that /travel/variants node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
     }
 
     @Test
-    public void testCleanInstallSetsPagesAsPublished() throws Exception {
+    public void cleanInstallSetsPagesAsPublished() throws Exception {
         // GIVEN
-        Node travel = websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
-        Node variants = websiteSession.getRootNode().addNode("travel/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
-        PropertyUtil.setProperty(travel, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        Node variants = NodeUtil.createPath(websiteSession.getRootNode(), "travel/contact/variants", NodeTypes.Page.NAME); // can't use mgnl:variants here as extra node types haven't been registered yet. See MAGNOLIA-6423
+        PropertyUtil.setProperty(websiteSession.getNode("/travel"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
+        PropertyUtil.setProperty(websiteSession.getNode("/travel/contact"), Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
         PropertyUtil.setProperty(variants, Activatable.ACTIVATION_STATUS, Long.valueOf(Activatable.ACTIVATION_STATUS_MODIFIED));
 
         // WHEN
@@ -160,27 +176,27 @@ public class TravelDemoPersonalizationModuleVersionHandlerTest extends ModuleVer
         int activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel"));
         assertThat("We expect that /travel node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
 
-        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/variants"));
+        activationStatus = Activatable.getActivationStatus(websiteSession.getNode("/travel/contact/variants"));
         assertThat("We expect that /travel/variants node is activated", activationStatus, equalTo(Activatable.ACTIVATION_STATUS_ACTIVATED));
     }
 
     @Test
-    public void updateFrom08AlsoReordersVariantsAtTheTop() throws Exception {
+    public void updateFrom013RemovesTravelVariantsAndInstallsContactVariants() throws Exception {
         // GIVEN
         websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
         websiteSession.getRootNode().addNode("travel/variants", NodeTypes.Page.NAME);
-        websiteSession.getRootNode().addNode("travel/about", NodeTypes.Page.NAME);
 
         // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8"));
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.13"));
 
         // THEN
-        final Node travelPages = websiteSession.getNode("/travel");
-        final List<Node> pageNames = Lists.newArrayList(NodeUtil.getNodes(travelPages));
-        assertThat(Collections2.transform(pageNames, new ToNodeName()), contains(
-                "variants",
-                "about"
-        ));
+        Node travelPages = websiteSession.getNode("/travel");
+        List<Node> pageNames = Lists.newArrayList(NodeUtil.getNodes(travelPages));
+        assertThat(Collections2.transform(pageNames, new ToNodeName()), not(contains("variants")));
+
+        travelPages = websiteSession.getNode("/travel/contact");
+        pageNames = Lists.newArrayList(NodeUtil.getNodes(travelPages));
+        assertThat(Collections2.transform(pageNames, new ToNodeName()), contains("variants"));
     }
 
     /**
