@@ -32,6 +32,7 @@
         <module>enterprise/magnolia-travel-demo-marketing-tags</module>
         <module>enterprise/magnolia-travel-demo-personalization</module>
         <module>enterprise/magnolia-travel-demo-multisite</module>
+        <module>enterprise/magnolia-travel-demo-component-personalization</module>
       </modules>
     </profile>
     <profile>
@@ -49,6 +50,7 @@
         <module>enterprise/magnolia-travel-demo-marketing-tags</module>
         <module>enterprise/magnolia-travel-demo-personalization</module>
         <module>enterprise/magnolia-travel-demo-multisite</module>
+        <module>enterprise/magnolia-travel-demo-component-personalization</module>
       </modules>
     </profile>
   </profiles>
