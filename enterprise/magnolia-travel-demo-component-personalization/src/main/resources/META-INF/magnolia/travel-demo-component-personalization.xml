@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE module SYSTEM "module.dtd" >
 <module>
-  <name>travel-demo-personalization</name>
+  <name>travel-demo-component-personalization</name>
   <displayName>${project.name}</displayName>
   <description>${project.description}</description>
-  <versionHandler>info.magnolia.demo.travel.personalization.setup.TravelDemoPersonalizationModuleVersionHandler</versionHandler>
+  <versionHandler>info.magnolia.demo.travel.personalization.setup.TravelDemoComponentPersonalizationModuleVersionHandler</versionHandler>
   <version>${project.version}</version>
 
   <dependencies>
@@ -14,6 +14,10 @@
     </dependency>
     <dependency>
       <name>personalization-integration</name>
+      <version>1.2/*</version>
+    </dependency>
+    <dependency>
+      <name>personalization-traits</name>
       <version>1.2/*</version>
     </dependency>
   </dependencies>

@@ -1,0 +1,8 @@
+[#function detectCookie cookieName]
+    [#list ctx.request.cookies as cookie]
+        [#if cookie.name == cookieName]
+            [#return cookie.value]
+        [/#if]
+    [/#list]
+    [#return ""]
+[/#function]

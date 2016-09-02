@@ -73,4 +73,7 @@ public class TourListModel<RD extends TourCategoryTemplateDefinition> extends Re
         return tourServices.getToursByCategory(definition.getCategory(), identifier);
     }
 
+    protected TourServices getTourServices() {
+        return tourServices;
+    }
 }

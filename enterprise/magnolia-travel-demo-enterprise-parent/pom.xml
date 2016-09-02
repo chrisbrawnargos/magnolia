@@ -71,8 +71,13 @@
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>info.magnolia.demo</groupId>
+        <groupId>info.magnolia.eedemo</groupId>
         <artifactId>magnolia-travel-demo-multisite</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.eedemo</groupId>
+        <artifactId>magnolia-travel-demo-component-personalization</artifactId>
         <version>${project.version}</version>
       </dependency>
 
