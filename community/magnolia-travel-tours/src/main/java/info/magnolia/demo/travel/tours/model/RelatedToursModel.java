@@ -38,7 +38,6 @@ import info.magnolia.demo.travel.tours.service.Category;
 import info.magnolia.demo.travel.tours.service.Tour;
 import info.magnolia.demo.travel.tours.service.TourServices;
 import info.magnolia.rendering.model.RenderingModel;
-import info.magnolia.rendering.model.RenderingModelImpl;
 
 import java.util.List;
 
@@ -58,24 +57,17 @@ import com.google.common.collect.Lists;
  *
  * @param <RD> The {@link TourCategoryTemplateDefinition} of the model.
  */
-public class RelatedToursModel<RD extends TourCategoryTemplateDefinition> extends RenderingModelImpl<RD> {
+public class RelatedToursModel<RD extends TourCategoryTemplateDefinition> extends TourListModel<RD> {
 
     private static final Logger log = LoggerFactory.getLogger(RelatedToursModel.class);
 
-    private final TourServices tourServices;
-
     @Inject
     public RelatedToursModel(Node content, RD definition, RenderingModel<?> parent, TourServices tourServices) {
-        super(content, definition, parent);
-        this.tourServices = tourServices;
-    }
-
-    public Category getCategoryByUrl() {
-        return tourServices.getCategoryByUrl();
+        super(content, definition, parent, tourServices);
     }
 
     public List<Category> getRelatedCategoriesByParameter() {
-        return tourServices.getRelatedCategoriesByParameter();
+        return getTourServices().getRelatedCategoriesByParameter();
     }
 
     /**
@@ -85,8 +77,8 @@ public class RelatedToursModel<RD extends TourCategoryTemplateDefinition> extend
         List<Tour> relatedTours = Lists.newArrayList();
 
         try {
-            final String currentIdentifier = tourServices.getTourNodeByParameter().getIdentifier();
-            List<Tour> tours = tourServices.getToursByCategory(definition.getCategory(), identifier, true);
+            final String currentIdentifier = getTourServices().getTourNodeByParameter().getIdentifier();
+            List<Tour> tours = getTourServices().getToursByCategory(definition.getCategory(), identifier, true);
 
             relatedTours = Lists.newArrayList(Iterables.filter(tours, new Predicate<Tour>() {
                 @Override
