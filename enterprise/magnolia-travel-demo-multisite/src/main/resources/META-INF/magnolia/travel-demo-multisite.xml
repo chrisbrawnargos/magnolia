@@ -2,7 +2,8 @@
 <!DOCTYPE module SYSTEM "module.dtd" >
 <module>
   <name>travel-demo-multisite</name>
-  <displayName>Magnolia Travel Demo Module - Multisite</displayName>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
   <versionHandler>info.magnolia.demo.travel.multisite.setup.TravelDemoMultiSiteModuleVersionHandler</versionHandler>
   <version>${project.version}</version>
 

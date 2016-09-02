@@ -2,7 +2,8 @@
 <!DOCTYPE module SYSTEM "module.dtd" >
 <module>
   <name>travel-demo-personalization</name>
-  <displayName>Magnolia Travel Demo Personalization Module</displayName>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
   <versionHandler>info.magnolia.demo.travel.personalization.setup.TravelDemoPersonalizationModuleVersionHandler</versionHandler>
   <version>${project.version}</version>
 
