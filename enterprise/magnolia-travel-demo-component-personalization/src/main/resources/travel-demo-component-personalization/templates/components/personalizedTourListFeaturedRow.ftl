@@ -4,7 +4,8 @@
 
 [#assign cookie = detectCookie("tourType")! /]
 
-[#if cookie?has_content]
+[#assign page = cmsfn.page(content)]
+[#if cookie?has_content && cmsfn.hasTemplateOfType(page, "home")]
     [#assign category = model.getCategoryByName(cookie)!]
 [#else]
     [#assign category = model.getCategoryByUrl()!]
