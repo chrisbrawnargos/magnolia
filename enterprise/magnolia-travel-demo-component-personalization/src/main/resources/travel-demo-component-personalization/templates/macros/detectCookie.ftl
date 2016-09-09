@@ -1,5 +1,6 @@
 [#function detectCookie cookieName]
-    [#if ctx?? && ctx.request?? && ctx.request?has_content]
+     [!-- ugly yet apparently necessary check that all possible objects are not null, nor missing. As of Freemarker 2.3.25 this does no longer seems to be the case --]
+     [#if ctx?? && ctx.request?? && ctx.request?has_content && ctx.request.cookies?has_content]
         [#list ctx.request.cookies as cookie]
             [#if cookie.name == cookieName]
                 [#return cookie.value]
