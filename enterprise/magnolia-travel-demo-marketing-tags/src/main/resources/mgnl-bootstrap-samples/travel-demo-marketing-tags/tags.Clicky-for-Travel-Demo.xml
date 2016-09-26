@@ -10,8 +10,7 @@
     <sv:value>false</sv:value>
   </sv:property>
   <sv:property sv:name="content" sv:type="String">
-    <sv:value>&lt;a title=&quot;Real Time Web Analytics&quot; href=&quot;http://clicky.com/100843699&quot;&gt;&lt;img alt=&quot;Real Time Web Analytics&quot; src=&quot;//static.getclicky.com/media/links/badge.gif&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
-&lt;script src=&quot;//static.getclicky.com/js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    <sv:value>&lt;script src=&quot;//static.getclicky.com/js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;try{ clicky.init(100843699); }catch(e){}&lt;/script&gt;
 &lt;noscript&gt;&lt;p&gt;&lt;img alt=&quot;Clicky&quot; width=&quot;1&quot; height=&quot;1&quot; src=&quot;//in.getclicky.com/100843699ns.gif&quot; /&gt;&lt;/p&gt;&lt;/noscript&gt;</sv:value>
   </sv:property>
