@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-last-links">
-                        &copy; 2015 Magnolia Travels, Inc. 
+                        &copy; 2015-${.now?string['yyyy']} Magnolia Travels, Inc.
                         [@cms.area name="lastLinks"/]
                     </div>
                 </div>
