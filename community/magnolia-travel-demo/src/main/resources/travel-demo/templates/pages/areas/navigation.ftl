@@ -1,17 +1,14 @@
 [#-------------- ASSIGNMENTS --------------]
 [#include "/travel-demo/templates/macros/searchForm.ftl"]
 [#include "/travel-demo/templates/macros/userLinks.ftl"]
+[#include "/travel-demo/templates/macros/navigation.ftl"]
 
-[#assign homeLink = cmsfn.link(cmsfn.siteRoot(content))!"/" /]
-[#assign pages = model.rootPages! /]
-[#assign childPages = model.childPages! /]
+[#assign siteRoot = cmsfn.siteRoot(content)]
+[#assign homeLink = cmsfn.link(siteRoot)!"/" /]
 
 [#assign spaceClass = "navbar-spacer" /]
-[#if childPages?has_content]
-    [#assign spaceClass = "navbar-spacer-children"]
-[/#if]
 
-[#assign searchProperty = cmsfn.siteRoot(content).searchResultPage! /]
+[#assign searchProperty = siteRoot.searchResultPage! /]
 [#if searchProperty?has_content]
     [#assign searchResultPage = cmsfn.link(cmsfn.contentById(searchProperty)) /]
 [/#if]
@@ -61,16 +58,7 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <div class="navbar-right">
-
-                <ul class="nav navbar-nav">
-                [@cms.area name="tours" /]
-                [@cms.area name="destinations" /]
-
-                [#list pages as page]
-                    <li class="${page.cssClass!}"><a href="${page.link!}">${page.name!}</a></li>
-                [/#list]
-                </ul>
-
+                [@navigation navParentItem=siteRoot navClass="nav navbar-nav" /]
                 [#-- Only when the search result page was set should the form be displayed --]
                 [#if searchResultPage?exists]
                     [@searchForm action=searchResultPage! inputName="queryStr" placeholder=i18n['search.placeholder'] /]
@@ -79,14 +67,13 @@
             </div>
         </div>
 
-        [#if childPages?has_content]
+        [#assign subnavigationRootPage = navfn.ancestorPageAtLevel(content, 2)!]
+        [#if subnavigationRootPage?has_content && navfn.navItems(subnavigationRootPage)?size > 0]
             <div id="navbar-secondary" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    [#list childPages as childPage]
-                        <li class="${childPage.cssClass!}"><a href="${childPage.link}">${childPage.name}</a></li>
-                    [/#list]
-                </ul>
+                [@navigation navParentItem=subnavigationRootPage navClass="nav navbar-nav" /]
             </div>
+
+            [#assign spaceClass = "navbar-spacer-children" /]
         [/#if]
 
     </div>

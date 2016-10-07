@@ -10,7 +10,7 @@
     <sv:value>05872876-073e-40a3-a3c5-0d0a18c1d43d</sv:value>
   </sv:property>
   <sv:property sv:name="hideInNav" sv:type="String">
-    <sv:value>true</sv:value>
+    <sv:value>false</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
     <sv:value>admin</sv:value>
