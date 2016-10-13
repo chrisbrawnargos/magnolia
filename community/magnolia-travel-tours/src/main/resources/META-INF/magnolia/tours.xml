@@ -54,7 +54,7 @@
     </dependency>
     <dependency>
       <name>mtk</name>
-      <version>0.10/*</version>
+      <version>1.0/*</version>
     </dependency>
   </dependencies>
 
