@@ -51,6 +51,7 @@ import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.PartialBootstrapTask;
 import info.magnolia.module.delta.PropertyExistsDelegateTask;
 import info.magnolia.module.delta.PropertyValueDelegateTask;
+import info.magnolia.module.delta.RemoveNodeTask;
 import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
 import info.magnolia.module.site.setup.DefaultSiteExistsDelegateTask;
@@ -105,7 +106,9 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                 // "move" an existing site definition (which might actually exist from a previous version) in the site module
                 .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REMOVE_EXISTING))
                 .addTask(new BootstrapSingleModuleResource("config.modules.travel-demo.config.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_THROW))
-                .addTask(new BootstrapSingleModuleResource("config.modules.site.config.themes.travel-demo-theme.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
+
+                .addTask(new NodeExistsDelegateTask("Remove travel-demo-theme configuration from JCR", "/modules/site/config/themes/travel-demo-theme",
+                        new RemoveNodeTask("", "/modules/site/config/themes/travel-demo-theme")))
 
                 .addTask(setupTravelSiteAsActiveSite)
                 .addTask(setDefaultUriOnPublicInstance)
@@ -126,10 +129,6 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_EDITOR_ROLE),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, SetupDemoRolesAndGroupsTask.PAGES_PERMISSIONS_ROLES, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE, SetupDemoRolesAndGroupsTask.TRAVEL_DEMO_PUBLISHER_ROLE))))
                 .addTask(setupAccessPermissionsForDemoUsers)
-
-                .addTask(new NodeExistsDelegateTask("Serve add2any js over https", "Serves add2any javascript over https to prevent mixed content issue in pages served over https.",
-                        RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany",
-                        new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "https://static.addtoany.com/menu/page.js")))
 
                 .addTask(setupTargetAppGroupAccessPermissions)
 
