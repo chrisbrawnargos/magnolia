@@ -1,0 +1,3 @@
+# Due to current lack of support for using 'extends' with YAML we include here the whole travel-demo-theme and use decoration at
+# travel-demo-multisite/decorations/travel-demo/themes/sportstation-theme.cssFiles.yaml to extend only the bit we need
+!include /travel-demo/themes/travel-demo-theme.yaml

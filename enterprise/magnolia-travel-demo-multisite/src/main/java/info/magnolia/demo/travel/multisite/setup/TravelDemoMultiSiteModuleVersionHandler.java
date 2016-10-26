@@ -45,9 +45,11 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
                                 new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/sportstation", "extends", "../default", "../travel"),
                                 mappingAndDomainConfigurationTask)))
                 .addTask(new NodeExistsDelegateTask("Remove any existing prototype from sportstation", "/modules/multisite/config/sites/sportstation/templates/prototype",
-                        new ArrayDelegateTask("",
-                                new RemoveNodeTask("", "/modules/multisite/config/sites/sportstation/templates/prototype"),
-                                new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates", "prototypeId", "sportstation:pages/prototype"))))
+                                new RemoveNodeTask("", "/modules/multisite/config/sites/sportstation/templates/prototype")))
+                .addTask(new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates", "prototypeId", "travel-demo-multisite:pages/prototype"))
+
+                .addTask(new NodeExistsDelegateTask("Remove sportstation-theme configuration from JCR", "/modules/site/config/themes/sportstation-theme",
+                        new RemoveNodeTask("", "/modules/site/config/themes/sportstation-theme")))
         );
     }
 

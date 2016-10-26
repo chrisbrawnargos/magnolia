@@ -14,9 +14,12 @@
  */
 package info.magnolia.demo.travel.multisite.setup;
 
-import static org.junit.Assert.assertTrue;
+import static info.magnolia.test.hamcrest.NodeMatchers.*;
+import static org.hamcrest.CoreMatchers.not;
+import static org.junit.Assert.*;
 
 import info.magnolia.context.MgnlContext;
+import info.magnolia.module.InstallContext;
 import info.magnolia.module.ModuleVersionHandler;
 import info.magnolia.module.ModuleVersionHandlerTestCase;
 import info.magnolia.module.model.Version;
@@ -56,7 +59,7 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
     @Before
     public void setUp() throws Exception {
         super.setUp();
-
+        setupConfigNode("/modules/multisite/config/sites/sportstation/templates");
         session = MgnlContext.getJCRSession(RepositoryConstants.CONFIG);
     }
 
@@ -100,6 +103,32 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
         // THEN
         assertTrue(session.nodeExists("/modules/multisite/config/sites/travel/domains"));
         assertTrue(session.nodeExists("/modules/multisite/config/sites/travel/mappings"));
+    }
+
+    @Test
+    public void upgradeFrom014RemovesSportstationThemeFromJCR() throws Exception {
+        // GIVEN
+        setupConfigNode("/modules/site/config/themes/sportstation-theme");
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.14"));
+
+        // THEN
+        assertThat(session.getRootNode(), not(hasNode("modules/site/config/themes/sportstation-theme")));
+        this.assertNoMessages(ctx);
+    }
+
+    @Test
+    public void upgradeFrom014RenamesMultisiteTemplatePrototypeId() throws Exception {
+        // GIVEN
+        setupConfigProperty("/modules/multisite/config/sites/sportstation/templates", "prototypeId", "whatevah");
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.14"));
+
+        // THEN
+        assertThat(session.getNode("/modules/multisite/config/sites/sportstation/templates"), hasProperty("prototypeId", "travel-demo-multisite:pages/prototype"));
+        this.assertNoMessages(ctx);
     }
 
 }
