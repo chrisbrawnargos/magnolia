@@ -48,6 +48,8 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
                         new ArrayDelegateTask("",
                                 new RemoveNodeTask("", "/modules/multisite/config/sites/sportstation/templates/prototype"),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates", "prototypeId", "sportstation:pages/prototype"))))
+                .addTask(new NodeExistsDelegateTask("Remove sportstation-theme configuration from JCR", "/modules/site/config/themes/sportstation-theme",
+                        new RemoveNodeTask("", "/modules/site/config/themes/sportstation-theme")))
         );
     }
 
