@@ -137,7 +137,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="prototypeId" sv:type="String">
-      <sv:value>travel-demo-multisite:pages/prototype</sv:value>
+      <sv:value>sportstation:pages/prototype</sv:value>
     </sv:property>
     <sv:node sv:name="availability">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
