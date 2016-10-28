@@ -1,0 +1,4 @@
+sportstation:
+  addFingerPrint: true
+  link: /.resources/sportstation-theme/css/sportstation.css
+  media: all

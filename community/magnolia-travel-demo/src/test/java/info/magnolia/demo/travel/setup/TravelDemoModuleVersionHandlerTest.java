@@ -37,8 +37,7 @@ import static info.magnolia.demo.travel.setup.SetupDemoRolesAndGroupsTask.*;
 import static info.magnolia.demo.travel.setup.SetupRoleBasedAccessPermissionsTask.*;
 import static info.magnolia.test.hamcrest.NodeMatchers.*;
 import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.collection.IsIn.isIn;
@@ -133,6 +132,7 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_MANAGE_NODE_PATH);
         setupConfigNode(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH);
         setupConfigNode("/modules/ui-admincentral/virtualURIMapping/default");
+        setupConfigNode("/modules/site/config");
         setupConfigProperty("/server", "admin", "true");
         setupConfigNode("/server/filters/securityCallback/clientCallbacks/form");
     }
@@ -215,17 +215,6 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
         assertThatAccessPermissionsAreConfigured(UIADMINCENTRAL_CONFIG_APPLAUNCH_GROUPS_TARGET_NODE_PATH, TRAVEL_DEMO_PUBLISHER_ROLE, true);
     }
 
-    @Test
-    public void updateFrom08ServesAdd2AnyExternalJsOverHttps() throws Exception {
-        // GIVEN
-        setupConfigProperty("/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany", "link", "http://static.addtoany.com/menu/page.js");
-
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.8"));
-
-        // THEN
-        assertThat(session.getNode("/modules/site/config/themes/travel-demo-theme/jsFiles/addtoany"), hasProperty("link", "https://static.addtoany.com/menu/page.js"));
-    }
 
     @Test
     public void testUpgradeFrom081InstallsPurSamples() throws Exception {
@@ -254,6 +243,20 @@ public class TravelDemoModuleVersionHandlerTest extends ModuleVersionHandlerTest
 
         // THEN
         assertThat(website.getRootNode(), hasNode("travel/book-tour"));
+        this.checkIfEverythingIsActivated();
+        this.assertNoMessages(ctx);
+    }
+
+    @Test
+    public void upgradeFrom014RemovesTravelDemoThemeFromJCR() throws Exception {
+        // GIVEN
+        setupConfigNode("/modules/site/config/themes/travel-demo-theme");
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.14"));
+
+        // THEN
+        assertThat(session.getRootNode(), not(hasNode("modules/site/config/themes/travel-demo-theme")));
         this.checkIfEverythingIsActivated();
         this.assertNoMessages(ctx);
     }
