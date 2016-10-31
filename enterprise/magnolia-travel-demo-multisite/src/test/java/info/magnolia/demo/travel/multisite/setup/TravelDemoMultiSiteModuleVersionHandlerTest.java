@@ -124,11 +124,13 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
     public void updateFrom10AddsExtendsPropertyToSportStationWebsite() throws Exception {
         // GIVEN
         setupConfigNode("/modules/multisite/config/sites/sportstation/domains/");
+        setupConfigNode("/modules/multisite/config/sites/sportstation/mappings/");
 
         // WHEN
         final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("1.0"));
 
         // THEN
         assertThat(session.getNode("/modules/multisite/config/sites/sportstation/domains/"), hasProperty("extends"));
+        assertThat(session.getNode("/modules/multisite/config/sites/sportstation/mappings/"), hasProperty("extends"));
     }
 }
