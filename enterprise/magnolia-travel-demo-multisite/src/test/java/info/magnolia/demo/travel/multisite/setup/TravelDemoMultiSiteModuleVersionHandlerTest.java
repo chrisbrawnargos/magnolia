@@ -127,7 +127,7 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
         setupConfigNode("/modules/multisite/config/sites/sportstation/mappings/");
 
         // WHEN
-        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("1.0"));
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("1.0"));
 
         // THEN
         assertThat(session.getNode("/modules/multisite/config/sites/sportstation/domains/"), hasProperty("extends"));
