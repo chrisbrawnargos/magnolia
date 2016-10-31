@@ -9,7 +9,7 @@
 <!-- TourType Overview Header -->
 <div class="category-header">
     <div class="navbar-spacer"></div>
-    <div class="header-wrapper"}>
+    <div class="header-wrapper">
         ${imageHtml}
         <div class="lead-caption">
             <h1 class="category">${category.name!}</h1>
