@@ -14,7 +14,8 @@
  */
 package info.magnolia.demo.travel.multisite.setup;
 
-import static info.magnolia.test.hamcrest.NodeMatchers.*;
+import static info.magnolia.test.hamcrest.NodeMatchers.hasNode;
+import static info.magnolia.test.hamcrest.NodeMatchers.hasProperty;
 import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.*;
 
@@ -63,17 +64,19 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
     }
 
     @Test
-    public void cleanInstallCreatesMappingsInSite() throws Exception {
+    public void cleanInstall() throws Exception {
         // GIVEN
         // Looks weird (clean install?) and it is indeed – well travel-demo does the migration itself
         setupConfigNode("/modules/multisite/config/sites/travel");
 
         // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(null);
 
         // THEN
         assertTrue(session.nodeExists("/modules/multisite/config/sites/travel/domains"));
         assertTrue(session.nodeExists("/modules/multisite/config/sites/travel/mappings"));
+        assertThat(session.getNode("/modules/multisite/config/sites/sportstation/domains/"), hasProperty("extends"));
+        assertNoMessages(ctx);
     }
 
     @Test
@@ -84,10 +87,10 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
         setupConfigNode("/modules/multisite/config/sites/travel/mappings");
 
         // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("0.7"));
 
         // THEN
-        // We expect no exception
+        assertNoMessages(ctx);
     }
 
     @Test
@@ -117,4 +120,15 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
         this.assertNoMessages(ctx);
     }
 
+    @Test
+    public void updateFrom10AddsExtendsPropertyToSportStationWebsite() throws Exception {
+        // GIVEN
+        setupConfigNode("/modules/multisite/config/sites/sportstation/domains/");
+
+        // WHEN
+        final InstallContext ctx = executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("1.0"));
+
+        // THEN
+        assertThat(session.getNode("/modules/multisite/config/sites/sportstation/domains/"), hasProperty("extends"));
+    }
 }

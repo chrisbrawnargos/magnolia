@@ -18,16 +18,16 @@ import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.BootstrapConditionally;
-import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
+import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.RemoveNodeTask;
-import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
-import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.jcr.ImportUUIDBehavior;
 
 /**
  * Default {@link info.magnolia.module.ModuleVersionHandler} for travel-demo multi site example.
@@ -40,14 +40,8 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
 
     public TravelDemoMultiSiteModuleVersionHandler() {
         register(DeltaBuilder.update("1.1", "")
-                .addTask(new NodeExistsDelegateTask("Update travel-related sites (travel & sportstation)", "/modules/multisite/config/sites/travel",
-                        new ArrayDelegateTask("", "",
-                                new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/sportstation", "extends", "../default", "../travel"),
-                                mappingAndDomainConfigurationTask)))
-                .addTask(new NodeExistsDelegateTask("Remove any existing prototype from sportstation", "/modules/multisite/config/sites/sportstation/templates/prototype",
-                        new ArrayDelegateTask("",
-                                new RemoveNodeTask("", "/modules/multisite/config/sites/sportstation/templates/prototype"),
-                                new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates", "prototypeId", "sportstation:pages/prototype"))))
+                .addTask(new BootstrapSingleResource("Re bootstrap sportstation site", "", "/mgnl-bootstrap/travel-demo-multisite/config.modules.multisite.config.sites.sportstation.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
+                .addTask(mappingAndDomainConfigurationTask)
                 .addTask(new NodeExistsDelegateTask("Remove sportstation-theme configuration from JCR", "/modules/site/config/themes/sportstation-theme",
                         new RemoveNodeTask("", "/modules/site/config/themes/sportstation-theme")))
         );
@@ -60,5 +54,4 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
         tasks.add(new NodeExistsDelegateTask("Add mapping and domain configuration to travel site definition in multisite", "/modules/multisite/config/sites/travel", mappingAndDomainConfigurationTask));
         return tasks;
     }
-
 }
