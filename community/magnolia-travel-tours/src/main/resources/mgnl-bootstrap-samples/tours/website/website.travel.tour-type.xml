@@ -3,13 +3,10 @@
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>mgnl:page</sv:value>
   </sv:property>
-  <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-    <sv:value>mix:lockable</sv:value>
-  </sv:property>
   <sv:property sv:name="jcr:uuid" sv:type="String">
     <sv:value>05872876-073e-40a3-a3c5-0d0a18c1d43d</sv:value>
   </sv:property>
-  <sv:property sv:name="hideInNav" sv:type="String">
+  <sv:property sv:name="hideInNav" sv:type="Boolean">
     <sv:value>false</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:createdBy" sv:type="String">
@@ -39,15 +36,15 @@
   <sv:property sv:name="mgnl:template" sv:type="String">
     <sv:value>tours:pages/categoryOverview</sv:value>
   </sv:property>
+  <sv:property sv:name="navigationTitle" sv:type="String">
+    <sv:value>Tours</sv:value>
+  </sv:property>
   <sv:property sv:name="title" sv:type="String">
     <sv:value>Tour Types</sv:value>
   </sv:property>
   <sv:node sv:name="main">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:area</sv:value>
-    </sv:property>
-    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-      <sv:value>mix:lockable</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
       <sv:value>65f66aac-c0aa-42b4-b6a9-1f749a6429b0</sv:value>
@@ -238,9 +235,6 @@
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>mgnl:area</sv:value>
     </sv:property>
-    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-      <sv:value>mix:lockable</sv:value>
-    </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
       <sv:value>12f26132-0381-465f-8d13-155cc3bb4669</sv:value>
     </sv:property>
@@ -271,9 +265,6 @@
     <sv:node sv:name="footer1">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>7af2d089-e07d-48f3-aa27-12710370a9a1</sv:value>
@@ -307,9 +298,6 @@
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
       </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>bef2cd3e-ac68-4ad7-ae31-8b791e2729e0</sv:value>
       </sv:property>
@@ -341,9 +329,6 @@
     <sv:node sv:name="footer3">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>7bb4b74d-2e42-43c0-948a-3fea95ca4d5e</sv:value>
@@ -377,9 +362,6 @@
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
       </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>4c1103b5-01eb-4056-b999-6bc67a97b0de</sv:value>
       </sv:property>
@@ -411,9 +393,6 @@
     <sv:node sv:name="lastLinks">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:area</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>984b4a74-ea75-4676-88df-3b9e4330826c</sv:value>
