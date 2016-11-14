@@ -151,7 +151,7 @@ public class DefaultUserLinksResolverTest extends RepositoryTestCase {
         String link = resolver.getLogoutLink();
 
         // THEN
-        assertThat(link, equalTo(loginPage.getPath() + "?" + LogoutFilter.PARAMETER_LOGOUT));
+        assertThat(link, equalTo(loginPage.getPath() + "?" + LogoutFilter.PARAMETER_LOGOUT + "=true"));
     }
 
     @Test
