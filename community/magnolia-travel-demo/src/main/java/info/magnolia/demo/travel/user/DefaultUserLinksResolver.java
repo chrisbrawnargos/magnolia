@@ -98,7 +98,7 @@ public class DefaultUserLinksResolver implements UserLinksResolver {
 
     @Override
     public String getLogoutLink() throws RepositoryException {
-        return this.getLoginPageLink() + "?" + LogoutFilter.PARAMETER_LOGOUT;
+        return this.getLoginPageLink() + "?" + LogoutFilter.PARAMETER_LOGOUT + "=true";
     }
 
     protected Node findPage(String templateId) throws RepositoryException {
