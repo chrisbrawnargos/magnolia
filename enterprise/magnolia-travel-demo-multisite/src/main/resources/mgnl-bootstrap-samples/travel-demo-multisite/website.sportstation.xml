@@ -753,7 +753,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:template" sv:type="String">
-      <sv:value>sportstation:pages/tourSportstation</sv:value>
+      <sv:value>travel-demo-multisite:pages/tourSportstation</sv:value>
     </sv:property>
     <sv:property sv:name="title" sv:type="String">
       <sv:value>Tour</sv:value>
@@ -824,7 +824,7 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>sportstation:components/tourDetailSportstation</sv:value>
+          <sv:value>travel-demo-multisite:components/tourDetailSportstation</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
