@@ -140,7 +140,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="prototypeId" sv:type="String">
-      <sv:value>sportstation:pages/prototype</sv:value>
+      <sv:value>travel-demo-multisite:pages/prototype</sv:value>
     </sv:property>
     <sv:node sv:name="availability">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -194,7 +194,7 @@
             <sv:value>414b3393-d1e4-4ea2-96ee-4a290eb2242f</sv:value>
           </sv:property>
           <sv:property sv:name="id" sv:type="String">
-            <sv:value>sportstation:pages/tourSportstation</sv:value>
+            <sv:value>travel-demo-multisite:pages/tourSportstation</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>

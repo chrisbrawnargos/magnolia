@@ -20,6 +20,7 @@ import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.BootstrapConditionally;
 import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.DeltaBuilder;
+import info.magnolia.module.delta.IsInstallSamplesTask;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
 import info.magnolia.module.delta.RemoveNodeTask;
 import info.magnolia.module.delta.Task;
@@ -39,11 +40,14 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
             new BootstrapConditionally("Add mapping configuration to travel site definition in multisite", "/info/magnolia/demo/travel/multisite/setup/config.modules.multisite.config.sites.travel.mappings.xml"));
 
     public TravelDemoMultiSiteModuleVersionHandler() {
-        register(DeltaBuilder.update("1.1", "")
+        register(DeltaBuilder.update("1.1.1", "")
                 .addTask(new BootstrapSingleResource("Re bootstrap sportstation site", "", "/mgnl-bootstrap/travel-demo-multisite/config.modules.multisite.config.sites.sportstation.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
                 .addTask(mappingAndDomainConfigurationTask)
                 .addTask(new NodeExistsDelegateTask("Remove sportstation-theme configuration from JCR", "/modules/site/config/themes/sportstation-theme",
                         new RemoveNodeTask("", "/modules/site/config/themes/sportstation-theme")))
+
+                .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for sportstation pages", "Re-bootstrap website content to account for all changes",
+                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-multisite/website.sportstation.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
         );
     }
 

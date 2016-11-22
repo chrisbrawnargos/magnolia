@@ -133,4 +133,18 @@ public class TravelDemoMultiSiteModuleVersionHandlerTest extends ModuleVersionHa
         assertThat(session.getNode("/modules/multisite/config/sites/sportstation/domains/"), hasProperty("extends"));
         assertThat(session.getNode("/modules/multisite/config/sites/sportstation/mappings/"), hasProperty("extends"));
     }
+
+    @Test
+    public void updateFrom11MovesSportstationTemplatesUnderTravelDemoMultisiteFolder() throws Exception {
+        // GIVEN
+        setupProperty(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates", "prototypeId", "sportstation:pages/prototype", null);
+        setupProperty(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates/availability/templates/tour", "id", "sportstation:pages/tourSportstation", null);
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("1.1"));
+
+        // THEN
+        assertThat(session.getNode("/modules/multisite/config/sites/sportstation/templates"), hasProperty("prototypeId", "travel-demo-multisite:pages/prototype"));
+        assertThat(session.getNode("/modules/multisite/config/sites/sportstation/templates/availability/templates/tour"), hasProperty("id", "travel-demo-multisite:pages/tourSportstation"));
+    }
 }
