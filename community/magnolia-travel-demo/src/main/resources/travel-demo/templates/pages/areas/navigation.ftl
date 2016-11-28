@@ -67,7 +67,7 @@
                 [@cms.area name="destinations" /]
 
                 [#list pages as page]
-                    <li class="${page.cssClass!}"><a href="${page.link!}">${page.name!}</a></li>
+                    <li class="${page.cssClass!}"><a href="${page.link!}">${cmsfn.encode(page.name)!}</a></li>
                 [/#list]
                 </ul>
 
@@ -83,7 +83,7 @@
             <div id="navbar-secondary" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     [#list childPages as childPage]
-                        <li class="${childPage.cssClass!}"><a href="${childPage.link}">${childPage.name}</a></li>
+                        <li class="${childPage.cssClass!}"><a href="${childPage.link!}">${cmsfn.encode(childPage.name)!}</a></li>
                     [/#list]
                 </ul>
             </div>
