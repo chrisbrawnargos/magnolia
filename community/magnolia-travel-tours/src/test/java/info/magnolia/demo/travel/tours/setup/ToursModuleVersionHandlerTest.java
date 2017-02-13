@@ -227,21 +227,6 @@ public class ToursModuleVersionHandlerTest extends ModuleVersionHandlerTestCase 
         ));
     }
 
-    @Test
-    public void updateFrom111RemovesTravelPrefixFromVirtualURIMapping() throws Exception {
-        //GIVEN
-        setupBootstrapPages();
-        Node mapping = NodeUtil.createPath(configSession.getRootNode(), "modules/tours/virtualURIMapping/toursMapping", NodeTypes.ContentNode.NAME, true);
-        mapping.setProperty("toURI", "forward:/travel/tour?tour=$1");
-        mapping.getSession().save();
-
-        // WHEN
-        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("1.1.1"));
-
-        //THEN
-        assertThat(configSession.getNode("/modules/tours/virtualURIMapping/toursMapping"), hasProperty("toURI","forward:/tour?tour=$1"));
-    }
-
     private void setupBootstrapPages() throws RepositoryException {
         websiteSession.getRootNode().addNode("travel", NodeTypes.Page.NAME);
         websiteSession.getRootNode().addNode("travel/about", NodeTypes.Page.NAME);

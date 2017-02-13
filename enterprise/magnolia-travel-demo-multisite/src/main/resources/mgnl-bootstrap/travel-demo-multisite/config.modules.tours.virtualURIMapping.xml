@@ -74,7 +74,7 @@
       <sv:value>travel</sv:value>
     </sv:property>
     <sv:property sv:name="toURI" sv:type="String">
-      <sv:value>forward:/tour?tour=$1</sv:value>
+      <sv:value>forward:/travel/tour?tour=$1</sv:value>
     </sv:property>
   </sv:node>
   <sv:node sv:name="sportstationToursMapping">
@@ -118,7 +118,7 @@
       <sv:value>sportstation</sv:value>
     </sv:property>
     <sv:property sv:name="toURI" sv:type="String">
-      <sv:value>forward:/tour?tour=$1</sv:value>
+      <sv:value>forward:/sportstation/tour?tour=$1</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>

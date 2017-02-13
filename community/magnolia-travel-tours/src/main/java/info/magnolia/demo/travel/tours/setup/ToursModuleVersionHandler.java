@@ -74,7 +74,7 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
             new OrderNodeBeforeTask("", "", RepositoryConstants.WEBSITE, "/travel/tour", "about"));
 
     public ToursModuleVersionHandler() {
-        register(DeltaBuilder.update("1.1.2", "")
+        register(DeltaBuilder.update("1.1.1", "")
                 .addTask(new FolderBootstrapTask("/mgnl-bootstrap/tours/travel-demo/"))
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
                         new ArrayDelegateTask("",
@@ -95,7 +95,6 @@ public class ToursModuleVersionHandler extends DefaultModuleVersionHandler {
 
                 .addTask(orderPageNodes)
                 .addTask(new SetPageAsPublishedTask("/travel", true))
-                .addTask(new BootstrapSingleResource("Re-Bootstrap virtual URI mapping for travel tours", "", "/mgnl-bootstrap/tours/config.modules.tours.virtualURIMapping.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
         );
     }
 

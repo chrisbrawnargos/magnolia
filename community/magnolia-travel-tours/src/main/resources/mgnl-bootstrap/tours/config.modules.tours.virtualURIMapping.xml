@@ -71,7 +71,7 @@
       <sv:value>superuser</sv:value>
     </sv:property>
     <sv:property sv:name="toURI" sv:type="String">
-      <sv:value>forward:/tour?tour=$1</sv:value>
+      <sv:value>forward:/travel/tour?tour=$1</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>

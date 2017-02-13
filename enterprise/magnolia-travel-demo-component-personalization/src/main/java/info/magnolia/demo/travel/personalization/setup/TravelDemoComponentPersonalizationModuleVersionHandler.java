@@ -36,7 +36,7 @@ import javax.jcr.ImportUUIDBehavior;
 public class TravelDemoComponentPersonalizationModuleVersionHandler extends DefaultModuleVersionHandler {
 
     public TravelDemoComponentPersonalizationModuleVersionHandler() {
-        register(DeltaBuilder.update("1.1.2", "")
+        register(DeltaBuilder.update("1.1.1", "")
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website and configuration specific to personalization", "Re-Bootstraps website and configuration specific to personalization to account for all changes", new ArrayDelegateTask("", "",
                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/website.travel.main.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.ruleField.fields.tourType.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
