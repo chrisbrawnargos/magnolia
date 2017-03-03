@@ -43,10 +43,8 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
 
     public TravelDemoMultiSiteModuleVersionHandler() {
         register(DeltaBuilder.update("1.0.1", "")
-                .addTask(new NodeExistsDelegateTask("Update travel-related sites (travel & sportstation)", "/modules/multisite/config/sites/travel",
-                        new ArrayDelegateTask("", "",
-                                new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/sportstation", "extends", "../default", "../travel"),
-                                mappingAndDomainConfigurationTask)))
+                .addTask(new BootstrapSingleResource("Re bootstrap sportstation site", "", "/mgnl-bootstrap/travel-demo-multisite/config.modules.multisite.config.sites.sportstation.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
+                .addTask(new NodeExistsDelegateTask("Update travel-related sites (travel & sportstation)", "/modules/multisite/config/sites/travel", mappingAndDomainConfigurationTask))
                 .addTask(new NodeExistsDelegateTask("Remove any existing prototype from sportstation", "/modules/multisite/config/sites/sportstation/templates/prototype",
                         new ArrayDelegateTask("",
                                 new RemoveNodeTask("", "/modules/multisite/config/sites/sportstation/templates/prototype"),
