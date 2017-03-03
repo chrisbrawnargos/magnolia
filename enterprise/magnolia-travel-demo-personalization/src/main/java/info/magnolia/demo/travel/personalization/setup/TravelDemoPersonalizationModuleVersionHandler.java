@@ -41,7 +41,7 @@ public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModule
     private static final Task addMixinToTravelContact = new AddMixinTask("/travel/contact", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN);
 
     public TravelDemoPersonalizationModuleVersionHandler() {
-        register(DeltaBuilder.update("1.0", "")
+        register(DeltaBuilder.update("1.0.1", "")
                 .addTask(new NodeExistsDelegateTask("Remove variants from home page", "Removes variants from home page. Variants have now moved to contacts page",  RepositoryConstants.WEBSITE, "/travel/variants", new RemoveNodeTask("", "",  RepositoryConstants.WEBSITE, "/travel/variants")))
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website variants for contact pages", "Re-bootstrap website variants to account for all changes",
                         new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.contact.variants.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))

@@ -18,6 +18,7 @@ import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
 import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.BootstrapConditionally;
+import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.CheckAndModifyPropertyValueTask;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.NodeExistsDelegateTask;
@@ -29,6 +30,8 @@ import info.magnolia.repository.RepositoryConstants;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.jcr.ImportUUIDBehavior;
+
 /**
  * Default {@link info.magnolia.module.ModuleVersionHandler} for travel-demo multi site example.
  */
@@ -39,7 +42,7 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
             new BootstrapConditionally("Add mapping configuration to travel site definition in multisite", "/info/magnolia/demo/travel/multisite/setup/config.modules.multisite.config.sites.travel.mappings.xml"));
 
     public TravelDemoMultiSiteModuleVersionHandler() {
-        register(DeltaBuilder.update("1.0", "")
+        register(DeltaBuilder.update("1.0.1", "")
                 .addTask(new NodeExistsDelegateTask("Update travel-related sites (travel & sportstation)", "/modules/multisite/config/sites/travel",
                         new ArrayDelegateTask("", "",
                                 new CheckAndModifyPropertyValueTask("/modules/multisite/config/sites/sportstation", "extends", "../default", "../travel"),
@@ -48,6 +51,7 @@ public class TravelDemoMultiSiteModuleVersionHandler extends DefaultModuleVersio
                         new ArrayDelegateTask("",
                                 new RemoveNodeTask("", "/modules/multisite/config/sites/sportstation/templates/prototype"),
                                 new SetPropertyTask(RepositoryConstants.CONFIG, "/modules/multisite/config/sites/sportstation/templates", "prototypeId", "sportstation:pages/prototype"))))
+                .addTask(new BootstrapSingleResource("Re-Bootstrap virtual URI mapping for travel-demo multi-site module.", "", "/mgnl-bootstrap/travel-demo-multisite/config.modules.tours.virtualURIMapping.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING))
         );
     }
 
