@@ -34,6 +34,10 @@
       <groupId>info.magnolia.personalization</groupId>
       <artifactId>magnolia-personalization-integration</artifactId>
     </dependency>
+    <dependency>
+      <groupId>info.magnolia.personalization</groupId>
+      <artifactId>magnolia-personalization-components</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>info.magnolia.demo</groupId>

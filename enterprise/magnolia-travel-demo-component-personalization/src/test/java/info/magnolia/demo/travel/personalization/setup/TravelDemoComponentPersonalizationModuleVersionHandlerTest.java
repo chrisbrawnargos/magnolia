@@ -71,7 +71,7 @@ public class TravelDemoComponentPersonalizationModuleVersionHandlerTest extends 
 
     @Override
     protected String getExtraNodeTypes() {
-        return "/mgnl-nodetypes/magnolia-personalization-nodetypes.xml";
+        return "/mgnl-nodetypes/test-component-personalization-nodetypes.xml";
     }
 
     @Override
