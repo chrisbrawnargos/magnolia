@@ -31,6 +31,9 @@
     <sv:property sv:name="jcr:uuid" sv:type="String">
       <sv:value>65242533-c5d0-4c9e-a42a-20e99a7cf937</sv:value>
     </sv:property>
+    <sv:property sv:name="extends" sv:type="String">
+      <sv:value>override</sv:value>
+    </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
     </sv:property>
@@ -218,6 +221,9 @@
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
       <sv:value>639e4eed-cdfa-4971-b478-8e816f8c077a</sv:value>
+    </sv:property>
+    <sv:property sv:name="extends" sv:type="String">
+      <sv:value>override</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:createdBy" sv:type="String">
       <sv:value>admin</sv:value>
