@@ -16,6 +16,7 @@
 
   <properties>
     <javaVersion>1.8</javaVersion>
+    <personalizationVersion>1.4.3-SNAPSHOT</personalizationVersion>
   </properties>
 
   <scm>
@@ -91,7 +92,12 @@
       <dependency>
         <groupId>info.magnolia.personalization</groupId>
         <artifactId>magnolia-personalization-integration</artifactId>
-        <version>1.2.1</version>
+        <version>${personalizationVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.personalization</groupId>
+        <artifactId>magnolia-personalization-components</artifactId>
+        <version>${personalizationVersion}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
