@@ -77,7 +77,7 @@
     </sv:property>
     <sv:node sv:name="variants">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:variants</sv:value>
+        <sv:value>mgnl:componentVariants</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>1a92fc26-1b3f-41c0-aa50-98e5145057b4</sv:value>
@@ -311,7 +311,7 @@
     </sv:property>
     <sv:node sv:name="variants">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:variants</sv:value>
+        <sv:value>mgnl:componentVariants</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>c4bdd030-9d9a-40a9-a87b-624b17abeb90</sv:value>
@@ -500,7 +500,7 @@
     </sv:property>
     <sv:node sv:name="variants">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:variants</sv:value>
+        <sv:value>mgnl:componentVariants</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
         <sv:value>9ecd7136-9cf9-404a-902f-25aed7022bde</sv:value>
