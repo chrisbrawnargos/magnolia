@@ -14,15 +14,15 @@
     </dependency>
     <dependency>
       <name>personalization-integration</name>
-      <version>${personalizationVersion}/*</version>
+      <version>${componentPersonalizationVersion}/*</version>
     </dependency>
     <dependency>
       <name>personalization-traits</name>
-      <version>${personalizationVersion}/*</version>
+      <version>${componentPersonalizationVersion}/*</version>
     </dependency>
     <dependency>
       <name>personalization-components</name>
-      <version>${personalizationVersion}/*</version>
+      <version>${componentPersonalizationVersion}/*</version>
     </dependency>
   </dependencies>
 </module>
