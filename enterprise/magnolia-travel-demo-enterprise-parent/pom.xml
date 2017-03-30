@@ -16,7 +16,7 @@
 
   <properties>
     <javaVersion>1.8</javaVersion>
-    <personalizationVersion>1.4.3-SNAPSHOT</personalizationVersion>
+    <personalizationVersion>1.4.3</personalizationVersion>
   </properties>
 
   <scm>
