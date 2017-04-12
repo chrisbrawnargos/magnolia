@@ -21,7 +21,7 @@
     <siteVersion>1.0.7</siteVersion>
     <resourcesVersion>2.4</resourcesVersion>
     <personalizationVersion>1.2.1</personalizationVersion>
-    <componentPersonalizationVersion>1.3.3-SNAPSHOT</componentPersonalizationVersion>
+    <componentPersonalizationVersion>1.3.3</componentPersonalizationVersion>
   </properties>
 
   <scm>
