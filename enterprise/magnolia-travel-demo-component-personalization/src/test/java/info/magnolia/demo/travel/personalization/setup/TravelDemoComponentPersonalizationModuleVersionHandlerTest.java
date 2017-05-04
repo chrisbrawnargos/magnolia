@@ -17,6 +17,7 @@ package info.magnolia.demo.travel.personalization.setup;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
+import static info.magnolia.test.hamcrest.NodeMatchers.*;
 
 import info.magnolia.cms.security.MgnlRoleManager;
 import info.magnolia.cms.security.RoleManager;
@@ -114,7 +115,7 @@ public class TravelDemoComponentPersonalizationModuleVersionHandlerTest extends 
         // THEN
         Node options = personalizationTraits.getNode("traits/cookies/valueField/options");
         List<Node> tourTypes = Lists.newArrayList(NodeUtil.getNodes(options));
-        assertThat(Collections2.transform(tourTypes, new ToNodeName()), containsInAnyOrder("tourTypeOffbeat", "tourTypeActive", "tourTypeAny", "tourTypeCultural"));
+        assertThat(Collections2.transform(tourTypes, new ToNodeName()), contains("tourTypeAny"));
 
         assertThat(personalizationTraits.hasNode("traits/cookies/ruleField/options/tourType"), is(true));
         assertThat(personalizationTraits.hasNode("traits/cookies/ruleField/fields/tourType"), is(true));
@@ -133,6 +134,25 @@ public class TravelDemoComponentPersonalizationModuleVersionHandlerTest extends 
         Node variantRoot = travelPage.getNode("main/0/variants");
         List<Node> variants = Lists.newArrayList(NodeUtil.getNodes(variantRoot));
         assertThat(variants, hasItems(NodeMatchers.hasProperty("jcr:primaryType", NodeTypes.Component.NAME), new MixinPropertyMatcher("mgnl:variant")));
+    }
+
+    @Test
+    public void updateFrom113RemovesSpecificTourTypesFromTraits() throws Exception {
+        // GIVEN
+        Node cookiesOptions = NodeUtil.createPath(configSession.getRootNode(), "modules/personalization-traits/traits/cookies/valueField/options", NodeTypes.Content.NAME);
+        cookiesOptions.addNode("tourTypeActive", NodeTypes.Content.NAME);
+        cookiesOptions.addNode("tourTypeOffbeat", NodeTypes.Content.NAME);
+        cookiesOptions.addNode("tourTypeCultural", NodeTypes.Content.NAME);
+
+        // WHEN
+        executeUpdatesAsIfTheCurrentlyInstalledVersionWas(Version.parseVersion("1.1.3"));
+
+        // THEN
+        assertThat(cookiesOptions, allOf(
+                not(hasNode("tourTypeActive")),
+                not(hasNode("tourTypeOffbeat")),
+                not(hasNode("tourTypeCultural"))
+        ));
     }
 
     /**
