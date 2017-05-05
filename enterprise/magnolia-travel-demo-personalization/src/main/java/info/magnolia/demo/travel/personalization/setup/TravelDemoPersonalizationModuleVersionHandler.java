@@ -44,7 +44,7 @@ public class TravelDemoPersonalizationModuleVersionHandler extends DefaultModule
         register(DeltaBuilder.update("1.1.3", "")
                 .addTask(new NodeExistsDelegateTask("Remove variants from home page", "Removes variants from home page. Variants have now moved to contacts page",  RepositoryConstants.WEBSITE, "/travel/variants", new RemoveNodeTask("", "",  RepositoryConstants.WEBSITE, "/travel/variants")))
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website variants for contact pages", "Re-bootstrap website variants to account for all changes",
-                        new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.contact.variants.yaml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)))
+                        new BootstrapSingleResource("Re-Bootstrap variants", "", "/mgnl-bootstrap-samples/travel-demo-personalization/website.travel.contact.variants.yaml")))
                 .addTask(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true))
                 .addTask(new RemoveMixinTask("/travel", RepositoryConstants.WEBSITE, VariantManager.HAS_VARIANT_MIXIN))
 
