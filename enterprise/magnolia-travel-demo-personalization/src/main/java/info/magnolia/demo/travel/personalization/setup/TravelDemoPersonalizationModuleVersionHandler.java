@@ -31,8 +31,6 @@ import info.magnolia.repository.RepositoryConstants;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.jcr.ImportUUIDBehavior;
-
 /**
  * {@link DefaultModuleVersionHandler} for travel-demo personalization module.
  */
