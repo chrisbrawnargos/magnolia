@@ -23,9 +23,12 @@ import info.magnolia.module.delta.ArrayDelegateTask;
 import info.magnolia.module.delta.BootstrapSingleResource;
 import info.magnolia.module.delta.DeltaBuilder;
 import info.magnolia.module.delta.IsInstallSamplesTask;
+import info.magnolia.module.delta.RemoveNodesTask;
 import info.magnolia.module.delta.Task;
+import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.jcr.ImportUUIDBehavior;
@@ -41,13 +44,17 @@ public class TravelDemoComponentPersonalizationModuleVersionHandler extends Defa
                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/website.travel.main.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.ruleField.fields.tourType.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
                         new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.ruleField.options.tourType.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
-                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.valueField.options.tourTypeActive.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
-                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.valueField.options.tourTypeAny.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
-                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.valueField.options.tourTypeCultural.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
-                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.valueField.options.tourTypeOffbeat.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)
+                        new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo-component-personalization/config.modules.personalization-traits.traits.cookies.valueField.options.tourTypeAny.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING)
                 )))
                 .addTask(new AddPermissionTask("Add permission", "travel-demo-admincentral", "personas", "/*", Permission.READ, true))
                 .addTask(new SetPageAsPublishedTask("/travel", true))
+        );
+        register(DeltaBuilder.update("1.1.4", "")
+                .addTask(new ArrayDelegateTask("Remove tour types from traits.", "",
+                        new RemoveNodesTask("", RepositoryConstants.CONFIG, Arrays.asList(
+                                "/modules/personalization-traits/traits/cookies/valueField/options/tourTypeActive",
+                                "/modules/personalization-traits/traits/cookies/valueField/options/tourTypeOffbeat",
+                                "/modules/personalization-traits/traits/cookies/valueField/options/tourTypeCultural"), false)))
         );
     }
 
