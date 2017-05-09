@@ -97,7 +97,7 @@ public class TravelDemoModuleVersionHandler extends DefaultModuleVersionHandler 
     private final InstallPurSamplesTask installPurSamples = new InstallPurSamplesTask();
 
     public TravelDemoModuleVersionHandler() {
-        register(DeltaBuilder.update("1.1.3", "")
+        register(DeltaBuilder.update("1.1.4", "")
                 .addTask(new IsInstallSamplesTask("Re-Bootstrap website content for travel pages", "Re-bootstrap website content to account for all changes",
                         new ArrayDelegateTask("",
                                 new BootstrapSingleResource("", "", "/mgnl-bootstrap-samples/travel-demo/website.travel.xml", ImportUUIDBehavior.IMPORT_UUID_COLLISION_REPLACE_EXISTING),
